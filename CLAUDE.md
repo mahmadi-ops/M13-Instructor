@@ -230,3 +230,12 @@ Before any push:
    the section's `xml:id` instead.
 3. Never mark a solution released, or notes posted, on the desk before
    the corresponding push has actually been made.
+
+## Gradescope PDFs (question-only assignment sheets)
+
+`scripts/gradescope_pdfs.py` turns each `source/assignment-<n>-*.ptx`
+worksheet into `gradescope/assignment-<n>-questions.pdf`: statements only
+(no solutions, answers, hints or tutor feedback), math typeset by MathJax,
+figures from `generated-assets/`, printed by headless Chromium. Re-run it
+after editing an assignment (`--mathjax` takes a local `tex-svg.js` when
+the CDN is unreachable) and commit the regenerated PDFs.
