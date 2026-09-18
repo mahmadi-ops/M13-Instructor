@@ -35,7 +35,7 @@
 <p>Graphs A and F match none of the equations.  Slicing the ellipsoid in A gives bounded ellipses in every direction, which none of the equations produce.  Slicing the two bowls in F with planes <m>y = c</m> gives ellipses whose size grows like <m>\sqrt{|c|}\text{,}</m> unlike the straight-sided linear growth of the cone in B.</p>
 </solution>
   </static>
-  <rendering-data problemSource="MATH_13Calculus_and_Analytic_Geometry_III/5-Exercises/5_12-Exercises_for_Quadric_Surfaces/5_12_1-Matching_Quadric_Surfaces.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <rendering-data problemSource="MATH_13Calculus_and_Analytic_Geometry_III/5-Assignments_and_Review_Problems/5_7-Assignment_6/5_7_1-Matching_Quadric_Surfaces.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -52,7 +52,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(5.12.1)
+## Problem1(5.7.1)
 ## Author()
 ## Institution()
 ## Language(en-US)

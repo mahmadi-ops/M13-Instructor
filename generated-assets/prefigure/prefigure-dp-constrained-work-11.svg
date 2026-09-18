@@ -71,7 +71,7 @@
       </g>
     </marker>
   </defs>
-  <path id="prefigure-dp-constrained-work-dpw-plane" d="M 240.3 220.8 L 576.7 303.9 L 386.1 154.4 L 49.6 71.4" stroke="#0072B2" stroke-width="2" fill="#0072B2" fill-opacity="0.12" clip-path="url(#prefigure-dp-constrained-work-__clipPath-1)"/>
+  <path id="prefigure-dp-constrained-work-dpw-plane" d="M 240.3 220.8 L 576.7 303.9 L 386.1 154.4 L 49.6 71.4 Z" stroke="#0072B2" stroke-width="2" fill="#0072B2" fill-opacity="0.12" clip-path="url(#prefigure-dp-constrained-work-__clipPath-1)"/>
   <line id="prefigure-dp-constrained-work-dpw-dash1" x1="318.9" y1="63.4" x2="343.2" y2="69.5" stroke="#7F7F7F" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
   <line id="prefigure-dp-constrained-work-dpw-dash2" x1="318.9" y1="63.4" x2="288.9" y2="181.6" stroke="#7F7F7F" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
   <path id="prefigure-dp-constrained-work-dpw-n" stroke="black" stroke-width="2" fill="none" marker-end="url(#prefigure-dp-constrained-work-arrow-head-end-2_None_24_60-black)" d="M 464.6 223.6 L 481.7 156.2"/>
