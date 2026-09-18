@@ -1,0 +1,11 @@
+openDate          = 01/01/2027 at 12:00am
+dueDate           = 12/31/2027 at 10:00pm
+answerDate        = 12/31/2027 at 10:00pm
+paperHeaderFile   = Complementary_Modules_For_MATH_13/header/Complementary_Modules_For_MATH_13.pg
+screenHeaderFile  = Complementary_Modules_For_MATH_13/header/Complementary_Modules_For_MATH_13.pg
+description       = Complementary Modules For MATH 13
+problemListV2
+problem_start
+source_file = Complementary_Modules_For_MATH_13/17_4_1-Matching_Quadric_Surfaces.pg
+problem_id = 1
+problem_end

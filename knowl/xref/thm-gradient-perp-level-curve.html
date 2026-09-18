@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h2 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Gradient is Perpendicular to the Level Curves.</span>
+</h2>
+<div class="para">Let <span class="process-math">\(f(x,y)\)</span> be a differentiable function, and let <span class="process-math">\(C\)</span> be the level curve <span class="process-math">\(f(x,y) = c\)</span> for a constant <span class="process-math">\(c\text{.}\)</span> At every point of <span class="process-math">\(C\)</span> where <span class="process-math">\(\nabla f \neq \mathbf 0\text{,}\)</span> the gradient vector <span class="process-math">\(\nabla f\)</span> is perpendicular to the level curve <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-gradient-perp-level-curve-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 4.5.10: The Gradient is Perpendicular to the Level Curves"><a tabindex="-1" href="#thm-gradient-perp-level-curve" title="Copy heading and permalink for Theorem 4.5.10: The Gradient is Perpendicular to the Level Curves" aria-label="Copy heading and permalink for Theorem 4.5.10: The Gradient is Perpendicular to the Level Curves">🔗</a></div>
+</article>
+<details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical">
+<div class="para">Suppose the level curve <span class="process-math">\(C\)</span> is parametrized by a differentiable vector function</div>
+<div class="displaymath process-math">
+\begin{equation}
+\mathbf r(t) = \langle x(t),\, y(t)\rangle,\tag{4.5.6}
+\end{equation}
+</div>
+<div class="para">and let <span class="process-math">\(\mathbf v(t) = \langle x'(t),\, y'(t)\rangle\)</span> denote its velocity vector. Because every point of <span class="process-math">\(C\)</span> lies on the level curve, its coordinates satisfy</div>
+<div class="displaymath process-math">
+\begin{equation}
+f\bigl(x(t),\, y(t)\bigr) = c \qquad \text{for all } t.\tag{4.5.7}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-gradient-perp-level-curve-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">The left-hand side is constant in <span class="process-math">\(t\text{,}\)</span> so its derivative is zero. Differentiating both sides with respect to <span class="process-math">\(t\)</span> and applying the chain rule gives</div>
+<div class="displaymath process-math">
+\begin{align}
+\frac{d}{dt}\, f\bigl(x(t), y(t)\bigr) \amp= \frac{\partial f}{\partial x}\,\frac{dx}{dt} + \frac{\partial f}{\partial y}\,\frac{dy}{dt}\notag\\
+\amp= 0.\tag{4.5.8}
+\end{align}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-gradient-perp-level-curve-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">We recognize the middle expression as the dot product of the gradient vector with the velocity vector:</div>
+<div class="displaymath process-math">
+\begin{align}
+\left\langle \frac{\partial f}{\partial x},\, \frac{\partial f}{\partial y} \right\rangle \cdot \left\langle \frac{dx}{dt},\, \frac{dy}{dt} \right\rangle \amp= \nabla f \cdot \mathbf v(t)\notag\\
+\amp= 0.\tag{4.5.9}
+\end{align}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-gradient-perp-level-curve-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">Therefore, at each point of <span class="process-math">\(C\text{,}\)</span> the gradient <span class="process-math">\(\nabla f\)</span> is orthogonal to the velocity vector <span class="process-math">\(\mathbf v(t)\text{,}\)</span> as shown in <a href="sec-gradient-vector.html#fig-gradient-perp-prefigure" class="xref" data-knowl="./knowl/xref/fig-gradient-perp-prefigure.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.11">Figure 4.5.11</a>. Since the velocity vector points in the direction of motion along the curve, it is tangent to <span class="process-math">\(C\text{;}\)</span> hence <span class="process-math">\(\nabla f\)</span> being orthogonal to <span class="process-math">\(\mathbf v(t)\)</span> means precisely that <span class="process-math">\(\nabla f\)</span> is perpendicular to the level curve <span class="process-math">\(C\text{.}\)</span> This holds at every point where <span class="process-math">\(\nabla f \neq \mathbf 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-gradient-perp-level-curve-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 4.5.10.1"><a tabindex="-1" href="#thm-gradient-perp-level-curve-3" title="Copy heading and permalink for Proof 4.5.10.1" aria-label="Copy heading and permalink for Proof 4.5.10.1">🔗</a></div>
+</article></details><span class="incontext"><a class="internal" href="sec-gradient-vector.html#thm-gradient-perp-level-curve">In Context</a></span>
+</body>
+</html>

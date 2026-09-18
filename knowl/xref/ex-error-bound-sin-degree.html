@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding the value of <span class="process-math">\(n\)</span> such that the error is less than a given tolerance.</span>
+</h2>
+<div class="para">Find the smallest value of <span class="process-math">\(n\)</span> for which the polynomial approximation for <span class="process-math">\(\sin(x)\)</span> is accurate to <span class="process-math">\(±0.005\)</span> for values of <span class="process-math">\(x\)</span> in the interval <span class="process-math">\([-\pi/2, \pi/2]\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">The Taylor polynomial of degree <span class="process-math">\(n\)</span> at <span class="process-math">\(x=0\)</span> for <span class="process-math">\(\sin(x)\)</span> is given by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_n(x) = \sum_{k=0}^{n} \frac{(-1)^k}{(2k+1)!} x^{2k+1}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">The error term is given by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!} x^{n+1}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">As in <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a>, we bound the unknown derivative rather than locating <span class="process-math">\(c\text{.}\)</span> Since <span class="process-math">\(f^{(n+1)}(x)\)</span> is either <span class="process-math">\(\cos(x)\)</span> or <span class="process-math">\(\sin(x)\text{,}\)</span> up to a sign, we have <span class="process-math">\(|f^{(n+1)}(c)| \leq 1\)</span> for every <span class="process-math">\(c\text{,}\)</span> so <span class="process-math">\(M = 1\)</span> works and:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+|R_n(x)| \leq \frac{|x|^{n+1}}{(n+1)!}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">We want to find the smallest value of <span class="process-math">\(n\)</span> such that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{|x|^{n+1}}{(n+1)!} \leq 0.005
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Since <span class="process-math">\(|x| \leq \pi/2\)</span> for <span class="process-math">\(x \in [-\pi/2, \pi/2]\text{,}\)</span> and approximating <span class="process-math">\(\pi/2 \approx 2\text{,}\)</span> we have:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{|x|^{n+1}}{(n+1)!} \lt \frac{2^{n+1}}{(n+1)!}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Therefore, we want to find the smallest value of <span class="process-math">\(n\)</span> such that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{2^{n+1}}{(n+1)!} \lt 0.005
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">We can check the values of <span class="process-math">\(n\)</span> starting from <span class="process-math">\(n=0\)</span> until we find the smallest value of <span class="process-math">\(n\)</span> that satisfies the inequality. After checking, we find that the smallest value of <span class="process-math">\(n\)</span> that satisfies the inequality is <span class="process-math">\(n=8\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-sin-degree-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="interactive-iframe-container"><iframe src="https://www.desmos.com/calculator/7b85e78f17" id="ex-error-bound-sin-degree-3-8" style="width:420px; height:840px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="ex-error-bound-sin-degree-3-8.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.10.1"><a tabindex="-1" href="#ex-error-bound-sin-degree-3" title="Copy heading and permalink for Solution 2.3.10.1" aria-label="Copy heading and permalink for Solution 2.3.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.10: Finding the value of n such that the error is less than a given tolerance"><a tabindex="-1" href="#ex-error-bound-sin-degree" title="Copy heading and permalink for Example 2.3.10: Finding the value of n such that the error is less than a given tolerance" aria-label="Copy heading and permalink for Example 2.3.10: Finding the value of n such that the error is less than a given tolerance">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="subsection-3.html#ex-error-bound-sin-degree">In Context</a></span>
+</body>
+</html>

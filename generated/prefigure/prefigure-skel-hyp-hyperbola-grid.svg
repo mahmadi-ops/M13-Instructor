@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-skel-hyp-hyperbola-grid-figure" width="364" height="324" viewBox="0 0 364 324">
+  <defs>
+    <clipPath id="prefigure-skel-hyp-hyperbola-grid-__clipPath-0">
+      <rect x="12.0" y="12.0" width="340.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-skel-hyp-hyperbola-grid-__clipPath-1">
+      <rect x="12.0" y="12.0" width="340.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-skel-hyp-hyperbola-grid-grid-axes">
+    <g id="prefigure-skel-hyp-hyperbola-grid-grid" stroke="#ccc" stroke-width="1">
+      <line x1="32.0" y1="312.0" x2="32.0" y2="12.0"/>
+      <line x1="82.0" y1="312.0" x2="82.0" y2="12.0"/>
+      <line x1="132.0" y1="312.0" x2="132.0" y2="12.0"/>
+      <line x1="182.0" y1="312.0" x2="182.0" y2="12.0"/>
+      <line x1="232.0" y1="312.0" x2="232.0" y2="12.0"/>
+      <line x1="282.0" y1="312.0" x2="282.0" y2="12.0"/>
+      <line x1="332.0" y1="312.0" x2="332.0" y2="12.0"/>
+      <line x1="12.0" y1="265.4" x2="352.0" y2="265.4"/>
+      <line x1="12.0" y1="213.7" x2="352.0" y2="213.7"/>
+      <line x1="12.0" y1="162.0" x2="352.0" y2="162.0"/>
+      <line x1="12.0" y1="110.3" x2="352.0" y2="110.3"/>
+      <line x1="12.0" y1="58.6" x2="352.0" y2="58.6"/>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-skel-hyp-hyperbola-grid-__line-12" x1="12.0" y1="162.0" x2="352.0" y2="162.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-skel-hyp-hyperbola-grid-__line-13" x1="82.0" y1="165.0" x2="82.0" y2="159.0"/>
+        <line id="prefigure-skel-hyp-hyperbola-grid-__line-14" x1="282.0" y1="165.0" x2="282.0" y2="159.0"/>
+      </g>
+      <line id="prefigure-skel-hyp-hyperbola-grid-__line-15" x1="182.0" y1="312.0" x2="182.0" y2="12.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-skel-hyp-hyperbola-grid-__line-16" x1="179.0" y1="265.4" x2="185.0" y2="265.4"/>
+        <line id="prefigure-skel-hyp-hyperbola-grid-__line-17" x1="179.0" y1="58.6" x2="185.0" y2="58.6"/>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-__label-0" transform="translate(348.0,158.0) translate(-10.4,-8.2)">
+      <g id="prefigure-skel-hyp-hyperbola-grid-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-__label-1" transform="translate(186.0,16.0) translate(0.0,-0.0)">
+      <g id="prefigure-skel-hyp-hyperbola-grid-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-__label-2" transform="translate(82.0,173.0) translate(-7.5,-0.0)">
+      <g id="prefigure-skel-hyp-hyperbola-grid-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-4-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-__label-3" transform="translate(282.0,173.0) translate(-4.5,-0.0)">
+      <g id="prefigure-skel-hyp-hyperbola-grid-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-5-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-__label-4" transform="translate(171.0,265.4) translate(-15.1,-6.0)">
+      <g id="prefigure-skel-hyp-hyperbola-grid-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-6-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-6-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-6-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-hyperbola-grid-__label-5" transform="translate(171.0,58.6) translate(-9.0,-6.0)">
+      <g id="prefigure-skel-hyp-hyperbola-grid-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-hyperbola-grid-MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-hyperbola-grid-MJX-7-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-skel-hyp-hyperbola-grid-hh-right" d="M 317.0 291.7 L 314.9 289.4 L 312.9 287.2 L 310.9 284.9 L 309.0 282.8 L 307.1 280.6 L 305.2 278.5 L 303.4 276.4 L 301.6 274.3 L 299.8 272.3 L 298.0 270.3 L 296.3 268.4 L 294.6 266.4 L 293.0 264.5 L 291.4 262.6 L 288.2 259.0 L 285.2 255.4 L 282.3 251.9 L 279.5 248.5 L 276.7 245.2 L 274.1 242.1 L 271.6 239.0 L 269.2 235.9 L 266.9 233.0 L 264.7 230.1 L 262.6 227.4 L 260.5 224.6 L 258.6 222.0 L 256.7 219.4 L 254.9 216.9 L 253.2 214.4 L 251.6 212.0 L 250.0 209.7 L 248.5 207.4 L 247.1 205.1 L 245.8 202.9 L 244.5 200.8 L 243.3 198.7 L 242.2 196.6 L 241.1 194.6 L 240.1 192.6 L 239.1 190.6 L 238.3 188.7 L 237.4 186.8 L 236.7 184.9 L 236.0 183.0 L 235.3 181.2 L 234.7 179.4 L 234.2 177.6 L 233.8 175.8 L 233.3 174.1 L 233.0 172.3 L 232.7 170.6 L 232.4 168.8 L 232.2 167.1 L 232.1 165.4 L 232.0 163.7 L 232.0 162.0 L 232.0 160.3 L 232.1 158.6 L 232.2 156.9 L 232.4 155.2 L 232.7 153.4 L 233.0 151.7 L 233.3 149.9 L 233.8 148.2 L 234.2 146.4 L 234.7 144.6 L 235.3 142.8 L 236.0 141.0 L 236.7 139.1 L 237.4 137.2 L 238.3 135.3 L 239.1 133.4 L 240.1 131.4 L 241.1 129.4 L 242.2 127.4 L 243.3 125.3 L 244.5 123.2 L 245.8 121.1 L 247.1 118.9 L 248.5 116.6 L 250.0 114.3 L 251.6 112.0 L 253.2 109.6 L 254.9 107.1 L 256.7 104.6 L 258.6 102.0 L 260.5 99.4 L 262.6 96.6 L 264.7 93.9 L 266.9 91.0 L 269.2 88.1 L 271.6 85.0 L 274.1 81.9 L 276.7 78.8 L 279.5 75.5 L 282.3 72.1 L 285.2 68.6 L 288.2 65.0 L 291.4 61.4 L 293.0 59.5 L 294.6 57.6 L 296.3 55.6 L 298.0 53.7 L 299.8 51.7 L 301.6 49.7 L 303.4 47.6 L 305.2 45.5 L 307.1 43.4 L 309.0 41.2 L 310.9 39.1 L 312.9 36.8 L 314.9 34.6 L 317.0 32.3" stroke="#56B4E9" stroke-width="3" fill="none" clip-path="url(#prefigure-skel-hyp-hyperbola-grid-__clipPath-1)"/>
+  <path id="prefigure-skel-hyp-hyperbola-grid-hh-left" d="M 47.0 291.7 L 49.1 289.4 L 51.1 287.2 L 53.1 284.9 L 55.0 282.8 L 56.9 280.6 L 58.8 278.5 L 60.6 276.4 L 62.4 274.3 L 64.2 272.3 L 66.0 270.3 L 67.7 268.4 L 69.4 266.4 L 71.0 264.5 L 72.6 262.6 L 75.8 259.0 L 78.8 255.4 L 81.7 251.9 L 84.5 248.5 L 87.3 245.2 L 89.9 242.1 L 92.4 239.0 L 94.8 235.9 L 97.1 233.0 L 99.3 230.1 L 101.4 227.4 L 103.5 224.6 L 105.4 222.0 L 107.3 219.4 L 109.1 216.9 L 110.8 214.4 L 112.4 212.0 L 114.0 209.7 L 115.5 207.4 L 116.9 205.1 L 118.2 202.9 L 119.5 200.8 L 120.7 198.7 L 121.8 196.6 L 122.9 194.6 L 123.9 192.6 L 124.9 190.6 L 125.7 188.7 L 126.6 186.8 L 127.3 184.9 L 128.0 183.0 L 128.7 181.2 L 129.3 179.4 L 129.8 177.6 L 130.2 175.8 L 130.7 174.1 L 131.0 172.3 L 131.3 170.6 L 131.6 168.8 L 131.8 167.1 L 131.9 165.4 L 132.0 163.7 L 132.0 162.0 L 132.0 160.3 L 131.9 158.6 L 131.8 156.9 L 131.6 155.2 L 131.3 153.4 L 131.0 151.7 L 130.7 149.9 L 130.2 148.2 L 129.8 146.4 L 129.3 144.6 L 128.7 142.8 L 128.0 141.0 L 127.3 139.1 L 126.6 137.2 L 125.7 135.3 L 124.9 133.4 L 123.9 131.4 L 122.9 129.4 L 121.8 127.4 L 120.7 125.3 L 119.5 123.2 L 118.2 121.1 L 116.9 118.9 L 115.5 116.6 L 114.0 114.3 L 112.4 112.0 L 110.8 109.6 L 109.1 107.1 L 107.3 104.6 L 105.4 102.0 L 103.5 99.4 L 101.4 96.6 L 99.3 93.9 L 97.1 91.0 L 94.8 88.1 L 92.4 85.0 L 89.9 81.9 L 87.3 78.8 L 84.5 75.5 L 81.7 72.1 L 78.8 68.6 L 75.8 65.0 L 72.6 61.4 L 71.0 59.5 L 69.4 57.6 L 67.7 55.6 L 66.0 53.7 L 64.2 51.7 L 62.4 49.7 L 60.6 47.6 L 58.8 45.5 L 56.9 43.4 L 55.0 41.2 L 53.1 39.1 L 51.1 36.8 L 49.1 34.6 L 47.0 32.3" stroke="#56B4E9" stroke-width="3" fill="none" clip-path="url(#prefigure-skel-hyp-hyperbola-grid-__clipPath-1)"/>
+</svg>

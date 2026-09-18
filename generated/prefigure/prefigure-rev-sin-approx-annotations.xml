@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rev-sin-approx-figure" speech2="The sine curve, dashed blue, and the cubic x minus x cubed over six, solid vermillion, plotted together. Two dashed gray vertical lines at x equals plus and minus zero point eight six three mark the interval on which the two curves are visually indistinguishable; outside it the cubic pulls away from the sine curve.">
+      <grouped>prefigure-rev-sin-approx-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-sin-approx-grid-axes</active>
+        <active>prefigure-rev-sin-approx-sa-f</active>
+        <active>prefigure-rev-sin-approx-sa-p</active>
+        <active>prefigure-rev-sin-approx-sa-left</active>
+        <active>prefigure-rev-sin-approx-sa-right</active>
+      </children>
+      <components>
+        <active>prefigure-rev-sin-approx-grid-axes</active>
+        <active>prefigure-rev-sin-approx-sa-f</active>
+        <active>prefigure-rev-sin-approx-sa-p</active>
+        <active>prefigure-rev-sin-approx-sa-left</active>
+        <active>prefigure-rev-sin-approx-sa-right</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rev-sin-approx-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-sin-approx-grid</active>
+        <active>prefigure-rev-sin-approx-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rev-sin-approx-grid</active>
+        <active>prefigure-rev-sin-approx-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-grid" speech2="The coordinate grid">
+      <active>prefigure-rev-sin-approx-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-axes" speech2="The coordinate axes">
+      <active>prefigure-rev-sin-approx-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-sa-f" speech2="The function y equals sine x.">
+      <active>prefigure-rev-sin-approx-sa-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-sa-p" speech2="The cubic Taylor polynomial x minus x cubed over six.">
+      <active>prefigure-rev-sin-approx-sa-p</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-sa-left" speech2="The left endpoint of the interval, x equals negative zero point eight six three.">
+      <active>prefigure-rev-sin-approx-sa-left</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-sin-approx-sa-right" speech2="The right endpoint of the interval, x equals zero point eight six three. Inside the interval the error is at most four thousandths.">
+      <active>prefigure-rev-sin-approx-sa-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rev-sin-approx-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Directions of fastest increase, fastest decrease, and no change</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  button {
+    font-size: 14px; padding: 5px 12px; border-radius: 6px;
+    border: 1px solid #888; background: #f4f4f4; cursor: pointer;
+  }
+  button:hover { background: #e6e6e6; }
+  button.active { background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+  /* the readout is mathematics: the page's maths face */
+  #readout, #controls span { font-family: "PT Serif", "Times New Roman", Times, serif; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em;
+    font-variant-numeric: tabular-nums; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span style="font-size:14px;">f = x&sup2;/2 + y&sup2;/2, P&#8320;(1,1). Drag u, or snap to:</span>
+    <button id="btnA">A: fastest increase</button>
+    <button id="btnB">B: fastest decrease</button>
+    <button id="btnC">C: no change</button>
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"><canvas id="cv"></canvas></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // the book sets its mathematics in PT Serif
+  var SERIF = "'PT Serif', 'Times New Roman', Times, serif";
+  // palette (same as the sample-graphs interactive)
+  var SURF_BLUE = "#4f8fd6", DARK_BLUE = "#35659a", GOLD = "#f2c14e",
+      RED = "#d1362f", GRAY = "#999999", BTN_BLUE = "#2a6fdb", GREEN = "#009e73";
+
+  var canvas = document.getElementById("cv"), ctx = canvas.getContext("2d");
+  var P0 = { x: 1, y: 1 };
+  var alpha = 45 * Math.PI / 180; // angle of u
+  var MAG = Math.sqrt(2);         // |grad f(1,1)| = |(1,1)|
+  var zeroToggle = false;
+
+  var BB = { xmin: -2.55, xmax: 2.85, ymin: -2.55, ymax: 2.85 };
+  function view() {
+    var w = canvas.width, h = canvas.height;
+    var k = Math.min(w / (BB.xmax - BB.xmin), h / (BB.ymax - BB.ymin));
+    return { k: k,
+      ox: w / 2 - k * (BB.xmin + BB.xmax) / 2,
+      oy: h / 2 + k * (BB.ymin + BB.ymax) / 2 };
+  }
+
+  function arrow(v, x0, y0, x1, y1, color, lw, dashed) {
+    var ax = v.ox + v.k * x0, ay = v.oy - v.k * y0;
+    var bx = v.ox + v.k * x1, by = v.oy - v.k * y1;
+    var ang = Math.atan2(by - ay, bx - ax), hl = 10 + lw * 1.5;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = lw;
+    if (dashed) ctx.setLineDash([5, 5]);
+    ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.beginPath();
+    ctx.moveTo(bx, by);
+    ctx.lineTo(bx - hl * Math.cos(ang - 0.42), by - hl * Math.sin(ang - 0.42));
+    ctx.lineTo(bx - hl * Math.cos(ang + 0.42), by - hl * Math.sin(ang + 0.42));
+    ctx.closePath(); ctx.fill();
+  }
+
+  function classify() {
+    var u1 = Math.cos(alpha), u2 = Math.sin(alpha);
+    var D = u1 + u2; // grad f(1,1) . u
+    if (Math.abs(D - MAG) < 0.02) return { D: D, note: " = ‖∇f‖  — fastest increase", col: GREEN };
+    if (Math.abs(D + MAG) < 0.02) return { D: D, note: " = −‖∇f‖  — fastest decrease", col: RED };
+    if (Math.abs(D) < 0.02) return { D: D, note: "  — no change (u ⊥ ∇f)", col: GOLD };
+    return { D: D, note: "", col: BTN_BLUE };
+  }
+
+  function draw() {
+    var v = view(), w = canvas.width, h = canvas.height;
+    var dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, w, h);
+    ctx.font = "italic " + (15 * dpr) + 'px ' + SERIF;
+
+    // level curves: x^2/2 + y^2/2 = c, radius sqrt(2c)
+    ctx.strokeStyle = SURF_BLUE; ctx.globalAlpha = 0.35; ctx.lineWidth = 1.4 * dpr;
+    [0.5, 1, 1.732, 2, 2.236].forEach(function (r) {
+      ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k * r, 0, 2 * Math.PI); ctx.stroke();
+    });
+    ctx.globalAlpha = 1;
+    // highlighted level curve through P0: f = 1, radius sqrt(2)
+    ctx.strokeStyle = GOLD; ctx.lineWidth = 3 * dpr;
+    ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k * Math.sqrt(2), 0, 2 * Math.PI); ctx.stroke();
+    ctx.fillStyle = "#a37414";
+    ctx.fillText("f = 1", v.ox - v.k * 1.62, v.oy + v.k * 1.05);
+
+    // axes
+    arrow(v, BB.xmin, 0, BB.xmax - 0.05, 0, GRAY, 1.2 * dpr);
+    arrow(v, 0, BB.ymin, 0, BB.ymax - 0.05, GRAY, 1.2 * dpr);
+    ctx.fillStyle = "#666";
+    ctx.fillText("x", v.ox + v.k * (BB.xmax - 0.2), v.oy + 16 * dpr);
+    ctx.fillText("y", v.ox - 16 * dpr, v.oy - v.k * (BB.ymax - 0.2));
+
+    // tangent line to the level curve at P0 (dashed gray)
+    ctx.strokeStyle = "#aaaaaa"; ctx.lineWidth = 1.4 * dpr;
+    ctx.setLineDash([7 * dpr, 5 * dpr]);
+    ctx.beginPath();
+    ctx.moveTo(v.ox + v.k * (P0.x - 0.95), v.oy - v.k * (P0.y + 0.95));
+    ctx.lineTo(v.ox + v.k * (P0.x + 0.95), v.oy - v.k * (P0.y - 0.95));
+    ctx.stroke(); ctx.setLineDash([]);
+
+    // u arrow at P0 (color reflects the special cases)
+    var cls = classify();
+    var u1 = Math.cos(alpha), u2 = Math.sin(alpha), L = 0.85;
+    arrow(v, P0.x, P0.y, P0.x + L * u1, P0.y + L * u2, cls.col, 3.6 * dpr);
+    ctx.fillStyle = cls.col;
+    ctx.fillText("u", v.ox + v.k * (P0.x + (L + 0.18) * u1) - 4 * dpr,
+                 v.oy - v.k * (P0.y + (L + 0.18) * u2) + 4 * dpr);
+
+    // base point
+    ctx.fillStyle = "#222";
+    ctx.beginPath();
+    ctx.arc(v.ox + v.k * P0.x, v.oy - v.k * P0.y, 4.5 * dpr, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.fillText("P₀(1,1)", v.ox + v.k * P0.x + 8 * dpr, v.oy - v.k * P0.y + 18 * dpr);
+  }
+
+  function update() {
+    var u1 = Math.cos(alpha), u2 = Math.sin(alpha);
+    var cls = classify();
+    document.getElementById("readout").textContent =
+      "u = ⟨" + u1.toFixed(2) + ", " + u2.toFixed(2) + "⟩:   " +
+      "Dᵤf = ∇f·u = u₁ + u₂ = " + cls.D.toFixed(2) + cls.note;
+    draw();
+  }
+
+  // dragging: pointer direction relative to P0 sets alpha
+  var dragging = false;
+  function setFromPointer(clientX, clientY) {
+    var rect = canvas.getBoundingClientRect();
+    var dpr = window.devicePixelRatio || 1;
+    var v = view();
+    var x = ((clientX - rect.left) * dpr - v.ox) / v.k - P0.x;
+    var y = (v.oy - (clientY - rect.top) * dpr) / v.k - P0.y;
+    if (x * x + y * y > 1e-6) { alpha = Math.atan2(y, x); update(); }
+  }
+  canvas.addEventListener("mousedown", function (e) { dragging = true; setFromPointer(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { if (dragging) setFromPointer(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  canvas.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { dragging = true;
+      setFromPointer(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  canvas.addEventListener("touchmove", function (e) {
+    if (dragging && e.touches.length === 1) {
+      setFromPointer(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // buttons: snap to the answers of Example III
+  document.getElementById("btnA").addEventListener("click", function () {
+    alpha = Math.PI / 4; update();
+  });
+  document.getElementById("btnB").addEventListener("click", function () {
+    alpha = Math.PI + Math.PI / 4; update();
+  });
+  document.getElementById("btnC").addEventListener("click", function () {
+    // toggles between u and u-tilde = -u
+    alpha = zeroToggle ? (3 * Math.PI / 4) : (-Math.PI / 4);
+    zeroToggle = !zeroToggle;
+    update();
+  });
+
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = document.getElementById("app").clientWidth;
+    var used = document.getElementById("controls").offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(260, window.innerHeight - used - 4);
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + "px"; canvas.style.height = h + "px";
+    update();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-taste-disagree-figure" speech2="A coordinate grid whose horizontal axis is the rating of Sinners and whose vertical axis is the rating of Hamnet, both running from 0 to about 6. A short thick blue vector runs from the origin to the point 2 comma 2, labeled Ray. A longer green vector runs from the origin to the point 5 comma 5, labeled Gus, and lies along exactly the same line as the blue vector. An orange vector runs from the origin to the point 5 comma 4, labeled Vera, just below the green one.">
+      <grouped>prefigure-taste-disagree-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taste-disagree-grid-axes</active>
+        <active>prefigure-taste-disagree-grid-disagree</active>
+        <active>prefigure-taste-disagree-vec-r</active>
+        <active>prefigure-taste-disagree-vec-g</active>
+        <active>prefigure-taste-disagree-vec-v</active>
+      </children>
+      <components>
+        <active>prefigure-taste-disagree-grid-axes</active>
+        <active>prefigure-taste-disagree-grid-disagree</active>
+        <active>prefigure-taste-disagree-vec-r</active>
+        <active>prefigure-taste-disagree-vec-g</active>
+        <active>prefigure-taste-disagree-vec-v</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-taste-disagree-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taste-disagree-grid</active>
+        <active>prefigure-taste-disagree-axes</active>
+      </children>
+      <components>
+        <active>prefigure-taste-disagree-grid</active>
+        <active>prefigure-taste-disagree-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-taste-disagree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-grid" speech2="The coordinate grid">
+      <active>prefigure-taste-disagree-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-taste-disagree-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-axes" speech2="The coordinate axes">
+      <active>prefigure-taste-disagree-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taste-disagree-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-grid-disagree" speech2="A coordinate grid with the Sinners rating on the horizontal axis and the Hamnet rating on the vertical axis.">
+      <active>prefigure-taste-disagree-grid-disagree</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taste-disagree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-vec-r" speech2="Ray's taste vector a equals 2 comma 2, drawn as a short thick blue vector from the origin.">
+      <active>prefigure-taste-disagree-vec-r</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-taste-disagree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-vec-g" speech2="Gus's taste vector c equals 5 comma 5, drawn in green from the origin along the same line as Ray's vector.">
+      <active>prefigure-taste-disagree-vec-g</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-taste-disagree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-disagree-vec-v" speech2="Vera's taste vector b equals 5 comma 4, drawn in orange from the origin, slightly below Gus's vector.">
+      <active>prefigure-taste-disagree-vec-v</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-taste-disagree-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

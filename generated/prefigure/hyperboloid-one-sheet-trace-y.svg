@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="hyperboloid-one-sheet-trace-y-figure" width="220" height="242" viewBox="0 0 220 242">
+  <defs>
+    <clipPath id="hyperboloid-one-sheet-trace-y-__clipPath-0">
+      <rect x="5.0" y="5.0" width="210.0" height="232.0"/>
+    </clipPath>
+    <clipPath id="hyperboloid-one-sheet-trace-y-__clipPath-1">
+      <rect x="5.0" y="5.0" width="210.0" height="232.0"/>
+    </clipPath>
+    <clipPath id="hyperboloid-one-sheet-trace-y-__clipPath-2">
+      <rect x="17.0" y="41.0" width="190.0" height="190.0"/>
+    </clipPath>
+    <marker id="hyperboloid-one-sheet-trace-y-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="hyperboloid-one-sheet-trace-y-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="hyperboloid-one-sheet-trace-y-axes" stroke="black" stroke-width="2">
+    <line id="hyperboloid-one-sheet-trace-y-__line-0" x1="17.0" y1="136.0" x2="207.0" y2="136.0" stroke="black" stroke-width="2" marker-end="url(#hyperboloid-one-sheet-trace-y-arrow-head-end-2_None_24_60-black)"/>
+    <line id="hyperboloid-one-sheet-trace-y-__line-1" x1="112.0" y1="231.0" x2="112.0" y2="41.0" stroke="black" stroke-width="2" marker-end="url(#hyperboloid-one-sheet-trace-y-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="hyperboloid-one-sheet-trace-y-__label-0" transform="translate(201.0,130.0) translate(-10.4,-8.2)">
+    <g id="hyperboloid-one-sheet-trace-y-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-2-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="hyperboloid-one-sheet-trace-y-__label-1" transform="translate(118.0,47.0) translate(0.0,-0.0)">
+    <g id="hyperboloid-one-sheet-trace-y-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.416px" height="8.200px" role="img" focusable="false" viewBox="0 -442 465 453" x="0.0" y="0.0">
+        <defs>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-3-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="z">
+              <use data-c="1D467" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-3-TEX-I-1D467"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="hyperboloid-one-sheet-trace-y-trace-y">
+    <path id="hyperboloid-one-sheet-trace-y-__path-0" d="M 167.0 226.0 L 166.0 223.5 L 165.0 221.0 L 164.0 218.6 L 163.1 216.2 L 162.2 213.9 L 161.3 211.6 L 160.5 209.4 L 159.6 207.1 L 158.8 205.0 L 158.0 202.8 L 157.3 200.7 L 156.6 198.7 L 155.8 196.6 L 155.2 194.6 L 154.5 192.7 L 153.9 190.7 L 153.2 188.8 L 152.6 186.9 L 152.1 185.1 L 151.5 183.3 L 151.0 181.4 L 150.5 179.7 L 150.0 177.9 L 149.5 176.2 L 149.0 174.5 L 148.6 172.8 L 148.2 171.1 L 147.8 169.4 L 147.4 167.8 L 147.1 166.2 L 146.7 164.6 L 146.4 163.0 L 146.1 161.4 L 145.8 159.8 L 145.6 158.3 L 145.3 156.7 L 145.1 155.2 L 144.9 153.7 L 144.7 152.2 L 144.5 150.7 L 144.3 149.2 L 144.2 147.7 L 144.1 146.2 L 144.0 144.8 L 143.9 143.3 L 143.8 141.8 L 143.7 140.4 L 143.7 138.9 L 143.7 137.5 L 143.7 136.0 L 143.7 134.5 L 143.7 133.1 L 143.7 131.6 L 143.8 130.2 L 143.9 128.7 L 144.0 127.2 L 144.1 125.8 L 144.2 124.3 L 144.3 122.8 L 144.5 121.3 L 144.7 119.8 L 144.9 118.3 L 145.1 116.8 L 145.3 115.3 L 145.6 113.7 L 145.8 112.2 L 146.1 110.6 L 146.4 109.0 L 146.7 107.4 L 147.1 105.8 L 147.4 104.2 L 147.8 102.6 L 148.2 100.9 L 148.6 99.2 L 149.0 97.5 L 149.5 95.8 L 150.0 94.1 L 150.5 92.3 L 151.0 90.6 L 151.5 88.7 L 152.1 86.9 L 152.6 85.1 L 153.2 83.2 L 153.9 81.3 L 154.5 79.3 L 155.2 77.4 L 155.8 75.4 L 156.6 73.3 L 157.3 71.3 L 158.0 69.2 L 158.8 67.0 L 159.6 64.9 L 160.5 62.6 L 161.3 60.4 L 162.2 58.1 L 163.1 55.8 L 164.0 53.4 L 165.0 51.0 L 166.0 48.5 L 167.0 46.0" stroke="#009E73" stroke-width="3" fill="none" clip-path="url(#hyperboloid-one-sheet-trace-y-__clipPath-2)"/>
+    <path id="hyperboloid-one-sheet-trace-y-__path-1" d="M 57.0 226.0 L 58.0 223.5 L 59.0 221.0 L 60.0 218.6 L 60.9 216.2 L 61.8 213.9 L 62.7 211.6 L 63.5 209.4 L 64.4 207.1 L 65.2 205.0 L 66.0 202.8 L 66.7 200.7 L 67.4 198.7 L 68.2 196.6 L 68.8 194.6 L 69.5 192.7 L 70.1 190.7 L 70.8 188.8 L 71.4 186.9 L 71.9 185.1 L 72.5 183.3 L 73.0 181.4 L 73.5 179.7 L 74.0 177.9 L 74.5 176.2 L 75.0 174.5 L 75.4 172.8 L 75.8 171.1 L 76.2 169.4 L 76.6 167.8 L 76.9 166.2 L 77.3 164.6 L 77.6 163.0 L 77.9 161.4 L 78.2 159.8 L 78.4 158.3 L 78.7 156.7 L 78.9 155.2 L 79.1 153.7 L 79.3 152.2 L 79.5 150.7 L 79.7 149.2 L 79.8 147.7 L 79.9 146.2 L 80.0 144.8 L 80.1 143.3 L 80.2 141.8 L 80.3 140.4 L 80.3 138.9 L 80.3 137.5 L 80.3 136.0 L 80.3 134.5 L 80.3 133.1 L 80.3 131.6 L 80.2 130.2 L 80.1 128.7 L 80.0 127.2 L 79.9 125.8 L 79.8 124.3 L 79.7 122.8 L 79.5 121.3 L 79.3 119.8 L 79.1 118.3 L 78.9 116.8 L 78.7 115.3 L 78.4 113.7 L 78.2 112.2 L 77.9 110.6 L 77.6 109.0 L 77.3 107.4 L 76.9 105.8 L 76.6 104.2 L 76.2 102.6 L 75.8 100.9 L 75.4 99.2 L 75.0 97.5 L 74.5 95.8 L 74.0 94.1 L 73.5 92.3 L 73.0 90.6 L 72.5 88.7 L 71.9 86.9 L 71.4 85.1 L 70.8 83.2 L 70.1 81.3 L 69.5 79.3 L 68.8 77.4 L 68.2 75.4 L 67.4 73.3 L 66.7 71.3 L 66.0 69.2 L 65.2 67.0 L 64.4 64.9 L 63.5 62.6 L 62.7 60.4 L 61.8 58.1 L 60.9 55.8 L 60.0 53.4 L 59.0 51.0 L 58.0 48.5 L 57.0 46.0" stroke="#009E73" stroke-width="3" fill="none" clip-path="url(#hyperboloid-one-sheet-trace-y-__clipPath-2)"/>
+  </g>
+  <g id="hyperboloid-one-sheet-trace-y-__label-2" transform="translate(110.0,23.0) translate(-81.6,-12.2)">
+    <g id="hyperboloid-one-sheet-trace-y-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.528px" width="163.136px" height="24.328px" role="img" focusable="false" viewBox="0 -983.7 9013.4 1344.2" x="0.0" y="0.0">
+        <defs>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-A0" d=""/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="25" data-semantic-children="19,3,24" data-semantic-content="3" data-semantic-speech="y equals 0 colon StartFraction x squared Over 4 EndFraction minus StartFraction z squared Over 16 EndFraction equals 1">
+            <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="19" data-semantic-children="0,2" data-semantic-content="1" data-semantic-parent="25" data-semantic-speech="y equals 0">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="19" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-I-1D466"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="19" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+                <use data-c="3D" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="19" data-semantic-speech="0" transform="translate(1823.6,0)">
+                <use data-c="30" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-30"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="colon" data-semantic-id="3" data-semantic-parent="25" data-semantic-operator="punctuated" data-semantic-speech="colon" transform="translate(2601.3,0)">
+              <use data-c="3A" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-3A"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="24" data-semantic-children="4,5,21" data-semantic-parent="25" data-semantic-collapsed="(24 (c 22 23) 4 5 21)" data-semantic-speech="StartFraction x squared Over 4 EndFraction minus StartFraction z squared Over 16 EndFraction equals 1" transform="translate(3157.1,0)">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="4" data-semantic-parent="24" data-semantic-speech="">
+                <use data-c="A0" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="5" data-semantic-parent="24" data-semantic-speech="" transform="translate(250,0)">
+                <use data-c="A0" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="21" data-semantic-children="20,18" data-semantic-content="17" data-semantic-parent="24" data-semantic-speech="StartFraction x squared Over 4 EndFraction minus StartFraction z squared Over 16 EndFraction equals 1" transform="translate(500,0)">
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="20" data-semantic-children="10,16" data-semantic-content="11" data-semantic-parent="21" data-semantic-speech="StartFraction x squared Over 4 EndFraction minus StartFraction z squared Over 16 EndFraction">
+                  <g data-mml-node="mstyle">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="10" data-semantic-children="8,9" data-semantic-parent="20" data-semantic-speech="StartFraction x squared Over 4 EndFraction">
+                      <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="8" data-semantic-children="6,7" data-semantic-parent="10" data-semantic-speech="x squared" data-semantic-prefix="Numerator">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="8" data-semantic-speech="x" data-semantic-prefix="Base">
+                          <use data-c="1D465" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-I-1D465"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="8" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(399.8,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="10" data-semantic-speech="4" data-semantic-prefix="Denominator">
+                        <use data-c="34" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-34"/>
+                      </g>
+                      <rect width="913.2" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="11" data-semantic-parent="20" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(1375.4,0)">
+                    <use data-c="2212" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-2212"/>
+                  </g>
+                  <g data-mml-node="mstyle" transform="translate(2375.6,0)">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="16" data-semantic-children="14,15" data-semantic-parent="20" data-semantic-speech="StartFraction z squared Over 16 EndFraction">
+                      <g data-mml-node="msup" transform="translate(254.8,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="14" data-semantic-children="12,13" data-semantic-parent="16" data-semantic-speech="z squared" data-semantic-prefix="Numerator">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="14" data-semantic-speech="z" data-semantic-prefix="Base">
+                          <use data-c="1D467" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-I-1D467"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(498,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="13" data-semantic-parent="14" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="15" data-semantic-parent="16" data-semantic-speech="16" data-semantic-prefix="Denominator">
+                        <use data-c="31" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-31"/>
+                        <use data-c="36" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-36" transform="translate(500,0)"/>
+                      </g>
+                      <rect width="907.1" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="17" data-semantic-parent="21" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(3800.5,0)">
+                  <use data-c="3D" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-3D"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="18" data-semantic-parent="21" data-semantic-speech="1" transform="translate(4856.3,0)">
+                  <use data-c="31" xlink:href="#hyperboloid-one-sheet-trace-y-MJX-4-TEX-N-31"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

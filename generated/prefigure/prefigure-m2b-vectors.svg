@@ -1,0 +1,381 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-m2b-vectors-figure" width="792" height="322" viewBox="0 0 792 322">
+  <defs>
+    <clipPath id="prefigure-m2b-vectors-__clipPath-0">
+      <rect x="16.0" y="16.0" width="760.0" height="290.0"/>
+    </clipPath>
+    <clipPath id="prefigure-m2b-vectors-__clipPath-1">
+      <rect x="16.0" y="16.0" width="760.0" height="290.0"/>
+    </clipPath>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h0072B2" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#0072B2" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h0072B2-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h009E73" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#009E73" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h009E73-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-2_None_24_60-hD55E00" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#D55E00" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-2_None_24_60-hD55E00-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-3_None_24_60-h8B1A4A" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="#8B1A4A" stroke="none"/>
+    </marker>
+    <marker id="prefigure-m2b-vectors-arrow-head-end-3_None_24_60-h8B1A4A-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <path id="prefigure-m2b-vectors-pa-A" stroke="#0072B2" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h0072B2)" d="M 140.9 210.8 L 222.0 168.6"/>
+  <path id="prefigure-m2b-vectors-pa-B" stroke="#009E73" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h009E73)" d="M 140.9 210.8 L 79.7 104.7"/>
+  <path id="prefigure-m2b-vectors-pa-D" stroke="#D55E00" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-hD55E00)" d="M 224.2 167.5 L 80.7 103.6"/>
+  <g id="prefigure-m2b-vectors-pa-Al" transform="translate(230.3,169.7) translate(0.0,-10.1)">
+    <g id="prefigure-m2b-vectors-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#0072B2" width="13.576px" height="20.256px" role="img" focusable="false" viewBox="0 -1119 750 1119" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-2-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="prefigure-m2b-vectors-MJX-2-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper A With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                  <use data-c="1D434" xlink:href="#prefigure-m2b-vectors-MJX-2-TEX-I-1D434"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(514,305) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-2-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pa-Bl" transform="translate(72.4,96.4) translate(-13.7,-19.7)">
+    <g id="prefigure-m2b-vectors-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#009E73" width="13.736px" height="19.656px" role="img" focusable="false" viewBox="0 -1086 759 1086" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-3-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+          <path id="prefigure-m2b-vectors-MJX-3-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper B With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper B" data-semantic-prefix="Base">
+                  <use data-c="1D435" xlink:href="#prefigure-m2b-vectors-MJX-3-TEX-I-1D435"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(462.8,272) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-3-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pa-Dl" transform="translate(151.3,122.4) translate(-24.7,-21.7)">
+    <g id="prefigure-m2b-vectors-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px; color:#D55E00" width="49.440px" height="21.736px" role="img" focusable="false" viewBox="0 -1119 2731.4 1201" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-4-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+          <path id="prefigure-m2b-vectors-MJX-4-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+          <path id="prefigure-m2b-vectors-MJX-4-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="prefigure-m2b-vectors-MJX-4-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="7" data-semantic-children="2,6" data-semantic-content="3" data-semantic-speech="ModifyingAbove upper B With right arrow minus ModifyingAbove upper A With right arrow">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="7" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper B With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper B" data-semantic-prefix="Base">
+                  <use data-c="1D435" xlink:href="#prefigure-m2b-vectors-MJX-4-TEX-I-1D435"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(462.8,272) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-4-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="3" data-semantic-parent="7" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(981.2,0)">
+              <use data-c="2212" xlink:href="#prefigure-m2b-vectors-MJX-4-TEX-N-2212"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1981.4,0)">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="6" data-semantic-children="4,5" data-semantic-parent="7" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper A With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                  <use data-c="1D434" xlink:href="#prefigure-m2b-vectors-MJX-4-TEX-I-1D434"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="5" data-semantic-parent="6" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(514,305) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-4-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pa-t" transform="translate(124.1,288.7) translate(0.0,-9.0)">
+    <g id="prefigure-m2b-vectors-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="23.128px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1278 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-5-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-m2b-vectors-MJX-5-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+          <path id="prefigure-m2b-vectors-MJX-5-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="left parenthesis a right parenthesis">
+              <use data-c="28" xlink:href="#prefigure-m2b-vectors-MJX-5-TEX-N-28"/>
+              <use data-c="61" xlink:href="#prefigure-m2b-vectors-MJX-5-TEX-N-61" transform="translate(389,0)"/>
+              <use data-c="29" xlink:href="#prefigure-m2b-vectors-MJX-5-TEX-N-29" transform="translate(889,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <line id="prefigure-m2b-vectors-pb-axis" x1="338.7" y1="248.6" x2="526.1" y2="151.3" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="5 4" fill="none"/>
+  <path id="prefigure-m2b-vectors-pb-A" stroke="#0072B2" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h0072B2)" d="M 411.6 210.8 L 492.7 168.6"/>
+  <path id="prefigure-m2b-vectors-pb-B" stroke="#009E73" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h009E73)" d="M 411.6 210.8 L 350.4 104.7"/>
+  <path id="prefigure-m2b-vectors-pb-P" stroke="#8B1A4A" stroke-width="3" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-3_None_24_60-h8B1A4A)" d="M 411.6 210.8 L 406.5 213.4"/>
+  <line id="prefigure-m2b-vectors-pb-drop" x1="349.2" y1="102.6" x2="403.3" y2="215.1" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+  <g id="prefigure-m2b-vectors-pb-Al" transform="translate(501.0,169.7) translate(0.0,-10.1)">
+    <g id="prefigure-m2b-vectors-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#0072B2" width="13.576px" height="20.256px" role="img" focusable="false" viewBox="0 -1119 750 1119" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-6-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="prefigure-m2b-vectors-MJX-6-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper A With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                  <use data-c="1D434" xlink:href="#prefigure-m2b-vectors-MJX-6-TEX-I-1D434"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(514,305) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-6-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pb-Bl" transform="translate(343.1,96.4) translate(-13.7,-19.7)">
+    <g id="prefigure-m2b-vectors-__g-5">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#009E73" width="13.736px" height="19.656px" role="img" focusable="false" viewBox="0 -1086 759 1086" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-7-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+          <path id="prefigure-m2b-vectors-MJX-7-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper B With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper B" data-semantic-prefix="Base">
+                  <use data-c="1D435" xlink:href="#prefigure-m2b-vectors-MJX-7-TEX-I-1D435"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(462.8,272) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-7-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pb-Pl" transform="translate(396.2,240.0) translate(-59.6,-13.8)">
+    <g id="prefigure-m2b-vectors-__g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -7.920px; color:#8B1A4A" width="59.600px" height="27.576px" role="img" focusable="false" viewBox="0 -1086 3293 1523.7" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z"/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-N-6A" d="M98 609Q98 637 116 653T160 669Q183 667 200 652T217 609Q217 579 200 564T158 549Q133 549 116 564T98 609ZM28 -163Q58 -168 64 -168Q124 -168 135 -77Q137 -65 137 141T136 353Q132 371 120 377T72 385H52V408Q52 431 54 431L58 432Q62 432 70 432T87 433T108 434T133 436Q151 437 171 438T202 441T214 442H218V184Q217 -36 217 -59T211 -98Q195 -145 153 -175T58 -205Q9 -205 -23 -179T-55 -117Q-55 -94 -40 -79T-2 -64T36 -79T52 -118Q52 -143 28 -163Z"/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-N-2062" d=""/>
+          <path id="prefigure-m2b-vectors-MJX-8-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="9" data-semantic-children="4,7" data-semantic-content="8" data-semantic-speech="p r o j Subscript ModifyingAbove upper A With right arrow Baseline ModifyingAbove upper B With right arrow">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="unknown" data-semantic-id="4" data-semantic-children="0,3" data-semantic-parent="9" data-semantic-speech="p r o j Subscript ModifyingAbove upper A With right arrow Baseline">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-id="0" data-semantic-parent="4" data-semantic-speech="p r o j" data-semantic-prefix="Base">
+                <use data-c="70" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-70"/>
+                <use data-c="72" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-72" transform="translate(556,0)"/>
+                <use data-c="6F" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-6F" transform="translate(948,0)"/>
+                <use data-c="6A" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-6A" transform="translate(1448,0)"/>
+              </g>
+              <g data-mml-node="TeXAtom" transform="translate(1787,-437.7) scale(0.707)" data-mjx-texclass="ORD">
+                <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                  <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="3" data-semantic-children="1,2" data-semantic-parent="4" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper A With right arrow" data-semantic-prefix="Subscript">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="3" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                      <use data-c="1D434" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-I-1D434"/>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(514,305) translate(-250 0)">
+                      <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-20D7"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="8" data-semantic-parent="9" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(2367.3,0)">
+              <use data-c="2062" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-2062"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2534,0)">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="7" data-semantic-children="5,6" data-semantic-parent="9" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper B With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="upper B" data-semantic-prefix="Base">
+                  <use data-c="1D435" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-I-1D435"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="6" data-semantic-parent="7" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(462.8,272) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-8-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pb-t" transform="translate(394.8,288.7) translate(0.0,-9.0)">
+    <g id="prefigure-m2b-vectors-__g-7">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="24.144px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1334 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-9-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-m2b-vectors-MJX-9-TEX-N-62" d="M307 -11Q234 -11 168 55L158 37Q156 34 153 28T147 17T143 10L138 1L118 0H98V298Q98 599 97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V543Q179 391 180 391L183 394Q186 397 192 401T207 411T228 421T254 431T286 439T323 442Q401 442 461 379T522 216Q522 115 458 52T307 -11ZM182 98Q182 97 187 90T196 79T206 67T218 55T233 44T250 35T271 29T295 26Q330 26 363 46T412 113Q424 148 424 212Q424 287 412 323Q385 405 300 405Q270 405 239 390T188 347L182 339V98Z"/>
+          <path id="prefigure-m2b-vectors-MJX-9-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="left parenthesis b right parenthesis">
+              <use data-c="28" xlink:href="#prefigure-m2b-vectors-MJX-9-TEX-N-28"/>
+              <use data-c="62" xlink:href="#prefigure-m2b-vectors-MJX-9-TEX-N-62" transform="translate(389,0)"/>
+              <use data-c="29" xlink:href="#prefigure-m2b-vectors-MJX-9-TEX-N-29" transform="translate(945,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="prefigure-m2b-vectors-pc-A" stroke="#0072B2" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h0072B2)" d="M 682.3 210.8 L 763.4 168.6"/>
+  <path id="prefigure-m2b-vectors-pc-B" stroke="#009E73" stroke-width="2" fill="none" marker-end="url(#prefigure-m2b-vectors-arrow-head-end-2_None_24_60-h009E73)" d="M 682.3 210.8 L 621.1 104.7"/>
+  <path id="prefigure-m2b-vectors-pc-out" d="M 666.1 59.3 L 666.0 58.4 L 666.0 57.6 L 665.8 56.8 L 665.7 55.9 L 665.4 55.1 L 665.2 54.3 L 664.8 53.6 L 664.5 52.8 L 664.1 52.1 L 663.6 51.4 L 663.1 50.7 L 662.6 50.1 L 662.0 49.5 L 661.4 48.9 L 660.7 48.4 L 660.1 48.0 L 659.4 47.5 L 658.6 47.1 L 657.9 46.8 L 657.1 46.5 L 656.4 46.3 L 655.6 46.1 L 654.8 46.0 L 654.0 45.9 L 653.2 45.9 L 652.3 45.9 L 651.5 46.0 L 650.7 46.1 L 649.9 46.3 L 649.2 46.5 L 648.4 46.8 L 647.7 47.1 L 646.9 47.5 L 646.2 48.0 L 645.6 48.4 L 644.9 48.9 L 644.3 49.5 L 643.7 50.1 L 643.2 50.7 L 642.7 51.4 L 642.3 52.1 L 641.8 52.8 L 641.5 53.6 L 641.1 54.3 L 640.9 55.1 L 640.6 55.9 L 640.5 56.8 L 640.3 57.6 L 640.3 58.4 L 640.2 59.3 L 640.3 60.1 L 640.3 61.0 L 640.5 61.8 L 640.6 62.6 L 640.9 63.4 L 641.1 64.2 L 641.5 65.0 L 641.8 65.7 L 642.3 66.5 L 642.7 67.2 L 643.2 67.8 L 643.7 68.5 L 644.3 69.1 L 644.9 69.6 L 645.6 70.1 L 646.2 70.6 L 646.9 71.0 L 647.7 71.4 L 648.4 71.8 L 649.2 72.0 L 649.9 72.3 L 650.7 72.5 L 651.5 72.6 L 652.3 72.7 L 653.2 72.7 L 654.0 72.7 L 654.8 72.6 L 655.6 72.5 L 656.4 72.3 L 657.1 72.0 L 657.9 71.8 L 658.6 71.4 L 659.4 71.0 L 660.1 70.6 L 660.7 70.1 L 661.4 69.6 L 662.0 69.1 L 662.6 68.5 L 663.1 67.8 L 663.6 67.2 L 664.1 66.5 L 664.5 65.7 L 664.8 65.0 L 665.2 64.2 L 665.4 63.4 L 665.7 62.6 L 665.8 61.8 L 666.0 61.0 L 666.0 60.1 Z" stroke="#8B1A4A" stroke-width="2.5" fill="none"/>
+  <circle id="prefigure-m2b-vectors-pc-dot" cx="653.2" cy="59.3" r="4" stroke="black" stroke-width="2" fill="#8B1A4A"/>
+  <g id="prefigure-m2b-vectors-pc-Al" transform="translate(771.7,169.7) translate(0.0,-10.1)">
+    <g id="prefigure-m2b-vectors-__g-8">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#0072B2" width="13.576px" height="20.256px" role="img" focusable="false" viewBox="0 -1119 750 1119" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-10-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="prefigure-m2b-vectors-MJX-10-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper A With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                  <use data-c="1D434" xlink:href="#prefigure-m2b-vectors-MJX-10-TEX-I-1D434"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(514,305) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-10-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pc-Bl" transform="translate(613.8,96.4) translate(-13.7,-19.7)">
+    <g id="prefigure-m2b-vectors-__g-9">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#009E73" width="13.736px" height="19.656px" role="img" focusable="false" viewBox="0 -1086 759 1086" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-11-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+          <path id="prefigure-m2b-vectors-MJX-11-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper B With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper B" data-semantic-prefix="Base">
+                  <use data-c="1D435" xlink:href="#prefigure-m2b-vectors-MJX-11-TEX-I-1D435"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(462.8,272) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-11-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pc-Xl" transform="translate(673.8,59.3) translate(0.0,-10.1)">
+    <g id="prefigure-m2b-vectors-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#8B1A4A" width="49.440px" height="20.256px" role="img" focusable="false" viewBox="0 -1119 2731.4 1119" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-12-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="prefigure-m2b-vectors-MJX-12-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"/>
+          <path id="prefigure-m2b-vectors-MJX-12-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"/>
+          <path id="prefigure-m2b-vectors-MJX-12-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="unknown" data-semantic-id="7" data-semantic-children="2,6" data-semantic-content="3" data-semantic-speech="ModifyingAbove upper A With right arrow times ModifyingAbove upper B With right arrow">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="7" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper A With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                  <use data-c="1D434" xlink:href="#prefigure-m2b-vectors-MJX-12-TEX-I-1D434"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(514,305) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-12-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="unknown" data-semantic-id="3" data-semantic-parent="7" data-semantic-operator="infixop,×" data-semantic-speech="times" transform="translate(972.2,0)">
+              <use data-c="D7" xlink:href="#prefigure-m2b-vectors-MJX-12-TEX-N-D7"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1972.4,0)">
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="6" data-semantic-children="4,5" data-semantic-parent="7" data-semantic-attributes="texclass:ORD" data-semantic-speech="ModifyingAbove upper B With right arrow">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="upper B" data-semantic-prefix="Base">
+                  <use data-c="1D435" xlink:href="#prefigure-m2b-vectors-MJX-12-TEX-I-1D435"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="5" data-semantic-parent="6" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(462.8,272) translate(-250 0)">
+                  <use data-c="20D7" xlink:href="#prefigure-m2b-vectors-MJX-12-TEX-N-20D7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-m2b-vectors-pc-t" transform="translate(665.5,288.7) translate(0.0,-9.0)">
+    <g id="prefigure-m2b-vectors-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="22.120px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1222 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-m2b-vectors-MJX-13-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-m2b-vectors-MJX-13-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="prefigure-m2b-vectors-MJX-13-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="left parenthesis c right parenthesis">
+              <use data-c="28" xlink:href="#prefigure-m2b-vectors-MJX-13-TEX-N-28"/>
+              <use data-c="63" xlink:href="#prefigure-m2b-vectors-MJX-13-TEX-N-63" transform="translate(389,0)"/>
+              <use data-c="29" xlink:href="#prefigure-m2b-vectors-MJX-13-TEX-N-29" transform="translate(833,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

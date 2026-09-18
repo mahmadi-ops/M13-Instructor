@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-local-min-disk-figure" speech2="An open disk in the x y plane, centered at the origin, drawn with a dashed red boundary and shaded gray. The center point 0 comma 0 is marked in green. Inside the disk, f of 0 comma 0 is less than or equal to f of x comma y.">
+      <grouped>prefigure-local-min-disk-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-local-min-disk-ld-disk</active>
+        <active>prefigure-local-min-disk-ld-center</active>
+        <active>prefigure-local-min-disk-ld-ineq</active>
+      </children>
+      <components>
+        <active>prefigure-local-min-disk-ld-disk</active>
+        <active>prefigure-local-min-disk-ld-center</active>
+        <active>prefigure-local-min-disk-ld-ineq</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-local-min-disk-ld-disk" speech2="The open disk centered at the origin, with a dashed red boundary.">
+      <active>prefigure-local-min-disk-ld-disk</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-local-min-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-local-min-disk-ld-center" speech2="The center of the disk, the point 0 comma 0, marked in green, where the local minimum occurs.">
+      <active>prefigure-local-min-disk-ld-center</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-local-min-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-local-min-disk-ld-ineq" speech2="The inequality f of 0 comma 0 less than or equal to f of x comma y, which holds for all points x comma y inside the disk.">
+      <active>prefigure-local-min-disk-ld-ineq</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-local-min-disk-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-circular-chord-figure" speech2="Two position vectors of equal length r are drawn from the centre of a dashed circle, separated by a small angle delta theta. The chord delta r joins the tip of the first to the tip of the second. A dashed tangent line touches the circle at the first point, and the velocity arrow at that point lies along it. As delta t tends to zero the chord lines up with the tangent, and its length, two r sine of half delta theta, is approximately r times delta theta, giving speed equal to r times omega.">
+      <grouped>prefigure-circular-chord-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-circular-chord-ch-r1</active>
+        <active>prefigure-circular-chord-ch-r2</active>
+        <active>prefigure-circular-chord-ch-dr</active>
+        <active>prefigure-circular-chord-ch-v</active>
+        <active>prefigure-circular-chord-ch-tangent</active>
+        <active>prefigure-circular-chord-ch-dtheta</active>
+      </children>
+      <components>
+        <active>prefigure-circular-chord-ch-r1</active>
+        <active>prefigure-circular-chord-ch-r2</active>
+        <active>prefigure-circular-chord-ch-dr</active>
+        <active>prefigure-circular-chord-ch-v</active>
+        <active>prefigure-circular-chord-ch-tangent</active>
+        <active>prefigure-circular-chord-ch-dtheta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-circular-chord-ch-r1" speech2="The position vector at time t.">
+      <active>prefigure-circular-chord-ch-r1</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-circular-chord-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-circular-chord-ch-r2" speech2="The position vector a short time delta t later, the same length but turned through delta theta.">
+      <active>prefigure-circular-chord-ch-r2</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-circular-chord-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-circular-chord-ch-dr" speech2="The displacement delta r, the chord joining the two tips.">
+      <active>prefigure-circular-chord-ch-dr</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-circular-chord-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-circular-chord-ch-v" speech2="The velocity at time t, tangent to the circle.">
+      <active>prefigure-circular-chord-ch-v</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-circular-chord-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-circular-chord-ch-tangent" speech2="The tangent line to the circle at the position at time t.">
+      <active>prefigure-circular-chord-ch-tangent</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-circular-chord-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-circular-chord-ch-dtheta" speech2="The small angle delta theta swept out during the time interval.">
+      <active>prefigure-circular-chord-ch-dtheta</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-circular-chord-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.8.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absolute Extrema on a Circle.</span>
+</h2>
+<div class="para">Find the absolute maximum and minimum of <span class="process-math">\(f(x,y) = x^2 + y^2 - 2x + 2y + 5\text{,}\)</span> given the constraint <span class="process-math">\(x^2 + y^2 = 4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-lagrange-circle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">Completing the squares shows that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-lagrange-circle-square.html ./knowl/xref/fig-lagrange-circle-prefigure.html">
+\begin{equation}
+f(x,y) = (x-1)^2 + (y+1)^2 + 3,\tag{4.8.9}
+\end{equation}
+</div>
+<div class="para">so the graph of <span class="process-math">\(f\)</span> is a paraboloid with vertex at <span class="process-math">\((1,-1,3)\text{.}\)</span> The constraint can be thought of as <span class="process-math">\(g(x,y) = x^2 + y^2 - 4 = 0\text{,}\)</span> which is a circle of radius <span class="process-math">\(2\)</span> centered at the origin in the <span class="process-math">\(xy\)</span>-plane. Restricting <span class="process-math">\(f\)</span> to this circle traces a curve on the paraboloid, and the goal is to find the highest and lowest points of that curve. By <a href="sec-lagrange-examples.html#eq-lagrange-circle-square" class="xref" data-knowl="./knowl/xref/eq-lagrange-circle-square.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.8.9">(4.8.9)</a>, the level curves of <span class="process-math">\(f\)</span> are the circles <span class="process-math">\((x-1)^2 + (y+1)^2 = c - 3\)</span> centered at <span class="process-math">\((1,-1)\text{,}\)</span> and we are looking for the smallest and largest values of <span class="process-math">\(c\)</span> for which the level curve still meets the constraint circle; as <a href="sec-lagrange-examples.html#fig-lagrange-circle-prefigure" class="xref" data-knowl="./knowl/xref/fig-lagrange-circle-prefigure.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.8.9">Figure 4.8.9</a> shows, at those values the two circles are tangent and the gradients are collinear, <span class="process-math">\(\nabla f = \lambda\,\nabla g\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-lagrange-circle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">We compute the gradients:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\nabla f \amp= (2x-2)\,\hat{\imath} + (2y+2)\,\hat{\jmath}\\
+\nabla g \amp= 2x\,\hat{\imath} + 2y\,\hat{\jmath}.
+\end{align*}
+</div>
+<div class="para">The Lagrange multiplier equation gives</div>
+<div class="displaymath process-math">
+\begin{align*}
+\nabla f \amp= \lambda\,\nabla g\\
+\amp\;\Rightarrow\; (2x-2)\,\hat{\imath} + (2y+2)\,\hat{\jmath} = 2\lambda x\,\hat{\imath} + 2\lambda y\,\hat{\jmath}\\
+\amp\;\Rightarrow\; x - 1 = \lambda x, \quad y + 1 = \lambda y.
+\end{align*}
+</div>
+<div class="para">Adding the two equations yields</div>
+<div class="displaymath process-math">
+\begin{equation}
+x + y = \lambda(x + y).\tag{4.8.10}
+\end{equation}
+</div>
+<div class="para">This equation is satisfied if <span class="process-math">\(\lambda = 1\)</span> or if <span class="process-math">\(x + y = 0\text{.}\)</span> The case <span class="process-math">\(\lambda = 1\)</span> is impossible, since substituting it into <span class="process-math">\(x - 1 = \lambda x\)</span> gives <span class="process-math">\(-1 = 0\text{.}\)</span> Hence <span class="process-math">\(y = -x\text{,}\)</span> which we substitute into the constraint:</div>
+<div class="displaymath process-math">
+\begin{align*}
+x^2 + y^2 = 4 \amp\;\Rightarrow\; 2x^2 = 4
+\;\Rightarrow\; x = -y = \pm\sqrt{2}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-lagrange-circle-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Therefore the solutions are <span class="process-math">\((x,y) = (\sqrt 2, -\sqrt 2)\)</span> and <span class="process-math">\((x,y) = (-\sqrt 2, \sqrt 2)\text{.}\)</span> Using <a href="sec-lagrange-examples.html#eq-lagrange-circle-square" class="xref" data-knowl="./knowl/xref/eq-lagrange-circle-square.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.8.9">(4.8.9)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-lagrange-circle-square.html">
+\begin{align*}
+f(\sqrt 2, -\sqrt 2) \amp= 2(\sqrt 2 - 1)^2 + 3 = 9 - 4\sqrt 2\\
+f(-\sqrt 2, \sqrt 2) \amp= 2(\sqrt 2 + 1)^2 + 3 = 9 + 4\sqrt 2.
+\end{align*}
+</div>
+<div class="para">Since the circle is closed and bounded and <span class="process-math">\(f\)</span> is continuous, these are the absolute extrema: <span class="process-math">\(f(\sqrt 2, -\sqrt 2) = 9 - 4\sqrt 2\)</span> is the absolute minimum and <span class="process-math">\(f(-\sqrt 2, \sqrt 2) = 9 + 4\sqrt 2\)</span> is the absolute maximum.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-lagrange-circle-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">The answer agrees with the geometry of <a href="sec-lagrange-examples.html#eq-lagrange-circle-square" class="xref" data-knowl="./knowl/xref/eq-lagrange-circle-square.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.8.9">(4.8.9)</a>: on the constraint circle, <span class="process-math">\(f\)</span> equals <span class="process-math">\(3\)</span> plus the square of the distance to the point <span class="process-math">\((1,-1)\text{.}\)</span> The point of the circle farthest from <span class="process-math">\((1,-1)\)</span> is <span class="process-math">\((-\sqrt 2, \sqrt 2)\text{,}\)</span> at distance <span class="process-math">\(2 + \sqrt 2\text{,}\)</span> giving <span class="process-math">\(f = 3 + (2+\sqrt 2)^2 = 9 + 4\sqrt 2\text{,}\)</span> and the nearest point is <span class="process-math">\((\sqrt 2, -\sqrt 2)\text{,}\)</span> at distance <span class="process-math">\(2 - \sqrt 2\text{,}\)</span> giving <span class="process-math">\(f = 3 + (2-\sqrt 2)^2 = 9 - 4\sqrt 2\text{.}\)</span> Note also that in <a href="sec-lagrange-examples.html#fig-lagrange-circle-prefigure" class="xref" data-knowl="./knowl/xref/fig-lagrange-circle-prefigure.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.8.9">Figure 4.8.9</a> the gradients <span class="process-math">\(\nabla f\)</span> and <span class="process-math">\(\nabla g\)</span> point in the same direction at both extrema, but with different multipliers: from <span class="process-math">\(x - 1 = \lambda x\text{,}\)</span> we get <span class="process-math">\(\lambda = 1 - \frac{1}{\sqrt 2}\)</span> at the minimum and <span class="process-math">\(\lambda = 1 + \frac{1}{\sqrt 2}\)</span> at the maximum.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-lagrange-circle-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">The video below animates this picture. The completed-square form <a href="sec-lagrange-examples.html#eq-lagrange-circle-square" class="xref" data-knowl="./knowl/xref/eq-lagrange-circle-square.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.8.9">(4.8.9)</a> shows that, with no constraint, <span class="process-math">\(f\)</span> would take its least possible value <span class="process-math">\(3\)</span> at the vertex <span class="process-math">\((1,-1)\)</span>—the bottom of the paraboloid. But that vertex lies <em class="emphasis">inside</em> the constraint circle (a distance <span class="process-math">\(\sqrt 2 \lt 2\)</span> from the origin), so it is not available to us here: the method of Lagrange multipliers instead locates the highest and lowest points of <span class="process-math">\(f\)</span> <em class="emphasis">along</em> the circle. As the level circles of <span class="process-math">\(f\)</span> expand outward from <span class="process-math">\((1,-1)\text{,}\)</span> the first one to reach the constraint circle gives the constrained minimum <span class="process-math">\(9 - 4\sqrt 2\)</span> and the last gives the maximum <span class="process-math">\(9 + 4\sqrt 2\text{;}\)</span> at each of these contacts the two circles are tangent and <span class="process-math">\(\nabla f\)</span> is parallel to <span class="process-math">\(\nabla g\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-lagrange-circle-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><video id="video-lagrange-example3" class="video" controls=""><source src="external/videos/lagrange_circle_extrema_manim.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.8.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The extrema of <span class="process-math">\(f\)</span> on the constraint circle <span class="process-math">\(x^2 + y^2 = 4\)</span> (green). Over that circle the paraboloid carries the light blue curve, and we are after its highest and lowest points. The level circles of <span class="process-math">\(f\)</span> (red), centered at the vertex <span class="process-math">\((1,-1)\)</span> where <span class="process-math">\(f = 3\text{,}\)</span> expand until they touch the constraint circle; the first contact is the constrained minimum <span class="process-math">\(B\)</span> and the last is the maximum <span class="process-math">\(A\text{,}\)</span> and at both the gradients <span class="process-math">\(\nabla f\)</span> and <span class="process-math">\(\nabla g\)</span> line up, <span class="process-math">\(\nabla f = \lambda\,\nabla g\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 4.8.8"><a tabindex="-1" href="#fig-lagrange-circle-video" title="Copy heading and permalink for Figure 4.8.8" aria-label="Copy heading and permalink for Figure 4.8.8">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 4.8.7.1"><a tabindex="-1" href="#example-lagrange-circle-3" title="Copy heading and permalink for Solution 4.8.7.1" aria-label="Copy heading and permalink for Solution 4.8.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.8.7: Absolute Extrema on a Circle"><a tabindex="-1" href="#example-lagrange-circle" title="Copy heading and permalink for Example 4.8.7: Absolute Extrema on a Circle" aria-label="Copy heading and permalink for Example 4.8.7: Absolute Extrema on a Circle">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="sec-lagrange-examples.html#example-lagrange-circle">In Context</a></span>
+</body>
+</html>

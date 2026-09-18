@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rw17-porosity-figure" speech2="A wide blue ellipse with semi axes five in x and two point five in y. A vermillion point at negative five comma zero on the left end marks the maximum porosity of one hundred fifteen. A green point inside at nine fourths comma zero marks the minimum porosity of seventy nine eighths. Two gray points on the boundary at three comma plus and minus two are the boundary critical points where f equals nineteen.">
+      <grouped>prefigure-rw17-porosity-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw17-porosity-grid-axes</active>
+        <active>prefigure-rw17-porosity-po-ell</active>
+        <active>prefigure-rw17-porosity-po-max</active>
+        <active>prefigure-rw17-porosity-po-min</active>
+      </children>
+      <components>
+        <active>prefigure-rw17-porosity-grid-axes</active>
+        <active>prefigure-rw17-porosity-po-ell</active>
+        <active>prefigure-rw17-porosity-po-max</active>
+        <active>prefigure-rw17-porosity-po-min</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rw17-porosity-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rw17-porosity-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw17-porosity-grid</active>
+        <active>prefigure-rw17-porosity-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rw17-porosity-grid</active>
+        <active>prefigure-rw17-porosity-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rw17-porosity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw17-porosity-grid" speech2="The coordinate grid">
+      <active>prefigure-rw17-porosity-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rw17-porosity-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw17-porosity-axes" speech2="The coordinate axes">
+      <active>prefigure-rw17-porosity-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw17-porosity-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw17-porosity-po-ell" speech2="The boundary ellipse x squared plus four y squared equals twenty five.">
+      <active>prefigure-rw17-porosity-po-ell</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw17-porosity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw17-porosity-po-max" speech2="The absolute maximum of the porosity, at negative five comma zero.">
+      <active>prefigure-rw17-porosity-po-max</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rw17-porosity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw17-porosity-po-min" speech2="The absolute minimum of the porosity, at the interior critical point nine fourths comma zero.">
+      <active>prefigure-rw17-porosity-po-min</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rw17-porosity-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

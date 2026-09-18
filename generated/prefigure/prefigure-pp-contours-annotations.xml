@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-pp-contours-figure" speech2="Seven level curves of f, labelled zero through twelve from the bottom up. Each curve rises steeply from the left, reaches a hump near x equals two point four, and then descends gently to the right. The low valued curves are bunched tightly together near the x axis on the right, where the point Q sits, while the high valued curves are widely spaced near the top right, where the point R sits. The point P sits at the very top of the f equals twelve curve, where that curve is horizontal.">
+      <grouped>prefigure-pp-contours-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-contours-grid-axes</active>
+        <active>prefigure-pp-contours-ct-P</active>
+        <active>prefigure-pp-contours-ct-Q</active>
+        <active>prefigure-pp-contours-ct-R</active>
+      </children>
+      <components>
+        <active>prefigure-pp-contours-grid-axes</active>
+        <active>prefigure-pp-contours-ct-P</active>
+        <active>prefigure-pp-contours-ct-Q</active>
+        <active>prefigure-pp-contours-ct-R</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-pp-contours-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-pp-contours-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-contours-grid</active>
+        <active>prefigure-pp-contours-axes</active>
+      </children>
+      <components>
+        <active>prefigure-pp-contours-grid</active>
+        <active>prefigure-pp-contours-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-pp-contours-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-grid" speech2="The coordinate grid">
+      <active>prefigure-pp-contours-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-pp-contours-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-axes" speech2="The coordinate axes">
+      <active>prefigure-pp-contours-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-contours-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-ct-P" speech2="The point P, on the f equals twelve level curve at its highest point, where that curve is horizontal.">
+      <active>prefigure-pp-contours-ct-P</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-contours-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-ct-Q" speech2="The point Q, at the lower right, exactly midway between the f equals two and f equals four level curves, which are only about one quarter of a unit apart.">
+      <active>prefigure-pp-contours-ct-Q</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-pp-contours-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-ct-R" speech2="The point R, at the upper right, exactly midway between the f equals ten and f equals twelve level curves, which are about one unit apart.">
+      <active>prefigure-pp-contours-ct-R</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-pp-contours-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

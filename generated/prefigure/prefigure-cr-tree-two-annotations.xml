@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cr-tree-two-figure" speech2="A diamond shaped tree diagram. At the top is w equals f of x y. Two dashed blue branches descend from it, the left labelled partial f partial x leading to a node x, and the right labelled partial f partial y leading to a node y. From x and y two further branches, labelled d x d t and d y d t, descend and meet at the bottom node t.">
+      <grouped>prefigure-cr-tree-two-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cr-tree-two-t2-w</active>
+        <active>prefigure-cr-tree-two-t2-x</active>
+        <active>prefigure-cr-tree-two-t2-y</active>
+        <active>prefigure-cr-tree-two-t2-t</active>
+        <active>prefigure-cr-tree-two-t2-wx</active>
+        <active>prefigure-cr-tree-two-t2-xt</active>
+      </children>
+      <components>
+        <active>prefigure-cr-tree-two-t2-w</active>
+        <active>prefigure-cr-tree-two-t2-x</active>
+        <active>prefigure-cr-tree-two-t2-y</active>
+        <active>prefigure-cr-tree-two-t2-t</active>
+        <active>prefigure-cr-tree-two-t2-wx</active>
+        <active>prefigure-cr-tree-two-t2-xt</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cr-tree-two-t2-w" speech2="The dependent variable w at the top of the tree.">
+      <active>prefigure-cr-tree-two-t2-w</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cr-tree-two-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-two-t2-x" speech2="The intermediate variable x.">
+      <active>prefigure-cr-tree-two-t2-x</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cr-tree-two-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-two-t2-y" speech2="The intermediate variable y.">
+      <active>prefigure-cr-tree-two-t2-y</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cr-tree-two-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-two-t2-t" speech2="The independent variable t at the bottom.">
+      <active>prefigure-cr-tree-two-t2-t</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-cr-tree-two-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-two-t2-wx" speech2="The branch from w to x contributes the factor partial f partial x.">
+      <active>prefigure-cr-tree-two-t2-wx</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-cr-tree-two-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-two-t2-xt" speech2="The branch from x to t contributes the factor d x d t. Multiplying along this path gives the first term of the chain rule.">
+      <active>prefigure-cr-tree-two-t2-xt</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-cr-tree-two-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

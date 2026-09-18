@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-skel-hyp-cosh-figure" speech2="Three curves on a coordinate grid. A dark red U shaped curve, y equals hyperbolic cosine of x, has its lowest point at zero comma one. A light blue exponential one half e to the x rises to the right below it, and an orange exponential one half e to the negative x rises to the left below it.">
+      <grouped>prefigure-skel-hyp-cosh-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-skel-hyp-cosh-grid-axes</active>
+        <active>prefigure-skel-hyp-cosh-ch-c</active>
+        <active>prefigure-skel-hyp-cosh-ch-ep</active>
+        <active>prefigure-skel-hyp-cosh-ch-em</active>
+        <active>prefigure-skel-hyp-cosh-ch-min</active>
+      </children>
+      <components>
+        <active>prefigure-skel-hyp-cosh-grid-axes</active>
+        <active>prefigure-skel-hyp-cosh-ch-c</active>
+        <active>prefigure-skel-hyp-cosh-ch-ep</active>
+        <active>prefigure-skel-hyp-cosh-ch-em</active>
+        <active>prefigure-skel-hyp-cosh-ch-min</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-skel-hyp-cosh-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-skel-hyp-cosh-grid</active>
+        <active>prefigure-skel-hyp-cosh-axes</active>
+      </children>
+      <components>
+        <active>prefigure-skel-hyp-cosh-grid</active>
+        <active>prefigure-skel-hyp-cosh-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-grid" speech2="The coordinate grid">
+      <active>prefigure-skel-hyp-cosh-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-axes" speech2="The coordinate axes">
+      <active>prefigure-skel-hyp-cosh-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-ch-c" speech2="The graph of hyperbolic cosine: a U shaped curve, even about the y axis, with minimum value one at x equals zero.">
+      <active>prefigure-skel-hyp-cosh-ch-c</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-ch-ep" speech2="The exponential one half e to the x, which hyperbolic cosine approaches as x grows.">
+      <active>prefigure-skel-hyp-cosh-ch-ep</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-ch-em" speech2="The exponential one half e to the negative x, which hyperbolic cosine approaches as x decreases.">
+      <active>prefigure-skel-hyp-cosh-ch-em</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-cosh-ch-min" speech2="The minimum point zero comma one.">
+      <active>prefigure-skel-hyp-cosh-ch-min</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-cosh-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

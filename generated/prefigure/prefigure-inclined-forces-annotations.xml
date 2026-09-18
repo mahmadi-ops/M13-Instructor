@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-inclined-forces-figure" speech2="A block resting on a thirty degree inclined plane, with the weight vector and its two components drawn from the block's center of mass.">
+      <grouped>prefigure-inclined-forces-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-inclined-forces-incline-surface</active>
+        <active>prefigure-inclined-forces-block</active>
+        <active>prefigure-inclined-forces-vec-weight</active>
+        <active>prefigure-inclined-forces-vec-parallel</active>
+        <active>prefigure-inclined-forces-vec-perp</active>
+      </children>
+      <components>
+        <active>prefigure-inclined-forces-incline-surface</active>
+        <active>prefigure-inclined-forces-block</active>
+        <active>prefigure-inclined-forces-vec-weight</active>
+        <active>prefigure-inclined-forces-vec-parallel</active>
+        <active>prefigure-inclined-forces-vec-perp</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-inclined-forces-incline-surface" speech2="The sloped surface of the incline, rising at thirty degrees from the horizontal.">
+      <active>prefigure-inclined-forces-incline-surface</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-inclined-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-inclined-forces-block" speech2="A rectangular block resting on the incline, tilted to lie flush with the slope.">
+      <active>prefigure-inclined-forces-block</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-inclined-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-inclined-forces-vec-weight" speech2="The weight vector F, pointing straight down from the center of mass.">
+      <active>prefigure-inclined-forces-vec-weight</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-inclined-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-inclined-forces-vec-parallel" speech2="The component of the weight parallel to the incline, pointing down the slope.">
+      <active>prefigure-inclined-forces-vec-parallel</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-inclined-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-inclined-forces-vec-perp" speech2="The component of the weight perpendicular to the incline, pointing into the surface.">
+      <active>prefigure-inclined-forces-vec-perp</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-inclined-forces-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

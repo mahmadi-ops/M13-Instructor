@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-taylor-exp-figure" speech2="The exponential curve y equals e to the x in black, together with three polynomial approximations at x equals zero: the tangent line p one in orange, the quadratic p two in blue, and the cubic p three in dark red. All four curves pass through the point zero comma one, and each higher order polynomial follows the exponential over a wider interval.">
+      <grouped>prefigure-taylor-exp-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taylor-exp-grid-axes</active>
+        <active>prefigure-taylor-exp-te-f</active>
+        <active>prefigure-taylor-exp-te-p1</active>
+        <active>prefigure-taylor-exp-te-p2</active>
+        <active>prefigure-taylor-exp-te-p3</active>
+      </children>
+      <components>
+        <active>prefigure-taylor-exp-grid-axes</active>
+        <active>prefigure-taylor-exp-te-f</active>
+        <active>prefigure-taylor-exp-te-p1</active>
+        <active>prefigure-taylor-exp-te-p2</active>
+        <active>prefigure-taylor-exp-te-p3</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-taylor-exp-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taylor-exp-grid</active>
+        <active>prefigure-taylor-exp-axes</active>
+      </children>
+      <components>
+        <active>prefigure-taylor-exp-grid</active>
+        <active>prefigure-taylor-exp-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-taylor-exp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-grid" speech2="The coordinate grid">
+      <active>prefigure-taylor-exp-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-taylor-exp-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-axes" speech2="The coordinate axes">
+      <active>prefigure-taylor-exp-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taylor-exp-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-te-f" speech2="The function f of x equals e to the x.">
+      <active>prefigure-taylor-exp-te-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taylor-exp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-te-p1" speech2="The tangent line p one of x equals one plus x, the first order approximation.">
+      <active>prefigure-taylor-exp-te-p1</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-taylor-exp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-te-p2" speech2="The second order polynomial p two, which also matches the curvature at zero.">
+      <active>prefigure-taylor-exp-te-p2</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-taylor-exp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-exp-te-p3" speech2="The third order polynomial p three, the best of the three approximations near zero.">
+      <active>prefigure-taylor-exp-te-p3</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-taylor-exp-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-pp-bad-contours-figure" viewBox="0 0 324 214">
+  <defs>
+    <clipPath id="prefigure-pp-bad-contours-__clipPath-0">
+      <rect x="12.0" y="12.0" width="300.0" height="190.0"/>
+    </clipPath>
+    <clipPath id="prefigure-pp-bad-contours-__clipPath-1">
+      <rect x="12.0" y="12.0" width="300.0" height="190.0"/>
+    </clipPath>
+  </defs>
+  <path id="prefigure-pp-bad-contours-bc-1" d="M 31.6 179.5 L 34.2 177.3 L 36.8 175.1 L 39.4 172.9 L 42.0 170.8 L 44.6 168.6 L 47.2 166.5 L 49.8 164.4 L 52.4 162.4 L 55.0 160.3 L 57.7 158.4 L 60.3 156.4 L 62.9 154.5 L 65.5 152.7 L 68.1 150.9 L 70.7 149.2 L 73.3 147.5 L 75.9 145.9 L 78.5 144.4 L 81.1 142.9 L 83.7 141.5 L 86.3 140.1 L 89.0 138.8 L 91.6 137.6 L 94.2 136.4 L 96.8 135.2 L 99.4 134.2 L 102.0 133.2 L 104.6 132.2 L 107.2 131.3 L 109.8 130.4 L 112.4 129.6 L 115.0 128.8 L 117.7 128.1 L 120.3 127.3 L 122.9 126.6 L 125.5 125.9 L 128.1 125.3 L 130.7 124.6 L 133.3 124.0 L 135.9 123.3 L 138.5 122.7 L 141.1 122.0 L 143.7 121.4 L 146.3 120.7 L 149.0 120.0 L 151.6 119.2 L 154.2 118.5 L 156.8 117.7 L 159.4 116.8 L 162.0 115.9 L 164.6 115.0 L 167.2 114.0 L 169.8 113.0 L 172.4 111.9 L 175.0 110.7 L 177.7 109.5 L 180.3 108.2 L 182.9 106.9 L 185.5 105.5 L 188.1 104.1 L 190.7 102.5 L 193.3 101.0 L 195.9 99.3 L 198.5 97.6 L 201.1 95.9 L 203.7 94.1 L 206.3 92.2 L 209.0 90.3 L 211.6 88.4 L 214.2 86.4 L 216.8 84.3 L 219.4 82.3 L 222.0 80.2 L 224.6 78.0 L 227.2 75.9 L 229.8 73.7 L 232.4 71.5 L 235.0 69.4 L 237.7 67.2 L 240.3 65.0 L 242.9 62.8 L 245.5 60.6 L 248.1 58.5 L 250.7 56.3 L 253.3 54.2 L 255.9 52.2 L 258.5 50.1 L 261.1 48.1 L 263.7 46.2 L 266.3 44.3 L 269.0 42.4 L 271.6 40.6 L 274.2 38.8 L 276.8 37.1 L 279.4 35.5 L 282.0 33.9 L 284.6 32.4 L 287.2 30.9 L 289.8 29.5 L 292.4 28.2" stroke="#0072B2" stroke-width="2.5" fill="none" clip-path="url(#prefigure-pp-bad-contours-__clipPath-1)"/>
+  <path id="prefigure-pp-bad-contours-bc-2" d="M 31.6 37.8 L 34.2 40.0 L 36.8 42.1 L 39.4 44.3 L 42.0 46.5 L 44.6 48.6 L 47.2 50.7 L 49.8 52.8 L 52.4 54.9 L 55.0 56.9 L 57.7 58.9 L 60.3 60.8 L 62.9 62.7 L 65.5 64.5 L 68.1 66.3 L 70.7 68.0 L 73.3 69.7 L 75.9 71.3 L 78.5 72.8 L 81.1 74.3 L 83.7 75.8 L 86.3 77.1 L 89.0 78.4 L 91.6 79.7 L 94.2 80.8 L 96.8 82.0 L 99.4 83.0 L 102.0 84.1 L 104.6 85.0 L 107.2 85.9 L 109.8 86.8 L 112.4 87.6 L 115.0 88.4 L 117.7 89.2 L 120.3 89.9 L 122.9 90.6 L 125.5 91.3 L 128.1 91.9 L 130.7 92.6 L 133.3 93.2 L 135.9 93.9 L 138.5 94.5 L 141.1 95.2 L 143.7 95.9 L 146.3 96.5 L 149.0 97.3 L 151.6 98.0 L 154.2 98.8 L 156.8 99.6 L 159.4 100.4 L 162.0 101.3 L 164.6 102.2 L 167.2 103.2 L 169.8 104.3 L 172.4 105.4 L 175.0 106.5 L 177.7 107.7 L 180.3 109.0 L 182.9 110.3 L 185.5 111.7 L 188.1 113.2 L 190.7 114.7 L 193.3 116.2 L 195.9 117.9 L 198.5 119.6 L 201.1 121.3 L 203.7 123.1 L 206.3 125.0 L 209.0 126.9 L 211.6 128.9 L 214.2 130.9 L 216.8 132.9 L 219.4 135.0 L 222.0 137.1 L 224.6 139.2 L 227.2 141.3 L 229.8 143.5 L 232.4 145.7 L 235.0 147.9 L 237.7 150.1 L 240.3 152.2 L 242.9 154.4 L 245.5 156.6 L 248.1 158.7 L 250.7 160.9 L 253.3 163.0 L 255.9 165.0 L 258.5 167.1 L 261.1 169.1 L 263.7 171.0 L 266.3 173.0 L 269.0 174.8 L 271.6 176.6 L 274.2 178.4 L 276.8 180.1 L 279.4 181.7 L 282.0 183.3 L 284.6 184.8 L 287.2 186.3 L 289.8 187.7 L 292.4 189.0" stroke="#0072B2" stroke-width="2.5" fill="none" clip-path="url(#prefigure-pp-bad-contours-__clipPath-1)"/>
+  <circle id="prefigure-pp-bad-contours-bc-P" cx="179.5" cy="108.6" r="4" stroke="black" stroke-width="2" fill="#D55E00"/>
+  <g id="prefigure-pp-bad-contours-bc-P-lab" transform="translate(186.9,119.1) translate(0.0,-0.0)">
+    <g id="prefigure-pp-bad-contours-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#D55E00" width="13.592px" height="12.360px" role="img" focusable="false" viewBox="0 -683 751 683" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-bad-contours-MJX-2-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper P">
+              <use data-c="1D443" xlink:href="#prefigure-pp-bad-contours-MJX-2-TEX-I-1D443"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-pp-bad-contours-bc-l1" transform="translate(19.3,176.2) translate(0.0,-7.9)">
+    <g id="prefigure-pp-bad-contours-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="41.824px" height="15.768px" role="img" focusable="false" viewBox="0 -666 2310.6 871" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-bad-contours-MJX-3-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-3-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="g equals 2">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="g">
+              <use data-c="1D454" xlink:href="#prefigure-pp-bad-contours-MJX-3-TEX-I-1D454"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(754.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-pp-bad-contours-MJX-3-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="2" transform="translate(1810.6,0)">
+              <use data-c="32" xlink:href="#prefigure-pp-bad-contours-MJX-3-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-pp-bad-contours-bc-l2" transform="translate(19.3,41.0) translate(0.0,-7.9)">
+    <g id="prefigure-pp-bad-contours-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="41.824px" height="15.744px" role="img" focusable="false" viewBox="0 -665 2310.6 870" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-bad-contours-MJX-4-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-4-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-4-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="g equals 3">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="g">
+              <use data-c="1D454" xlink:href="#prefigure-pp-bad-contours-MJX-4-TEX-I-1D454"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(754.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-pp-bad-contours-MJX-4-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="3" transform="translate(1810.6,0)">
+              <use data-c="33" xlink:href="#prefigure-pp-bad-contours-MJX-4-TEX-N-33"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-pp-bad-contours-bc-r1" transform="translate(295.0,41.0) translate(-41.8,-7.9)">
+    <g id="prefigure-pp-bad-contours-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="41.824px" height="15.768px" role="img" focusable="false" viewBox="0 -666 2310.6 871" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-bad-contours-MJX-5-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-5-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="g equals 2">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="g">
+              <use data-c="1D454" xlink:href="#prefigure-pp-bad-contours-MJX-5-TEX-I-1D454"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(754.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-pp-bad-contours-MJX-5-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="2" transform="translate(1810.6,0)">
+              <use data-c="32" xlink:href="#prefigure-pp-bad-contours-MJX-5-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-pp-bad-contours-bc-r2" transform="translate(295.0,176.2) translate(-41.8,-7.9)">
+    <g id="prefigure-pp-bad-contours-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="41.824px" height="15.744px" role="img" focusable="false" viewBox="0 -665 2310.6 870" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-bad-contours-MJX-6-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-6-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-pp-bad-contours-MJX-6-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="g equals 3">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="g">
+              <use data-c="1D454" xlink:href="#prefigure-pp-bad-contours-MJX-6-TEX-I-1D454"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(754.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-pp-bad-contours-MJX-6-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="3" transform="translate(1810.6,0)">
+              <use data-c="33" xlink:href="#prefigure-pp-bad-contours-MJX-6-TEX-N-33"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

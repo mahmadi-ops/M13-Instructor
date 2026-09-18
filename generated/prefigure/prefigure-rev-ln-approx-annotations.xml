@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rev-ln-approx-figure" speech2="The curve y equals natural log of one plus two x, dashed blue, and the quadratic two x minus two x squared, solid vermillion. Dashed gray vertical lines at plus and minus one quarter mark the interval of the approximation, where the two curves nearly coincide; outside it they separate, and the logarithm drops steeply near x equals negative one half.">
+      <grouped>prefigure-rev-ln-approx-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-ln-approx-grid-axes</active>
+        <active>prefigure-rev-ln-approx-la-f</active>
+        <active>prefigure-rev-ln-approx-la-p</active>
+        <active>prefigure-rev-ln-approx-la-left</active>
+        <active>prefigure-rev-ln-approx-la-right</active>
+      </children>
+      <components>
+        <active>prefigure-rev-ln-approx-grid-axes</active>
+        <active>prefigure-rev-ln-approx-la-f</active>
+        <active>prefigure-rev-ln-approx-la-p</active>
+        <active>prefigure-rev-ln-approx-la-left</active>
+        <active>prefigure-rev-ln-approx-la-right</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rev-ln-approx-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-ln-approx-grid</active>
+        <active>prefigure-rev-ln-approx-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rev-ln-approx-grid</active>
+        <active>prefigure-rev-ln-approx-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-grid" speech2="The coordinate grid">
+      <active>prefigure-rev-ln-approx-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-axes" speech2="The coordinate axes">
+      <active>prefigure-rev-ln-approx-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-la-f" speech2="The function y equals natural log of one plus two x.">
+      <active>prefigure-rev-ln-approx-la-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-la-p" speech2="The second order Taylor polynomial two x minus two x squared.">
+      <active>prefigure-rev-ln-approx-la-p</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-la-left" speech2="The left endpoint, x equals negative one quarter.">
+      <active>prefigure-rev-ln-approx-la-left</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-ln-approx-la-right" speech2="The right endpoint, x equals one quarter. The error on the interval is smaller than one sixth.">
+      <active>prefigure-rev-ln-approx-la-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rev-ln-approx-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

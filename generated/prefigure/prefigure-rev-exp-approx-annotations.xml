@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rev-exp-approx-figure" speech2="The exponential curve, dashed blue, and the quadratic one plus x plus x squared, solid vermillion, plotted together. Dashed gray vertical lines at plus and minus five sixths mark the interval of the approximation; on that interval the two curves stay within about zero point three of each other.">
+      <grouped>prefigure-rev-exp-approx-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-exp-approx-grid-axes</active>
+        <active>prefigure-rev-exp-approx-ea-f</active>
+        <active>prefigure-rev-exp-approx-ea-p</active>
+        <active>prefigure-rev-exp-approx-ea-left</active>
+        <active>prefigure-rev-exp-approx-ea-right</active>
+      </children>
+      <components>
+        <active>prefigure-rev-exp-approx-grid-axes</active>
+        <active>prefigure-rev-exp-approx-ea-f</active>
+        <active>prefigure-rev-exp-approx-ea-p</active>
+        <active>prefigure-rev-exp-approx-ea-left</active>
+        <active>prefigure-rev-exp-approx-ea-right</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rev-exp-approx-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-exp-approx-grid</active>
+        <active>prefigure-rev-exp-approx-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rev-exp-approx-grid</active>
+        <active>prefigure-rev-exp-approx-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-grid" speech2="The coordinate grid">
+      <active>prefigure-rev-exp-approx-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-axes" speech2="The coordinate axes">
+      <active>prefigure-rev-exp-approx-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-ea-f" speech2="The function y equals e to the x.">
+      <active>prefigure-rev-exp-approx-ea-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-ea-p" speech2="The quadratic approximation one plus x plus x squared.">
+      <active>prefigure-rev-exp-approx-ea-p</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-ea-left" speech2="The left endpoint, x equals negative five sixths.">
+      <active>prefigure-rev-exp-approx-ea-left</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-exp-approx-ea-right" speech2="The right endpoint, x equals five sixths. The error on the interval is at most about zero point two eight nine.">
+      <active>prefigure-rev-exp-approx-ea-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rev-exp-approx-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

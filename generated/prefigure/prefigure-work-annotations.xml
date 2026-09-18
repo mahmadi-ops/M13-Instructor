@@ -1,0 +1,99 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-work-figure" speech2="A force F acting at Q at angle theta above the direction of motion, together with the displacement vector D from P to Q, and a reference segment showing the magnitude of F times cosine theta, the component of F in the direction of motion." sonify="yes">
+      <grouped>prefigure-work-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-work-point-p</active>
+        <active>prefigure-work-point-q</active>
+        <active>prefigure-work-vec-d</active>
+        <active>prefigure-work-vec-f</active>
+        <active>prefigure-work-ref-line</active>
+        <active>prefigure-work-angle-theta</active>
+        <active>prefigure-work-label-cos</active>
+      </children>
+      <components>
+        <active>prefigure-work-point-p</active>
+        <active>prefigure-work-point-q</active>
+        <active>prefigure-work-vec-d</active>
+        <active>prefigure-work-vec-f</active>
+        <active>prefigure-work-ref-line</active>
+        <active>prefigure-work-angle-theta</active>
+        <active>prefigure-work-label-cos</active>
+      </components>
+      <sonification>
+        <ACTIVE>prefigure-work-figure</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-point-p" speech2="The starting point P." sonify="yes">
+      <active>prefigure-work-point-p</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-point-p</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-point-q" speech2="The ending point Q." sonify="yes">
+      <active>prefigure-work-point-q</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-point-q</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-vec-d" speech2="The displacement vector D, from P to Q." sonify="yes">
+      <active>prefigure-work-vec-d</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-vec-d</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-vec-f" speech2="The force vector F, acting at Q at angle theta above the direction of motion." sonify="yes">
+      <active>prefigure-work-vec-f</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-vec-f</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-ref-line" speech2="A horizontal reference segment used to measure the angle theta." sonify="yes">
+      <active>prefigure-work-ref-line</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-ref-line</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-angle-theta" speech2="The angle theta between the force F and the direction of motion." sonify="yes">
+      <active>prefigure-work-angle-theta</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-angle-theta</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefigure-work-label-cos" speech2="The magnitude of F in the direction of motion, F times cosine theta." sonify="yes">
+      <active>prefigure-work-label-cos</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-work-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefigure-work-label-cos</ACTIVE>
+      </sonification>
+    </annotation>
+  </annotations>
+</diagram>

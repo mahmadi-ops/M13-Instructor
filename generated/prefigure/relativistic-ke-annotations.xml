@@ -1,0 +1,45 @@
+<diagram>
+  <annotations>
+    <annotation id="relativistic-ke-relativistic" speech2="A comparison of relativistic and Newtonian kinetic energy as functions of speed v, for v between 0 and the speed of light c">
+      <grouped>relativistic-ke-relativistic</grouped>
+      <position>1</position>
+      <children>
+        <active>relativistic-ke-relativistic</active>
+        <active>relativistic-ke-newtonian</active>
+        <active>relativistic-ke-asymptote</active>
+      </children>
+      <components>
+        <active>relativistic-ke-relativistic</active>
+        <active>relativistic-ke-newtonian</active>
+        <active>relativistic-ke-asymptote</active>
+      </components>
+    </annotation>
+    <annotation id="relativistic-ke-relativistic" speech2="The relativistic kinetic energy, K equals m c squared minus m naught c squared, which increases without bound as v approaches the speed of light c" sonify="yes">
+      <active>relativistic-ke-relativistic</active>
+      <position>1</position>
+      <parents>
+        <grouped>relativistic-ke-relativistic</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>relativistic-ke-relativistic</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="relativistic-ke-newtonian" speech2="The Newtonian approximation, K approximately one half m naught v squared, a parabola that closely matches the relativistic curve when v is much less than c" sonify="yes">
+      <active>relativistic-ke-newtonian</active>
+      <position>2</position>
+      <parents>
+        <grouped>relativistic-ke-relativistic</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>relativistic-ke-newtonian</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="relativistic-ke-asymptote" speech2="A dashed vertical line at v equals c, the speed of light, which the relativistic energy approaches as a vertical asymptote">
+      <active>relativistic-ke-asymptote</active>
+      <position>3</position>
+      <parents>
+        <grouped>relativistic-ke-relativistic</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

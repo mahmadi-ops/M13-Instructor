@@ -1,0 +1,11 @@
+openDate          = 01/01/2027 at 12:00am
+dueDate           = 12/31/2027 at 10:00pm
+answerDate        = 12/31/2027 at 10:00pm
+paperHeaderFile   = MATH_13Calculus_and_Analytic_Geometry_III/header/MATH_13Calculus_and_Analytic_Geometry_III.pg
+screenHeaderFile  = MATH_13Calculus_and_Analytic_Geometry_III/header/MATH_13Calculus_and_Analytic_Geometry_III.pg
+description       = MATH 13-Calculus and Analytic Geometry III
+problemListV2
+problem_start
+source_file = MATH_13Calculus_and_Analytic_Geometry_III/22_12_1-Matching_Quadric_Surfaces.pg
+problem_id = 1
+problem_end

@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-skel-hyp-catenary-forces-figure" speech2="A hanging cable in the shape of a catenary. The piece of the cable from its lowest point up to a point P is drawn in dark red and labelled s. Three force arrows are shown: the horizontal tension T naught at the lowest point, the tension T along the cable at P, and the weight lambda g s pointing straight down at P. The angle theta is marked between the cable at P and the horizontal. The height of the lowest point above the x axis is labelled a, and the horizontal distance from the y axis to the support is labelled b.">
+      <grouped>prefigure-skel-hyp-catenary-forces-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-skel-hyp-catenary-forces-cf-curve</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-arc</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-T0</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-T</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-W</active>
+      </children>
+      <components>
+        <active>prefigure-skel-hyp-catenary-forces-cf-curve</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-arc</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-T0</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-T</active>
+        <active>prefigure-skel-hyp-catenary-forces-cf-W</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-forces-cf-curve" speech2="The catenary y equals a hyperbolic cosine of x over a.">
+      <active>prefigure-skel-hyp-catenary-forces-cf-curve</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-forces-cf-arc" speech2="The section of cable of arc length s, from the vertex to the point P.">
+      <active>prefigure-skel-hyp-catenary-forces-cf-arc</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-forces-cf-T0" speech2="The horizontal tension T naught at the lowest point of the cable.">
+      <active>prefigure-skel-hyp-catenary-forces-cf-T0</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-forces-cf-T" speech2="The tension T at P, directed along the cable.">
+      <active>prefigure-skel-hyp-catenary-forces-cf-T</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-forces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-forces-cf-W" speech2="The weight lambda g s of the section, pointing straight down.">
+      <active>prefigure-skel-hyp-catenary-forces-cf-W</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-forces-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

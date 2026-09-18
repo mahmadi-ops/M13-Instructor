@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">All ten nominees.</span>
+</h2>
+<div class="para logical">
+<div class="para">List the ten 2026 Best Picture nominees alphabetically—<em class="emphasis">Bugonia</em>, <em class="emphasis">F1</em>, <em class="emphasis">Frankenstein</em>, <em class="emphasis">Hamnet</em>, <em class="emphasis">Marty Supreme</em>, <em class="emphasis">One Battle After Another</em>, <em class="emphasis">The Secret Agent</em>, <em class="emphasis">Sentimental Value</em>, <em class="emphasis">Sinners</em>, <em class="emphasis">Train Dreams</em>—and suppose Mehdi, Norm, and Popcorn rate all ten:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\mathbf u \amp = \langle 3,\,-1,\,2,\,5,\,0,\,5,\,4,\,3,\,4,\,2\rangle \\
+\mathbf v \amp = \langle 1,\,4,\,3,\,3,\,5,\,4,\,0,\,1,\,5,\,-2\rangle \\
+\mathbf w \amp = \langle -2,\,3,\,-3,\,-2,\,4,\,-1,\,-4,\,-5,\,-4,\,-3\rangle.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">(The fourth and ninth entries are the <em class="emphasis">Hamnet</em> and <em class="emphasis">Sinners</em> ratings from before.) Which pair has the most similar taste?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-taste-10d-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para">The dot products are <span class="process-math">\(\mathbf u \cdot \mathbf v = 59\text{,}\)</span> <span class="process-math">\(\mathbf u \cdot \mathbf w = -83\text{,}\)</span> and <span class="process-math">\(\mathbf v \cdot \mathbf w = -8\text{,}\)</span> and the lengths are <span class="process-math">\(\|\mathbf u\| = \sqrt{109}\text{,}\)</span> <span class="process-math">\(\|\mathbf v\| = \sqrt{106}\text{,}\)</span> and <span class="process-math">\(\|\mathbf w\| = \sqrt{109}\text{.}\)</span> Applying <a href="sec-data-science.html#eq-similarity-n" class="xref" data-knowl="./knowl/xref/eq-similarity-n.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.3.13">(3.3.13)</a> to each pair gives the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-taste-10d-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.31<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Angular distance across all ten nominees.<div class="autopermalink" aria-hidden="true" data-description="Table 3.3.31: Angular distance across all ten nominees."><a tabindex="-1" href="#table-taste-10d" title="Copy heading and permalink for Table 3.3.31: Angular distance across all ten nominees." aria-label="Copy heading and permalink for Table 3.3.31: Angular distance across all ten nominees.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b3 r1 l1 t1 lines">Pair</th>
+<th scope="col" class="c m b3 r1 l0 t1 lines"><span class="process-math">\(\cos\theta\)</span></th>
+<th scope="col" class="c m b3 r1 l0 t1 lines"><span class="process-math">\(d_A\)</span></th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mehdi, Norm</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0.549\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(56.7^\circ\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mehdi, Popcorn</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(-0.762\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(139.6^\circ\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Norm, Popcorn</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(-0.074\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(94.3^\circ\)</span></td>
+</tr>
+</table></div>
+</figure>
+<div class="para">Mehdi and Norm are again the closest pair, though the extra eight films have pulled them apart: their angular distance grew from <span class="process-math">\(20.4^\circ\)</span> to <span class="process-math">\(56.7^\circ\)</span> once we stopped judging them on <em class="emphasis">Sinners</em> and <em class="emphasis">Hamnet</em> alone. Norm and Popcorn are nearly orthogonal, with an angle of <span class="process-math">\(94.3^\circ\text{;}\)</span> their tastes are essentially unrelated rather than opposed, which is precisely the distinction the two-movie picture was too small to make.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-taste-10d-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.3.30.1"><a tabindex="-1" href="#example-taste-10d-3" title="Copy heading and permalink for Solution 3.3.30.1" aria-label="Copy heading and permalink for Solution 3.3.30.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 3.3.30: All ten nominees"><a tabindex="-1" href="#example-taste-10d" title="Copy heading and permalink for Example 3.3.30: All ten nominees" aria-label="Copy heading and permalink for Example 3.3.30: All ten nominees">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="sec-data-science.html#example-taste-10d">In Context</a></span>
+</body>
+</html>

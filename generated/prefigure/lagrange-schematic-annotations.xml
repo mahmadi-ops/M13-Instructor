@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="lagrange-schematic-figure" speech2="A schematic cross-section of the ellipsoid together with the given plane, the two tangency points, and the gradient vectors">
+      <grouped>lagrange-schematic-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>lagrange-schematic-constraint</active>
+        <active>lagrange-schematic-plane</active>
+        <active>lagrange-schematic-tangencies</active>
+        <active>lagrange-schematic-distance</active>
+        <active>lagrange-schematic-normal</active>
+      </children>
+      <components>
+        <active>lagrange-schematic-constraint</active>
+        <active>lagrange-schematic-plane</active>
+        <active>lagrange-schematic-tangencies</active>
+        <active>lagrange-schematic-distance</active>
+        <active>lagrange-schematic-normal</active>
+      </components>
+    </annotation>
+    <annotation id="lagrange-schematic-constraint" speech2="The constraint curve g equals 0, a cross-section of the ellipsoid x squared plus y squared plus 3 z squared equals 1">
+      <active>lagrange-schematic-constraint</active>
+      <position>1</position>
+      <parents>
+        <grouped>lagrange-schematic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="lagrange-schematic-plane" speech2="The given plane x plus 5 y plus 2 z equals 3, which does not meet the ellipsoid">
+      <active>lagrange-schematic-plane</active>
+      <position>2</position>
+      <parents>
+        <grouped>lagrange-schematic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="lagrange-schematic-tangencies" speech2="The two points on the ellipsoid where the tangent plane is parallel to the given plane">
+      <grouped>lagrange-schematic-tangencies</grouped>
+      <position>3</position>
+      <children>
+        <active>lagrange-schematic-tangency-S1</active>
+        <active>lagrange-schematic-tangency-S2</active>
+      </children>
+      <components>
+        <active>lagrange-schematic-tangency-S1</active>
+        <active>lagrange-schematic-tangency-S2</active>
+      </components>
+      <parents>
+        <grouped>lagrange-schematic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="lagrange-schematic-tangency-S1" speech2="At S 1, the point of the ellipsoid closest to the plane, the tangent plane is parallel to the given plane and the gradient of g is parallel to n">
+      <active>lagrange-schematic-tangency-S1</active>
+      <position>1</position>
+      <parents>
+        <grouped>lagrange-schematic-tangencies</grouped>
+      </parents>
+    </annotation>
+    <annotation id="lagrange-schematic-tangency-S2" speech2="At S 2, the point of the ellipsoid farthest from the plane, the tangent plane is again parallel to the given plane and the gradient of g points opposite to n">
+      <active>lagrange-schematic-tangency-S2</active>
+      <position>2</position>
+      <parents>
+        <grouped>lagrange-schematic-tangencies</grouped>
+      </parents>
+    </annotation>
+    <annotation id="lagrange-schematic-distance" speech2="The distance from S 1 to the plane, the quantity minimized in the Lagrange multiplier method">
+      <active>lagrange-schematic-distance</active>
+      <position>4</position>
+      <parents>
+        <grouped>lagrange-schematic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="lagrange-schematic-normal" speech2="The point P equals 3 comma 0 comma 0 chosen on the plane, with the normal vector n equals 1 comma 5 comma 2">
+      <active>lagrange-schematic-normal</active>
+      <position>5</position>
+      <parents>
+        <grouped>lagrange-schematic-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

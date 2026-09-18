@@ -1,0 +1,75 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-stability-cross-sections-figure" speech2="Two cross-sections of the potential energy through an equilibrium point at the origin, where a green marble sits. The blue curve opens upward: the force arrows point back toward the equilibrium, so this direction is stable. The red curve opens downward: the force arrows point away from the equilibrium, so this direction is unstable.">
+      <grouped>prefigure-stability-cross-sections-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-stability-cross-sections-st-stable</active>
+        <active>prefigure-stability-cross-sections-st-restore-right</active>
+        <active>prefigure-stability-cross-sections-st-restore-left</active>
+        <active>prefigure-stability-cross-sections-st-unstable</active>
+        <active>prefigure-stability-cross-sections-st-runaway-right</active>
+        <active>prefigure-stability-cross-sections-st-runaway-left</active>
+        <active>prefigure-stability-cross-sections-st-marble</active>
+      </children>
+      <components>
+        <active>prefigure-stability-cross-sections-st-stable</active>
+        <active>prefigure-stability-cross-sections-st-restore-right</active>
+        <active>prefigure-stability-cross-sections-st-restore-left</active>
+        <active>prefigure-stability-cross-sections-st-unstable</active>
+        <active>prefigure-stability-cross-sections-st-runaway-right</active>
+        <active>prefigure-stability-cross-sections-st-runaway-left</active>
+        <active>prefigure-stability-cross-sections-st-marble</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-stable" speech2="A cross-section where the potential energy has a minimum, shown in blue and opening upward. Displacements in this direction are pushed back: stable.">
+      <active>prefigure-stability-cross-sections-st-stable</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-restore-right" speech2="The restoring force on a marble displaced to the right along the blue cross-section, pointing back toward the equilibrium.">
+      <active>prefigure-stability-cross-sections-st-restore-right</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-restore-left" speech2="The restoring force on a marble displaced to the left along the blue cross-section, pointing back toward the equilibrium.">
+      <active>prefigure-stability-cross-sections-st-restore-left</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-unstable" speech2="A cross-section where the potential energy has a maximum, shown in red and opening downward. Displacements in this direction grow: unstable.">
+      <active>prefigure-stability-cross-sections-st-unstable</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-runaway-right" speech2="The force on a marble displaced to the right along the red cross-section, pointing away from the equilibrium.">
+      <active>prefigure-stability-cross-sections-st-runaway-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-runaway-left" speech2="The force on a marble displaced to the left along the red cross-section, pointing away from the equilibrium.">
+      <active>prefigure-stability-cross-sections-st-runaway-left</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-stability-cross-sections-st-marble" speech2="The marble at the equilibrium point, where both partial derivatives of the potential energy are zero.">
+      <active>prefigure-stability-cross-sections-st-marble</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-stability-cross-sections-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

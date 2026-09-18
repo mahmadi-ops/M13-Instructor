@@ -1,0 +1,100 @@
+<diagram>
+  <annotations>
+    <annotation id="exp-taylor-positive-fgraph" speech2="For positive x, the exponential function e to the x together with its Taylor polynomials T 1 through T 4 centered at 0. Because every term is positive, the polynomials increase toward e to the x from below as the degree grows, illustrating convergence of the Taylor series">
+      <grouped>exp-taylor-positive-fgraph</grouped>
+      <position>1</position>
+      <children>
+        <active>exp-taylor-positive-grid-axes</active>
+        <active>exp-taylor-positive-fgraph</active>
+        <active>exp-taylor-positive-t1</active>
+        <active>exp-taylor-positive-t2</active>
+        <active>exp-taylor-positive-t3</active>
+        <active>exp-taylor-positive-t4</active>
+        <active>exp-taylor-positive-center</active>
+      </children>
+      <components>
+        <active>exp-taylor-positive-grid-axes</active>
+        <active>exp-taylor-positive-fgraph</active>
+        <active>exp-taylor-positive-t1</active>
+        <active>exp-taylor-positive-t2</active>
+        <active>exp-taylor-positive-t3</active>
+        <active>exp-taylor-positive-t4</active>
+        <active>exp-taylor-positive-center</active>
+      </components>
+    </annotation>
+    <annotation id="exp-taylor-positive-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>exp-taylor-positive-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>exp-taylor-positive-grid</active>
+        <active>exp-taylor-positive-axes</active>
+      </children>
+      <components>
+        <active>exp-taylor-positive-grid</active>
+        <active>exp-taylor-positive-axes</active>
+      </components>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-grid" speech2="The coordinate grid">
+      <active>exp-taylor-positive-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>exp-taylor-positive-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-axes" speech2="The coordinate axes">
+      <active>exp-taylor-positive-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>exp-taylor-positive-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-fgraph" speech2="The exponential function e to the x, shown as a thick blue curve" sonify="yes">
+      <active>exp-taylor-positive-fgraph</active>
+      <position>2</position>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>exp-taylor-positive-fgraph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="exp-taylor-positive-t1" speech2="The first degree Taylor polynomial T 1, the tangent line at x equals 0">
+      <active>exp-taylor-positive-t1</active>
+      <position>3</position>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-t2" speech2="The second degree Taylor polynomial T 2, a parabola closer to e to the x">
+      <active>exp-taylor-positive-t2</active>
+      <position>4</position>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-t3" speech2="The third degree Taylor polynomial T 3, closer still">
+      <active>exp-taylor-positive-t3</active>
+      <position>5</position>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-t4" speech2="The fourth degree Taylor polynomial T 4, nearly indistinguishable from e to the x on this interval">
+      <active>exp-taylor-positive-t4</active>
+      <position>6</position>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-positive-center" speech2="The center of expansion at the point 0 comma 1, where all the curves meet">
+      <active>exp-taylor-positive-center</active>
+      <position>7</position>
+      <parents>
+        <grouped>exp-taylor-positive-fgraph</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,84 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lagrange-level-curves-figure" speech2="Five concentric circles are level curves of f, with values c 1, c star, c 3, c 4, c 5 increasing outward. A green parabola-shaped constraint curve, g of x y equals 0, opens downward and touches the circle f equals c star, drawn in red, at its highest point, labeled x star y star. At that point a red arrow, the gradient of f, points down and a green arrow, the gradient of g, points up: the two gradients are collinear. Two other marked points, x 1 y 1 and x 2 y 2, lie on the constraint curve on either side.">
+      <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lagrange-level-curves-lc-g</active>
+        <active>prefigure-lagrange-level-curves-lc-cstar</active>
+        <active>prefigure-lagrange-level-curves-lc-c1</active>
+        <active>prefigure-lagrange-level-curves-lc-Pstar</active>
+        <active>prefigure-lagrange-level-curves-lc-gradf</active>
+        <active>prefigure-lagrange-level-curves-lc-gradg</active>
+        <active>prefigure-lagrange-level-curves-lc-P1</active>
+        <active>prefigure-lagrange-level-curves-lc-P2</active>
+      </children>
+      <components>
+        <active>prefigure-lagrange-level-curves-lc-g</active>
+        <active>prefigure-lagrange-level-curves-lc-cstar</active>
+        <active>prefigure-lagrange-level-curves-lc-c1</active>
+        <active>prefigure-lagrange-level-curves-lc-Pstar</active>
+        <active>prefigure-lagrange-level-curves-lc-gradf</active>
+        <active>prefigure-lagrange-level-curves-lc-gradg</active>
+        <active>prefigure-lagrange-level-curves-lc-P1</active>
+        <active>prefigure-lagrange-level-curves-lc-P2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-g" speech2="The constraint curve, where g of x y equals 0, drawn in green. It crosses the outer level curves of f and is tangent to the level curve f equals c star.">
+      <active>prefigure-lagrange-level-curves-lc-g</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-cstar" speech2="The level curve f equals c star, drawn in red, tangent to the constraint curve at the point x star y star.">
+      <active>prefigure-lagrange-level-curves-lc-cstar</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-c1" speech2="The level curve f equals c 1, with c 1 less than c star. The constraint curve never reaches it, so the value c 1 is not attained subject to the constraint.">
+      <active>prefigure-lagrange-level-curves-lc-c1</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-Pstar" speech2="The constrained minimum, the point x star y star, where the constraint curve is tangent to the level curve f equals c star.">
+      <active>prefigure-lagrange-level-curves-lc-Pstar</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-gradf" speech2="The gradient of f at the constrained minimum, drawn in red, perpendicular to the level curve f equals c star.">
+      <active>prefigure-lagrange-level-curves-lc-gradf</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-gradg" speech2="The gradient of g at the constrained minimum, drawn in green, perpendicular to the constraint curve. It is collinear with the gradient of f, here pointing in the opposite direction, so lambda is negative.">
+      <active>prefigure-lagrange-level-curves-lc-gradg</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-P1" speech2="The point x 1 y 1 on the constraint curve. Moving from it toward x star y star, the motion has a component opposite the gradient of f, so the value of f decreases.">
+      <active>prefigure-lagrange-level-curves-lc-P1</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-level-curves-lc-P2" speech2="The point x 2 y 2 on the constraint curve. Moving from x star y star toward it, the motion has a component along the gradient of f, so the value of f increases.">
+      <active>prefigure-lagrange-level-curves-lc-P2</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-lagrange-level-curves-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

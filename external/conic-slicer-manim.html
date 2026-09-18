@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slicing the double cone -- animated</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;   /* manim's off-white text */
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --yellow:    #ffe14d;
+    --red:       #fc6255;
+    --gold:      #f0ac5f;
+    /* the book's own stacks */
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  /* The figure is framed by the page at a fixed aspect ratio, so it lays out
+     as a column that exactly fills the iframe: the panel takes what it needs
+     and the stage takes the rest. Computing the stage height from
+     innerHeight minus the panel used to leave a pixel or two over, which
+     showed up as a scrollbar. */
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  #app { width: 100%; height: 100%; box-sizing: border-box;
+         display: flex; flex-direction: column; }
+
+  /* ---- stage ---- */
+  #stage { position: relative; width: 100%; background: var(--bg);
+           flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+
+  .overlay { position: absolute; pointer-events: none; }
+
+  /* equation card, top-left, in the spirit of a manim MathTex on screen */
+  #eqcard {
+    top: 12px; left: 14px;
+    padding: 9px 13px 10px 13px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    line-height: 1.45;
+  }
+  .math { font-family: var(--serif); font-size: 18px; }
+  .math i, .var { font-style: italic; }
+  #conicName {
+    font-size: 17px; font-weight: 600; letter-spacing: .2px;
+    transition: color .3s ease;
+  }
+  #conicCond { font-size: 13px; color: var(--dim); }
+
+  /* tilt-versus-slant readout, bottom-left */
+  #meter {
+    left: 14px; bottom: 12px;
+    padding: 8px 12px 9px 12px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-radius: 6px;
+    font-size: 13px; color: var(--dim);
+    font-variant-numeric: tabular-nums;
+  }
+  #meter b { color: var(--ink); font-weight: 600; }
+  #bar {
+    position: relative; margin-top: 6px;
+    width: 168px; height: 5px; border-radius: 3px;
+    background: linear-gradient(to right, var(--green) 0%, var(--green) 49%,
+                                var(--yellow) 50%, var(--red) 51%, var(--red) 100%);
+    opacity: .75;
+  }
+  #barKnob {
+    position: absolute; top: -3px; width: 3px; height: 11px;
+    background: var(--ink); border-radius: 2px;
+    transition: left .12s linear;
+  }
+
+  /* caption for the guided tour, bottom-centre, fades like a manim Write() */
+  #caption {
+    left: 50%; transform: translateX(-50%);
+    bottom: 68px; max-width: 66%;
+    text-align: center; font-size: 15px; line-height: 1.4;
+    background: rgba(6,7,10,0.78);
+    padding: 7px 14px; border-radius: 6px;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  #caption.show { opacity: 1; }
+
+  /* ---- control panel ---- */
+  #panel {
+    flex: 0 0 auto;
+    border-top: 1px solid var(--edge);
+    background: var(--panel);
+    padding: 9px 12px 11px 12px;
+    box-sizing: border-box;
+  }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 13px; color: var(--dim); }
+
+  button {
+    font: inherit; font-size: 13.5px;
+    padding: 5px 12px; border-radius: 999px;
+    color: var(--ink); background: #1a1d26;
+    border: 1px solid var(--edge);
+    cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+  }
+  button:hover { background: #232734; }
+  button:disabled { opacity: .45; cursor: default; }
+  button.active { color: #06070a; font-weight: 600; }
+  #btnEll.active { background: var(--green);  border-color: var(--green); }
+  #btnPar.active { background: var(--yellow); border-color: var(--yellow); }
+  #btnHyp.active { background: var(--red);    border-color: var(--red); }
+  #btnTour.running { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+  #btnSpin.active  { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+
+  .sliderRow { display: flex; align-items: center; gap: 10px; }
+  .sliderRow .name {
+    font-size: 14px; min-width: 104px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+  }
+  input[type=range] {
+    flex: 1; min-width: 120px; height: 22px;
+    -webkit-appearance: none; appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-moz-range-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 14px; height: 14px; margin-top: -5.5px;
+    border-radius: 50%; background: var(--blue); border: none; cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 14px; height: 14px; border: none;
+    border-radius: 50%; background: var(--blue); cursor: pointer;
+  }
+
+  /* On a phone the equation card would cover most of the picture, so it stops
+     floating and becomes a strip above the canvas instead. See resize(), which
+     takes the strip's height out of the canvas rather than out of the cone. */
+  @media (max-width: 560px) {
+    #eqcard {
+      position: static;
+      padding: 7px 12px 8px 12px;
+      border: none; border-bottom: 1px solid var(--edge);
+      border-radius: 0; background: var(--panel);
+      line-height: 1.35;
+    }
+    .math { font-size: 16px; }
+    #conicName { font-size: 15px; }
+    #conicCond { display: none; }          /* the instructions below say the same */
+    /* a tighter panel leaves more of the box for the cone */
+    #panel { padding: 7px 10px 8px 10px; }
+    .row + .row { margin-top: 7px; }
+    .lbl { display: none; }
+    button { font-size: 13px; padding: 4px 10px; }
+    .sliderRow .name { min-width: 92px; font-size: 13px; }
+    #meter { font-size: 12px; padding: 6px 10px 7px 10px; left: 10px; bottom: 10px; }
+    #bar { width: 120px; }
+    #caption { font-size: 13px; max-width: 88%; bottom: 58px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="eqcard" class="overlay">
+      <div class="math" style="color:#9cdceb"><i>x</i>&#178; + <i>y</i>&#178; = <i>z</i>&#178;</div>
+      <div class="math">cut by &nbsp;<i>z</i> = <span id="eqM">0.50</span>&#8202;<i>y</i> + 1</div>
+      <div id="conicName">Ellipse</div>
+      <div id="conicCond">tilt shallower than the slant</div>
+    </div>
+
+    <div id="meter" class="overlay">
+      tilt <b id="tiltDeg">26.6&#176;</b> &nbsp;vs&nbsp; slant <b>45.0&#176;</b>
+      <div id="bar"><div id="barKnob" style="left:0px"></div></div>
+    </div>
+
+    <div id="caption" class="overlay"></div>
+  </div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Jump to:</span>
+      <button id="btnEll">Ellipse</button>
+      <button id="btnPar">Parabola</button>
+      <button id="btnHyp">Hyperbola</button>
+      <span style="flex:1"></span>
+      <button id="btnTour">&#9654;&nbsp;Play</button>
+      <button id="btnSpin">Spin</button>
+    </div>
+    <div class="row sliderRow">
+      <span class="name">tilt <i>m</i> = <span id="mVal">0.50</span></span>
+      <input type="range" id="mSlider" min="0" max="2.4" step="0.01" value="0.5"
+             aria-label="tilt m of the cutting plane">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Manim colour constants, so the palette below reads the way a Scene would.
+  var BLUE_D = 0x29abca, BLUE_E = 0x1c758a, BLUE_C = 0x58c4dd,
+      GREEN_C = 0x83c167, YELLOW = 0xffe14d, RED_C = 0xfc6255,
+      GOLD_C = 0xf0ac5f, GREY = 0x8a8f9c, INK = 0xece6e2;
+
+  var EPS = 1e-9;
+  var ZMAX = 2.4;      // the cone is drawn for |z| <= ZMAX
+  var SLANT = 45;      // half-angle of x^2 + y^2 = z^2, in degrees
+
+  // ---------- renderer / scene ----------
+  var stage = document.getElementById("stage");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  stage.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x06070a);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+  camera.up.set(0, 0, 1);                 // z is up, the usual maths convention
+
+  // FIT is a bounding radius for everything drawn: the cone reaches |z| = ZMAX at
+  // a radius of ZMAX, and the axis labels sit a little beyond that.
+  var FIT = 3.5;
+  var radius = 10.4, theta = 0.62, phi = 0.86;
+  var aimShift = 0;   // world units to slide the picture down the screen
+
+  function placeCamera() {
+    var eye = new THREE.Vector3(
+      radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.sin(phi) * Math.sin(theta),
+      radius * Math.cos(phi)
+    );
+    // Screen-up in world terms: camera.up with the view direction projected out.
+    var fwd = eye.clone().negate().normalize();
+    var up = camera.up.clone().addScaledVector(fwd, -camera.up.dot(fwd));
+    if (up.lengthSq() < 1e-9) up.set(0, 1, 0);
+    up.normalize().multiplyScalar(aimShift);
+
+    camera.position.copy(eye).add(up);
+    camera.lookAt(up.x, up.y, up.z);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.62));
+  var key = new THREE.DirectionalLight(0xffffff, 0.62); key.position.set(5, 3, 6);
+  var fill = new THREE.DirectionalLight(0x9fd8ff, 0.30); fill.position.set(-4, -5, 2);
+  scene.add(key); scene.add(fill);
+
+  // ---------- text sprites (axis labels) ----------
+  // Drawn in the book's serif. The webfont may still be loading when the sprites
+  // are first painted, so they are repainted once document.fonts settles.
+  var LABEL_FONT = 'italic 78px "PT Serif", "Times New Roman", Times, serif';
+  var LABELS = [];
+
+  function paintLabel(rec) {
+    var s = 128, cv = document.createElement("canvas");
+    cv.width = cv.height = s;
+    var g = cv.getContext("2d");
+    g.font = LABEL_FONT;
+    g.fillStyle = rec.color;
+    g.textAlign = "center";
+    g.textBaseline = "middle";
+    g.fillText(rec.text, s / 2, s / 2);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.minFilter = THREE.LinearFilter;
+    if (rec.sprite.material.map) rec.sprite.material.map.dispose();
+    rec.sprite.material.map = tex;
+    rec.sprite.material.needsUpdate = true;
+  }
+
+  function makeLabel(text, cssColor) {
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({
+      transparent: true, depthTest: false
+    }));
+    sp.scale.set(0.46, 0.46, 1);
+    var rec = { sprite: sp, text: text, color: cssColor };
+    LABELS.push(rec);
+    paintLabel(rec);
+    return sp;
+  }
+
+  // ---------- axes, with manim-ish arrow tips ----------
+  (function buildAxes() {
+    var A = 2.95;
+    var mat = new THREE.LineBasicMaterial({ color: GREY, transparent: true, opacity: 0.55 });
+    var tipMat = new THREE.MeshBasicMaterial({ color: GREY, transparent: true, opacity: 0.75 });
+    var dirs = [
+      { v: new THREE.Vector3(1, 0, 0), rot: [0, 0, -Math.PI / 2], t: "x" },
+      { v: new THREE.Vector3(0, 1, 0), rot: [0, 0, 0],            t: "y" },
+      { v: new THREE.Vector3(0, 0, 1), rot: [Math.PI / 2, 0, 0],  t: "z" }
+    ];
+    dirs.forEach(function (d) {
+      var a = d.v.clone().multiplyScalar(-A), b = d.v.clone().multiplyScalar(A);
+      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([a, b]), mat));
+      var tip = new THREE.Mesh(new THREE.ConeGeometry(0.075, 0.24, 14), tipMat);
+      tip.position.copy(b);
+      tip.rotation.set(d.rot[0], d.rot[1], d.rot[2]);
+      scene.add(tip);
+      var lab = makeLabel(d.t, "#9aa0ad");
+      lab.position.copy(d.v.clone().multiplyScalar(A + 0.34));
+      scene.add(lab);
+    });
+  })();
+
+  // ---------- the double cone x^2 + y^2 = z^2 ----------
+  // Built with a checkerboard of BLUE_D / BLUE_E, the way manim shades a Surface.
+  (function buildCone() {
+    var nu = 72, nv = 36;
+    var pos = [], col = [];
+    var cA = new THREE.Color(BLUE_D), cB = new THREE.Color(BLUE_E);
+
+    function P(i, j) {
+      var v = -ZMAX + (2 * ZMAX * j) / nv;
+      var r = Math.abs(v);                       // on the cone the radius is |z|
+      var t = (2 * Math.PI * i) / nu;
+      return new THREE.Vector3(r * Math.cos(t), r * Math.sin(t), v);
+    }
+    for (var j = 0; j < nv; j++) {
+      for (var i = 0; i < nu; i++) {
+        var a = P(i, j), b = P(i + 1, j), c = P(i + 1, j + 1), d = P(i, j + 1);
+        [a, b, c, a, c, d].forEach(function (p) { pos.push(p.x, p.y, p.z); });
+        var cc = ((i + j) % 2 === 0) ? cA : cB;
+        for (var k = 0; k < 6; k++) col.push(cc.r, cc.g, cc.b);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setAttribute("color", new THREE.Float32BufferAttribute(col, 3));
+    geo.computeVertexNormals();
+    scene.add(new THREE.Mesh(geo, new THREE.MeshPhongMaterial({
+      vertexColors: true, transparent: true, opacity: 0.42,
+      side: THREE.DoubleSide, depthWrite: false, shininess: 42
+    })));
+  })();
+
+  // ---------- the two rulings lying in the plane x = 0 ----------
+  // The plane z = m*y + c is parallel to the ruling z = y exactly when m = 1;
+  // that ruling lights up as the section turns into a parabola.
+  var rulingMat = new THREE.LineBasicMaterial({ color: GOLD_C, transparent: true, opacity: 0.22 });
+  var rulingHot = new THREE.LineBasicMaterial({ color: YELLOW, transparent: true, opacity: 0.95 });
+  var rulingUp = new THREE.Line(new THREE.BufferGeometry().setFromPoints(
+        [new THREE.Vector3(0, -ZMAX, -ZMAX), new THREE.Vector3(0, ZMAX, ZMAX)]), rulingMat);
+  var rulingDn = new THREE.Line(new THREE.BufferGeometry().setFromPoints(
+        [new THREE.Vector3(0, -ZMAX, ZMAX), new THREE.Vector3(0, ZMAX, -ZMAX)]), rulingMat);
+  scene.add(rulingUp); scene.add(rulingDn);
+
+  // ---------- the cutting plane ----------
+  var PLANE = 6.0;
+  var planeMesh = new THREE.Mesh(
+    new THREE.PlaneGeometry(PLANE, PLANE),
+    new THREE.MeshPhongMaterial({
+      color: 0xd8dee9, transparent: true, opacity: 0.13,
+      side: THREE.DoubleSide, depthWrite: false
+    })
+  );
+  scene.add(planeMesh);
+
+  var planeEdge = new THREE.LineSegments(
+    new THREE.EdgesGeometry(new THREE.PlaneGeometry(PLANE, PLANE)),
+    new THREE.LineBasicMaterial({ color: 0xd8dee9, transparent: true, opacity: 0.34 })
+  );
+  scene.add(planeEdge);
+
+  // ---------- the section curve ----------
+  var curveGroup = new THREE.Group();
+  scene.add(curveGroup);
+  var coreMat = new THREE.MeshBasicMaterial({ color: GREEN_C });
+  var glowMat = new THREE.MeshBasicMaterial({
+    color: GREEN_C, transparent: true, opacity: 0.22,
+    blending: THREE.AdditiveBlending, depthWrite: false
+  });
+
+  function setCurveColor(hex) {
+    coreMat.color.setHex(hex);
+    glowMat.color.setHex(hex);
+  }
+  function clearCurves() {
+    while (curveGroup.children.length) {
+      var m = curveGroup.children.pop();
+      m.geometry.dispose();
+    }
+  }
+  function addTube(points, closed) {
+    if (points.length < 2) return;
+    var curve = new THREE.CatmullRomCurve3(points, !!closed);
+    var n = Math.max(32, points.length * 2);
+    curveGroup.add(new THREE.Mesh(new THREE.TubeGeometry(curve, n, 0.038, 10, !!closed), coreMat));
+    curveGroup.add(new THREE.Mesh(new THREE.TubeGeometry(curve, n, 0.10, 10, !!closed), glowMat));
+  }
+
+  // ---------- state ----------
+  // The plane keeps a fixed height, c = 1; only its tilt m is under the reader's
+  // control, so the section is always a genuine conic.
+  var mVal = 0.5;
+  var cVal = 1.0;
+
+  // On the plane z = m*y + c the cone gives
+  //     (1 - m^2) y^2 - 2 m c y + (x^2 - c^2) = 0,
+  // and for m > 1 the two y-roots trace the two branches of the hyperbola.
+  function yRoot(x, sign, m, c) {
+    var q = 1 - m * m;
+    var disc = m * m * c * c - q * (x * x - c * c);
+    return (m * c + sign * Math.sqrt(Math.max(0, disc))) / q;
+  }
+
+  function classify(m) {
+    if (Math.abs(m - 1) < 5e-3)
+      return { key: "par", name: "Parabola",  cond: "tilt equal to the slant — parallel to a ruling", color: YELLOW };
+    if (m < 1) {
+      if (m < 5e-3)
+        return { key: "ell", name: "Circle",  cond: "plane perpendicular to the axis", color: GREEN_C };
+      return   { key: "ell", name: "Ellipse", cond: "tilt shallower than the slant — one nappe", color: GREEN_C };
+    }
+    return     { key: "hyp", name: "Hyperbola", cond: "tilt steeper than the slant — both nappes", color: RED_C };
+  }
+
+  function updateSlice() {
+    clearCurves();
+
+    // The plane z = m*y + c is the xy-plane rotated about the x-axis by atan(m).
+    planeMesh.rotation.set(Math.atan(mVal), 0, 0);
+    planeMesh.position.set(0, 0, cVal);
+    planeEdge.rotation.copy(planeMesh.rotation);
+    planeEdge.position.copy(planeMesh.position);
+
+    var info = classify(mVal);
+    setCurveColor(info.color);
+
+    var i, t, x, y, z, pts, seg;
+    var isPar = Math.abs(mVal - 1) < 5e-3;
+
+    if (isPar) {
+      // y = (x^2 - c^2)/(2c),  z = y + c, on the nappe carrying the sign of c
+      var xlim = Math.sqrt(Math.max(0, 2 * Math.abs(cVal) * ZMAX - cVal * cVal));
+      pts = [];
+      for (i = 0; i <= 150; i++) {
+        x = -xlim + (2 * xlim * i) / 150;
+        y = (x * x - cVal * cVal) / (2 * cVal);
+        z = y + cVal;
+        if (Math.abs(z) <= ZMAX + 1e-9) pts.push(new THREE.Vector3(x, y, z));
+      }
+      addTube(pts);
+    } else if (mVal < 1) {
+      var q = 1 - mVal * mVal;
+      var y0 = mVal * cVal / q;                     // centre, along y
+      var Ay = cVal / q;                            // signed semi-axis along y
+      var Bx = Math.abs(cVal) / Math.sqrt(q);       // semi-axis along x
+      var clipped = Math.abs(cVal) / (1 - mVal) > ZMAX + 1e-9;
+      var M = 170;
+      if (!clipped) {
+        pts = [];
+        for (i = 0; i < M; i++) {
+          t = (2 * Math.PI * i) / M;
+          y = y0 + Ay * Math.sin(t);
+          pts.push(new THREE.Vector3(Bx * Math.cos(t), y, mVal * y + cVal));
+        }
+        addTube(pts, true);
+      } else {
+        seg = [];
+        for (i = 0; i <= M; i++) {
+          t = (2 * Math.PI * i) / M;
+          y = y0 + Ay * Math.sin(t);
+          z = mVal * y + cVal;
+          if (Math.abs(z) <= ZMAX) seg.push(new THREE.Vector3(Bx * Math.cos(t), y, z));
+          else { addTube(seg); seg = []; }
+        }
+        addTube(seg);
+      }
+    } else {
+      [-1, 1].forEach(function (sg) {
+        // bisect for the |x| at which the branch leaves the drawn part of the cone
+        var lo = 0, hi = 60;
+        for (var k = 0; k < 60; k++) {
+          var mid = 0.5 * (lo + hi);
+          if (Math.abs(mVal * yRoot(mid, sg, mVal, cVal) + cVal) > ZMAX) hi = mid; else lo = mid;
+        }
+        var segb = [];
+        for (var ii = 0; ii <= 150; ii++) {
+          var xx = -lo + (2 * lo * ii) / 150;
+          var yb = yRoot(xx, sg, mVal, cVal);
+          var zb = mVal * yb + cVal;
+          if (Math.abs(zb) <= ZMAX + 1e-6) segb.push(new THREE.Vector3(xx, yb, zb));
+        }
+        addTube(segb);
+      });
+    }
+
+    // the ruling the plane is racing turns bright at m = 1
+    rulingUp.material = isPar ? rulingHot : rulingMat;
+
+    paintReadouts(info);
+    render();
+  }
+
+  // ---------- readouts ----------
+  var elEqM = document.getElementById("eqM"),
+      elName = document.getElementById("conicName"),
+      elCond = document.getElementById("conicCond"),
+      elTilt = document.getElementById("tiltDeg"),
+      elKnob = document.getElementById("barKnob"),
+      elMVal = document.getElementById("mVal");
+
+  var CSS = { };
+  CSS[GREEN_C] = "#83c167"; CSS[YELLOW] = "#ffe14d"; CSS[RED_C] = "#fc6255";
+
+  function paintReadouts(info) {
+    elEqM.textContent = mVal.toFixed(2);
+    elName.textContent = info.name;
+    elName.style.color = CSS[info.color] || "#ece6e2";
+    elCond.textContent = info.cond;
+
+    var tilt = Math.atan(mVal) * 180 / Math.PI;
+    elTilt.textContent = tilt.toFixed(1) + "°";
+    elKnob.style.left = (Math.min(1, tilt / (2 * SLANT)) * 168 - 1.5) + "px";
+
+    elMVal.textContent = mVal.toFixed(2);
+
+    document.getElementById("btnEll").classList.toggle("active", info.key === "ell");
+    document.getElementById("btnPar").classList.toggle("active", info.key === "par");
+    document.getElementById("btnHyp").classList.toggle("active", info.key === "hyp");
+
+    mSlider.value = String(mVal);
+  }
+
+  // ---------- render loop ----------
+  var spinning = false, rafId = null, lastT = 0;
+
+  function render() { renderer.render(scene, camera); }
+
+  function frame(now) {
+    rafId = requestAnimationFrame(frame);
+    var dt = lastT ? Math.min(0.05, (now - lastT) / 1000) : 0;
+    lastT = now;
+    var dirty = false;
+
+    if (spinning || tour.running) {
+      theta += (tour.running ? 0.10 : 0.22) * dt;
+      placeCamera();
+      dirty = true;
+    }
+    if (tween) { stepTween(dt); dirty = true; }   // stepTween redraws the slice itself
+    else if (dirty) render();
+
+    if (!spinning && !tour.running && !tween) { cancelAnimationFrame(rafId); rafId = null; lastT = 0; }
+  }
+  function ensureLoop() { if (rafId === null) { lastT = 0; rafId = requestAnimationFrame(frame); } }
+
+  // ---------- tweening, with manim's smoothstep rate function ----------
+  function smooth(t) { return t * t * t * (t * (t * 6 - 15) + 10); }
+
+  var tween = null;
+  function animateTo(targetM, seconds, done) {
+    tween = { m0: mVal, m1: targetM, t: 0, dur: Math.max(0.01, seconds), done: done };
+    ensureLoop();
+  }
+  function stepTween(dt) {
+    tween.t += dt;
+    var a = smooth(Math.min(1, tween.t / tween.dur));
+    mVal = tween.m0 + (tween.m1 - tween.m0) * a;
+    updateSlice();
+    if (tween.t >= tween.dur) {
+      mVal = tween.m1;
+      var cb = tween.done;
+      tween = null;
+      updateSlice();
+      if (cb) cb();
+    }
+  }
+
+  // ---------- the guided tour: a little Scene, played in the browser ----------
+  var elCaption = document.getElementById("caption");
+  function say(text) {
+    elCaption.classList.remove("show");
+    window.setTimeout(function () {
+      elCaption.textContent = text;
+      elCaption.classList.add("show");
+    }, text ? 160 : 0);
+  }
+
+  var STORY = [
+    { say: "A plane perpendicular to the axis cuts a circle.", m: 0.0, run: 1.2, hold: 1.1 },
+    { say: "Tilt it a little — shallower than the slant — and the circle stretches into an ellipse.", m: 0.55, run: 1.6, hold: 1.4 },
+    { say: "At tilt = slant the plane is parallel to a ruling (gold). The curve opens up: a parabola.", m: 1.0, run: 1.8, hold: 1.8 },
+    { say: "Steeper still, and the plane reaches the second nappe: a hyperbola, in two branches.", m: 1.8, run: 1.8, hold: 1.8 },
+    { say: "Your turn: drag the tilt slider, and drag the figure to look from anywhere.", m: 0.55, run: 1.6, hold: 0.9 }
+  ];
+
+  var tour = { running: false, i: 0, timer: null };
+  var btnTour = document.getElementById("btnTour");
+
+  function tourStep() {
+    if (!tour.running) return;
+    if (tour.i >= STORY.length) { stopTour(); return; }
+    var beat = STORY[tour.i++];
+    say(beat.say);
+    animateTo(beat.m, beat.run, function () {
+      if (!tour.running) return;
+      tour.timer = window.setTimeout(tourStep, beat.hold * 1000);
+    });
+  }
+  function startTour() {
+    tour.running = true; tour.i = 0;
+    btnTour.innerHTML = "&#10074;&#10074;&nbsp;Stop";
+    btnTour.classList.add("running");
+    setSlidersEnabled(false);
+    ensureLoop();
+    tourStep();
+  }
+  function stopTour() {
+    tour.running = false;
+    if (tour.timer) { window.clearTimeout(tour.timer); tour.timer = null; }
+    tween = null;
+    btnTour.innerHTML = "&#9654;&nbsp;Play";
+    btnTour.classList.remove("running");
+    setSlidersEnabled(true);
+    say("");
+    updateSlice();
+  }
+  btnTour.addEventListener("click", function () { tour.running ? stopTour() : startTour(); });
+
+  function setSlidersEnabled(on) {
+    mSlider.disabled = !on;
+    mSlider.style.opacity = on ? "1" : "0.45";
+  }
+
+  // ---------- drag to orbit ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  var el = renderer.domElement;
+  function startDrag(x, y) { dragging = true; lastX = x; lastY = y; }
+  function moveDrag(x, y) {
+    if (!dragging) return;
+    theta -= (x - lastX) * 0.008;
+    phi = Math.min(Math.PI - 0.05, Math.max(0.05, phi - (y - lastY) * 0.008));
+    lastX = x; lastY = y;
+    placeCamera();
+    render();
+  }
+  el.addEventListener("mousedown", function (e) { startDrag(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { moveDrag(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  el.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { startDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  el.addEventListener("touchmove", function (e) {
+    if (e.touches.length === 1) { moveDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- controls ----------
+  var mSlider = document.getElementById("mSlider");
+
+  function jumpTo(m) {
+    if (tour.running) stopTour();
+    animateTo(m, 0.9);
+  }
+  document.getElementById("btnEll").addEventListener("click", function () { jumpTo(0.55); });
+  document.getElementById("btnPar").addEventListener("click", function () { jumpTo(1.0); });
+  document.getElementById("btnHyp").addEventListener("click", function () { jumpTo(1.8); });
+
+  mSlider.addEventListener("input", function () { tween = null; mVal = parseFloat(mSlider.value); updateSlice(); });
+
+  var btnSpin = document.getElementById("btnSpin");
+  btnSpin.addEventListener("click", function () {
+    spinning = !spinning;
+    btnSpin.classList.toggle("active", spinning);
+    if (spinning) ensureLoop();
+  });
+
+  // ---------- sizing (fills the iframe) ----------
+  // The equation card and the tilt readout are drawn over the canvas, so the cone
+  // is framed into the clear band between them rather than into the whole canvas.
+  // That keeps them from colliding on a narrow phone as well as on a wide screen.
+  function resize() {
+    var w = document.getElementById("app").clientWidth;
+    // the stage is the flex column's leftover space, so it is measured,
+    // not computed: no rounding is left over to make a scrollbar
+    var h = stage.clientHeight;
+
+    var card = document.getElementById("eqcard"), meter = document.getElementById("meter");
+    // Below 560px the card is a strip above the canvas (see the media query), so it
+    // costs canvas height instead of covering the cone.
+    var stacked = window.getComputedStyle(card).position === "static";
+    var cardH = stacked ? card.offsetHeight : 0;
+    var ch = Math.max(120, h - cardH);
+    // size the stage to what it actually holds, so the canvas can never spill over
+    // the control panel and swallow its clicks
+
+    renderer.setSize(w, ch);
+    camera.aspect = w / ch;
+
+    // How much vertical room a floating overlay really costs depends on how far it
+    // reaches across: spanning the width, the cone must clear it entirely; hugging
+    // the left edge of a wide screen, it barely intrudes.
+    var reach = function (el) { return Math.min(1, el.offsetWidth / (0.45 * w)); };
+    var topPad = stacked ? 0 : (card.offsetHeight + 20) * reach(card);
+    var botPad = (meter.offsetHeight + 20) * reach(meter);
+    // leave at least a third of the canvas for the picture, however tall the overlays are
+    var band = Math.max(0.34, (ch - topPad - botPad) / ch);
+
+    var tanHalf = Math.tan(camera.fov * Math.PI / 360);
+    // fit FIT into the band vertically, and into the full width horizontally
+    radius = FIT / (tanHalf * Math.min(band, camera.aspect));
+
+    // slide the picture into the middle of that band
+    aimShift = 0.5 * (topPad - botPad) * (2 * radius * tanHalf) / ch;
+
+    camera.updateProjectionMatrix();
+    placeCamera();
+    render();
+  }
+  window.addEventListener("resize", resize);
+
+  // ---------- go ----------
+  placeCamera();
+  resize();
+  updateSlice();
+
+  // repaint the axis labels once PT Serif has actually arrived
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      LABELS.forEach(paintLabel);
+      render();
+    });
+  }
+})();
+</script>
+</body>
+</html>

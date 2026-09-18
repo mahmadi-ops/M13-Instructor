@@ -1,0 +1,61 @@
+<diagram>
+  <annotations>
+    <annotation id="inscribed-rects-figure" speech2="The circle x squared plus y squared equals 8 with several inscribed rectangles of different proportions">
+      <grouped>inscribed-rects-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>inscribed-rects-constraint</active>
+        <active>inscribed-rects-candidates</active>
+      </children>
+      <components>
+        <active>inscribed-rects-constraint</active>
+        <active>inscribed-rects-candidates</active>
+      </components>
+    </annotation>
+    <annotation id="inscribed-rects-constraint" speech2="The constraint curve, the circle x squared plus y squared equals 8">
+      <active>inscribed-rects-constraint</active>
+      <position>1</position>
+      <parents>
+        <grouped>inscribed-rects-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="inscribed-rects-candidates" speech2="Three of the possible inscribed rectangles, each with corners plus or minus x comma plus or minus y and area 4 x y">
+      <grouped>inscribed-rects-candidates</grouped>
+      <position>2</position>
+      <children>
+        <active>inscribed-rects-rect-A</active>
+        <active>inscribed-rects-rect-B</active>
+        <active>inscribed-rects-rect-C</active>
+      </children>
+      <components>
+        <active>inscribed-rects-rect-A</active>
+        <active>inscribed-rects-rect-B</active>
+        <active>inscribed-rects-rect-C</active>
+      </components>
+      <parents>
+        <grouped>inscribed-rects-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="inscribed-rects-rect-A" speech2="A wide and short inscribed rectangle">
+      <active>inscribed-rects-rect-A</active>
+      <position>1</position>
+      <parents>
+        <grouped>inscribed-rects-candidates</grouped>
+      </parents>
+    </annotation>
+    <annotation id="inscribed-rects-rect-B" speech2="An inscribed rectangle of intermediate proportions, with the generic corner x comma y marked on the circle">
+      <active>inscribed-rects-rect-B</active>
+      <position>2</position>
+      <parents>
+        <grouped>inscribed-rects-candidates</grouped>
+      </parents>
+    </annotation>
+    <annotation id="inscribed-rects-rect-C" speech2="A tall and narrow inscribed rectangle">
+      <active>inscribed-rects-rect-C</active>
+      <position>3</position>
+      <parents>
+        <grouped>inscribed-rects-candidates</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

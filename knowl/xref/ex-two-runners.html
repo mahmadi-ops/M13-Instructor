@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two Runners in a City Heat Island.</span>
+</h2>
+<div class="para logical">
+<div class="para">On a still summer afternoon the pavement downtown is far hotter than the outlying neighborhoods. Model the surface air temperature, in degrees Fahrenheit, by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T(x,y) = 74 + 14\,e^{-(x^2 + 3y^2)/40},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are measured in miles east and north of downtown. The core reaches <span class="process-math">\(88^\circ\)</span>F, and the outskirts settle near <span class="process-math">\(74^\circ\)</span>F. Two runners meet at the point <span class="process-math">\(P_0(1,1)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical">
+<ol class="decimal" id="ex-two-runners-2-2-1">
+<li>
+<div class="para">The first runner is overheating and wants cooler air as quickly as possible. Which direction should she take, and how fast does the temperature fall along it?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#ex-two-runners-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li>
+<div class="para">The second runner has settled into the temperature at <span class="process-math">\(P_0\)</span> and wants a route on which it never changes at all. What path should she run?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#ex-two-runners-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">Differentiating the exponential with the chain rule,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\nabla T \amp = -\frac{14}{40}\,e^{-(x^2+3y^2)/40}\left(2x\,\hat{\imath} + 6y\,\hat{\jmath}\right),\\
+(\nabla T)_{(1,1)} \amp = -\frac{14\,e^{-1/10}}{40}\left(2\,\hat{\imath} + 6\,\hat{\jmath}\right)\\
+\amp \approx -0.633\,\hat{\imath} - 1.900\,\hat{\jmath} .
+\end{align*}
+</div>
+<div class="para">At <span class="process-math">\(P_0\)</span> the temperature itself is <span class="process-math">\(T(1,1) = 74 + 14e^{-1/10} \approx 86.7^\circ\)</span>F.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">
+<dfn class="terminology">Part 1.</dfn> Temperature falls fastest in the direction of <span class="process-math">\(-\nabla T\text{,}\)</span> which is a positive multiple of <span class="process-math">\(\hat{\imath} + 3\hat{\jmath}\text{.}\)</span> Normalizing, the heading is north-northeast:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathbf u = \frac{1}{\sqrt{10}}\,\hat{\imath} + \frac{3}{\sqrt{10}}\,\hat{\jmath},
+\end{equation*}
+</div>
+<div class="para">and the rate of change along it is</div>
+<div class="displaymath process-math">
+\begin{align*}
+D_{\mathbf u} T \amp = -\|\nabla T\|
+= -\frac{14\,e^{-1/10}}{40}\sqrt{4 + 36}\\
+\amp \approx -2.0 \ \frac{{}^\circ\text{F}}{\text{mi}} .
+\end{align*}
+</div>
+<div class="para">Notice how modest this is. The gradient hands her the <em class="emphasis">best available</em> direction, not a dramatic one: even running the optimal heading, she must cover a full mile to shed about two degrees. Any other heading does worse.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">
+<dfn class="terminology">Part 2.</dfn> The second runner needs <span class="process-math">\(D_{\mathbf u}T = 0\text{,}\)</span> that is, <span class="process-math">\(\mathbf u\)</span> orthogonal to <span class="process-math">\(\nabla T\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathbf u = \pm\frac{1}{\sqrt{10}}\left(3\,\hat{\imath} - \hat{\jmath}\right).
+\end{equation*}
+</div>
+<div class="para">Following that condition continuously, rather than for a single step, means never leaving the level curve of <span class="process-math">\(T\)</span> through <span class="process-math">\(P_0\text{.}\)</span> Since <span class="process-math">\(T\)</span> is constant exactly when <span class="process-math">\(x^2 + 3y^2\)</span> is constant, her route is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 + 3y^2 = 4,
+\end{equation*}
+</div>
+<div class="para">an ellipse with semi-axes <span class="process-math">\(2\)</span> miles east-west and <span class="process-math">\(2/\sqrt{3} \approx 1.15\)</span> miles north-south — a closed loop of roughly ten miles, every step of it at <span class="process-math">\(86.7^\circ\)</span>F.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">In the animation below, switch between the two runners. On the loop the thermometer holds at <span class="process-math">\(86.7^\circ\)</span>F while the blue gradient arrow stays stubbornly perpendicular to her heading; on the escape route the same reading falls steadily, and the path cuts across every isotherm at a right angle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">Use the interactive figure to explore the problem further geometrically, switching between the two routes and watching how the readings respond as the runner moves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-two-runners-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="interactive-iframe-container"><iframe src="external/isotherm-runner.html" id="interactive-isotherm-runner" style="width:600px; height:500px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-isotherm-runner.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="instructions interactive__instructions">
+<details id="interactive-isotherm-runner-1" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5></summary>
+<div class="solution-like knowl__content">
+<div class="para" id="interactive-isotherm-runner-1-1">Press “Run the isotherm” to send the runner around the level curve <span class="process-math">\(x^2+3y^2=4\text{,}\)</span> or “Dash for cool air” to send her along the path of steepest cooling. The readout shows her temperature, position, directional derivative <span class="process-math">\(D_{\mathbf u}T\text{,}\)</span> and distance travelled; the blue arrow is <span class="process-math">\(\nabla T\)</span> at her position. Use “Pace” to change her speed, and “Pause” or “Reset” to control the animation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#interactive-isotherm-runner-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#interactive-isotherm-runner-1" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Two routes from <span class="process-math">\(P_0(1,1)\)</span> in the field <span class="process-math">\(T(x,y) = 74 + 14e^{-(x^2+3y^2)/40}\text{.}\)</span> The highlighted ellipse is the level curve <span class="process-math">\(x^2+3y^2=4\text{,}\)</span> on which <span class="process-math">\(D_{\mathbf u}T = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 4.5.25"><a tabindex="-1" href="#figure-isotherm-runner" title="Copy heading and permalink for Figure 4.5.25" aria-label="Copy heading and permalink for Figure 4.5.25">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 4.5.24.1"><a tabindex="-1" href="#ex-two-runners-3" title="Copy heading and permalink for Solution 4.5.24.1" aria-label="Copy heading and permalink for Solution 4.5.24.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.5.24: Two Runners in a City Heat Island"><a tabindex="-1" href="#ex-two-runners" title="Copy heading and permalink for Example 4.5.24: Two Runners in a City Heat Island" aria-label="Copy heading and permalink for Example 4.5.24: Two Runners in a City Heat Island">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="subsec-scalar-fields-potentials.html#ex-two-runners">In Context</a></span>
+</body>
+</html>

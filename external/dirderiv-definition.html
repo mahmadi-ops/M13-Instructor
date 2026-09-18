@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The definition of the directional derivative</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI",
+      Roboto, sans-serif;
+  }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  .sliderRow {
+    display: flex; align-items: center; gap: 10px;
+    padding: 0 10px 6px 10px; box-sizing: border-box;
+  }
+  .sliderRow input { flex: 1; }
+  .sliderRow .lbl { font-size: 15px; min-width: 110px; font-variant-numeric: tabular-nums; }
+  #readout .m { font-family: "PT Serif", "Times New Roman", Times, serif;
+    font-size: 15px; }
+  #readout .m b { font-weight: 700; font-style: normal; }
+  #readout .m sub { font-size: 70%; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em;
+    font-variant-numeric: tabular-nums; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; }
+  /* legend */
+  #legend {
+    position: absolute; top: 8px; right: 8px;
+    background: rgba(255,255,255,0.93);
+    border: 1px solid #bbb; border-radius: 6px;
+    padding: 6px 9px; font-size: 12.5px; color: #222;
+    line-height: 1.3; pointer-events: none;
+    max-width: 190px;
+  }
+  #legend > div {
+    padding-left: 31px; text-indent: -31px; margin: 4px 0;
+  }
+  /* the variables are set in the face the page uses for mathematics */
+  #legend i { font-family: "PT Serif", "Times New Roman", Times, serif; font-style: italic; }
+  #legend .m { font-family: "PT Serif", "Times New Roman", Times, serif; }
+  #legend sub { font-size: 70%; }
+  .sw {
+    display: inline-block; width: 24px; height: 0; margin-right: 7px;
+    vertical-align: middle;
+  }
+  .solid3 { border-top: 3px solid; }
+  .thin   { border-top: 1.5px solid; }
+  .dash2  { border-top: 2px dashed; }
+  .dot {
+    display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+    margin: 0 14px 0 8px; vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="sliderRow">
+    <span class="lbl" id="thLabel">&theta; = 45&deg;</span>
+    <input type="range" id="thSlider" min="0" max="360" step="1" value="45">
+  </div>
+  <div class="sliderRow">
+    <span class="lbl" id="sLabel">s = 1.00</span>
+    <input type="range" id="sSlider" min="0.05" max="1.5" step="0.01" value="1">
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap">
+    <canvas id="cv"></canvas>
+    <div id="legend">
+      <div><span class="sw thin" style="border-color:#4f8fd6"></span>level curves of <i>f</i>(<i>x</i>, <i>y</i>) = 1 + <i>x</i>&sup2; + <i>y</i>&sup2;</div>
+      <div><span class="dot" style="background:#35659a"></span><i>P</i><sub>0</sub>(1, 1)</div>
+      <div><span class="dot" style="background:#d1362f"></span><i>P</i>(1 + <i>su</i><sub>1</sub>, 1 + <i>su</i><sub>2</sub>)</div>
+      <div><span class="sw solid3" style="border-color:#2a6fdb"></span>unit vector <i><b>u</b></i>, <span class="m">&#8214;<i><b>u</b></i>&#8214; = 1</span></div>
+      <div><span class="sw solid3" style="border-color:#f2c14e"></span>displacement <i>s</i><i><b>u</b></i></div>
+      <div><span class="sw dash2" style="border-color:#999999"></span>components <i>su</i><sub>1</sub>, <i>su</i><sub>2</sub></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // palette (same as the sample-graphs interactive)
+  var SURF_BLUE = "#4f8fd6", DARK_BLUE = "#35659a", GOLD = "#f2c14e",
+      RED = "#d1362f", GRAY = "#999999", BTN_BLUE = "#2a6fdb";
+
+  var canvas = document.getElementById("cv"), ctx = canvas.getContext("2d");
+  var thSlider = document.getElementById("thSlider");
+  var sSlider = document.getElementById("sSlider");
+  var theta = 45 * Math.PI / 180, sVal = 1;
+
+  var BB = { xmin: -0.75, xmax: 3.05, ymin: -0.75, ymax: 3.05 };
+  // width (css px) of the legend gutter kept free of the drawing
+  var legendGutter = 0;
+  function view() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = canvas.width - legendGutter * dpr, h = canvas.height;
+    var k = Math.min(w / (BB.xmax - BB.xmin), h / (BB.ymax - BB.ymin));
+    return { k: k,
+      ox: w / 2 - k * (BB.xmin + BB.xmax) / 2,
+      oy: h / 2 + k * (BB.ymin + BB.ymax) / 2 };
+  }
+  function f(x, y) { return 1 + x * x + y * y; }
+
+  function arrow(v, x0, y0, x1, y1, color, lw) {
+    var ax = v.ox + v.k * x0, ay = v.oy - v.k * y0;
+    var bx = v.ox + v.k * x1, by = v.oy - v.k * y1;
+    var ang = Math.atan2(by - ay, bx - ax), hl = 10 + lw * 1.5;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = lw;
+    ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(bx, by);
+    ctx.lineTo(bx - hl * Math.cos(ang - 0.42), by - hl * Math.sin(ang - 0.42));
+    ctx.lineTo(bx - hl * Math.cos(ang + 0.42), by - hl * Math.sin(ang + 0.42));
+    ctx.closePath(); ctx.fill();
+  }
+
+  function draw() {
+    var v = view(), w = canvas.width, h = canvas.height;
+    var dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, w, h);
+    // same face as the body text of the section
+    ctx.font = "italic " + (16 * dpr) +
+      "px 'PT Serif', 'Times New Roman', Times, serif";
+
+    // level curves of f = 1 + x^2 + y^2
+    ctx.strokeStyle = SURF_BLUE; ctx.globalAlpha = 0.35; ctx.lineWidth = 1.4 * dpr;
+    [0.707, 1, 1.414, 1.732, 2, 2.449, 2.828].forEach(function (r) {
+      ctx.beginPath();
+      ctx.arc(v.ox, v.oy, v.k * r, 0, 2 * Math.PI); ctx.stroke();
+    });
+    ctx.globalAlpha = 1;
+
+    // axes
+    ctx.strokeStyle = GRAY; ctx.lineWidth = 1.2 * dpr;
+    arrow(v, BB.xmin, 0, BB.xmax - 0.05, 0, GRAY, 1.2 * dpr);
+    arrow(v, 0, BB.ymin, 0, BB.ymax - 0.05, GRAY, 1.2 * dpr);
+    ctx.fillStyle = "#666";
+    ctx.fillText("x", v.ox + v.k * (BB.xmax - 0.18), v.oy + 16 * dpr);
+    ctx.fillText("y", v.ox - 16 * dpr, v.oy - v.k * (BB.ymax - 0.18));
+
+    var c = Math.cos(theta), d = Math.sin(theta);
+    var px = 1 + sVal * c, py = 1 + sVal * d;
+
+    // components of su (dashed)
+    ctx.strokeStyle = GRAY; ctx.lineWidth = 1 * dpr; ctx.setLineDash([6 * dpr, 5 * dpr]);
+    ctx.beginPath();
+    ctx.moveTo(v.ox + v.k * 1, v.oy - v.k * 1);
+    ctx.lineTo(v.ox + v.k * px, v.oy - v.k * 1);
+    ctx.lineTo(v.ox + v.k * px, v.oy - v.k * py);
+    ctx.stroke(); ctx.setLineDash([]);
+
+    // displacement su (gold) and unit vector u (blue) — named in the legend
+    arrow(v, 1, 1, px, py, GOLD, 3 * dpr);
+    arrow(v, 1, 1, 1 + 0.5 * c, 1 + 0.5 * d, BTN_BLUE, 3 * dpr);
+
+    // points P0 and P
+    ctx.fillStyle = DARK_BLUE;
+    ctx.beginPath(); ctx.arc(v.ox + v.k * 1, v.oy - v.k * 1, 4.5 * dpr, 0, 2 * Math.PI); ctx.fill();
+    ctx.fillStyle = RED;
+    ctx.beginPath(); ctx.arc(v.ox + v.k * px, v.oy - v.k * py, 4.5 * dpr, 0, 2 * Math.PI); ctx.fill();
+  }
+
+  function update() {
+    var c = Math.cos(theta), d = Math.sin(theta);
+    var quot = (f(1 + sVal * c, 1 + sVal * d) - f(1, 1)) / sVal;
+    var lim = 2 * c + 2 * d;
+    var M = function (t) { return '<span class="m">' + t + "</span>"; };
+    document.getElementById("readout").innerHTML =
+      M("( <i>f</i>(<i>P</i>) − <i>f</i>(<i>P</i><sub>0</sub>) ) / <i>s</i>") +
+      " = " + quot.toFixed(3) + "   →   " +
+      M("<i>D</i><sub><b>u</b></sub>&#8202;<i>f</i> = 2cos<i>θ</i> + 2sin<i>θ</i>") +
+      " = " + lim.toFixed(3) + "  (as " + M("<i>s</i> → 0") + ")";
+    draw();
+  }
+
+  thSlider.addEventListener("input", function () {
+    theta = parseFloat(thSlider.value) * Math.PI / 180;
+    document.getElementById("thLabel").innerHTML =
+      "&theta; = " + thSlider.value + "&deg;";
+    update();
+  });
+  sSlider.addEventListener("input", function () {
+    sVal = parseFloat(sSlider.value);
+    document.getElementById("sLabel").textContent = "s = " + sVal.toFixed(2);
+    update();
+  });
+
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = document.getElementById("app").clientWidth;
+    var used = 0;
+    Array.prototype.forEach.call(
+      document.querySelectorAll(".sliderRow, #readout"),
+      function (el) { used += el.offsetHeight; });
+    var h = Math.max(240, window.innerHeight - used - 4);
+    var legend = document.getElementById("legend");
+    legendGutter = Math.min(legend.offsetWidth + 24, w * 0.42);
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + "px"; canvas.style.height = h + "px";
+    update();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+  // the legend width (hence the gutter) settles once Open Sans has loaded
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(resize); }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-FirstWebWork" assembly-id="FirstWebWork">
+  <static seed="2">
+    <statement><p>State whether the equation <m>\left( \frac{x}{3} \right)^2 + \left( \frac{y}{4} \right)^2 + \left( \frac{z}{6} \right)^2=1</m> defines:</p>
+<p><ol label="1.">
+<li>
+<p>A hyperboloid of two sheets</p>
+</li>
+<li>
+<p>A hyperboloid of one sheet</p>
+</li>
+<li>
+<p>An ellipsoid</p>
+</li>
+<li>
+<p>None of these</p>
+</li>
+</ol></p>
+<p>Enter number of statement that is correct: <fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3</m>
+      </p>
+    </answer>
+    <solution><p>This equation is the equation of an ellipsoid.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Complementary_Modules_For_MATH_13/10_1.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(10.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+    Context("LimitedNumeric");
+   $a=random(2,8,1);
+$b=random(2,8,1);
+$c=random(2,8,1);
+$ysign=list_random(0,1);
+$zsign=list_random(0,1);
+$sum=$ysign+$zsign+1;
+if ($ysign==0) {$ysign='-'};
+if ($ysign==1) {$ysign='+'};
+if ($zsign==0) {$zsign='-'};
+if ($zsign==1) {$zsign='+'};
+if($sum==1) {$ans='a hyperboloid of two sheets'};
+if($sum==2) {$ans='a hyperboloid of one sheet'};
+if($sum==3) {$ans='an ellipsoid'};
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+State whether the equation [` \left( \frac{x}{[$a]} \right)^2 [$ysign] \left( \frac{y}{[$b]} \right)^2 [$zsign] \left( \frac{z}{[$c]} \right)^2=1 `] defines:
+
+1.  A hyperboloid of two sheets
+1.  A hyperboloid of one sheet
+1.  An ellipsoid
+1.  None of these   
+
+Enter number of statement that is correct: [_]{$sum}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This equation is the equation of [$ans].
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

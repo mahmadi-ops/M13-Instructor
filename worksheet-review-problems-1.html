@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Review Problems #1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="og:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="book:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta name="twitter:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta property="og:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.13';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.a45d14e8fc8c534a.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.538acb8e671a3b5d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.1bda041f5a098305.css">
+<script src="_static/pretext/js/dist/diagcess/diagcess.js"></script><script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="math13" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="shorttitlelowercase.html"><span class="title">MATH 13-Calculus and Analytic Geometry III</span></a></div>
+<p class="byline">Mehdi Ahmadi</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="worksheet-assignment-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="section-exercises.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="worksheet-assignment-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\deriv}[2]{\displaystyle \frac{d#1}{d#2}}
+\newcommand{\real}{\Bbb R}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth4 focused" data-preexpanded-levels="0" data-max-levels="4"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list"><li class="toc-item toc-preface"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-hyperbolic-functions.html" class="internal"><span class="codenumber">1</span> <span class="title">Hyperbolic Functions</span></a></div>
+<ul id="ptx-toc-group-chapter-hyperbolic-functions" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-definitions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Definitions and Derivatives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-graphs.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Graph, Domain, and Range of <span class="process-math">\(\cosh x\)</span> and <span class="process-math">\(\sinh x\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identities.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Identities and Other Hyperbolic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identity-list.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Hyperbolic Identities</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-real-life.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Hyperbolic Functions in Real Life</span></a></div>
+<ul id="ptx-toc-group-sec-hyp-real-life" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-catenary.html" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Hanging Cables and the Catenary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-celestial.html" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Celestial Mechanics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-gateway-arch.html" class="internal"><span class="codenumber">1.5.3</span> <span class="title">The Gateway Arch</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-more-examples.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Further Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-series-sequences.html" class="internal"><span class="codenumber">2</span> <span class="title">Series and Sequences</span></a></div>
+<ul id="ptx-toc-group-chapter-series-sequences" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-infinite-series.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Infinite Series</span></a></div>
+<ul id="ptx-toc-group-chapter-infinite-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-definitions.html" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-partial-sums.html" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-geometric.html" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-nth-term.html" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The <span class="process-math">\(n\)</span>th Term Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-combining.html" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Combining Series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-taylor-maclaurin.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Taylor and Maclaurin Series</span></a></div>
+<ul id="ptx-toc-group-chapter-taylor-maclaurin" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-definitions.html" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Definitions of Taylor Series, Maclaurin Series, and Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-example.html" class="internal"><span class="codenumber">2.2.2</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-taylor.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Taylor Series and its convergence</span></a></div>
+<ul id="ptx-toc-group-section-taylor" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-1.html" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Taylor’s Formula and The Remainder Estimation Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-2.html" class="internal"><span class="codenumber">2.3.2</span> <span class="title">An example of a Taylor series that converges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-3.html" class="internal"><span class="codenumber">2.3.3</span> <span class="title">The error in using a Taylor polynomial</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-taylor-7.html" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Applications of Taylor Series and Remainder Theorem</span></a></div>
+<ul id="ptx-toc-group-section-taylor-7" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#section-taylor-7-3" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Approximating Relativistic Kinetic Energy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsubsec-pendulum-small-angle" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Small-Angle Approximation for a Pendulum</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsec-approximating-pi-taylor" class="internal"><span class="codenumber">2.3.4.3</span> <span class="title">Approximating the value of <span class="process-math">\(\pi\)</span> using Taylor series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-5.html" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Proof of the remainder theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-binomial-series.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Binomial Series and Applications of Taylor Series</span></a></div>
+<ul id="ptx-toc-group-chapter-binomial-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-series.html" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Binomial Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-applications.html" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-geometry.html" class="internal"><span class="codenumber">3</span> <span class="title">3D Space and Vector Algebra</span></a></div>
+<ul id="ptx-toc-group-chapter-geometry" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-three-dimensional-coordinates.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Three-Dimensional Coordinate Systems</span></a></div>
+<ul id="ptx-toc-group-chapter-three-dimensional-coordinates" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-coordinate-system.html" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Rectangular Coordinate System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-planes-octants.html" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Coordinate Planes and Octants</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-distance.html" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Distance Between Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-spheres.html" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Spheres</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-describing-regions.html" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Describing Regions in Space</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-vectors.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Vectors</span></a></div>
+<ul id="ptx-toc-group-chapter-vectors" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-definitions.html" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Definitions, Terminology, and Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-algebra.html" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Vector Algebra Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-unit.html" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Unit Vectors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-dot-product.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Dot Product</span></a></div>
+<ul id="ptx-toc-group-section-dot-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dot-product.html" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The Dot Product and the Angle between Two Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projection.html" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Projection of <span class="process-math">\(\mathbf u\)</span> in the Direction of <span class="process-math">\(\mathbf v\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-work.html" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Application in Physics: Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-science.html" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Application in Data Science: Measuring Similarity in Tastes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-cross-product.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Cross Product</span></a></div>
+<ul id="ptx-toc-group-section-cross-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-definition.html" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Definition and Properties of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-components.html" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Second Definition of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-true-false.html" class="internal"><span class="codenumber">3.4.3</span> <span class="title">True or False?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-torque.html" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Application: Torque</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circular-motion.html" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Application: Circular Motion: Velocity and Angular Velocity</span></a></div>
+<ul id="ptx-toc-group-sec-circular-motion" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-polar-frame" class="internal"><span class="codenumber">3.4.5.1</span> <span class="title">A Frame that Turns with the Particle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-velocity" class="internal"><span class="codenumber">3.4.5.2</span> <span class="title">The Velocity in Circular Motion</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-angular-velocity-vector" class="internal"><span class="codenumber">3.4.5.3</span> <span class="title">Angular Velocity as a Vector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-v-omega-cross-r" class="internal"><span class="codenumber">3.4.5.4</span> <span class="title">Velocity as a Cross Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-motion-examples" class="internal"><span class="codenumber">3.4.5.5</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-parametrization.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Parametrization of Plane Curves</span></a></div>
+<ul id="ptx-toc-group-section-parametrization" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametric-equations.html" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Parametric Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametrizing-examples.html" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Some Examples of Parametrizing Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projectile-motion.html" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Projectile Motion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intersection-collision.html" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Intersection Points versus Collision Points</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-lines-planes.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Lines and Planes in Space</span></a></div>
+<ul id="ptx-toc-group-chapter-lines-planes" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-vector-eq.html" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Vector Equation for a Line in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-parametric.html" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Parametric Equations for a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-distance.html" class="internal"><span class="codenumber">3.6.3</span> <span class="title">The Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-equation.html" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Equation of a Plane in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-intersection.html" class="internal"><span class="codenumber">3.6.5</span> <span class="title">Lines of Intersection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-distance.html" class="internal"><span class="codenumber">3.6.6</span> <span class="title">Distance of a Point from a Plane</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-conics.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Conic Sections</span></a></div>
+<ul id="ptx-toc-group-section-conics" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-parabola.html" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipse.html" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbola.html" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-reflector.html" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Application: Parabolic Reflectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-whisper.html" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Application: Whispering Galleries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-loran.html" class="internal"><span class="codenumber">3.7.6</span> <span class="title">Application: Hyperbolic Navigation (LORAN)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-quadric-surfaces.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Quadric Surfaces</span></a></div>
+<ul id="ptx-toc-group-section-quadric-surfaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptical-paraboloid.html" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Elliptical Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbolic-paraboloid.html" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Hyperbolic Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipsoid.html" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Ellipsoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptic-cone.html" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Elliptic Cone</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperboloids.html" class="internal"><span class="codenumber">3.8.5</span> <span class="title">Hyperboloids</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-summary.html" class="internal"><span class="codenumber">3.8.6</span> <span class="title">Summary of the Quadric Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-applications.html" class="internal"><span class="codenumber">3.8.7</span> <span class="title">Quadric Surfaces in the World</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-functions-multiple-variables.html" class="internal"><span class="codenumber">4</span> <span class="title">Functions of Multiple Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-multiple-variables" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-functions-several-variables.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Functions of Several Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-several-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-functions-two-variables.html" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Functions of Two Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-curves.html" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Level Curves and Contour Maps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-surfaces.html" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Than Two Variables: Level Surfaces</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-limits-continuity.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Limits and Continuity in Higher Dimensions</span></a></div>
+<ul id="ptx-toc-group-chapter-limits-continuity" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-two-variable.html" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Limits of Two-Variable Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-continuity.html" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Continuity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-partial-derivatives.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Partial Derivatives</span></a></div>
+<ul id="ptx-toc-group-chapter-partial-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-definition.html" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-examples.html" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-second-derivatives.html" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Second Derivatives and the Mixed Derivative Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-chain-rule.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Chain Rule</span></a></div>
+<ul id="ptx-toc-group-chapter-chain-rule" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-one-independent.html" class="internal"><span class="codenumber">4.4.1</span> <span class="title">One Independent Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-two-independent.html" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Two Independent Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-applications.html" class="internal"><span class="codenumber">4.4.3</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-directional-derivatives.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Directional Derivatives and Gradient Vectors</span></a></div>
+<ul id="ptx-toc-group-section-directional-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-definition.html" class="internal"><span class="codenumber">4.5.1</span> <span class="title">The Definition of the Directional Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-vector.html" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The Gradient Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-properties.html" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Directions of Fastest Increase, Fastest Decrease, and No Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-summary.html" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-scalar-fields-potentials.html" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Scalar Fields, Potentials, and the Direction Nature Chooses</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-tangent-planes-differentials.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Tangent Planes and Differentials</span></a></div>
+<ul id="ptx-toc-group-section-tangent-planes-differentials" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-equation.html" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Equation of the Tangent Plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-example-paraboloid.html" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Tangent Plane and Normal Line to a Surface</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-change.html" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Estimating the Change in a Particular Direction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-linearization.html" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Linearizing <span class="process-math">\(z = f(x,y)\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-extreme-values.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Extreme Values and Saddle Points</span></a></div>
+<ul id="ptx-toc-group-section-extreme-values" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-local-extrema.html" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Local Maximum and Local Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-saddle-example.html" class="internal"><span class="codenumber">4.7.2</span> <span class="title">A Saddle Point Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-second-derivative-test.html" class="internal"><span class="codenumber">4.7.3</span> <span class="title">The Second Derivative Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-extrema.html" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Absolute Maximum and Absolute Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equilibrium-stability.html" class="internal"><span class="codenumber">4.7.5</span> <span class="title">A Physical Application: Equilibrium and Stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-why-second-derivative-test.html" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Why the Second Derivative Test Works</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-lagrange-multipliers.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-section-lagrange-multipliers" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-method.html" class="internal"><span class="codenumber">4.8.1</span> <span class="title">The Method of Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-method" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#sec-lagrange-collinear" class="internal"><span class="codenumber">4.8.1.1</span> <span class="title">Why the Gradients Must Be Collinear</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#subsec-lagrange-statement" class="internal"><span class="codenumber">4.8.1.2</span> <span class="title">Stating the Method</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-examples.html" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Examples: Functions of Two Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-examples" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-ellipse" class="internal"><span class="codenumber">4.8.2.1</span> <span class="title">Extrema on an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-circle" class="internal"><span class="codenumber">4.8.2.2</span> <span class="title">Absolute Extrema on a Circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-three-variables.html" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Examples: Functions of Three Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-three-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-distance" class="internal"><span class="codenumber">4.8.3.1</span> <span class="title">Shortest Distance to a Plane</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-box" class="internal"><span class="codenumber">4.8.3.2</span> <span class="title">Minimizing the Cost of a Box</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Functions of <span class="process-math">\(n\)</span> Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-functions-n-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-n-variables" class="internal"><span class="codenumber">4.8.4.1</span> <span class="title">The Method in <span class="process-math">\(n\)</span> Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-hm-gm" class="internal"><span class="codenumber">4.8.4.2</span> <span class="title">An Inequality Between Two Means</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="section-exercises.html" class="internal"><span class="codenumber">5</span> <span class="title">Assignments and Review Problems</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-section-exercises">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Assignment 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Assignment 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assignment 3</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="worksheet-review-problems-1.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Review Problems #1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-4.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Assignment 4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Assignment 5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-6.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Assignment 6</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-2.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Review Problems #2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-7.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Assignment 7</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-8.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Assignment 8</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-9.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Assignment 9</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-3.html" class="internal"><span class="codenumber">5.12</span> <span class="title">Review Problems #3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-10.html" class="internal"><span class="codenumber">5.13</span> <span class="title">Assignment 10</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-4.html" class="internal"><span class="codenumber">5.14</span> <span class="title">Review Problems #4</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="worksheet-review-problems-1" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Review Problems #1</span><div class="print-links"><a href="?printpreview=worksheet-review-problems-1" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="introduction" id="worksheet-review-problems-1-2">
+<div class="para" id="worksheet-review-problems-1-2-1">These are the leftover problems from the first four topics of the course, collected here for review. They are not assigned, but they are fair game on an exam. The topics they cover, with links to the notes:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="worksheet-review-problems-1-2-2">
+<ul class="disc" id="worksheet-review-problems-1-2-2-1">
+<li id="worksheet-review-problems-1-2-2-1-1">
+<div class="para" id="worksheet-review-problems-1-2-2-1-1-1">
+<a href="chapter-hyperbolic-functions.html" class="internal" title="Chapter 1: Hyperbolic Functions">Hyperbolic Functions</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="worksheet-review-problems-1-2-2-1-2">
+<div class="para" id="worksheet-review-problems-1-2-2-1-2-1">
+<a href="chapter-infinite-series.html" class="internal" title="Section 2.1: Infinite Series">Infinite Series</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="worksheet-review-problems-1-2-2-1-3">
+<div class="para" id="worksheet-review-problems-1-2-2-1-3-1">
+<a href="chapter-taylor-maclaurin.html" class="internal" title="Section 2.2: Taylor and Maclaurin Series">Taylor and Maclaurin Series</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="worksheet-review-problems-1-2-2-1-4">
+<div class="para" id="worksheet-review-problems-1-2-2-1-4-1">
+<a href="section-taylor.html" class="internal" title="Section 2.3: Taylor Series and its convergence">Taylor Series and its convergence</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="worksheet-review-problems-1-2-2-1-5">
+<div class="para" id="worksheet-review-problems-1-2-2-1-5-1">
+<a href="chapter-binomial-series.html" class="internal" title="Section 2.4: The Binomial Series and Applications of Taylor Series">The Binomial Series and Applications of Taylor Series</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#worksheet-review-problems-1-2-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-review-problems-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="exercise exercise-like" id="rw23-9-b"><h2 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True or False.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-rw23-9-b">
+<div class="para" id="rw23-9-b-2-1">For any real number <span class="process-math">\(x\text{,}\)</span> we have <span class="process-math">\(\cosh^2(x) + \sinh^2(x) = \cosh(2x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-9-b-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="rw23-9-b-2-2">Justify your answer fully: give a proof if the statement is true, or a counterexample if it is false.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-9-b-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<li data-component="answer" id="rs-rw23-9-b_opt_t" data-correct=""><p>True.</p></li>
+<li data-component="feedback" id="rs-rw23-9-b_opt_t">
+<div class="para logical" id="rw23-9-b-3-1">
+<div class="para">First,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rw23-cosh2x.html ./knowl/xref/eq-rw23-sum.html" id="eq-rw23-cosh2x">
+\begin{equation}
+\cosh(2x) = \frac12\left(e^{2x} + e^{-2x}\right).\tag{5.4.1}
+\end{equation}
+</div>
+<div class="para">Second,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rw23-cosh2x.html ./knowl/xref/eq-rw23-sum.html" id="rw23-9-b-3-1-2">
+\begin{align}
+\cosh^2(x) + \sinh^2(x)
+\amp = \frac14\left(e^x + e^{-x}\right)^2
++ \frac14\left(e^x - e^{-x}\right)^2\notag\\
+\amp = \frac14\left(2e^{2x} + 2e^{-2x}\right)\notag\\
+\amp
+= \frac12\left(e^{2x} + e^{-2x}\right).\tag{5.4.2}
+\end{align}
+</div>
+<div class="para">Comparing <a href="worksheet-review-problems-1.html#eq-rw23-cosh2x" class="xref" data-knowl="./knowl/xref/eq-rw23-cosh2x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.4.1">(5.4.1)</a> and <a href="worksheet-review-problems-1.html#rw23-9-b-3-1-2" class="xref" data-knowl="./knowl/xref/eq-rw23-sum.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.4.2">(5.4.2)</a> gives <span class="process-math">\(\cosh^2(x) + \sinh^2(x) = \cosh(2x)\text{.}\)</span>
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-rw23-9-b_opt_f"><p>False.</p></li>
+<li data-component="feedback" id="rs-rw23-9-b_opt_f">
+<div class="para logical" id="rw23-9-b-3-1">
+<div class="para">First,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rw23-cosh2x.html ./knowl/xref/eq-rw23-sum.html" id="eq-rw23-cosh2x">
+\begin{equation}
+\cosh(2x) = \frac12\left(e^{2x} + e^{-2x}\right).\tag{5.4.1}
+\end{equation}
+</div>
+<div class="para">Second,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rw23-cosh2x.html ./knowl/xref/eq-rw23-sum.html" id="rw23-9-b-3-1-2">
+\begin{align}
+\cosh^2(x) + \sinh^2(x)
+\amp = \frac14\left(e^x + e^{-x}\right)^2
++ \frac14\left(e^x - e^{-x}\right)^2\notag\\
+\amp = \frac14\left(2e^{2x} + 2e^{-2x}\right)\notag\\
+\amp
+= \frac12\left(e^{2x} + e^{-2x}\right).\tag{5.4.2}
+\end{align}
+</div>
+<div class="para">Comparing <a href="worksheet-review-problems-1.html#eq-rw23-cosh2x" class="xref" data-knowl="./knowl/xref/eq-rw23-cosh2x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.4.1">(5.4.1)</a> and <a href="worksheet-review-problems-1.html#rw23-9-b-3-1-2" class="xref" data-knowl="./knowl/xref/eq-rw23-sum.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.4.2">(5.4.2)</a> gives <span class="process-math">\(\cosh^2(x) + \sinh^2(x) = \cosh(2x)\text{.}\)</span>
+</div>
+</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.1: True or False"><a tabindex="-1" href="#rw23-9-b" title="Copy heading and permalink for Worksheet Exercise 5.4.1: True or False" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.1: True or False">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-ser-1"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="rev-ser-1-1-1">If <span class="process-math">\(a, b, a+b\)</span> and <span class="process-math">\(ab\)</span> are positive numbers that form 4 consecutive terms in a geometric sequence, find <span class="process-math">\(a\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-ser-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-ser-1-2-1">
+<div class="para">Since consecutive ratios in a geometric sequence are equal,</div>
+<div class="displaymath process-math" id="rev-ser-1-2-1-1">
+\begin{equation*}
+\frac{a}{b} = \frac{b}{a+b} = \frac{a+b}{ab}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rev-ser-1-2-2">
+<div class="para">From the first equality,</div>
+<div class="displaymath process-math" id="rev-ser-1-2-2-1">
+\begin{gather*}
+\frac{a}{b} = \frac{b}{a+b}
+\;\Rightarrow\; a^2 + ab = b^2
+\;\Rightarrow\; b^2 - ab - a^2 = 0\\
+\;\overset{\div\, a^2}{\Rightarrow}\;
+\left(\frac{b}{a}\right)^{2} - \left(\frac{b}{a}\right) - 1 = 0\\
+\frac{b}{a} = \frac{1 \pm \sqrt{1+4}}{2}
+\;\overset{\text{since } b/a \gt 0}{\Rightarrow}\;
+\frac{b}{a} = \frac{1 + \sqrt5}{2}. \quad (\ast)
+\end{gather*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rev-ser-1-2-3">
+<div class="para">From the equality of the first and third fractions,</div>
+<div class="displaymath process-math" id="rev-ser-1-2-3-1">
+\begin{align*}
+\frac{a}{b} = \frac{a+b}{ab}
+\;\Rightarrow\; a^2 = a + b
+\;\overset{\div\, a}{\Rightarrow}\;
+a \amp = 1 + \frac{b}{a}\\
+\amp \;\overset{(\ast)}{=}\; 1 + \frac{1+\sqrt5}{2}
+= \frac{3 + \sqrt5}{2}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.2.1"><a tabindex="-1" href="#rev-ser-1-2" title="Copy heading and permalink for Solution 5.4.2.1" aria-label="Copy heading and permalink for Solution 5.4.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.2"><a tabindex="-1" href="#rev-ser-1" title="Copy heading and permalink for Worksheet Exercise 5.4.2" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-ser-9"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="rev-ser-9-1-1">Consider the sequence defined by <span class="process-math">\(a_1 = 1\)</span> and <span class="process-math">\(a_{n+1} = a_n + 3n^2 + 3n + 1\text{.}\)</span> Find a formula for <span class="process-math">\(a_n\)</span> and use it to compute <span class="process-math">\(a_{200}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-ser-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-ser-9-2-1">
+<div class="para">We compute the first few terms:</div>
+<div class="displaymath process-math" id="rev-ser-9-2-1-1">
+\begin{align*}
+n = 1: \quad a_2 \amp = a_1 + (3 + 3 + 1) = 1 + 7 = 8
+\;\Rightarrow\; a_2 = 2^3\\
+n = 2: \quad a_3 \amp = a_2 + (12 + 6 + 1) = 8 + 19 = 27
+\;\Rightarrow\; a_3 = 3^3
+\end{align*}
+</div>
+<div class="para">We notice that <span class="process-math">\(a_1 = 1^3\text{,}\)</span> <span class="process-math">\(a_2 = 2^3\text{,}\)</span> and <span class="process-math">\(a_3 = 3^3\text{,}\)</span> hence it seems that <span class="process-math">\(a_n = n^3\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rev-ser-9-2-2">
+<div class="para">Let us verify by computing <span class="process-math">\(a_{n+1} - a_n\)</span> using <span class="process-math">\(a_n = n^3\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rev-ser-9-2-2-3">
+\begin{align*}
+a_{n+1} - a_n \amp = (n+1)^3 - n^3\\
+\amp = n^3 + 3n^2 + 3n + 1 - n^3
+= 3n^2 + 3n + 1,
+\end{align*}
+</div>
+<div class="para">which confirms that when <span class="process-math">\(a_n = n^3\text{,}\)</span> then <span class="process-math">\(a_{n+1} = a_n + 3n^2 + 3n + 1\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" id="rev-ser-9-2-2-6">
+\begin{equation*}
+a_{200} = (200)^3 = 8 \times 10^{6}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.3.1"><a tabindex="-1" href="#rev-ser-9-2" title="Copy heading and permalink for Solution 5.4.3.1" aria-label="Copy heading and permalink for Solution 5.4.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.3"><a tabindex="-1" href="#rev-ser-9" title="Copy heading and permalink for Worksheet Exercise 5.4.3" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-ser-4"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="rev-ser-4-1-1">What can we conclude by applying the <span class="process-math">\(n\)</span>th term test to the series <span class="process-math">\(\displaystyle\sum_{n=1}^{\infty} \frac{3n}{\sqrt{6n^2 + 4n + 5}}\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-ser-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-ser-4-2-1">
+<div class="displaymath process-math" id="rev-ser-4-2-1-1">
+\begin{align*}
+\lim_{n\to\infty} \frac{3n}{\sqrt{6n^2+4n+5}}
+\amp = \lim_{n\to\infty} \frac{3n}{\sqrt6\, n}
+= \sqrt{\frac32} \ne 0\\
+\amp \;\Rightarrow\; \text{the series diverges.}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.4.1"><a tabindex="-1" href="#rev-ser-4-2" title="Copy heading and permalink for Solution 5.4.4.1" aria-label="Copy heading and permalink for Solution 5.4.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.4"><a tabindex="-1" href="#rev-ser-4" title="Copy heading and permalink for Worksheet Exercise 5.4.4" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-ser-5"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rev-ser-5-1-1">
+<div class="para">Evaluate the following sums or show that they diverge.</div>
+<ol class="upper-alpha ol-marker-1" id="rev-ser-5-1-1-1">
+<li id="rev-ser-5-1-1-1-1">
+<div class="para" id="rev-ser-5-1-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=0}^{10} e^{-2n}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.A"><a tabindex="-1" href="#rev-ser-5-1-1-1-1" title="Copy heading and permalink for Item 5.4.5.A" aria-label="Copy heading and permalink for Item 5.4.5.A">🔗</a></div>
+</li>
+<li id="rev-ser-5-1-1-1-2">
+<div class="para" id="rev-ser-5-1-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=1}^{\infty} \frac{6}{(2n-1)(2n+1)}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.B"><a tabindex="-1" href="#rev-ser-5-1-1-1-2" title="Copy heading and permalink for Item 5.4.5.B" aria-label="Copy heading and permalink for Item 5.4.5.B">🔗</a></div>
+</li>
+<li id="rev-ser-5-1-1-1-3">
+<div class="para" id="rev-ser-5-1-1-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=1}^{\infty} \frac{2n+1}{n^2(n+1)^2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.C"><a tabindex="-1" href="#rev-ser-5-1-1-1-3" title="Copy heading and permalink for Item 5.4.5.C" aria-label="Copy heading and permalink for Item 5.4.5.C">🔗</a></div>
+</li>
+<li id="rev-ser-5-1-1-1-4">
+<div class="para" id="rev-ser-5-1-1-1-4-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=1}^{\infty} \ln\!\left(\frac{n}{2n+1}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.D"><a tabindex="-1" href="#rev-ser-5-1-1-1-4" title="Copy heading and permalink for Item 5.4.5.D" aria-label="Copy heading and permalink for Item 5.4.5.D">🔗</a></div>
+</li>
+<li id="rev-ser-5-1-1-1-5">
+<div class="para" id="rev-ser-5-1-1-1-5-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=3}^{\infty} \frac{2^n}{3^n}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.E"><a tabindex="-1" href="#rev-ser-5-1-1-1-5" title="Copy heading and permalink for Item 5.4.5.E" aria-label="Copy heading and permalink for Item 5.4.5.E">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-ser-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-ser-5-2-1">
+<ol class="upper-alpha ol-marker-1" id="rev-ser-5-2-1-1">
+<li id="rev-ser-5-2-1-1-1">
+<div class="para logical" id="rev-ser-5-2-1-1-1-1">
+<div class="para">This is a finite geometric sum. Using <span class="process-math">\(\displaystyle\sum_{n=1}^{N} ar^{n-1} = a\,\frac{1-r^{N}}{1-r}\text{,}\)</span> which was proved when we first studied geometric sums,</div>
+<div class="displaymath process-math" id="rev-ser-5-2-1-1-1-1-2">
+\begin{align*}
+\sum_{n=0}^{10} e^{-2n}
+\amp = \sum_{n=1}^{11} \left(\frac{1}{e^2}\right)^{n-1}\\
+\amp = \frac{1 - \left(e^{-2}\right)^{11}}{1 - e^{-2}}
+= \frac{1 - e^{-22}}{1 - e^{-2}}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.A"><a tabindex="-1" href="#rev-ser-5-2-1-1-1" title="Copy heading and permalink for Item 5.4.5.A" aria-label="Copy heading and permalink for Item 5.4.5.A">🔗</a></div>
+</li>
+<li id="rev-ser-5-2-1-1-2">
+<div class="para logical" id="rev-ser-5-2-1-1-2-1">
+<div class="para">Partial fractions give</div>
+<div class="displaymath process-math" id="rev-ser-5-2-1-1-2-1-1">
+\begin{equation*}
+\frac{6}{(2n-1)(2n+1)} = \frac{A}{2n-1} + \frac{B}{2n+1}
+= \frac{A(2n+1) + B(2n-1)}{(2n-1)(2n+1)},
+\end{equation*}
+</div>
+<div class="para">and setting <span class="process-math">\(n = \frac12\)</span> gives <span class="process-math">\(2A = 6\text{,}\)</span> <span class="process-math">\(A = 3\text{,}\)</span> while <span class="process-math">\(n = -\frac12\)</span> gives <span class="process-math">\(-2B = 6\text{,}\)</span> <span class="process-math">\(B = -3\text{.}\)</span> The sum telescopes:</div>
+<div class="displaymath process-math" id="rev-ser-5-2-1-1-2-1-8">
+\begin{align*}
+s_k \amp = \left(\frac11 - \frac13\right)
++ \left(\frac13 - \frac15\right)
++ \left(\frac15 - \frac17\right)
++ \cdots\\
+\amp \quad + \left(\frac{1}{2k-1} - \frac{1}{2k+1}\right)
+= 1 - \frac{1}{2k+1},\\
+\amp \phantom{=} \text{so} \quad
+3\sum_{n=1}^{\infty} \left(\frac{1}{2n-1} - \frac{1}{2n+1}\right)
+= 3\lim_{k\to\infty} s_k\\
+\amp \phantom{=} \qquad
+= 3\lim_{k\to\infty}\left(1 - \frac{1}{2k+1}\right) = 3.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.B"><a tabindex="-1" href="#rev-ser-5-2-1-1-2" title="Copy heading and permalink for Item 5.4.5.B" aria-label="Copy heading and permalink for Item 5.4.5.B">🔗</a></div>
+</li>
+<li id="rev-ser-5-2-1-1-3">
+<div class="para logical" id="rev-ser-5-2-1-1-3-1">
+<div class="para">Partial fractions (or direct observation) give</div>
+<div class="displaymath process-math" id="rev-ser-5-2-1-1-3-1-1">
+\begin{equation*}
+\frac{2n+1}{n^2(n+1)^2} = \frac{1}{n^2} - \frac{1}{(n+1)^2},
+\end{equation*}
+</div>
+<div class="para">so the sum telescopes:</div>
+<div class="displaymath process-math" id="rev-ser-5-2-1-1-3-1-2">
+\begin{align*}
+s_k \amp = \sum_{n=1}^{k}
+\left(\frac{1}{n^2} - \frac{1}{(n+1)^2}\right)\\
+\amp = \left(1 - \frac14\right) + \left(\frac14 - \frac19\right)
++ \left(\frac19 - \frac{1}{16}\right) + \cdots\\
+\amp \quad + \left(\frac{1}{k^2} - \frac{1}{(k+1)^2}\right)
+= 1 - \frac{1}{(k+1)^2}\\
+\amp \Rightarrow \quad
+\sum_{n=1}^{\infty} \frac{2n+1}{n^2(n+1)^2}
+= \lim_{k\to\infty} \left(1 - \frac{1}{(k+1)^2}\right) = 1.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.C"><a tabindex="-1" href="#rev-ser-5-2-1-1-3" title="Copy heading and permalink for Item 5.4.5.C" aria-label="Copy heading and permalink for Item 5.4.5.C">🔗</a></div>
+</li>
+<li id="rev-ser-5-2-1-1-4">
+<div class="para" id="rev-ser-5-2-1-1-4-1">
+<span class="process-math">\(\lim\limits_{n\to\infty} \ln\!\left(\dfrac{n}{2n+1}\right)
+= \ln\!\left(\dfrac12\right) \ne 0\text{,}\)</span> so by the <span class="process-math">\(n\)</span>th Term Test the series diverges.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.D"><a tabindex="-1" href="#rev-ser-5-2-1-1-4" title="Copy heading and permalink for Item 5.4.5.D" aria-label="Copy heading and permalink for Item 5.4.5.D">🔗</a></div>
+</li>
+<li id="rev-ser-5-2-1-1-5">
+<div class="para logical" id="rev-ser-5-2-1-1-5-1">
+<div class="displaymath process-math" id="rev-ser-5-2-1-1-5-1-1">
+\begin{align*}
+\sum_{n=3}^{\infty} \frac{2^n}{3^n}
+\amp = \sum_{n=4}^{\infty} \left(\frac23\right)^{n-1}
+= \frac{1}{1-\frac23}
+- \left(\frac49 + \frac23 + 1\right)\\
+\amp = 3 - \frac{4+6+9}{9}
+= 3 - \frac{19}{9}
+= \frac{27-19}{9} = \frac89,
+\end{align*}
+</div>
+<div class="para">where the subtracted terms correspond to <span class="process-math">\(n = 3\text{,}\)</span> <span class="process-math">\(n = 2\text{,}\)</span> and <span class="process-math">\(n = 1\)</span> of the shifted series.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.5.E"><a tabindex="-1" href="#rev-ser-5-2-1-1-5" title="Copy heading and permalink for Item 5.4.5.E" aria-label="Copy heading and permalink for Item 5.4.5.E">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.5.1"><a tabindex="-1" href="#rev-ser-5-2" title="Copy heading and permalink for Solution 5.4.5.1" aria-label="Copy heading and permalink for Solution 5.4.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.5"><a tabindex="-1" href="#rev-ser-5" title="Copy heading and permalink for Worksheet Exercise 5.4.5" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-ser-3"><h2 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="rev-ser-3-1-1">The government has decided to give a $1,000 tax rebate to each household in order to stimulate the economy. The government statistics say that each household will spend 80% of the rebate in goods and services. The businesses and individuals who benefited from that 80% will then spend 80% of what they received and so on. The result is called the multiplier effect. What is the total effect of the rebate on the economy?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-ser-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-ser-3-2-1">
+<div class="para">The rounds of spending form a geometric series with <span class="process-math">\(a = 1000\)</span> and <span class="process-math">\(r = 0.8\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-rev-multiplier.html" id="rev-ser-3-2-1-3">
+\begin{align*}
+\amp 1000 + 0.8(1000) + (0.8)^2(1000) + \cdots
+= \sum_{n=1}^{\infty} 1000\,(0.8)^{n-1}\\
+\amp = \frac{1000}{1 - 0.8}
+= \frac{1000}{0.2} = 5000 \text{ dollars}.
+\end{align*}
+</div>
+<div class="para">The successive rounds of spending are shown in <a href="worksheet-review-problems-1.html#fig-rev-multiplier" class="xref" data-knowl="./knowl/xref/fig-rev-multiplier.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.4.6">Figure 5.4.6</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-ser-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-rev-multiplier"><div class="image-box" style="width: 72%; margin-left: 14%; margin-right: 14%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/prefigure-rev-multiplier-diagcess.svg" data-cml="generated/prefigure/prefigure-rev-multiplier-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The multiplier effect. Each round of spending is 80% of the previous one, and the total of all the bars is <span class="process-math">\(\frac{1000}{1-0.8} = 5000\)</span> dollars.<div class="autopermalink" aria-hidden="true" data-description="Figure 5.4.6"><a tabindex="-1" href="#fig-rev-multiplier" title="Copy heading and permalink for Figure 5.4.6" aria-label="Copy heading and permalink for Figure 5.4.6">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.6.1"><a tabindex="-1" href="#rev-ser-3-2" title="Copy heading and permalink for Solution 5.4.6.1" aria-label="Copy heading and permalink for Solution 5.4.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.6"><a tabindex="-1" href="#rev-ser-3" title="Copy heading and permalink for Worksheet Exercise 5.4.6" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rs19-1"><h2 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rs19-1-1-1">
+<div class="para">Determine whether the series is convergent or divergent and if it is convergent calculate its sum.</div>
+<ol class="upper-alpha ol-marker-1" id="rs19-1-1-1-1">
+<li id="rs19-1-1-1-1-1">
+<div class="para" id="rs19-1-1-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=0}^{\infty}
+\sin\!\left(\frac{1}{n+1}\right) - \sin\!\left(\frac{1}{n+2}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rs19-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.7.A"><a tabindex="-1" href="#rs19-1-1-1-1-1" title="Copy heading and permalink for Item 5.4.7.A" aria-label="Copy heading and permalink for Item 5.4.7.A">🔗</a></div>
+</li>
+<li id="rs19-1-1-1-1-2">
+<div class="para" id="rs19-1-1-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=0}^{\infty} \frac{1 + 5^n}{3^n}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rs19-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.7.B"><a tabindex="-1" href="#rs19-1-1-1-1-2" title="Copy heading and permalink for Item 5.4.7.B" aria-label="Copy heading and permalink for Item 5.4.7.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rs19-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rs19-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rs19-1-2-1">
+<ol class="upper-alpha ol-marker-1" id="rs19-1-2-1-1">
+<li id="rs19-1-2-1-1-1">
+<div class="para logical" id="rs19-1-2-1-1-1-1">
+<div class="para">The series telescopes. The partial sum is</div>
+<div class="displaymath process-math" id="rs19-1-2-1-1-1-1-1">
+\begin{align*}
+s_k \amp = \sum_{n=0}^{k}
+\sin\!\left(\frac{1}{n+1}\right) - \sin\!\left(\frac{1}{n+2}\right)\\
+\amp = \sin(1) - \sin\!\left(\frac12\right)
++ \sin\!\left(\frac12\right) - \sin\!\left(\frac13\right)\\
+\amp \quad + \sin\!\left(\frac13\right) - \sin\!\left(\frac14\right)
++ \cdots\\
+\amp \quad + \sin\!\left(\frac{1}{k+1}\right)
+- \sin\!\left(\frac{1}{k+2}\right)\\
+\amp = \sin(1) - \sin\!\left(\frac{1}{k+2}\right).
+\end{align*}
+</div>
+<div class="para">Hence the series converges and</div>
+<div class="displaymath process-math" id="rs19-1-2-1-1-1-1-2">
+\begin{align*}
+\sum_{n=0}^{\infty}
+\sin\!\left(\frac{1}{n+1}\right) - \sin\!\left(\frac{1}{n+2}\right)
+\amp = \lim_{k\to\infty} s_k\\
+\amp = \sin(1) - \sin(0) = \sin(1).
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rs19-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.7.A"><a tabindex="-1" href="#rs19-1-2-1-1-1" title="Copy heading and permalink for Item 5.4.7.A" aria-label="Copy heading and permalink for Item 5.4.7.A">🔗</a></div>
+</li>
+<li id="rs19-1-2-1-1-2">
+<div class="para logical" id="rs19-1-2-1-1-2-1">
+<div class="para">We split the series into two geometric series:</div>
+<div class="displaymath process-math" id="rs19-1-2-1-1-2-1-1">
+\begin{equation*}
+\sum_{n=0}^{\infty} \frac{1 + 5^n}{3^n}
+= \sum_{n=0}^{\infty} \left(\frac13\right)^{n}
++ \sum_{n=0}^{\infty} \left(\frac53\right)^{n}.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\lim\limits_{n\to\infty} \left(\frac53\right)^{n} = \infty\text{,}\)</span> by the <span class="process-math">\(n\)</span>th term test we can conclude that the series diverges.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rs19-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.7.B"><a tabindex="-1" href="#rs19-1-2-1-1-2" title="Copy heading and permalink for Item 5.4.7.B" aria-label="Copy heading and permalink for Item 5.4.7.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rs19-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.7.1"><a tabindex="-1" href="#rs19-1-2" title="Copy heading and permalink for Solution 5.4.7.1" aria-label="Copy heading and permalink for Solution 5.4.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.7"><a tabindex="-1" href="#rs19-1" title="Copy heading and permalink for Worksheet Exercise 5.4.7" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw21-2"><h2 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw21-2-1-1">
+<div class="para">Determine whether the series converges, and if so find its sum:</div>
+<div class="displaymath process-math" id="rw21-2-1-1-1">
+\begin{equation*}
+\sum_{n=1}^{\infty} \left(\frac{n}{n+5}\right)^{n}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw21-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw21-2-2-1">
+<div class="para">Note that</div>
+<div class="displaymath process-math" id="rw21-2-2-1-1">
+\begin{align*}
+\lim_{n\to\infty} a_n
+\amp = \lim_{n\to\infty} \left(1 + \frac5n\right)^{-n}\\
+\amp = \lim_{n\to\infty}
+\left[\left(1 + \frac5n\right)^{\frac{n}{5}}\right]^{-5}
+= e^{-5} \ne 0,
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(\left(1 + \frac5n\right)^{n/5} \to e\text{.}\)</span> Indeed, setting <span class="process-math">\(x = \frac{n}{5}\)</span> and <span class="process-math">\(L = \lim\limits_{x\to\infty}\left(1 + \frac1x\right)^{x}\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="rw21-2-2-1-5">
+\begin{align*}
+\ln L \amp = \lim_{x\to\infty} x \ln\!\left(1 + \frac1x\right)
+= \lim_{x\to\infty}
+\frac{\ln\!\left(1 + \frac1x\right)}{\frac1x}\\
+\amp \;\overset{\text{H}}{=}\;
+\lim_{x\to\infty}
+\frac{\dfrac{-1/x^2}{1 + 1/x}}{-\dfrac{1}{x^2}}
+= \lim_{x\to\infty} \frac{1}{1 + \frac1x} = 1\\
+\amp \;\Rightarrow\; L = e.
+\end{align*}
+</div>
+<div class="para">Therefore, the series diverges by the <span class="process-math">\(n\)</span>th Term Test.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.8.1"><a tabindex="-1" href="#rw21-2-2" title="Copy heading and permalink for Solution 5.4.8.1" aria-label="Copy heading and permalink for Solution 5.4.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.8"><a tabindex="-1" href="#rw21-2" title="Copy heading and permalink for Worksheet Exercise 5.4.8" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw21-3"><h2 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw21-3-1-1">
+<div class="para">Consider the following series. Answer the following questions.</div>
+<div class="displaymath process-math" id="rw21-3-1-1-1">
+\begin{equation*}
+\sum_{n=0}^{\infty} \frac{(x+4)^n}{2^n}
+\end{equation*}
+</div>
+<ol class="upper-alpha ol-marker-1" id="rw21-3-1-1-2">
+<li id="rw21-3-1-1-2-1">
+<div class="para" id="rw21-3-1-1-2-1-1">Find the values of <span class="process-math">\(x\)</span> for which the series converges.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-3-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.9.A"><a tabindex="-1" href="#rw21-3-1-1-2-1" title="Copy heading and permalink for Item 5.4.9.A" aria-label="Copy heading and permalink for Item 5.4.9.A">🔗</a></div>
+</li>
+<li id="rw21-3-1-1-2-2">
+<div class="para" id="rw21-3-1-1-2-2-1">Find the sum of the series for those values of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-3-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.9.B"><a tabindex="-1" href="#rw21-3-1-1-2-2" title="Copy heading and permalink for Item 5.4.9.B" aria-label="Copy heading and permalink for Item 5.4.9.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw21-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw21-3-2-1">
+<ol class="upper-alpha ol-marker-1" id="rw21-3-2-1-1">
+<li id="rw21-3-2-1-1-1">
+<div class="para logical" id="rw21-3-2-1-1-1-1">
+<div class="para">We can write the series as a geometric series:</div>
+<div class="displaymath process-math" id="rw21-3-2-1-1-1-1-1">
+\begin{equation*}
+\sum_{n=0}^{\infty} \frac{(x+4)^n}{2^n}
+= \sum_{n=0}^{\infty} \left(\frac{x+4}{2}\right)^{n}
+= \sum_{n=0}^{\infty} \left(\frac{x}{2}+2\right)^{n},
+\end{equation*}
+</div>
+<div class="para">which converges when <span class="process-math">\(\left|\frac{x}{2} + 2\right| \lt 1\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rw21-3-2-1-1-1-1-3">
+\begin{equation*}
+-1 \lt \frac{x}{2} + 2 \lt 1
+\;\Rightarrow\; -3 \lt \frac{x}{2} \lt -1
+\;\Rightarrow\; -6 \lt x \lt -2,
+\end{equation*}
+</div>
+<div class="para">i.e. the series converges on the interval <span class="process-math">\((-6, -2)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.9.A"><a tabindex="-1" href="#rw21-3-2-1-1-1" title="Copy heading and permalink for Item 5.4.9.A" aria-label="Copy heading and permalink for Item 5.4.9.A">🔗</a></div>
+</li>
+<li id="rw21-3-2-1-1-2">
+<div class="para logical" id="rw21-3-2-1-1-2-1">
+<div class="para">When <span class="process-math">\(x \in (-6,-2)\text{,}\)</span> the geometric series with <span class="process-math">\(a = 1\)</span> and <span class="process-math">\(r = \frac{x+4}{2}\)</span> gives</div>
+<div class="displaymath process-math" id="rw21-3-2-1-1-2-1-4">
+\begin{equation*}
+\sum_{n=0}^{\infty} \left(\frac{x+4}{2}\right)^{n}
+= \frac{1}{1 - \frac{x+4}{2}}
+= \frac{2}{2 - x - 4}
+= -\frac{2}{x+2}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.9.B"><a tabindex="-1" href="#rw21-3-2-1-1-2" title="Copy heading and permalink for Item 5.4.9.B" aria-label="Copy heading and permalink for Item 5.4.9.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.9.1"><a tabindex="-1" href="#rw21-3-2" title="Copy heading and permalink for Solution 5.4.9.1" aria-label="Copy heading and permalink for Solution 5.4.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.9"><a tabindex="-1" href="#rw21-3" title="Copy heading and permalink for Worksheet Exercise 5.4.9" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rf-8-b"><h2 class="heading">
+<span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True or False.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-rf-8-b">
+<div class="para" id="rf-8-b-2-1">A geometric series <span class="process-math">\(\displaystyle\sum_{n=1}^{\infty} ar^{n-1}\)</span> converges if and only if <span class="process-math">\(|r| \le 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rf-8-b-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="rf-8-b-2-2">Justify your answer fully: give a proof if the statement is true, or a counterexample if it is false.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rf-8-b-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<li data-component="answer" id="rs-rf-8-b_opt_t"><p>True.</p></li>
+<li data-component="feedback" id="rs-rf-8-b_opt_t">
+<div class="para" id="rf-8-b-3-1">As a counterexample consider <span class="process-math">\(\displaystyle\sum_{n=1}^{\infty} 1^{n-1}\text{,}\)</span> which clearly diverges even though <span class="process-math">\(|r| = 1\text{.}\)</span> The correct condition is <span class="process-math">\(|r| \lt 1\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="rs-rf-8-b_opt_f" data-correct=""><p>False.</p></li>
+<li data-component="feedback" id="rs-rf-8-b_opt_f">
+<div class="para" id="rf-8-b-3-1">As a counterexample consider <span class="process-math">\(\displaystyle\sum_{n=1}^{\infty} 1^{n-1}\text{,}\)</span> which clearly diverges even though <span class="process-math">\(|r| = 1\text{.}\)</span> The correct condition is <span class="process-math">\(|r| \lt 1\text{.}\)</span>
+</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.10: True or False"><a tabindex="-1" href="#rf-8-b" title="Copy heading and permalink for Worksheet Exercise 5.4.10: True or False" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.10: True or False">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw22-2"><h2 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="rw22-2-1-1">Consider the series <span class="process-math">\(\displaystyle\sum_{k=0}^{\infty}
+\frac{3^{k-1}}{5^k}\text{.}\)</span> Does the series converge? If so, what is the result?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw22-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw22-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw22-2-2-1">
+<div class="para">We first factor out <span class="process-math">\(\frac13\)</span> so that the powers match:</div>
+<div class="displaymath process-math" id="rw22-2-2-1-2">
+\begin{equation*}
+\sum_{k=0}^{\infty} \frac{3^{k-1}}{5^k}
+= \frac13 \sum_{k=0}^{\infty} \frac{3^{k}}{5^k}
+= \frac13 \sum_{k=0}^{\infty} \left(\frac35\right)^{k}.
+\end{equation*}
+</div>
+<div class="para">Splitting off the <span class="process-math">\(k = 0\)</span> term so that the sum starts at <span class="process-math">\(k = 1\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="rw22-2-2-1-5">
+\begin{equation*}
+\frac13 \sum_{k=0}^{\infty} \left(\frac35\right)^{k}
+= \frac13\left[1 + \sum_{k=1}^{\infty}
+\left(\frac35\right)\left(\frac35\right)^{k-1}\right].
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw22-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rw22-2-2-2">
+<div class="para">The remaining sum is a geometric series with <span class="process-math">\(a = \frac35\)</span> and <span class="process-math">\(r = \frac35\text{.}\)</span> Since <span class="process-math">\(|r| = \frac35 \lt 1\text{,}\)</span> it converges and <span class="process-math">\(\displaystyle\sum_{k=1}^{\infty} ar^{k-1} = \frac{a}{1-r}\text{,}\)</span> so</div>
+<div class="displaymath process-math" id="rw22-2-2-2-5">
+\begin{equation*}
+\frac13\left[1 + \frac{\frac35}{1 - \frac35}\right]
+= \frac13\left[1 + \frac32\right]
+= \frac13 \cdot \frac52
+= \frac56.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw22-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.11.1"><a tabindex="-1" href="#rw22-2-2" title="Copy heading and permalink for Solution 5.4.11.1" aria-label="Copy heading and permalink for Solution 5.4.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.11"><a tabindex="-1" href="#rw22-2" title="Copy heading and permalink for Worksheet Exercise 5.4.11" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="pp-4"><h2 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="pp-4-1-1">
+<div class="para">Find the sum of all of the convergent series.</div>
+<ol class="upper-alpha ol-marker-1" id="pp-4-1-1-1">
+<li id="pp-4-1-1-1-1">
+<div class="para" id="pp-4-1-1-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=0}^{\infty}
+\frac{\sin\!\left(\frac{\pi}{2}n\right)}{3^{n+1}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.12.A"><a tabindex="-1" href="#pp-4-1-1-1-1" title="Copy heading and permalink for Item 5.4.12.A" aria-label="Copy heading and permalink for Item 5.4.12.A">🔗</a></div>
+</li>
+<li id="pp-4-1-1-1-2">
+<div class="para" id="pp-4-1-1-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle\sum_{n=1}^{\infty} \frac{-2}{n(n+1)}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.12.B"><a tabindex="-1" href="#pp-4-1-1-1-2" title="Copy heading and permalink for Item 5.4.12.B" aria-label="Copy heading and permalink for Item 5.4.12.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="pp-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="pp-4-2-1">
+<ol class="upper-alpha ol-marker-1" id="pp-4-2-1-1">
+<li id="pp-4-2-1-1-1">
+<div class="para logical" id="pp-4-2-1-1-1-1">
+<div class="para">The factor <span class="process-math">\(\sin\!\left(\frac{\pi}{2}n\right)\)</span> cycles through <span class="process-math">\(0, 1, 0, -1\)</span> as <span class="process-math">\(n = 0, 1, 2, 3, \ldots\text{,}\)</span> so only the odd <span class="process-math">\(n\)</span> contribute, with alternating signs. Writing <span class="process-math">\(n = 2k+1\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="pp-4-2-1-1-1-1-6">
+\begin{align*}
+\sum_{n=0}^{\infty}
+\frac{\sin\!\left(\frac{\pi}{2}n\right)}{3^{n+1}}
+\amp = \frac{1}{3^2} - \frac{1}{3^4} + \frac{1}{3^6} - \cdots\\
+\amp = \sum_{k=0}^{\infty} \frac{(-1)^k}{3^{2k+2}}
+= \frac19 \sum_{k=0}^{\infty}\left(-\frac19\right)^{k}.
+\end{align*}
+</div>
+<div class="para">This is a geometric series with <span class="process-math">\(a = 1\)</span> and <span class="process-math">\(r = -\frac19\text{,}\)</span> and <span class="process-math">\(|r| \lt 1\text{,}\)</span> so</div>
+<div class="displaymath process-math" id="pp-4-2-1-1-1-1-10">
+\begin{equation*}
+\frac19 \cdot \frac{1}{1 - \left(-\frac19\right)}
+= \frac19 \cdot \frac{1}{\frac{10}{9}}
+= \frac{1}{10}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.12.A"><a tabindex="-1" href="#pp-4-2-1-1-1" title="Copy heading and permalink for Item 5.4.12.A" aria-label="Copy heading and permalink for Item 5.4.12.A">🔗</a></div>
+</li>
+<li id="pp-4-2-1-1-2">
+<div class="para logical" id="pp-4-2-1-1-2-1">
+<div class="para">By the constant multiple rule, <span class="process-math">\(\displaystyle\sum_{n=1}^{\infty} \frac{-2}{n(n+1)}
+= -2\sum_{n=1}^{\infty} \frac{1}{n(n+1)}\text{.}\)</span> The remaining series telescopes: since <span class="process-math">\(\dfrac{1}{n(n+1)} = \dfrac1n - \dfrac{1}{n+1}\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="pp-4-2-1-1-2-1-3">
+\begin{align*}
+s_n \amp = \left(1 - \frac12\right)
++ \left(\frac12 - \frac13\right)
++ \cdots + \left(\frac1n - \frac{1}{n+1}\right)\\
+\amp = 1 - \frac{1}{n+1} \;\longrightarrow\; 1.
+\end{align*}
+</div>
+<div class="para">Hence the sum is <span class="process-math">\(-2(1) = -2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.12.B"><a tabindex="-1" href="#pp-4-2-1-1-2" title="Copy heading and permalink for Item 5.4.12.B" aria-label="Copy heading and permalink for Item 5.4.12.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.12.1"><a tabindex="-1" href="#pp-4-2" title="Copy heading and permalink for Solution 5.4.12.1" aria-label="Copy heading and permalink for Solution 5.4.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.12"><a tabindex="-1" href="#pp-4" title="Copy heading and permalink for Worksheet Exercise 5.4.12" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.12">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-tf-1"><h2 class="heading">
+<span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True or False.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-ex-tf-1">
+<div class="para" id="ex-tf-1-2-1">If we manage to find the maximum value of <span class="process-math">\(|f^{(n+1)}(c)|\)</span> for <span class="process-math">\(c\)</span> in the interval between <span class="process-math">\(a\)</span> and <span class="process-math">\(x\text{,}\)</span> then we can find the exact error in the Taylor polynomial approximation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-tf-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-tf-1-2-2">Justify your answer fully: give a proof if the statement is true, or a counterexample if it is false.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-tf-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<li data-component="answer" id="rs-ex-tf-1_opt_t"><p>True.</p></li>
+<li data-component="feedback" id="rs-ex-tf-1_opt_t">
+<div class="para" id="ex-tf-1-3-1">The statement is incorrect. While finding the maximum value of <span class="process-math">\(|f^{(n+1)}(c)|\)</span> allows us to find an upper bound for the error, it does not give the exact error.</div>
+</li>
+<li data-component="answer" id="rs-ex-tf-1_opt_f" data-correct=""><p>False.</p></li>
+<li data-component="feedback" id="rs-ex-tf-1_opt_f">
+<div class="para" id="ex-tf-1-3-1">The statement is incorrect. While finding the maximum value of <span class="process-math">\(|f^{(n+1)}(c)|\)</span> allows us to find an upper bound for the error, it does not give the exact error.</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.13: True or False"><a tabindex="-1" href="#ex-tf-1" title="Copy heading and permalink for Worksheet Exercise 5.4.13: True or False" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.13: True or False">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw17-1"><h2 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw17-1-1-1">
+<div class="para">For the following functions, give the Taylor <em class="emphasis">series</em> generated by the function at <span class="process-math">\(x = 0\)</span> AND give the values of <span class="process-math">\(x\)</span> for which the Taylor series converges to the given function.</div>
+<ol class="upper-alpha ol-marker-1" id="rw17-1-1-1-4">
+<li id="rw17-1-1-1-4-1">
+<div class="para" id="rw17-1-1-1-4-1-1">
+<span class="process-math">\(\displaystyle f(x) = \cos(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.A"><a tabindex="-1" href="#rw17-1-1-1-4-1" title="Copy heading and permalink for Item 5.4.14.A" aria-label="Copy heading and permalink for Item 5.4.14.A">🔗</a></div>
+</li>
+<li id="rw17-1-1-1-4-2">
+<div class="para" id="rw17-1-1-1-4-2-1">
+<span class="process-math">\(\displaystyle g(x) = \dfrac{1}{1-x}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.B"><a tabindex="-1" href="#rw17-1-1-1-4-2" title="Copy heading and permalink for Item 5.4.14.B" aria-label="Copy heading and permalink for Item 5.4.14.B">🔗</a></div>
+</li>
+<li id="rw17-1-1-1-4-3">
+<div class="para" id="rw17-1-1-1-4-3-1">
+<span class="process-math">\(\displaystyle h(x) = x^2 e^{x^2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-1-1-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.C"><a tabindex="-1" href="#rw17-1-1-1-4-3" title="Copy heading and permalink for Item 5.4.14.C" aria-label="Copy heading and permalink for Item 5.4.14.C">🔗</a></div>
+</li>
+<li id="rw17-1-1-1-4-4">
+<div class="para" id="rw17-1-1-1-4-4-1">Using the Taylor series you found for <span class="process-math">\(h(x)\)</span> in part C, find <span class="process-math">\(h^{(12)}(0)\text{,}\)</span> i.e. the 12th order derivative of <span class="process-math">\(h(x)\)</span> at <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-1-1-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.D"><a tabindex="-1" href="#rw17-1-1-1-4-4" title="Copy heading and permalink for Item 5.4.14.D" aria-label="Copy heading and permalink for Item 5.4.14.D">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw17-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw17-1-2-1">
+<ol class="upper-alpha ol-marker-1" id="rw17-1-2-1-1">
+<li id="rw17-1-2-1-1-1">
+<div class="para logical" id="rw17-1-2-1-1-1-1">
+<div class="para">The derivatives of <span class="process-math">\(\cos(x)\)</span> at <span class="process-math">\(0\)</span> cycle through <span class="process-math">\(1, 0, -1, 0\text{,}\)</span> so only even powers survive and</div>
+<div class="displaymath process-math" id="rw17-1-2-1-1-1-1-4">
+\begin{equation*}
+\cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!}x^{2n}
+= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots,
+\end{equation*}
+</div>
+<div class="para">which converges to <span class="process-math">\(\cos(x)\)</span> for all <span class="process-math">\(x \in \R\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.A"><a tabindex="-1" href="#rw17-1-2-1-1-1" title="Copy heading and permalink for Item 5.4.14.A" aria-label="Copy heading and permalink for Item 5.4.14.A">🔗</a></div>
+</li>
+<li id="rw17-1-2-1-1-2">
+<div class="para logical" id="rw17-1-2-1-1-2-1">
+<div class="para">This is the geometric series with <span class="process-math">\(a = 1\)</span> and <span class="process-math">\(r = x\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rw17-1-2-1-1-2-1-3">
+\begin{equation*}
+\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n
+= 1 + x + x^2 + x^3 + \cdots,
+\end{equation*}
+</div>
+<div class="para">which converges to <span class="process-math">\(\dfrac{1}{1-x}\)</span> exactly when <span class="process-math">\(|x| \lt 1\text{,}\)</span> i.e. for <span class="process-math">\(-1 \lt x \lt 1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.B"><a tabindex="-1" href="#rw17-1-2-1-1-2" title="Copy heading and permalink for Item 5.4.14.B" aria-label="Copy heading and permalink for Item 5.4.14.B">🔗</a></div>
+</li>
+<li id="rw17-1-2-1-1-3">
+<div class="para logical" id="rw17-1-2-1-1-3-1">
+<div class="para">We start from <span class="process-math">\(e^{u} = \displaystyle\sum_{n=0}^{\infty}
+\frac{u^n}{n!}\text{,}\)</span> valid for all <span class="process-math">\(u\text{,}\)</span> and substitute <span class="process-math">\(u = x^2\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rw17-1-2-1-1-3-1-4">
+\begin{equation*}
+e^{x^2} = \sum_{n=0}^{\infty} \frac{x^{2n}}{n!}.
+\end{equation*}
+</div>
+<div class="para">Multiplying by <span class="process-math">\(x^2\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="rw17-1-2-1-1-3-1-6">
+\begin{equation*}
+h(x) = x^2 e^{x^2}
+= \sum_{n=0}^{\infty} \frac{x^{2n+2}}{n!}
+= x^2 + x^4 + \frac{x^6}{2!} + \frac{x^8}{3!} + \cdots,
+\end{equation*}
+</div>
+<div class="para">which converges to <span class="process-math">\(h(x)\)</span> for all <span class="process-math">\(x \in \R\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.C"><a tabindex="-1" href="#rw17-1-2-1-1-3" title="Copy heading and permalink for Item 5.4.14.C" aria-label="Copy heading and permalink for Item 5.4.14.C">🔗</a></div>
+</li>
+<li id="rw17-1-2-1-1-4">
+<div class="para logical" id="rw17-1-2-1-1-4-1">
+<div class="para">In the Taylor series <span class="process-math">\(h(x) = \displaystyle\sum_{k=0}^{\infty}
+\frac{h^{(k)}(0)}{k!}x^{k}\text{,}\)</span> the coefficient of <span class="process-math">\(x^{12}\)</span> is <span class="process-math">\(\dfrac{h^{(12)}(0)}{12!}\text{.}\)</span> From part C, the term with <span class="process-math">\(x^{12}\)</span> occurs when <span class="process-math">\(2n + 2 = 12\text{,}\)</span> i.e. <span class="process-math">\(n = 5\text{,}\)</span> and its coefficient is <span class="process-math">\(\dfrac{1}{5!}\text{.}\)</span> Equating the two,</div>
+<div class="displaymath process-math" id="rw17-1-2-1-1-4-1-8">
+\begin{equation*}
+\frac{h^{(12)}(0)}{12!} = \frac{1}{5!}
+\;\Rightarrow\;
+h^{(12)}(0) = \frac{12!}{5!}
+= \frac{479001600}{120}
+= 3991680.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.14.D"><a tabindex="-1" href="#rw17-1-2-1-1-4" title="Copy heading and permalink for Item 5.4.14.D" aria-label="Copy heading and permalink for Item 5.4.14.D">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.14.1"><a tabindex="-1" href="#rw17-1-2" title="Copy heading and permalink for Solution 5.4.14.1" aria-label="Copy heading and permalink for Solution 5.4.14.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.14"><a tabindex="-1" href="#rw17-1" title="Copy heading and permalink for Worksheet Exercise 5.4.14" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.14">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw17-3"><h2 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw17-3-1-1">
+<div class="para">Given <span class="process-math">\(f(x) = \ln(1 - 2x)\text{.}\)</span>
+</div>
+<ol class="upper-alpha ol-marker-1" id="rw17-3-1-1-2">
+<li id="rw17-3-1-1-2-1">
+<div class="para" id="rw17-3-1-1-2-1-1">Find the 2nd order Maclaurin polynomial for <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-3-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.15.A"><a tabindex="-1" href="#rw17-3-1-1-2-1" title="Copy heading and permalink for Item 5.4.15.A" aria-label="Copy heading and permalink for Item 5.4.15.A">🔗</a></div>
+</li>
+<li id="rw17-3-1-1-2-2">
+<div class="para" id="rw17-3-1-1-2-2-1">Use Taylor’s Remainder Theorem to find an upper bound on the magnitude of the error if the 2nd order Maclaurin polynomial is used to approximate <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(|x| \le \frac14\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-3-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.15.B"><a tabindex="-1" href="#rw17-3-1-1-2-2" title="Copy heading and permalink for Item 5.4.15.B" aria-label="Copy heading and permalink for Item 5.4.15.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw17-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw17-3-2-1">
+<ol class="upper-alpha ol-marker-1" id="rw17-3-2-1-1">
+<li id="rw17-3-2-1-1-1">
+<div class="para logical" id="rw17-3-2-1-1-1-1">
+<div class="para">We compute the derivatives at <span class="process-math">\(0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rw17-3-2-1-1-1-1-2">
+\begin{align*}
+f(x) \amp = \ln(1-2x), \amp f(0) \amp = 0,\\
+f'(x) \amp = \frac{-2}{1-2x} = -2(1-2x)^{-1},
+\amp f'(0) \amp = -2,\\
+f''(x) \amp = -4(1-2x)^{-2}, \amp f''(0) \amp = -4.
+\end{align*}
+</div>
+<div class="para">Hence</div>
+<div class="displaymath process-math" id="rw17-3-2-1-1-1-1-3">
+\begin{equation*}
+P_2(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2
+= -2x - 2x^2.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.15.A"><a tabindex="-1" href="#rw17-3-2-1-1-1" title="Copy heading and permalink for Item 5.4.15.A" aria-label="Copy heading and permalink for Item 5.4.15.A">🔗</a></div>
+</li>
+<li id="rw17-3-2-1-1-2">
+<div class="para logical" id="rw17-3-2-1-1-2-1">
+<div class="para">By Taylor’s Remainder Theorem,</div>
+<div class="displaymath process-math" id="rw17-3-2-1-1-2-1-1">
+\begin{align*}
+|R_2(x)| \amp \le M\,\frac{|x|^3}{3!},\\
+\amp \text{where } M \ge \left|f^{(3)}(c)\right|
+\text{ for all } c \text{ between } 0 \text{ and } x.
+\end{align*}
+</div>
+<div class="para">Here <span class="process-math">\(f^{(3)}(x) = -16(1-2x)^{-3}\text{,}\)</span> so <span class="process-math">\(\left|f^{(3)}(c)\right| = \dfrac{16}{|1-2c|^{3}}\text{.}\)</span> For <span class="process-math">\(|c| \le \frac14\)</span> we have <span class="process-math">\(\frac12 \le 1 - 2c \le \frac32\text{,}\)</span> and the fraction is largest when the denominator is smallest, i.e. at <span class="process-math">\(c = \frac14\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rw17-3-2-1-1-2-1-7">
+\begin{equation*}
+\left|f^{(3)}(c)\right| \le \frac{16}{\left(\frac12\right)^{3}}
+= 16 \cdot 8 = 128 = M.
+\end{equation*}
+</div>
+<div class="para">Therefore, for <span class="process-math">\(|x| \le \frac14\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="rw17-3-2-1-1-2-1-9">
+\begin{equation*}
+|R_2(x)| \le 128 \cdot \frac{\left(\frac14\right)^3}{3!}
+= \frac{128}{64 \cdot 6}
+= \frac13.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.15.B"><a tabindex="-1" href="#rw17-3-2-1-1-2" title="Copy heading and permalink for Item 5.4.15.B" aria-label="Copy heading and permalink for Item 5.4.15.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.15.1"><a tabindex="-1" href="#rw17-3-2" title="Copy heading and permalink for Solution 5.4.15.1" aria-label="Copy heading and permalink for Solution 5.4.15.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.15"><a tabindex="-1" href="#rw17-3" title="Copy heading and permalink for Worksheet Exercise 5.4.15" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.15">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="pp-5"><h2 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="pp-5-1-1">What function has Maclaurin series <span class="process-math">\(x - \dfrac{x^3}{2!} + \dfrac{x^5}{4!} - \dfrac{x^7}{6!}
++ \dfrac{x^9}{8!} - \cdots\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="pp-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="pp-5-2-1">
+<div class="para">Factoring <span class="process-math">\(x\)</span> out of every term,</div>
+<div class="displaymath process-math" id="pp-5-2-1-2">
+\begin{equation*}
+x - \frac{x^3}{2!} + \frac{x^5}{4!} - \frac{x^7}{6!} + \cdots
+= x\left(1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!}
++ \cdots\right),
+\end{equation*}
+</div>
+<div class="para">and the bracket is exactly the Maclaurin series of <span class="process-math">\(\cos(x)\text{.}\)</span> Hence the function is</div>
+<div class="displaymath process-math" id="pp-5-2-1-4">
+\begin{equation*}
+x\cos(x).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.16.1"><a tabindex="-1" href="#pp-5-2" title="Copy heading and permalink for Solution 5.4.16.1" aria-label="Copy heading and permalink for Solution 5.4.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.16"><a tabindex="-1" href="#pp-5" title="Copy heading and permalink for Worksheet Exercise 5.4.16" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.16">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="pp-6"><h2 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="pp-6-1-1">
+<ol class="upper-alpha ol-marker-1" id="pp-6-1-1-1">
+<li id="pp-6-1-1-1-1">
+<div class="para" id="pp-6-1-1-1-1-1">Use a third Taylor polynomial at <span class="process-math">\(x = 100\)</span> to approximate <span class="process-math">\(\sqrt{102}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-6-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.17.A"><a tabindex="-1" href="#pp-6-1-1-1-1" title="Copy heading and permalink for Item 5.4.17.A" aria-label="Copy heading and permalink for Item 5.4.17.A">🔗</a></div>
+</li>
+<li id="pp-6-1-1-1-2">
+<div class="para" id="pp-6-1-1-1-2-1">Give an upper bound for the error in using this approximation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-6-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.17.B"><a tabindex="-1" href="#pp-6-1-1-1-2" title="Copy heading and permalink for Item 5.4.17.B" aria-label="Copy heading and permalink for Item 5.4.17.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="pp-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="pp-6-2-1">
+<ol class="upper-alpha ol-marker-1" id="pp-6-2-1-1">
+<li id="pp-6-2-1-1-1">
+<div class="para logical" id="pp-6-2-1-1-1-1">
+<div class="para">Let <span class="process-math">\(f(x) = \sqrt{x} = x^{1/2}\)</span> and <span class="process-math">\(a = 100\text{.}\)</span> Then</div>
+<div class="displaymath process-math" id="pp-6-2-1-1-1-1-3">
+\begin{align*}
+f(x) \amp = x^{1/2}, \amp f(100) \amp = 10,\\
+f'(x) \amp = \frac12 x^{-1/2}, \amp f'(100) \amp = \frac{1}{20},\\
+f''(x) \amp = -\frac14 x^{-3/2}, \amp f''(100) \amp = -\frac{1}{4000},\\
+f'''(x) \amp = \frac38 x^{-5/2}, \amp f'''(100) \amp = \frac{3}{800000}.
+\end{align*}
+</div>
+<div class="para">Hence</div>
+<div class="displaymath process-math" id="pp-6-2-1-1-1-1-4">
+\begin{equation*}
+T_3(x) = 10 + \frac{x-100}{20} - \frac{(x-100)^2}{8000}
++ \frac{(x-100)^3}{1600000},
+\end{equation*}
+</div>
+<div class="para">and evaluating at <span class="process-math">\(x = 102\)</span> (so <span class="process-math">\(x - 100 = 2\)</span>),</div>
+<div class="displaymath process-math" id="pp-6-2-1-1-1-1-7">
+\begin{align*}
+\sqrt{102} \amp \approx 10 + \frac{2}{20} - \frac{4}{8000}
++ \frac{8}{1600000}\\
+\amp = 10 + \frac{1}{10} - \frac{1}{2000} + \frac{1}{200000}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-6-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.17.A"><a tabindex="-1" href="#pp-6-2-1-1-1" title="Copy heading and permalink for Item 5.4.17.A" aria-label="Copy heading and permalink for Item 5.4.17.A">🔗</a></div>
+</li>
+<li id="pp-6-2-1-1-2">
+<div class="para logical" id="pp-6-2-1-1-2-1">
+<div class="para">By Taylor’s Remainder Theorem, <span class="process-math">\(|R_3(x)| \le M\dfrac{|x-100|^4}{4!}\text{,}\)</span> where <span class="process-math">\(M\)</span> bounds <span class="process-math">\(\left|f^{(4)}\right|\)</span> on <span class="process-math">\([100, 102]\text{.}\)</span> Since <span class="process-math">\(f^{(4)}(x) = -\frac{15}{16}x^{-7/2}\)</span> and <span class="process-math">\(x^{-7/2}\)</span> is decreasing, the largest value occurs at <span class="process-math">\(x = 100\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="pp-6-2-1-1-2-1-8">
+\begin{equation*}
+M = \frac{15}{16}\cdot 100^{-7/2} = \frac{15}{16 \cdot 10^{7}}.
+\end{equation*}
+</div>
+<div class="para">Therefore</div>
+<div class="displaymath process-math" id="pp-6-2-1-1-2-1-9">
+\begin{equation*}
+|R_3(102)| \le \frac{15}{16\cdot 10^{7}} \cdot \frac{2^4}{24}
+= \frac{15}{24 \cdot 10^{7}}
+= \frac{1}{16000000}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-6-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.17.B"><a tabindex="-1" href="#pp-6-2-1-1-2" title="Copy heading and permalink for Item 5.4.17.B" aria-label="Copy heading and permalink for Item 5.4.17.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.17.1"><a tabindex="-1" href="#pp-6-2" title="Copy heading and permalink for Solution 5.4.17.1" aria-label="Copy heading and permalink for Solution 5.4.17.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.17"><a tabindex="-1" href="#pp-6" title="Copy heading and permalink for Worksheet Exercise 5.4.17" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.17">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exer-binomial-three-powers"><h2 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="exer-binomial-three-powers-1-1">
+<div class="para">Use the binomial series <a href="sec-binomial-series.html#eq-binomial-series" class="xref" data-knowl="./knowl/xref/eq-binomial-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.6">(2.4.6)</a> to obtain the Maclaurin series for each of the following.</div>
+<ol class="upper-alpha ol-marker-1" id="exer-binomial-three-powers-1-1-2">
+<li id="exer-binomial-three-powers-1-1-2-1">
+<div class="para" id="exer-binomial-three-powers-1-1-2-1-1">
+<span class="process-math">\((1+x)^5\text{.}\)</span> Give every nonzero term, and say what happens to the terms beyond them.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.18.A"><a tabindex="-1" href="#exer-binomial-three-powers-1-1-2-1" title="Copy heading and permalink for Item 5.4.18.A" aria-label="Copy heading and permalink for Item 5.4.18.A">🔗</a></div>
+</li>
+<li id="exer-binomial-three-powers-1-1-2-2">
+<div class="para" id="exer-binomial-three-powers-1-1-2-2-1">
+<span class="process-math">\((1+x)^{2/3}\text{.}\)</span> Give the first four terms only.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.18.B"><a tabindex="-1" href="#exer-binomial-three-powers-1-1-2-2" title="Copy heading and permalink for Item 5.4.18.B" aria-label="Copy heading and permalink for Item 5.4.18.B">🔗</a></div>
+</li>
+<li id="exer-binomial-three-powers-1-1-2-3">
+<div class="para" id="exer-binomial-three-powers-1-1-2-3-1">
+<span class="process-math">\(\dfrac{1}{\sqrt[4]{1+x}}\text{.}\)</span> Give the first four terms only.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.18.C"><a tabindex="-1" href="#exer-binomial-three-powers-1-1-2-3" title="Copy heading and permalink for Item 5.4.18.C" aria-label="Copy heading and permalink for Item 5.4.18.C">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exer-binomial-three-powers-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exer-binomial-three-powers-2-1">
+<ol class="upper-alpha ol-marker-1" id="exer-binomial-three-powers-2-1-1">
+<li id="exer-binomial-three-powers-2-1-1-1">
+<div class="para logical" id="exer-binomial-three-powers-2-1-1-1-1">
+<div class="para">Here <span class="process-math">\(m = 5\text{,}\)</span> a positive integer:</div>
+<div class="displaymath process-math" id="exer-binomial-three-powers-2-1-1-1-1-2">
+\begin{align*}
+(1+x)^5 \amp = 1 + 5x + \frac{(5)(4)}{2!}x^2
++ \frac{(5)(4)(3)}{3!}x^3
++ \frac{(5)(4)(3)(2)}{4!}x^4
++ \frac{(5)(4)(3)(2)(1)}{5!}x^5 + \cdots\\
+\amp = 1 + 5x + 10x^2 + 10x^3 + 5x^4 + x^5 .
+\end{align*}
+</div>
+<div class="para">The <span class="process-math">\(k = 6\)</span> coefficient contains the factor <span class="process-math">\(m - k + 1 = 5 - 6 + 1 = 0\text{,}\)</span> so it vanishes, and so does every coefficient after it. When <span class="process-math">\(m\)</span> is a positive integer the binomial series terminates and reproduces the ordinary binomial theorem: it is a polynomial of degree <span class="process-math">\(m\text{,}\)</span> valid for every <span class="process-math">\(x\text{,}\)</span> not just for <span class="process-math">\(|x| \lt 1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.18.A"><a tabindex="-1" href="#exer-binomial-three-powers-2-1-1-1" title="Copy heading and permalink for Item 5.4.18.A" aria-label="Copy heading and permalink for Item 5.4.18.A">🔗</a></div>
+</li>
+<li id="exer-binomial-three-powers-2-1-1-2">
+<div class="para logical" id="exer-binomial-three-powers-2-1-1-2-1">
+<div class="para">Here <span class="process-math">\(m = \frac23\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="exer-binomial-three-powers-2-1-1-2-1-2">
+\begin{align*}
+(1+x)^{2/3} \amp = 1 + \frac23 x
++ \frac{\left(\frac23\right)\left(-\frac13\right)}{2!}x^2\\
+\amp \qquad
++ \frac{\left(\frac23\right)\left(-\frac13\right)
+\left(-\frac43\right)}{3!}x^3 + \cdots\\
+\amp = 1 + \frac23 x - \frac19 x^2
++ \frac{4}{81}x^3 + \cdots
+\end{align*}
+</div>
+<div class="para">The factors <span class="process-math">\(m - k + 1\)</span> are never zero now, so the series does not terminate.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.18.B"><a tabindex="-1" href="#exer-binomial-three-powers-2-1-1-2" title="Copy heading and permalink for Item 5.4.18.B" aria-label="Copy heading and permalink for Item 5.4.18.B">🔗</a></div>
+</li>
+<li id="exer-binomial-three-powers-2-1-1-3">
+<div class="para logical" id="exer-binomial-three-powers-2-1-1-3-1">
+<div class="para">Write the radical in the denominator as a negative power, so that the binomial series applies with <span class="process-math">\(m = -\frac14\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="exer-binomial-three-powers-2-1-1-3-1-2">
+\begin{align*}
+\frac{1}{\sqrt[4]{1+x}} \amp = (1+x)^{-1/4}\\
+\amp = 1 - \frac14 x
++ \frac{\left(-\frac14\right)\left(-\frac54\right)}{2!}x^2\\
+\amp \qquad
++ \frac{\left(-\frac14\right)\left(-\frac54\right)
+\left(-\frac94\right)}{3!}x^3 + \cdots\\
+\amp = 1 - \frac14 x + \frac{5}{32}x^2
+- \frac{15}{128}x^3 + \cdots
+\end{align*}
+</div>
+<div class="para">With <span class="process-math">\(m\)</span> negative the signs alternate, as they did for <span class="process-math">\(\dfrac{1}{(1+x)^3}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.4.18.C"><a tabindex="-1" href="#exer-binomial-three-powers-2-1-1-3" title="Copy heading and permalink for Item 5.4.18.C" aria-label="Copy heading and permalink for Item 5.4.18.C">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-binomial-three-powers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.18.1"><a tabindex="-1" href="#exer-binomial-three-powers-2" title="Copy heading and permalink for Solution 5.4.18.1" aria-label="Copy heading and permalink for Solution 5.4.18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.18"><a tabindex="-1" href="#exer-binomial-three-powers" title="Copy heading and permalink for Worksheet Exercise 5.4.18" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.18">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exer-sqrt-cos-product"><h2 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="exer-sqrt-cos-product-1-1">Find the first four nonzero terms of the Taylor series about <span class="process-math">\(0\)</span> for the function <span class="process-math">\(f(x) = \sqrt{1+x}\,\cos(5x)\text{.}\)</span> Note that you may want to find these in a manner other than by direct differentiation of the function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-sqrt-cos-product-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exer-sqrt-cos-product-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exer-sqrt-cos-product-2-1">
+<div class="para">Differentiating the product four times is painful; multiplying two series you already know is not. The binomial series with <span class="process-math">\(m = \frac12\)</span> gives</div>
+<div class="displaymath process-math" id="exer-sqrt-cos-product-2-1-2">
+\begin{equation*}
+\sqrt{1+x} = 1 + \frac12 x - \frac18 x^2 + \frac{1}{16}x^3 - \cdots,
+\end{equation*}
+</div>
+<div class="para">and replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(5x\)</span> in <span class="process-math">\(\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots\)</span> gives</div>
+<div class="displaymath process-math" id="exer-sqrt-cos-product-2-1-6">
+\begin{equation*}
+\cos(5x) = 1 - \frac{(5x)^2}{2!} + \frac{(5x)^4}{4!} - \cdots
+= 1 - \frac{5^2}{2}x^2 + \cdots.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-sqrt-cos-product-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exer-sqrt-cos-product-2-2">
+<div class="para">Only the constant and <span class="process-math">\(x^2\)</span> terms of <span class="process-math">\(\cos(5x)\)</span> can contribute below degree <span class="process-math">\(4\text{,}\)</span> so multiplying and collecting powers of <span class="process-math">\(x\)</span> up to <span class="process-math">\(x^3\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="exer-sqrt-cos-product-2-2-6">
+\begin{align*}
+\sqrt{1+x}\,\cos(5x)
+\amp = \left(1 + \frac12 x - \frac18 x^2
++ \frac{1}{16}x^3 - \cdots\right)
+\left(1 - \frac{5^2}{2}x^2 + \cdots\right)\\
+\amp = 1 + \frac{x}{2}
+- \left(\frac18 + \frac{5^2}{2}\right)x^2
++ \left(\frac{1}{16} - \frac{5^2}{4}\right)x^3 + \cdots\\
+\amp = 1 + \frac{x}{2} - \frac{101}{8}x^2
+- \frac{99}{16}x^3 + \cdots .
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-sqrt-cos-product-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.19.1"><a tabindex="-1" href="#exer-sqrt-cos-product-2" title="Copy heading and permalink for Solution 5.4.19.1" aria-label="Copy heading and permalink for Solution 5.4.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.19"><a tabindex="-1" href="#exer-sqrt-cos-product" title="Copy heading and permalink for Worksheet Exercise 5.4.19" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.19">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exer-series-limit-arctan"><h2 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="exer-series-limit-arctan-1-1">
+<div class="para">Use Taylor series to evaluate</div>
+<div class="displaymath process-math" id="exer-series-limit-arctan-1-1-1">
+\begin{equation*}
+\lim_{x\to 0} \frac{\arctan x - x}{\sin x - x} .
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-series-limit-arctan-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exer-series-limit-arctan-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exer-series-limit-arctan-2-1">
+<div class="para">Numerator and denominator both tend to <span class="process-math">\(0\text{,}\)</span> and each vanishes to third order, so l’Hôpital’s rule would have to be applied three times. Replacing each by its Maclaurin series is quicker. From <span class="process-math">\(\arctan x = x - \dfrac{x^3}{3} + \dfrac{x^5}{5} - \cdots\)</span> and <span class="process-math">\(\sin x = x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \cdots\text{,}\)</span> subtracting <span class="process-math">\(x\)</span> removes the leading term of each:</div>
+<div class="displaymath process-math" id="exer-series-limit-arctan-2-1-5">
+\begin{align*}
+\arctan x - x \amp = -\frac{x^3}{3} + \frac{x^5}{5} - \cdots\\
+\sin x - x \amp = -\frac{x^3}{3!} + \frac{x^5}{5!} - \cdots
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-series-limit-arctan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exer-series-limit-arctan-2-2">
+<div class="para">Both series begin with <span class="process-math">\(x^3\text{.}\)</span> The limit never sees <span class="process-math">\(x = 0\)</span> itself, so we may cancel a factor of <span class="process-math">\(x^3\)</span> from top and bottom:</div>
+<div class="displaymath process-math" id="exer-series-limit-arctan-2-2-4">
+\begin{align*}
+\lim_{x\to 0} \frac{\arctan x - x}{\sin x - x}
+\amp = \lim_{x\to 0}
+\frac{-\frac13 + \frac{x^2}{5} - \cdots}
+{-\frac{1}{3!} + \frac{x^2}{5!} - \cdots}\\
+\amp = \frac{\displaystyle\lim_{x\to 0}
+\left(-\frac13 + \frac{x^2}{5} - \cdots\right)}
+{\displaystyle\lim_{x\to 0}
+\left(-\frac{1}{3!} + \frac{x^2}{5!} - \cdots\right)}\\
+\amp = \frac{-\frac13}{-\frac{1}{3!}}
+= \frac{-\frac13}{-\frac16} = 2 .
+\end{align*}
+</div>
+<div class="para">Each of the two remaining series is a power series with a nonzero constant term, so it is continuous at <span class="process-math">\(0\)</span> and the limit is just that constant term. Only the leading coefficients matter: the answer is the ratio <span class="process-math">\(\left(-\frac13\right) \big/ \left(-\frac16\right)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exer-series-limit-arctan-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.4.20.1"><a tabindex="-1" href="#exer-series-limit-arctan-2" title="Copy heading and permalink for Solution 5.4.20.1" aria-label="Copy heading and permalink for Solution 5.4.20.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.4.20"><a tabindex="-1" href="#exer-series-limit-arctan" title="Copy heading and permalink for Worksheet Exercise 5.4.20" aria-label="Copy heading and permalink for Worksheet Exercise 5.4.20">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet 5.4: Review Problems #1"><a tabindex="-1" href="#worksheet-review-problems-1" title="Copy heading and permalink for Worksheet 5.4: Review Problems #1" aria-label="Copy heading and permalink for Worksheet 5.4: Review Problems #1">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="worksheet-assignment-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="worksheet-assignment-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script><script src="external/custom.js"></script>
+</body>
+</html>

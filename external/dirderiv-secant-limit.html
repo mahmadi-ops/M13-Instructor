@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secant slopes approaching the directional derivative</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  button {
+    font-size: 14px; padding: 5px 12px; border-radius: 6px;
+    border: 1px solid #888; background: #f4f4f4; cursor: pointer;
+  }
+  button:hover { background: #e6e6e6; }
+  button.active { background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+  #sliderRow {
+    display: flex; align-items: center; gap: 10px;
+    padding: 0 10px 6px 10px; box-sizing: border-box;
+  }
+  #sSlider { flex: 1; }
+  #sLabel { font-size: 15px; min-width: 78px; font-variant-numeric: tabular-nums; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em;
+    font-variant-numeric: tabular-nums; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span style="font-size:14px;">g(s) = f(1 + s/&radic;2, 1 + s/&radic;2) = 3 + 2&radic;2 s + s&sup2;</span>
+    <span style="flex:1"></span>
+    <button id="limitBtn" title="Animate the limit">&#9654; s &rarr; 0</button>
+  </div>
+  <div id="sliderRow">
+    <span id="sLabel">s = 1.20</span>
+    <input type="range" id="sSlider" min="0.05" max="1.5" step="0.01" value="1.2">
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"><canvas id="cv"></canvas></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // palette (same as the sample-graphs interactive)
+  var DARK_BLUE = "#35659a", GOLD = "#f2c14e", RED = "#d1362f",
+      GRAY = "#999999", GREEN = "#009e73";
+  var R2 = 2 * Math.sqrt(2);
+
+  var canvas = document.getElementById("cv"), ctx = canvas.getContext("2d");
+  var slider = document.getElementById("sSlider");
+  var sVal = 1.2, animId = null;
+
+  var BB = { xmin: -1.95, xmax: 2.2, ymin: -1.0, ymax: 11.6 };
+  function g(s) { return 3 + R2 * s + s * s; }
+  function view() {
+    var w = canvas.width, h = canvas.height;
+    return { kx: w / (BB.xmax - BB.xmin), ky: h / (BB.ymax - BB.ymin) };
+  }
+  function X(v, x) { return (x - BB.xmin) * v.kx; }
+  function Y(v, y) { return canvas.height - (y - BB.ymin) * v.ky; }
+
+  function draw() {
+    var v = view(), w = canvas.width, h = canvas.height;
+    var dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, w, h);
+    ctx.font = (13 * dpr) + "px system-ui, sans-serif";
+
+    // axes
+    ctx.strokeStyle = GRAY; ctx.lineWidth = 1.2 * dpr;
+    ctx.beginPath();
+    ctx.moveTo(X(v, BB.xmin), Y(v, 0)); ctx.lineTo(X(v, BB.xmax), Y(v, 0));
+    ctx.moveTo(X(v, 0), Y(v, BB.ymin)); ctx.lineTo(X(v, 0), Y(v, BB.ymax));
+    ctx.stroke();
+    ctx.fillStyle = "#666";
+    ctx.fillText("s", X(v, BB.xmax) - 14 * dpr, Y(v, 0) + 18 * dpr);
+    ctx.fillText("z", X(v, 0) + 8 * dpr, Y(v, BB.ymax) + 16 * dpr);
+
+    // tangent line at s = 0 (dashed green), slope 2*sqrt(2)
+    ctx.strokeStyle = GREEN; ctx.lineWidth = 2 * dpr;
+    ctx.setLineDash([7 * dpr, 5 * dpr]);
+    ctx.beginPath();
+    ctx.moveTo(X(v, -1.05), Y(v, 3 - R2 * 1.05));
+    ctx.lineTo(X(v, 1.4), Y(v, 3 + R2 * 1.4));
+    ctx.stroke(); ctx.setLineDash([]);
+
+    // secant line through (0,3) and (s, g(s)), slope 2*sqrt(2) + s
+    var m = R2 + sVal;
+    ctx.strokeStyle = RED; ctx.lineWidth = 2 * dpr;
+    ctx.beginPath();
+    ctx.moveTo(X(v, -0.75), Y(v, 3 - 0.75 * m));
+    ctx.lineTo(X(v, 1.75), Y(v, 3 + 1.75 * m));
+    ctx.stroke();
+
+    // the curve g(s)
+    ctx.strokeStyle = DARK_BLUE; ctx.lineWidth = 2.6 * dpr;
+    ctx.beginPath();
+    for (var i = 0; i <= 160; i++) {
+      var s = -1.75 + (3.55 * i) / 160;
+      if (i === 0) ctx.moveTo(X(v, s), Y(v, g(s)));
+      else ctx.lineTo(X(v, s), Y(v, g(s)));
+    }
+    ctx.stroke();
+
+    // points
+    ctx.fillStyle = "#222";
+    ctx.beginPath(); ctx.arc(X(v, 0), Y(v, 3), 4.5 * dpr, 0, 2 * Math.PI); ctx.fill();
+    ctx.fillText("(0, f(P₀))", X(v, 0) - 78 * dpr, Y(v, 3) + 4 * dpr);
+    ctx.fillStyle = RED;
+    ctx.beginPath(); ctx.arc(X(v, sVal), Y(v, g(sVal)), 4.5 * dpr, 0, 2 * Math.PI); ctx.fill();
+    ctx.fillText("(s, f(P))", X(v, sVal) + 9 * dpr, Y(v, g(sVal)) + 3 * dpr);
+
+    // legend
+    ctx.fillStyle = DARK_BLUE; ctx.fillText("g(s)", X(v, -1.72), Y(v, g(-1.6)) - 10 * dpr);
+    ctx.fillStyle = RED; ctx.fillText("secant", X(v, 1.45), Y(v, 3 + 1.45 * m) - 8 * dpr);
+    ctx.fillStyle = GREEN; ctx.fillText("tangent", X(v, 1.14), Y(v, 3 + R2 * 1.32) + 16 * dpr);
+  }
+
+  function update() {
+    document.getElementById("sLabel").textContent = "s = " + sVal.toFixed(2);
+    slider.value = sVal;
+    document.getElementById("readout").textContent =
+      "secant slope = 2√2 + s = " + (R2 + sVal).toFixed(3) +
+      "   →   tangent slope = 2√2 ≈ " + R2.toFixed(3) +
+      " = (Dᵤf)₍P₀₎";
+    draw();
+  }
+
+  slider.addEventListener("input", function () {
+    stopAnim();
+    sVal = parseFloat(slider.value);
+    update();
+  });
+
+  var limitBtn = document.getElementById("limitBtn");
+  function stopAnim() {
+    if (animId !== null) { cancelAnimationFrame(animId); animId = null; }
+    limitBtn.classList.remove("active");
+  }
+  function animate() {
+    sVal = Math.max(0.05, sVal - 0.012);
+    update();
+    if (sVal > 0.05) animId = requestAnimationFrame(animate);
+    else stopAnim();
+  }
+  limitBtn.addEventListener("click", function () {
+    stopAnim();
+    if (sVal <= 0.06) sVal = 1.5; // restart from the right
+    limitBtn.classList.add("active");
+    animId = requestAnimationFrame(animate);
+  });
+
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = document.getElementById("app").clientWidth;
+    var used = document.getElementById("controls").offsetHeight +
+               document.getElementById("sliderRow").offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(240, window.innerHeight - used - 4);
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + "px"; canvas.style.height = h + "px";
+    update();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+})();
+</script>
+</body>
+</html>

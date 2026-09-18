@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="elliptic-cone-traces-figure" speech2="Traces of the elliptic cone z squared equals x squared over 4 plus y squared over 9 in the planes x equals 2, y equals negative 3, and z equals 1">
+      <grouped>elliptic-cone-traces-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>elliptic-cone-traces-trace-x</active>
+        <active>elliptic-cone-traces-trace-y</active>
+        <active>elliptic-cone-traces-trace-z</active>
+      </children>
+      <components>
+        <active>elliptic-cone-traces-trace-x</active>
+        <active>elliptic-cone-traces-trace-y</active>
+        <active>elliptic-cone-traces-trace-z</active>
+      </components>
+    </annotation>
+    <annotation id="elliptic-cone-traces-trace-x" speech2="In the plane x equals 2, the trace z squared minus y squared over 9 equals 1 is a hyperbola opening up and down">
+      <active>elliptic-cone-traces-trace-x</active>
+      <position>1</position>
+      <parents>
+        <grouped>elliptic-cone-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="elliptic-cone-traces-trace-y" speech2="In the plane y equals negative 3, the trace z squared minus x squared over 4 equals 1 is a hyperbola opening up and down">
+      <active>elliptic-cone-traces-trace-y</active>
+      <position>2</position>
+      <parents>
+        <grouped>elliptic-cone-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="elliptic-cone-traces-trace-z" speech2="In the plane z equals 1, the trace x squared over 4 plus y squared over 9 equals 1 is an ellipse with semi-axes 2 and 3">
+      <active>elliptic-cone-traces-trace-z</active>
+      <position>3</position>
+      <parents>
+        <grouped>elliptic-cone-traces-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

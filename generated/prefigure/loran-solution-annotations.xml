@@ -1,0 +1,91 @@
+<diagram>
+  <annotations>
+    <annotation id="loran-solution-hyp" speech2="The solution: Emma sits at the crossing of the perpendicular bisector of P one P three and the right branch of the hyperbola with foci P one and P two">
+      <grouped>loran-solution-hyp</grouped>
+      <position>1</position>
+      <children>
+        <active>loran-solution-grid-axes</active>
+        <active>loran-solution-hyp</active>
+        <active>loran-solution-axis-o</active>
+        <active>loran-solution-ptA</active>
+        <active>loran-solution-ptA2</active>
+        <active>loran-solution-ptS</active>
+      </children>
+      <components>
+        <active>loran-solution-grid-axes</active>
+        <active>loran-solution-hyp</active>
+        <active>loran-solution-axis-o</active>
+        <active>loran-solution-ptA</active>
+        <active>loran-solution-ptA2</active>
+        <active>loran-solution-ptS</active>
+      </components>
+    </annotation>
+    <annotation id="loran-solution-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>loran-solution-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>loran-solution-grid</active>
+        <active>loran-solution-axes</active>
+      </children>
+      <components>
+        <active>loran-solution-grid</active>
+        <active>loran-solution-axes</active>
+      </components>
+      <parents>
+        <grouped>loran-solution-hyp</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-solution-grid" speech2="The coordinate grid">
+      <active>loran-solution-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>loran-solution-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-solution-axes" speech2="The coordinate axes">
+      <active>loran-solution-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>loran-solution-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-solution-hyp" speech2="The hyperbola h, x squared minus y squared over three equals one, with two branches" sonify="yes">
+      <active>loran-solution-hyp</active>
+      <position>2</position>
+      <parents>
+        <grouped>loran-solution-hyp</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>loran-solution-hyp</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="loran-solution-axis-o" speech2="The line o, the perpendicular bisector of segment P one P three, passing through its midpoint S">
+      <active>loran-solution-axis-o</active>
+      <position>3</position>
+      <parents>
+        <grouped>loran-solution-hyp</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-solution-ptA" speech2="Emma's position A at nineteen thirteenths comma twenty four thirteenths, on the right branch">
+      <active>loran-solution-ptA</active>
+      <position>4</position>
+      <parents>
+        <grouped>loran-solution-hyp</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-solution-ptA2" speech2="The rejected second intersection A two at minus two comma three, on the left branch">
+      <active>loran-solution-ptA2</active>
+      <position>5</position>
+      <parents>
+        <grouped>loran-solution-hyp</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-solution-ptS" speech2="The midpoint S of segment P one P three">
+      <active>loran-solution-ptS</active>
+      <position>6</position>
+      <parents>
+        <grouped>loran-solution-hyp</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

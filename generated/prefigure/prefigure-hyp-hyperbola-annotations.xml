@@ -1,0 +1,61 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-hyp-hyperbola-figure" speech2="A hyperbola with two branches opening left and right, x squared minus y squared equals one. A point P on the right branch in the first quadrant is labelled P of hyperbolic cosine t comma hyperbolic sine t. A segment from the origin to P and a segment along the x axis to the vertex are drawn from the origin.">
+      <grouped>prefigure-hyp-hyperbola-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hyp-hyperbola-grid-axes</active>
+        <active>prefigure-hyp-hyperbola-hh-right</active>
+        <active>prefigure-hyp-hyperbola-hh-P</active>
+      </children>
+      <components>
+        <active>prefigure-hyp-hyperbola-grid-axes</active>
+        <active>prefigure-hyp-hyperbola-hh-right</active>
+        <active>prefigure-hyp-hyperbola-hh-P</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-hyp-hyperbola-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-hyp-hyperbola-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hyp-hyperbola-grid</active>
+        <active>prefigure-hyp-hyperbola-axes</active>
+      </children>
+      <components>
+        <active>prefigure-hyp-hyperbola-grid</active>
+        <active>prefigure-hyp-hyperbola-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-hyp-hyperbola-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-hyperbola-grid" speech2="The coordinate grid">
+      <active>prefigure-hyp-hyperbola-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-hyp-hyperbola-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-hyperbola-axes" speech2="The coordinate axes">
+      <active>prefigure-hyp-hyperbola-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hyp-hyperbola-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-hyperbola-hh-right" speech2="The right branch of the hyperbola, traced by the point hyperbolic cosine t comma hyperbolic sine t.">
+      <active>prefigure-hyp-hyperbola-hh-right</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hyp-hyperbola-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-hyperbola-hh-P" speech2="The point P with coordinates hyperbolic cosine t comma hyperbolic sine t.">
+      <active>prefigure-hyp-hyperbola-hh-P</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-hyp-hyperbola-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

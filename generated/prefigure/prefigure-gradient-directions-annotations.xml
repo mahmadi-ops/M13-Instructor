@@ -1,0 +1,75 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-gradient-directions-figure" speech2="Concentric circles centered at the origin, the level curves of f of x comma y equals x squared over 2 plus y squared over 2. At the point P 0 with coordinates 1 comma 1, four unit arrows are drawn: a green arrow pointing outward along the gradient, the direction of fastest increase; a red arrow pointing inward opposite the gradient, the direction of fastest decrease; and two blue arrows tangent to the level circle through P 0, the directions of zero change. A dashed line tangent to the circle at P 0 contains the two blue arrows.">
+      <grouped>prefigure-gradient-directions-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-gradient-directions-gd-level3</active>
+        <active>prefigure-gradient-directions-gd-P0</active>
+        <active>prefigure-gradient-directions-gd-increase</active>
+        <active>prefigure-gradient-directions-gd-decrease</active>
+        <active>prefigure-gradient-directions-gd-zero1</active>
+        <active>prefigure-gradient-directions-gd-zero2</active>
+        <active>prefigure-gradient-directions-gd-tangent</active>
+      </children>
+      <components>
+        <active>prefigure-gradient-directions-gd-level3</active>
+        <active>prefigure-gradient-directions-gd-P0</active>
+        <active>prefigure-gradient-directions-gd-increase</active>
+        <active>prefigure-gradient-directions-gd-decrease</active>
+        <active>prefigure-gradient-directions-gd-zero1</active>
+        <active>prefigure-gradient-directions-gd-zero2</active>
+        <active>prefigure-gradient-directions-gd-tangent</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-level3" speech2="The level curve f equals 1 passing through the point P 0, a circle of radius root 2, highlighted in blue.">
+      <active>prefigure-gradient-directions-gd-level3</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-P0" speech2="The point P 0 with coordinates 1 comma 1, where the four special directions are drawn.">
+      <active>prefigure-gradient-directions-gd-P0</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-increase" speech2="The green unit vector 1 over root 2 comma 1 over root 2, the direction of the gradient, in which f increases most rapidly.">
+      <active>prefigure-gradient-directions-gd-increase</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-decrease" speech2="The red unit vector negative 1 over root 2 comma negative 1 over root 2, opposite to the gradient, in which f decreases most rapidly.">
+      <active>prefigure-gradient-directions-gd-decrease</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-zero1" speech2="The blue unit vector u equals 1 over root 2 comma negative 1 over root 2, a direction of zero change, tangent to the level curve.">
+      <active>prefigure-gradient-directions-gd-zero1</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-zero2" speech2="The blue unit vector u tilde equals negative u, the other direction of zero change, also tangent to the level curve.">
+      <active>prefigure-gradient-directions-gd-zero2</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-directions-gd-tangent" speech2="The dashed tangent line to the level curve at P 0, which contains both directions of zero change.">
+      <active>prefigure-gradient-directions-gd-tangent</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-gradient-directions-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

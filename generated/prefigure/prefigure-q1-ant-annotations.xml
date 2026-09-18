@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-q1-ant-figure" speech2="A portion of the x y plane between x equals zero point five five and two point four five. Nine data points are marked at the corners of a grid with x and y each equal to one, one point five and two, each labelled with its temperature. An orange curve, the ant's path, rises steeply through the point one comma one, and a dark red velocity arrow at that point points up and slightly to the left.">
+      <grouped>prefigure-q1-ant-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-q1-ant-grid-axes</active>
+        <active>prefigure-q1-ant-q1a-path</active>
+        <active>prefigure-q1-ant-q1a-vel</active>
+        <active>prefigure-q1-ant-q1a-p11</active>
+      </children>
+      <components>
+        <active>prefigure-q1-ant-grid-axes</active>
+        <active>prefigure-q1-ant-q1a-path</active>
+        <active>prefigure-q1-ant-q1a-vel</active>
+        <active>prefigure-q1-ant-q1a-p11</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-q1-ant-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-q1-ant-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-q1-ant-grid</active>
+        <active>prefigure-q1-ant-axes</active>
+      </children>
+      <components>
+        <active>prefigure-q1-ant-grid</active>
+        <active>prefigure-q1-ant-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-q1-ant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q1-ant-grid" speech2="The coordinate grid">
+      <active>prefigure-q1-ant-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-q1-ant-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q1-ant-axes" speech2="The coordinate axes">
+      <active>prefigure-q1-ant-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-q1-ant-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q1-ant-q1a-path" speech2="The ant's path, given parametrically by x equals one minus one eighth of the natural log of two t minus three, and y equals two to the t over four.">
+      <active>prefigure-q1-ant-q1a-path</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-q1-ant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q1-ant-q1a-vel" speech2="The velocity vector of the ant at t equals two, with components negative one quarter and natural log of two.">
+      <active>prefigure-q1-ant-q1a-vel</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-q1-ant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q1-ant-q1a-p11" speech2="The point one comma one, where the temperature is seventy degrees.">
+      <active>prefigure-q1-ant-q1a-p11</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-q1-ant-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

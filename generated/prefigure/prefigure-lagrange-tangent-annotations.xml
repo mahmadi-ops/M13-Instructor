@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lagrange-tangent-figure" speech2="A wavy green curve represents the constraint g of x y equals 0. At a point P on the curve, a blue arrow T is tangent to the curve, a green arrow, the gradient of g, is perpendicular to the curve, and a red arrow, the gradient of f, points in a different direction. A dashed red segment along the tangent shows the component of the gradient of f in the tangent direction. A small square marks the right angle between T and the gradient of g.">
+      <grouped>prefigure-lagrange-tangent-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lagrange-tangent-lt-C</active>
+        <active>prefigure-lagrange-tangent-lt-P</active>
+        <active>prefigure-lagrange-tangent-lt-T</active>
+        <active>prefigure-lagrange-tangent-lt-gradg</active>
+        <active>prefigure-lagrange-tangent-lt-gradf</active>
+        <active>prefigure-lagrange-tangent-lt-proj</active>
+      </children>
+      <components>
+        <active>prefigure-lagrange-tangent-lt-C</active>
+        <active>prefigure-lagrange-tangent-lt-P</active>
+        <active>prefigure-lagrange-tangent-lt-T</active>
+        <active>prefigure-lagrange-tangent-lt-gradg</active>
+        <active>prefigure-lagrange-tangent-lt-gradf</active>
+        <active>prefigure-lagrange-tangent-lt-proj</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lagrange-tangent-lt-C" speech2="The constraint curve, where g of x y equals 0, drawn in green.">
+      <active>prefigure-lagrange-tangent-lt-C</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lagrange-tangent-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-tangent-lt-P" speech2="A point P on the constraint curve that is not a constrained extremum.">
+      <active>prefigure-lagrange-tangent-lt-P</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lagrange-tangent-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-tangent-lt-T" speech2="The tangent vector T, drawn in blue: any motion that stays on the curve must be along T.">
+      <active>prefigure-lagrange-tangent-lt-T</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lagrange-tangent-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-tangent-lt-gradg" speech2="The gradient of g, drawn in green, perpendicular to the constraint curve because the curve is a level curve of g.">
+      <active>prefigure-lagrange-tangent-lt-gradg</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-lagrange-tangent-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-tangent-lt-gradf" speech2="The gradient of f, drawn in red. It is not perpendicular to the curve at P.">
+      <active>prefigure-lagrange-tangent-lt-gradf</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-lagrange-tangent-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-tangent-lt-proj" speech2="The component of the gradient of f along the tangent direction, drawn as a dashed red segment. Because it is nonzero, f changes as we move along the curve, so P is not an extremum.">
+      <active>prefigure-lagrange-tangent-lt-proj</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-lagrange-tangent-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

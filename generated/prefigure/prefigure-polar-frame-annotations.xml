@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-polar-frame-figure" speech2="A circle of radius r centred at the origin. A particle sits at a point P on the circle, its position vector making an angle theta of t with the positive x axis. At P the unit vector r hat points radially outward along the position vector and the unit vector theta hat is perpendicular to it, tangent to the circle in the counterclockwise direction. The fixed unit vectors i and j are also drawn at P for comparison.">
+      <grouped>prefigure-polar-frame-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-polar-frame-pf-circle</active>
+        <active>prefigure-polar-frame-pf-r</active>
+        <active>prefigure-polar-frame-pf-rhat</active>
+        <active>prefigure-polar-frame-pf-thetahat</active>
+        <active>prefigure-polar-frame-pf-theta</active>
+      </children>
+      <components>
+        <active>prefigure-polar-frame-pf-circle</active>
+        <active>prefigure-polar-frame-pf-r</active>
+        <active>prefigure-polar-frame-pf-rhat</active>
+        <active>prefigure-polar-frame-pf-thetahat</active>
+        <active>prefigure-polar-frame-pf-theta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-polar-frame-pf-circle" speech2="The circular orbit of radius r.">
+      <active>prefigure-polar-frame-pf-circle</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-polar-frame-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-polar-frame-pf-r" speech2="The position vector of the particle, of length r.">
+      <active>prefigure-polar-frame-pf-r</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-polar-frame-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-polar-frame-pf-rhat" speech2="The unit vector r hat, pointing radially outward from the centre.">
+      <active>prefigure-polar-frame-pf-rhat</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-polar-frame-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-polar-frame-pf-thetahat" speech2="The unit vector theta hat, tangent to the circle, perpendicular to r hat.">
+      <active>prefigure-polar-frame-pf-thetahat</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-polar-frame-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-polar-frame-pf-theta" speech2="The angle theta of t between the positive x axis and the position vector.">
+      <active>prefigure-polar-frame-pf-theta</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-polar-frame-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The tangent plane at P0, built from the two slices</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math.
+     Kept in step with the book's other animated figures, in particular
+     limit-paths-manim.html, whose layout this file follows. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --gold:      #f0ac5f;
+    --purple:    #c678dd;
+    --pink:      #e07ac8;
+    --red:       #fc6255;
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body { font-family: var(--sans); color: var(--ink);
+         -webkit-font-smoothing: antialiased; }
+  #app { width: 100%; height: 100%; box-sizing: border-box;
+         display: flex; flex-direction: column; }
+
+  /* ---- header: the equation and the readout, in their own bar above the
+     stage so that nothing sits on top of the picture itself ---- */
+  #top {
+    flex: 0 0 auto; display: flex; align-items: stretch; gap: 10px;
+    padding: 8px 12px; box-sizing: border-box;
+    background: var(--panel); border-bottom: 1px solid var(--edge);
+  }
+
+  /* ---- stage ---- */
+  #stage { position: relative; width: 100%; background: var(--bg);
+           flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  /* the renderer is sized with updateStyle off, so the canvas has to be told
+     to fill the stage in CSS -- otherwise it draws at its buffer size, which is
+     devicePixelRatio times too big, and the picture overflows the frame. */
+  #stage canvas { display: block; width: 100%; height: 100%;
+                  cursor: grab; touch-action: none; }
+  #stage canvas:active { cursor: grabbing; }
+
+  /* the function and the point, left half of the header bar */
+  #eqcard {
+    padding: 9px 13px 10px 13px;
+    background: #14161e;
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    line-height: 1.5;
+  }
+  .math { font-family: var(--serif); font-size: 18px; }
+  .math i { font-style: italic; }
+  .math sub { font-size: 12px; }
+  #eqcard .sub { font-size: 13px; color: var(--dim); font-family: var(--sans); }
+
+  /* what the layers report, right half of the header bar: every row is always
+     listed (a dash until its layer is chosen) so the bar keeps a constant
+     height and the stage below it never jumps */
+  #readout {
+    margin-left: auto; min-width: 250px;
+    padding: 8px 12px 9px 12px;
+    background: #14161e;
+    border: 1px solid var(--edge); border-radius: 6px;
+    font-size: 13.5px; color: var(--dim);
+  }
+  #readout .title { font-size: 12.5px; letter-spacing: .3px;
+                    text-transform: uppercase; color: var(--dim); }
+  #readout .row {
+    display: flex; align-items: baseline; gap: 8px;
+    margin-top: 4px; font-family: var(--serif); font-size: 16px;
+    color: var(--ink);
+  }
+  #readout .row.off { opacity: 0.45; }
+  #readout .row .swatch {
+    width: 16px; height: 3px; border-radius: 2px; flex: 0 0 auto;
+    transform: translateY(-4px);
+  }
+  #readout .row .val { margin-left: auto; font-weight: 700;
+                       white-space: nowrap; padding-left: 10px; }
+  #readout sub, #verdict sub { font-size: 0.62em; }
+  #readout i, #verdict i { font-style: italic; }
+  /* the tangent-plane equation keeps its space even while hidden, again so
+     the header height (and with it the canvas) stays put */
+  #verdict {
+    margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--edge);
+    font-size: 13.5px; line-height: 1.35; color: var(--pink); font-weight: 600;
+    font-family: var(--serif);
+    min-height: 1.35em; visibility: hidden;
+  }
+  #verdict.show { visibility: visible; }
+
+  /* guidance, its own strip between the stage and the buttons, fading in
+     like a manim Write() but never laid over the picture */
+  #caption {
+    flex: 0 0 auto; box-sizing: border-box;
+    width: 100%; min-height: 32px;
+    text-align: center; font-size: 14.5px; line-height: 1.4; color: var(--dim);
+    background: var(--bg); border-top: 1px solid var(--edge);
+    padding: 6px 14px;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  #caption.show { opacity: 1; }
+  #caption i, #caption sub { font-family: var(--serif); }
+  #caption sub { font-size: 0.65em; }
+
+  /* ---- control panel ---- */
+  #panel {
+    flex: 0 0 auto; border-top: 1px solid var(--edge);
+    background: var(--panel); padding: 9px 12px 11px 12px; box-sizing: border-box;
+  }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 13px; color: var(--dim); }
+
+  button {
+    font: inherit; font-size: 13.5px;
+    padding: 5px 12px; border-radius: 999px;
+    color: var(--ink); background: #1a1d26;
+    border: 1px solid var(--edge);
+    cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+  }
+  button:hover { background: #232734; }
+  button .eq { font-family: var(--serif); font-style: italic; }
+  /* an active layer button wears its own colour, set from the palette in JS */
+  button.on { color: #06070a; font-weight: 700; }
+  #btnBuild.running, #btnSide.on, #btnSpin.on {
+    background: var(--blue); border-color: var(--blue);
+    color: #06070a; font-weight: 600;
+  }
+
+  @media (max-width: 620px) {
+    #top { padding: 6px 10px; }
+    #eqcard { padding: 7px 10px 8px 10px; }
+    #eqcard .sub { display: none; }
+    .math { font-size: 16px; }
+    #readout { min-width: 0; font-size: 12.5px; padding: 6px 9px 7px 9px; }
+    #readout .row { font-size: 14.5px; }
+    #caption { font-size: 12.5px; min-height: 28px; padding: 5px 10px; }
+    .lbl { display: none; }
+    button { font-size: 12.5px; padding: 4px 10px; }
+  }
+</style>
+</head>
+
+<body>
+<div id="app">
+  <div id="top">
+    <div id="eqcard">
+      <div class="math" style="color:#9cdceb">
+        <i>f</i>(<i>x</i>,<i>y</i>) = 3 &#8722; 0.25<i>x</i>&#178; &#8722; 0.45<i>y</i>&#178;
+      </div>
+      <div class="math">
+        <i>P</i><sub>0</sub> = (0.5,&#8202;0.5,&#8202;2.825)
+      </div>
+      <div class="sub">the surface and the point of the figure above</div>
+    </div>
+
+    <div id="readout">
+      <div class="title">at the point <span style="font-family:var(--serif); font-style:italic; text-transform:none">P</span><sub>0</sub></div>
+      <div id="rows"></div>
+      <div id="verdict"></div>
+    </div>
+  </div>
+
+  <div id="stage"></div>
+
+  <div id="caption"></div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Add a layer:</span>
+      <button class="layerBtn" data-i="0"><span class="eq">y</span> = <span class="eq">y</span><sub>0</sub> slice</button>
+      <button class="layerBtn" data-i="1"><span class="eq">x</span> = <span class="eq">x</span><sub>0</sub> slice</button>
+      <button class="layerBtn" data-i="2">tangent plane</button>
+      <button class="layerBtn" data-i="3">normal <span class="eq">n</span></button>
+      <span style="flex:1"></span>
+      <button id="btnAll">Show all</button>
+      <button id="btnClear">Clear</button>
+    </div>
+    <div class="row">
+      <span class="lbl">View:</span>
+      <button id="btnBuild">&#9654;&nbsp;Build it up</button>
+      <button id="btnSide">Side view</button>
+      <button id="btnSpin">Spin</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Manim colour constants, so the palette below reads the way a Scene would.
+  var BLUE_C = 0x58c4dd, GREEN_C = 0x83c167, GOLD_C = 0xf0ac5f,
+      PURPLE_C = 0xc678dd, PINK_C = 0xe07ac8, RED_C = 0xfc6255,
+      INK = 0xece6e2;
+
+  // ---------- the construction ----------
+  // The same surface and point as the static figure above this interactive
+  // (and as the two partial-derivative figures in chapter 14.3):
+  //   f(x,y) = 3 - 0.25 x^2 - 0.45 y^2 at P0 = (0.5, 0.5, f(0.5,0.5)).
+  function f(x, y) { return 3 - 0.25 * x * x - 0.45 * y * y; }
+  var X0 = 0.5, Y0 = 0.5, Z0 = f(X0, Y0);          // 2.825
+  var FX = -0.5 * X0, FY = -0.9 * Y0;              // -0.25 and -0.45
+  var DOM = 2.0;                                   // the surface is drawn over [-2,2]^2
+  var LIFT = 0.02;                                 // traces sit this far above the surface
+  var SLICE_TOP = 3.35;                            // the cutting planes reach this height
+
+  // ---------- renderer / scene ----------
+  var stage = document.getElementById("stage");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  stage.appendChild(renderer.domElement);
+  var canvas = renderer.domElement;
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x06070a);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 200);
+  camera.up.set(0, 0, 1);                 // z is up, the usual maths convention
+
+  var CENTER = new THREE.Vector3(0, 0, 1.55);
+  var radius = 8.5, theta = -0.95, phi = 1.08;
+  var targetPhi = null, targetTheta = null;   // set by the view buttons
+  var aspect = 1;
+
+  // CLOUD samples everything that is actually drawn, measured from CENTER, so
+  // the camera can be dollied to the smallest distance that still shows all of
+  // it from the current angle.
+  var CLOUD = (function () {
+    var pts = [], k, t, rim = DOM * 1.15;
+    for (k = 0; k < 16; k++) {
+      t = 2 * Math.PI * k / 16;
+      pts.push(new THREE.Vector3(rim * Math.cos(t), rim * Math.sin(t), 0));
+      pts.push(new THREE.Vector3(rim * Math.cos(t), rim * Math.sin(t), SLICE_TOP + 0.15));
+    }
+    pts.push(new THREE.Vector3(0.9, 1.2, 4.35));   // the tip of the normal arrow
+    return pts.map(function (p) { return p.sub(CENTER); });
+  })();
+
+  var _e = new THREE.Vector3(), _upv = new THREE.Vector3(), _rt = new THREE.Vector3();
+  function computeRadius() {
+    _e.set(Math.sin(phi) * Math.cos(theta), Math.sin(phi) * Math.sin(theta), Math.cos(phi));
+    _upv.set(0, 0, 1).addScaledVector(_e, -_e.z);
+    if (_upv.lengthSq() < 1e-9) _upv.set(0, 1, 0); else _upv.normalize();
+    _rt.crossVectors(_upv, _e).normalize();
+
+    var tanHalf = Math.tan(camera.fov * Math.PI / 360);
+    var tanV = tanHalf, tanH = tanHalf * aspect, r = 1;
+    for (var i = 0; i < CLOUD.length; i++) {
+      var d = CLOUD[i], along = d.dot(_e);
+      r = Math.max(r, along + Math.abs(d.dot(_upv)) / tanV,
+                      along + Math.abs(d.dot(_rt)) / tanH);
+    }
+    radius = 1.06 * r;
+    camera.far = 3 * radius;
+    camera.updateProjectionMatrix();
+  }
+
+  function placeCamera() {
+    computeRadius();
+    camera.position.set(
+      CENTER.x + radius * Math.sin(phi) * Math.cos(theta),
+      CENTER.y + radius * Math.sin(phi) * Math.sin(theta),
+      CENTER.z + radius * Math.cos(phi)
+    );
+    camera.lookAt(CENTER.x, CENTER.y, CENTER.z);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.7));
+  var key = new THREE.DirectionalLight(0xffffff, 0.55); key.position.set(5, 3, 6);
+  var fill = new THREE.DirectionalLight(0x9fd8ff, 0.28); fill.position.set(-4, -5, 2);
+  scene.add(key); scene.add(fill);
+
+  // ---------- text sprites ----------
+  // Drawn in the book's serif. The webfont may still be loading when a sprite is
+  // first painted, so every sprite is repainted once document.fonts settles.
+  var LABELS = [];
+  function paintLabel(rec) {
+    var w = 256, h = 96, cv = document.createElement("canvas");
+    cv.width = w; cv.height = h;
+    var g = cv.getContext("2d");
+    g.font = 'italic 52px "PT Serif", "Times New Roman", Times, serif';
+    g.fillStyle = rec.colour;
+    g.textAlign = "center";
+    g.textBaseline = "middle";
+    g.fillText(rec.text, w / 2, h / 2);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.minFilter = THREE.LinearFilter;
+    if (rec.sprite.material.map) rec.sprite.material.map.dispose();
+    rec.sprite.material.map = tex;
+    rec.sprite.material.needsUpdate = true;
+  }
+  function makeLabel(text, colour, scale) {
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({
+      transparent: true, depthTest: false, opacity: 0
+    }));
+    sp.scale.set(scale * 2.667, scale, 1);   // canvas is 256 x 96
+    var rec = { text: text, colour: colour, sprite: sp };
+    LABELS.push(rec);
+    paintLabel(rec);
+    return sp;
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { LABELS.forEach(paintLabel); });
+  }
+
+  // ---------- fading machinery ----------
+  // Every mesh remembers the opacity it fades towards; a layer's grow value
+  // (0..1) scales all of its members each frame.
+  function fadeable(mesh, baseOpacity) {
+    mesh.material.transparent = true;
+    mesh.material.opacity = 0;
+    mesh.userData.baseOpacity = baseOpacity;
+    mesh.visible = false;
+    return mesh;
+  }
+
+  // ---------- the surface ----------
+  // Vertex colours run from blue at the low rim to gold at the summit, the
+  // same ramp the book's other manim surfaces use.
+  var NG = 40;
+  function surfaceColour(z) {
+    var t = Math.max(0, Math.min(1, (z - 0.2) / 2.8)), c = new THREE.Color();
+    var lo = new THREE.Color(0x1c758a), mid = new THREE.Color(0x3a4150),
+        hi = new THREE.Color(GOLD_C);
+    if (t < 0.5) c.copy(lo).lerp(mid, t / 0.5);
+    else c.copy(mid).lerp(hi, (t - 0.5) / 0.5);
+    return c;
+  }
+
+  (function buildSurface() {
+    var pos = [], col = [], idx = [], i, j;
+    for (i = 0; i <= NG; i++) {
+      var x = -DOM + 2 * DOM * i / NG;
+      for (j = 0; j <= NG; j++) {
+        var y = -DOM + 2 * DOM * j / NG, z = f(x, y);
+        pos.push(x, y, z);
+        var c = surfaceColour(z);
+        col.push(c.r, c.g, c.b);
+      }
+    }
+    for (i = 0; i < NG; i++) {
+      for (j = 0; j < NG; j++) {
+        var a = i * (NG + 1) + j, b = a + 1, d = a + (NG + 1), e = d + 1;
+        idx.push(a, d, b, b, d, e);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setAttribute("color", new THREE.Float32BufferAttribute(col, 3));
+    geo.setIndex(idx);
+    geo.computeVertexNormals();
+    scene.add(new THREE.Mesh(geo, new THREE.MeshPhongMaterial({
+      vertexColors: true, transparent: true, opacity: 0.62,
+      side: THREE.DoubleSide, shininess: 18, depthWrite: false
+    })));
+
+    // a coarse wireframe on top, the way a manim Surface carries its grid
+    var wpos = [], step = 5;
+    for (i = 0; i <= NG; i += step) {
+      var u = -DOM + 2 * DOM * i / NG;
+      for (j = 0; j < NG; j++) {
+        var v1 = -DOM + 2 * DOM * j / NG, v2 = -DOM + 2 * DOM * (j + 1) / NG;
+        wpos.push(u, v1, f(u, v1), u, v2, f(u, v2));
+        wpos.push(v1, u, f(v1, u), v2, u, f(v2, u));
+      }
+    }
+    var wgeo = new THREE.BufferGeometry();
+    wgeo.setAttribute("position", new THREE.Float32BufferAttribute(wpos, 3));
+    scene.add(new THREE.LineSegments(wgeo, new THREE.LineBasicMaterial({
+      color: 0x8fa4b8, transparent: true, opacity: 0.16
+    })));
+  })();
+
+  // ---------- straight rods ----------
+  // three.js draws every line one pixel wide whatever the material says, so
+  // the things the reader is meant to look at are thin cylinders instead.
+  var ROD = new THREE.CylinderGeometry(1, 1, 1, 12, 1, true);
+  ROD.translate(0, 0.5, 0);          // grows from its base along +y
+  var _up = new THREE.Vector3(0, 1, 0), _dir = new THREE.Vector3();
+
+  function rod(from, to, r, colour, opacity) {
+    var m = new THREE.Mesh(ROD, new THREE.MeshBasicMaterial({
+      color: colour, transparent: true, opacity: opacity === undefined ? 1 : opacity
+    }));
+    _dir.subVectors(to, from);
+    var len = _dir.length();
+    m.position.copy(from);
+    m.quaternion.setFromUnitVectors(_up, _dir.clone().normalize());
+    m.scale.set(r, len, r);
+    return m;
+  }
+
+  // ---------- the floor ----------
+  (function buildFloor() {
+    var g = [], n = 8, ext = DOM * 1.1, i;
+    for (i = -n; i <= n; i++) {
+      var u = ext * i / n;
+      g.push(-ext, u, 0, ext, u, 0);
+      g.push(u, -ext, 0, u, ext, 0);
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(g, 3));
+    scene.add(new THREE.LineSegments(geo, new THREE.LineBasicMaterial({
+      color: 0x39404e, transparent: true, opacity: 0.5
+    })));
+
+    // (x0, y0) on the floor, and a dotted riser up to P0
+    var m = new THREE.Mesh(new THREE.SphereGeometry(0.04, 16, 12),
+                           new THREE.MeshBasicMaterial({ color: 0x8a8f9c }));
+    m.position.set(X0, Y0, 0);
+    scene.add(m);
+    for (var k = 0; k < 10; k++) {
+      var z1 = Z0 * (k + 0.15) / 10, z2 = Z0 * (k + 0.55) / 10;
+      var seg = rod(new THREE.Vector3(X0, Y0, z1), new THREE.Vector3(X0, Y0, z2),
+                    0.007, 0x8a8f9c, 0.45);
+      scene.add(seg);
+    }
+    var tag = makeLabel("(x₀, y₀)", "#9aa0ad", 0.26);
+    tag.position.set(X0 + 0.42, Y0 - 0.3, 0.1);
+    tag.material.opacity = 0.8;
+    scene.add(tag);
+  })();
+
+  // a tube following the trace curve cut by one of the two vertical planes
+  function traceTube(along, colour) {
+    // along(t) maps [-DOM, DOM] to points on the surface, lifted slightly
+    var pts = [];
+    for (var k = 0; k <= 40; k++) {
+      pts.push(along(-DOM + 2 * DOM * k / 40));
+    }
+    var curve = new THREE.CatmullRomCurve3(pts);
+    return new THREE.Mesh(new THREE.TubeGeometry(curve, 60, 0.035, 10, false),
+                          new THREE.MeshBasicMaterial({ color: colour }));
+  }
+
+  // a vertical cutting plane together with its rectangular outline
+  function slicePlane(alongX, colour) {
+    var group = [], geo = new THREE.PlaneGeometry(2 * DOM, SLICE_TOP);
+    geo.rotateX(Math.PI / 2);                       // into the x-z plane
+    if (!alongX) geo.rotateZ(Math.PI / 2);          // or the y-z plane
+    var quad = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({
+      color: colour, side: THREE.DoubleSide, depthWrite: false
+    }));
+    quad.position.set(alongX ? 0 : X0, alongX ? Y0 : 0, SLICE_TOP / 2);
+    group.push(fadeable(quad, 0.10));
+
+    var e = [];
+    if (alongX) {
+      e.push(-DOM, Y0, 0, DOM, Y0, 0,   DOM, Y0, 0, DOM, Y0, SLICE_TOP,
+             DOM, Y0, SLICE_TOP, -DOM, Y0, SLICE_TOP,
+             -DOM, Y0, SLICE_TOP, -DOM, Y0, 0);
+    } else {
+      e.push(X0, -DOM, 0, X0, DOM, 0,   X0, DOM, 0, X0, DOM, SLICE_TOP,
+             X0, DOM, SLICE_TOP, X0, -DOM, SLICE_TOP,
+             X0, -DOM, SLICE_TOP, X0, -DOM, 0);
+    }
+    var egeo = new THREE.BufferGeometry();
+    egeo.setAttribute("position", new THREE.Float32BufferAttribute(e, 3));
+    var edge = new THREE.LineSegments(egeo, new THREE.LineBasicMaterial({ color: colour }));
+    group.push(fadeable(edge, 0.4));
+    return group;
+  }
+
+  // ---------- the four layers ----------
+  // 0: the slice y = y0 (green curve, blue tangent line, slope fx)
+  // 1: the slice x = x0 (amber curve, dark-red tangent line, slope fy)
+  // 2: the tangent plane (pink)
+  // 3: the normal vector n (red)
+  var LAYERS = [
+    { css: "#83c167", on: false, grow: 0, members: [] },
+    { css: "#f0ac5f", on: false, grow: 0, members: [] },
+    { css: "#e07ac8", on: false, grow: 0, members: [] },
+    { css: "#fc6255", on: false, grow: 0, members: [] }
+  ];
+  function addTo(i, mesh, baseOpacity, label) {
+    var m = fadeable(mesh, baseOpacity);
+    if (label) m.userData.labelRec = label;
+    LAYERS[i].members.push(m);
+    scene.add(m);
+    return m;
+  }
+
+  // layer 0: the slice y = y0
+  slicePlane(true, GREEN_C).forEach(function (m) { LAYERS[0].members.push(m); scene.add(m); });
+  addTo(0, traceTube(function (x) {
+    return new THREE.Vector3(x, Y0, f(x, Y0) + LIFT);
+  }, GREEN_C), 1);
+  addTo(0, rod(new THREE.Vector3(X0 - 1.4, Y0, Z0 - 1.4 * FX + LIFT),
+               new THREE.Vector3(X0 + 1.4, Y0, Z0 + 1.4 * FX + LIFT),
+               0.036, BLUE_C), 1);
+  var lab0 = makeLabel("y = y₀", "#83c167", 0.3);
+  lab0.position.set(-DOM * 1.02, Y0, SLICE_TOP + 0.18);
+  addTo(0, lab0, 0.9);
+
+  // layer 1: the slice x = x0
+  slicePlane(false, GOLD_C).forEach(function (m) { LAYERS[1].members.push(m); scene.add(m); });
+  addTo(1, traceTube(function (y) {
+    return new THREE.Vector3(X0, y, f(X0, y) + LIFT);
+  }, GOLD_C), 1);
+  addTo(1, rod(new THREE.Vector3(X0, Y0 - 1.4, Z0 - 1.4 * FY + LIFT),
+               new THREE.Vector3(X0, Y0 + 1.4, Z0 + 1.4 * FY + LIFT),
+               0.036, PURPLE_C), 1);
+  var lab1 = makeLabel("x = x₀", "#f0ac5f", 0.3);
+  lab1.position.set(X0, DOM * 1.02, SLICE_TOP + 0.18);
+  addTo(1, lab1, 0.9);
+
+  // layer 2: the tangent plane, a quad touching the surface at P0 only
+  (function buildTangentPlane() {
+    function zt(x, y) { return Z0 + FX * (x - X0) + FY * (y - Y0); }
+    var R = 1.35, xs = [X0 - R, X0 + R], ys = [Y0 - R, Y0 + R];
+    var pos = [
+      xs[0], ys[0], zt(xs[0], ys[0]),  xs[1], ys[0], zt(xs[1], ys[0]),
+      xs[1], ys[1], zt(xs[1], ys[1]),  xs[0], ys[1], zt(xs[0], ys[1])
+    ];
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setIndex([0, 1, 2, 0, 2, 3]);
+    geo.computeVertexNormals();
+    addTo(2, new THREE.Mesh(geo, new THREE.MeshBasicMaterial({
+      color: PINK_C, side: THREE.DoubleSide, depthWrite: false
+    })), 0.38);
+
+    var e = [];
+    for (var k = 0; k < 4; k++) {
+      var a = [pos[3 * k], pos[3 * k + 1], pos[3 * k + 2]],
+          b = [pos[3 * ((k + 1) % 4)], pos[3 * ((k + 1) % 4) + 1], pos[3 * ((k + 1) % 4) + 2]];
+      e.push(a[0], a[1], a[2], b[0], b[1], b[2]);
+    }
+    var egeo = new THREE.BufferGeometry();
+    egeo.setAttribute("position", new THREE.Float32BufferAttribute(e, 3));
+    addTo(2, new THREE.LineSegments(egeo,
+      new THREE.LineBasicMaterial({ color: PINK_C })), 0.85);
+  })();
+
+  // layer 3: the normal vector n = <fx, fy, -1>, drawn with the upward sign
+  (function buildNormal() {
+    var dir = new THREE.Vector3(-FX, -FY, 1).normalize();
+    var from = new THREE.Vector3(X0, Y0, Z0);
+    var shaftEnd = from.clone().addScaledVector(dir, 1.05);
+    addTo(3, rod(from, shaftEnd, 0.03, RED_C), 1);
+    var cone = new THREE.Mesh(new THREE.ConeGeometry(0.085, 0.24, 14),
+                              new THREE.MeshBasicMaterial({ color: RED_C }));
+    cone.position.copy(shaftEnd);
+    cone.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
+    addTo(3, cone, 1);
+    var lab = makeLabel("n", "#fc6255", 0.32);
+    lab.position.copy(shaftEnd).addScaledVector(dir, 0.32);
+    addTo(3, lab, 1);
+  })();
+
+  // the point P0, always there: everything in the picture happens at it
+  var p0 = new THREE.Mesh(new THREE.SphereGeometry(0.06, 20, 14),
+                          new THREE.MeshBasicMaterial({ color: 0xd147bd }));
+  p0.position.set(X0, Y0, Z0);
+  scene.add(p0);
+  var p0Tag = makeLabel("P₀", "#d147bd", 0.32);
+  p0Tag.position.set(X0 - 0.32, Y0 - 0.32, Z0 + 0.14);
+  p0Tag.material.opacity = 0.95;
+  scene.add(p0Tag);
+
+  // ---------- the readout ----------
+  var rowsEl = document.getElementById("rows"),
+      verdictEl = document.getElementById("verdict"),
+      captionEl = document.getElementById("caption");
+
+  function say(html) {
+    captionEl.innerHTML = html;
+    captionEl.classList.add("show");
+  }
+
+  // real <sub> markup rather than the unicode subscript characters: there is
+  // no latin subscript y in unicode (only the greek gamma), and PT Serif has
+  // no subscript glyphs anyway, so those codepoints render in a mismatched
+  // fallback font
+  var SUB = {
+    fx: "<i>f</i><sub>x</sub>",
+    fy: "<i>f</i><sub>y</sub>",
+    P0: "<i>P</i><sub>0</sub>",
+    x0: "<i>x</i><sub>0</sub>",
+    y0: "<i>y</i><sub>0</sub>",
+    z0: "<i>z</i><sub>0</sub>"
+  };
+  var ROWS = [
+    { swatch: "#58c4dd", label: SUB.fx + "(" + SUB.x0 + "," + SUB.y0 + ")",
+      value: "−0.25", layer: 0 },
+    { swatch: "#c678dd", label: SUB.fy + "(" + SUB.x0 + "," + SUB.y0 + ")",
+      value: "−0.45", layer: 1 },
+    { swatch: "#fc6255", label: "normal <i>n</i>",
+      value: "⟨−0.25,&#8202;−0.45,&#8202;−1⟩", layer: 3 }
+  ];
+  function refreshReadout() {
+    // every row is always rendered (with a dash until its layer is on), so
+    // the readout -- and with it the stage below -- never changes height
+    rowsEl.innerHTML = ROWS.map(function (R) {
+      var on = LAYERS[R.layer].on;
+      return '<div class="row' + (on ? '' : ' off') + '">' +
+             '<span class="swatch" style="background:' + R.swatch + '"></span>' +
+             '<span>' + R.label + '</span>' +
+             '<span class="val"' + (on ? ' style="color:' + R.swatch + '"' : '') + '>' +
+             (on ? R.value : "—") + '</span></div>';
+    }).join("");
+    verdictEl.innerHTML = LAYERS[2].on
+      ? "<i>z</i> − " + SUB.z0 + " = −0.25(<i>x</i> − " + SUB.x0 +
+        ") − 0.45(<i>y</i> − " + SUB.y0 + ")"
+      : "";
+    verdictEl.classList.toggle("show", LAYERS[2].on);
+  }
+
+  var CAPTIONS = [
+    "The plane <i>y</i> = " + SUB.y0 + " cuts the surface in the green parabola; its tangent line at " + SUB.P0 + " (blue) has slope " + SUB.fx + " = −0.25.",
+    "The plane <i>x</i> = " + SUB.x0 + " cuts the surface in the amber parabola; its tangent line at " + SUB.P0 + " (dark red) has slope " + SUB.fy + " = −0.45.",
+    "One plane contains both tangent lines: the tangent plane to the surface at " + SUB.P0 + ".",
+    "<i>n</i> = ⟨" + SUB.fx + ", " + SUB.fy + ", −1⟩ stands perpendicular to the tangent plane (drawn with the upward sign)."
+  ];
+  var IDLE = "Add the layers with the buttons below, or press ▶ Build it up.";
+
+  function toggleLayer(i, force) {
+    var L = LAYERS[i];
+    var on = force === undefined ? !L.on : force;
+    if (on === L.on) return;
+    L.on = on;
+    var b = document.querySelectorAll(".layerBtn")[i];
+    b.classList.toggle("on", on);
+    b.style.background = on ? L.css : "";
+    b.style.borderColor = on ? L.css : "";
+    refreshReadout();
+    if (on) say(CAPTIONS[i]);
+    else if (!LAYERS.some(function (Q) { return Q.on; })) say(IDLE);
+  }
+
+  document.querySelectorAll(".layerBtn").forEach(function (b) {
+    b.addEventListener("click", function () { stopBuild(); toggleLayer(+b.dataset.i); });
+  });
+  document.getElementById("btnAll").addEventListener("click", function () {
+    stopBuild();
+    LAYERS.forEach(function (L, i) { toggleLayer(i, true); });
+    say("Both tangent lines lie in the tangent plane, and <i>n</i> stands at a right angle to it.");
+  });
+  document.getElementById("btnClear").addEventListener("click", function () {
+    stopBuild();
+    LAYERS.forEach(function (L, i) { toggleLayer(i, false); });
+  });
+
+  // ---------- drag to orbit ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  canvas.addEventListener("pointerdown", function (e) {
+    dragging = true; lastX = e.clientX; lastY = e.clientY;
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener("pointermove", function (e) {
+    if (!dragging) return;
+    targetPhi = targetTheta = null;
+    document.getElementById("btnSide").classList.remove("on");
+    theta -= (e.clientX - lastX) * 0.008;
+    phi = Math.max(0.16, Math.min(Math.PI / 2 - 0.02, phi - (e.clientY - lastY) * 0.008));
+    lastX = e.clientX; lastY = e.clientY;
+  });
+  ["pointerup", "pointercancel", "pointerleave"].forEach(function (ev) {
+    canvas.addEventListener(ev, function () { dragging = false; });
+  });
+
+  // ---------- building the picture up one layer at a time ----------
+  var building = false, buildT = 0, buildStep = 0;
+  var btnBuild = document.getElementById("btnBuild");
+  var BUILD_GAP = 1.6;                      // seconds between layers
+
+  function stopBuild() {
+    building = false;
+    btnBuild.classList.remove("running");
+  }
+  btnBuild.addEventListener("click", function () {
+    if (building) { stopBuild(); return; }
+    LAYERS.forEach(function (L, i) { toggleLayer(i, false); });
+    building = true; buildT = 0; buildStep = 0;
+    btnBuild.classList.add("running");
+    say("First the surface and the point <i>P</i><sub>0</sub> alone — the layers arrive one at a time.");
+  });
+
+  var btnSide = document.getElementById("btnSide");
+  btnSide.addEventListener("click", function () {
+    var side = !btnSide.classList.contains("on");
+    btnSide.classList.toggle("on", side);
+    targetPhi = side ? 1.42 : 1.08;
+    targetTheta = side ? -Math.PI / 2 : -0.95;
+    if (side) say("Looking straight down the <i>y</i> axis: the plane <i>y</i> = <i>y</i><sub>0</sub> is seen edge-on and the blue tangent line shows its slope <i>f</i><sub>x</sub> = −0.25.");
+  });
+
+  var spinning = false, btnSpin = document.getElementById("btnSpin");
+  btnSpin.addEventListener("click", function () {
+    spinning = !spinning;
+    btnSpin.classList.toggle("on", spinning);
+    if (spinning) { targetPhi = targetTheta = null; btnSide.classList.remove("on"); }
+  });
+
+  // ---------- resize / loop ----------
+  function resize() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    aspect = w / h;
+    camera.aspect = aspect;
+    camera.updateProjectionMatrix();
+  }
+  window.addEventListener("resize", resize);
+
+  var clock = new THREE.Clock();
+  var lastW = 0, lastH = 0;
+  function tick() {
+    var dt = Math.min(clock.getDelta(), 0.05);
+    if (stage.clientWidth !== lastW || stage.clientHeight !== lastH) {
+      lastW = stage.clientWidth; lastH = stage.clientHeight;
+      resize();
+    }
+
+    if (building) {
+      buildT += dt;
+      if (buildStep < 4 && buildT >= (buildStep + 1) * BUILD_GAP) {
+        toggleLayer(buildStep, true);
+        buildStep += 1;
+        if (buildStep === 4) stopBuild();
+      }
+    }
+
+    LAYERS.forEach(function (L) {
+      var want = L.on ? 1 : 0;
+      L.grow += Math.max(-1, Math.min(1, want - L.grow)) * Math.min(1, dt * 2.8);
+      if (Math.abs(want - L.grow) < 0.002) L.grow = want;
+      L.members.forEach(function (m) {
+        m.material.opacity = (m.userData.baseOpacity === undefined
+                              ? 1 : m.userData.baseOpacity) * L.grow;
+        m.visible = L.grow > 0.01;
+      });
+    });
+
+    if (targetPhi !== null) {
+      phi += (targetPhi - phi) * Math.min(1, dt * 3.2);
+      theta += (targetTheta - theta) * Math.min(1, dt * 3.2);
+      if (Math.abs(targetPhi - phi) < 0.002) { phi = targetPhi; theta = targetTheta; targetPhi = targetTheta = null; }
+    }
+    if (spinning && !dragging) theta += 0.3 * dt;
+
+    placeCamera();
+    renderer.render(scene, camera);
+    requestAnimationFrame(tick);
+  }
+
+  resize();
+  refreshReadout();
+  say(IDLE);
+  placeCamera();
+  tick();
+})();
+</script>
+</body>
+</html>

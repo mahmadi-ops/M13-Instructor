@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="parabola-extra-figure" viewBox="0 0 312 356">
+  <defs>
+    <clipPath id="parabola-extra-__clipPath-0">
+      <rect x="8.0" y="8.0" width="296.0" height="340.0"/>
+    </clipPath>
+    <clipPath id="parabola-extra-__clipPath-1">
+      <rect x="8.0" y="8.0" width="296.0" height="340.0"/>
+    </clipPath>
+    <marker id="parabola-extra-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="parabola-extra-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="parabola-extra-arrow-head-start-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="parabola-extra-arrow-head-start-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="parabola-extra-axes" stroke="black" stroke-width="2">
+    <line id="parabola-extra-__line-0" x1="8.0" y1="178.0" x2="304.0" y2="178.0" stroke="black" stroke-width="2" marker-end="url(#parabola-extra-arrow-head-end-2_None_24_60-black)"/>
+    <line id="parabola-extra-__line-1" x1="111.6" y1="348.0" x2="111.6" y2="8.0" stroke="black" stroke-width="2" marker-end="url(#parabola-extra-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="parabola-extra-__label-0" transform="translate(298.0,172.0) translate(-10.4,-8.2)">
+    <g id="parabola-extra-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="parabola-extra-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#parabola-extra-MJX-2-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="parabola-extra-__label-1" transform="translate(117.6,14.0) translate(0.0,-0.0)">
+    <g id="parabola-extra-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+        <defs>
+          <path id="parabola-extra-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#parabola-extra-MJX-3-TEX-I-1D466"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="parabola-extra-parabola" d="M 156.0 292.5 L 155.8 292.2 M 154.8 291.0 L 154.8 290.9 M 154.8 291.0 L 155.8 292.2 M 154.8 290.9 L 153.7 289.6 M 151.4 286.4 L 150.8 285.6 M 150.2 284.8 L 149.8 284.2 M 150.2 284.8 L 150.8 285.6 M 153.7 289.5 L 152.7 288.2 M 152.5 287.9 L 151.8 286.9 M 152.5 287.9 L 152.7 288.2 M 153.7 289.5 L 153.7 289.6 M 151.4 286.4 L 151.8 286.9 M 137.5 265.5 L 136.8 264.3 M 136.3 263.5 L 136.1 263.0 M 136.3 263.5 L 136.8 264.3 M 146.8 279.9 L 146.1 278.9 M 144.4 276.5 L 144.3 276.3 M 145.6 278.2 L 145.2 277.6 M 145.6 278.2 L 146.1 278.9 M 144.4 276.5 L 145.2 277.6 M 144.3 276.3 L 143.4 275.0 M 143.3 274.7 L 142.6 273.6 M 143.3 274.7 L 143.4 275.0 M 149.1 283.2 L 148.9 282.9 M 148.9 282.9 L 147.9 281.6 M 149.1 283.2 L 149.8 284.2 M 147.9 281.5 L 147.0 280.3 M 147.9 281.5 L 147.9 281.6 M 146.8 279.9 L 147.0 280.3 M 142.1 272.9 L 141.7 272.3 M 141.0 271.1 L 140.9 271.0 M 141.0 271.1 L 141.7 272.3 M 139.8 269.3 L 139.2 268.3 M 140.9 271.0 L 140.0 269.6 M 139.8 269.3 L 140.0 269.6 M 142.1 272.9 L 142.6 273.6 M 138.7 267.4 L 138.4 267.0 M 138.7 267.4 L 139.2 268.3 M 138.4 267.0 L 137.6 265.7 M 137.5 265.5 L 137.6 265.7 M 119.0 224.7 L 118.9 224.5 M 118.9 224.5 L 118.5 223.2 M 118.5 223.2 L 118.1 221.8 M 117.8 220.9 L 117.7 220.5 M 117.8 220.9 L 118.1 221.8 M 135.2 261.5 L 134.6 260.3 M 136.1 263.0 L 135.3 261.7 M 135.2 261.5 L 135.3 261.7 M 134.0 259.4 L 133.8 259.0 M 134.0 259.4 L 134.6 260.3 M 133.8 259.0 L 133.1 257.7 M 132.9 257.3 L 132.4 256.4 M 131.7 255.1 L 131.7 255.0 M 131.7 255.1 L 132.4 256.4 M 130.6 252.8 L 130.3 252.4 M 131.7 255.0 L 131.0 253.7 M 130.6 252.8 L 131.0 253.7 M 132.9 257.3 L 133.1 257.7 M 128.2 248.1 L 127.8 247.1 M 127.8 247.1 L 127.1 245.7 M 127.1 245.6 L 126.5 244.4 M 127.1 245.6 L 127.1 245.7 M 125.9 243.1 L 125.4 241.8 M 126.5 244.4 L 125.9 243.1 M 125.9 243.1 L 125.9 243.1 M 130.3 252.4 L 129.7 251.0 M 129.4 250.5 L 129.0 249.7 M 129.4 250.5 L 129.7 251.0 M 129.0 249.7 L 128.4 248.4 M 128.2 248.1 L 128.4 248.4 M 123.6 237.6 L 123.2 236.4 M 125.4 241.8 L 124.8 240.4 M 124.8 240.4 L 124.2 239.1 M 124.8 240.4 L 124.8 240.4 M 124.2 239.1 L 123.7 237.8 M 123.6 237.6 L 123.7 237.8 M 123.2 236.4 L 122.6 235.1 M 122.5 234.7 L 122.1 233.8 M 122.5 234.7 L 122.6 235.1 M 121.3 231.6 L 121.2 231.1 M 122.1 233.8 L 121.6 232.5 M 121.3 231.6 L 121.6 232.5 M 121.2 231.1 L 120.7 229.8 M 120.7 229.8 L 120.2 228.5 M 120.2 228.3 L 119.8 227.1 M 120.2 228.3 L 120.2 228.5 M 119.8 227.1 L 119.3 225.8 M 119.0 224.7 L 119.3 225.8 M 117.7 220.5 L 117.3 219.2 M 117.3 219.2 L 117.0 217.8 M 116.7 216.8 L 116.6 216.5 M 116.6 216.5 L 116.3 215.2 M 116.7 216.8 L 117.0 217.8 M 116.3 215.2 L 116.0 213.9 M 116.0 213.9 L 115.6 212.5 M 115.5 212.1 L 115.3 211.2 M 115.5 212.1 L 115.6 212.5 M 115.3 211.2 L 115.0 209.9 M 114.4 206.6 L 114.2 205.9 M 114.2 205.9 L 114.0 204.6 M 115.0 209.9 L 114.8 208.5 M 114.8 208.5 L 114.5 207.2 M 114.4 206.6 L 114.5 207.2 M 114.0 204.6 L 113.8 203.2 M 113.8 203.2 L 113.5 201.9 M 113.5 201.9 L 113.3 200.6 M 113.2 199.9 L 113.1 199.2 M 113.2 199.9 L 113.3 200.6 M 113.1 199.2 L 112.9 197.9 M 112.9 197.9 L 112.8 196.6 M 112.8 196.6 L 112.6 195.3 M 112.6 195.3 L 112.5 193.9 M 112.5 193.9 L 112.3 192.6 M 112.3 192.6 L 112.2 191.3 M 112.1 189.7 L 112.0 188.6 M 112.2 191.3 L 112.1 190.0 M 112.1 189.7 L 112.1 190.0 M 112.0 188.6 L 111.9 187.3 M 111.9 187.3 L 111.8 186.0 M 111.8 186.0 L 111.7 184.6 M 111.7 184.6 L 111.7 183.3 M 111.7 183.3 L 111.7 182.0 M 111.7 182.0 L 111.6 180.7 M 111.6 180.7 L 111.6 179.3 M 111.6 179.3 L 111.6 178.0 M 193.0 333.0 L 192.0 332.1 M 188.4 328.6 L 187.9 328.1 M 187.2 327.4 L 186.5 326.8 M 187.2 327.4 L 187.9 328.1 M 190.7 330.8 L 190.6 330.7 M 189.5 329.7 L 189.2 329.4 M 189.5 329.7 L 190.6 330.7 M 190.7 330.8 L 191.8 331.9 M 191.8 331.9 L 192.0 332.1 M 188.4 328.6 L 189.2 329.4 M 174.5 314.3 L 173.7 313.5 M 172.2 311.8 L 171.3 310.8 M 173.3 313.0 L 172.5 312.1 M 173.3 313.0 L 173.7 313.5 M 172.2 311.8 L 172.5 312.1 M 169.9 309.2 L 169.0 308.2 M 167.6 306.6 L 166.6 305.5 M 168.7 307.9 L 167.8 306.8 M 168.7 307.9 L 169.0 308.2 M 167.6 306.6 L 167.8 306.8 M 171.0 310.5 L 170.1 309.5 M 171.0 310.5 L 171.3 310.8 M 169.9 309.2 L 170.1 309.5 M 181.4 321.6 L 181.3 321.4 M 182.6 322.8 L 182.6 322.8 M 182.6 322.8 L 183.8 324.0 M 181.4 321.6 L 182.6 322.8 M 179.1 319.2 L 178.7 318.8 M 176.8 316.8 L 176.2 316.1 M 178.0 318.0 L 177.5 317.5 M 178.0 318.0 L 178.7 318.8 M 176.8 316.8 L 177.5 317.5 M 180.3 320.4 L 180.0 320.1 M 180.3 320.4 L 181.3 321.4 M 179.1 319.2 L 180.0 320.1 M 186.1 326.3 L 185.2 325.4 M 184.9 325.1 L 183.9 324.1 M 184.9 325.1 L 185.2 325.4 M 186.1 326.3 L 186.5 326.8 M 183.8 324.0 L 183.9 324.1 M 175.7 315.5 L 175.0 314.8 M 175.7 315.5 L 176.2 316.1 M 174.5 314.3 L 175.0 314.8 M 197.6 337.4 L 197.6 337.4 M 202.2 341.6 L 202.0 341.4 M 201.1 340.6 L 200.5 340.0 M 201.1 340.6 L 202.0 341.4 M 199.9 339.5 L 199.1 338.7 M 197.6 337.4 L 198.8 338.5 M 198.8 338.5 L 199.1 338.7 M 199.9 339.5 L 200.5 340.0 M 206.9 345.7 L 206.4 345.3 M 204.6 343.7 L 203.4 342.7 M 205.7 344.7 L 204.9 344.0 M 205.7 344.7 L 206.4 345.3 M 204.6 343.7 L 204.9 344.0 M 208.0 346.8 L 207.9 346.7 M 208.0 346.8 L 209.2 347.8 M 206.9 345.7 L 207.9 346.7 M 209.2 347.8 L 209.5 348.0 M 202.2 341.6 L 203.4 342.7 M 203.4 342.7 L 203.4 342.7 M 195.3 335.2 L 194.8 334.7 M 196.5 336.3 L 196.2 336.0 M 196.5 336.3 L 197.6 337.4 M 195.3 335.2 L 196.2 336.0 M 194.2 334.1 L 193.4 333.4 M 194.2 334.1 L 194.8 334.7 M 193.0 333.0 L 193.4 333.4 M 165.2 303.9 L 164.4 302.8 M 162.9 301.1 L 162.2 300.2 M 164.1 302.5 L 163.3 301.5 M 164.1 302.5 L 164.4 302.8 M 162.9 301.1 L 163.3 301.5 M 160.6 298.3 L 160.0 297.5 M 158.3 295.4 L 157.9 294.9 M 159.5 296.9 L 158.9 296.2 M 159.5 296.9 L 160.0 297.5 M 158.3 295.4 L 158.9 296.2 M 161.8 299.7 L 161.1 298.9 M 161.8 299.7 L 162.2 300.2 M 160.6 298.3 L 161.1 298.9 M 166.4 305.2 L 165.5 304.2 M 166.4 305.2 L 166.6 305.5 M 165.2 303.9 L 165.5 304.2 M 157.2 294.0 L 156.8 293.5 M 157.2 294.0 L 157.9 294.9 M 156.0 292.5 L 156.8 293.5 M 111.6 178.0 L 111.6 176.7 M 111.6 176.7 L 111.6 175.3 M 111.6 175.3 L 111.7 174.0 M 111.7 174.0 L 111.7 172.7 M 111.7 172.7 L 111.7 171.4 M 111.7 171.4 L 111.8 170.0 M 111.8 170.0 L 111.9 168.7 M 111.9 168.7 L 112.0 167.4 M 112.0 167.4 L 112.1 166.3 M 112.1 166.3 L 112.1 166.0 M 112.1 166.0 L 112.2 164.7 M 112.2 164.7 L 112.3 163.4 M 112.3 163.4 L 112.5 162.1 M 112.5 162.1 L 112.6 160.7 M 112.6 160.7 L 112.8 159.4 M 112.8 159.4 L 112.9 158.1 M 112.9 158.1 L 113.1 156.8 M 113.1 156.8 L 113.2 156.1 M 113.2 156.1 L 113.3 155.4 M 113.3 155.4 L 113.5 154.1 M 113.5 154.1 L 113.8 152.8 M 113.8 152.8 L 114.0 151.4 M 114.0 151.4 L 114.2 150.1 M 114.2 150.1 L 114.4 149.4 M 114.4 149.4 L 114.5 148.8 M 114.5 148.8 L 114.8 147.5 M 114.8 147.5 L 115.0 146.1 M 115.0 146.1 L 115.3 144.8 M 115.3 144.8 L 115.5 143.9 M 115.5 143.9 L 115.6 143.5 M 115.6 143.5 L 116.0 142.1 M 116.0 142.1 L 116.3 140.8 M 116.3 140.8 L 116.6 139.5 M 116.6 139.5 L 116.7 139.2 M 116.7 139.2 L 117.0 138.2 M 117.0 138.2 L 117.3 136.8 M 117.3 136.8 L 117.7 135.5 M 117.7 135.5 L 117.8 135.1 M 117.8 135.1 L 118.1 134.2 M 118.1 134.2 L 118.5 132.8 M 118.5 132.8 L 118.9 131.5 M 118.9 131.5 L 119.0 131.3 M 119.0 131.3 L 119.3 130.2 M 119.3 130.2 L 119.8 128.9 M 119.8 128.9 L 120.2 127.7 M 120.2 127.7 L 120.2 127.5 M 120.2 127.5 L 120.7 126.2 M 120.7 126.2 L 121.2 124.9 M 121.2 124.9 L 121.3 124.4 M 121.3 124.4 L 121.6 123.5 M 121.6 123.5 L 122.1 122.2 M 122.1 122.2 L 122.5 121.3 M 122.5 121.3 L 122.6 120.9 M 122.6 120.9 L 123.2 119.6 M 123.2 119.6 L 123.6 118.4 M 123.6 118.4 L 123.7 118.2 M 123.7 118.2 L 124.2 116.9 M 124.2 116.9 L 124.8 115.6 M 124.8 115.6 L 124.8 115.6 M 124.8 115.6 L 125.4 114.2 M 125.4 114.2 L 125.9 112.9 M 125.9 112.9 L 125.9 112.9 M 125.9 112.9 L 126.5 111.6 M 126.5 111.6 L 127.1 110.4 M 127.1 110.4 L 127.1 110.3 M 127.1 110.3 L 127.8 108.9 M 127.8 108.9 L 128.2 107.9 M 128.2 107.9 L 128.4 107.6 M 128.4 107.6 L 129.0 106.3 M 129.0 106.3 L 129.4 105.5 M 129.4 105.5 L 129.7 105.0 M 129.7 105.0 L 130.3 103.6 M 130.3 103.6 L 130.6 103.2 M 130.6 103.2 L 131.0 102.3 M 131.0 102.3 L 131.7 101.0 M 131.7 101.0 L 131.7 100.9 M 131.7 100.9 L 132.4 99.6 M 132.4 99.6 L 132.9 98.7 M 132.9 98.7 L 133.1 98.3 M 133.1 98.3 L 133.8 97.0 M 133.8 97.0 L 134.0 96.6 M 134.0 96.6 L 134.6 95.7 M 134.6 95.7 L 135.2 94.5 M 135.2 94.5 L 135.3 94.3 M 135.3 94.3 L 136.1 93.0 M 136.1 93.0 L 136.3 92.5 M 136.3 92.5 L 136.8 91.7 M 136.8 91.7 L 137.5 90.5 M 137.5 90.5 L 137.6 90.3 M 137.6 90.3 L 138.4 89.0 M 138.4 89.0 L 138.7 88.6 M 138.7 88.6 L 139.2 87.7 M 139.2 87.7 L 139.8 86.7 M 139.8 86.7 L 140.0 86.4 M 140.0 86.4 L 140.9 85.0 M 140.9 85.0 L 141.0 84.9 M 141.0 84.9 L 141.7 83.7 M 141.7 83.7 L 142.1 83.1 M 142.1 83.1 L 142.6 82.4 M 142.6 82.4 L 143.3 81.3 M 143.3 81.3 L 143.4 81.0 M 143.4 81.0 L 144.3 79.7 M 144.3 79.7 L 144.4 79.5 M 144.4 79.5 L 145.2 78.4 M 145.2 78.4 L 145.6 77.8 M 145.6 77.8 L 146.1 77.1 M 146.1 77.1 L 146.8 76.1 M 146.8 76.1 L 147.0 75.7 M 147.0 75.7 L 147.9 74.5 M 147.9 74.5 L 147.9 74.4 M 147.9 74.4 L 148.9 73.1 M 148.9 73.1 L 149.1 72.8 M 149.1 72.8 L 149.8 71.8 M 149.8 71.8 L 150.2 71.2 M 150.2 71.2 L 150.8 70.4 M 150.8 70.4 L 151.4 69.6 M 151.4 69.6 L 151.8 69.1 M 151.8 69.1 L 152.5 68.1 M 152.5 68.1 L 152.7 67.8 M 152.7 67.8 L 153.7 66.5 M 153.7 66.5 L 153.7 66.4 M 153.7 66.4 L 154.8 65.1 M 154.8 65.1 L 154.8 65.0 M 154.8 65.0 L 155.8 63.8 M 155.8 63.8 L 156.0 63.5 M 156.0 63.5 L 156.8 62.5 M 156.8 62.5 L 157.2 62.0 M 157.2 62.0 L 157.9 61.1 M 157.9 61.1 L 158.3 60.6 M 158.3 60.6 L 158.9 59.8 M 158.9 59.8 L 159.5 59.1 M 159.5 59.1 L 160.0 58.5 M 160.0 58.5 L 160.6 57.7 M 160.6 57.7 L 161.1 57.1 M 161.1 57.1 L 161.8 56.3 M 161.8 56.3 L 162.2 55.8 M 162.2 55.8 L 162.9 54.9 M 162.9 54.9 L 163.3 54.5 M 163.3 54.5 L 164.1 53.5 M 164.1 53.5 L 164.4 53.2 M 164.4 53.2 L 165.2 52.1 M 165.2 52.1 L 165.5 51.8 M 165.5 51.8 L 166.4 50.8 M 166.4 50.8 L 166.6 50.5 M 166.6 50.5 L 167.6 49.4 M 167.6 49.4 L 167.8 49.2 M 167.8 49.2 L 168.7 48.1 M 168.7 48.1 L 169.0 47.8 M 169.0 47.8 L 169.9 46.8 M 169.9 46.8 L 170.1 46.5 M 170.1 46.5 L 171.0 45.5 M 171.0 45.5 L 171.3 45.2 M 171.3 45.2 L 172.2 44.2 M 172.2 44.2 L 172.5 43.9 M 172.5 43.9 L 173.3 43.0 M 173.3 43.0 L 173.7 42.5 M 173.7 42.5 L 174.5 41.7 M 174.5 41.7 L 175.0 41.2 M 175.0 41.2 L 175.7 40.5 M 175.7 40.5 L 176.2 39.9 M 176.2 39.9 L 176.8 39.2 M 176.8 39.2 L 177.5 38.5 M 177.5 38.5 L 178.0 38.0 M 178.0 38.0 L 178.7 37.2 M 178.7 37.2 L 179.1 36.8 M 179.1 36.8 L 180.0 35.9 M 180.0 35.9 L 180.3 35.6 M 180.3 35.6 L 181.3 34.6 M 181.3 34.6 L 181.4 34.4 M 181.4 34.4 L 182.6 33.2 M 182.6 33.2 L 182.6 33.2 M 182.6 33.2 L 183.8 32.0 M 183.8 32.0 L 183.9 31.9 M 183.9 31.9 L 184.9 30.9 M 184.9 30.9 L 185.2 30.6 M 185.2 30.6 L 186.1 29.7 M 186.1 29.7 L 186.5 29.2 M 186.5 29.2 L 187.2 28.6 M 187.2 28.6 L 187.9 27.9 M 187.9 27.9 L 188.4 27.4 M 188.4 27.4 L 189.2 26.6 M 189.2 26.6 L 189.5 26.3 M 189.5 26.3 L 190.6 25.3 M 190.6 25.3 L 190.7 25.2 M 190.7 25.2 L 191.8 24.1 M 191.8 24.1 L 192.0 23.9 M 192.0 23.9 L 193.0 23.0 M 193.0 23.0 L 193.4 22.6 M 193.4 22.6 L 194.2 21.9 M 194.2 21.9 L 194.8 21.3 M 194.8 21.3 L 195.3 20.8 M 195.3 20.8 L 196.2 20.0 M 196.2 20.0 L 196.5 19.7 M 196.5 19.7 L 197.6 18.6 M 197.6 18.6 L 197.6 18.6 M 197.6 18.6 L 198.8 17.5 M 198.8 17.5 L 199.1 17.3 M 199.1 17.3 L 199.9 16.5 M 199.9 16.5 L 200.5 16.0 M 200.5 16.0 L 201.1 15.4 M 201.1 15.4 L 202.0 14.6 M 202.0 14.6 L 202.2 14.4 M 202.2 14.4 L 203.4 13.3 M 203.4 13.3 L 203.4 13.3 M 203.4 13.3 L 204.6 12.3 M 204.6 12.3 L 204.9 12.0 M 204.9 12.0 L 205.7 11.3 M 205.7 11.3 L 206.4 10.7 M 206.4 10.7 L 206.9 10.3 M 206.9 10.3 L 207.9 9.3 M 207.9 9.3 L 208.0 9.2 M 208.0 9.2 L 209.2 8.2 M 209.2 8.2 L 209.5 8.0" stroke="blue" stroke-width="2.5" fill="none"/>
+  <line id="parabola-extra-directrix" x1="37.6" y1="340.6" x2="37.6" y2="15.4" stroke="red" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+  <g id="parabola-extra-dir-label" transform="translate(45.6,311.0) translate(0.0,-6.8)">
+    <g id="parabola-extra-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px" width="57.624px" height="13.536px" role="img" focusable="false" viewBox="0 -666 3183.6 748" x="0.0" y="0.0">
+        <defs>
+          <path id="parabola-extra-MJX-4-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="parabola-extra-MJX-4-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="parabola-extra-MJX-4-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="parabola-extra-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="5" data-semantic-children="0,4" data-semantic-content="1" data-semantic-speech="x equals negative 2">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="5" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#parabola-extra-MJX-4-TEX-I-1D465"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="5" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(849.8,0)">
+              <use data-c="3D" xlink:href="#parabola-extra-MJX-4-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-children="3" data-semantic-content="2" data-semantic-parent="5" data-semantic-speech="negative 2" transform="translate(1905.6,0)">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="2" data-semantic-parent="4" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                <use data-c="2212" xlink:href="#parabola-extra-MJX-4-TEX-N-2212"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="4" data-semantic-speech="2" transform="translate(778,0)">
+                <use data-c="32" xlink:href="#parabola-extra-MJX-4-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="parabola-extra-focus" cx="185.6" cy="178.0" r="3.5" stroke="black" stroke-width="2" fill="black"/>
+  <g id="parabola-extra-focus-label" transform="translate(195.6,186.0) translate(0.0,-0.0)">
+    <g id="parabola-extra-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="90.856px" height="18.096px" role="img" focusable="false" viewBox="0 -750 5019.7 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="parabola-extra-MJX-5-TEX-N-46" d="M128 619Q121 626 117 628T101 631T58 634H25V680H582V676Q584 670 596 560T610 444V440H570V444Q563 493 561 501Q555 538 543 563T516 601T477 622T431 631T374 633H334H286Q252 633 244 631T233 621Q232 619 232 490V363H284Q287 363 303 363T327 364T349 367T372 373T389 385Q407 403 410 459V480H450V200H410V221Q407 276 389 296Q381 303 371 307T348 313T327 316T303 317T284 317H232V189L233 61Q240 54 245 52T270 48T333 46H360V0H348Q324 3 182 3Q51 3 36 0H25V46H58Q100 47 109 49T128 61V619Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-A0" d=""/>
+          <path id="parabola-extra-MJX-5-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          <path id="parabola-extra-MJX-5-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="9" data-semantic-children="0,7" data-semantic-collapsed="(9 (c 8) 0 7)" data-semantic-speech="Focus left parenthesis 2 comma 0 right parenthesis">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-parent="9" data-semantic-speech="Focus">
+              <use data-c="46" xlink:href="#parabola-extra-MJX-5-TEX-N-46"/>
+              <use data-c="6F" xlink:href="#parabola-extra-MJX-5-TEX-N-6F" transform="translate(653,0)"/>
+              <use data-c="63" xlink:href="#parabola-extra-MJX-5-TEX-N-63" transform="translate(1153,0)"/>
+              <use data-c="75" xlink:href="#parabola-extra-MJX-5-TEX-N-75" transform="translate(1597,0)"/>
+              <use data-c="73" xlink:href="#parabola-extra-MJX-5-TEX-N-73" transform="translate(2153,0)"/>
+              <use data-c="A0" xlink:href="#parabola-extra-MJX-5-TEX-N-A0" transform="translate(2547,0)"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="7" data-semantic-children="6" data-semantic-content="1,5" data-semantic-parent="9" data-semantic-speech="left parenthesis 2 comma 0 right parenthesis" transform="translate(2797,0)">
+              <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="1" data-semantic-parent="7" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                <use data-c="28" xlink:href="#parabola-extra-MJX-5-TEX-N-28"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="6" data-semantic-children="2,3,4" data-semantic-content="3" data-semantic-parent="7" data-semantic-speech="2 comma 0" transform="translate(389,0)">
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="6" data-semantic-speech="2">
+                  <use data-c="32" xlink:href="#parabola-extra-MJX-5-TEX-N-32"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="comma" data-semantic-id="3" data-semantic-parent="6" data-semantic-operator="punctuated" data-semantic-speech="comma" transform="translate(500,0)">
+                  <use data-c="2C" xlink:href="#parabola-extra-MJX-5-TEX-N-2C"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="0" transform="translate(944.7,0)">
+                  <use data-c="30" xlink:href="#parabola-extra-MJX-5-TEX-N-30"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="5" data-semantic-parent="7" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(1833.7,0)">
+                <use data-c="29" xlink:href="#parabola-extra-MJX-5-TEX-N-29"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="parabola-extra-vertex" cx="111.6" cy="178.0" r="3.5" stroke="black" stroke-width="2" fill="orange"/>
+  <g id="parabola-extra-vertex-label" transform="translate(103.6,186.0) translate(-49.3,-0.0)">
+    <g id="parabola-extra-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="49.320px" height="11.328px" role="img" focusable="false" viewBox="0 -615 2725 626" x="0.0" y="0.0">
+        <defs>
+          <path id="parabola-extra-MJX-6-TEX-N-76" d="M338 431Q344 429 422 429Q479 429 503 431H508V385H497Q439 381 423 345Q421 341 356 172T288 -2Q283 -11 263 -11Q244 -11 239 -2Q99 359 98 364Q93 378 82 381T43 385H19V431H25L33 430Q41 430 53 430T79 430T104 429T122 428Q217 428 232 431H240V385H226Q187 384 184 370Q184 366 235 234L286 102L377 341V349Q377 363 367 372T349 383T335 385H331V431H338Z"/>
+          <path id="parabola-extra-MJX-6-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="parabola-extra-MJX-6-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+          <path id="parabola-extra-MJX-6-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+          <path id="parabola-extra-MJX-6-TEX-N-78" d="M201 0Q189 3 102 3Q26 3 17 0H11V46H25Q48 47 67 52T96 61T121 78T139 96T160 122T180 150L226 210L168 288Q159 301 149 315T133 336T122 351T113 363T107 370T100 376T94 379T88 381T80 383Q74 383 44 385H16V431H23Q59 429 126 429Q219 429 229 431H237V385Q201 381 201 369Q201 367 211 353T239 315T268 274L272 270L297 304Q329 345 329 358Q329 364 327 369T322 376T317 380T310 384L307 385H302V431H309Q324 428 408 428Q487 428 493 431H499V385H492Q443 385 411 368Q394 360 377 341T312 257L296 236L358 151Q424 61 429 57T446 50Q464 46 499 46H516V0H510H502Q494 1 482 1T457 2T432 2T414 3Q403 3 377 3T327 1L304 0H295V46H298Q309 46 320 51T331 63Q331 65 291 120L250 175Q249 174 219 133T185 88Q181 83 181 74Q181 63 188 55T206 46Q208 46 208 23V0H201Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="vertex">
+              <use data-c="76" xlink:href="#parabola-extra-MJX-6-TEX-N-76"/>
+              <use data-c="65" xlink:href="#parabola-extra-MJX-6-TEX-N-65" transform="translate(528,0)"/>
+              <use data-c="72" xlink:href="#parabola-extra-MJX-6-TEX-N-72" transform="translate(972,0)"/>
+              <use data-c="74" xlink:href="#parabola-extra-MJX-6-TEX-N-74" transform="translate(1364,0)"/>
+              <use data-c="65" xlink:href="#parabola-extra-MJX-6-TEX-N-65" transform="translate(1753,0)"/>
+              <use data-c="78" xlink:href="#parabola-extra-MJX-6-TEX-N-78" transform="translate(2197,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="parabola-extra-equidistant">
+    <circle id="parabola-extra-__circle-0" cx="185.6" cy="30.2" r="3" stroke="black" stroke-width="2" fill="blue"/>
+    <g id="parabola-extra-pt-P-label" transform="translate(177.6,24.2) translate(-13.6,-12.4)">
+      <g id="parabola-extra-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.592px" height="12.360px" role="img" focusable="false" viewBox="0 -683 751 683" x="0.0" y="0.0">
+          <defs>
+            <path id="parabola-extra-MJX-7-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper P">
+                <use data-c="1D443" xlink:href="#parabola-extra-MJX-7-TEX-I-1D443"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <line id="parabola-extra-__line-2" x1="185.6" y1="30.2" x2="185.6" y2="178.0" stroke="green" stroke-width="2" fill="none"/>
+    <line id="parabola-extra-__line-3" x1="185.6" y1="30.2" x2="37.6" y2="30.2" stroke="green" stroke-width="2" fill="none"/>
+    <circle id="parabola-extra-__circle-1" cx="37.6" cy="30.2" r="2.5" stroke="black" stroke-width="2" fill="red"/>
+  </g>
+  <g id="parabola-extra-eqlabel" transform="translate(237.4,296.3) translate(-30.2,-9.4)">
+    <g id="parabola-extra-__g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="60.312px" height="18.808px" role="img" focusable="false" viewBox="0 -833.9 3332.1 1038.9" x="0.0" y="0.0">
+        <defs>
+          <path id="parabola-extra-MJX-8-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="parabola-extra-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="parabola-extra-MJX-8-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="parabola-extra-MJX-8-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"/>
+          <path id="parabola-extra-MJX-8-TEX-N-2062" d=""/>
+          <path id="parabola-extra-MJX-8-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="8" data-semantic-children="2,7" data-semantic-content="3" data-semantic-speech="y squared equals 8 x">
+            <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="8" data-semantic-speech="y squared">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="y" data-semantic-prefix="Base">
+                <use data-c="1D466" xlink:href="#parabola-extra-MJX-8-TEX-I-1D466"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(523,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                <use data-c="32" xlink:href="#parabola-extra-MJX-8-TEX-N-32"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="3" data-semantic-parent="8" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(1204.3,0)">
+              <use data-c="3D" xlink:href="#parabola-extra-MJX-8-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:simple;clearspeak:unit" data-semantic-id="7" data-semantic-children="4,5" data-semantic-content="6" data-semantic-parent="8" data-semantic-speech="8 x" transform="translate(2260.1,0)">
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="7" data-semantic-speech="8">
+                <use data-c="38" xlink:href="#parabola-extra-MJX-8-TEX-N-38"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="6" data-semantic-parent="7" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(500,0)">
+                <use data-c="2062" xlink:href="#parabola-extra-MJX-8-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="x" transform="translate(500,0)">
+                <use data-c="1D465" xlink:href="#parabola-extra-MJX-8-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-right-triangle-figure" speech2="A coordinate grid showing triangle A B C, with A at 1 comma negative 1, B at 1 comma 1, and C at 2 comma 0, together with the vectors C A and C B, which meet at a right angle at C.">
+      <grouped>prefigure-right-triangle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-right-triangle-grid-axes</active>
+        <active>prefigure-right-triangle-grid</active>
+        <active>prefigure-right-triangle-triangle</active>
+        <active>prefigure-right-triangle-vec-ca</active>
+        <active>prefigure-right-triangle-vec-cb</active>
+        <active>prefigure-right-triangle-right-angle</active>
+      </children>
+      <components>
+        <active>prefigure-right-triangle-grid-axes</active>
+        <active>prefigure-right-triangle-grid</active>
+        <active>prefigure-right-triangle-triangle</active>
+        <active>prefigure-right-triangle-vec-ca</active>
+        <active>prefigure-right-triangle-vec-cb</active>
+        <active>prefigure-right-triangle-right-angle</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-right-triangle-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-right-triangle-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-right-triangle-grid</active>
+        <active>prefigure-right-triangle-axes</active>
+      </children>
+      <components>
+        <active>prefigure-right-triangle-grid</active>
+        <active>prefigure-right-triangle-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-right-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-grid" speech2="The coordinate grid">
+      <active>prefigure-right-triangle-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-right-triangle-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-axes" speech2="The coordinate axes">
+      <active>prefigure-right-triangle-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-right-triangle-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-grid" speech2="A coordinate grid with x and y axes.">
+      <active>prefigure-right-triangle-grid</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-right-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-triangle" speech2="Triangle A B C, plotted on the grid.">
+      <active>prefigure-right-triangle-triangle</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-right-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-vec-ca" speech2="The vector C A, drawn in blue from C to A.">
+      <active>prefigure-right-triangle-vec-ca</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-right-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-vec-cb" speech2="The vector C B, drawn in red from C to B.">
+      <active>prefigure-right-triangle-vec-cb</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-right-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-right-triangle-right-angle" speech2="A right angle marker at C, confirming that C A and C B are perpendicular.">
+      <active>prefigure-right-triangle-right-angle</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-right-triangle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

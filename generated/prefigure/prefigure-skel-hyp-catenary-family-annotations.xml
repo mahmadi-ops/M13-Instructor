@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-skel-hyp-catenary-family-figure" speech2="Four catenaries y equals a hyperbolic cosine of x over a, drawn on the same axes for a equal to one half, one, two, and four. Each curve is a U shape whose lowest point sits on the y axis at height a; the larger the value of a, the wider and flatter the curve.">
+      <grouped>prefigure-skel-hyp-catenary-family-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-skel-hyp-catenary-family-cfam-a</active>
+        <active>prefigure-skel-hyp-catenary-family-cfam-b</active>
+        <active>prefigure-skel-hyp-catenary-family-cfam-c</active>
+        <active>prefigure-skel-hyp-catenary-family-cfam-d</active>
+      </children>
+      <components>
+        <active>prefigure-skel-hyp-catenary-family-cfam-a</active>
+        <active>prefigure-skel-hyp-catenary-family-cfam-b</active>
+        <active>prefigure-skel-hyp-catenary-family-cfam-c</active>
+        <active>prefigure-skel-hyp-catenary-family-cfam-d</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-family-cfam-a" speech2="The catenary with scale factor one half, the narrowest of the four.">
+      <active>prefigure-skel-hyp-catenary-family-cfam-a</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-family-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-family-cfam-b" speech2="The unit catenary y equals hyperbolic cosine of x, with lowest point at height one.">
+      <active>prefigure-skel-hyp-catenary-family-cfam-b</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-family-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-family-cfam-c" speech2="The catenary with scale factor two.">
+      <active>prefigure-skel-hyp-catenary-family-cfam-c</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-family-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-catenary-family-cfam-d" speech2="The catenary with scale factor four, the widest and flattest of the four.">
+      <active>prefigure-skel-hyp-catenary-family-cfam-d</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-catenary-family-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

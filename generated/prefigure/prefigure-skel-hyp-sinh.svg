@@ -1,0 +1,330 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-skel-hyp-sinh-figure" width="384" height="324" viewBox="0 0 384 324">
+  <defs>
+    <clipPath id="prefigure-skel-hyp-sinh-__clipPath-0">
+      <rect x="12.0" y="12.0" width="360.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-skel-hyp-sinh-__clipPath-1">
+      <rect x="12.0" y="12.0" width="360.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-skel-hyp-sinh-grid-axes">
+    <g id="prefigure-skel-hyp-sinh-grid" stroke="#ccc" stroke-width="1">
+      <line x1="18.9" y1="312.0" x2="18.9" y2="12.0"/>
+      <line x1="53.5" y1="312.0" x2="53.5" y2="12.0"/>
+      <line x1="88.2" y1="312.0" x2="88.2" y2="12.0"/>
+      <line x1="122.8" y1="312.0" x2="122.8" y2="12.0"/>
+      <line x1="157.4" y1="312.0" x2="157.4" y2="12.0"/>
+      <line x1="192.0" y1="312.0" x2="192.0" y2="12.0"/>
+      <line x1="226.6" y1="312.0" x2="226.6" y2="12.0"/>
+      <line x1="261.2" y1="312.0" x2="261.2" y2="12.0"/>
+      <line x1="295.8" y1="312.0" x2="295.8" y2="12.0"/>
+      <line x1="330.5" y1="312.0" x2="330.5" y2="12.0"/>
+      <line x1="365.1" y1="312.0" x2="365.1" y2="12.0"/>
+      <line x1="12.0" y1="294.4" x2="372.0" y2="294.4"/>
+      <line x1="12.0" y1="250.2" x2="372.0" y2="250.2"/>
+      <line x1="12.0" y1="206.1" x2="372.0" y2="206.1"/>
+      <line x1="12.0" y1="162.0" x2="372.0" y2="162.0"/>
+      <line x1="12.0" y1="117.9" x2="372.0" y2="117.9"/>
+      <line x1="12.0" y1="73.8" x2="372.0" y2="73.8"/>
+      <line x1="12.0" y1="29.6" x2="372.0" y2="29.6"/>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-skel-hyp-sinh-__line-18" x1="12.0" y1="162.0" x2="372.0" y2="162.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-skel-hyp-sinh-__line-19" x1="53.5" y1="165.0" x2="53.5" y2="159.0"/>
+        <line id="prefigure-skel-hyp-sinh-__line-20" x1="122.8" y1="165.0" x2="122.8" y2="159.0"/>
+        <line id="prefigure-skel-hyp-sinh-__line-21" x1="261.2" y1="165.0" x2="261.2" y2="159.0"/>
+        <line id="prefigure-skel-hyp-sinh-__line-22" x1="330.5" y1="165.0" x2="330.5" y2="159.0"/>
+      </g>
+      <line id="prefigure-skel-hyp-sinh-__line-23" x1="192.0" y1="312.0" x2="192.0" y2="12.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-skel-hyp-sinh-__line-24" x1="189.0" y1="250.2" x2="195.0" y2="250.2"/>
+        <line id="prefigure-skel-hyp-sinh-__line-25" x1="189.0" y1="73.8" x2="195.0" y2="73.8"/>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-0" transform="translate(368.0,158.0) translate(-10.4,-8.2)">
+      <g id="prefigure-skel-hyp-sinh-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-skel-hyp-sinh-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-1" transform="translate(196.0,16.0) translate(0.0,-0.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-skel-hyp-sinh-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-2" transform="translate(53.5,173.0) translate(-7.5,-0.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-sinh-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-sinh-MJX-4-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-sinh-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-3" transform="translate(122.8,173.0) translate(-7.5,-0.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-5-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-sinh-MJX-5-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-sinh-MJX-5-TEX-N-2D"/>
+                <use data-c="31" xlink:href="#prefigure-skel-hyp-sinh-MJX-5-TEX-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-4" transform="translate(261.2,173.0) translate(-4.5,-0.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-6-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-skel-hyp-sinh-MJX-6-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-5" transform="translate(330.5,173.0) translate(-4.5,-0.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-sinh-MJX-7-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-6" transform="translate(181.0,250.2) translate(-15.1,-6.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-8-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-sinh-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-sinh-MJX-8-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-sinh-MJX-8-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-sinh-__label-7" transform="translate(181.0,73.8) translate(-9.0,-6.0)">
+      <g id="prefigure-skel-hyp-sinh-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-sinh-MJX-9-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-sinh-MJX-9-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-skel-hyp-sinh-sh-ep" d="M 18.9 160.2 L 21.9 160.1 L 24.9 160.0 L 28.0 159.9 L 31.0 159.8 L 34.0 159.7 L 37.0 159.6 L 40.0 159.5 L 43.0 159.4 L 46.0 159.3 L 49.0 159.2 L 52.0 159.1 L 55.1 158.9 L 58.1 158.8 L 61.1 158.7 L 64.1 158.5 L 67.1 158.4 L 70.1 158.2 L 73.1 158.0 L 76.1 157.9 L 79.2 157.7 L 82.2 157.5 L 85.2 157.3 L 88.2 157.1 L 91.2 156.9 L 94.2 156.6 L 97.2 156.4 L 100.2 156.1 L 103.2 155.9 L 106.3 155.6 L 109.3 155.3 L 112.3 155.0 L 115.3 154.7 L 118.3 154.4 L 121.3 154.1 L 124.3 153.7 L 127.3 153.3 L 130.4 152.9 L 133.4 152.5 L 136.4 152.1 L 139.4 151.7 L 142.4 151.2 L 145.4 150.7 L 148.4 150.2 L 151.4 149.7 L 154.4 149.2 L 157.5 148.6 L 160.5 148.0 L 163.5 147.4 L 166.5 146.7 L 169.5 146.1 L 172.5 145.4 L 175.5 144.6 L 178.5 143.8 L 181.5 143.0 L 184.6 142.2 L 187.6 141.3 L 190.6 140.4 L 193.6 139.4 L 196.6 138.4 L 199.6 137.4 L 202.6 136.3 L 205.6 135.1 L 208.7 133.9 L 211.7 132.7 L 214.7 131.4 L 217.7 130.0 L 220.7 128.6 L 223.7 127.1 L 226.7 125.6 L 229.7 124.0 L 232.7 122.3 L 235.8 120.5 L 238.8 118.7 L 241.8 116.7 L 244.8 114.7 L 247.8 112.6 L 250.8 110.4 L 253.8 108.1 L 256.8 105.7 L 259.8 103.2 L 262.9 100.6 L 265.9 97.9 L 268.9 95.0 L 271.9 92.1 L 274.9 88.9 L 277.9 85.7 L 280.9 82.3 L 283.9 78.8 L 287.0 75.1 L 290.0 71.2 L 291.5 69.2 L 293.0 67.2 L 294.5 65.1 L 296.0 62.9 L 297.5 60.8 L 299.0 58.5 L 300.5 56.3 L 302.0 53.9 L 303.5 51.6 L 305.0 49.1 L 306.5 46.7 L 308.0 44.1 L 309.5 41.5 L 311.0 38.9 L 312.5 36.2 L 314.1 33.4 L 315.6 30.6 L 317.1 27.7 L 318.6 24.7 L 320.1 21.7" stroke="#56B4E9" stroke-width="2" fill="none" clip-path="url(#prefigure-skel-hyp-sinh-__clipPath-1)"/>
+  <path id="prefigure-skel-hyp-sinh-sh-em" d="M 63.9 302.3 L 65.4 299.3 L 66.9 296.3 L 68.4 293.4 L 69.9 290.6 L 71.5 287.8 L 73.0 285.1 L 74.5 282.5 L 76.0 279.9 L 77.5 277.3 L 79.0 274.9 L 80.5 272.4 L 82.0 270.1 L 83.5 267.7 L 85.0 265.5 L 86.5 263.2 L 88.0 261.1 L 89.5 258.9 L 91.0 256.8 L 92.5 254.8 L 94.0 252.8 L 97.1 248.9 L 100.1 245.2 L 103.1 241.7 L 106.1 238.3 L 109.1 235.1 L 112.1 231.9 L 115.1 229.0 L 118.1 226.1 L 121.1 223.4 L 124.2 220.8 L 127.2 218.3 L 130.2 215.9 L 133.2 213.6 L 136.2 211.4 L 139.2 209.3 L 142.2 207.3 L 145.2 205.3 L 148.2 203.5 L 151.3 201.7 L 154.3 200.0 L 157.3 198.4 L 160.3 196.9 L 163.3 195.4 L 166.3 194.0 L 169.3 192.6 L 172.3 191.3 L 175.4 190.1 L 178.4 188.9 L 181.4 187.7 L 184.4 186.6 L 187.4 185.6 L 190.4 184.6 L 193.4 183.6 L 196.4 182.7 L 199.4 181.8 L 202.5 181.0 L 205.5 180.2 L 208.5 179.4 L 211.5 178.6 L 214.5 177.9 L 217.5 177.3 L 220.5 176.6 L 223.5 176.0 L 226.5 175.4 L 229.6 174.8 L 232.6 174.3 L 235.6 173.8 L 238.6 173.3 L 241.6 172.8 L 244.6 172.3 L 247.6 171.9 L 250.6 171.5 L 253.7 171.1 L 256.7 170.7 L 259.7 170.3 L 262.7 169.9 L 265.7 169.6 L 268.7 169.3 L 271.7 169.0 L 274.7 168.7 L 277.7 168.4 L 280.8 168.1 L 283.8 167.9 L 286.8 167.6 L 289.8 167.4 L 292.8 167.1 L 295.8 166.9 L 298.8 166.7 L 301.8 166.5 L 304.8 166.3 L 307.9 166.1 L 310.9 166.0 L 313.9 165.8 L 316.9 165.6 L 319.9 165.5 L 322.9 165.3 L 325.9 165.2 L 328.9 165.1 L 332.0 164.9 L 335.0 164.8 L 338.0 164.7 L 341.0 164.6 L 344.0 164.5 L 347.0 164.4 L 350.0 164.3 L 353.0 164.2 L 356.0 164.1 L 359.1 164.0 L 362.1 163.9 L 365.1 163.8" stroke="#E69F00" stroke-width="2" fill="none" clip-path="url(#prefigure-skel-hyp-sinh-__clipPath-1)"/>
+  <path id="prefigure-skel-hyp-sinh-sh-s" d="M 59.1 309.2 L 60.4 306.3 L 61.7 303.4 L 63.1 300.6 L 64.4 297.8 L 65.7 295.1 L 67.1 292.5 L 68.4 289.8 L 69.7 287.3 L 71.0 284.7 L 72.4 282.3 L 73.7 279.8 L 75.0 277.4 L 76.4 275.1 L 77.7 272.8 L 79.0 270.5 L 80.3 268.3 L 81.7 266.1 L 83.0 263.9 L 85.7 259.7 L 88.3 255.7 L 91.0 251.8 L 93.6 248.0 L 96.3 244.4 L 99.0 240.8 L 101.6 237.4 L 104.3 234.1 L 106.9 230.9 L 109.6 227.8 L 112.2 224.8 L 114.9 221.9 L 117.6 219.1 L 120.2 216.4 L 122.9 213.7 L 125.5 211.2 L 128.2 208.7 L 130.9 206.2 L 133.5 203.9 L 136.2 201.6 L 138.8 199.3 L 141.5 197.1 L 144.1 195.0 L 146.8 192.9 L 149.5 190.8 L 152.1 188.8 L 154.8 186.9 L 157.4 184.9 L 160.1 183.1 L 162.8 181.2 L 165.4 179.4 L 168.1 177.6 L 170.7 175.8 L 173.4 174.0 L 176.0 172.3 L 178.7 170.5 L 181.4 168.8 L 184.0 167.1 L 186.7 165.4 L 189.3 163.7 L 192.0 162.0 L 194.7 160.3 L 197.3 158.6 L 200.0 156.9 L 202.6 155.2 L 205.3 153.5 L 208.0 151.7 L 210.6 150.0 L 213.3 148.2 L 215.9 146.4 L 218.6 144.6 L 221.2 142.8 L 223.9 140.9 L 226.6 139.1 L 229.2 137.1 L 231.9 135.2 L 234.5 133.2 L 237.2 131.1 L 239.9 129.0 L 242.5 126.9 L 245.2 124.7 L 247.8 122.4 L 250.5 120.1 L 253.1 117.8 L 255.8 115.3 L 258.5 112.8 L 261.1 110.3 L 263.8 107.6 L 266.4 104.9 L 269.1 102.1 L 271.8 99.2 L 274.4 96.2 L 277.1 93.1 L 279.7 89.9 L 282.4 86.6 L 285.0 83.2 L 287.7 79.6 L 290.4 76.0 L 293.0 72.2 L 295.7 68.3 L 298.3 64.3 L 301.0 60.1 L 302.3 57.9 L 303.7 55.7 L 305.0 53.5 L 306.3 51.2 L 307.6 48.9 L 309.0 46.6 L 310.3 44.2 L 311.6 41.7 L 313.0 39.3 L 314.3 36.7 L 315.6 34.2 L 316.9 31.5 L 318.3 28.9 L 319.6 26.2 L 320.9 23.4 L 322.3 20.6 L 323.6 17.7 L 324.9 14.8" stroke="#8B1A4A" stroke-width="3" fill="none" clip-path="url(#prefigure-skel-hyp-sinh-__clipPath-1)"/>
+  <g id="prefigure-skel-hyp-sinh-sh-s-lab" transform="translate(274.5,58.3) translate(-78.7,-8.1)">
+    <g id="prefigure-skel-hyp-sinh-__g-8">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px; color:#8B1A4A" width="78.664px" height="16.272px" role="img" focusable="false" viewBox="0 -694 4346.2 899" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-N-68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-N-2061" d=""/>
+          <path id="prefigure-skel-hyp-sinh-MJX-10-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="7" data-semantic-children="0,6" data-semantic-content="1" data-semantic-speech="y equals hyperbolic sine x">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="7" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="7" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-children="2,4" data-semantic-content="5,2" data-semantic-parent="7" data-semantic-speech="hyperbolic sine x" transform="translate(1823.6,0)">
+              <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="2" data-semantic-parent="6" data-semantic-operator="appl" data-semantic-speech="hyperbolic sine">
+                <use data-c="73" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-N-73"/>
+                <use data-c="69" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-N-69" transform="translate(394,0)"/>
+                <use data-c="6E" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-N-6E" transform="translate(672,0)"/>
+                <use data-c="68" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-N-68" transform="translate(1228,0)"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="5" data-semantic-parent="6" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(1784,0)">
+                <use data-c="2061" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="x" transform="translate(1950.7,0)">
+                <use data-c="1D465" xlink:href="#prefigure-skel-hyp-sinh-MJX-10-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-skel-hyp-sinh-sh-ep-lab" transform="translate(29.8,133.7) translate(0.0,-21.9)">
+    <g id="prefigure-skel-hyp-sinh-__g-9">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.248px; color:#56B4E9" width="64.624px" height="21.896px" role="img" focusable="false" viewBox="0 -864.9 3570.6 1209.9" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-N-2062" d=""/>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-11-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="10" data-semantic-children="0,9" data-semantic-content="1" data-semantic-speech="y equals one half e Superscript x">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="10" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="10" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="9" data-semantic-children="4,7" data-semantic-content="8" data-semantic-parent="10" data-semantic-speech="one half e Superscript x" transform="translate(1823.6,0)">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="vulgar" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-children="2,3" data-semantic-parent="9" data-semantic-speech="one half">
+                <g data-mml-node="mn" transform="translate(220,394) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="1" data-semantic-prefix="Numerator">
+                  <use data-c="31" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-N-31"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="4" data-semantic-speech="2" data-semantic-prefix="Denominator">
+                  <use data-c="32" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-N-32"/>
+                </g>
+                <rect width="553.6" height="60" x="120" y="220"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="8" data-semantic-parent="9" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(793.6,0)">
+                <use data-c="2062" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="7" data-semantic-children="5,6" data-semantic-parent="9" data-semantic-speech="e Superscript x" transform="translate(793.6,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="e" data-semantic-prefix="Base">
+                  <use data-c="1D452" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-I-1D452"/>
+                </g>
+                <g data-mml-node="TeXAtom" transform="translate(499,363) scale(0.707)" data-mjx-texclass="ORD">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="7" data-semantic-attributes="texclass:ORD" data-semantic-speech="x" data-semantic-prefix="Exponent">
+                    <use data-c="1D465" xlink:href="#prefigure-skel-hyp-sinh-MJX-11-TEX-I-1D465"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-skel-hyp-sinh-sh-em-lab" transform="translate(268.7,203.5) translate(0.0,-0.0)">
+    <g id="prefigure-skel-hyp-sinh-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.248px; color:#E69F00" width="88.664px" height="21.896px" role="img" focusable="false" viewBox="0 -864.9 4898.7 1209.9" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-N-2062" d=""/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"/>
+          <path id="prefigure-skel-hyp-sinh-MJX-12-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="14" data-semantic-children="0,13" data-semantic-content="1" data-semantic-speech="y equals minus one half e Superscript negative x">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="14" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="14" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-id="13" data-semantic-children="12" data-semantic-content="2" data-semantic-parent="14" data-semantic-speech="minus one half e Superscript negative x" transform="translate(1823.6,0)">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="2" data-semantic-parent="13" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                <use data-c="2212" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-N-2212"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="12" data-semantic-children="5,10" data-semantic-content="11" data-semantic-parent="13" data-semantic-speech="one half e Superscript negative x" transform="translate(778,0)">
+                <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="vulgar" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-children="3,4" data-semantic-parent="12" data-semantic-speech="one half">
+                  <g data-mml-node="mn" transform="translate(220,394) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="5" data-semantic-speech="1" data-semantic-prefix="Numerator">
+                    <use data-c="31" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-N-31"/>
+                  </g>
+                  <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="5" data-semantic-speech="2" data-semantic-prefix="Denominator">
+                    <use data-c="32" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-N-32"/>
+                  </g>
+                  <rect width="553.6" height="60" x="120" y="220"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="11" data-semantic-parent="12" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(793.6,0)">
+                  <use data-c="2062" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-N-2062"/>
+                </g>
+                <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="10" data-semantic-children="6,9" data-semantic-parent="12" data-semantic-speech="e Superscript negative x" transform="translate(793.6,0)">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="10" data-semantic-speech="e" data-semantic-prefix="Base">
+                    <use data-c="1D452" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-I-1D452"/>
+                  </g>
+                  <g data-mml-node="TeXAtom" transform="translate(499,363) scale(0.707)" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-children="8" data-semantic-content="7" data-semantic-parent="10" data-semantic-attributes="texclass:ORD" data-semantic-speech="negative x" data-semantic-prefix="Exponent" data-mjx-texclass="ORD">
+                    <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="7" data-semantic-parent="9" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                      <use data-c="2212" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-N-2212"/>
+                    </g>
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-parent="9" data-semantic-speech="x" transform="translate(778,0)">
+                      <use data-c="1D465" xlink:href="#prefigure-skel-hyp-sinh-MJX-12-TEX-I-1D465"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

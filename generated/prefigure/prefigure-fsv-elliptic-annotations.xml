@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-fsv-elliptic-figure" speech2="Five nested ellipses centred at the origin, all twice as tall as they are wide, with a legend in the upper left. They are shaded from dark green for the innermost, where c equals nought point two, out to yellow for the outermost, where c equals one, in equal steps of nought point two.">
+      <grouped>prefigure-fsv-elliptic-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-fsv-elliptic-el-e1</active>
+        <active>prefigure-fsv-elliptic-el-e5</active>
+        <active>prefigure-fsv-elliptic-el-axes</active>
+      </children>
+      <components>
+        <active>prefigure-fsv-elliptic-el-e1</active>
+        <active>prefigure-fsv-elliptic-el-e5</active>
+        <active>prefigure-fsv-elliptic-el-axes</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-fsv-elliptic-el-e1" speech2="The innermost level curve, where g equals nought point two.">
+      <active>prefigure-fsv-elliptic-el-e1</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-fsv-elliptic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-fsv-elliptic-el-e5" speech2="The outermost level curve, where g equals one. It is the ellipse x squared plus y squared over four equals one, crossing the x axis at plus and minus one and the y axis at plus and minus two.">
+      <active>prefigure-fsv-elliptic-el-e5</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-fsv-elliptic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-fsv-elliptic-el-axes" speech2="The ellipses are stretched along the y axis because the y term is divided by four, so reaching a given height takes twice the distance in y that it does in x.">
+      <active>prefigure-fsv-elliptic-el-axes</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-fsv-elliptic-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

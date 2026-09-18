@@ -1,0 +1,124 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-unit-circle-param-figure" speech2="The unit circle centered at the origin, parametrized by x equals cosine of t and y equals sine of t. Four points at t equals 0, pi over 2, pi, and 3 pi over 2 are marked in red, and a generic green point corresponds to the parameter value t naught.">
+      <grouped>prefigure-unit-circle-param-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-unit-circle-param-grid-axes</active>
+        <active>prefigure-unit-circle-param-uc-grid</active>
+        <active>prefigure-unit-circle-param-uc-curve</active>
+        <active>prefigure-unit-circle-param-uc-radius</active>
+        <active>prefigure-unit-circle-param-uc-t0-point</active>
+        <active>prefigure-unit-circle-param-uc-mark-0</active>
+        <active>prefigure-unit-circle-param-uc-mark-half-pi</active>
+        <active>prefigure-unit-circle-param-uc-mark-pi</active>
+        <active>prefigure-unit-circle-param-uc-mark-3half-pi</active>
+        <active>prefigure-unit-circle-param-uc-angle-t0</active>
+      </children>
+      <components>
+        <active>prefigure-unit-circle-param-grid-axes</active>
+        <active>prefigure-unit-circle-param-uc-grid</active>
+        <active>prefigure-unit-circle-param-uc-curve</active>
+        <active>prefigure-unit-circle-param-uc-radius</active>
+        <active>prefigure-unit-circle-param-uc-t0-point</active>
+        <active>prefigure-unit-circle-param-uc-mark-0</active>
+        <active>prefigure-unit-circle-param-uc-mark-half-pi</active>
+        <active>prefigure-unit-circle-param-uc-mark-pi</active>
+        <active>prefigure-unit-circle-param-uc-mark-3half-pi</active>
+        <active>prefigure-unit-circle-param-uc-angle-t0</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-unit-circle-param-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-unit-circle-param-grid</active>
+        <active>prefigure-unit-circle-param-axes</active>
+      </children>
+      <components>
+        <active>prefigure-unit-circle-param-grid</active>
+        <active>prefigure-unit-circle-param-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-grid" speech2="The coordinate grid">
+      <active>prefigure-unit-circle-param-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-axes" speech2="The coordinate axes">
+      <active>prefigure-unit-circle-param-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-grid" speech2="A coordinate grid with x and y axes.">
+      <active>prefigure-unit-circle-param-uc-grid</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-curve" speech2="The unit circle, drawn in blue, traced counterclockwise as t increases from 0 to 2 pi.">
+      <active>prefigure-unit-circle-param-uc-curve</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-radius" speech2="A green radius from the origin to the generic point of the circle at parameter value t naught.">
+      <active>prefigure-unit-circle-param-uc-radius</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-t0-point" speech2="A generic point of the circle, with coordinates cosine of t naught comma sine of t naught.">
+      <active>prefigure-unit-circle-param-uc-t0-point</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-mark-0" speech2="The point 1 comma 0, where t equals 0.">
+      <active>prefigure-unit-circle-param-uc-mark-0</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-mark-half-pi" speech2="The point 0 comma 1, where t equals pi over 2.">
+      <active>prefigure-unit-circle-param-uc-mark-half-pi</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-mark-pi" speech2="The point negative 1 comma 0, where t equals pi.">
+      <active>prefigure-unit-circle-param-uc-mark-pi</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-mark-3half-pi" speech2="The point 0 comma negative 1, where t equals 3 pi over 2.">
+      <active>prefigure-unit-circle-param-uc-mark-3half-pi</active>
+      <position>9</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-unit-circle-param-uc-angle-t0" speech2="The angle t naught between the positive x axis and the radius to the generic point.">
+      <active>prefigure-unit-circle-param-uc-angle-t0</active>
+      <position>10</position>
+      <parents>
+        <grouped>prefigure-unit-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

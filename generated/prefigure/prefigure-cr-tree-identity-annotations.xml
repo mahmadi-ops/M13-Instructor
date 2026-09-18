@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cr-tree-identity-figure" speech2="A tree diagram with w at the top, the two intermediate variables u equals x z and v equals y z below it, and the three variables x, z and y along the bottom. The variable u connects down to both x and z, and v connects down to both z and y, so the middle node z is reached from both sides. The branches are labelled with the corresponding partial derivatives.">
+      <grouped>prefigure-cr-tree-identity-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cr-tree-identity-ti-u</active>
+        <active>prefigure-cr-tree-identity-ti-v</active>
+        <active>prefigure-cr-tree-identity-ti-z</active>
+        <active>prefigure-cr-tree-identity-ti-ux</active>
+        <active>prefigure-cr-tree-identity-ti-uz</active>
+      </children>
+      <components>
+        <active>prefigure-cr-tree-identity-ti-u</active>
+        <active>prefigure-cr-tree-identity-ti-v</active>
+        <active>prefigure-cr-tree-identity-ti-z</active>
+        <active>prefigure-cr-tree-identity-ti-ux</active>
+        <active>prefigure-cr-tree-identity-ti-uz</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cr-tree-identity-ti-u" speech2="The intermediate variable u equals x z.">
+      <active>prefigure-cr-tree-identity-ti-u</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cr-tree-identity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-identity-ti-v" speech2="The intermediate variable v equals y z.">
+      <active>prefigure-cr-tree-identity-ti-v</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cr-tree-identity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-identity-ti-z" speech2="The variable z sits under both u and v, so two paths lead from w down to z and the derivative with respect to z has two terms.">
+      <active>prefigure-cr-tree-identity-ti-z</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cr-tree-identity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-identity-ti-ux" speech2="The branch from u to x carries the factor z, since the partial derivative of x z with respect to x is z.">
+      <active>prefigure-cr-tree-identity-ti-ux</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-cr-tree-identity-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-identity-ti-uz" speech2="The branch from u to z carries the factor x, since the partial derivative of x z with respect to z is x.">
+      <active>prefigure-cr-tree-identity-ti-uz</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-cr-tree-identity-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

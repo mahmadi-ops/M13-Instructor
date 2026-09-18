@@ -1,0 +1,88 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-taylor-sin-figure" speech2="The sine curve, drawn as a dashed black line, together with four Taylor polynomial approximations at x equals zero: the line p one in blue, the cubic p three in orange, the quintic p five in green, and the degree seven polynomial p seven in dark red. Near the origin all curves agree; farther from zero, the low order polynomials peel away first while p seven follows the sine curve almost to plus and minus pi.">
+      <grouped>prefigure-taylor-sin-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taylor-sin-grid-axes</active>
+        <active>prefigure-taylor-sin-ts-f</active>
+        <active>prefigure-taylor-sin-ts-p1</active>
+        <active>prefigure-taylor-sin-ts-p3</active>
+        <active>prefigure-taylor-sin-ts-p5</active>
+        <active>prefigure-taylor-sin-ts-p7</active>
+      </children>
+      <components>
+        <active>prefigure-taylor-sin-grid-axes</active>
+        <active>prefigure-taylor-sin-ts-f</active>
+        <active>prefigure-taylor-sin-ts-p1</active>
+        <active>prefigure-taylor-sin-ts-p3</active>
+        <active>prefigure-taylor-sin-ts-p5</active>
+        <active>prefigure-taylor-sin-ts-p7</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-taylor-sin-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taylor-sin-grid</active>
+        <active>prefigure-taylor-sin-axes</active>
+      </children>
+      <components>
+        <active>prefigure-taylor-sin-grid</active>
+        <active>prefigure-taylor-sin-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-taylor-sin-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-grid" speech2="The coordinate grid">
+      <active>prefigure-taylor-sin-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-axes" speech2="The coordinate axes">
+      <active>prefigure-taylor-sin-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-ts-f" speech2="The function f of x equals sine x, dashed black.">
+      <active>prefigure-taylor-sin-ts-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-ts-p1" speech2="The tangent line p one of x equals x.">
+      <active>prefigure-taylor-sin-ts-p1</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-ts-p3" speech2="The cubic polynomial p three.">
+      <active>prefigure-taylor-sin-ts-p3</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-ts-p5" speech2="The quintic polynomial p five.">
+      <active>prefigure-taylor-sin-ts-p5</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taylor-sin-ts-p7" speech2="The degree seven polynomial p seven, which matches the sine curve over the widest interval.">
+      <active>prefigure-taylor-sin-ts-p7</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-taylor-sin-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

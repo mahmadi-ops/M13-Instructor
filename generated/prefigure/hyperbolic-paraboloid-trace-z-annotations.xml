@@ -1,0 +1,21 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperbolic-paraboloid-trace-z-figure" speech2="The trace in the plane z = 1: a hyperbola opening left and right">
+      <grouped>hyperbolic-paraboloid-trace-z-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperbolic-paraboloid-trace-z-trace-z</active>
+      </children>
+      <components>
+        <active>hyperbolic-paraboloid-trace-z-trace-z</active>
+      </components>
+    </annotation>
+    <annotation id="hyperbolic-paraboloid-trace-z-trace-z" speech2="In the plane z equals 1, the trace x squared over 4 minus y squared over 9 equals 1 is a hyperbola opening left and right">
+      <active>hyperbolic-paraboloid-trace-z-trace-z</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperbolic-paraboloid-trace-z-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

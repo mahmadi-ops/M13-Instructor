@@ -1,0 +1,147 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lagrange-ellipse-figure" speech2="The x y plane with a green ellipse centered at the origin and several hyperbolas that are level curves of f equals x y. The red hyperbolas x y equals 2 and x y equals negative 2 are tangent to the ellipse at the four points 2 comma 1, negative 2 comma negative 1, negative 2 comma 1, and 2 comma negative 1. At each of the four points a red arrow shows the gradient of f and a green arrow shows the gradient of g, and in every case the two arrows are collinear. At the two maximum points, 2 comma 1 and negative 2 comma negative 1, they point in the same direction, so lambda is positive; at the two minimum points, negative 2 comma 1 and 2 comma negative 1, they point in opposite directions, so lambda is negative.">
+      <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lagrange-ellipse-ee-ellipse</active>
+        <active>prefigure-lagrange-ellipse-ee-h2-q1</active>
+        <active>prefigure-lagrange-ellipse-ee-h2-q3</active>
+        <active>prefigure-lagrange-ellipse-ee-hm2-q2</active>
+        <active>prefigure-lagrange-ellipse-ee-hm2-q4</active>
+        <active>prefigure-lagrange-ellipse-ee-h1-q1</active>
+        <active>prefigure-lagrange-ellipse-ee-max1</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf-max2</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg-max2</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf-min1</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg-min1</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf-min2</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg-min2</active>
+      </children>
+      <components>
+        <active>prefigure-lagrange-ellipse-ee-ellipse</active>
+        <active>prefigure-lagrange-ellipse-ee-h2-q1</active>
+        <active>prefigure-lagrange-ellipse-ee-h2-q3</active>
+        <active>prefigure-lagrange-ellipse-ee-hm2-q2</active>
+        <active>prefigure-lagrange-ellipse-ee-hm2-q4</active>
+        <active>prefigure-lagrange-ellipse-ee-h1-q1</active>
+        <active>prefigure-lagrange-ellipse-ee-max1</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf-max2</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg-max2</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf-min1</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg-min1</active>
+        <active>prefigure-lagrange-ellipse-ee-gradf-min2</active>
+        <active>prefigure-lagrange-ellipse-ee-gradg-min2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-ellipse" speech2="The constraint ellipse, x squared over 8 plus y squared over 2 equals 1, drawn in green.">
+      <active>prefigure-lagrange-ellipse-ee-ellipse</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-h2-q1" speech2="The branch of the level curve x y equals 2 in the first quadrant, drawn in red, tangent to the ellipse at the point 2 comma 1, where f attains its maximum value 2.">
+      <active>prefigure-lagrange-ellipse-ee-h2-q1</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-h2-q3" speech2="The branch of the level curve x y equals 2 in the third quadrant, drawn in red, tangent to the ellipse at the point negative 2 comma negative 1, where f also attains its maximum value 2.">
+      <active>prefigure-lagrange-ellipse-ee-h2-q3</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-hm2-q2" speech2="The branch of the level curve x y equals negative 2 in the second quadrant, drawn in red, tangent to the ellipse at negative 2 comma 1, where f attains its minimum value negative 2.">
+      <active>prefigure-lagrange-ellipse-ee-hm2-q2</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-hm2-q4" speech2="The branch of the level curve x y equals negative 2 in the fourth quadrant, drawn in red, tangent to the ellipse at 2 comma negative 1, where f also attains its minimum value negative 2.">
+      <active>prefigure-lagrange-ellipse-ee-hm2-q4</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-h1-q1" speech2="The level curves x y equals 1 and x y equals negative 1, drawn in gray, which cross the ellipse instead of being tangent to it: the values 1 and negative 1 are attained but are not extreme values.">
+      <active>prefigure-lagrange-ellipse-ee-h1-q1</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-max1" speech2="The point 2 comma 1, where the absolute maximum value 2 is attained.">
+      <active>prefigure-lagrange-ellipse-ee-max1</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradf" speech2="The gradient of f at the point 2 comma 1, drawn in red: it equals i plus 2 j.">
+      <active>prefigure-lagrange-ellipse-ee-gradf</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradg" speech2="The gradient of g at the point 2 comma 1, drawn in green: it equals one half i plus j, so the gradient of f is exactly twice the gradient of g, and lambda equals 2. The two arrows are drawn slightly apart so both are visible.">
+      <active>prefigure-lagrange-ellipse-ee-gradg</active>
+      <position>9</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradf-max2" speech2="The gradient of f at the point negative 2 comma negative 1, drawn in red: it equals negative i minus 2 j.">
+      <active>prefigure-lagrange-ellipse-ee-gradf-max2</active>
+      <position>10</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradg-max2" speech2="The gradient of g at the point negative 2 comma negative 1, drawn in green: it equals negative one half i minus j, so again the gradient of f is twice the gradient of g and lambda equals 2. The two arrows point the same way and are drawn slightly apart so both are visible.">
+      <active>prefigure-lagrange-ellipse-ee-gradg-max2</active>
+      <position>11</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradf-min1" speech2="The gradient of f at the point negative 2 comma 1, drawn in red: it equals i minus 2 j, pointing into the ellipse.">
+      <active>prefigure-lagrange-ellipse-ee-gradf-min1</active>
+      <position>12</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradg-min1" speech2="The gradient of g at the point negative 2 comma 1, drawn in green: it equals negative one half i plus j, pointing out of the ellipse. The two arrows lie along the same line but point in opposite directions, so the gradient of f is negative 2 times the gradient of g and lambda equals negative 2.">
+      <active>prefigure-lagrange-ellipse-ee-gradg-min1</active>
+      <position>13</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradf-min2" speech2="The gradient of f at the point 2 comma negative 1, drawn in red: it equals negative i plus 2 j, pointing into the ellipse.">
+      <active>prefigure-lagrange-ellipse-ee-gradf-min2</active>
+      <position>14</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-ellipse-ee-gradg-min2" speech2="The gradient of g at the point 2 comma negative 1, drawn in green: it equals one half i minus j, pointing out of the ellipse. Here too the two gradients are collinear and opposite, so lambda equals negative 2.">
+      <active>prefigure-lagrange-ellipse-ee-gradg-min2</active>
+      <position>15</position>
+      <parents>
+        <grouped>prefigure-lagrange-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

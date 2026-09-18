@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cm-circle-figure" speech2="A circular trajectory with centre O and radius R. At a point on the circle the velocity arrow is drawn tangent to the circle and the force arrow points from the particle straight in toward the centre, the two meeting at a right angle. Two dashed radii mark off a small angle delta theta at the centre, and the arc of the circle between them, of length delta s equals R times delta theta, is highlighted. Combining delta s equals v delta t with delta theta equals F over m v times delta t gives R equals m v squared over F, a constant.">
+      <grouped>prefigure-cm-circle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cm-circle-cc-circle</active>
+        <active>prefigure-cm-circle-cc-v</active>
+        <active>prefigure-cm-circle-cc-F</active>
+        <active>prefigure-cm-circle-cc-right</active>
+        <active>prefigure-cm-circle-cc-ds</active>
+        <active>prefigure-cm-circle-cc-dtheta</active>
+      </children>
+      <components>
+        <active>prefigure-cm-circle-cc-circle</active>
+        <active>prefigure-cm-circle-cc-v</active>
+        <active>prefigure-cm-circle-cc-F</active>
+        <active>prefigure-cm-circle-cc-right</active>
+        <active>prefigure-cm-circle-cc-ds</active>
+        <active>prefigure-cm-circle-cc-dtheta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cm-circle-cc-circle" speech2="The circular path of the particle.">
+      <active>prefigure-cm-circle-cc-circle</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cm-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-circle-cc-v" speech2="The velocity, tangent to the circle.">
+      <active>prefigure-cm-circle-cc-v</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cm-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-circle-cc-F" speech2="The force, pointing from the particle straight in toward the centre, perpendicular to the velocity.">
+      <active>prefigure-cm-circle-cc-F</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cm-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-circle-cc-right" speech2="A right angle marker between the velocity and the force.">
+      <active>prefigure-cm-circle-cc-right</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-cm-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-circle-cc-ds" speech2="The arc of length delta s travelled during the short time interval.">
+      <active>prefigure-cm-circle-cc-ds</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-cm-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-circle-cc-dtheta" speech2="The angle delta theta subtended at the centre by that arc.">
+      <active>prefigure-cm-circle-cc-dtheta</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-cm-circle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

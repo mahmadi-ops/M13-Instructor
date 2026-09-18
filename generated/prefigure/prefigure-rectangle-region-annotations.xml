@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rectangle-region-figure" speech2="The rectangle R in the x y plane, with corners at the origin, 3 comma 0, 3 comma 2, and 0 comma 2, shaded gray. Its four edges are labeled L 1 along the bottom, L 2 along the right, L 3 along the top, and L 4 along the left. The critical point 1 comma 1 is marked inside the rectangle.">
+      <grouped>prefigure-rectangle-region-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rectangle-region-rg-region</active>
+        <active>prefigure-rectangle-region-rg-L1</active>
+        <active>prefigure-rectangle-region-rg-L2</active>
+        <active>prefigure-rectangle-region-rg-L3</active>
+        <active>prefigure-rectangle-region-rg-L4</active>
+        <active>prefigure-rectangle-region-rg-critical</active>
+      </children>
+      <components>
+        <active>prefigure-rectangle-region-rg-region</active>
+        <active>prefigure-rectangle-region-rg-L1</active>
+        <active>prefigure-rectangle-region-rg-L2</active>
+        <active>prefigure-rectangle-region-rg-L3</active>
+        <active>prefigure-rectangle-region-rg-L4</active>
+        <active>prefigure-rectangle-region-rg-critical</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rectangle-region-rg-region" speech2="The rectangle R, consisting of points with x between 0 and 3 and y between 0 and 2.">
+      <active>prefigure-rectangle-region-rg-region</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rectangle-region-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rectangle-region-rg-L1" speech2="The first edge L 1, along the bottom of the rectangle, where y equals 0 and x runs from 0 to 3.">
+      <active>prefigure-rectangle-region-rg-L1</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rectangle-region-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rectangle-region-rg-L2" speech2="The second edge L 2, along the right side, where x equals 3 and y runs from 0 to 2.">
+      <active>prefigure-rectangle-region-rg-L2</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rectangle-region-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rectangle-region-rg-L3" speech2="The third edge L 3, along the top, where y equals 2 and x runs from 0 to 3.">
+      <active>prefigure-rectangle-region-rg-L3</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rectangle-region-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rectangle-region-rg-L4" speech2="The fourth edge L 4, along the left side, where x equals 0 and y runs from 0 to 2.">
+      <active>prefigure-rectangle-region-rg-L4</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rectangle-region-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rectangle-region-rg-critical" speech2="The critical point 1 comma 1, in the interior of the rectangle, where both partial derivatives are zero.">
+      <active>prefigure-rectangle-region-rg-critical</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-rectangle-region-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

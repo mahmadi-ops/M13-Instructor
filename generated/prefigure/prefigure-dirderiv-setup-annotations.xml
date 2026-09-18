@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-dirderiv-setup-figure" speech2="The x y plane showing the setup for the definition of the directional derivative. From the point P 0 with coordinates x 0 comma y 0, a red arrow shows the unit vector u, and a longer blue arrow shows the displacement s u, ending at the point P with coordinates x 0 plus s u 1 comma y 0 plus s u 2. Dashed gray segments show the horizontal and vertical components of the displacement.">
+      <grouped>prefigure-dirderiv-setup-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-dirderiv-setup-ds-P0</active>
+        <active>prefigure-dirderiv-setup-ds-u</active>
+        <active>prefigure-dirderiv-setup-ds-su</active>
+        <active>prefigure-dirderiv-setup-ds-comp1</active>
+        <active>prefigure-dirderiv-setup-ds-comp2</active>
+        <active>prefigure-dirderiv-setup-ds-P</active>
+      </children>
+      <components>
+        <active>prefigure-dirderiv-setup-ds-P0</active>
+        <active>prefigure-dirderiv-setup-ds-u</active>
+        <active>prefigure-dirderiv-setup-ds-su</active>
+        <active>prefigure-dirderiv-setup-ds-comp1</active>
+        <active>prefigure-dirderiv-setup-ds-comp2</active>
+        <active>prefigure-dirderiv-setup-ds-P</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-dirderiv-setup-ds-P0" speech2="The base point P 0 with coordinates x 0 comma y 0, where the directional derivative is computed.">
+      <active>prefigure-dirderiv-setup-ds-P0</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-dirderiv-setup-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-setup-ds-u" speech2="The unit vector u equals u 1 i plus u 2 j, drawn in red, giving the direction of differentiation.">
+      <active>prefigure-dirderiv-setup-ds-u</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-dirderiv-setup-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-setup-ds-su" speech2="The displacement vector s u, drawn in blue, which moves the distance s from P 0 in the direction u.">
+      <active>prefigure-dirderiv-setup-ds-su</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-dirderiv-setup-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-setup-ds-comp1" speech2="The horizontal component of the displacement, s u 1 i, drawn as a dashed segment.">
+      <active>prefigure-dirderiv-setup-ds-comp1</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-dirderiv-setup-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-setup-ds-comp2" speech2="The vertical component of the displacement, s u 2 j, drawn as a dashed segment.">
+      <active>prefigure-dirderiv-setup-ds-comp2</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-dirderiv-setup-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-setup-ds-P" speech2="The point P with coordinates x 0 plus s u 1 comma y 0 plus s u 2, which approaches P 0 as s goes to 0.">
+      <active>prefigure-dirderiv-setup-ds-P</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-dirderiv-setup-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

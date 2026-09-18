@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rs19-quad-figure" speech2="A quadrilateral with vertices labelled Q at the top left, P at the top right, R at the bottom left, and S at the bottom right, drawn in light blue together with its two diagonals Q S and R P.">
+      <grouped>prefigure-rs19-quad-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rs19-quad-qd-P</active>
+        <active>prefigure-rs19-quad-qd-Q</active>
+        <active>prefigure-rs19-quad-qd-R</active>
+        <active>prefigure-rs19-quad-qd-S</active>
+      </children>
+      <components>
+        <active>prefigure-rs19-quad-qd-P</active>
+        <active>prefigure-rs19-quad-qd-Q</active>
+        <active>prefigure-rs19-quad-qd-R</active>
+        <active>prefigure-rs19-quad-qd-S</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rs19-quad-qd-P" speech2="The vertex P at the top right.">
+      <active>prefigure-rs19-quad-qd-P</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rs19-quad-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-quad-qd-Q" speech2="The vertex Q at the top left.">
+      <active>prefigure-rs19-quad-qd-Q</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rs19-quad-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-quad-qd-R" speech2="The vertex R at the bottom left.">
+      <active>prefigure-rs19-quad-qd-R</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rs19-quad-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-quad-qd-S" speech2="The vertex S at the bottom right.">
+      <active>prefigure-rs19-quad-qd-S</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rs19-quad-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

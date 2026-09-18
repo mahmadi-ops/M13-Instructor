@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-dp-constrained-work-figure" speech2="A blue parallelogram represents the plane two x minus y plus two z equals zero, drawn through the origin O. A black arrow off to the right shows the normal direction n. From O, a long dark red arrow rises steeply as the projection of F onto n, a slightly tilted orange arrow of almost the same length is the force F itself, and a very short green arrow lying in the plane is the component of F parallel to the plane. Dashed grey segments complete the rectangle of the decomposition.">
+      <grouped>prefigure-dp-constrained-work-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-dp-constrained-work-dpw-plane</active>
+        <active>prefigure-dp-constrained-work-dpw-n</active>
+        <active>prefigure-dp-constrained-work-dpw-force</active>
+        <active>prefigure-dp-constrained-work-dpw-proj</active>
+        <active>prefigure-dp-constrained-work-dpw-par</active>
+      </children>
+      <components>
+        <active>prefigure-dp-constrained-work-dpw-plane</active>
+        <active>prefigure-dp-constrained-work-dpw-n</active>
+        <active>prefigure-dp-constrained-work-dpw-force</active>
+        <active>prefigure-dp-constrained-work-dpw-proj</active>
+        <active>prefigure-dp-constrained-work-dpw-par</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-dp-constrained-work-dpw-plane" speech2="The constraint plane, two x minus y plus two z equals zero, passing through the origin.">
+      <active>prefigure-dp-constrained-work-dpw-plane</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-dp-constrained-work-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dp-constrained-work-dpw-n" speech2="A normal vector n to the plane, with components two, negative one, two.">
+      <active>prefigure-dp-constrained-work-dpw-n</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-dp-constrained-work-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dp-constrained-work-dpw-force" speech2="The force F, rising steeply and therefore nearly perpendicular to the plane.">
+      <active>prefigure-dp-constrained-work-dpw-force</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-dp-constrained-work-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dp-constrained-work-dpw-proj" speech2="The projection of F onto the normal, the long component that does no work.">
+      <active>prefigure-dp-constrained-work-dpw-proj</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-dp-constrained-work-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dp-constrained-work-dpw-par" speech2="The component of F parallel to the plane, very short compared with the normal component; this is the only part of the force that can do work.">
+      <active>prefigure-dp-constrained-work-dpw-par</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-dp-constrained-work-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

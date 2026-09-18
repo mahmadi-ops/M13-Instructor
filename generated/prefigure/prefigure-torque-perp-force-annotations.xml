@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-torque-perp-force-figure" speech2="The same position vector r from the axis at O to the point of application P, with the force F at P split into two pieces by a dashed rectangle. One piece is perpendicular to r and has length the length of F times the sine of theta; the other piece is parallel to r and points straight away from the axis. The torque is the length of r times the perpendicular piece; the parallel piece produces no rotation.">
+      <grouped>prefigure-torque-perp-force-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-torque-perp-force-fp-r</active>
+        <active>prefigure-torque-perp-force-fp-F</active>
+        <active>prefigure-torque-perp-force-fp-Fperp</active>
+        <active>prefigure-torque-perp-force-fp-Fpar</active>
+        <active>prefigure-torque-perp-force-fp-right</active>
+        <active>prefigure-torque-perp-force-fp-theta</active>
+      </children>
+      <components>
+        <active>prefigure-torque-perp-force-fp-r</active>
+        <active>prefigure-torque-perp-force-fp-F</active>
+        <active>prefigure-torque-perp-force-fp-Fperp</active>
+        <active>prefigure-torque-perp-force-fp-Fpar</active>
+        <active>prefigure-torque-perp-force-fp-right</active>
+        <active>prefigure-torque-perp-force-fp-theta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-torque-perp-force-fp-r" speech2="The position vector r, drawn from the axis at O to the point of application P.">
+      <active>prefigure-torque-perp-force-fp-r</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-torque-perp-force-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-perp-force-fp-F" speech2="The force F, drawn from P, making an angle theta with the direction of r.">
+      <active>prefigure-torque-perp-force-fp-F</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-torque-perp-force-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-perp-force-fp-Fperp" speech2="The component of the force perpendicular to r, of length F perpendicular; this is the part that turns the object.">
+      <active>prefigure-torque-perp-force-fp-Fperp</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-torque-perp-force-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-perp-force-fp-Fpar" speech2="The component of the force parallel to r, pointing straight away from the axis; this part produces no rotation.">
+      <active>prefigure-torque-perp-force-fp-Fpar</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-torque-perp-force-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-perp-force-fp-right" speech2="A right angle between the two components of the force.">
+      <active>prefigure-torque-perp-force-fp-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-torque-perp-force-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-perp-force-fp-theta" speech2="The angle theta at P, between the direction of r and the force F.">
+      <active>prefigure-torque-perp-force-fp-theta</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-torque-perp-force-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

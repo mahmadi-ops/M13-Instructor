@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slicing the hyperboloid x^2 + y^2 - z^2 = 1</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  button {
+    font-size: 14px; padding: 5px 12px; border-radius: 6px;
+    border: 1px solid #888; background: #f4f4f4; cursor: pointer;
+  }
+  button:hover { background: #e6e6e6; }
+  button.active { background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+  #playBtn { min-width: 92px; }
+  #sliderRow {
+    display: flex; align-items: center; gap: 10px;
+    padding: 0 10px 6px 10px; box-sizing: border-box;
+  }
+  #cSlider { flex: 1; }
+  #cLabel { font-size: 15px; min-width: 72px; font-variant-numeric: tabular-nums; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span style="font-size:14px;">Slice with plane:</span>
+    <button id="btnX">x = c</button>
+    <button id="btnY">y = c</button>
+    <button id="btnZ" class="active">z = c</button>
+    <span style="flex:1"></span>
+    <button id="playBtn" title="Toggle automatic rotation">&#9654; Rotate</button>
+  </div>
+  <div id="sliderRow">
+    <span id="cLabel">c = 0.00</span>
+    <input type="range" id="cSlider" min="-2" max="2" step="0.05" value="0">
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // ---------- renderer / scene ----------
+  var wrap = document.getElementById("canvasWrap");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(window.devicePixelRatio || 1);
+  wrap.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xffffff);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+  camera.up.set(0, 0, 1); // z points up, math convention
+
+  // spherical camera coordinates
+  var radius = 7.2, theta = 0.5, phi = 1.15; // azimuth, polar
+  function placeCamera() {
+    camera.position.set(
+      radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.sin(phi) * Math.sin(theta),
+      radius * Math.cos(phi)
+    );
+    camera.lookAt(0, 0, 0);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+  var dir1 = new THREE.DirectionalLight(0xffffff, 0.7);
+  dir1.position.set(5, 3, 6);
+  scene.add(dir1);
+  var dir2 = new THREE.DirectionalLight(0xffffff, 0.35);
+  dir2.position.set(-4, -5, -3);
+  scene.add(dir2);
+
+  var ZMAX = 2;
+
+  // ---------- axes ----------
+  function axis(from, to, color) {
+    var g = new THREE.BufferGeometry().setFromPoints([from, to]);
+    scene.add(new THREE.Line(g, new THREE.LineBasicMaterial({ color: color })));
+  }
+  var A = 3.0;
+  axis(new THREE.Vector3(-A, 0, 0), new THREE.Vector3(A, 0, 0), 0x999999);
+  axis(new THREE.Vector3(0, -A, 0), new THREE.Vector3(0, A, 0), 0x999999);
+  axis(new THREE.Vector3(0, 0, -A), new THREE.Vector3(0, 0, A), 0x999999);
+
+  // ---------- hyperboloid surface x^2 + y^2 - z^2 = 1 ----------
+  (function buildSurface() {
+    var nu = 96, nv = 48; // around, along z
+    var positions = [], indices = [];
+    for (var j = 0; j <= nv; j++) {
+      var v = -ZMAX + (2 * ZMAX * j) / nv;
+      var r = Math.sqrt(1 + v * v);
+      for (var i = 0; i <= nu; i++) {
+        var t = (2 * Math.PI * i) / nu;
+        positions.push(r * Math.cos(t), r * Math.sin(t), v);
+      }
+    }
+    for (var jj = 0; jj < nv; jj++) {
+      for (var ii = 0; ii < nu; ii++) {
+        var a = jj * (nu + 1) + ii, b = a + 1;
+        var c = a + (nu + 1), d = c + 1;
+        indices.push(a, b, d, a, d, c);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    geo.setIndex(indices);
+    geo.computeVertexNormals();
+    var mat = new THREE.MeshPhongMaterial({
+      color: 0x4f8fd6, transparent: true, opacity: 0.45,
+      side: THREE.DoubleSide, depthWrite: false, shininess: 60
+    });
+    scene.add(new THREE.Mesh(geo, mat));
+    var wire = new THREE.LineSegments(
+      new THREE.WireframeGeometry(geo),
+      new THREE.LineBasicMaterial({ color: 0x35659a, transparent: true, opacity: 0.12 })
+    );
+    scene.add(wire);
+  })();
+
+  // ---------- slice plane + intersection curve ----------
+  var PLANE_SIZE = 5.2;
+  var planeMesh = new THREE.Mesh(
+    new THREE.PlaneGeometry(PLANE_SIZE, PLANE_SIZE),
+    new THREE.MeshPhongMaterial({
+      color: 0xf2c14e, transparent: true, opacity: 0.30,
+      side: THREE.DoubleSide, depthWrite: false
+    })
+  );
+  scene.add(planeMesh);
+
+  var curveGroup = new THREE.Group();
+  scene.add(curveGroup);
+  var curveMat = new THREE.MeshPhongMaterial({ color: 0xd1362f });
+
+  function clearCurves() {
+    while (curveGroup.children.length) {
+      var m = curveGroup.children.pop();
+      m.geometry.dispose();
+    }
+  }
+  function addTube(points) {
+    if (points.length < 2) return;
+    var curve = new THREE.CatmullRomCurve3(points);
+    var geo = new THREE.TubeGeometry(curve, Math.max(32, points.length * 2), 0.035, 8, false);
+    curveGroup.add(new THREE.Mesh(geo, curveMat));
+  }
+
+  var sliceAxis = "z";
+  var cVal = 0;
+
+  function updateSlice() {
+    clearCurves();
+    planeMesh.rotation.set(0, 0, 0);
+    planeMesh.visible = Math.abs(cVal) <= 2.6;
+
+    var readout = document.getElementById("readout");
+    var i, pts;
+
+    if (sliceAxis === "z") {
+      planeMesh.position.set(0, 0, cVal); // plane z = c (default orientation is xy-plane)
+      var r = Math.sqrt(1 + cVal * cVal);
+      pts = [];
+      var N = 96;
+      for (i = 0; i <= N; i++) {
+        var t = (2 * Math.PI * i) / N;
+        pts.push(new THREE.Vector3(r * Math.cos(t), r * Math.sin(t), cVal));
+      }
+      addTube(pts);
+      readout.textContent = "Slice z = " + cVal.toFixed(2) +
+        ":  circle  x² + y² = " + (1 + cVal * cVal).toFixed(2);
+    } else {
+      // planes x = c or y = c; curve satisfies s^2 - z^2 = 1 - c^2  (s = y or x)
+      var k = 1 - cVal * cVal;
+      if (sliceAxis === "x") {
+        planeMesh.rotation.y = Math.PI / 2;
+        planeMesh.position.set(cVal, 0, 0);
+      } else {
+        planeMesh.rotation.x = Math.PI / 2;
+        planeMesh.position.set(0, cVal, 0);
+      }
+      // sample z in [-ZMAX, ZMAX]; s = ±sqrt(z^2 + k) where defined
+      [1, -1].forEach(function (sign) {
+        var seg = [];
+        var M = 120;
+        for (i = 0; i <= M; i++) {
+          var z = -ZMAX + (2 * ZMAX * i) / M;
+          var s2 = z * z + k;
+          if (s2 >= 0) {
+            var s = sign * Math.sqrt(s2);
+            seg.push(sliceAxis === "x"
+              ? new THREE.Vector3(cVal, s, z)
+              : new THREE.Vector3(s, cVal, z));
+          } else {
+            addTube(seg); seg = [];
+          }
+        }
+        addTube(seg);
+      });
+      var varName = sliceAxis === "x" ? "y" : "x";
+      var desc;
+      if (Math.abs(k) < 1e-9) {
+        desc = "two lines  " + varName + " = ±z";
+      } else if (k > 0) {
+        desc = "hyperbola  " + varName + "² − z² = " + k.toFixed(2);
+      } else {
+        desc = "hyperbola  z² − " + varName + "² = " + (-k).toFixed(2);
+      }
+      readout.textContent = "Slice " + sliceAxis + " = " + cVal.toFixed(2) + ":  " + desc;
+    }
+    render();
+  }
+
+  // ---------- rendering / animation (starts PAUSED) ----------
+  var playing = false;
+  var rafId = null;
+
+  function render() { renderer.render(scene, camera); }
+
+  function animate() {
+    if (!playing) return;
+    theta += 0.006;
+    placeCamera();
+    render();
+    rafId = requestAnimationFrame(animate);
+  }
+
+  var playBtn = document.getElementById("playBtn");
+  playBtn.addEventListener("click", function () {
+    playing = !playing;
+    playBtn.innerHTML = playing ? "&#10074;&#10074; Pause" : "&#9654; Rotate";
+    playBtn.classList.toggle("active", playing);
+    if (playing) animate();
+    else if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+  });
+
+  // ---------- drag to rotate ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  var el = renderer.domElement;
+  function startDrag(x, y) { dragging = true; lastX = x; lastY = y; }
+  function moveDrag(x, y) {
+    if (!dragging) return;
+    theta -= (x - lastX) * 0.008;
+    phi = Math.min(Math.PI - 0.05, Math.max(0.05, phi - (y - lastY) * 0.008));
+    lastX = x; lastY = y;
+    placeCamera();
+    if (!playing) render();
+  }
+  el.addEventListener("mousedown", function (e) { startDrag(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { moveDrag(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  el.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { startDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  el.addEventListener("touchmove", function (e) {
+    if (e.touches.length === 1) { moveDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- controls ----------
+  var btns = { x: document.getElementById("btnX"), y: document.getElementById("btnY"), z: document.getElementById("btnZ") };
+  Object.keys(btns).forEach(function (ax) {
+    btns[ax].addEventListener("click", function () {
+      sliceAxis = ax;
+      Object.keys(btns).forEach(function (a) { btns[a].classList.toggle("active", a === ax); });
+      updateSlice();
+    });
+  });
+
+  var slider = document.getElementById("cSlider");
+  slider.addEventListener("input", function () {
+    cVal = parseFloat(slider.value);
+    document.getElementById("cLabel").textContent = "c = " + cVal.toFixed(2);
+    updateSlice();
+  });
+
+  // ---------- sizing (fills iframe) ----------
+  function resize() {
+    var w = document.getElementById("app").clientWidth;
+    var used = document.getElementById("controls").offsetHeight +
+               document.getElementById("sliderRow").offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(220, window.innerHeight - used - 4);
+    renderer.setSize(w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    render();
+  }
+  window.addEventListener("resize", resize);
+
+  // ---------- initial state: paused, z = 0 slice ----------
+  placeCamera();
+  resize();
+  updateSlice();
+})();
+</script>
+</body>
+</html>

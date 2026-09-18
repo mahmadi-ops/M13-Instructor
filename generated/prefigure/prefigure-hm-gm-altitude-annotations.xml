@@ -1,0 +1,84 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-hm-gm-altitude-figure" speech2="A right triangle A B C with the right angle at C. The hypotenuse A B is horizontal, running from A on the left to B on the right. The altitude from C meets the hypotenuse at right angles at the point D, splitting it into a left piece of length a and a right piece of length b. The altitude itself has length h. The two small triangles A D C and D B C, shaded in different colors, are similar to the whole triangle and to each other, which forces a over h to equal h over b, so h is the square root of a b, the geometric mean of a and b.">
+      <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hm-gm-altitude-ga-triangle</active>
+        <active>prefigure-hm-gm-altitude-ga-right-c</active>
+        <active>prefigure-hm-gm-altitude-ga-altitude</active>
+        <active>prefigure-hm-gm-altitude-ga-right-d</active>
+        <active>prefigure-hm-gm-altitude-ga-tri-left</active>
+        <active>prefigure-hm-gm-altitude-ga-tri-right</active>
+        <active>prefigure-hm-gm-altitude-ga-label-a</active>
+        <active>prefigure-hm-gm-altitude-ga-label-b</active>
+      </children>
+      <components>
+        <active>prefigure-hm-gm-altitude-ga-triangle</active>
+        <active>prefigure-hm-gm-altitude-ga-right-c</active>
+        <active>prefigure-hm-gm-altitude-ga-altitude</active>
+        <active>prefigure-hm-gm-altitude-ga-right-d</active>
+        <active>prefigure-hm-gm-altitude-ga-tri-left</active>
+        <active>prefigure-hm-gm-altitude-ga-tri-right</active>
+        <active>prefigure-hm-gm-altitude-ga-label-a</active>
+        <active>prefigure-hm-gm-altitude-ga-label-b</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-triangle" speech2="The right triangle A B C, with the right angle at the top vertex C and the hypotenuse A B along the bottom.">
+      <active>prefigure-hm-gm-altitude-ga-triangle</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-right-c" speech2="The right angle marker at C, on the hypotenuse A B.">
+      <active>prefigure-hm-gm-altitude-ga-right-c</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-altitude" speech2="The altitude from C down to the point D on the hypotenuse, drawn in blue, of length h equal to the square root of a b.">
+      <active>prefigure-hm-gm-altitude-ga-altitude</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-right-d" speech2="The right angle marker at D, showing that the altitude meets the hypotenuse perpendicularly.">
+      <active>prefigure-hm-gm-altitude-ga-right-d</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-tri-left" speech2="The left small triangle A D C, shaded light blue, with legs a and h. It is similar to the whole triangle.">
+      <active>prefigure-hm-gm-altitude-ga-tri-left</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-tri-right" speech2="The right small triangle D B C, shaded light orange, with legs b and h. It too is similar to the whole triangle, so the ratio a to h equals the ratio h to b.">
+      <active>prefigure-hm-gm-altitude-ga-tri-right</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-label-a" speech2="The label a for the left piece of the hypotenuse, from A to D, of length 4.">
+      <active>prefigure-hm-gm-altitude-ga-label-a</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-altitude-ga-label-b" speech2="The label b for the right piece of the hypotenuse, from D to B, of length 1.">
+      <active>prefigure-hm-gm-altitude-ga-label-b</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-hm-gm-altitude-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

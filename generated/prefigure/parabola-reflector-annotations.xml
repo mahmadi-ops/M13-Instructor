@@ -1,0 +1,42 @@
+<diagram>
+  <annotations>
+    <annotation id="parabola-reflector-dish" speech2="A parabolic reflector: incoming rays parallel to the axis all reflect to the focus">
+      <grouped>parabola-reflector-dish</grouped>
+      <position>1</position>
+      <children>
+        <active>parabola-reflector-dish</active>
+        <active>parabola-reflector-rays</active>
+        <active>parabola-reflector-focus</active>
+      </children>
+      <components>
+        <active>parabola-reflector-dish</active>
+        <active>parabola-reflector-rays</active>
+        <active>parabola-reflector-focus</active>
+      </components>
+    </annotation>
+    <annotation id="parabola-reflector-dish" speech2="The parabolic cross-section of the dish, a blue upward curve" sonify="yes">
+      <active>parabola-reflector-dish</active>
+      <position>1</position>
+      <parents>
+        <grouped>parabola-reflector-dish</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>parabola-reflector-dish</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="parabola-reflector-rays" speech2="Four vertical incoming rays, each striking the dish and reflecting to a single common point">
+      <active>parabola-reflector-rays</active>
+      <position>2</position>
+      <parents>
+        <grouped>parabola-reflector-dish</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-reflector-focus" speech2="The focus, where every reflected ray converges; the receiver is placed here">
+      <active>parabola-reflector-focus</active>
+      <position>3</position>
+      <parents>
+        <grouped>parabola-reflector-dish</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

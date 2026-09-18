@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Approximating <span class="process-math">\(e^x\)</span> using a Taylor polynomial.</span>
+</h2>
+<div class="para">Approximate <span class="process-math">\(e^{0.5}\)</span> using the Taylor polynomial of degree 2 at <span class="process-math">\(x=0\text{.}\)</span> Find an upper bound for the error in this approximation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We will approximate <span class="process-math">\(f(x) = e^x\)</span> using the Taylor polynomial of degree 2 at <span class="process-math">\(x=0\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_2(x) = 1 + x + \frac{x^2}{2}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">We want to approximate <span class="process-math">\(e^{0.5}\text{.}\)</span> The error term is given by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R_2(0.5) = \frac{f^{(3)}(c)}{3!} (0.5)^3
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">We do not know the value of <span class="process-math">\(c\text{,}\)</span> so we use the idea of <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a> and bound <span class="process-math">\(|f^{(3)}(c)|\)</span> instead. Since <span class="process-math">\(f^{(3)}(x) = e^x\)</span> is increasing and <span class="process-math">\(c\)</span> lies between <span class="process-math">\(0\)</span> and <span class="process-math">\(0.5\text{,}\)</span> we may take <span class="process-math">\(M = e^{0.5}\text{,}\)</span> and therefore:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+|R_2(0.5)| \leq \frac{e^{0.5}}{6} (0.5)^3
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Therefore, the error in approximating <span class="process-math">\(e^{0.5}\)</span> using the Taylor polynomial of degree 2 is bounded by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|R_2(0.5)| \leq \frac{e^{0.5}}{6} (0.125) \approx 0.03435
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">In fact, if we compute the actual value of <span class="process-math">\(e^{0.5}\)</span> and compare it with the approximation given by <span class="process-math">\(p_2(0.5)\text{,}\)</span> we find that the actual error is <span class="process-math">\(e^{0.5} - p_2(0.5) \approx 0.02372\text{,}\)</span> which is indeed less than the upper bound we calculated.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="interactive-iframe-container">
+<iframe id="ex-error-bound-exp-3-6" style="width:570px; height:392px; display: block; " src="ex-error-bound-exp-3-6-if.html" title="described in detail following the image" aria-describedby="ex-error-bound-exp-3-6-description"></iframe><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="ex-error-bound-exp-3-6-description">
+<div class="para" id="ex-error-bound-exp-3-6-1-1">The red curve is the graph of <span class="process-math">\(f(x) = e^x\)</span> and the blue curve is the graph of the Taylor polynomial <span class="process-math">\(p_2(x)\text{.}\)</span> The exact value of <span class="process-math">\(e^{0.5}\)</span> is represented by the red point and the approximation given by <span class="process-math">\(p_2(0.5)\)</span> is represented by the blue point. The vertical distance between the two points represents the error in the approximation. Note that the error is less than the upper bound we calculated, i.e., <span class="process-math">\(0.03435\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="interactive-iframe-container__opener"><a href="ex-error-bound-exp-3-6.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="para">The red curve is the graph of <span class="process-math">\(f(x) = e^x\)</span> and the blue curve is the graph of the Taylor polynomial <span class="process-math">\(p_2(x)\text{.}\)</span> The exact value of <span class="process-math">\(e^{0.5}\)</span> is represented by the red point and the approximation given by <span class="process-math">\(p_2(0.5)\)</span> is represented by the blue point. The vertical distance between the two points represents the error in the approximation. Note that the error is less than the upper bound we calculated, i.e., <span class="process-math">\(0.03435\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-bound-exp-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.8.1"><a tabindex="-1" href="#ex-error-bound-exp-3" title="Copy heading and permalink for Solution 2.3.8.1" aria-label="Copy heading and permalink for Solution 2.3.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.8: Approximating e^x using a Taylor polynomial"><a tabindex="-1" href="#ex-error-bound-exp" title="Copy heading and permalink for Example 2.3.8: Approximating e^x using a Taylor polynomial" aria-label="Copy heading and permalink for Example 2.3.8: Approximating e^x using a Taylor polynomial">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="subsection-3.html#ex-error-bound-exp">In Context</a></span>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-skel-hyp-sinh-figure" speech2="Three curves on a coordinate grid. A dark red curve, y equals hyperbolic sine of x, rises from the lower left through the origin to the upper right. A light blue curve, y equals one half e to the x, lies just above it on the right, and an orange curve, y equals negative one half e to the negative x, lies just below it on the left.">
+      <grouped>prefigure-skel-hyp-sinh-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-skel-hyp-sinh-grid-axes</active>
+        <active>prefigure-skel-hyp-sinh-sh-s</active>
+        <active>prefigure-skel-hyp-sinh-sh-ep</active>
+        <active>prefigure-skel-hyp-sinh-sh-em</active>
+      </children>
+      <components>
+        <active>prefigure-skel-hyp-sinh-grid-axes</active>
+        <active>prefigure-skel-hyp-sinh-sh-s</active>
+        <active>prefigure-skel-hyp-sinh-sh-ep</active>
+        <active>prefigure-skel-hyp-sinh-sh-em</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-sinh-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-skel-hyp-sinh-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-skel-hyp-sinh-grid</active>
+        <active>prefigure-skel-hyp-sinh-axes</active>
+      </children>
+      <components>
+        <active>prefigure-skel-hyp-sinh-grid</active>
+        <active>prefigure-skel-hyp-sinh-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-skel-hyp-sinh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-sinh-grid" speech2="The coordinate grid">
+      <active>prefigure-skel-hyp-sinh-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-sinh-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-sinh-axes" speech2="The coordinate axes">
+      <active>prefigure-skel-hyp-sinh-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-sinh-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-sinh-sh-s" speech2="The graph of hyperbolic sine: an increasing curve through the origin, odd about the origin.">
+      <active>prefigure-skel-hyp-sinh-sh-s</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-sinh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-sinh-sh-ep" speech2="The exponential one half e to the x, which hyperbolic sine approaches as x grows.">
+      <active>prefigure-skel-hyp-sinh-sh-ep</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-sinh-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-skel-hyp-sinh-sh-em" speech2="The exponential negative one half e to the negative x, which hyperbolic sine approaches as x decreases.">
+      <active>prefigure-skel-hyp-sinh-sh-em</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-skel-hyp-sinh-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

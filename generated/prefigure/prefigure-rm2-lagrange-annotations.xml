@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rm2-lagrange-figure" speech2="A blue parabola y equals x squared minus twelve, drawn for y less than or equal to zero, opens upward with vertex at zero comma negative twelve. A dashed vermillion hyperbola branch x y equals sixteen in the third quadrant touches the parabola at negative two comma negative eight, and a dashed green hyperbola branch x y equals negative sixteen in the fourth quadrant touches it at two comma negative eight.">
+      <grouped>prefigure-rm2-lagrange-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rm2-lagrange-grid-axes</active>
+        <active>prefigure-rm2-lagrange-lm-par</active>
+        <active>prefigure-rm2-lagrange-lm-hp</active>
+        <active>prefigure-rm2-lagrange-lm-hm</active>
+      </children>
+      <components>
+        <active>prefigure-rm2-lagrange-grid-axes</active>
+        <active>prefigure-rm2-lagrange-lm-par</active>
+        <active>prefigure-rm2-lagrange-lm-hp</active>
+        <active>prefigure-rm2-lagrange-lm-hm</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rm2-lagrange-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rm2-lagrange-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rm2-lagrange-grid</active>
+        <active>prefigure-rm2-lagrange-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rm2-lagrange-grid</active>
+        <active>prefigure-rm2-lagrange-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rm2-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lagrange-grid" speech2="The coordinate grid">
+      <active>prefigure-rm2-lagrange-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rm2-lagrange-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lagrange-axes" speech2="The coordinate axes">
+      <active>prefigure-rm2-lagrange-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rm2-lagrange-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lagrange-lm-par" speech2="The constraint curve, the portion of the parabola y equals x squared minus twelve with y at most zero.">
+      <active>prefigure-rm2-lagrange-lm-par</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rm2-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lagrange-lm-hp" speech2="The level curve x y equals sixteen, tangent to the parabola at the maximum point negative two comma negative eight.">
+      <active>prefigure-rm2-lagrange-lm-hp</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rm2-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lagrange-lm-hm" speech2="The level curve x y equals negative sixteen, tangent to the parabola at the minimum point two comma negative eight.">
+      <active>prefigure-rm2-lagrange-lm-hm</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rm2-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-fsv-elliptic-figure" width="354" height="444" viewBox="0 0 354 444">
+  <defs>
+    <clipPath id="prefigure-fsv-elliptic-__clipPath-0">
+      <rect x="12.0" y="12.0" width="330.0" height="420.0"/>
+    </clipPath>
+    <clipPath id="prefigure-fsv-elliptic-__clipPath-1">
+      <rect x="12.0" y="12.0" width="330.0" height="420.0"/>
+    </clipPath>
+    <marker id="prefigure-fsv-elliptic-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="prefigure-fsv-elliptic-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-fsv-elliptic-arrow-head-start-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-fsv-elliptic-arrow-head-start-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="prefigure-fsv-elliptic-el-axes" stroke="black" stroke-width="2">
+    <line id="prefigure-fsv-elliptic-__line-0" x1="12.0" y1="222.0" x2="342.0" y2="222.0" stroke="black" stroke-width="2" marker-end="url(#prefigure-fsv-elliptic-arrow-head-end-2_None_24_60-black)"/>
+    <line id="prefigure-fsv-elliptic-__line-1" x1="177.0" y1="432.0" x2="177.0" y2="12.0" stroke="black" stroke-width="2" marker-end="url(#prefigure-fsv-elliptic-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="prefigure-fsv-elliptic-__label-0" transform="translate(336.0,216.0) translate(-10.4,-8.2)">
+    <g id="prefigure-fsv-elliptic-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-fsv-elliptic-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#prefigure-fsv-elliptic-MJX-2-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-fsv-elliptic-__label-1" transform="translate(183.0,18.0) translate(0.0,-0.0)">
+    <g id="prefigure-fsv-elliptic-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-fsv-elliptic-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-fsv-elliptic-MJX-3-TEX-I-1D466"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="prefigure-fsv-elliptic-el-e1" d="M 227.9 222.0 L 227.9 219.5 L 227.8 217.0 L 227.7 214.5 L 227.5 212.0 L 227.0 207.0 L 226.3 202.1 L 225.4 197.3 L 224.3 192.6 L 223.0 188.0 L 221.6 183.5 L 220.0 179.2 L 218.2 175.0 L 216.2 171.1 L 214.1 167.3 L 211.8 163.7 L 209.4 160.4 L 206.9 157.3 L 204.3 154.5 L 201.5 152.0 L 198.7 149.7 L 195.7 147.7 L 192.7 146.0 L 189.7 144.6 L 186.5 143.5 L 183.4 142.7 L 180.2 142.2 L 177.0 142.1 L 173.8 142.2 L 170.6 142.7 L 167.5 143.5 L 164.3 144.6 L 161.3 146.0 L 158.3 147.7 L 155.3 149.7 L 152.5 152.0 L 149.7 154.5 L 147.1 157.3 L 144.6 160.4 L 142.2 163.7 L 139.9 167.3 L 137.8 171.1 L 135.8 175.0 L 134.0 179.2 L 132.4 183.5 L 131.0 188.0 L 129.7 192.6 L 128.6 197.3 L 127.7 202.1 L 127.0 207.0 L 126.5 212.0 L 126.3 214.5 L 126.2 217.0 L 126.1 219.5 L 126.1 222.0 L 126.1 224.5 L 126.2 227.0 L 126.3 229.5 L 126.5 232.0 L 127.0 237.0 L 127.7 241.9 L 128.6 246.7 L 129.7 251.4 L 131.0 256.0 L 132.4 260.5 L 134.0 264.8 L 135.8 269.0 L 137.8 272.9 L 139.9 276.7 L 142.2 280.3 L 144.6 283.6 L 147.1 286.7 L 149.7 289.5 L 152.5 292.0 L 155.3 294.3 L 158.3 296.3 L 161.3 298.0 L 164.3 299.4 L 167.5 300.5 L 170.6 301.3 L 173.8 301.8 L 177.0 301.9 L 180.2 301.8 L 183.4 301.3 L 186.5 300.5 L 189.7 299.4 L 192.7 298.0 L 195.7 296.3 L 198.7 294.3 L 201.5 292.0 L 204.3 289.5 L 206.9 286.7 L 209.4 283.6 L 211.8 280.3 L 214.1 276.7 L 216.2 272.9 L 218.2 269.0 L 220.0 264.8 L 221.6 260.5 L 223.0 256.0 L 224.3 251.4 L 225.4 246.7 L 226.3 241.9 L 227.0 237.0 L 227.5 232.0 L 227.7 229.5 L 227.8 227.0 L 227.9 224.5 L 227.9 222.0" stroke="#00441B" stroke-width="2" fill="none" clip-path="url(#prefigure-fsv-elliptic-__clipPath-1)"/>
+  <path id="prefigure-fsv-elliptic-el-e2" d="M 249.0 222.0 L 248.9 218.4 L 248.8 214.9 L 248.7 211.4 L 248.4 207.8 L 248.1 204.3 L 247.7 200.8 L 247.2 197.3 L 246.7 193.9 L 246.1 190.5 L 245.5 187.1 L 244.7 183.7 L 243.9 180.4 L 243.1 177.1 L 242.1 173.9 L 241.1 170.7 L 240.1 167.5 L 239.0 164.5 L 237.8 161.4 L 236.5 158.5 L 235.2 155.6 L 233.9 152.7 L 232.5 149.9 L 231.0 147.2 L 229.5 144.6 L 227.9 142.1 L 226.3 139.6 L 224.6 137.2 L 222.9 134.9 L 221.1 132.7 L 219.3 130.6 L 217.5 128.5 L 215.6 126.6 L 213.6 124.7 L 211.7 122.9 L 209.7 121.3 L 207.6 119.7 L 205.6 118.3 L 203.5 116.9 L 199.2 114.5 L 194.9 112.5 L 190.5 111.0 L 186.0 109.9 L 181.5 109.2 L 177.0 109.0 L 172.5 109.2 L 168.0 109.9 L 163.5 111.0 L 159.1 112.5 L 154.8 114.5 L 150.5 116.9 L 148.4 118.3 L 146.4 119.7 L 144.3 121.3 L 142.3 122.9 L 140.4 124.7 L 138.4 126.6 L 136.5 128.5 L 134.7 130.6 L 132.9 132.7 L 131.1 134.9 L 129.4 137.2 L 127.7 139.6 L 126.1 142.1 L 124.5 144.6 L 123.0 147.3 L 121.5 150.0 L 120.1 152.7 L 118.8 155.6 L 117.5 158.5 L 116.2 161.4 L 115.0 164.5 L 113.9 167.5 L 112.9 170.7 L 111.9 173.9 L 110.9 177.1 L 110.1 180.4 L 109.3 183.7 L 108.5 187.1 L 107.9 190.5 L 107.3 193.9 L 106.8 197.3 L 106.3 200.8 L 105.9 204.3 L 105.6 207.8 L 105.3 211.4 L 105.2 214.9 L 105.1 218.5 L 105.0 222.0 L 105.1 225.6 L 105.2 229.1 L 105.3 232.6 L 105.6 236.2 L 105.9 239.7 L 106.3 243.2 L 106.8 246.7 L 107.3 250.1 L 107.9 253.5 L 108.5 256.9 L 109.3 260.3 L 110.1 263.6 L 110.9 266.9 L 111.9 270.1 L 112.9 273.3 L 113.9 276.5 L 115.0 279.5 L 116.2 282.6 L 117.5 285.5 L 118.8 288.4 L 120.1 291.3 L 121.5 294.1 L 123.0 296.8 L 124.5 299.4 L 126.1 301.9 L 127.7 304.4 L 129.4 306.8 L 131.1 309.1 L 132.9 311.3 L 134.7 313.4 L 136.5 315.5 L 138.4 317.4 L 140.4 319.3 L 142.3 321.1 L 144.3 322.7 L 146.4 324.3 L 148.4 325.7 L 150.5 327.1 L 154.8 329.5 L 159.1 331.5 L 163.5 333.0 L 168.0 334.1 L 172.5 334.8 L 177.0 335.0 L 181.5 334.8 L 186.0 334.1 L 190.5 333.0 L 194.9 331.5 L 199.2 329.5 L 203.5 327.1 L 205.6 325.7 L 207.6 324.3 L 209.7 322.7 L 211.7 321.1 L 213.6 319.3 L 215.6 317.4 L 217.5 315.5 L 219.3 313.4 L 221.1 311.3 L 222.9 309.1 L 224.6 306.8 L 226.3 304.4 L 227.9 301.9 L 229.5 299.4 L 231.0 296.7 L 232.5 294.0 L 233.9 291.3 L 235.2 288.4 L 236.5 285.5 L 237.8 282.6 L 239.0 279.5 L 240.1 276.5 L 241.1 273.3 L 242.1 270.1 L 243.1 266.9 L 243.9 263.6 L 244.7 260.3 L 245.5 256.9 L 246.1 253.5 L 246.7 250.1 L 247.2 246.7 L 247.7 243.2 L 248.1 239.7 L 248.4 236.2 L 248.7 232.6 L 248.8 229.1 L 248.9 225.5 L 249.0 222.0" stroke="#0B6B3A" stroke-width="2" fill="none" clip-path="url(#prefigure-fsv-elliptic-__clipPath-1)"/>
+  <path id="prefigure-fsv-elliptic-el-e3" d="M 265.1 222.0 L 265.1 217.7 L 265.0 213.3 L 264.8 209.0 L 264.4 204.6 L 264.1 200.3 L 263.6 196.1 L 263.0 191.8 L 262.4 187.6 L 261.6 183.4 L 260.8 179.2 L 259.9 175.1 L 259.0 171.0 L 257.9 167.0 L 256.8 163.1 L 255.5 159.1 L 254.2 155.3 L 252.9 151.5 L 251.4 147.8 L 249.9 144.2 L 248.3 140.6 L 246.6 137.1 L 244.9 133.8 L 243.1 130.4 L 241.3 127.2 L 239.3 124.1 L 237.3 121.1 L 235.3 118.2 L 233.2 115.3 L 231.0 112.6 L 228.8 110.0 L 226.5 107.5 L 224.2 105.1 L 221.9 102.8 L 219.5 100.7 L 217.0 98.6 L 214.5 96.7 L 212.0 94.9 L 209.4 93.3 L 206.9 91.7 L 204.2 90.3 L 201.6 89.1 L 198.9 87.9 L 196.2 86.9 L 193.5 86.0 L 190.8 85.3 L 188.0 84.7 L 185.3 84.2 L 182.5 83.8 L 179.8 83.6 L 177.0 83.6 L 174.2 83.6 L 171.5 83.8 L 168.7 84.2 L 166.0 84.7 L 163.2 85.3 L 160.5 86.0 L 157.8 86.9 L 155.1 87.9 L 152.4 89.1 L 149.8 90.3 L 147.1 91.7 L 144.6 93.3 L 142.0 94.9 L 139.5 96.7 L 137.0 98.7 L 134.5 100.7 L 132.1 102.8 L 129.8 105.1 L 127.5 107.5 L 125.2 110.0 L 123.0 112.6 L 120.8 115.3 L 118.7 118.2 L 116.7 121.1 L 114.7 124.1 L 112.7 127.2 L 110.9 130.4 L 109.1 133.8 L 107.4 137.2 L 105.7 140.6 L 104.1 144.2 L 102.6 147.8 L 101.1 151.5 L 99.8 155.3 L 98.5 159.2 L 97.2 163.1 L 96.1 167.0 L 95.0 171.0 L 94.1 175.1 L 93.2 179.2 L 92.4 183.4 L 91.6 187.6 L 91.0 191.8 L 90.4 196.1 L 89.9 200.3 L 89.6 204.6 L 89.2 209.0 L 89.0 213.3 L 88.9 217.7 L 88.9 222.0 L 88.9 226.3 L 89.0 230.7 L 89.2 235.0 L 89.6 239.4 L 89.9 243.7 L 90.4 247.9 L 91.0 252.2 L 91.6 256.4 L 92.4 260.6 L 93.2 264.8 L 94.1 268.9 L 95.0 273.0 L 96.1 277.0 L 97.2 280.9 L 98.5 284.9 L 99.8 288.7 L 101.1 292.5 L 102.6 296.2 L 104.1 299.8 L 105.7 303.4 L 107.4 306.9 L 109.1 310.2 L 110.9 313.6 L 112.7 316.8 L 114.7 319.9 L 116.7 322.9 L 118.7 325.8 L 120.8 328.7 L 123.0 331.4 L 125.2 334.0 L 127.5 336.5 L 129.8 338.9 L 132.1 341.2 L 134.5 343.3 L 137.0 345.4 L 139.5 347.3 L 142.0 349.1 L 144.6 350.7 L 147.1 352.3 L 149.8 353.7 L 152.4 354.9 L 155.1 356.1 L 157.8 357.1 L 160.5 358.0 L 163.2 358.7 L 166.0 359.3 L 168.7 359.8 L 171.5 360.2 L 174.2 360.4 L 177.0 360.4 L 179.8 360.4 L 182.5 360.2 L 185.3 359.8 L 188.0 359.3 L 190.8 358.7 L 193.5 358.0 L 196.2 357.1 L 198.9 356.1 L 201.6 354.9 L 204.2 353.7 L 206.9 352.3 L 209.4 350.7 L 212.0 349.1 L 214.5 347.3 L 217.0 345.3 L 219.5 343.3 L 221.9 341.2 L 224.2 338.9 L 226.5 336.5 L 228.8 334.0 L 231.0 331.4 L 233.2 328.7 L 235.3 325.8 L 237.3 322.9 L 239.3 319.9 L 241.3 316.8 L 243.1 313.6 L 244.9 310.2 L 246.6 306.8 L 248.3 303.4 L 249.9 299.8 L 251.4 296.2 L 252.9 292.5 L 254.2 288.7 L 255.5 284.8 L 256.8 280.9 L 257.9 277.0 L 259.0 273.0 L 259.9 268.9 L 260.8 264.8 L 261.6 260.6 L 262.4 256.4 L 263.0 252.2 L 263.6 247.9 L 264.1 243.7 L 264.4 239.3 L 264.8 235.0 L 265.0 230.7 L 265.1 226.3 L 265.1 222.0" stroke="#2C9153" stroke-width="2" fill="none" clip-path="url(#prefigure-fsv-elliptic-__clipPath-1)"/>
+  <path id="prefigure-fsv-elliptic-el-e4" d="M 278.8 222.0 L 278.8 219.5 L 278.7 217.0 L 278.7 214.5 L 278.6 212.0 L 278.5 209.5 L 278.3 207.0 L 278.2 204.5 L 278.0 202.0 L 277.5 197.0 L 277.0 192.0 L 276.3 187.1 L 275.6 182.2 L 274.7 177.4 L 273.8 172.6 L 272.8 167.8 L 271.6 163.2 L 270.4 158.5 L 269.1 153.9 L 267.7 149.4 L 266.2 145.0 L 264.6 140.6 L 262.9 136.3 L 261.2 132.1 L 259.3 128.0 L 257.4 124.0 L 255.4 120.1 L 253.3 116.3 L 251.2 112.6 L 249.0 109.0 L 246.7 105.5 L 244.3 102.1 L 241.9 98.8 L 239.4 95.7 L 236.8 92.7 L 234.2 89.8 L 231.5 87.0 L 228.8 84.4 L 226.0 81.9 L 223.2 79.6 L 220.3 77.4 L 217.4 75.3 L 214.5 73.4 L 211.5 71.6 L 208.5 70.0 L 205.4 68.5 L 202.3 67.2 L 199.2 66.0 L 196.1 65.0 L 192.9 64.1 L 189.8 63.4 L 186.6 62.9 L 183.4 62.5 L 180.2 62.2 L 177.0 62.1 L 173.8 62.2 L 170.6 62.5 L 167.4 62.9 L 164.2 63.4 L 161.1 64.1 L 157.9 65.0 L 154.8 66.0 L 151.7 67.2 L 148.6 68.5 L 145.5 70.0 L 142.5 71.6 L 139.5 73.4 L 136.6 75.3 L 133.7 77.4 L 130.8 79.6 L 128.0 81.9 L 125.2 84.4 L 122.5 87.0 L 119.8 89.8 L 117.2 92.7 L 114.6 95.7 L 112.1 98.8 L 109.7 102.1 L 107.3 105.5 L 105.0 109.0 L 102.8 112.6 L 100.7 116.3 L 98.6 120.1 L 96.6 124.0 L 94.7 128.0 L 92.8 132.1 L 91.1 136.3 L 89.4 140.6 L 87.8 145.0 L 86.3 149.4 L 84.9 153.9 L 83.6 158.5 L 82.4 163.2 L 81.2 167.9 L 80.2 172.6 L 79.3 177.4 L 78.4 182.2 L 77.7 187.1 L 77.0 192.0 L 76.5 197.0 L 76.0 202.0 L 75.8 204.5 L 75.7 207.0 L 75.5 209.5 L 75.4 212.0 L 75.3 214.5 L 75.3 217.0 L 75.2 219.5 L 75.2 222.0 L 75.2 224.5 L 75.3 227.0 L 75.3 229.5 L 75.4 232.0 L 75.5 234.5 L 75.7 237.0 L 75.8 239.5 L 76.0 242.0 L 76.5 247.0 L 77.0 252.0 L 77.7 256.9 L 78.4 261.8 L 79.3 266.6 L 80.2 271.4 L 81.2 276.2 L 82.4 280.8 L 83.6 285.5 L 84.9 290.1 L 86.3 294.6 L 87.8 299.0 L 89.4 303.4 L 91.1 307.7 L 92.8 311.9 L 94.7 316.0 L 96.6 320.0 L 98.6 323.9 L 100.7 327.7 L 102.8 331.4 L 105.0 335.0 L 107.3 338.5 L 109.7 341.9 L 112.1 345.2 L 114.6 348.3 L 117.2 351.3 L 119.8 354.2 L 122.5 357.0 L 125.2 359.6 L 128.0 362.1 L 130.8 364.4 L 133.7 366.6 L 136.6 368.7 L 139.5 370.6 L 142.5 372.4 L 145.6 374.0 L 148.6 375.5 L 151.7 376.8 L 154.8 378.0 L 157.9 379.0 L 161.1 379.9 L 164.2 380.6 L 167.4 381.1 L 170.6 381.5 L 173.8 381.8 L 177.0 381.9 L 180.2 381.8 L 183.4 381.5 L 186.6 381.1 L 189.8 380.6 L 192.9 379.9 L 196.1 379.0 L 199.2 378.0 L 202.3 376.8 L 205.4 375.5 L 208.5 374.0 L 211.5 372.4 L 214.5 370.6 L 217.4 368.7 L 220.3 366.6 L 223.2 364.4 L 226.0 362.1 L 228.8 359.6 L 231.5 357.0 L 234.2 354.2 L 236.8 351.3 L 239.4 348.3 L 241.9 345.2 L 244.3 341.9 L 246.7 338.5 L 249.0 335.0 L 251.2 331.4 L 253.3 327.7 L 255.4 323.9 L 257.4 320.0 L 259.3 316.0 L 261.2 311.9 L 262.9 307.7 L 264.6 303.4 L 266.2 299.0 L 267.7 294.6 L 269.1 290.1 L 270.4 285.5 L 271.6 280.8 L 272.8 276.1 L 273.8 271.4 L 274.7 266.6 L 275.6 261.8 L 276.3 256.9 L 277.0 252.0 L 277.5 247.0 L 278.0 242.0 L 278.2 239.5 L 278.3 237.0 L 278.5 234.5 L 278.6 232.0 L 278.7 229.5 L 278.7 227.0 L 278.8 224.5 L 278.8 222.0" stroke="#57B36B" stroke-width="2" fill="none" clip-path="url(#prefigure-fsv-elliptic-__clipPath-1)"/>
+  <path id="prefigure-fsv-elliptic-el-e5" d="M 290.8 222.0 L 290.8 219.2 L 290.7 216.4 L 290.7 213.6 L 290.6 210.8 L 290.4 208.0 L 290.3 205.2 L 290.1 202.4 L 289.9 199.6 L 289.7 196.8 L 289.4 194.0 L 289.1 191.3 L 288.8 188.5 L 288.4 185.8 L 288.1 183.0 L 287.6 180.3 L 287.2 177.6 L 286.8 174.8 L 286.3 172.1 L 285.8 169.4 L 285.2 166.8 L 284.7 164.1 L 284.1 161.5 L 283.4 158.8 L 282.8 156.2 L 282.1 153.6 L 281.4 151.0 L 280.7 148.5 L 280.0 145.9 L 279.2 143.4 L 278.4 140.9 L 277.6 138.4 L 276.7 135.9 L 275.8 133.4 L 274.9 131.0 L 274.0 128.6 L 273.1 126.2 L 272.1 123.9 L 271.1 121.5 L 270.1 119.2 L 269.1 116.9 L 266.9 112.5 L 264.7 108.1 L 262.4 103.8 L 260.0 99.7 L 257.5 95.6 L 254.9 91.7 L 252.3 87.9 L 249.5 84.3 L 246.7 80.8 L 243.9 77.4 L 241.0 74.2 L 238.0 71.1 L 234.9 68.2 L 231.8 65.4 L 228.7 62.8 L 225.5 60.3 L 222.2 58.0 L 218.9 55.8 L 215.5 53.8 L 212.2 52.0 L 208.7 50.4 L 205.3 48.9 L 201.8 47.6 L 198.3 46.4 L 194.8 45.5 L 191.3 44.7 L 187.7 44.1 L 184.1 43.6 L 180.6 43.4 L 177.0 43.3 L 173.4 43.4 L 169.9 43.6 L 166.3 44.1 L 162.7 44.7 L 159.2 45.5 L 155.7 46.4 L 152.2 47.6 L 148.7 48.9 L 145.3 50.4 L 141.8 52.0 L 138.5 53.8 L 135.1 55.8 L 131.8 58.0 L 128.5 60.3 L 125.3 62.8 L 122.2 65.4 L 119.1 68.2 L 116.0 71.1 L 113.0 74.2 L 110.1 77.4 L 107.3 80.8 L 104.5 84.3 L 101.7 87.9 L 99.1 91.7 L 96.5 95.6 L 94.0 99.7 L 91.6 103.8 L 89.3 108.1 L 87.1 112.5 L 84.9 116.9 L 83.9 119.2 L 82.9 121.5 L 81.9 123.9 L 80.9 126.2 L 80.0 128.6 L 79.1 131.0 L 78.2 133.5 L 77.3 135.9 L 76.4 138.4 L 75.6 140.9 L 74.8 143.4 L 74.0 145.9 L 73.3 148.5 L 72.6 151.0 L 71.9 153.6 L 71.2 156.2 L 70.6 158.8 L 69.9 161.5 L 69.3 164.1 L 68.8 166.8 L 68.2 169.4 L 67.7 172.1 L 67.2 174.8 L 66.8 177.6 L 66.4 180.3 L 65.9 183.0 L 65.6 185.8 L 65.2 188.5 L 64.9 191.3 L 64.6 194.0 L 64.3 196.8 L 64.1 199.6 L 63.9 202.4 L 63.7 205.2 L 63.6 208.0 L 63.4 210.8 L 63.3 213.6 L 63.3 216.4 L 63.2 219.2 L 63.2 222.0 L 63.2 224.8 L 63.3 227.6 L 63.3 230.4 L 63.4 233.2 L 63.6 236.0 L 63.7 238.8 L 63.9 241.6 L 64.1 244.4 L 64.3 247.2 L 64.6 250.0 L 64.9 252.7 L 65.2 255.5 L 65.6 258.2 L 65.9 261.0 L 66.4 263.7 L 66.8 266.4 L 67.2 269.2 L 67.7 271.9 L 68.2 274.6 L 68.8 277.2 L 69.3 279.9 L 69.9 282.5 L 70.6 285.2 L 71.2 287.8 L 71.9 290.4 L 72.6 293.0 L 73.3 295.5 L 74.0 298.1 L 74.8 300.6 L 75.6 303.1 L 76.4 305.6 L 77.3 308.1 L 78.2 310.6 L 79.1 313.0 L 80.0 315.4 L 80.9 317.8 L 81.9 320.1 L 82.9 322.5 L 83.9 324.8 L 84.9 327.1 L 87.1 331.5 L 89.3 335.9 L 91.6 340.2 L 94.0 344.3 L 96.5 348.4 L 99.1 352.3 L 101.7 356.1 L 104.5 359.7 L 107.3 363.2 L 110.1 366.6 L 113.0 369.8 L 116.0 372.9 L 119.1 375.8 L 122.2 378.6 L 125.3 381.2 L 128.6 383.7 L 131.8 386.0 L 135.1 388.2 L 138.5 390.2 L 141.8 392.0 L 145.3 393.6 L 148.7 395.1 L 152.2 396.4 L 155.7 397.6 L 159.2 398.5 L 162.7 399.3 L 166.3 399.9 L 169.9 400.4 L 173.4 400.6 L 177.0 400.7 L 180.6 400.6 L 184.1 400.4 L 187.7 399.9 L 191.3 399.3 L 194.8 398.5 L 198.3 397.6 L 201.8 396.4 L 205.3 395.1 L 208.7 393.6 L 212.2 392.0 L 215.5 390.2 L 218.9 388.2 L 222.2 386.0 L 225.5 383.7 L 228.7 381.2 L 231.8 378.6 L 234.9 375.8 L 238.0 372.9 L 241.0 369.8 L 243.9 366.6 L 246.7 363.2 L 249.5 359.7 L 252.3 356.1 L 254.9 352.3 L 257.5 348.4 L 260.0 344.3 L 262.4 340.2 L 264.7 335.9 L 266.9 331.5 L 269.1 327.0 L 270.1 324.8 L 271.1 322.5 L 272.1 320.1 L 273.1 317.8 L 274.0 315.4 L 274.9 313.0 L 275.8 310.5 L 276.7 308.1 L 277.6 305.6 L 278.4 303.1 L 279.2 300.6 L 280.0 298.1 L 280.7 295.5 L 281.4 293.0 L 282.1 290.4 L 282.8 287.8 L 283.4 285.2 L 284.1 282.5 L 284.7 279.9 L 285.2 277.2 L 285.8 274.5 L 286.3 271.9 L 286.8 269.2 L 287.2 266.4 L 287.6 263.7 L 288.1 261.0 L 288.4 258.2 L 288.8 255.5 L 289.1 252.7 L 289.4 250.0 L 289.7 247.2 L 289.9 244.4 L 290.1 241.6 L 290.3 238.8 L 290.4 236.0 L 290.6 233.2 L 290.7 230.4 L 290.7 227.6 L 290.8 224.8 L 290.8 222.0" stroke="#E5D93C" stroke-width="2.5" fill="none" clip-path="url(#prefigure-fsv-elliptic-__clipPath-1)"/>
+  <g id="prefigure-fsv-elliptic-__g-0" transform="translate(19.4,18.7) translate(0.0,-0.0) scale(0.85,0.85)">
+    <rect x="0" y="0" width="99.104" height="105.88000000000001" stroke="black" fill="white" fill-opacity="1"/>
+    <g id="prefigure-fsv-elliptic-legend-label-0" transform="translate(39.0,5.0)">
+      <g id="prefigure-fsv-elliptic-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px" width="55.104px" height="13.536px" role="img" focusable="false" viewBox="0 -666 3044.6 748" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-fsv-elliptic-MJX-4-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-4-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-4-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-4-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="c equals 0.2">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="c">
+                <use data-c="1D450" xlink:href="#prefigure-fsv-elliptic-MJX-4-TEX-I-1D450"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(710.8,0)">
+                <use data-c="3D" xlink:href="#prefigure-fsv-elliptic-MJX-4-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="0.2" transform="translate(1766.6,0)">
+                <use data-c="30" xlink:href="#prefigure-fsv-elliptic-MJX-4-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#prefigure-fsv-elliptic-MJX-4-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="32" xlink:href="#prefigure-fsv-elliptic-MJX-4-TEX-N-32" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <line stroke="#00441B" x1="29" y1="11.768" x2="5" y2="11.768" stroke-width="2"/>
+    <g id="prefigure-fsv-elliptic-legend-label-1" transform="translate(39.0,25.5)">
+      <g id="prefigure-fsv-elliptic-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px" width="55.104px" height="13.736px" role="img" focusable="false" viewBox="0 -677 3044.6 759" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-fsv-elliptic-MJX-5-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-5-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-5-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-5-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-5-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="c equals 0.4">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="c">
+                <use data-c="1D450" xlink:href="#prefigure-fsv-elliptic-MJX-5-TEX-I-1D450"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(710.8,0)">
+                <use data-c="3D" xlink:href="#prefigure-fsv-elliptic-MJX-5-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="0.4" transform="translate(1766.6,0)">
+                <use data-c="30" xlink:href="#prefigure-fsv-elliptic-MJX-5-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#prefigure-fsv-elliptic-MJX-5-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="34" xlink:href="#prefigure-fsv-elliptic-MJX-5-TEX-N-34" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <line stroke="#0B6B3A" x1="29" y1="32.404" x2="5" y2="32.404" stroke-width="2"/>
+    <g id="prefigure-fsv-elliptic-legend-label-2" transform="translate(39.0,46.3)">
+      <g id="prefigure-fsv-elliptic-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px" width="55.104px" height="13.536px" role="img" focusable="false" viewBox="0 -666 3044.6 748" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-fsv-elliptic-MJX-6-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-6-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-6-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-6-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-6-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="c equals 0.6">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="c">
+                <use data-c="1D450" xlink:href="#prefigure-fsv-elliptic-MJX-6-TEX-I-1D450"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(710.8,0)">
+                <use data-c="3D" xlink:href="#prefigure-fsv-elliptic-MJX-6-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="0.6" transform="translate(1766.6,0)">
+                <use data-c="30" xlink:href="#prefigure-fsv-elliptic-MJX-6-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#prefigure-fsv-elliptic-MJX-6-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="36" xlink:href="#prefigure-fsv-elliptic-MJX-6-TEX-N-36" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <line stroke="#2C9153" x1="29" y1="53.040000000000006" x2="5" y2="53.040000000000006" stroke-width="2"/>
+    <g id="prefigure-fsv-elliptic-legend-label-3" transform="translate(39.0,66.8)">
+      <g id="prefigure-fsv-elliptic-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px" width="55.104px" height="13.536px" role="img" focusable="false" viewBox="0 -666 3044.6 748" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-fsv-elliptic-MJX-7-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-7-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-7-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-7-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-7-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="c equals 0.8">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="c">
+                <use data-c="1D450" xlink:href="#prefigure-fsv-elliptic-MJX-7-TEX-I-1D450"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(710.8,0)">
+                <use data-c="3D" xlink:href="#prefigure-fsv-elliptic-MJX-7-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="0.8" transform="translate(1766.6,0)">
+                <use data-c="30" xlink:href="#prefigure-fsv-elliptic-MJX-7-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#prefigure-fsv-elliptic-MJX-7-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="38" xlink:href="#prefigure-fsv-elliptic-MJX-7-TEX-N-38" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <line stroke="#57B36B" x1="29" y1="73.57600000000001" x2="5" y2="73.57600000000001" stroke-width="2"/>
+    <g id="prefigure-fsv-elliptic-legend-label-4" transform="translate(39.0,87.3)">
+      <g id="prefigure-fsv-elliptic-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.488px" width="55.104px" height="13.536px" role="img" focusable="false" viewBox="0 -666 3044.6 748" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-fsv-elliptic-MJX-8-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-8-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-8-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="prefigure-fsv-elliptic-MJX-8-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="c equals 1.0">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="c">
+                <use data-c="1D450" xlink:href="#prefigure-fsv-elliptic-MJX-8-TEX-I-1D450"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(710.8,0)">
+                <use data-c="3D" xlink:href="#prefigure-fsv-elliptic-MJX-8-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="float" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="1.0" transform="translate(1766.6,0)">
+                <use data-c="31" xlink:href="#prefigure-fsv-elliptic-MJX-8-TEX-N-31"/>
+                <use data-c="2E" xlink:href="#prefigure-fsv-elliptic-MJX-8-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="30" xlink:href="#prefigure-fsv-elliptic-MJX-8-TEX-N-30" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <line stroke="#E5D93C" x1="29" y1="94.11200000000001" x2="5" y2="94.11200000000001" stroke-width="2"/>
+  </g>
+</svg>

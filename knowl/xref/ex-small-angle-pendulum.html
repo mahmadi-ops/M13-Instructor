@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Simple Harmonic Motion of a Pendulum as an Approximation.</span>
+</h2>
+<div class="para">Use the remainder theorem to analyze the claim made in Giancoli’s textbook that for small angles, <span class="process-math">\(\sin\theta \approx \theta\text{.}\)</span> Specifically, show that the error is less than <span class="process-math">\(1\%\)</span> for angles below <span class="process-math">\(15^\circ\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-small-angle-pendulum-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para">Here is the exact quote from Giancoli’s textbook:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-small-angle-pendulum-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<blockquote class="blockquote">
+<div class="para">“For angles less than <span class="process-math">\(15^\circ\text{,}\)</span> the difference between <span class="process-math">\(\theta\)</span> (in radians) and <span class="process-math">\(\sin\theta\)</span> is less than <span class="process-math">\(1\%\text{.}\)</span>”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-small-angle-pendulum-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Quotation"><a tabindex="-1" href="#ex-small-angle-pendulum-2-3" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+</blockquote>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">In deriving simple harmonic motion for a pendulum, the restoring force is <a href="section-taylor-7.html#eq-pendulum-force" class="xref" data-knowl="./knowl/xref/eq-pendulum-force.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.9">(2.3.9)</a>, which is proportional to <span class="process-math">\(\sin\theta\)</span> rather than to the angular displacement <span class="process-math">\(\theta\)</span> itself. The motion is therefore not <em class="emphasis">exactly</em> simple harmonic. Giancoli resolves this by appealing to the smallness of the angle: for angles below <span class="process-math">\(15^\circ\text{,}\)</span> he states that “the difference between <span class="process-math">\(\theta\)</span> (in radians) and <span class="process-math">\(\sin\theta\)</span> is less than <span class="process-math">\(1\%\)</span>”  He notes that this can be seen “by looking at the series expansion” of <span class="process-math">\(\sin\theta\text{,}\)</span> which is <a href="section-taylor-7.html#eq-sin-series" class="xref" data-knowl="./knowl/xref/eq-sin-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.10">(2.3.10)</a>, carried one term further:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-pendulum-force.html ./knowl/xref/eq-sin-series.html">
+\begin{equation*}
+\sin\theta = \theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!}
+- \frac{\theta^7}{7!} + \cdots .
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">We can turn this observation into a quantitative statement using Taylor’s Remainder Theorem. Let <span class="process-math">\(f(\theta) = \sin\theta\text{,}\)</span> expanded about <span class="process-math">\(\theta = 0\text{.}\)</span> Replacing <span class="process-math">\(\sin\theta\)</span> by <span class="process-math">\(\theta\)</span> amounts to using the first-degree Taylor polynomial <span class="process-math">\(p_1(\theta) = \theta\text{.}\)</span> Since the coefficient of <span class="process-math">\(\theta^2\)</span> in the series above is zero, we have <span class="process-math">\(p_1(\theta) = p_2(\theta) = \theta\text{,}\)</span> so the error is controlled by the third derivative. By <a href="subsection-1.html#eq-taylor-remainder" class="xref" data-knowl="./knowl/xref/eq-taylor-remainder.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.3">(2.3.3)</a>, for some <span class="process-math">\(c\)</span> with <span class="process-math">\(0 \lt c \lt \theta\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-remainder.html">
+\begin{equation*}
+\sin\theta - \theta = R_2(\theta)
+= \frac{f'''(c)}{3!}\,\theta^3
+= -\frac{\cos c}{6}\,\theta^3 .
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">The point <span class="process-math">\(c\)</span> is not known, but as in <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a> we do not need it: because <span class="process-math">\(|\cos c| \le 1\text{,}\)</span> we may take <span class="process-math">\(M = 1\text{,}\)</span> and the absolute error satisfies</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+\left| \sin\theta - \theta \right|
+= \frac{\cos c}{6}\,\theta^3 \le \frac{\theta^3}{6},
+\end{equation*}
+</div>
+<div class="para">and dividing by <span class="process-math">\(\theta\)</span> bounds the <dfn class="terminology">relative</dfn> error:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+\frac{\left| \theta - \sin\theta \right|}{\theta} \le \frac{\theta^2}{6}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">This confirms Giancoli’s claim and even sharpens it. The relative error stays below <span class="process-math">\(1\%\)</span> precisely when <span class="process-math">\(\dfrac{\theta^2}{6} \lt 0.01\text{,}\)</span> that is, when <span class="process-math">\(\theta \lt \sqrt{0.06} \approx 0.245\)</span> radians, or about <span class="process-math">\(14^\circ\text{.}\)</span> At Giancoli’s stated cutoff of <span class="process-math">\(15^\circ = \pi/12\)</span> radians, the bound gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-pendulum-period.html">
+\begin{equation*}
+\frac{\left| \theta - \sin\theta \right|}{\theta}
+\le \frac{(\pi/12)^2}{6} \approx 0.0114,
+\end{equation*}
+</div>
+<div class="para">i.e. about <span class="process-math">\(1.1\%\text{.}\)</span> So <span class="process-math">\(15^\circ\)</span> is exactly the round-number boundary of the “less than <span class="process-math">\(1\%\)</span>” regime, and Taylor’s Remainder Theorem locates the true <span class="process-math">\(1\%\)</span> threshold at <span class="process-math">\(\theta \approx 14^\circ\text{.}\)</span> This is precisely the range in which the pendulum behaves as a simple harmonic oscillator with the period <a href="section-taylor-7.html#eq-pendulum-period" class="xref" data-knowl="./knowl/xref/eq-pendulum-period.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.11">(2.3.11)</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/relative-error-1pct-diagcess.svg" data-cml="generated/prefigure/relative-error-1pct-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The relative error <span class="process-math">\(\dfrac{|\theta - \sin\theta|}{\sin\theta}\)</span> rises above the <span class="process-math">\(1\%\)</span> threshold <span class="process-math">\(y = 0.01\)</span> at <span class="process-math">\(\theta^* \approx 0.244\)</span> radians (about <span class="process-math">\(14^\circ\)</span>), the root of <span class="process-math">\(\theta = 1.01\sin\theta\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.17"><a tabindex="-1" href="#fig-relative-error-1pct" title="Copy heading and permalink for Figure 2.3.17" aria-label="Copy heading and permalink for Figure 2.3.17">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like"><div class="video-box" style="width: 95%;padding-top: 53.4375%; margin-left: 2.5%; margin-right: 2.5%;"><video id="fig-small-angle-error-video-2" class="video" controls=""><source src="external/videos/small_angle_error.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A pendulum swinging through decreasing amplitudes while the relative error of the approximation <span class="process-math">\(\sin\theta \approx \theta\)</span> is computed at each angle, followed by the Taylor remainder bound <span class="process-math">\(\dfrac{|\theta - \sin\theta|}{\theta} \le \dfrac{\theta^2}{6}\)</span> and the graph locating the <span class="process-math">\(1\%\)</span> threshold at <span class="process-math">\(\theta^* \approx 0.244 \approx 14^\circ\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.18"><a tabindex="-1" href="#fig-small-angle-error-video" title="Copy heading and permalink for Figure 2.3.18" aria-label="Copy heading and permalink for Figure 2.3.18">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.16.1"><a tabindex="-1" href="#sol-small-angle-pendulum" title="Copy heading and permalink for Solution 2.3.16.1" aria-label="Copy heading and permalink for Solution 2.3.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation"><a tabindex="-1" href="#ex-small-angle-pendulum" title="Copy heading and permalink for Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation" aria-label="Copy heading and permalink for Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="section-taylor-7.html#ex-small-angle-pendulum">In Context</a></span>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rw23-warehouse-figure" speech2="Three blue points mark the customers: A at one comma five, B at the origin, and C at eight comma zero. A vermillion point W at three comma five thirds sits between them, joined to each customer by a dashed green segment.">
+      <grouped>prefigure-rw23-warehouse-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw23-warehouse-grid-axes</active>
+        <active>prefigure-rw23-warehouse-wh-W</active>
+        <active>prefigure-rw23-warehouse-wh-A</active>
+        <active>prefigure-rw23-warehouse-wh-B</active>
+        <active>prefigure-rw23-warehouse-wh-C</active>
+      </children>
+      <components>
+        <active>prefigure-rw23-warehouse-grid-axes</active>
+        <active>prefigure-rw23-warehouse-wh-W</active>
+        <active>prefigure-rw23-warehouse-wh-A</active>
+        <active>prefigure-rw23-warehouse-wh-B</active>
+        <active>prefigure-rw23-warehouse-wh-C</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rw23-warehouse-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw23-warehouse-grid</active>
+        <active>prefigure-rw23-warehouse-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rw23-warehouse-grid</active>
+        <active>prefigure-rw23-warehouse-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-grid" speech2="The coordinate grid">
+      <active>prefigure-rw23-warehouse-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-axes" speech2="The coordinate axes">
+      <active>prefigure-rw23-warehouse-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-wh-W" speech2="The warehouse location W at three comma five thirds, the point minimizing the sum of the squares of the distances.">
+      <active>prefigure-rw23-warehouse-wh-W</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-wh-A" speech2="Customer A at one comma five.">
+      <active>prefigure-rw23-warehouse-wh-A</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-wh-B" speech2="Customer B at the origin.">
+      <active>prefigure-rw23-warehouse-wh-B</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-warehouse-wh-C" speech2="Customer C at eight comma zero.">
+      <active>prefigure-rw23-warehouse-wh-C</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rw23-warehouse-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

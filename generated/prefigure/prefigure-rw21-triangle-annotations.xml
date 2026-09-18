@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rw21-triangle-figure" speech2="A light blue right triangle with vertices at the origin, one comma zero, and zero comma two. The vertex at the origin is marked in vermillion as the absolute maximum, f equals two; the vertex at one comma zero is marked in green as the absolute minimum, f equals zero. A dark red point at one comma two, outside the triangle, marks the critical point that does not belong to the region.">
+      <grouped>prefigure-rw21-triangle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw21-triangle-grid-axes</active>
+        <active>prefigure-rw21-triangle-tr-region</active>
+        <active>prefigure-rw21-triangle-tr-max</active>
+        <active>prefigure-rw21-triangle-tr-min</active>
+        <active>prefigure-rw21-triangle-tr-crit</active>
+      </children>
+      <components>
+        <active>prefigure-rw21-triangle-grid-axes</active>
+        <active>prefigure-rw21-triangle-tr-region</active>
+        <active>prefigure-rw21-triangle-tr-max</active>
+        <active>prefigure-rw21-triangle-tr-min</active>
+        <active>prefigure-rw21-triangle-tr-crit</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rw21-triangle-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw21-triangle-grid</active>
+        <active>prefigure-rw21-triangle-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rw21-triangle-grid</active>
+        <active>prefigure-rw21-triangle-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rw21-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-grid" speech2="The coordinate grid">
+      <active>prefigure-rw21-triangle-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rw21-triangle-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-axes" speech2="The coordinate axes">
+      <active>prefigure-rw21-triangle-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw21-triangle-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-tr-region" speech2="The closed triangular region R.">
+      <active>prefigure-rw21-triangle-tr-region</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw21-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-tr-max" speech2="The absolute maximum at the origin, where f equals two.">
+      <active>prefigure-rw21-triangle-tr-max</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rw21-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-tr-min" speech2="The absolute minimum at one comma zero, where f equals zero.">
+      <active>prefigure-rw21-triangle-tr-min</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rw21-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-triangle-tr-crit" speech2="The critical point one comma two, which lies outside the region.">
+      <active>prefigure-rw21-triangle-tr-crit</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rw21-triangle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

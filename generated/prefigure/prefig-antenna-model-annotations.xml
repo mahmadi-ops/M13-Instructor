@@ -1,0 +1,96 @@
+<diagram>
+  <annotations>
+    <annotation id="prefig-antenna-model-figure" speech2="Cross-section of a parabolic dish antenna, showing its diameter, depth, focus, and opening angle">
+      <grouped>prefig-antenna-model-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig-antenna-model-dish</active>
+        <active>prefig-antenna-model-left-rim</active>
+        <active>prefig-antenna-model-right-rim</active>
+        <active>prefig-antenna-model-diameter</active>
+        <active>prefig-antenna-model-depth</active>
+        <active>prefig-antenna-model-focus</active>
+        <active>prefig-antenna-model-left-ray</active>
+        <active>prefig-antenna-model-right-ray</active>
+        <active>prefig-antenna-model-opening-angle</active>
+      </children>
+      <components>
+        <active>prefig-antenna-model-dish</active>
+        <active>prefig-antenna-model-left-rim</active>
+        <active>prefig-antenna-model-right-rim</active>
+        <active>prefig-antenna-model-diameter</active>
+        <active>prefig-antenna-model-depth</active>
+        <active>prefig-antenna-model-focus</active>
+        <active>prefig-antenna-model-left-ray</active>
+        <active>prefig-antenna-model-right-ray</active>
+        <active>prefig-antenna-model-opening-angle</active>
+      </components>
+    </annotation>
+    <annotation id="prefig-antenna-model-dish" sonify="yes" speech2="the cross-section of the dish, the parabola x squared equals 4 p y, for x between minus 60 and 60 centimeters">
+      <active>prefig-antenna-model-dish</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefig-antenna-model-dish</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefig-antenna-model-left-rim" speech2="the left rim point, with coordinates minus d over 2, comma, h">
+      <active>prefig-antenna-model-left-rim</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-right-rim" speech2="the right rim point, with coordinates d over 2, comma, h">
+      <active>prefig-antenna-model-right-rim</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-diameter" speech2="the diameter d of the dish, 120 centimeters, measured between the two rim points">
+      <active>prefig-antenna-model-diameter</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-depth" speech2="the depth h of the dish, 20.3 centimeters, measured from the rim level down to the level of the vertex">
+      <active>prefig-antenna-model-depth</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-focus" speech2="the focus F at the point 0 comma p, about 44.3 centimeters above the vertex, which is above the rim of this shallow dish">
+      <active>prefig-antenna-model-focus</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-left-ray" speech2="a segment from the focus to the left rim point">
+      <active>prefig-antenna-model-left-ray</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-right-ray" speech2="a segment from the focus to the right rim point">
+      <active>prefig-antenna-model-right-ray</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-model-opening-angle" speech2="the opening angle, 2 phi, between the two segments meeting at the focus, about 136 degrees">
+      <active>prefig-antenna-model-opening-angle</active>
+      <position>9</position>
+      <parents>
+        <grouped>prefig-antenna-model-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

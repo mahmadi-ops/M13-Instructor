@@ -1,0 +1,23 @@
+openDate          = 06/26/2026 at 12:00am
+dueDate           = 12/26/2026 at 10:00pm
+answerDate        = 12/26/2026 at 10:00pm
+paperHeaderFile   = A_Template_For_My_Future_Notes/header/A_Template_For_My_Future_Notes.pg
+screenHeaderFile  = A_Template_For_My_Future_Notes/header/A_Template_For_My_Future_Notes.pg
+description       = A Template For My Future Notes
+problemListV2
+problem_start
+source_file = A_Template_For_My_Future_Notes/3_2.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = A_Template_For_My_Future_Notes/3_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = A_Template_For_My_Future_Notes/5_1.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = A_Template_For_My_Future_Notes/5_3.pg
+problem_id = 3
+problem_end

@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-vec-equal-figure" speech2="Four arrows of the same length all pointing up and to the right at the same angle, placed at four different positions in the coordinate plane. Three are blue, from A to B, from C to D, and from E to F. The fourth, drawn in orange from the origin O to the point P, is the one in standard position.">
+      <grouped>prefigure-vec-equal-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-equal-eq-AB</active>
+        <active>prefigure-vec-equal-eq-CD</active>
+        <active>prefigure-vec-equal-eq-OP</active>
+        <active>prefigure-vec-equal-eq-EF</active>
+      </children>
+      <components>
+        <active>prefigure-vec-equal-eq-AB</active>
+        <active>prefigure-vec-equal-eq-CD</active>
+        <active>prefigure-vec-equal-eq-OP</active>
+        <active>prefigure-vec-equal-eq-EF</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-vec-equal-eq-AB" speech2="The vector from A to B.">
+      <active>prefigure-vec-equal-eq-AB</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-vec-equal-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-equal-eq-CD" speech2="The vector from C to D, equal to vector A B because it has the same direction and length.">
+      <active>prefigure-vec-equal-eq-CD</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-equal-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-equal-eq-OP" speech2="The vector from the origin O to the point P, drawn in orange. This is the one in standard position.">
+      <active>prefigure-vec-equal-eq-OP</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-vec-equal-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-equal-eq-EF" speech2="The vector from E to F, also equal to the others.">
+      <active>prefigure-vec-equal-eq-EF</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-vec-equal-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

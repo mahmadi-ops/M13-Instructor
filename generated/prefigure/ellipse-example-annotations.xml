@@ -1,0 +1,73 @@
+<diagram>
+  <annotations>
+    <annotation id="ellipse-example-ellipse" speech2="The worked-example ellipse with a horizontal major axis and its two foci located on the x axis">
+      <grouped>ellipse-example-ellipse</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipse-example-grid-axes</active>
+        <active>ellipse-example-ellipse</active>
+        <active>ellipse-example-foci</active>
+        <active>ellipse-example-focal-radii</active>
+      </children>
+      <components>
+        <active>ellipse-example-grid-axes</active>
+        <active>ellipse-example-ellipse</active>
+        <active>ellipse-example-foci</active>
+        <active>ellipse-example-focal-radii</active>
+      </components>
+    </annotation>
+    <annotation id="ellipse-example-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>ellipse-example-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipse-example-grid</active>
+        <active>ellipse-example-axes</active>
+      </children>
+      <components>
+        <active>ellipse-example-grid</active>
+        <active>ellipse-example-axes</active>
+      </components>
+      <parents>
+        <grouped>ellipse-example-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-example-grid" speech2="The coordinate grid">
+      <active>ellipse-example-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>ellipse-example-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-example-axes" speech2="The coordinate axes">
+      <active>ellipse-example-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipse-example-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-example-ellipse" speech2="The ellipse x squared over nine plus y squared over four equals one, a blue oval with semi-major axis three and semi-minor axis two" sonify="yes">
+      <active>ellipse-example-ellipse</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipse-example-ellipse</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>ellipse-example-ellipse</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="ellipse-example-foci" speech2="The foci at plus and minus the square root of five on the x axis, since c squared equals nine minus four equals five">
+      <active>ellipse-example-foci</active>
+      <position>3</position>
+      <parents>
+        <grouped>ellipse-example-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-example-focal-radii" speech2="Two segments from the top of the ellipse to the two foci, illustrating the constant-sum property">
+      <active>ellipse-example-focal-radii</active>
+      <position>4</position>
+      <parents>
+        <grouped>ellipse-example-ellipse</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

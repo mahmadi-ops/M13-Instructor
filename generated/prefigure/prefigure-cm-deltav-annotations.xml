@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cm-deltav-figure" speech2="Two velocity vectors of equal length v are drawn from a common tail, separated by a small angle delta theta. A dashed circular arc of radius v joins their tips, confirming the lengths are equal. A third arrow, delta v, runs from the tip of the first to the tip of the second. Because the triangle is isosceles and the angle is small, the length of delta v is approximately v times delta theta.">
+      <grouped>prefigure-cm-deltav-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cm-deltav-dv-arc</active>
+        <active>prefigure-cm-deltav-dv-v1</active>
+        <active>prefigure-cm-deltav-dv-v2</active>
+        <active>prefigure-cm-deltav-dv-dv</active>
+        <active>prefigure-cm-deltav-dv-ang</active>
+      </children>
+      <components>
+        <active>prefigure-cm-deltav-dv-arc</active>
+        <active>prefigure-cm-deltav-dv-v1</active>
+        <active>prefigure-cm-deltav-dv-v2</active>
+        <active>prefigure-cm-deltav-dv-dv</active>
+        <active>prefigure-cm-deltav-dv-ang</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cm-deltav-dv-arc" speech2="A dashed arc of radius v joining the two arrow tips, showing both velocities have the same length.">
+      <active>prefigure-cm-deltav-dv-arc</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cm-deltav-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-deltav-dv-v1" speech2="The velocity at time t.">
+      <active>prefigure-cm-deltav-dv-v1</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cm-deltav-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-deltav-dv-v2" speech2="The velocity a short time delta t later, the same length but turned through delta theta.">
+      <active>prefigure-cm-deltav-dv-v2</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cm-deltav-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-deltav-dv-dv" speech2="The change in velocity, delta v, joining the two tips; its length is approximately v times delta theta.">
+      <active>prefigure-cm-deltav-dv-dv</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-cm-deltav-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-deltav-dv-ang" speech2="The small angle delta theta through which the velocity has turned.">
+      <active>prefigure-cm-deltav-dv-ang</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-cm-deltav-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

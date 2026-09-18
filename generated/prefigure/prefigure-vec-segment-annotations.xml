@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-vec-segment-figure" speech2="A single blue arrow points up and to the right from a dot labelled A, the initial point, to a dot labelled B, the terminal point. The arrow is labelled vector A B.">
+      <grouped>prefigure-vec-segment-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-segment-ds-A</active>
+        <active>prefigure-vec-segment-ds-B</active>
+        <active>prefigure-vec-segment-ds-v</active>
+      </children>
+      <components>
+        <active>prefigure-vec-segment-ds-A</active>
+        <active>prefigure-vec-segment-ds-B</active>
+        <active>prefigure-vec-segment-ds-v</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-vec-segment-ds-A" speech2="The initial point A, where the vector begins.">
+      <active>prefigure-vec-segment-ds-A</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-vec-segment-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-segment-ds-B" speech2="The terminal point B, where the vector ends and the arrowhead is drawn.">
+      <active>prefigure-vec-segment-ds-B</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-segment-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-segment-ds-v" speech2="The vector from A to B, written vector A B. Its length is the magnitude of the vector.">
+      <active>prefigure-vec-segment-ds-v</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-vec-segment-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

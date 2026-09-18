@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="elliptic-cone-traces-figure" viewBox="0 0 970 355">
+  <defs>
+    <clipPath id="elliptic-cone-traces-clipPath-0">
+      <rect x="5.0" y="5.0" width="960.0" height="345.0"/>
+    </clipPath>
+    <clipPath id="elliptic-cone-traces-clipPath-1">
+      <rect x="5.0" y="5.0" width="960.0" height="345.0"/>
+    </clipPath>
+    <clipPath id="elliptic-cone-traces-clipPath-2">
+      <rect x="20.0" y="50.0" width="290.0" height="290.0"/>
+    </clipPath>
+    <marker id="elliptic-cone-traces-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="elliptic-cone-traces-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <clipPath id="elliptic-cone-traces-clipPath-3">
+      <rect x="340.0" y="50.0" width="290.0" height="290.0"/>
+    </clipPath>
+    <clipPath id="elliptic-cone-traces-clipPath-4">
+      <rect x="660.0" y="50.0" width="290.0" height="290.0"/>
+    </clipPath>
+  </defs>
+  <g id="elliptic-cone-traces-axes" stroke="black" stroke-width="2">
+    <line id="elliptic-cone-traces-line-0" x1="20.0" y1="195.0" x2="310.0" y2="195.0" stroke="black" stroke-width="2" marker-end="url(#elliptic-cone-traces-arrow-head-end-2_None_24_60-black)"/>
+    <line id="elliptic-cone-traces-line-1" x1="165.0" y1="340.0" x2="165.0" y2="50.0" stroke="black" stroke-width="2" marker-end="url(#elliptic-cone-traces-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="elliptic-cone-traces-label-0" transform="translate(304.0,189.0) translate(-8.9,-11.7)">
+    <g id="elliptic-cone-traces-g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-2-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#elliptic-cone-traces-MJX-2-TEX-I-1D466"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-label-1" transform="translate(171.0,56.0) translate(0.0,-0.0)">
+    <g id="elliptic-cone-traces-g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.416px" height="8.200px" role="img" focusable="false" viewBox="0 -442 465 453" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-3-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="z">
+              <use data-c="1D467" xlink:href="#elliptic-cone-traces-MJX-3-TEX-I-1D467"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-trace-x">
+    <path id="elliptic-cone-traces-path-0" d="M 34.5 105.8 L 38.9 108.2 L 43.1 110.6 L 47.3 113.0 L 51.3 115.2 L 55.2 117.4 L 59.0 119.5 L 62.7 121.5 L 66.3 123.4 L 69.8 125.3 L 73.2 127.1 L 76.5 128.9 L 79.7 130.6 L 82.9 132.2 L 86.0 133.7 L 89.0 135.2 L 91.9 136.7 L 94.8 138.1 L 97.6 139.4 L 100.3 140.7 L 102.9 141.9 L 105.5 143.1 L 108.1 144.2 L 110.6 145.3 L 113.0 146.3 L 115.4 147.3 L 117.8 148.2 L 120.1 149.1 L 122.3 150.0 L 124.5 150.8 L 126.7 151.6 L 128.8 152.3 L 130.9 153.0 L 133.0 153.6 L 135.0 154.2 L 137.0 154.8 L 139.0 155.3 L 141.0 155.8 L 142.9 156.2 L 144.8 156.6 L 146.7 157.0 L 148.6 157.3 L 150.5 157.6 L 152.3 157.9 L 154.1 158.1 L 156.0 158.3 L 157.8 158.5 L 159.6 158.6 L 161.4 158.7 L 163.2 158.7 L 165.0 158.8 L 166.8 158.7 L 168.6 158.7 L 170.4 158.6 L 172.2 158.5 L 174.0 158.3 L 175.9 158.1 L 177.7 157.9 L 179.5 157.6 L 181.4 157.3 L 183.3 157.0 L 185.2 156.6 L 187.1 156.2 L 189.0 155.8 L 191.0 155.3 L 193.0 154.8 L 195.0 154.2 L 197.0 153.6 L 199.1 153.0 L 201.2 152.3 L 203.3 151.6 L 205.5 150.8 L 207.7 150.0 L 209.9 149.1 L 212.2 148.2 L 214.6 147.3 L 217.0 146.3 L 219.4 145.3 L 221.9 144.2 L 224.5 143.1 L 227.1 141.9 L 229.7 140.7 L 232.4 139.4 L 235.2 138.1 L 238.1 136.7 L 241.0 135.2 L 244.0 133.7 L 247.1 132.2 L 250.3 130.6 L 253.5 128.9 L 256.8 127.1 L 260.2 125.3 L 263.7 123.4 L 267.3 121.5 L 271.0 119.5 L 274.8 117.4 L 278.7 115.2 L 282.7 113.0 L 286.9 110.6 L 291.1 108.2 L 295.5 105.8" stroke="#0072B2" stroke-width="3" fill="none" clip-path="url(#elliptic-cone-traces-clipPath-2)"/>
+    <path id="elliptic-cone-traces-path-1" d="M 34.5 284.2 L 38.9 281.8 L 43.1 279.4 L 47.3 277.0 L 51.3 274.8 L 55.2 272.6 L 59.0 270.5 L 62.7 268.5 L 66.3 266.6 L 69.8 264.7 L 73.2 262.9 L 76.5 261.1 L 79.7 259.4 L 82.9 257.8 L 86.0 256.3 L 89.0 254.8 L 91.9 253.3 L 94.8 251.9 L 97.6 250.6 L 100.3 249.3 L 102.9 248.1 L 105.5 246.9 L 108.1 245.8 L 110.6 244.7 L 113.0 243.7 L 115.4 242.7 L 117.8 241.8 L 120.1 240.9 L 122.3 240.0 L 124.5 239.2 L 126.7 238.4 L 128.8 237.7 L 130.9 237.0 L 133.0 236.4 L 135.0 235.8 L 137.0 235.2 L 139.0 234.7 L 141.0 234.2 L 142.9 233.8 L 144.8 233.4 L 146.7 233.0 L 148.6 232.7 L 150.5 232.4 L 152.3 232.1 L 154.1 231.9 L 156.0 231.7 L 157.8 231.5 L 159.6 231.4 L 161.4 231.3 L 163.2 231.3 L 165.0 231.2 L 166.8 231.3 L 168.6 231.3 L 170.4 231.4 L 172.2 231.5 L 174.0 231.7 L 175.9 231.9 L 177.7 232.1 L 179.5 232.4 L 181.4 232.7 L 183.3 233.0 L 185.2 233.4 L 187.1 233.8 L 189.0 234.2 L 191.0 234.7 L 193.0 235.2 L 195.0 235.8 L 197.0 236.4 L 199.1 237.0 L 201.2 237.7 L 203.3 238.4 L 205.5 239.2 L 207.7 240.0 L 209.9 240.9 L 212.2 241.8 L 214.6 242.7 L 217.0 243.7 L 219.4 244.7 L 221.9 245.8 L 224.5 246.9 L 227.1 248.1 L 229.7 249.3 L 232.4 250.6 L 235.2 251.9 L 238.1 253.3 L 241.0 254.8 L 244.0 256.3 L 247.1 257.8 L 250.3 259.4 L 253.5 261.1 L 256.8 262.9 L 260.2 264.7 L 263.7 266.6 L 267.3 268.5 L 271.0 270.5 L 274.8 272.6 L 278.7 274.8 L 282.7 277.0 L 286.9 279.4 L 291.1 281.8 L 295.5 284.2" stroke="#0072B2" stroke-width="3" fill="none" clip-path="url(#elliptic-cone-traces-clipPath-2)"/>
+  </g>
+  <g id="elliptic-cone-traces-axes" stroke="black" stroke-width="2">
+    <line id="elliptic-cone-traces-line-2" x1="340.0" y1="195.0" x2="630.0" y2="195.0" stroke="black" stroke-width="2" marker-end="url(#elliptic-cone-traces-arrow-head-end-2_None_24_60-black)"/>
+    <line id="elliptic-cone-traces-line-3" x1="485.0" y1="340.0" x2="485.0" y2="50.0" stroke="black" stroke-width="2" marker-end="url(#elliptic-cone-traces-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="elliptic-cone-traces-label-2" transform="translate(624.0,189.0) translate(-10.4,-8.2)">
+    <g id="elliptic-cone-traces-g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-4-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#elliptic-cone-traces-MJX-4-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-label-3" transform="translate(491.0,56.0) translate(0.0,-0.0)">
+    <g id="elliptic-cone-traces-g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.416px" height="8.200px" role="img" focusable="false" viewBox="0 -442 465 453" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-5-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="z">
+              <use data-c="1D467" xlink:href="#elliptic-cone-traces-MJX-5-TEX-I-1D467"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-trace-y">
+    <path id="elliptic-cone-traces-path-2" d="M 359.7 101.6 L 364.0 104.3 L 368.2 106.9 L 372.2 109.4 L 376.2 111.9 L 380.0 114.2 L 383.7 116.5 L 387.3 118.7 L 390.8 120.8 L 394.2 122.8 L 397.5 124.8 L 400.7 126.7 L 403.9 128.5 L 406.9 130.2 L 409.9 131.9 L 412.8 133.5 L 415.6 135.1 L 418.4 136.6 L 421.1 138.0 L 423.7 139.4 L 426.2 140.7 L 428.7 142.0 L 431.2 143.2 L 433.6 144.4 L 435.9 145.5 L 438.2 146.5 L 440.4 147.5 L 442.6 148.5 L 444.7 149.4 L 446.8 150.3 L 448.9 151.1 L 450.9 151.8 L 452.9 152.6 L 454.9 153.3 L 456.8 153.9 L 458.7 154.5 L 460.6 155.1 L 462.4 155.6 L 464.3 156.0 L 466.1 156.5 L 467.8 156.9 L 469.6 157.2 L 471.4 157.6 L 473.1 157.8 L 474.8 158.1 L 476.5 158.3 L 478.2 158.5 L 479.9 158.6 L 481.6 158.7 L 483.3 158.7 L 485.0 158.8 L 486.7 158.7 L 488.4 158.7 L 490.1 158.6 L 491.8 158.5 L 493.5 158.3 L 495.2 158.1 L 496.9 157.8 L 498.6 157.6 L 500.4 157.2 L 502.2 156.9 L 503.9 156.5 L 505.7 156.0 L 507.6 155.6 L 509.4 155.1 L 511.3 154.5 L 513.2 153.9 L 515.1 153.3 L 517.1 152.6 L 519.1 151.8 L 521.1 151.1 L 523.2 150.3 L 525.3 149.4 L 527.4 148.5 L 529.6 147.5 L 531.8 146.5 L 534.1 145.5 L 536.4 144.4 L 538.8 143.2 L 541.3 142.0 L 543.8 140.7 L 546.3 139.4 L 548.9 138.0 L 551.6 136.6 L 554.4 135.1 L 557.2 133.5 L 560.1 131.9 L 563.1 130.2 L 566.1 128.5 L 569.3 126.7 L 572.5 124.8 L 575.8 122.8 L 579.2 120.8 L 582.7 118.7 L 586.3 116.5 L 590.0 114.2 L 593.8 111.9 L 597.8 109.4 L 601.8 106.9 L 606.0 104.3 L 610.3 101.6" stroke="#009E73" stroke-width="3" fill="none" clip-path="url(#elliptic-cone-traces-clipPath-3)"/>
+    <path id="elliptic-cone-traces-path-3" d="M 359.7 288.4 L 364.0 285.7 L 368.2 283.1 L 372.2 280.6 L 376.2 278.1 L 380.0 275.8 L 383.7 273.5 L 387.3 271.3 L 390.8 269.2 L 394.2 267.2 L 397.5 265.2 L 400.7 263.3 L 403.9 261.5 L 406.9 259.8 L 409.9 258.1 L 412.8 256.5 L 415.6 254.9 L 418.4 253.4 L 421.1 252.0 L 423.7 250.6 L 426.2 249.3 L 428.7 248.0 L 431.2 246.8 L 433.6 245.6 L 435.9 244.5 L 438.2 243.5 L 440.4 242.5 L 442.6 241.5 L 444.7 240.6 L 446.8 239.7 L 448.9 238.9 L 450.9 238.2 L 452.9 237.4 L 454.9 236.7 L 456.8 236.1 L 458.7 235.5 L 460.6 234.9 L 462.4 234.4 L 464.3 234.0 L 466.1 233.5 L 467.8 233.1 L 469.6 232.8 L 471.4 232.4 L 473.1 232.2 L 474.8 231.9 L 476.5 231.7 L 478.2 231.5 L 479.9 231.4 L 481.6 231.3 L 483.3 231.3 L 485.0 231.2 L 486.7 231.3 L 488.4 231.3 L 490.1 231.4 L 491.8 231.5 L 493.5 231.7 L 495.2 231.9 L 496.9 232.2 L 498.6 232.4 L 500.4 232.8 L 502.2 233.1 L 503.9 233.5 L 505.7 234.0 L 507.6 234.4 L 509.4 234.9 L 511.3 235.5 L 513.2 236.1 L 515.1 236.7 L 517.1 237.4 L 519.1 238.2 L 521.1 238.9 L 523.2 239.7 L 525.3 240.6 L 527.4 241.5 L 529.6 242.5 L 531.8 243.5 L 534.1 244.5 L 536.4 245.6 L 538.8 246.8 L 541.3 248.0 L 543.8 249.3 L 546.3 250.6 L 548.9 252.0 L 551.6 253.4 L 554.4 254.9 L 557.2 256.5 L 560.1 258.1 L 563.1 259.8 L 566.1 261.5 L 569.3 263.3 L 572.5 265.2 L 575.8 267.2 L 579.2 269.2 L 582.7 271.3 L 586.3 273.5 L 590.0 275.8 L 593.8 278.1 L 597.8 280.6 L 601.8 283.1 L 606.0 285.7 L 610.3 288.4" stroke="#009E73" stroke-width="3" fill="none" clip-path="url(#elliptic-cone-traces-clipPath-3)"/>
+  </g>
+  <g id="elliptic-cone-traces-axes" stroke="black" stroke-width="2">
+    <line id="elliptic-cone-traces-line-4" x1="660.0" y1="195.0" x2="950.0" y2="195.0" stroke="black" stroke-width="2" marker-end="url(#elliptic-cone-traces-arrow-head-end-2_None_24_60-black)"/>
+    <line id="elliptic-cone-traces-line-5" x1="805.0" y1="340.0" x2="805.0" y2="50.0" stroke="black" stroke-width="2" marker-end="url(#elliptic-cone-traces-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="elliptic-cone-traces-label-4" transform="translate(944.0,189.0) translate(-10.4,-8.2)">
+    <g id="elliptic-cone-traces-g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-6-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#elliptic-cone-traces-MJX-6-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-label-5" transform="translate(811.0,56.0) translate(0.0,-0.0)">
+    <g id="elliptic-cone-traces-g-5">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-7-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#elliptic-cone-traces-MJX-7-TEX-I-1D466"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="elliptic-cone-traces-trace-z" d="M 869.4 195.0 L 869.3 188.9 L 868.9 182.9 L 868.3 176.9 L 867.4 171.0 L 866.3 165.1 L 864.9 159.4 L 863.3 153.8 L 861.5 148.4 L 859.4 143.2 L 857.1 138.2 L 854.7 133.4 L 852.0 128.8 L 849.1 124.5 L 846.1 120.5 L 842.9 116.8 L 839.5 113.4 L 836.0 110.3 L 832.4 107.5 L 828.7 105.1 L 824.9 103.1 L 821.0 101.4 L 817.1 100.0 L 813.1 99.1 L 809.0 98.5 L 805.0 98.3 L 801.0 98.5 L 796.9 99.1 L 792.9 100.0 L 789.0 101.4 L 785.1 103.1 L 781.3 105.1 L 777.6 107.5 L 774.0 110.3 L 770.5 113.4 L 767.1 116.8 L 763.9 120.5 L 760.9 124.5 L 758.0 128.8 L 755.3 133.4 L 752.9 138.2 L 750.6 143.2 L 748.5 148.4 L 746.7 153.8 L 745.1 159.4 L 743.7 165.1 L 742.6 171.0 L 741.7 176.9 L 741.1 182.9 L 740.7 188.9 L 740.6 195.0 L 740.7 201.1 L 741.1 207.1 L 741.7 213.1 L 742.6 219.0 L 743.7 224.9 L 745.1 230.6 L 746.7 236.2 L 748.5 241.6 L 750.6 246.8 L 752.9 251.8 L 755.3 256.6 L 758.0 261.2 L 760.9 265.5 L 763.9 269.5 L 767.1 273.2 L 770.5 276.6 L 774.0 279.7 L 777.6 282.5 L 781.3 284.9 L 785.1 286.9 L 789.0 288.6 L 792.9 290.0 L 796.9 290.9 L 801.0 291.5 L 805.0 291.7 L 809.0 291.5 L 813.1 290.9 L 817.1 290.0 L 821.0 288.6 L 824.9 286.9 L 828.7 284.9 L 832.4 282.5 L 836.0 279.7 L 839.5 276.6 L 842.9 273.2 L 846.1 269.5 L 849.1 265.5 L 852.0 261.2 L 854.7 256.6 L 857.1 251.8 L 859.4 246.8 L 861.5 241.6 L 863.3 236.2 L 864.9 230.6 L 866.3 224.9 L 867.4 219.0 L 868.3 213.1 L 868.9 207.1 L 869.3 201.1 L 869.4 195.0 Z" stroke="#D55E00" stroke-width="3" fill="none" clip-path="url(#elliptic-cone-traces-clipPath-4)"/>
+  <g id="elliptic-cone-traces-label-6" transform="translate(165.0,28.0) translate(-79.6,-13.0)">
+    <g id="elliptic-cone-traces-g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.528px" width="159.128px" height="25.976px" role="img" focusable="false" viewBox="0 -1074.6 8791.8 1435.2" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-8-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-A0" d=""/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"/>
+          <path id="elliptic-cone-traces-MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="23" data-semantic-children="17,3,22" data-semantic-content="3" data-semantic-speech="x equals 2 colon z squared minus StartFraction y squared Over 9 EndFraction equals 1">
+            <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="17" data-semantic-children="0,2" data-semantic-content="1" data-semantic-parent="23" data-semantic-speech="x equals 2">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="17" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#elliptic-cone-traces-MJX-8-TEX-I-1D465"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="17" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(849.8,0)">
+                <use data-c="3D" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="17" data-semantic-speech="2" transform="translate(1905.6,0)">
+                <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-32"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="colon" data-semantic-id="3" data-semantic-parent="23" data-semantic-operator="punctuated" data-semantic-speech="colon" transform="translate(2683.3,0)">
+              <use data-c="3A" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-3A"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="22" data-semantic-children="4,5,19" data-semantic-parent="23" data-semantic-collapsed="(22 (c 20 21) 4 5 19)" data-semantic-speech="z squared minus StartFraction y squared Over 9 EndFraction equals 1" transform="translate(3239.1,0)">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="4" data-semantic-parent="22" data-semantic-speech="">
+                <use data-c="A0" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="5" data-semantic-parent="22" data-semantic-speech="" transform="translate(250,0)">
+                <use data-c="A0" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="19" data-semantic-children="18,16" data-semantic-content="15" data-semantic-parent="22" data-semantic-speech="z squared minus StartFraction y squared Over 9 EndFraction equals 1" transform="translate(500,0)">
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="18" data-semantic-children="8,14" data-semantic-content="9" data-semantic-parent="19" data-semantic-speech="z squared minus StartFraction y squared Over 9 EndFraction">
+                  <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="8" data-semantic-children="6,7" data-semantic-parent="18" data-semantic-speech="z squared">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="8" data-semantic-speech="z" data-semantic-prefix="Base">
+                      <use data-c="1D467" xlink:href="#elliptic-cone-traces-MJX-8-TEX-I-1D467"/>
+                    </g>
+                    <g data-mml-node="mn" transform="translate(498,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="8" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                      <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-32"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="9" data-semantic-parent="18" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(1123.8,0)">
+                    <use data-c="2212" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-2212"/>
+                  </g>
+                  <g data-mml-node="mstyle" transform="translate(2124,0)">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="14" data-semantic-children="12,13" data-semantic-parent="18" data-semantic-speech="StartFraction y squared Over 9 EndFraction">
+                      <g data-mml-node="msup" transform="translate(220,485) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="12" data-semantic-children="10,11" data-semantic-parent="14" data-semantic-speech="y squared" data-semantic-prefix="Numerator">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-parent="12" data-semantic-speech="y" data-semantic-prefix="Base">
+                          <use data-c="1D466" xlink:href="#elliptic-cone-traces-MJX-8-TEX-I-1D466"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(523,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="12" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(370.8,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="13" data-semantic-parent="14" data-semantic-speech="9" data-semantic-prefix="Denominator">
+                        <use data-c="39" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-39"/>
+                      </g>
+                      <rect width="855.2" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="15" data-semantic-parent="19" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(3496.9,0)">
+                  <use data-c="3D" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-3D"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="16" data-semantic-parent="19" data-semantic-speech="1" transform="translate(4552.7,0)">
+                  <use data-c="31" xlink:href="#elliptic-cone-traces-MJX-8-TEX-N-31"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-label-7" transform="translate(485.0,28.0) translate(-86.4,-12.0)">
+    <g id="elliptic-cone-traces-g-7">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.248px" width="172.776px" height="24.048px" role="img" focusable="false" viewBox="0 -983.7 9545.8 1328.7" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-9-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-A0" d=""/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          <path id="elliptic-cone-traces-MJX-9-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="25" data-semantic-children="19,4,24" data-semantic-content="4" data-semantic-speech="y equals negative 3 colon z squared minus StartFraction x squared Over 4 EndFraction equals 1">
+            <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="19" data-semantic-children="0,18" data-semantic-content="1" data-semantic-parent="25" data-semantic-speech="y equals negative 3">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="19" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#elliptic-cone-traces-MJX-9-TEX-I-1D466"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="19" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+                <use data-c="3D" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="18" data-semantic-children="3" data-semantic-content="2" data-semantic-parent="19" data-semantic-speech="negative 3" transform="translate(1823.6,0)">
+                <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="2" data-semantic-parent="18" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                  <use data-c="2212" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-2212"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="18" data-semantic-speech="3" transform="translate(778,0)">
+                  <use data-c="33" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-33"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="colon" data-semantic-id="4" data-semantic-parent="25" data-semantic-operator="punctuated" data-semantic-speech="colon" transform="translate(3379.3,0)">
+              <use data-c="3A" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-3A"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="24" data-semantic-children="5,6,21" data-semantic-parent="25" data-semantic-collapsed="(24 (c 22 23) 5 6 21)" data-semantic-speech="z squared minus StartFraction x squared Over 4 EndFraction equals 1" transform="translate(3935.1,0)">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="5" data-semantic-parent="24" data-semantic-speech="">
+                <use data-c="A0" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="6" data-semantic-parent="24" data-semantic-speech="" transform="translate(250,0)">
+                <use data-c="A0" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="21" data-semantic-children="20,17" data-semantic-content="16" data-semantic-parent="24" data-semantic-speech="z squared minus StartFraction x squared Over 4 EndFraction equals 1" transform="translate(500,0)">
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="20" data-semantic-children="9,15" data-semantic-content="10" data-semantic-parent="21" data-semantic-speech="z squared minus StartFraction x squared Over 4 EndFraction">
+                  <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="9" data-semantic-children="7,8" data-semantic-parent="20" data-semantic-speech="z squared">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="9" data-semantic-speech="z" data-semantic-prefix="Base">
+                      <use data-c="1D467" xlink:href="#elliptic-cone-traces-MJX-9-TEX-I-1D467"/>
+                    </g>
+                    <g data-mml-node="mn" transform="translate(498,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-parent="9" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                      <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-32"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="10" data-semantic-parent="20" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(1123.8,0)">
+                    <use data-c="2212" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-2212"/>
+                  </g>
+                  <g data-mml-node="mstyle" transform="translate(2124,0)">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="15" data-semantic-children="13,14" data-semantic-parent="20" data-semantic-speech="StartFraction x squared Over 4 EndFraction">
+                      <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="13" data-semantic-children="11,12" data-semantic-parent="15" data-semantic-speech="x squared" data-semantic-prefix="Numerator">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="13" data-semantic-speech="x" data-semantic-prefix="Base">
+                          <use data-c="1D465" xlink:href="#elliptic-cone-traces-MJX-9-TEX-I-1D465"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="13" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(399.8,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="14" data-semantic-parent="15" data-semantic-speech="4" data-semantic-prefix="Denominator">
+                        <use data-c="34" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-34"/>
+                      </g>
+                      <rect width="913.2" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="16" data-semantic-parent="21" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(3554.9,0)">
+                  <use data-c="3D" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-3D"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="17" data-semantic-parent="21" data-semantic-speech="1" transform="translate(4610.7,0)">
+                  <use data-c="31" xlink:href="#elliptic-cone-traces-MJX-9-TEX-N-31"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="elliptic-cone-traces-label-8" transform="translate(805.0,28.0) translate(-80.9,-13.0)">
+    <g id="elliptic-cone-traces-g-8">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.528px" width="161.744px" height="25.976px" role="img" focusable="false" viewBox="0 -1074.6 8936.4 1435.2" x="0.0" y="0.0">
+        <defs>
+          <path id="elliptic-cone-traces-MJX-10-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-A0" d=""/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="elliptic-cone-traces-MJX-10-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="25" data-semantic-children="19,3,24" data-semantic-content="3" data-semantic-speech="z equals 1 colon StartFraction x squared Over 4 EndFraction plus StartFraction y squared Over 9 EndFraction equals 1">
+            <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="19" data-semantic-children="0,2" data-semantic-content="1" data-semantic-parent="25" data-semantic-speech="z equals 1">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="19" data-semantic-speech="z">
+                <use data-c="1D467" xlink:href="#elliptic-cone-traces-MJX-10-TEX-I-1D467"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="19" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(742.8,0)">
+                <use data-c="3D" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-3D"/>
+              </g>
+              <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="19" data-semantic-speech="1" transform="translate(1798.6,0)">
+                <use data-c="31" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-31"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="colon" data-semantic-id="3" data-semantic-parent="25" data-semantic-operator="punctuated" data-semantic-speech="colon" transform="translate(2576.3,0)">
+              <use data-c="3A" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-3A"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="24" data-semantic-children="4,5,21" data-semantic-parent="25" data-semantic-collapsed="(24 (c 22 23) 4 5 21)" data-semantic-speech="StartFraction x squared Over 4 EndFraction plus StartFraction y squared Over 9 EndFraction equals 1" transform="translate(3132.1,0)">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="4" data-semantic-parent="24" data-semantic-speech="">
+                <use data-c="A0" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="5" data-semantic-parent="24" data-semantic-speech="" transform="translate(250,0)">
+                <use data-c="A0" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-A0"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="21" data-semantic-children="20,18" data-semantic-content="17" data-semantic-parent="24" data-semantic-speech="StartFraction x squared Over 4 EndFraction plus StartFraction y squared Over 9 EndFraction equals 1" transform="translate(500,0)">
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="20" data-semantic-children="10,16" data-semantic-content="11" data-semantic-parent="21" data-semantic-speech="StartFraction x squared Over 4 EndFraction plus StartFraction y squared Over 9 EndFraction">
+                  <g data-mml-node="mstyle">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="10" data-semantic-children="8,9" data-semantic-parent="20" data-semantic-speech="StartFraction x squared Over 4 EndFraction">
+                      <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="8" data-semantic-children="6,7" data-semantic-parent="10" data-semantic-speech="x squared" data-semantic-prefix="Numerator">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="8" data-semantic-speech="x" data-semantic-prefix="Base">
+                          <use data-c="1D465" xlink:href="#elliptic-cone-traces-MJX-10-TEX-I-1D465"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="8" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(399.8,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="10" data-semantic-speech="4" data-semantic-prefix="Denominator">
+                        <use data-c="34" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-34"/>
+                      </g>
+                      <rect width="913.2" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="11" data-semantic-parent="20" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(1375.4,0)">
+                    <use data-c="2B" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-2B"/>
+                  </g>
+                  <g data-mml-node="mstyle" transform="translate(2375.6,0)">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="16" data-semantic-children="14,15" data-semantic-parent="20" data-semantic-speech="StartFraction y squared Over 9 EndFraction">
+                      <g data-mml-node="msup" transform="translate(220,485) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="14" data-semantic-children="12,13" data-semantic-parent="16" data-semantic-speech="y squared" data-semantic-prefix="Numerator">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="14" data-semantic-speech="y" data-semantic-prefix="Base">
+                          <use data-c="1D466" xlink:href="#elliptic-cone-traces-MJX-10-TEX-I-1D466"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(523,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="13" data-semantic-parent="14" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(370.8,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="15" data-semantic-parent="16" data-semantic-speech="9" data-semantic-prefix="Denominator">
+                        <use data-c="39" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-39"/>
+                      </g>
+                      <rect width="855.2" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="17" data-semantic-parent="21" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(3748.5,0)">
+                  <use data-c="3D" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-3D"/>
+                </g>
+                <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="18" data-semantic-parent="21" data-semantic-speech="1" transform="translate(4804.3,0)">
+                  <use data-c="31" xlink:href="#elliptic-cone-traces-MJX-10-TEX-N-31"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

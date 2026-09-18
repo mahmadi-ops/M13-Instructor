@@ -1,0 +1,51 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperbola-example-hyperbola" speech2="The worked-example hyperbola opening left and right, with vertices at plus and minus four, foci at plus and minus five, and asymptotes of slope three quarters">
+      <grouped>hyperbola-example-hyperbola</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperbola-example-hyperbola</active>
+        <active>hyperbola-example-asymptotes</active>
+        <active>hyperbola-example-vertices</active>
+        <active>hyperbola-example-foci</active>
+      </children>
+      <components>
+        <active>hyperbola-example-hyperbola</active>
+        <active>hyperbola-example-asymptotes</active>
+        <active>hyperbola-example-vertices</active>
+        <active>hyperbola-example-foci</active>
+      </components>
+    </annotation>
+    <annotation id="hyperbola-example-hyperbola" speech2="The hyperbola x squared over sixteen minus y squared over nine equals one, two blue branches opening left and right" sonify="yes">
+      <active>hyperbola-example-hyperbola</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperbola-example-hyperbola</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>hyperbola-example-hyperbola</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="hyperbola-example-asymptotes" speech2="The dashed asymptotes y equals plus and minus three quarters x through the origin">
+      <active>hyperbola-example-asymptotes</active>
+      <position>2</position>
+      <parents>
+        <grouped>hyperbola-example-hyperbola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-example-vertices" speech2="The vertices at plus and minus four on the x axis, where a equals four">
+      <active>hyperbola-example-vertices</active>
+      <position>3</position>
+      <parents>
+        <grouped>hyperbola-example-hyperbola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-example-foci" speech2="The foci at plus and minus five on the x axis, since c squared equals sixteen plus nine equals twenty five">
+      <active>hyperbola-example-foci</active>
+      <position>4</position>
+      <parents>
+        <grouped>hyperbola-example-hyperbola</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

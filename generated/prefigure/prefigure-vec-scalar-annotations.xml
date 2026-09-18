@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-vec-scalar-figure" speech2="Four arrows in a row. The first, in blue, is the vector u. The next two, in orange, are one and a half u and two u; they point the same way as u but are longer. The last, also orange, is negative two u; it has the same length as two u but points the opposite way, down and to the left.">
+      <grouped>prefigure-vec-scalar-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-scalar-sc-u</active>
+        <active>prefigure-vec-scalar-sc-15u</active>
+        <active>prefigure-vec-scalar-sc-2u</active>
+        <active>prefigure-vec-scalar-sc-m2u</active>
+      </children>
+      <components>
+        <active>prefigure-vec-scalar-sc-u</active>
+        <active>prefigure-vec-scalar-sc-15u</active>
+        <active>prefigure-vec-scalar-sc-2u</active>
+        <active>prefigure-vec-scalar-sc-m2u</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-vec-scalar-sc-u" speech2="The original vector u, drawn in blue.">
+      <active>prefigure-vec-scalar-sc-u</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-vec-scalar-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-scalar-sc-15u" speech2="One and a half times u: same direction, one and a half times as long.">
+      <active>prefigure-vec-scalar-sc-15u</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-scalar-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-scalar-sc-2u" speech2="Two times u: same direction, twice as long.">
+      <active>prefigure-vec-scalar-sc-2u</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-vec-scalar-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-scalar-sc-m2u" speech2="Negative two times u: twice as long as u but pointing in the opposite direction, because the scalar is negative.">
+      <active>prefigure-vec-scalar-sc-m2u</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-vec-scalar-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

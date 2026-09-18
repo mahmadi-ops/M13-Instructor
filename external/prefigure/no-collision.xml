@@ -1,0 +1,64 @@
+<prefigure xmlns="https://prefigure.org" label="no-collision">
+  <diagram dimensions="(340,340)" margins="5">
+
+    <!-- Particle 1: the parabola  y = x^2 -->
+    <definition>r1(t) = (t, t^2)</definition>
+    <!-- Particle 2: the line  y = x + 2, traced downward-left -->
+    <definition>r2(t) = (-t, 2 - t)</definition>
+
+    <coordinates bbox="(-4,-2,4,6)">
+      <grid-axes xlabel="x" ylabel="y"/>
+
+      <parametric-curve at="path1" function="r1" domain="(-2.45,2.45)"
+                        stroke="blue" thickness="2"/>
+      <parametric-curve at="path2" function="r2" domain="(-4,4)"
+                        stroke="red" thickness="2"/>
+
+      <label at="label1" anchor="(2.6,5.6)" alignment="e" clear-background="yes">
+        <m>C_1</m>
+      </label>
+      <label at="label2" anchor="(-3.2,-1.2)" alignment="n" clear-background="yes">
+        <m>C_2</m>
+      </label>
+
+      <group at="pointA">
+        <point p="(-1,1)" style="circle" fill="black"/>
+        <label anchor="(-1,1)" alignment="nw" clear-background="yes">
+          <m>(-1,1)</m>
+        </label>
+        <label anchor="(-1,1)" alignment="sw" clear-background="yes">
+          <m>t=-1</m> vs. <m>t=1</m>
+        </label>
+      </group>
+
+      <group at="pointB">
+        <point p="(2,4)" style="circle" fill="black"/>
+        <label anchor="(2,4)" alignment="nw" clear-background="yes">
+          <m>(2,4)</m>
+        </label>
+        <label anchor="(2,4)" alignment="se" clear-background="yes">
+          <m>t=2</m> vs. <m>t=-2</m>
+        </label>
+      </group>
+    </coordinates>
+
+    <annotations text="Two parametrized paths that intersect in two points, although the two particles never collide">
+      <annotation ref="paths" text="The two paths">
+        <annotation ref="path1" sonify="yes"
+                    text="The path of the first particle, the parabola y equals x squared"
+                    speech="The first particle moves along the parabola y equals x squared, with position r one of t equals t comma t squared"/>
+        <annotation ref="path2" sonify="yes"
+                    text="The path of the second particle, the line y equals x plus 2"
+                    speech="The second particle moves along the line y equals x plus 2, with position r two of t equals negative t comma 2 minus t"/>
+      </annotation>
+      <annotation ref="intersections" text="The two intersection points of the paths">
+        <annotation ref="pointA"
+                    text="The intersection point negative 1 comma 1"
+                    speech="The first particle is at the point negative 1 comma 1 when t equals negative 1, while the second particle is there when t equals 1. Since the times differ, this is not a collision."/>
+        <annotation ref="pointB"
+                    text="The intersection point 2 comma 4"
+                    speech="The first particle is at the point 2 comma 4 when t equals 2, while the second particle is there when t equals negative 2. Since the times differ, this is not a collision."/>
+      </annotation>
+    </annotations>
+  </diagram>
+</prefigure>

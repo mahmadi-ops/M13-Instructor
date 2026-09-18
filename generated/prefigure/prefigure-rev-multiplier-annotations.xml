@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rev-multiplier-figure" speech2="A bar chart of the successive rounds of spending. The first bar has height one thousand dollars, and each following bar is eighty percent as tall as the one before: eight hundred, six hundred forty, five hundred twelve, and so on, shrinking geometrically toward zero.">
+      <grouped>prefigure-rev-multiplier-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-multiplier-mult-b1</active>
+        <active>prefigure-rev-multiplier-mult-b2</active>
+        <active>prefigure-rev-multiplier-mult-b3</active>
+      </children>
+      <components>
+        <active>prefigure-rev-multiplier-mult-b1</active>
+        <active>prefigure-rev-multiplier-mult-b2</active>
+        <active>prefigure-rev-multiplier-mult-b3</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rev-multiplier-mult-b1" speech2="The initial rebate of one thousand dollars.">
+      <active>prefigure-rev-multiplier-mult-b1</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rev-multiplier-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-multiplier-mult-b2" speech2="The first round of respending, eighty percent of one thousand, which is eight hundred dollars.">
+      <active>prefigure-rev-multiplier-mult-b2</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-multiplier-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-multiplier-mult-b3" speech2="The second round, eighty percent of eight hundred, which is six hundred forty dollars. The rounds continue forever, but their total is five thousand dollars.">
+      <active>prefigure-rev-multiplier-mult-b3</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rev-multiplier-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

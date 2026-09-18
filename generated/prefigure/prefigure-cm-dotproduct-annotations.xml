@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cm-dotproduct-figure" speech2="Two panels comparing a force that is not perpendicular to the velocity with one that is. In the left panel the force arrow leans forward and has a green component along the velocity, so the dot product is nonzero and the speed changes. In the right panel the force is straight up, perpendicular to the velocity, so it has no component along the velocity, the dot product is zero, and the speed stays constant.">
+      <grouped>prefigure-cm-dotproduct-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cm-dotproduct-da-F</active>
+        <active>prefigure-cm-dotproduct-da-proj</active>
+        <active>prefigure-cm-dotproduct-db-F</active>
+        <active>prefigure-cm-dotproduct-db-right</active>
+      </children>
+      <components>
+        <active>prefigure-cm-dotproduct-da-F</active>
+        <active>prefigure-cm-dotproduct-da-proj</active>
+        <active>prefigure-cm-dotproduct-db-F</active>
+        <active>prefigure-cm-dotproduct-db-right</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cm-dotproduct-da-F" speech2="A force leaning forward, at an acute angle to the velocity.">
+      <active>prefigure-cm-dotproduct-da-F</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cm-dotproduct-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-dotproduct-da-proj" speech2="The component of that force along the velocity, drawn in green; it is nonzero, so the speed changes.">
+      <active>prefigure-cm-dotproduct-da-proj</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cm-dotproduct-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-dotproduct-db-F" speech2="A force perpendicular to the velocity.">
+      <active>prefigure-cm-dotproduct-db-F</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cm-dotproduct-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-dotproduct-db-right" speech2="A right angle marker showing the force is perpendicular to the velocity, so its component along the velocity is zero.">
+      <active>prefigure-cm-dotproduct-db-right</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-cm-dotproduct-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

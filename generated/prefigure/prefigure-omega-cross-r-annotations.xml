@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-omega-cross-r-figure" speech2="A circular orbit in the horizontal plane drawn in an oblique view, with the z axis vertical. The angular velocity vector points straight up along the z axis from the centre O. The position vector runs from O out to the particle on the orbit, and the velocity vector at the particle is tangent to the orbit. The velocity is the cross product of the angular velocity with the position vector; since the two factors are perpendicular, the speed is omega times r.">
+      <grouped>prefigure-omega-cross-r-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-omega-cross-r-cr-orb</active>
+        <active>prefigure-omega-cross-r-cr-dir</active>
+        <active>prefigure-omega-cross-r-cr-w</active>
+        <active>prefigure-omega-cross-r-cr-r</active>
+        <active>prefigure-omega-cross-r-cr-v</active>
+      </children>
+      <components>
+        <active>prefigure-omega-cross-r-cr-orb</active>
+        <active>prefigure-omega-cross-r-cr-dir</active>
+        <active>prefigure-omega-cross-r-cr-w</active>
+        <active>prefigure-omega-cross-r-cr-r</active>
+        <active>prefigure-omega-cross-r-cr-v</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-omega-cross-r-cr-orb" speech2="The circular orbit of the particle.">
+      <active>prefigure-omega-cross-r-cr-orb</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-omega-cross-r-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-omega-cross-r-cr-dir" speech2="An arrowhead on the orbit showing the sense of circulation.">
+      <active>prefigure-omega-cross-r-cr-dir</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-omega-cross-r-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-omega-cross-r-cr-w" speech2="The angular velocity vector, pointing up the z axis, perpendicular to the plane of the orbit.">
+      <active>prefigure-omega-cross-r-cr-w</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-omega-cross-r-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-omega-cross-r-cr-r" speech2="The position vector from the centre out to the particle, equal to r times r hat.">
+      <active>prefigure-omega-cross-r-cr-r</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-omega-cross-r-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-omega-cross-r-cr-v" speech2="The velocity, equal to the cross product of the angular velocity with the position vector, tangent to the orbit.">
+      <active>prefigure-omega-cross-r-cr-v</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-omega-cross-r-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

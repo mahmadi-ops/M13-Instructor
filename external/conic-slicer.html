@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slicing the double cone x^2 + y^2 = z^2</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  button {
+    font-size: 14px; padding: 5px 12px; border-radius: 6px;
+    border: 1px solid #888; background: #f4f4f4; cursor: pointer;
+  }
+  button:hover { background: #e6e6e6; }
+  button.active { background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+  #playBtn { min-width: 92px; }
+  .sliderRow {
+    display: flex; align-items: center; gap: 10px;
+    padding: 0 10px 6px 10px; box-sizing: border-box;
+  }
+  .sliderRow input { flex: 1; }
+  .sliderRow span { font-size: 15px; min-width: 118px; font-variant-numeric: tabular-nums; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span style="font-size:14px;">Cut with plane z = m&#183;y + c:</span>
+    <button id="btnEll">Ellipse&nbsp;(m &lt; 1)</button>
+    <button id="btnPar">Parabola&nbsp;(m = 1)</button>
+    <button id="btnHyp">Hyperbola&nbsp;(m &gt; 1)</button>
+    <span style="flex:1"></span>
+    <button id="playBtn" title="Toggle automatic rotation">&#9654; Rotate</button>
+  </div>
+  <div class="sliderRow">
+    <span id="mLabel">tilt m = 0.50</span>
+    <input type="range" id="mSlider" min="0" max="2" step="0.05" value="0.5">
+  </div>
+  <div class="sliderRow">
+    <span id="cLabel">offset c = 1.00</span>
+    <input type="range" id="cSlider" min="-2" max="2" step="0.05" value="1">
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // ---------- renderer / scene ----------
+  var wrap = document.getElementById("canvasWrap");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(window.devicePixelRatio || 1);
+  wrap.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xffffff);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+  camera.up.set(0, 0, 1); // z points up, math convention
+
+  // spherical camera coordinates
+  var radius = 8.2, theta = 0.5, phi = 1.15; // azimuth, polar
+  function placeCamera() {
+    camera.position.set(
+      radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.sin(phi) * Math.sin(theta),
+      radius * Math.cos(phi)
+    );
+    camera.lookAt(0, 0, 0);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+  var dir1 = new THREE.DirectionalLight(0xffffff, 0.7);
+  dir1.position.set(5, 3, 6);
+  scene.add(dir1);
+  var dir2 = new THREE.DirectionalLight(0xffffff, 0.35);
+  dir2.position.set(-4, -5, -3);
+  scene.add(dir2);
+
+  var ZMAX = 2.2;
+  var EPS = 1e-9;
+
+  // ---------- axes ----------
+  function axis(from, to, color) {
+    var g = new THREE.BufferGeometry().setFromPoints([from, to]);
+    scene.add(new THREE.Line(g, new THREE.LineBasicMaterial({ color: color })));
+  }
+  var A = 3.2;
+  axis(new THREE.Vector3(-A, 0, 0), new THREE.Vector3(A, 0, 0), 0x999999);
+  axis(new THREE.Vector3(0, -A, 0), new THREE.Vector3(0, A, 0), 0x999999);
+  axis(new THREE.Vector3(0, 0, -A), new THREE.Vector3(0, 0, A), 0x999999);
+
+  // ---------- double cone x^2 + y^2 = z^2, |z| <= ZMAX ----------
+  (function buildCone() {
+    var nu = 96, nv = 48; // around, along z
+    var positions = [], indices = [];
+    for (var j = 0; j <= nv; j++) {
+      var v = -ZMAX + (2 * ZMAX * j) / nv;
+      var r = Math.abs(v); // radius equals |z| on the cone
+      for (var i = 0; i <= nu; i++) {
+        var t = (2 * Math.PI * i) / nu;
+        positions.push(r * Math.cos(t), r * Math.sin(t), v);
+      }
+    }
+    for (var jj = 0; jj < nv; jj++) {
+      for (var ii = 0; ii < nu; ii++) {
+        var a = jj * (nu + 1) + ii, b = a + 1;
+        var c = a + (nu + 1), d = c + 1;
+        indices.push(a, b, d, a, d, c);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    geo.setIndex(indices);
+    geo.computeVertexNormals();
+    var mat = new THREE.MeshPhongMaterial({
+      color: 0x4f8fd6, transparent: true, opacity: 0.45,
+      side: THREE.DoubleSide, depthWrite: false, shininess: 60
+    });
+    scene.add(new THREE.Mesh(geo, mat));
+    var wire = new THREE.LineSegments(
+      new THREE.WireframeGeometry(geo),
+      new THREE.LineBasicMaterial({ color: 0x35659a, transparent: true, opacity: 0.12 })
+    );
+    scene.add(wire);
+  })();
+
+  // ---------- slice plane + intersection curve ----------
+  var PLANE_SIZE = 6.6;
+  var planeMesh = new THREE.Mesh(
+    new THREE.PlaneGeometry(PLANE_SIZE, PLANE_SIZE),
+    new THREE.MeshPhongMaterial({
+      color: 0xf2c14e, transparent: true, opacity: 0.30,
+      side: THREE.DoubleSide, depthWrite: false
+    })
+  );
+  scene.add(planeMesh);
+
+  var curveGroup = new THREE.Group();
+  scene.add(curveGroup);
+  var curveMat = new THREE.MeshPhongMaterial({ color: 0xd1362f });
+
+  function clearCurves() {
+    while (curveGroup.children.length) {
+      var m = curveGroup.children.pop();
+      m.geometry.dispose();
+    }
+  }
+  function addTube(points, closed) {
+    if (points.length < 2) return;
+    var curve = new THREE.CatmullRomCurve3(points, !!closed);
+    var geo = new THREE.TubeGeometry(curve, Math.max(32, points.length * 2), 0.035, 8, !!closed);
+    curveGroup.add(new THREE.Mesh(geo, curveMat));
+  }
+  function addPointMarker(p) {
+    var geo = new THREE.SphereGeometry(0.07, 16, 12);
+    var mesh = new THREE.Mesh(geo, curveMat);
+    mesh.position.copy(p);
+    curveGroup.add(mesh);
+  }
+
+  var mVal = 0.5;
+  var cVal = 1.0;
+
+  // On the plane z = m*y + c, points of the cone satisfy
+  //   (1 - m^2) y^2 - 2 m c y + (x^2 - c^2) = 0.
+  // For m > 1 the two y-roots trace the two branches of the hyperbola.
+  function yRoot(x, sign, m, c) {
+    var q = 1 - m * m;
+    var disc = m * m * c * c - q * (x * x - c * c); // = (m^2-1) x^2 + c^2 when m>1
+    var s = Math.sqrt(Math.max(0, disc));
+    return (m * c + sign * s) / q;
+  }
+
+  function updateSlice() {
+    clearCurves();
+
+    // orient plane z = m*y + c : rotate xy-plane about the x-axis by atan(m)
+    planeMesh.rotation.set(Math.atan(mVal), 0, 0);
+    planeMesh.position.set(0, 0, cVal);
+
+    var readout = document.getElementById("readout");
+    var head = "Cut z = " + mVal.toFixed(2) + "\u00B7y + " + cVal.toFixed(2) + ":  ";
+    var i, t, pts, seg, x, y, z;
+
+    var degenerate = Math.abs(cVal) < EPS;
+    var isPar = Math.abs(mVal - 1) < EPS;
+
+    if (degenerate) {
+      // plane passes through the apex
+      if (mVal < 1 - EPS) {
+        addPointMarker(new THREE.Vector3(0, 0, 0));
+        readout.textContent = head + "degenerate \u2014 a single point (the apex)";
+      } else if (isPar) {
+        pts = [new THREE.Vector3(0, -ZMAX, -ZMAX), new THREE.Vector3(0, ZMAX, ZMAX)];
+        addTube(pts);
+        readout.textContent = head + "degenerate \u2014 one line (the plane touches the cone along a ruling)";
+      } else {
+        var sl = Math.sqrt(mVal * mVal - 1);
+        var ymax = ZMAX / mVal;
+        [1, -1].forEach(function (sign) {
+          addTube([
+            new THREE.Vector3(sign * sl * (-ymax), -ymax, -ZMAX),
+            new THREE.Vector3(sign * sl * ymax, ymax, ZMAX)
+          ]);
+        });
+        readout.textContent = head + "degenerate \u2014 two lines crossing at the apex";
+      }
+      render();
+      return;
+    }
+
+    if (isPar) {
+      // parabola: y = (x^2 - c^2)/(2c), z = y + c, on the nappe with the sign of c
+      var xlim = Math.sqrt(Math.max(0, 2 * Math.abs(cVal) * ZMAX - cVal * cVal));
+      pts = [];
+      var N = 140;
+      for (i = 0; i <= N; i++) {
+        x = -xlim + (2 * xlim * i) / N;
+        y = (x * x - cVal * cVal) / (2 * cVal);
+        z = y + cVal;
+        if (Math.abs(z) <= ZMAX + 1e-9) pts.push(new THREE.Vector3(x, y, z));
+      }
+      addTube(pts);
+      readout.textContent = head + "parabola \u2014 plane parallel to the slant (one nappe, open curve)";
+    } else if (mVal < 1) {
+      // ellipse (circle when m = 0): closed curve, clipped if it runs past |z| = ZMAX
+      var q = 1 - mVal * mVal;
+      var y0 = mVal * cVal / q;
+      var Aax = cVal / q;                       // signed semi-axis along y
+      var Bax = Math.abs(cVal) / Math.sqrt(q);  // semi-axis along x
+      var zFar = Math.abs(cVal) / (1 - mVal);   // farthest |z| reached
+      var clipped = zFar > ZMAX + 1e-9;
+      var M = 160;
+      if (!clipped) {
+        pts = [];
+        for (i = 0; i < M; i++) {
+          t = (2 * Math.PI * i) / M;
+          y = y0 + Aax * Math.sin(t);
+          pts.push(new THREE.Vector3(Bax * Math.cos(t), y, mVal * y + cVal));
+        }
+        addTube(pts, true);
+      } else {
+        seg = [];
+        for (i = 0; i <= M; i++) {
+          t = (2 * Math.PI * i) / M;
+          y = y0 + Aax * Math.sin(t);
+          z = mVal * y + cVal;
+          if (Math.abs(z) <= ZMAX) seg.push(new THREE.Vector3(Bax * Math.cos(t), y, z));
+          else { addTube(seg); seg = []; }
+        }
+        addTube(seg);
+      }
+      var name = mVal < EPS
+        ? "circle  x\u00B2 + y\u00B2 = " + (cVal * cVal).toFixed(2)
+        : "ellipse";
+      readout.textContent = head + name +
+        " \u2014 plane shallower than the slant (closed curve on one nappe" +
+        (clipped ? ", running past the picture" : "") + ")";
+    } else {
+      // hyperbola: two branches, one on each nappe
+      [ -1, 1 ].forEach(function (sign) {
+        // find |x| limit where |z| reaches ZMAX (|z| grows with |x| on each branch)
+        var lo = 0, hi = 60;
+        for (var k = 0; k < 60; k++) {
+          var mid = 0.5 * (lo + hi);
+          var yy = yRoot(mid, sign, mVal, cVal);
+          if (Math.abs(mVal * yy + cVal) > ZMAX) hi = mid; else lo = mid;
+        }
+        var xlim = lo;
+        var segb = [];
+        var M2 = 140;
+        for (var ii = 0; ii <= M2; ii++) {
+          var xx = -xlim + (2 * xlim * ii) / M2;
+          var yb = yRoot(xx, sign, mVal, cVal);
+          var zb = mVal * yb + cVal;
+          if (Math.abs(zb) <= ZMAX + 1e-6) segb.push(new THREE.Vector3(xx, yb, zb));
+        }
+        addTube(segb);
+      });
+      readout.textContent = head + "hyperbola \u2014 plane steeper than the slant (cuts BOTH nappes)";
+    }
+    render();
+  }
+
+  // ---------- rendering / animation (starts PAUSED) ----------
+  var playing = false;
+  var rafId = null;
+
+  function render() { renderer.render(scene, camera); }
+
+  function animate() {
+    if (!playing) return;
+    theta += 0.006;
+    placeCamera();
+    render();
+    rafId = requestAnimationFrame(animate);
+  }
+
+  var playBtn = document.getElementById("playBtn");
+  playBtn.addEventListener("click", function () {
+    playing = !playing;
+    playBtn.innerHTML = playing ? "&#10074;&#10074; Pause" : "&#9654; Rotate";
+    playBtn.classList.toggle("active", playing);
+    if (playing) animate();
+    else if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+  });
+
+  // ---------- drag to rotate ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  var el = renderer.domElement;
+  function startDrag(x, y) { dragging = true; lastX = x; lastY = y; }
+  function moveDrag(x, y) {
+    if (!dragging) return;
+    theta -= (x - lastX) * 0.008;
+    phi = Math.min(Math.PI - 0.05, Math.max(0.05, phi - (y - lastY) * 0.008));
+    lastX = x; lastY = y;
+    placeCamera();
+    if (!playing) render();
+  }
+  el.addEventListener("mousedown", function (e) { startDrag(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { moveDrag(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  el.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { startDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  el.addEventListener("touchmove", function (e) {
+    if (e.touches.length === 1) { moveDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- controls ----------
+  var mSlider = document.getElementById("mSlider");
+  var cSlider = document.getElementById("cSlider");
+
+  function setButtons() {
+    var isPar = Math.abs(mVal - 1) < EPS;
+    document.getElementById("btnEll").classList.toggle("active", mVal < 1 - EPS);
+    document.getElementById("btnPar").classList.toggle("active", isPar);
+    document.getElementById("btnHyp").classList.toggle("active", mVal > 1 + EPS);
+  }
+  function setM(v) {
+    mVal = v;
+    mSlider.value = String(v);
+    document.getElementById("mLabel").textContent = "tilt m = " + mVal.toFixed(2);
+    setButtons();
+    updateSlice();
+  }
+  document.getElementById("btnEll").addEventListener("click", function () { setM(0.5); });
+  document.getElementById("btnPar").addEventListener("click", function () { setM(1.0); });
+  document.getElementById("btnHyp").addEventListener("click", function () { setM(1.8); });
+
+  mSlider.addEventListener("input", function () {
+    mVal = parseFloat(mSlider.value);
+    document.getElementById("mLabel").textContent = "tilt m = " + mVal.toFixed(2);
+    setButtons();
+    updateSlice();
+  });
+  cSlider.addEventListener("input", function () {
+    cVal = parseFloat(cSlider.value);
+    document.getElementById("cLabel").textContent = "offset c = " + cVal.toFixed(2);
+    updateSlice();
+  });
+
+  // ---------- sizing (fills iframe) ----------
+  function resize() {
+    var w = document.getElementById("app").clientWidth;
+    var rows = document.getElementsByClassName("sliderRow");
+    var used = document.getElementById("controls").offsetHeight +
+               rows[0].offsetHeight + rows[1].offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(220, window.innerHeight - used - 4);
+    renderer.setSize(w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    render();
+  }
+  window.addEventListener("resize", resize);
+
+  // ---------- initial state: paused, ellipse cut ----------
+  placeCamera();
+  resize();
+  setM(0.5);
+})();
+</script>
+</body>
+</html>

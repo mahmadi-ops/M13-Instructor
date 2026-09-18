@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fastest increase, fastest decrease and no change in the plane -- animated</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math.
+     Kept in step with conic-slicer-manim.html, the book's other animated figure. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;   /* manim's off-white text */
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --yellow:    #ffe14d;
+    --red:       #fc6255;
+    --gold:      #f0ac5f;
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  /* The figure is framed by the page at a fixed aspect ratio, so it lays out
+     as a column that exactly fills the iframe: the panel takes what it needs
+     and the stage takes the rest. Computing the stage height from
+     innerHeight minus the panel used to leave a pixel or two over, which
+     showed up as a scrollbar. */
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  #app { width: 100%; height: 100%; box-sizing: border-box;
+         display: flex; flex-direction: column; }
+
+  #stage { position: relative; width: 100%; background: var(--bg);
+           flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+
+  .overlay { position: absolute; pointer-events: none; }
+
+  #eqcard {
+    top: 12px; left: 14px;
+    padding: 9px 13px 10px 13px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    line-height: 1.45;
+  }
+  .math { font-family: var(--serif); font-size: 18px; }
+  .math i, .var { font-style: italic; }
+  .math b { font-weight: 700; font-style: normal; }
+  .math sub { font-size: 70%; }
+  #caseName {
+    font-size: 17px; font-weight: 600; letter-spacing: .2px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+    transition: color .3s ease;
+  }
+  #caseCond { font-size: 13px; color: var(--dim); }
+
+  #meter {
+    left: 14px; bottom: 12px;
+    padding: 8px 12px 9px 12px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-radius: 6px;
+    font-size: 13px; color: var(--dim);
+    font-variant-numeric: tabular-nums;
+  }
+  #meter b { color: var(--ink); font-weight: 600; }
+  #meter .m { font-family: var(--serif); }
+  #meter .m i { font-style: italic; }
+  #meter .m b { font-weight: 700; font-style: normal; }
+  #bar {
+    position: relative; margin-top: 6px;
+    width: 190px; height: 5px; border-radius: 3px;
+    background: linear-gradient(to right, var(--red) 0%, var(--yellow) 50%, var(--green) 100%);
+    opacity: .75;
+  }
+  #barKnob {
+    position: absolute; top: -3px; width: 3px; height: 11px;
+    background: var(--ink); border-radius: 2px;
+    transition: left .12s linear;
+  }
+
+  #caption {
+    left: 50%; transform: translateX(-50%);
+    bottom: 68px; max-width: 66%;
+    text-align: center; font-size: 15px; line-height: 1.4;
+    background: rgba(6,7,10,0.78);
+    padding: 7px 14px; border-radius: 6px;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  #caption.show { opacity: 1; }
+
+  #panel {
+    flex: 0 0 auto;
+    border-top: 1px solid var(--edge);
+    background: var(--panel);
+    padding: 9px 12px 11px 12px;
+    box-sizing: border-box;
+  }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 13px; color: var(--dim); }
+
+  button {
+    font: inherit; font-size: 13.5px;
+    padding: 5px 12px; border-radius: 999px;
+    color: var(--ink); background: #1a1d26;
+    border: 1px solid var(--edge);
+    cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+  }
+  button:hover { background: #232734; }
+  button:disabled { opacity: .45; cursor: default; }
+  button.active { color: #06070a; font-weight: 600; }
+  button .math { font-size: 15px; }
+  #btnMax.active { background: var(--green);  border-color: var(--green); }
+  #btnMin.active { background: var(--red);    border-color: var(--red); }
+  #btnZero.active { background: var(--yellow); border-color: var(--yellow); }
+  #btnTour.running { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+  #btnSpin.active  { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+
+  .sliderRow { display: flex; align-items: center; gap: 10px; }
+  .sliderRow .name {
+    font-size: 14px; min-width: 104px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+  }
+  input[type=range] {
+    flex: 1; min-width: 120px; height: 22px;
+    -webkit-appearance: none; appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-moz-range-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 14px; height: 14px; margin-top: -5.5px;
+    border-radius: 50%; background: var(--blue); border: none; cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 14px; height: 14px; border: none;
+    border-radius: 50%; background: var(--blue); cursor: pointer;
+  }
+
+  @media (max-width: 560px) {
+    #eqcard {
+      position: static;
+      padding: 7px 12px 8px 12px;
+      border: none; border-bottom: 1px solid var(--edge);
+      border-radius: 0; background: var(--panel);
+      line-height: 1.35;
+    }
+    .math { font-size: 16px; }
+    #caseName { font-size: 15px; }
+    #caseCond { display: none; }
+    #panel { padding: 7px 10px 8px 10px; }
+    .row + .row { margin-top: 7px; }
+    .lbl { display: none; }
+    button { font-size: 13px; padding: 4px 10px; }
+    .sliderRow .name { min-width: 92px; font-size: 13px; }
+    #meter { font-size: 12px; padding: 6px 10px 7px 10px; left: 10px; bottom: 10px; }
+    #bar { width: 130px; }
+    #caption { font-size: 13px; max-width: 88%; bottom: 58px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <canvas id="cv"></canvas>
+    <div id="eqcard" class="overlay">
+      <div class="math" style="color:#9cdceb"><i>f</i>(<i>x</i>,&#8202;<i>y</i>) = <i>x</i>&#178;/2 + <i>y</i>&#178;/2</div>
+      <div class="math"><i><b>u</b></i> = &#10216;cos&#8202;<i>&phi;</i>, sin&#8202;<i>&phi;</i>&#10217; at <i>P</i><sub>0</sub>(1,&#8202;1)</div>
+      <div id="caseName">D<sub>u</sub>f = 1.41</div>
+      <div id="caseCond">A: u points along &#8711;f</div>
+    </div>
+
+    <div id="meter" class="overlay">
+      <span class="m"><i>D</i><sub><b>u</b></sub>&#8202;<i>f</i> = &#8711;<i>f</i> &middot; <i><b>u</b></i></span> =
+      <b id="dVal">1.41</b>
+      &nbsp;of&nbsp; <span class="m">&#8214;&#8711;<i>f</i>&#8214;</span> = <b>1.41</b>
+      <div id="bar"><div id="barKnob" style="left:0px"></div></div>
+    </div>
+
+    <div id="caption" class="overlay"></div>
+  </div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Snap to:</span>
+      <button id="btnMax">A: fastest increase</button>
+      <button id="btnMin">B: fastest decrease</button>
+      <button id="btnZero">C: no change</button>
+      <span style="flex:1"></span>
+      <button id="btnTour">&#9654;&nbsp;Play</button>
+    </div>
+    <div class="row sliderRow">
+      <span class="name">&phi; = <span id="phiVal">45</span>&deg;</span>
+      <input type="range" id="phiSlider" min="0" max="360" step="1" value="45"
+             aria-label="direction angle phi of the unit vector u">
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Manim colours, matching the book's other animated figures.
+  var BLUE_C = "#58c4dd", BLUE_E = "#1c758a", GREEN_C = "#83c167",
+      YELLOW = "#ffe14d", RED_C = "#fc6255", GOLD_C = "#f0ac5f",
+      PINK = "#d58bc4", GREY = "#8a8f9c", INK = "#ece6e2";
+  var SERIF = "'PT Serif', 'Times New Roman', Times, serif";
+
+  // ---- the construction: f = x^2/2 + y^2/2 at P0(1,1) ----
+  var X0 = 1, Y0 = 1;
+  var GX = X0, GY = Y0;                        // grad f(1,1) = (1,1)
+  var MAG = Math.hypot(GX, GY);                // sqrt(2)
+  var GRAD_ANG = Math.atan2(GY, GX);           // 45 degrees
+  function dOf(phi) { return GX * Math.cos(phi) + GY * Math.sin(phi); }
+
+  var canvas = document.getElementById("cv"), ctx = canvas.getContext("2d");
+  var stage = document.getElementById("stage");
+  // wide enough for the gradient arrow at P0 and its label to stay inside
+  var BB = { xmin: -3.05, xmax: 3.05, ymin: -3.05, ymax: 3.05 };
+  var phi = 45 * Math.PI / 180;
+
+  function view() {
+    var w = canvas.width, h = canvas.height;
+    var k = Math.min(w / (BB.xmax - BB.xmin), h / (BB.ymax - BB.ymin));
+    return { k: k, ox: w / 2, oy: h / 2 };
+  }
+  function X(v, x) { return v.ox + v.k * x; }
+  function Y(v, y) { return v.oy - v.k * y; }
+
+  // ---- setting mathematics on the canvas, the way MathJax does ----
+  // runs: [{t, up: upright?, bold: \mathbf?, sub: subscript?}]; italic default
+  function mathRuns(runs, x, y, color, align, sizePx) {
+    var dpr = window.devicePixelRatio || 1;
+    var base = (sizePx || 17) * dpr, small = base * 0.68;
+    function fontOf(r) {
+      return (r.bold ? "bold " : (r.up ? "" : "italic ")) +
+             (r.sub ? small : base) + "px " + SERIF;
+    }
+    function kern(rs, i) {
+      return (rs[i].sub && i + 1 < rs.length && !rs[i + 1].sub) ? 0.09 * base : 0;
+    }
+    var total = 0, i;
+    for (i = 0; i < runs.length; i++) {
+      ctx.font = fontOf(runs[i]);
+      total += ctx.measureText(runs[i].t).width + kern(runs, i);
+    }
+    var cx = align === "center" ? x - total / 2 : align === "right" ? x - total : x;
+    ctx.fillStyle = color;
+    for (i = 0; i < runs.length; i++) {
+      ctx.font = fontOf(runs[i]);
+      ctx.fillText(runs[i].t, cx, y + (runs[i].sub ? 0.22 * base : 0));
+      cx += ctx.measureText(runs[i].t).width + kern(runs, i);
+    }
+  }
+  var GRAD_RUNS = [{ t: "∇", up: true }, { t: "f" }];
+  var U_RUNS = [{ t: "u", bold: true }];
+  var UT_RUNS = [{ t: "ũ", bold: true }];
+
+  function arrow(v, x0, y0, x1, y1, color, lw, alpha) {
+    var ax = X(v, x0), ay = Y(v, y0), bx = X(v, x1), by = Y(v, y1);
+    var ang = Math.atan2(by - ay, bx - ax), hl = 9 + lw * 1.6;
+    ctx.save();
+    ctx.globalAlpha = alpha === undefined ? 1 : alpha;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = lw;
+    ctx.lineCap = "round";
+    ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(bx, by);
+    ctx.lineTo(bx - hl * Math.cos(ang - 0.40), by - hl * Math.sin(ang - 0.40));
+    ctx.lineTo(bx - hl * Math.cos(ang + 0.40), by - hl * Math.sin(ang + 0.40));
+    ctx.closePath(); ctx.fill();
+    ctx.restore();
+  }
+
+  function classify(D) {
+    if (Math.abs(D - MAG) < 2e-2)
+      return { key: "max", color: GREEN_C, cond: "A: u points along ∇f, Dᵤf = ‖∇f‖" };
+    if (Math.abs(D + MAG) < 2e-2)
+      return { key: "min", color: RED_C, cond: "B: u points along −∇f, Dᵤf = −‖∇f‖" };
+    if (Math.abs(D) < 2e-2)
+      return { key: "zero", color: YELLOW, cond: "C: u is tangent to the level curve, Dᵤf = 0" };
+    return { key: "mid", color: GOLD_C, cond: "" };
+  }
+
+  function draw() {
+    var v = view(), w = canvas.width, h = canvas.height;
+    var dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = "#06070a"; ctx.fillRect(0, 0, w, h);
+
+    var c = Math.cos(phi), s = Math.sin(phi);
+    var D = dOf(phi), info = classify(D);
+
+    // the family of level curves, with f = 1 (the one through P0) picked out
+    [0.2, 0.5, 0.8, 1.4, 1.8, 2.2].forEach(function (level) {
+      var r = Math.sqrt(2 * level);
+      ctx.strokeStyle = BLUE_E; ctx.globalAlpha = 0.55; ctx.lineWidth = 1.4 * dpr;
+      ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k * r, 0, 2 * Math.PI); ctx.stroke();
+      ctx.globalAlpha = 1;
+    });
+    var R0 = Math.hypot(X0, Y0);
+    ctx.strokeStyle = PINK; ctx.lineWidth = 3.4 * dpr;
+    ctx.shadowColor = PINK; ctx.shadowBlur = 14 * dpr;
+    ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k * R0, 0, 2 * Math.PI); ctx.stroke();
+    ctx.shadowBlur = 0;
+    mathRuns([{ t: "f" }, { t: " = 1", up: true }],
+             X(v, -R0 * 0.72), Y(v, -R0 * 0.72), PINK, "center", 16);
+
+    // axes
+    ctx.strokeStyle = GREY; ctx.globalAlpha = 0.5; ctx.lineWidth = 1.2 * dpr;
+    ctx.beginPath();
+    ctx.moveTo(X(v, BB.xmin), Y(v, 0)); ctx.lineTo(X(v, BB.xmax), Y(v, 0));
+    ctx.moveTo(X(v, 0), Y(v, BB.ymin)); ctx.lineTo(X(v, 0), Y(v, BB.ymax));
+    ctx.stroke(); ctx.globalAlpha = 1;
+    mathRuns([{ t: "x" }], X(v, BB.xmax - 0.12), Y(v, 0) + 20 * dpr, GREY, "center", 16);
+    mathRuns([{ t: "y" }], X(v, 0) - 20 * dpr, Y(v, BB.ymax - 0.10), GREY, "center", 16);
+
+    // the tangent to the level curve at P0: the directions of no change
+    var tx = -GY / MAG, ty = GX / MAG;
+    ctx.save();
+    ctx.setLineDash([7 * dpr, 6 * dpr]);
+    ctx.strokeStyle = GREY; ctx.lineWidth = 1.6 * dpr; ctx.globalAlpha = 0.8;
+    ctx.beginPath();
+    ctx.moveTo(X(v, X0 - 1.5 * tx), Y(v, Y0 - 1.5 * ty));
+    ctx.lineTo(X(v, X0 + 1.5 * tx), Y(v, Y0 + 1.5 * ty));
+    ctx.stroke();
+    ctx.restore();
+
+    // the gradient
+    arrow(v, X0, Y0, X0 + GX, Y0 + GY, BLUE_C, 3.6 * dpr);
+    mathRuns(GRAD_RUNS, X(v, X0 + GX * 1.28), Y(v, Y0 + GY * 1.28), BLUE_C, "center", 18);
+
+    // the angle between grad f and u
+    ctx.strokeStyle = INK; ctx.globalAlpha = 0.65; ctx.lineWidth = 1.5 * dpr;
+    ctx.beginPath();
+    ctx.arc(X(v, X0), Y(v, Y0), v.k * 0.42, -GRAD_ANG, -phi, dOf(phi) >= 0
+            ? ((phi - GRAD_ANG + 2 * Math.PI) % (2 * Math.PI)) < Math.PI
+            : ((phi - GRAD_ANG + 2 * Math.PI) % (2 * Math.PI)) < Math.PI);
+    ctx.stroke(); ctx.globalAlpha = 1;
+    var mid = GRAD_ANG + 0.5 * ((phi - GRAD_ANG + Math.PI) % (2 * Math.PI) - Math.PI);
+    mathRuns([{ t: "θ" }], X(v, X0 + 0.62 * Math.cos(mid)),
+             Y(v, Y0 + 0.62 * Math.sin(mid)) + 6 * dpr, INK, "center", 16);
+
+    // u, and its opposite when the directional derivative vanishes
+    arrow(v, X0, Y0, X0 + c, Y0 + s, YELLOW, 3.6 * dpr);
+    mathRuns(U_RUNS, X(v, X0 + 1.26 * c), Y(v, Y0 + 1.26 * s) + 5 * dpr,
+             YELLOW, "center", 18);
+    if (info.key === "zero") {
+      arrow(v, X0, Y0, X0 - c, Y0 - s, YELLOW, 3.0 * dpr, 0.5);
+      mathRuns(UT_RUNS, X(v, X0 - 1.26 * c), Y(v, Y0 - 1.26 * s) + 5 * dpr,
+               YELLOW, "center", 18);
+    }
+
+    // P0
+    ctx.fillStyle = INK;
+    ctx.beginPath(); ctx.arc(X(v, X0), Y(v, Y0), 5.5 * dpr, 0, 2 * Math.PI); ctx.fill();
+    mathRuns([{ t: "P" }, { t: "0", sub: true, up: true }, { t: "(1, 1)", up: true }],
+             X(v, X0) - 12 * dpr, Y(v, Y0) + 24 * dpr, INK, "right", 17);
+
+    paintReadouts(D, info);
+  }
+
+  // ---------- readouts ----------
+  var elName = document.getElementById("caseName"),
+      elCond = document.getElementById("caseCond"),
+      elD = document.getElementById("dVal"),
+      elKnob = document.getElementById("barKnob"),
+      elPhi = document.getElementById("phiVal");
+
+  function paintReadouts(D, info) {
+    elName.innerHTML = '<i>D</i><sub><b>u</b></sub>&#8202;<i>f</i> = ' + D.toFixed(2);
+    elName.style.color = info.color;
+    elCond.textContent = info.cond;
+    elD.textContent = D.toFixed(2);
+    var barW = elKnob.parentNode.clientWidth || 190;
+    elKnob.style.left = ((D / MAG + 1) / 2 * barW - 1.5) + "px";
+    var deg = ((phi * 180 / Math.PI) % 360 + 360) % 360;
+    elPhi.textContent = Math.round(deg);
+    phiSlider.value = String(Math.round(deg));
+    document.getElementById("btnMax").classList.toggle("active", info.key === "max");
+    document.getElementById("btnMin").classList.toggle("active", info.key === "min");
+    document.getElementById("btnZero").classList.toggle("active", info.key === "zero");
+  }
+
+  // ---------- tweening, with manim's smoothstep rate function ----------
+  function smooth(t) { return t * t * t * (t * (t * 6 - 15) + 10); }
+  var tween = null, rafId = null, lastT = 0;
+  function frame(now) {
+    rafId = requestAnimationFrame(frame);
+    var dt = lastT ? Math.min(0.05, (now - lastT) / 1000) : 0;
+    lastT = now;
+    if (tween) {
+      tween.t += dt;
+      var a = smooth(Math.min(1, tween.t / tween.dur));
+      phi = tween.a0 + (tween.a1 - tween.a0) * a;
+      draw();
+      if (tween.t >= tween.dur) {
+        phi = tween.a1;
+        var cb = tween.done;
+        tween = null;
+        draw();
+        if (cb) cb();
+      }
+    } else { cancelAnimationFrame(rafId); rafId = null; lastT = 0; }
+  }
+  function animateTo(target, seconds, done) {
+    tween = { a0: phi, a1: target, t: 0, dur: Math.max(0.01, seconds), done: done };
+    if (rafId === null) { lastT = 0; rafId = requestAnimationFrame(frame); }
+  }
+
+  // ---------- the guided tour ----------
+  var elCaption = document.getElementById("caption");
+  function say(text) {
+    elCaption.classList.remove("show");
+    window.setTimeout(function () {
+      elCaption.textContent = text;
+      elCaption.classList.add("show");
+    }, text ? 160 : 0);
+  }
+  var DEG = Math.PI / 180;
+  var STORY = [
+    { say: "∇f points across the level curves, in the direction of fastest increase.",
+      a: 45 * DEG, run: 0.8, hold: 1.9 },
+    { say: "A: with u along ∇f, Dᵤf = ‖∇f‖ = √2, the largest value.",
+      a: 45 * DEG, run: 0.3, hold: 1.8 },
+    { say: "C: a quarter turn on, u is tangent to the level curve and Dᵤf = 0 — f does not change.",
+      a: 135 * DEG, run: 1.8, hold: 2.0 },
+    { say: "B: along −∇f, Dᵤf = −‖∇f‖, the smallest value: fastest decrease.",
+      a: 225 * DEG, run: 1.8, hold: 2.0 },
+    { say: "C again: the other direction of no change, tangent to the level curve.",
+      a: 315 * DEG, run: 1.8, hold: 1.8 },
+    { say: "Your turn: drag φ and watch Dᵤf = ‖∇f‖ cos θ sweep between ±‖∇f‖.",
+      a: 405 * DEG, run: 1.8, hold: 0.9 }
+  ];
+  var tour = { running: false, i: 0, timer: null };
+  var btnTour = document.getElementById("btnTour");
+  function tourStep() {
+    if (!tour.running) return;
+    if (tour.i >= STORY.length) { stopTour(); return; }
+    var beat = STORY[tour.i++];
+    say(beat.say);
+    animateTo(beat.a, beat.run, function () {
+      if (!tour.running) return;
+      tour.timer = window.setTimeout(tourStep, beat.hold * 1000);
+    });
+  }
+  function startTour() {
+    phi = 45 * DEG; draw();
+    tour.running = true; tour.i = 0;
+    btnTour.innerHTML = "&#10074;&#10074;&nbsp;Stop";
+    btnTour.classList.add("running");
+    phiSlider.disabled = true; phiSlider.style.opacity = "0.45";
+    tourStep();
+  }
+  function stopTour() {
+    tour.running = false;
+    if (tour.timer) { window.clearTimeout(tour.timer); tour.timer = null; }
+    tween = null;
+    btnTour.innerHTML = "&#9654;&nbsp;Play";
+    btnTour.classList.remove("running");
+    phiSlider.disabled = false; phiSlider.style.opacity = "1";
+    say("");
+    draw();
+  }
+  btnTour.addEventListener("click", function () { tour.running ? stopTour() : startTour(); });
+
+  // ---------- controls ----------
+  var phiSlider = document.getElementById("phiSlider");
+  phiSlider.addEventListener("input", function () {
+    if (tour.running) stopTour();
+    tween = null;
+    phi = parseFloat(phiSlider.value) * Math.PI / 180;
+    draw();
+  });
+  function snapTo(deg) {
+    if (tour.running) stopTour();
+    var target = deg * Math.PI / 180;
+    while (target - phi > Math.PI) target -= 2 * Math.PI;
+    while (phi - target > Math.PI) target += 2 * Math.PI;
+    animateTo(target, 0.9);
+  }
+  document.getElementById("btnMax").addEventListener("click", function () { snapTo(45); });
+  document.getElementById("btnMin").addEventListener("click", function () { snapTo(225); });
+  document.getElementById("btnZero").addEventListener("click", function () { snapTo(135); });
+
+  // dragging u straight on the picture
+  var dragging = false;
+  function setFromPointer(clientX, clientY) {
+    var rect = canvas.getBoundingClientRect();
+    var dpr = window.devicePixelRatio || 1;
+    var v = view();
+    var x = ((clientX - rect.left) * dpr - X(v, X0)) / v.k;
+    var y = (Y(v, Y0) - (clientY - rect.top) * dpr) / v.k;
+    if (x * x + y * y > 1e-4) {
+      if (tour.running) stopTour();
+      tween = null;
+      phi = Math.atan2(y, x);
+      draw();
+    }
+  }
+  canvas.addEventListener("mousedown", function (e) {
+    dragging = true; setFromPointer(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) {
+    if (dragging) setFromPointer(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  canvas.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { dragging = true;
+      setFromPointer(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  canvas.addEventListener("touchmove", function (e) {
+    if (dragging && e.touches.length === 1) {
+      setFromPointer(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- sizing ----------
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = document.getElementById("app").clientWidth;
+    // the stage is the flex column's leftover space, so it is measured, not
+    // computed: no rounding is left over to make a scrollbar
+    var h = stage.clientHeight;
+    var card = document.getElementById("eqcard");
+    var stacked = window.getComputedStyle(card).position === "static";
+    var cardH = stacked ? card.offsetHeight : 0;
+    var ch = Math.max(120, h - cardH);
+    canvas.width = w * dpr; canvas.height = ch * dpr;
+    canvas.style.width = w + "px"; canvas.style.height = ch + "px";
+    draw();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(draw); }
+})();
+</script>
+</body>
+</html>

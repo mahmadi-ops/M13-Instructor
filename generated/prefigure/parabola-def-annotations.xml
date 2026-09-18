@@ -1,0 +1,60 @@
+<diagram>
+  <annotations>
+    <annotation id="parabola-def-parabola" speech2="A parabola opening upward with vertex at the origin, illustrating the defining property that every point is equidistant from a fixed focus and a fixed directrix">
+      <grouped>parabola-def-parabola</grouped>
+      <position>1</position>
+      <children>
+        <active>parabola-def-parabola</active>
+        <active>parabola-def-focus</active>
+        <active>parabola-def-directrix</active>
+        <active>parabola-def-vertex</active>
+        <active>parabola-def-equidistant</active>
+      </children>
+      <components>
+        <active>parabola-def-parabola</active>
+        <active>parabola-def-focus</active>
+        <active>parabola-def-directrix</active>
+        <active>parabola-def-vertex</active>
+        <active>parabola-def-equidistant</active>
+      </components>
+    </annotation>
+    <annotation id="parabola-def-parabola" speech2="The parabola x squared equals four p y, shown as a blue upward curve" sonify="yes">
+      <active>parabola-def-parabola</active>
+      <position>1</position>
+      <parents>
+        <grouped>parabola-def-parabola</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>parabola-def-parabola</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="parabola-def-focus" speech2="The focus, the fixed point at zero comma p on the axis of symmetry">
+      <active>parabola-def-focus</active>
+      <position>2</position>
+      <parents>
+        <grouped>parabola-def-parabola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-def-directrix" speech2="The directrix, the fixed horizontal line y equals minus p, drawn dashed in red">
+      <active>parabola-def-directrix</active>
+      <position>3</position>
+      <parents>
+        <grouped>parabola-def-parabola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-def-vertex" speech2="The vertex at the origin, the point of the parabola halfway between the focus and the directrix">
+      <active>parabola-def-vertex</active>
+      <position>4</position>
+      <parents>
+        <grouped>parabola-def-parabola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-def-equidistant" speech2="A point P on the parabola with two equal green segments, one to the focus and one dropped perpendicular to the directrix, showing the two distances are equal">
+      <active>parabola-def-equidistant</active>
+      <position>5</position>
+      <parents>
+        <grouped>parabola-def-parabola</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

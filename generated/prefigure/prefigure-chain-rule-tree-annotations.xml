@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-chain-rule-tree-figure" speech2="A dependency tree for the chain rule. At the top is z equals f of x comma y. Blue arrows labeled partial f partial x and partial f partial y lead down to the intermediate variables x and y. Red arrows labeled d x d s and d y d s lead from x and y down to the single independent variable s.">
+      <grouped>prefigure-chain-rule-tree-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-chain-rule-tree-ct-z</active>
+        <active>prefigure-chain-rule-tree-ct-zx</active>
+        <active>prefigure-chain-rule-tree-ct-zy</active>
+        <active>prefigure-chain-rule-tree-ct-xs</active>
+        <active>prefigure-chain-rule-tree-ct-ys</active>
+        <active>prefigure-chain-rule-tree-ct-s</active>
+      </children>
+      <components>
+        <active>prefigure-chain-rule-tree-ct-z</active>
+        <active>prefigure-chain-rule-tree-ct-zx</active>
+        <active>prefigure-chain-rule-tree-ct-zy</active>
+        <active>prefigure-chain-rule-tree-ct-xs</active>
+        <active>prefigure-chain-rule-tree-ct-ys</active>
+        <active>prefigure-chain-rule-tree-ct-s</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-chain-rule-tree-ct-z" speech2="The dependent variable z equals f of x comma y at the top of the tree.">
+      <active>prefigure-chain-rule-tree-ct-z</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-chain-rule-tree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-chain-rule-tree-ct-zx" speech2="The branch from z to x, labeled with the partial derivative of f with respect to x.">
+      <active>prefigure-chain-rule-tree-ct-zx</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-chain-rule-tree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-chain-rule-tree-ct-zy" speech2="The branch from z to y, labeled with the partial derivative of f with respect to y.">
+      <active>prefigure-chain-rule-tree-ct-zy</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-chain-rule-tree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-chain-rule-tree-ct-xs" speech2="The branch from x down to s, labeled d x d s, which equals u 1 along the line through P 0.">
+      <active>prefigure-chain-rule-tree-ct-xs</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-chain-rule-tree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-chain-rule-tree-ct-ys" speech2="The branch from y down to s, labeled d y d s, which equals u 2 along the line through P 0.">
+      <active>prefigure-chain-rule-tree-ct-ys</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-chain-rule-tree-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-chain-rule-tree-ct-s" speech2="The independent variable s, the arc length along the line through P 0 in the direction u.">
+      <active>prefigure-chain-rule-tree-ct-s</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-chain-rule-tree-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

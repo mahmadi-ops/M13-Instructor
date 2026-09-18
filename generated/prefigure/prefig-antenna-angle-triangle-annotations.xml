@@ -1,0 +1,87 @@
+<diagram>
+  <annotations>
+    <annotation id="prefig-antenna-angle-triangle-figure" speech2="The right triangle used to compute the half opening angle phi of the parabolic dish">
+      <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig-antenna-angle-triangle-dish</active>
+        <active>prefig-antenna-angle-triangle-focus</active>
+        <active>prefig-antenna-angle-triangle-right-rim</active>
+        <active>prefig-antenna-angle-triangle-vertical-leg</active>
+        <active>prefig-antenna-angle-triangle-horizontal-leg</active>
+        <active>prefig-antenna-angle-triangle-right-ray</active>
+        <active>prefig-antenna-angle-triangle-half-angle</active>
+        <active>prefig-antenna-angle-triangle-depth</active>
+      </children>
+      <components>
+        <active>prefig-antenna-angle-triangle-dish</active>
+        <active>prefig-antenna-angle-triangle-focus</active>
+        <active>prefig-antenna-angle-triangle-right-rim</active>
+        <active>prefig-antenna-angle-triangle-vertical-leg</active>
+        <active>prefig-antenna-angle-triangle-horizontal-leg</active>
+        <active>prefig-antenna-angle-triangle-right-ray</active>
+        <active>prefig-antenna-angle-triangle-half-angle</active>
+        <active>prefig-antenna-angle-triangle-depth</active>
+      </components>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-dish" sonify="yes" speech2="the cross-section of the dish, the parabola x squared equals 4 p y, for x between minus 60 and 60 centimeters">
+      <active>prefig-antenna-angle-triangle-dish</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefig-antenna-angle-triangle-dish</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-focus" speech2="the focus F at the point 0 comma p, about 44.3 centimeters above the vertex">
+      <active>prefig-antenna-angle-triangle-focus</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-right-rim" speech2="the right rim point, with coordinates d over 2, comma, h">
+      <active>prefig-antenna-angle-triangle-right-rim</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-vertical-leg" speech2="the vertical leg of the right triangle, running from the focus down to rim level, with length p minus h, about 24 centimeters">
+      <active>prefig-antenna-angle-triangle-vertical-leg</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-horizontal-leg" speech2="the horizontal leg, running from the axis out to the right rim point, with length d over 2, which is 60 centimeters">
+      <active>prefig-antenna-angle-triangle-horizontal-leg</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-right-ray" speech2="the hypotenuse, the segment from the focus to the right rim point">
+      <active>prefig-antenna-angle-triangle-right-ray</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-half-angle" speech2="the half opening angle phi at the focus, about 68.2 degrees; its tangent is d over 2, divided by p minus h">
+      <active>prefig-antenna-angle-triangle-half-angle</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-antenna-angle-triangle-depth" speech2="the depth h of the dish, 20.3 centimeters">
+      <active>prefig-antenna-angle-triangle-depth</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefig-antenna-angle-triangle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,459 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="loran-solution-figure" width="456" height="269" viewBox="0 0 456 269">
+  <defs>
+    <clipPath id="loran-solution-__clipPath-0">
+      <rect x="8.0" y="8.0" width="440.0" height="253.0"/>
+    </clipPath>
+    <clipPath id="loran-solution-__clipPath-1">
+      <rect x="8.0" y="8.0" width="440.0" height="253.0"/>
+    </clipPath>
+  </defs>
+  <g id="loran-solution-grid-axes">
+    <g id="loran-solution-grid" stroke="#ccc" stroke-width="1">
+      <line x1="27.1" y1="261.0" x2="27.1" y2="8.0"/>
+      <line x1="75.0" y1="261.0" x2="75.0" y2="8.0"/>
+      <line x1="122.8" y1="261.0" x2="122.8" y2="8.0"/>
+      <line x1="170.6" y1="261.0" x2="170.6" y2="8.0"/>
+      <line x1="218.4" y1="261.0" x2="218.4" y2="8.0"/>
+      <line x1="266.3" y1="261.0" x2="266.3" y2="8.0"/>
+      <line x1="314.1" y1="261.0" x2="314.1" y2="8.0"/>
+      <line x1="361.9" y1="261.0" x2="361.9" y2="8.0"/>
+      <line x1="409.7" y1="261.0" x2="409.7" y2="8.0"/>
+      <line x1="8.0" y1="246.7" x2="448.0" y2="246.7"/>
+      <line x1="8.0" y1="222.8" x2="448.0" y2="222.8"/>
+      <line x1="8.0" y1="198.9" x2="448.0" y2="198.9"/>
+      <line x1="8.0" y1="175.1" x2="448.0" y2="175.1"/>
+      <line x1="8.0" y1="151.2" x2="448.0" y2="151.2"/>
+      <line x1="8.0" y1="127.3" x2="448.0" y2="127.3"/>
+      <line x1="8.0" y1="103.5" x2="448.0" y2="103.5"/>
+      <line x1="8.0" y1="79.6" x2="448.0" y2="79.6"/>
+      <line x1="8.0" y1="55.7" x2="448.0" y2="55.7"/>
+      <line x1="8.0" y1="31.9" x2="448.0" y2="31.9"/>
+      <line x1="8.0" y1="8.0" x2="448.0" y2="8.0"/>
+    </g>
+    <g id="loran-solution-axes" stroke="black" stroke-width="2">
+      <line id="loran-solution-__line-20" x1="8.0" y1="198.9" x2="448.0" y2="198.9" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="loran-solution-__line-21" x1="27.1" y1="201.9" x2="27.1" y2="195.9"/>
+        <line id="loran-solution-__line-22" x1="122.8" y1="201.9" x2="122.8" y2="195.9"/>
+        <line id="loran-solution-__line-23" x1="314.1" y1="201.9" x2="314.1" y2="195.9"/>
+        <line id="loran-solution-__line-24" x1="409.7" y1="201.9" x2="409.7" y2="195.9"/>
+      </g>
+      <line id="loran-solution-__line-25" x1="218.4" y1="261.0" x2="218.4" y2="8.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="loran-solution-__line-26" x1="215.4" y1="246.7" x2="221.4" y2="246.7"/>
+        <line id="loran-solution-__line-27" x1="215.4" y1="151.2" x2="221.4" y2="151.2"/>
+        <line id="loran-solution-__line-28" x1="215.4" y1="103.5" x2="221.4" y2="103.5"/>
+        <line id="loran-solution-__line-29" x1="215.4" y1="55.7" x2="221.4" y2="55.7"/>
+      </g>
+    </g>
+    <g id="loran-solution-__label-0" transform="translate(444.0,194.9) translate(-10.4,-8.2)">
+      <g id="loran-solution-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#loran-solution-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-1" transform="translate(222.4,12.0) translate(0.0,-0.0)">
+      <g id="loran-solution-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#loran-solution-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-2" transform="translate(27.1,209.9) translate(-7.5,-0.0)">
+      <g id="loran-solution-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.256px" role="img" focusable="false" viewBox="0 -677 833 677" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="loran-solution-MJX-4-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 4">
+                <use data-c="2D" xlink:href="#loran-solution-MJX-4-TEX-N-2D"/>
+                <use data-c="34" xlink:href="#loran-solution-MJX-4-TEX-N-34" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-3" transform="translate(122.8,209.9) translate(-7.5,-0.0)">
+      <g id="loran-solution-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-5-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="loran-solution-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#loran-solution-MJX-5-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#loran-solution-MJX-5-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-4" transform="translate(314.1,209.9) translate(-4.5,-0.0)">
+      <g id="loran-solution-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#loran-solution-MJX-6-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-5" transform="translate(409.7,209.9) translate(-4.5,-0.0)">
+      <g id="loran-solution-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-7-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="4">
+                <use data-c="34" xlink:href="#loran-solution-MJX-7-TEX-N-34"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-6" transform="translate(207.4,246.7) translate(-15.1,-6.0)">
+      <g id="loran-solution-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-8-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="loran-solution-MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
+                <use data-c="2D" xlink:href="#loran-solution-MJX-8-TEX-N-2D"/>
+                <use data-c="31" xlink:href="#loran-solution-MJX-8-TEX-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-7" transform="translate(207.4,151.2) translate(-9.0,-6.0)">
+      <g id="loran-solution-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-9-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#loran-solution-MJX-9-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-8" transform="translate(207.4,103.5) translate(-9.0,-6.0)">
+      <g id="loran-solution-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-10-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#loran-solution-MJX-10-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="loran-solution-__label-9" transform="translate(207.4,55.7) translate(-9.0,-6.2)">
+      <g id="loran-solution-__g-9">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.432px" role="img" focusable="false" viewBox="0 -665 500 687" x="0.0" y="0.0">
+          <defs>
+            <path id="loran-solution-MJX-11-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="3">
+                <use data-c="33" xlink:href="#loran-solution-MJX-11-TEX-N-33"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="loran-solution-hyp" d="M 158.6 261.0 L 159.0 260.0 M 159.0 260.0 L 159.2 259.2 M 159.2 259.2 L 159.3 259.0 M 159.3 259.0 L 159.6 258.0 M 159.6 258.0 L 160.0 257.0 M 160.0 257.0 L 160.3 256.1 M 160.3 256.1 L 160.6 255.1 M 160.6 255.1 L 160.9 254.1 M 160.9 254.1 L 161.0 254.0 M 161.0 254.0 L 161.3 253.1 M 161.3 253.1 L 161.6 252.1 M 161.6 252.1 L 161.9 251.1 M 161.9 251.1 L 162.2 250.1 M 162.2 250.1 L 162.5 249.1 M 162.5 249.1 L 162.7 248.5 M 162.7 248.5 L 162.8 248.2 M 162.8 248.2 L 163.1 247.2 M 163.1 247.2 L 163.4 246.2 M 163.4 246.2 L 163.6 245.2 M 163.6 245.2 L 163.9 244.2 M 163.9 244.2 L 164.2 243.2 M 164.2 243.2 L 164.4 242.4 M 164.4 242.4 L 164.5 242.2 M 164.5 242.2 L 164.7 241.2 M 164.7 241.2 L 165.0 240.2 M 165.0 240.2 L 165.2 239.3 M 165.2 239.3 L 165.5 238.3 M 165.5 238.3 L 165.7 237.3 M 165.7 237.3 L 166.0 236.3 M 166.0 236.3 L 166.1 235.6 M 166.1 235.6 L 166.2 235.3 M 166.2 235.3 L 166.4 234.3 M 166.4 234.3 L 166.6 233.3 M 166.6 233.3 L 166.9 232.3 M 166.9 232.3 L 167.1 231.4 M 167.1 231.4 L 167.3 230.4 M 167.3 230.4 L 167.5 229.4 M 167.5 229.4 L 167.7 228.4 M 167.7 228.4 L 167.8 227.5 M 167.8 227.5 L 167.9 227.4 M 167.9 227.4 L 168.0 226.4 M 168.0 226.4 L 168.2 225.4 M 168.2 225.4 L 168.4 224.4 M 168.4 224.4 L 168.6 223.4 M 168.6 223.4 L 168.7 222.5 M 168.7 222.5 L 168.9 221.5 M 168.9 221.5 L 169.0 220.5 M 169.0 220.5 L 169.2 219.5 M 169.2 219.5 L 169.3 218.5 M 169.3 218.5 L 169.4 217.5 M 169.4 217.5 L 169.5 216.5 M 169.5 216.5 L 169.6 216.3 M 169.6 216.3 L 169.7 215.5 M 169.7 215.5 L 169.8 214.6 M 169.8 214.6 L 169.9 213.6 M 169.9 213.6 L 170.0 212.6 M 170.0 212.6 L 170.1 211.6 M 170.1 211.6 L 170.1 210.6 M 170.1 210.6 L 170.2 209.6 M 170.2 209.6 L 170.3 208.6 M 170.3 208.6 L 170.3 207.6 M 170.3 207.6 L 170.4 206.6 M 170.4 206.6 L 170.5 205.7 M 170.5 205.7 L 170.5 204.7 M 170.5 204.7 L 170.5 203.7 M 170.5 203.7 L 170.6 202.7 M 170.6 202.7 L 170.6 201.7 M 170.6 201.7 L 170.6 200.7 M 170.6 200.7 L 170.6 199.7 M 170.6 199.7 L 170.6 198.7 M 170.6 198.7 L 170.6 197.7 M 170.6 197.7 L 170.6 196.8 M 170.6 196.8 L 170.6 195.8 M 170.6 195.8 L 170.5 194.8 M 170.5 194.8 L 170.5 193.8 M 170.5 193.8 L 170.5 192.8 M 170.5 192.8 L 170.4 191.8 M 170.4 191.8 L 170.4 190.8 M 170.4 190.8 L 170.3 189.8 M 170.3 189.8 L 170.3 188.9 M 170.3 188.9 L 170.2 187.9 M 170.2 187.9 L 170.1 186.9 M 170.1 186.9 L 170.0 185.9 M 170.0 185.9 L 169.9 184.9 M 169.9 184.9 L 169.8 183.9 M 169.8 183.9 L 169.7 182.9 M 169.7 182.9 L 169.6 181.9 M 169.6 181.6 L 169.5 180.9 M 169.5 180.9 L 169.4 180.0 M 169.6 181.6 L 169.6 181.9 M 169.4 180.0 L 169.2 179.0 M 169.2 179.0 L 169.1 178.0 M 169.1 178.0 L 169.0 177.0 M 169.0 177.0 L 168.8 176.0 M 168.8 176.0 L 168.6 175.0 M 168.6 175.0 L 168.5 174.0 M 168.5 174.0 L 168.3 173.0 M 168.3 173.0 L 168.1 172.1 M 168.1 172.1 L 168.0 171.1 M 167.8 170.4 L 167.8 170.1 M 167.8 170.4 L 168.0 171.1 M 167.8 170.1 L 167.6 169.1 M 167.6 169.1 L 167.4 168.1 M 167.4 168.1 L 167.2 167.1 M 167.2 167.1 L 167.0 166.1 M 166.1 162.3 L 166.1 162.2 M 167.0 166.1 L 166.8 165.1 M 166.8 165.1 L 166.5 164.1 M 166.5 164.1 L 166.3 163.2 M 166.1 162.3 L 166.3 163.2 M 166.1 162.2 L 165.9 161.2 M 165.9 161.2 L 165.6 160.2 M 165.6 160.2 L 165.4 159.2 M 165.4 159.2 L 165.1 158.2 M 165.1 158.2 L 164.9 157.2 M 164.9 157.2 L 164.6 156.2 M 164.4 155.5 L 164.3 155.3 M 164.4 155.5 L 164.6 156.2 M 164.3 155.3 L 164.1 154.3 M 164.1 154.3 L 163.8 153.3 M 163.8 153.3 L 163.5 152.3 M 163.5 152.3 L 163.2 151.3 M 163.2 151.3 L 162.9 150.3 M 162.7 149.4 L 162.7 149.3 M 162.7 149.3 L 162.4 148.3 M 162.7 149.4 L 162.9 150.3 M 162.4 148.3 L 162.1 147.3 M 162.1 147.3 L 161.8 146.4 M 161.8 146.4 L 161.4 145.4 M 161.4 145.4 L 161.1 144.4 M 161.0 143.9 L 160.8 143.4 M 161.0 143.9 L 161.1 144.4 M 160.8 143.4 L 160.5 142.4 M 159.2 138.7 L 159.2 138.5 M 159.2 138.5 L 158.8 137.5 M 158.8 137.5 L 158.5 136.5 M 158.5 136.5 L 158.1 135.5 M 158.1 135.5 L 157.8 134.5 M 160.5 142.4 L 160.2 141.4 M 160.2 141.4 L 159.8 140.4 M 159.8 140.4 L 159.5 139.4 M 159.2 138.7 L 159.5 139.4 M 278.2 261.0 L 277.9 260.0 M 277.8 259.9 L 277.6 259.0 M 277.8 259.9 L 277.9 260.0 M 277.6 259.0 L 277.2 258.0 M 277.2 258.0 L 276.9 257.0 M 276.1 254.7 L 275.9 254.1 M 275.9 254.1 L 275.6 253.1 M 276.9 257.0 L 276.6 256.1 M 276.6 256.1 L 276.2 255.1 M 276.1 254.7 L 276.2 255.1 M 275.6 253.1 L 275.3 252.1 M 275.3 252.1 L 275.0 251.1 M 275.0 251.1 L 274.7 250.1 M 274.4 249.2 L 274.4 249.1 M 274.4 249.2 L 274.7 250.1 M 274.4 249.1 L 274.1 248.2 M 274.1 248.2 L 273.8 247.2 M 273.8 247.2 L 273.5 246.2 M 273.5 246.2 L 273.2 245.2 M 272.7 243.2 L 272.7 243.2 M 273.2 245.2 L 273.0 244.2 M 272.7 243.2 L 273.0 244.2 M 272.7 243.2 L 272.4 242.2 M 272.4 242.2 L 272.2 241.2 M 272.2 241.2 L 271.9 240.2 M 271.9 240.2 L 271.6 239.3 M 271.6 239.3 L 271.4 238.3 M 271.4 238.3 L 271.2 237.3 M 271.0 236.5 L 270.9 236.3 M 271.0 236.5 L 271.2 237.3 M 270.9 236.3 L 270.7 235.3 M 270.7 235.3 L 270.5 234.3 M 270.5 234.3 L 270.2 233.3 M 270.2 233.3 L 270.0 232.3 M 270.0 232.3 L 269.8 231.4 M 269.8 231.4 L 269.6 230.4 M 269.6 230.4 L 269.4 229.4 M 269.2 228.6 L 269.2 228.4 M 269.2 228.4 L 269.0 227.4 M 269.0 227.4 L 268.8 226.4 M 268.8 226.4 L 268.7 225.4 M 268.7 225.4 L 268.5 224.4 M 268.5 224.4 L 268.3 223.4 M 268.3 223.4 L 268.2 222.5 M 268.2 222.5 L 268.0 221.5 M 269.2 228.6 L 269.4 229.4 M 268.0 221.5 L 267.9 220.5 M 267.9 220.5 L 267.7 219.5 M 267.7 219.5 L 267.6 218.5 M 267.5 218.1 L 267.5 217.5 M 267.5 218.1 L 267.6 218.5 M 267.5 217.5 L 267.3 216.5 M 267.3 216.5 L 267.2 215.5 M 267.2 215.5 L 267.1 214.6 M 267.1 214.6 L 267.0 213.6 M 267.0 213.6 L 266.9 212.6 M 266.9 212.6 L 266.8 211.6 M 266.8 211.6 L 266.7 210.6 M 266.7 210.6 L 266.7 209.6 M 266.7 209.6 L 266.6 208.6 M 266.6 208.6 L 266.5 207.6 M 266.5 207.6 L 266.5 206.6 M 266.5 206.6 L 266.4 205.7 M 266.4 205.7 L 266.4 204.7 M 266.4 204.7 L 266.3 203.7 M 266.3 203.7 L 266.3 202.7 M 266.3 202.7 L 266.3 201.7 M 266.3 201.7 L 266.3 200.7 M 266.3 200.7 L 266.3 199.7 M 266.3 199.7 L 266.3 198.7 M 266.3 198.7 L 266.3 197.7 M 266.3 197.7 L 266.3 196.8 M 266.3 196.8 L 266.3 195.8 M 266.3 195.8 L 266.3 194.8 M 266.3 194.8 L 266.4 193.8 M 266.4 193.8 L 266.4 192.8 M 266.4 192.8 L 266.4 191.8 M 266.4 191.8 L 266.5 190.8 M 266.5 190.8 L 266.5 189.8 M 266.5 189.8 L 266.6 188.9 M 266.6 188.9 L 266.7 187.9 M 266.7 187.9 L 266.8 186.9 M 266.8 186.9 L 266.9 185.9 M 266.9 185.9 L 266.9 184.9 M 266.9 184.9 L 267.0 183.9 M 267.0 183.9 L 267.2 182.9 M 267.2 182.9 L 267.3 181.9 M 267.3 181.9 L 267.4 180.9 M 267.4 180.9 L 267.5 180.0 M 267.5 180.0 L 267.5 179.8 M 267.5 179.8 L 267.6 179.0 M 267.6 179.0 L 267.8 178.0 M 267.8 178.0 L 267.9 177.0 M 267.9 177.0 L 268.1 176.0 M 268.1 176.0 L 268.2 175.0 M 268.2 175.0 L 268.4 174.0 M 268.4 174.0 L 268.6 173.0 M 268.6 173.0 L 268.7 172.1 M 268.7 172.1 L 268.9 171.1 M 268.9 171.1 L 269.1 170.1 M 269.1 170.1 L 269.2 169.3 M 269.2 169.3 L 269.3 169.1 M 269.3 169.1 L 269.5 168.1 M 269.5 168.1 L 269.7 167.1 M 269.7 167.1 L 269.9 166.1 M 269.9 166.1 L 270.1 165.1 M 270.1 165.1 L 270.3 164.1 M 270.3 164.1 L 270.5 163.2 M 270.5 163.2 L 270.8 162.2 M 270.8 162.2 L 271.0 161.4 M 271.0 161.4 L 271.0 161.2 M 271.0 161.2 L 271.3 160.2 M 271.3 160.2 L 271.5 159.2 M 271.5 159.2 L 271.7 158.2 M 271.7 158.2 L 272.0 157.2 M 272.0 157.2 L 272.3 156.2 M 272.3 156.2 L 272.5 155.3 M 272.5 155.3 L 272.7 154.7 M 272.7 154.7 L 272.8 154.3 M 272.8 154.3 L 273.1 153.3 M 273.1 153.3 L 273.3 152.3 M 273.3 152.3 L 273.6 151.3 M 273.6 151.3 L 273.9 150.3 M 273.9 150.3 L 274.2 149.3 M 274.2 149.3 L 274.4 148.7 M 274.4 148.7 L 274.5 148.3 M 274.5 148.3 L 274.8 147.3 M 274.8 147.3 L 275.1 146.4 M 275.1 146.4 L 275.4 145.4 M 275.4 145.4 L 275.7 144.4 M 275.7 144.4 L 276.1 143.4 M 276.1 143.4 L 276.1 143.2 M 276.1 143.2 L 276.4 142.4 M 276.4 142.4 L 276.7 141.4 M 276.7 141.4 L 277.0 140.4 M 277.0 140.4 L 277.4 139.4 M 277.4 139.4 L 277.7 138.5 M 277.7 138.5 L 277.8 138.0 M 277.8 138.0 L 278.0 137.5 M 278.0 137.5 L 278.4 136.5 M 278.4 136.5 L 278.7 135.5 M 278.7 135.5 L 279.1 134.5 M 157.5 133.8 L 157.4 133.5 M 157.5 133.8 L 157.8 134.5 M 157.4 133.5 L 157.1 132.5 M 157.1 132.5 L 156.7 131.5 M 156.7 131.5 L 156.4 130.5 M 155.8 129.1 L 155.6 128.6 M 156.4 130.5 L 156.0 129.6 M 155.8 129.1 L 156.0 129.6 M 155.6 128.6 L 155.3 127.6 M 155.3 127.6 L 154.9 126.6 M 154.9 126.6 L 154.5 125.6 M 154.5 125.6 L 154.1 124.6 M 154.1 124.5 L 153.7 123.6 M 154.1 124.5 L 154.1 124.6 M 153.7 123.6 L 153.4 122.6 M 152.4 120.2 L 152.2 119.7 M 152.2 119.7 L 151.8 118.7 M 153.4 122.6 L 153.0 121.7 M 153.0 121.7 L 152.6 120.7 M 152.4 120.2 L 152.6 120.7 M 145.5 103.7 L 145.1 102.9 M 151.8 118.7 L 151.4 117.7 M 151.4 117.7 L 151.0 116.7 M 150.7 115.9 L 150.6 115.7 M 150.7 115.9 L 151.0 116.7 M 150.6 115.7 L 150.2 114.7 M 150.2 114.7 L 149.8 113.7 M 149.8 113.7 L 149.4 112.8 M 148.9 111.8 L 148.9 111.8 M 148.9 111.8 L 148.5 110.8 M 148.9 111.8 L 149.4 112.8 M 148.5 110.8 L 148.1 109.8 M 148.1 109.8 L 147.7 108.8 M 147.7 108.8 L 147.3 107.8 M 147.2 107.7 L 146.8 106.8 M 147.2 107.7 L 147.3 107.8 M 146.8 106.8 L 146.4 105.8 M 146.4 105.8 L 146.0 104.9 M 146.0 104.9 L 145.6 103.9 M 145.5 103.7 L 145.6 103.9 M 145.1 102.9 L 144.7 101.9 M 144.7 101.9 L 144.2 100.9 M 144.2 100.9 L 143.8 99.9 M 143.8 99.8 L 143.4 98.9 M 143.8 99.8 L 143.8 99.9 M 143.4 98.9 L 142.9 97.9 M 142.9 97.9 L 142.5 96.9 M 142.1 96.0 L 142.0 96.0 M 142.0 96.0 L 141.6 95.0 M 142.1 96.0 L 142.5 96.9 M 141.6 95.0 L 141.1 94.0 M 141.1 94.0 L 140.7 93.0 M 140.3 92.2 L 140.2 92.0 M 140.3 92.2 L 140.7 93.0 M 140.2 92.0 L 139.8 91.0 M 138.6 88.5 L 138.4 88.1 M 138.4 88.1 L 138.0 87.1 M 139.8 91.0 L 139.3 90.0 M 139.3 90.0 L 138.9 89.0 M 138.6 88.5 L 138.9 89.0 M 138.0 87.1 L 137.5 86.1 M 137.5 86.1 L 137.0 85.1 M 136.9 84.8 L 136.6 84.1 M 136.9 84.8 L 137.0 85.1 M 136.6 84.1 L 136.1 83.1 M 135.2 81.1 L 135.2 81.1 M 136.1 83.1 L 135.6 82.1 M 135.2 81.1 L 135.6 82.1 M 135.2 81.1 L 134.7 80.1 M 134.7 80.1 L 134.2 79.2 M 131.8 74.0 L 131.4 73.2 M 131.4 73.2 L 130.9 72.2 M 130.9 72.2 L 130.4 71.2 M 134.2 79.2 L 133.8 78.2 M 133.5 77.5 L 133.3 77.2 M 133.5 77.5 L 133.8 78.2 M 133.3 77.2 L 132.8 76.2 M 132.8 76.2 L 132.4 75.2 M 132.4 75.2 L 131.9 74.2 M 131.8 74.0 L 131.9 74.2 M 118.0 46.3 L 117.6 45.6 M 117.6 45.6 L 117.1 44.6 M 117.1 44.6 L 116.6 43.6 M 116.3 42.9 L 116.1 42.6 M 116.3 42.9 L 116.6 43.6 M 116.1 42.6 L 115.6 41.6 M 115.6 41.6 L 115.1 40.6 M 115.1 40.6 L 114.6 39.6 M 114.6 39.5 L 114.1 38.6 M 114.1 38.6 L 113.6 37.6 M 114.6 39.5 L 114.6 39.6 M 113.6 37.6 L 113.1 36.7 M 112.8 36.2 L 112.6 35.7 M 112.8 36.2 L 113.1 36.7 M 111.1 32.9 L 111.0 32.7 M 111.0 32.7 L 110.5 31.7 M 112.6 35.7 L 112.1 34.7 M 112.1 34.7 L 111.6 33.7 M 111.1 32.9 L 111.6 33.7 M 110.5 31.7 L 110.0 30.7 M 110.0 30.7 L 109.5 29.7 M 109.4 29.6 L 109.0 28.8 M 109.4 29.6 L 109.5 29.7 M 109.0 28.8 L 108.5 27.8 M 107.7 26.3 L 107.4 25.8 M 108.5 27.8 L 108.0 26.8 M 107.7 26.3 L 108.0 26.8 M 107.4 25.8 L 106.9 24.8 M 106.9 24.8 L 106.4 23.8 M 104.2 19.7 L 103.8 18.9 M 103.8 18.9 L 103.3 17.9 M 103.3 17.9 L 102.8 16.9 M 102.5 16.4 L 102.3 15.9 M 102.5 16.4 L 102.8 16.9 M 106.0 23.0 L 105.9 22.8 M 106.0 23.0 L 106.4 23.8 M 105.9 22.8 L 105.4 21.8 M 105.4 21.8 L 104.9 20.8 M 104.9 20.8 L 104.3 19.9 M 104.2 19.7 L 104.3 19.9 M 102.3 15.9 L 101.7 14.9 M 101.7 14.9 L 101.2 13.9 M 100.8 13.2 L 100.7 12.9 M 100.7 12.9 L 100.2 12.0 M 100.8 13.2 L 101.2 13.9 M 100.2 12.0 L 99.6 11.0 M 99.6 11.0 L 99.1 10.0 M 99.1 9.9 L 98.6 9.0 M 99.1 9.9 L 99.1 10.0 M 98.6 9.0 L 98.1 8.0 M 130.0 70.4 L 130.0 70.3 M 130.0 70.4 L 130.4 71.2 M 130.0 70.3 L 129.5 69.3 M 129.5 69.3 L 129.0 68.3 M 129.0 68.3 L 128.5 67.3 M 128.3 66.9 L 128.0 66.3 M 128.0 66.3 L 127.5 65.3 M 128.3 66.9 L 128.5 67.3 M 127.5 65.3 L 127.1 64.3 M 126.6 63.4 L 126.6 63.3 M 126.6 63.4 L 127.1 64.3 M 124.9 59.9 L 124.6 59.4 M 126.6 63.3 L 126.1 62.4 M 126.1 62.4 L 125.6 61.4 M 125.6 61.4 L 125.1 60.4 M 124.9 59.9 L 125.1 60.4 M 124.6 59.4 L 124.1 58.4 M 124.1 58.4 L 123.6 57.4 M 123.2 56.5 L 123.1 56.4 M 123.2 56.5 L 123.6 57.4 M 123.1 56.4 L 122.6 55.4 M 122.6 55.4 L 122.1 54.4 M 122.1 54.4 L 121.6 53.5 M 121.4 53.1 L 121.1 52.5 M 121.1 52.5 L 120.6 51.5 M 121.4 53.1 L 121.6 53.5 M 120.6 51.5 L 120.1 50.5 M 119.7 49.7 L 119.6 49.5 M 119.7 49.7 L 120.1 50.5 M 119.6 49.5 L 119.1 48.5 M 119.1 48.5 L 118.6 47.5 M 118.6 47.5 L 118.1 46.5 M 118.0 46.3 L 118.1 46.5 M 279.1 134.5 L 279.4 133.5 M 279.4 133.5 L 279.6 133.1 M 279.6 133.1 L 279.8 132.5 M 279.8 132.5 L 280.1 131.5 M 280.1 131.5 L 280.5 130.5 M 280.5 130.5 L 280.9 129.6 M 280.9 129.6 L 281.2 128.6 M 281.2 128.6 L 281.3 128.5 M 281.3 128.5 L 281.6 127.6 M 281.6 127.6 L 282.0 126.6 M 282.0 126.6 L 282.4 125.6 M 282.4 125.6 L 282.7 124.6 M 282.7 124.6 L 283.0 124.0 M 283.0 124.0 L 283.1 123.6 M 283.1 123.6 L 283.5 122.6 M 283.5 122.6 L 283.9 121.7 M 283.9 121.7 L 284.3 120.7 M 284.3 120.7 L 284.7 119.7 M 284.7 119.7 L 284.7 119.6 M 284.7 119.6 L 285.1 118.7 M 285.1 118.7 L 285.5 117.7 M 285.5 117.7 L 285.9 116.7 M 285.9 116.7 L 286.3 115.7 M 286.3 115.7 L 286.4 115.4 M 286.4 115.4 L 286.7 114.7 M 286.7 114.7 L 287.1 113.7 M 287.1 113.7 L 287.5 112.8 M 287.5 112.8 L 287.9 111.8 M 287.9 111.8 L 288.2 111.2 M 288.2 111.2 L 288.3 110.8 M 288.3 110.8 L 288.8 109.8 M 288.8 109.8 L 289.2 108.8 M 289.2 108.8 L 289.6 107.8 M 289.6 107.8 L 289.9 107.2 M 289.9 107.2 L 290.0 106.8 M 290.0 106.8 L 290.5 105.8 M 290.5 105.8 L 290.9 104.9 M 290.9 104.9 L 291.3 103.9 M 291.3 103.9 L 291.6 103.2 M 291.6 103.2 L 291.8 102.9 M 291.8 102.9 L 292.2 101.9 M 292.2 101.9 L 292.6 100.9 M 292.6 100.9 L 293.1 99.9 M 293.1 99.9 L 293.3 99.3 M 293.3 99.3 L 293.5 98.9 M 293.5 98.9 L 293.9 97.9 M 293.9 97.9 L 294.4 96.9 M 294.4 96.9 L 294.8 96.0 M 294.8 96.0 L 295.0 95.5 M 295.0 95.5 L 295.3 95.0 M 295.3 95.0 L 295.7 94.0 M 295.7 94.0 L 296.2 93.0 M 296.2 93.0 L 296.6 92.0 M 296.6 92.0 L 296.8 91.7 M 296.8 91.7 L 297.1 91.0 M 297.1 91.0 L 297.5 90.0 M 297.5 90.0 L 298.0 89.0 M 298.0 89.0 L 298.4 88.1 M 298.4 88.1 L 298.5 88.0 M 298.5 88.0 L 298.9 87.1 M 298.9 87.1 L 299.4 86.1 M 299.4 86.1 L 299.8 85.1 M 299.8 85.1 L 300.2 84.3 M 300.2 84.3 L 300.3 84.1 M 300.3 84.1 L 300.8 83.1 M 300.8 83.1 L 301.2 82.1 M 301.2 82.1 L 301.7 81.1 M 301.7 81.1 L 301.9 80.7 M 301.9 80.7 L 302.2 80.1 M 302.2 80.1 L 302.6 79.2 M 302.6 79.2 L 303.1 78.2 M 303.1 78.2 L 303.6 77.2 M 303.6 77.2 L 303.6 77.1 M 303.6 77.1 L 304.0 76.2 M 304.0 76.2 L 304.5 75.2 M 304.5 75.2 L 305.0 74.2 M 305.0 74.2 L 305.3 73.5 M 305.3 73.5 L 305.5 73.2 M 305.5 73.2 L 306.0 72.2 M 306.0 72.2 L 306.4 71.2 M 306.4 71.2 L 306.9 70.3 M 306.9 70.3 L 307.1 69.9 M 307.1 69.9 L 307.4 69.3 M 307.4 69.3 L 307.9 68.3 M 307.9 68.3 L 308.4 67.3 M 308.4 67.3 L 308.8 66.4 M 308.8 66.4 L 308.8 66.3 M 308.8 66.3 L 309.3 65.3 M 309.3 65.3 L 309.8 64.3 M 309.8 64.3 L 310.3 63.3 M 310.3 63.3 L 310.5 62.9 M 310.5 62.9 L 310.8 62.4 M 310.8 62.4 L 311.3 61.4 M 311.3 61.4 L 311.8 60.4 M 311.8 60.4 L 312.2 59.5 M 312.2 59.5 L 312.3 59.4 M 312.3 59.4 L 312.8 58.4 M 312.8 58.4 L 313.2 57.4 M 313.2 57.4 L 313.7 56.4 M 313.7 56.4 L 313.9 56.0 M 313.9 56.0 L 314.2 55.4 M 314.2 55.4 L 314.7 54.4 M 314.7 54.4 L 315.2 53.5 M 315.2 53.5 L 315.7 52.6 M 315.7 52.6 L 315.7 52.5 M 315.7 52.5 L 316.2 51.5 M 316.2 51.5 L 316.7 50.5 M 316.7 50.5 L 317.2 49.5 M 317.2 49.5 L 317.4 49.2 M 317.4 49.2 L 317.7 48.5 M 317.7 48.5 L 318.2 47.5 M 318.2 47.5 L 318.7 46.5 M 318.7 46.5 L 319.1 45.8 M 319.1 45.8 L 319.2 45.6 M 319.2 45.6 L 319.7 44.6 M 319.7 44.6 L 320.2 43.6 M 320.2 43.6 L 320.7 42.6 M 320.7 42.6 L 320.8 42.5 M 320.8 42.5 L 321.2 41.6 M 321.2 41.6 L 321.8 40.6 M 321.8 40.6 L 322.3 39.6 M 322.3 39.6 L 322.5 39.1 M 322.5 39.1 L 322.8 38.6 M 322.8 38.6 L 323.3 37.6 M 323.3 37.6 L 323.8 36.7 M 323.8 36.7 L 324.2 35.8 M 324.2 35.8 L 324.3 35.7 M 324.3 35.7 L 324.8 34.7 M 324.8 34.7 L 325.3 33.7 M 325.3 33.7 L 325.8 32.7 M 325.8 32.7 L 326.0 32.4 M 326.0 32.4 L 326.3 31.7 M 326.3 31.7 L 326.9 30.7 M 326.9 30.7 L 327.4 29.7 M 327.4 29.7 L 327.7 29.1 M 327.7 29.1 L 327.9 28.8 M 327.9 28.8 L 328.4 27.8 M 328.4 27.8 L 328.9 26.8 M 328.9 26.8 L 329.4 25.8 M 329.4 25.8 L 329.4 25.8 M 329.4 25.8 L 329.9 24.8 M 329.9 24.8 L 330.5 23.8 M 330.5 23.8 L 331.0 22.8 M 331.0 22.8 L 331.1 22.5 M 331.1 22.5 L 331.5 21.8 M 331.5 21.8 L 332.0 20.8 M 332.0 20.8 L 332.5 19.9 M 332.5 19.9 L 332.8 19.3 M 332.8 19.3 L 333.1 18.9 M 333.1 18.9 L 333.6 17.9 M 333.6 17.9 L 334.1 16.9 M 334.1 16.9 L 334.6 16.0 M 334.6 16.0 L 334.6 15.9 M 334.6 15.9 L 335.1 14.9 M 335.1 14.9 L 335.7 13.9 M 335.7 13.9 L 336.2 12.9 M 336.2 12.9 L 336.3 12.7 M 336.3 12.7 L 336.7 12.0 M 336.7 12.0 L 337.2 11.0 M 337.2 11.0 L 337.7 10.0 M 337.7 10.0 L 338.0 9.5 M 338.0 9.5 L 338.3 9.0 M 338.3 9.0 L 338.8 8.0" stroke="blue" stroke-width="2.5" fill="none"/>
+  <line id="loran-solution-axis-o" x1="22.3" y1="22.3" x2="438.4" y2="160.8" stroke="black" stroke-width="1.5" fill="none"/>
+  <g id="loran-solution-__label-10" transform="translate(444.4,152.8) translate(0.0,-8.2)">
+    <g id="loran-solution-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.776px" height="8.184px" role="img" focusable="false" viewBox="0 -441 485 452" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-12-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="o">
+              <use data-c="1D45C" xlink:href="#loran-solution-MJX-12-TEX-I-1D45C"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="loran-solution-hyp-label" transform="translate(300.9,36.6) translate(-10.4,-6.4)">
+    <g id="loran-solution-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.424px" height="12.760px" role="img" focusable="false" viewBox="0 -694 576 705" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-13-TEX-I-210E" d="M137 683Q138 683 209 688T282 694Q294 694 294 685Q294 674 258 534Q220 386 220 383Q220 381 227 388Q288 442 357 442Q411 442 444 415T478 336Q478 285 440 178T402 50Q403 36 407 31T422 26Q450 26 474 56T513 138Q516 149 519 151T535 153Q555 153 555 145Q555 144 551 130Q535 71 500 33Q466 -10 419 -10H414Q367 -10 346 17T325 74Q325 90 361 192T398 345Q398 404 354 404H349Q266 404 205 306L198 293L164 158Q132 28 127 16Q114 -11 83 -11Q69 -11 59 -2T48 16Q48 30 121 320L195 616Q195 629 188 632T149 637H128Q122 643 122 645T124 664Q129 683 137 683Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="h">
+              <use data-c="210E" xlink:href="#loran-solution-MJX-13-TEX-I-210E"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <line id="loran-solution-drop-v" x1="288.3" y1="198.9" x2="288.3" y2="110.8" stroke="#777" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+  <line id="loran-solution-drop-h" x1="218.4" y1="110.8" x2="288.3" y2="110.8" stroke="#777" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+  <g id="loran-solution-__label-11" transform="translate(292.3,206.9) translate(-10.4,-0.0)">
+    <g id="loran-solution-__g-12">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.528px" width="20.760px" height="22.184px" role="img" focusable="false" viewBox="0 -864.9 1147.1 1225.5" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-14-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="loran-solution-MJX-14-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"/>
+          <path id="loran-solution-MJX-14-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mstyle">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="vulgar" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="StartFraction 19 Over 13 EndFraction">
+                <g data-mml-node="mn" transform="translate(220,394) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="19" data-semantic-prefix="Numerator">
+                  <use data-c="31" xlink:href="#loran-solution-MJX-14-TEX-N-31"/>
+                  <use data-c="39" xlink:href="#loran-solution-MJX-14-TEX-N-39" transform="translate(500,0)"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="13" data-semantic-prefix="Denominator">
+                  <use data-c="31" xlink:href="#loran-solution-MJX-14-TEX-N-31"/>
+                  <use data-c="33" xlink:href="#loran-solution-MJX-14-TEX-N-33" transform="translate(500,0)"/>
+                </g>
+                <rect width="907.1" height="60" x="120" y="220"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="loran-solution-lab-2413" transform="translate(210.4,119.8) translate(-20.8,-11.2)">
+    <g id="loran-solution-__g-13">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.528px" width="20.760px" height="22.320px" role="img" focusable="false" viewBox="0 -872.7 1147.1 1233.3" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-15-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="loran-solution-MJX-15-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          <path id="loran-solution-MJX-15-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="loran-solution-MJX-15-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mstyle">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="vulgar" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="StartFraction 24 Over 13 EndFraction">
+                <g data-mml-node="mn" transform="translate(220,394) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="24" data-semantic-prefix="Numerator">
+                  <use data-c="32" xlink:href="#loran-solution-MJX-15-TEX-N-32"/>
+                  <use data-c="34" xlink:href="#loran-solution-MJX-15-TEX-N-34" transform="translate(500,0)"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="13" data-semantic-prefix="Denominator">
+                  <use data-c="31" xlink:href="#loran-solution-MJX-15-TEX-N-31"/>
+                  <use data-c="33" xlink:href="#loran-solution-MJX-15-TEX-N-33" transform="translate(500,0)"/>
+                </g>
+                <rect width="907.1" height="60" x="120" y="220"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="loran-solution-ptA" cx="288.3" cy="110.8" r="3.5" stroke="black" stroke-width="2" fill="red"/>
+  <g id="loran-solution-__label-12" transform="translate(297.3,103.8) translate(0.0,-13.0)">
+    <g id="loran-solution-__g-14">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.576px" height="12.960px" role="img" focusable="false" viewBox="0 -716 750 716" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-16-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper A">
+              <use data-c="1D434" xlink:href="#loran-solution-MJX-16-TEX-I-1D434"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="loran-solution-ptA2" cx="122.8" cy="55.7" r="3" stroke="black" stroke-width="2" fill="white"/>
+  <g id="loran-solution-a2-label" transform="translate(112.8,65.7) translate(-102.0,-0.0)">
+    <g id="loran-solution-__g-15">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="101.968px" height="18.096px" role="img" focusable="false" viewBox="0 -750 5633.6 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-17-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-A0" d=""/>
+          <path id="loran-solution-MJX-17-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-6A" d="M98 609Q98 637 116 653T160 669Q183 667 200 652T217 609Q217 579 200 564T158 549Q133 549 116 564T98 609ZM28 -163Q58 -168 64 -168Q124 -168 135 -77Q137 -65 137 141T136 353Q132 371 120 377T72 385H52V408Q52 431 54 431L58 432Q62 432 70 432T87 433T108 434T133 436Q151 437 171 438T202 441T214 442H218V184Q217 -36 217 -59T211 -98Q195 -145 153 -175T58 -205Q9 -205 -23 -179T-55 -117Q-55 -94 -40 -79T-2 -64T36 -79T52 -118Q52 -143 28 -163Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"/>
+          <path id="loran-solution-MJX-17-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="7" data-semantic-children="2,3,4" data-semantic-collapsed="(7 (c 5 6) 2 3 4)" data-semantic-speech="upper A 2 left parenthesis rejected right parenthesis">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="7" data-semantic-speech="upper A 2">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper A" data-semantic-prefix="Base">
+                <use data-c="1D434" xlink:href="#loran-solution-MJX-17-TEX-I-1D434"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(783,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="2" data-semantic-prefix="Subscript">
+                <use data-c="32" xlink:href="#loran-solution-MJX-17-TEX-N-32"/>
+              </g>
+            </g>
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="space" data-semantic-annotation="clearspeak:unit" data-semantic-id="3" data-semantic-parent="7" data-semantic-speech="" transform="translate(1186.6,0)">
+              <use data-c="A0" xlink:href="#loran-solution-MJX-17-TEX-N-A0"/>
+            </g>
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="4" data-semantic-parent="7" data-semantic-speech="left parenthesis rejected right parenthesis" transform="translate(1436.6,0)">
+              <use data-c="28" xlink:href="#loran-solution-MJX-17-TEX-N-28"/>
+              <use data-c="72" xlink:href="#loran-solution-MJX-17-TEX-N-72" transform="translate(389,0)"/>
+              <use data-c="65" xlink:href="#loran-solution-MJX-17-TEX-N-65" transform="translate(781,0)"/>
+              <use data-c="6A" xlink:href="#loran-solution-MJX-17-TEX-N-6A" transform="translate(1225,0)"/>
+              <use data-c="65" xlink:href="#loran-solution-MJX-17-TEX-N-65" transform="translate(1531,0)"/>
+              <use data-c="63" xlink:href="#loran-solution-MJX-17-TEX-N-63" transform="translate(1975,0)"/>
+              <use data-c="74" xlink:href="#loran-solution-MJX-17-TEX-N-74" transform="translate(2419,0)"/>
+              <use data-c="65" xlink:href="#loran-solution-MJX-17-TEX-N-65" transform="translate(2808,0)"/>
+              <use data-c="64" xlink:href="#loran-solution-MJX-17-TEX-N-64" transform="translate(3252,0)"/>
+              <use data-c="29" xlink:href="#loran-solution-MJX-17-TEX-N-29" transform="translate(3808,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="loran-solution-ptS" cx="338.0" cy="127.3" r="2.5" stroke="black" stroke-width="2" fill="black"/>
+  <g id="loran-solution-s-label" transform="translate(344.0,117.3) translate(-5.8,-13.2)">
+    <g id="loran-solution-__g-16">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="11.672px" height="13.160px" role="img" focusable="false" viewBox="0 -705 645 727" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-18-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper S">
+              <use data-c="1D446" xlink:href="#loran-solution-MJX-18-TEX-I-1D446"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="loran-solution-p2" cx="122.8" cy="198.9" r="3" stroke="black" stroke-width="2" fill="black"/>
+  <g id="loran-solution-p2-label" transform="translate(106.8,209.9) translate(-9.8,-0.0)">
+    <g id="loran-solution-__g-17">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="19.520px" height="15.080px" role="img" focusable="false" viewBox="0 -683 1078.6 833" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-19-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+          <path id="loran-solution-MJX-19-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="upper P 2">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper P" data-semantic-prefix="Base">
+                <use data-c="1D443" xlink:href="#loran-solution-MJX-19-TEX-I-1D443"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(675,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="2" data-semantic-prefix="Subscript">
+                <use data-c="32" xlink:href="#loran-solution-MJX-19-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="loran-solution-p1" cx="314.1" cy="198.9" r="3" stroke="black" stroke-width="2" fill="black"/>
+  <g id="loran-solution-p1-label" transform="translate(330.1,209.9) translate(-9.8,-0.0)">
+    <g id="loran-solution-__g-18">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="19.520px" height="15.080px" role="img" focusable="false" viewBox="0 -683 1078.6 833" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-20-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+          <path id="loran-solution-MJX-20-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="upper P 1">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper P" data-semantic-prefix="Base">
+                <use data-c="1D443" xlink:href="#loran-solution-MJX-20-TEX-I-1D443"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(675,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="1" data-semantic-prefix="Subscript">
+                <use data-c="31" xlink:href="#loran-solution-MJX-20-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <circle id="loran-solution-p3" cx="361.9" cy="55.7" r="3" stroke="black" stroke-width="2" fill="black"/>
+  <g id="loran-solution-__label-13" transform="translate(371.9,55.7) translate(0.0,-7.7)">
+    <g id="loran-solution-__g-19">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.000px" width="19.520px" height="15.360px" role="img" focusable="false" viewBox="0 -683 1078.6 848.6" x="0.0" y="0.0">
+        <defs>
+          <path id="loran-solution-MJX-21-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+          <path id="loran-solution-MJX-21-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="upper P 3">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper P" data-semantic-prefix="Base">
+                <use data-c="1D443" xlink:href="#loran-solution-MJX-21-TEX-I-1D443"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(675,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="3" data-semantic-prefix="Subscript">
+                <use data-c="33" xlink:href="#loran-solution-MJX-21-TEX-N-33"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

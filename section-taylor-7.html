@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Applications of Taylor Series and Remainder Theorem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="og:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="book:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta name="twitter:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta property="og:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.13';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.a45d14e8fc8c534a.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.538acb8e671a3b5d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.1bda041f5a098305.css">
+<script src="_static/pretext/js/dist/diagcess/diagcess.js"></script><script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="math13" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="shorttitlelowercase.html"><span class="title">MATH 13-Calculus and Analytic Geometry III</span></a></div>
+<p class="byline">Mehdi Ahmadi</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="subsection-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="section-taylor.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="subsection-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\deriv}[2]{\displaystyle \frac{d#1}{d#2}}
+\newcommand{\real}{\Bbb R}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth4 focused" data-preexpanded-levels="0" data-max-levels="4"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list"><li class="toc-item toc-preface"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-hyperbolic-functions.html" class="internal"><span class="codenumber">1</span> <span class="title">Hyperbolic Functions</span></a></div>
+<ul id="ptx-toc-group-chapter-hyperbolic-functions" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-definitions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Definitions and Derivatives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-graphs.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Graph, Domain, and Range of <span class="process-math">\(\cosh x\)</span> and <span class="process-math">\(\sinh x\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identities.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Identities and Other Hyperbolic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identity-list.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Hyperbolic Identities</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-real-life.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Hyperbolic Functions in Real Life</span></a></div>
+<ul id="ptx-toc-group-sec-hyp-real-life" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-catenary.html" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Hanging Cables and the Catenary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-celestial.html" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Celestial Mechanics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-gateway-arch.html" class="internal"><span class="codenumber">1.5.3</span> <span class="title">The Gateway Arch</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-more-examples.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Further Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-series-sequences.html" class="internal"><span class="codenumber">2</span> <span class="title">Series and Sequences</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chapter-series-sequences">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-infinite-series.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Infinite Series</span></a></div>
+<ul id="ptx-toc-group-chapter-infinite-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-definitions.html" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-partial-sums.html" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-geometric.html" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-nth-term.html" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The <span class="process-math">\(n\)</span>th Term Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-combining.html" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Combining Series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-taylor-maclaurin.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Taylor and Maclaurin Series</span></a></div>
+<ul id="ptx-toc-group-chapter-taylor-maclaurin" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-definitions.html" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Definitions of Taylor Series, Maclaurin Series, and Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-example.html" class="internal"><span class="codenumber">2.2.2</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-taylor.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Taylor Series and its convergence</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-section-taylor">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-1.html" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Taylor’s Formula and The Remainder Estimation Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-2.html" class="internal"><span class="codenumber">2.3.2</span> <span class="title">An example of a Taylor series that converges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-3.html" class="internal"><span class="codenumber">2.3.3</span> <span class="title">The error in using a Taylor polynomial</span></a></div></li>
+<li class="toc-item toc-subsection contains-active">
+<div class="toc-title-box"><a href="section-taylor-7.html" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Applications of Taylor Series and Remainder Theorem</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-section-taylor-7">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#section-taylor-7-3" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Approximating Relativistic Kinetic Energy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsubsec-pendulum-small-angle" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Small-Angle Approximation for a Pendulum</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsec-approximating-pi-taylor" class="internal"><span class="codenumber">2.3.4.3</span> <span class="title">Approximating the value of <span class="process-math">\(\pi\)</span> using Taylor series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-5.html" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Proof of the remainder theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-binomial-series.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Binomial Series and Applications of Taylor Series</span></a></div>
+<ul id="ptx-toc-group-chapter-binomial-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-series.html" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Binomial Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-applications.html" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-geometry.html" class="internal"><span class="codenumber">3</span> <span class="title">3D Space and Vector Algebra</span></a></div>
+<ul id="ptx-toc-group-chapter-geometry" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-three-dimensional-coordinates.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Three-Dimensional Coordinate Systems</span></a></div>
+<ul id="ptx-toc-group-chapter-three-dimensional-coordinates" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-coordinate-system.html" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Rectangular Coordinate System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-planes-octants.html" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Coordinate Planes and Octants</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-distance.html" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Distance Between Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-spheres.html" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Spheres</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-describing-regions.html" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Describing Regions in Space</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-vectors.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Vectors</span></a></div>
+<ul id="ptx-toc-group-chapter-vectors" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-definitions.html" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Definitions, Terminology, and Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-algebra.html" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Vector Algebra Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-unit.html" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Unit Vectors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-dot-product.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Dot Product</span></a></div>
+<ul id="ptx-toc-group-section-dot-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dot-product.html" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The Dot Product and the Angle between Two Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projection.html" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Projection of <span class="process-math">\(\mathbf u\)</span> in the Direction of <span class="process-math">\(\mathbf v\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-work.html" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Application in Physics: Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-science.html" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Application in Data Science: Measuring Similarity in Tastes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-cross-product.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Cross Product</span></a></div>
+<ul id="ptx-toc-group-section-cross-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-definition.html" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Definition and Properties of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-components.html" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Second Definition of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-true-false.html" class="internal"><span class="codenumber">3.4.3</span> <span class="title">True or False?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-torque.html" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Application: Torque</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circular-motion.html" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Application: Circular Motion: Velocity and Angular Velocity</span></a></div>
+<ul id="ptx-toc-group-sec-circular-motion" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-polar-frame" class="internal"><span class="codenumber">3.4.5.1</span> <span class="title">A Frame that Turns with the Particle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-velocity" class="internal"><span class="codenumber">3.4.5.2</span> <span class="title">The Velocity in Circular Motion</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-angular-velocity-vector" class="internal"><span class="codenumber">3.4.5.3</span> <span class="title">Angular Velocity as a Vector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-v-omega-cross-r" class="internal"><span class="codenumber">3.4.5.4</span> <span class="title">Velocity as a Cross Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-motion-examples" class="internal"><span class="codenumber">3.4.5.5</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-parametrization.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Parametrization of Plane Curves</span></a></div>
+<ul id="ptx-toc-group-section-parametrization" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametric-equations.html" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Parametric Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametrizing-examples.html" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Some Examples of Parametrizing Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projectile-motion.html" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Projectile Motion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intersection-collision.html" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Intersection Points versus Collision Points</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-lines-planes.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Lines and Planes in Space</span></a></div>
+<ul id="ptx-toc-group-chapter-lines-planes" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-vector-eq.html" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Vector Equation for a Line in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-parametric.html" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Parametric Equations for a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-distance.html" class="internal"><span class="codenumber">3.6.3</span> <span class="title">The Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-equation.html" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Equation of a Plane in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-intersection.html" class="internal"><span class="codenumber">3.6.5</span> <span class="title">Lines of Intersection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-distance.html" class="internal"><span class="codenumber">3.6.6</span> <span class="title">Distance of a Point from a Plane</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-conics.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Conic Sections</span></a></div>
+<ul id="ptx-toc-group-section-conics" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-parabola.html" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipse.html" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbola.html" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-reflector.html" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Application: Parabolic Reflectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-whisper.html" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Application: Whispering Galleries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-loran.html" class="internal"><span class="codenumber">3.7.6</span> <span class="title">Application: Hyperbolic Navigation (LORAN)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-quadric-surfaces.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Quadric Surfaces</span></a></div>
+<ul id="ptx-toc-group-section-quadric-surfaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptical-paraboloid.html" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Elliptical Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbolic-paraboloid.html" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Hyperbolic Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipsoid.html" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Ellipsoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptic-cone.html" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Elliptic Cone</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperboloids.html" class="internal"><span class="codenumber">3.8.5</span> <span class="title">Hyperboloids</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-summary.html" class="internal"><span class="codenumber">3.8.6</span> <span class="title">Summary of the Quadric Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-applications.html" class="internal"><span class="codenumber">3.8.7</span> <span class="title">Quadric Surfaces in the World</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-functions-multiple-variables.html" class="internal"><span class="codenumber">4</span> <span class="title">Functions of Multiple Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-multiple-variables" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-functions-several-variables.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Functions of Several Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-several-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-functions-two-variables.html" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Functions of Two Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-curves.html" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Level Curves and Contour Maps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-surfaces.html" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Than Two Variables: Level Surfaces</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-limits-continuity.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Limits and Continuity in Higher Dimensions</span></a></div>
+<ul id="ptx-toc-group-chapter-limits-continuity" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-two-variable.html" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Limits of Two-Variable Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-continuity.html" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Continuity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-partial-derivatives.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Partial Derivatives</span></a></div>
+<ul id="ptx-toc-group-chapter-partial-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-definition.html" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-examples.html" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-second-derivatives.html" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Second Derivatives and the Mixed Derivative Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-chain-rule.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Chain Rule</span></a></div>
+<ul id="ptx-toc-group-chapter-chain-rule" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-one-independent.html" class="internal"><span class="codenumber">4.4.1</span> <span class="title">One Independent Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-two-independent.html" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Two Independent Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-applications.html" class="internal"><span class="codenumber">4.4.3</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-directional-derivatives.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Directional Derivatives and Gradient Vectors</span></a></div>
+<ul id="ptx-toc-group-section-directional-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-definition.html" class="internal"><span class="codenumber">4.5.1</span> <span class="title">The Definition of the Directional Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-vector.html" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The Gradient Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-properties.html" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Directions of Fastest Increase, Fastest Decrease, and No Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-summary.html" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-scalar-fields-potentials.html" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Scalar Fields, Potentials, and the Direction Nature Chooses</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-tangent-planes-differentials.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Tangent Planes and Differentials</span></a></div>
+<ul id="ptx-toc-group-section-tangent-planes-differentials" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-equation.html" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Equation of the Tangent Plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-example-paraboloid.html" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Tangent Plane and Normal Line to a Surface</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-change.html" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Estimating the Change in a Particular Direction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-linearization.html" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Linearizing <span class="process-math">\(z = f(x,y)\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-extreme-values.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Extreme Values and Saddle Points</span></a></div>
+<ul id="ptx-toc-group-section-extreme-values" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-local-extrema.html" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Local Maximum and Local Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-saddle-example.html" class="internal"><span class="codenumber">4.7.2</span> <span class="title">A Saddle Point Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-second-derivative-test.html" class="internal"><span class="codenumber">4.7.3</span> <span class="title">The Second Derivative Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-extrema.html" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Absolute Maximum and Absolute Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equilibrium-stability.html" class="internal"><span class="codenumber">4.7.5</span> <span class="title">A Physical Application: Equilibrium and Stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-why-second-derivative-test.html" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Why the Second Derivative Test Works</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-lagrange-multipliers.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-section-lagrange-multipliers" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-method.html" class="internal"><span class="codenumber">4.8.1</span> <span class="title">The Method of Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-method" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#sec-lagrange-collinear" class="internal"><span class="codenumber">4.8.1.1</span> <span class="title">Why the Gradients Must Be Collinear</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#subsec-lagrange-statement" class="internal"><span class="codenumber">4.8.1.2</span> <span class="title">Stating the Method</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-examples.html" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Examples: Functions of Two Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-examples" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-ellipse" class="internal"><span class="codenumber">4.8.2.1</span> <span class="title">Extrema on an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-circle" class="internal"><span class="codenumber">4.8.2.2</span> <span class="title">Absolute Extrema on a Circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-three-variables.html" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Examples: Functions of Three Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-three-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-distance" class="internal"><span class="codenumber">4.8.3.1</span> <span class="title">Shortest Distance to a Plane</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-box" class="internal"><span class="codenumber">4.8.3.2</span> <span class="title">Minimizing the Cost of a Box</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Functions of <span class="process-math">\(n\)</span> Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-functions-n-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-n-variables" class="internal"><span class="codenumber">4.8.4.1</span> <span class="title">The Method in <span class="process-math">\(n\)</span> Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-hm-gm" class="internal"><span class="codenumber">4.8.4.2</span> <span class="title">An Inequality Between Two Means</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="section-exercises.html" class="internal"><span class="codenumber">5</span> <span class="title">Assignments and Review Problems</span></a></div>
+<ul id="ptx-toc-group-section-exercises" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Assignment 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Assignment 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assignment 3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-1.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Review Problems #1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-4.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Assignment 4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Assignment 5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-6.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Assignment 6</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-2.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Review Problems #2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-7.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Assignment 7</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-8.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Assignment 8</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-9.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Assignment 9</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-3.html" class="internal"><span class="codenumber">5.12</span> <span class="title">Review Problems #3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-10.html" class="internal"><span class="codenumber">5.13</span> <span class="title">Assignment 10</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-4.html" class="internal"><span class="codenumber">5.14</span> <span class="title">Review Problems #4</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="subsection" id="section-taylor-7">
+<h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications of Taylor Series and Remainder Theorem</span>
+</h1>
+<section class="introduction" id="section-taylor-7-2">
+<div class="para" id="section-taylor-7-2-1">Physicists often use Taylor series to approximate functions in order to simplify calculations. The first example is the kinetic energy of an object in relativistic mechanics. The second example is the approximation of the period of a pendulum. We will discuss the error in using these approximations and when it is valid to use them. Additionally, we will discuss how to use the taylor series to estimate value of <span class="process-math">\(\pi\)</span> in the last example.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-taylor-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsubsection" id="section-taylor-7-3">
+<h2 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Approximating Relativistic Kinetic Energy</span>
+</h2>
+<div class="para logical" id="section-taylor-7-3-2">
+<div class="para">In relativistic mechanics, the mass of an object moving with velocity <span class="process-math">\(v\)</span> is given by:</div>
+<div class="displaymath process-math" id="eq-relativistic-mass">
+\begin{equation}
+m = \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}}\tag{2.3.5}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(m_0\)</span> is the rest mass of the object and <span class="process-math">\(c\)</span> is the speed of light. Then the kinetic energy of an object of mass <span class="process-math">\(m\)</span> moving with velocity <span class="process-math">\(v\)</span> is:</div>
+<div class="displaymath process-math" id="eq-relativistic-ke">
+\begin{equation}
+K = mc^2-m_0c^2\tag{2.3.6}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-taylor-7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-taylor-7-3-3">In the case when <span class="process-math">\(v \ll c\text{,}\)</span> we can use the Taylor series to approximate the kinetic energy. In example <a href="section-taylor-7.html#example-1" class="xref" data-knowl="./knowl/xref/example-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.12: Newtonian kinetic energy as an approximation to relativistic kinetic energy when v \ll c">Example 2.3.12</a> we will show that the kinetic energy can be approximated by the formula <span class="process-math">\(K \approx \frac{1}{2} m_0v^2\)</span> when <span class="process-math">\(v \ll c\text{.}\)</span> See <a href="section-taylor-7.html#fig-ke-cartoon" class="xref" data-knowl="./knowl/xref/fig-ke-cartoon.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.11">Figure 2.3.11</a> for a comparison of the relativistic kinetic energy and its Newtonian approximation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-taylor-7-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-ke-cartoon"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/ke-cartoon-diagcess.svg" data-cml="generated/prefigure/ke-cartoon-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Relativistic versus Newtonian kinetic energy. The relativistic energy races toward a wall at the speed of light <span class="process-math">\(c\text{,}\)</span> while the Newtonian energy follows a gentle parabola; the two are approximately in agreement only when <span class="process-math">\(v \ll c\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.11"><a tabindex="-1" href="#fig-ke-cartoon" title="Copy heading and permalink for Figure 2.3.11" aria-label="Copy heading and permalink for Figure 2.3.11">🔗</a></div></figcaption>
+</figure>
+<details id="example-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Newtonian kinetic energy as an approximation to relativistic kinetic energy when <span class="process-math">\(v \ll c\)</span>.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-1-2-1">Show that the kinetic energy of an object moving with velocity <span class="process-math">\(v\)</span> can be approximated by the formula <span class="process-math">\(K \approx \frac{1}{2} m_0v^2\)</span> when <span class="process-math">\(v \ll c\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-1-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="example-1-3-1">We can use the Taylor series for <span class="process-math">\(f(x) = \frac{1}{\sqrt{1 - x}}\)</span> at <span class="process-math">\(x=0\)</span> to approximate <span class="process-math">\(K\text{.}\)</span> Use <span class="process-math">\(x = \frac{v^2}{c^2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 2.3.12.1"><a tabindex="-1" href="#example-1-3" title="Copy heading and permalink for Hint 2.3.12.1" aria-label="Copy heading and permalink for Hint 2.3.12.1">🔗</a></div>
+</div></details>
+<details id="example-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-1-4-1">
+<div class="para">Substituting <a href="section-taylor-7.html#eq-relativistic-mass" class="xref" data-knowl="./knowl/xref/eq-relativistic-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.5">(2.3.5)</a> into <a href="section-taylor-7.html#eq-relativistic-ke" class="xref" data-knowl="./knowl/xref/eq-relativistic-ke.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.6">(2.3.6)</a>, we can rewrite the kinetic energy as follows:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-relativistic-mass.html ./knowl/xref/eq-relativistic-ke.html" id="example-1-4-1-3">
+\begin{equation*}
+K = mc^2-m_0c^2 = m_0c^2 \left( \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} - 1 \right)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-1-4-2">
+<div class="para">Let <span class="process-math">\(x = \frac{v^2}{c^2}\text{.}\)</span> Then we have:</div>
+<div class="displaymath process-math" id="example-1-4-2-2">
+\begin{equation*}
+K = m_0c^2 \left( \frac{1}{\sqrt{1 - x}} - 1 \right)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-1-4-3">
+<div class="para">Now we can use the Taylor series for <span class="process-math">\(f(x) = \frac{1}{\sqrt{1 - x}}\)</span> at <span class="process-math">\(x=0\)</span> to approximate <span class="process-math">\(K\text{.}\)</span> The Taylor series for <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=0\)</span> is given by:</div>
+<div class="displaymath process-math" id="eq-inv-sqrt-series">
+\begin{equation}
+f(x) = 1 + \frac{1}{2}x + \frac{3}{8}x^2 + \frac{5}{16}x^3 + \cdots\tag{2.3.7}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-1-4-4">
+<div class="para">Subtracting the <span class="process-math">\(1\)</span> from <a href="section-taylor-7.html#eq-inv-sqrt-series" class="xref" data-knowl="./knowl/xref/eq-inv-sqrt-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.7">(2.3.7)</a>, we have:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-inv-sqrt-series.html" id="example-1-4-4-3">
+\begin{equation*}
+K = m_0c^2 \left( \frac{1}{\sqrt{1 - x}} - 1 \right) = m_0c^2 \left( \frac{1}{2}x + \frac{3}{8}x^2 + \frac{5}{16}x^3 + \cdots \right) 
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-1-4-5">
+<div class="para">Substituting <span class="process-math">\(x = \frac{v^2}{c^2}\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" id="example-1-4-5-2">
+\begin{align*}
+K \amp  = m_0c^2 \left( \frac{1}{2}\frac{v^2}{c^2} + \frac{3}{8}\frac{v^4}{c^4} + \frac{5}{16}\frac{v^6}{c^6} + \cdots \right) \\
+\amp  = \frac{1}{2} m_0v^2 + \frac{3}{8} m_0\frac{v^4}{c^2} + \frac{5}{16} m_0\frac{v^6}{c^4} + \cdots 
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-1-4-6">
+<div class="para">When <span class="process-math">\(v \ll c\text{,}\)</span> the higher order terms in the series become negligible, and we can approximate the kinetic energy as:</div>
+<div class="displaymath process-math" id="eq-newtonian-ke">
+\begin{equation}
+K \approx \frac{1}{2} m_0v^2.\tag{2.3.8}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-1-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.12.1"><a tabindex="-1" href="#example-1-4" title="Copy heading and permalink for Solution 2.3.12.1" aria-label="Copy heading and permalink for Solution 2.3.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.12: Newtonian kinetic energy as an approximation to relativistic kinetic energy when v \ll c"><a tabindex="-1" href="#example-1" title="Copy heading and permalink for Example 2.3.12: Newtonian kinetic energy as an approximation to relativistic kinetic energy when v \ll c" aria-label="Copy heading and permalink for Example 2.3.12: Newtonian kinetic energy as an approximation to relativistic kinetic energy when v \ll c">🔗</a></div>
+</article></details>
+<details id="ex-error-newtonian-ke" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Estimating the error in using the Newtonian kinetic energy formula to approximate the relativistic kinetic energy.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-error-newtonian-ke-2-1">Assume that a car a moving with a velocity of <span class="process-math">\(v = 30 m/s \)</span> (<span class="process-math">\(\approx 67\)</span> miles per hour). Use the remainder’s theorem to estimate the error in using the Newtonian kinetic energy formula <a href="section-taylor-7.html#eq-newtonian-ke" class="xref" data-knowl="./knowl/xref/eq-newtonian-ke.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.8">(2.3.8)</a> to approximate the relativistic kinetic energy of the car. The speed of light is <span class="process-math">\(c = 3 \times 10^8 m/s\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-newtonian-ke-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-error-newtonian-ke-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-error-newtonian-ke-3-1">
+<div class="para">Note that when using the Newtonian kinetic energy formula, we are keeping only the degree-<span class="process-math">\(1\)</span> term of <a href="section-taylor-7.html#eq-inv-sqrt-series" class="xref" data-knowl="./knowl/xref/eq-inv-sqrt-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.7">(2.3.7)</a>, i.e. we are using the Taylor polynomial of degree <span class="process-math">\(1\)</span> at <span class="process-math">\(x=0\)</span> to approximate <span class="process-math">\(K\text{.}\)</span> Therefore, by <a href="subsection-1.html#eq-taylor-remainder" class="xref" data-knowl="./knowl/xref/eq-taylor-remainder.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.3">(2.3.3)</a> the error term is given by:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-inv-sqrt-series.html ./knowl/xref/eq-taylor-remainder.html" id="ex-error-newtonian-ke-3-1-7">
+\begin{equation*}
+R_1(x) = m_0 c^2 \frac{f^{(2)}(c)}{2!} x^2
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-newtonian-ke-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-error-newtonian-ke-3-2">
+<div class="para">Following <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a>, we bound the second derivative on the interval between <span class="process-math">\(0\)</span> and <span class="process-math">\(x\)</span> instead of trying to find the unknown intermediate point. Since <span class="process-math">\(f^{(2)}(x) = \frac{3}{4} (1-x)^{-5/2}\)</span> is increasing on that interval, its largest value there is at the right endpoint, so we have:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html" id="ex-error-newtonian-ke-3-2-5">
+\begin{equation*}
+|R_1(x)| \leq m_0 c^2 \frac{3}{8} (1-x)^{-5/2} x^2
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-newtonian-ke-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-error-newtonian-ke-3-3">
+<div class="para">Since <span class="process-math">\(x = \frac{v^2}{c^2}\text{,}\)</span> we have:</div>
+<div class="displaymath process-math" id="ex-error-newtonian-ke-3-3-2">
+\begin{equation*}
+|R_1(x)| \leq m_0 c^2 \frac{3}{8} \left( 1 - \frac{v^2}{c^2} \right)^{-5/2} \left( \frac{v^2}{c^2} \right)^2
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-newtonian-ke-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-error-newtonian-ke-3-4">
+<div class="para">Substituting <span class="process-math">\(v/c = 10^{-7}\)</span> and  <span class="process-math">\(c = 3 \times 10^8 m/s\text{,}\)</span> we get:</div>
+<div class="displaymath process-math" id="ex-error-newtonian-ke-3-4-3">
+\begin{equation*}
+|R_1(x)| \leq m_0 (3 \times 10^8)^2 \frac{3}{8} \left( 1 -  10^{-14} \right)^{-5/2} 
+\left(10^{-14} \right)^2 \lt 4 \times 10^{-11} m_0
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-newtonian-ke-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-error-newtonian-ke-3-5">This shows that the error is extremely small, and the Newtonian kinetic energy formula is a very good approximation to the relativistic kinetic energy for a car moving at <span class="process-math">\(30 m/s\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-error-newtonian-ke-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.13.1"><a tabindex="-1" href="#ex-error-newtonian-ke-3" title="Copy heading and permalink for Solution 2.3.13.1" aria-label="Copy heading and permalink for Solution 2.3.13.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.13: Estimating the error in using the Newtonian kinetic energy formula to approximate the relativistic kinetic energy"><a tabindex="-1" href="#ex-error-newtonian-ke" title="Copy heading and permalink for Example 2.3.13: Estimating the error in using the Newtonian kinetic energy formula to approximate the relativistic kinetic energy" aria-label="Copy heading and permalink for Example 2.3.13: Estimating the error in using the Newtonian kinetic energy formula to approximate the relativistic kinetic energy">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsubsection 2.3.4.1: Approximating Relativistic Kinetic Energy"><a tabindex="-1" href="#section-taylor-7-3" title="Copy heading and permalink for Subsubsection 2.3.4.1: Approximating Relativistic Kinetic Energy" aria-label="Copy heading and permalink for Subsubsection 2.3.4.1: Approximating Relativistic Kinetic Energy">🔗</a></div>
+</section>
+<section class="subsubsection" id="subsubsec-pendulum-small-angle">
+<h2 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Small-Angle Approximation for a Pendulum</span>
+</h2>
+<div class="para" id="subsubsec-pendulum-small-angle-2">We begin this section by briefly reviewing the forces acting on a simple pendulum and how the small-angle approximation allows us to treat its motion as simple harmonic motion.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-pendulum-small-angle-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-pendulum-small-angle-3">
+<div class="para">The bob moves along the arc, so only the component of gravity <em class="emphasis">tangent</em> to that arc drives the motion. Resolving the weight <span class="process-math">\(m\overrightarrow{\mathbf{g}}\)</span> into a component along the string (<span class="process-math">\(mg\cos\theta\text{,}\)</span> balanced by the string tension <span class="process-math">\(\overrightarrow{\mathbf{F}}_T\)</span>) and a component tangent to the arc, as shown in <a href="section-taylor-7.html#fig-pendulum-forces" class="xref" data-knowl="./knowl/xref/fig-pendulum-forces.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.14">Figure 2.3.14</a>, gives the restoring force</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-pendulum-forces.html" id="eq-pendulum-force">
+\begin{equation}
+F = -mg\sin\theta .\tag{2.3.9}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-pendulum-small-angle-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-pendulum-small-angle-4">The minus sign indicates that the force always points back toward the equilibrium (straight-down) position. This is <em class="emphasis">not</em> Hooke’s law: the force is proportional to <span class="process-math">\(\sin\theta\text{,}\)</span> not to the displacement itself, so the motion is not exactly simple harmonic. Writing the arc displacement as <span class="process-math">\(x = \ell\theta\text{,}\)</span> we would need <span class="process-math">\(F\)</span> to be proportional to <span class="process-math">\(x\)</span>—that is, to <span class="process-math">\(\theta\)</span>—for the motion to be simple harmonic.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-pendulum-small-angle-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-pendulum-small-angle-5">
+<div class="para">The small-angle approximation bridges this gap. From the Taylor series</div>
+<div class="displaymath process-math" id="eq-sin-series">
+\begin{equation}
+\sin\theta = \theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \cdots,\tag{2.3.10}
+\end{equation}
+</div>
+<div class="para">when <span class="process-math">\(\theta\)</span> is small (in radians) the higher-order terms are negligible and <span class="process-math">\(\sin\theta \approx \theta\text{.}\)</span> The restoring force then becomes</div>
+<div class="displaymath process-math" id="subsubsec-pendulum-small-angle-5-4">
+\begin{equation*}
+F \approx -mg\theta = -\frac{mg}{\ell}\,x,
+\end{equation*}
+</div>
+<div class="para">which <em class="emphasis">is</em> Hooke’s law <span class="process-math">\(F = -kx\)</span> with effective spring constant <span class="process-math">\(k = \dfrac{mg}{\ell}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-pendulum-small-angle-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-pendulum-small-angle-6">
+<div class="para">This is exactly what fixes the period. Newton’s second law <span class="process-math">\(F = ma = m\dfrac{d^2x}{dt^2}\)</span> turns Hooke’s law into the equation of motion</div>
+<div class="displaymath process-math" id="subsubsec-pendulum-small-angle-6-2">
+\begin{equation*}
+m\frac{d^2x}{dt^2} = -\frac{mg}{\ell}\,x,
+\qquad\text{that is,}\qquad
+\frac{d^2x}{dt^2} = -\frac{g}{\ell}\,x .
+\end{equation*}
+</div>
+<div class="para">Notice that the mass cancels. The equation says that <span class="process-math">\(x\)</span> is a function whose second derivative is a negative multiple of itself, and the functions with that property are the sines and cosines: writing <span class="process-math">\(\omega^2 = \dfrac{g}{\ell}\text{,}\)</span> every solution has the form</div>
+<div class="displaymath process-math" id="subsubsec-pendulum-small-angle-6-5">
+\begin{equation*}
+x(t) = A\cos(\omega t) + B\sin(\omega t),
+\qquad \omega = \sqrt{\frac{g}{\ell}} ,
+\end{equation*}
+</div>
+<div class="para">which you can verify by differentiating twice. The number <span class="process-math">\(\omega\)</span> is the angular frequency, and <span class="process-math">\(\cos(\omega t)\)</span> and <span class="process-math">\(\sin(\omega t)\)</span> repeat when <span class="process-math">\(\omega t\)</span> increases by <span class="process-math">\(2\pi\text{.}\)</span> So the motion repeats after a time <span class="process-math">\(T\)</span> with <span class="process-math">\(\omega T = 2\pi\text{,}\)</span> giving</div>
+<div class="displaymath process-math" id="eq-pendulum-period">
+\begin{equation}
+T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{\ell}{g}} .\tag{2.3.11}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-pendulum-small-angle-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-pendulum-small-angle-7">Thus, for small swings the pendulum behaves as a simple harmonic oscillator, with the period <a href="section-taylor-7.html#eq-pendulum-period" class="xref" data-knowl="./knowl/xref/eq-pendulum-period.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.11">(2.3.11)</a>, which is independent of both the amplitude and the mass. Taylor’s Remainder Theorem (see <a href="section-taylor-7.html#ex-small-angle-pendulum" class="xref" data-knowl="./knowl/xref/ex-small-angle-pendulum.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation">Example 2.3.16</a>) enables us to quantify how small <span class="process-math">\(\theta\)</span> must be for this approximation—.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-pendulum-small-angle-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-pendulum-forces"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/pendulum-forces-diagcess.svg" data-cml="generated/prefigure/pendulum-forces-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Forces on a simple pendulum. The weight <span class="process-math">\(m\overrightarrow{\mathbf{g}}\)</span> resolves into a component <span class="process-math">\(mg\cos\theta\)</span> along the string (balanced by the tension <span class="process-math">\(\overrightarrow{\mathbf{F}}_T\)</span>) and a component <span class="process-math">\(mg\sin\theta\)</span> tangent to the arc, which acts as the restoring force.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.14"><a tabindex="-1" href="#fig-pendulum-forces" title="Copy heading and permalink for Figure 2.3.14" aria-label="Copy heading and permalink for Figure 2.3.14">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="fig-pendulum-forces-video"><div class="video-box" style="width: 90%;padding-top: 50.625%; margin-left: 5%; margin-right: 5%;"><video id="fig-pendulum-forces-video-2" class="video" controls=""><source src="external/videos/pendulum_forces.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Forces on a simple pendulum. The weight <span class="process-math">\(m\overrightarrow{g}\)</span> resolves into a radial component <span class="process-math">\(mg\cos\theta\)</span> along the string, balanced by the tension <span class="process-math">\(\overrightarrow{F}_T\text{,}\)</span> and a tangential component <span class="process-math">\(mg\sin\theta\)</span> directed toward equilibrium, which acts as the restoring force. For small angles, <span class="process-math">\(\sin\theta \approx \theta\)</span> gives <span class="process-math">\(F \approx -\dfrac{mg}{\ell}x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.15"><a tabindex="-1" href="#fig-pendulum-forces-video" title="Copy heading and permalink for Figure 2.3.15" aria-label="Copy heading and permalink for Figure 2.3.15">🔗</a></div></figcaption>
+</figure>
+<details id="ex-small-angle-pendulum" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Simple Harmonic Motion of a Pendulum as an Approximation.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-small-angle-pendulum-2-1">Use the remainder theorem to analyze the claim made in Giancoli’s textbook that for small angles, <span class="process-math">\(\sin\theta \approx \theta\text{.}\)</span> Specifically, show that the error is less than <span class="process-math">\(1\%\)</span> for angles below <span class="process-math">\(15^\circ\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-small-angle-pendulum-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-small-angle-pendulum-2-2">Here is the exact quote from Giancoli’s textbook:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-small-angle-pendulum-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<blockquote class="blockquote" id="ex-small-angle-pendulum-2-3">
+<div class="para" id="ex-small-angle-pendulum-2-3-1">“For angles less than <span class="process-math">\(15^\circ\text{,}\)</span> the difference between <span class="process-math">\(\theta\)</span> (in radians) and <span class="process-math">\(\sin\theta\)</span> is less than <span class="process-math">\(1\%\text{.}\)</span>”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-small-angle-pendulum-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Quotation"><a tabindex="-1" href="#ex-small-angle-pendulum-2-3" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+</blockquote>
+<div class="solutions">
+<details id="sol-small-angle-pendulum" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sol-small-angle-pendulum-1">
+<div class="para">In deriving simple harmonic motion for a pendulum, the restoring force is <a href="section-taylor-7.html#eq-pendulum-force" class="xref" data-knowl="./knowl/xref/eq-pendulum-force.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.9">(2.3.9)</a>, which is proportional to <span class="process-math">\(\sin\theta\)</span> rather than to the angular displacement <span class="process-math">\(\theta\)</span> itself. The motion is therefore not <em class="emphasis">exactly</em> simple harmonic. Giancoli resolves this by appealing to the smallness of the angle: for angles below <span class="process-math">\(15^\circ\text{,}\)</span> he states that “the difference between <span class="process-math">\(\theta\)</span> (in radians) and <span class="process-math">\(\sin\theta\)</span> is less than <span class="process-math">\(1\%\)</span>”  He notes that this can be seen “by looking at the series expansion” of <span class="process-math">\(\sin\theta\text{,}\)</span> which is <a href="section-taylor-7.html#eq-sin-series" class="xref" data-knowl="./knowl/xref/eq-sin-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.10">(2.3.10)</a>, carried one term further:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-pendulum-force.html ./knowl/xref/eq-sin-series.html" id="sol-small-angle-pendulum-1-10">
+\begin{equation*}
+\sin\theta = \theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!}
+- \frac{\theta^7}{7!} + \cdots .
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sol-small-angle-pendulum-2">
+<div class="para">We can turn this observation into a quantitative statement using Taylor’s Remainder Theorem. Let <span class="process-math">\(f(\theta) = \sin\theta\text{,}\)</span> expanded about <span class="process-math">\(\theta = 0\text{.}\)</span> Replacing <span class="process-math">\(\sin\theta\)</span> by <span class="process-math">\(\theta\)</span> amounts to using the first-degree Taylor polynomial <span class="process-math">\(p_1(\theta) = \theta\text{.}\)</span> Since the coefficient of <span class="process-math">\(\theta^2\)</span> in the series above is zero, we have <span class="process-math">\(p_1(\theta) = p_2(\theta) = \theta\text{,}\)</span> so the error is controlled by the third derivative. By <a href="subsection-1.html#eq-taylor-remainder" class="xref" data-knowl="./knowl/xref/eq-taylor-remainder.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.3">(2.3.3)</a>, for some <span class="process-math">\(c\)</span> with <span class="process-math">\(0 \lt c \lt \theta\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-remainder.html" id="sol-small-angle-pendulum-2-11">
+\begin{equation*}
+\sin\theta - \theta = R_2(\theta)
+= \frac{f'''(c)}{3!}\,\theta^3
+= -\frac{\cos c}{6}\,\theta^3 .
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sol-small-angle-pendulum-3">
+<div class="para">The point <span class="process-math">\(c\)</span> is not known, but as in <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a> we do not need it: because <span class="process-math">\(|\cos c| \le 1\text{,}\)</span> we may take <span class="process-math">\(M = 1\text{,}\)</span> and the absolute error satisfies</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html" id="sol-small-angle-pendulum-3-5">
+\begin{equation*}
+\left| \sin\theta - \theta \right|
+= \frac{\cos c}{6}\,\theta^3 \le \frac{\theta^3}{6},
+\end{equation*}
+</div>
+<div class="para">and dividing by <span class="process-math">\(\theta\)</span> bounds the <dfn class="terminology">relative</dfn> error:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/rmk-error-upper-bound.html" id="sol-small-angle-pendulum-3-8">
+\begin{equation*}
+\frac{\left| \theta - \sin\theta \right|}{\theta} \le \frac{\theta^2}{6}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sol-small-angle-pendulum-4">
+<div class="para">This confirms Giancoli’s claim and even sharpens it. The relative error stays below <span class="process-math">\(1\%\)</span> precisely when <span class="process-math">\(\dfrac{\theta^2}{6} \lt 0.01\text{,}\)</span> that is, when <span class="process-math">\(\theta \lt \sqrt{0.06} \approx 0.245\)</span> radians, or about <span class="process-math">\(14^\circ\text{.}\)</span> At Giancoli’s stated cutoff of <span class="process-math">\(15^\circ = \pi/12\)</span> radians, the bound gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-pendulum-period.html" id="sol-small-angle-pendulum-4-6">
+\begin{equation*}
+\frac{\left| \theta - \sin\theta \right|}{\theta}
+\le \frac{(\pi/12)^2}{6} \approx 0.0114,
+\end{equation*}
+</div>
+<div class="para">i.e. about <span class="process-math">\(1.1\%\text{.}\)</span> So <span class="process-math">\(15^\circ\)</span> is exactly the round-number boundary of the “less than <span class="process-math">\(1\%\)</span>” regime, and Taylor’s Remainder Theorem locates the true <span class="process-math">\(1\%\)</span> threshold at <span class="process-math">\(\theta \approx 14^\circ\text{.}\)</span> This is precisely the range in which the pendulum behaves as a simple harmonic oscillator with the period <a href="section-taylor-7.html#eq-pendulum-period" class="xref" data-knowl="./knowl/xref/eq-pendulum-period.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.11">(2.3.11)</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sol-small-angle-pendulum-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-relative-error-1pct"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/relative-error-1pct-diagcess.svg" data-cml="generated/prefigure/relative-error-1pct-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The relative error <span class="process-math">\(\dfrac{|\theta - \sin\theta|}{\sin\theta}\)</span> rises above the <span class="process-math">\(1\%\)</span> threshold <span class="process-math">\(y = 0.01\)</span> at <span class="process-math">\(\theta^* \approx 0.244\)</span> radians (about <span class="process-math">\(14^\circ\)</span>), the root of <span class="process-math">\(\theta = 1.01\sin\theta\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.17"><a tabindex="-1" href="#fig-relative-error-1pct" title="Copy heading and permalink for Figure 2.3.17" aria-label="Copy heading and permalink for Figure 2.3.17">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="fig-small-angle-error-video"><div class="video-box" style="width: 95%;padding-top: 53.4375%; margin-left: 2.5%; margin-right: 2.5%;"><video id="fig-small-angle-error-video-2" class="video" controls=""><source src="external/videos/small_angle_error.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A pendulum swinging through decreasing amplitudes while the relative error of the approximation <span class="process-math">\(\sin\theta \approx \theta\)</span> is computed at each angle, followed by the Taylor remainder bound <span class="process-math">\(\dfrac{|\theta - \sin\theta|}{\theta} \le \dfrac{\theta^2}{6}\)</span> and the graph locating the <span class="process-math">\(1\%\)</span> threshold at <span class="process-math">\(\theta^* \approx 0.244 \approx 14^\circ\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.18"><a tabindex="-1" href="#fig-small-angle-error-video" title="Copy heading and permalink for Figure 2.3.18" aria-label="Copy heading and permalink for Figure 2.3.18">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.16.1"><a tabindex="-1" href="#sol-small-angle-pendulum" title="Copy heading and permalink for Solution 2.3.16.1" aria-label="Copy heading and permalink for Solution 2.3.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation"><a tabindex="-1" href="#ex-small-angle-pendulum" title="Copy heading and permalink for Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation" aria-label="Copy heading and permalink for Example 2.3.16: Simple Harmonic Motion of a Pendulum as an Approximation">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsubsection 2.3.4.2: Small-Angle Approximation for a Pendulum"><a tabindex="-1" href="#subsubsec-pendulum-small-angle" title="Copy heading and permalink for Subsubsection 2.3.4.2: Small-Angle Approximation for a Pendulum" aria-label="Copy heading and permalink for Subsubsection 2.3.4.2: Small-Angle Approximation for a Pendulum">🔗</a></div>
+</section>
+<section class="subsubsection" id="subsec-approximating-pi-taylor">
+<h2 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Approximating the value of <span class="process-math">\(\pi\)</span> using Taylor series</span>
+</h2>
+<div class="para" id="subsec-approximating-pi-taylor-2">In this subsection, we will discuss how to approximate the value of <span class="process-math">\(\pi\)</span> using Taylor series. We will use the Taylor series for <code class="code-inline tex2jax_ignore">arctan(x)</code> to approximate <span class="process-math">\(\pi\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-approximating-pi-taylor-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-approx-pi-arctan" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Approximating <span class="process-math">\(\pi\)</span> using the Taylor series for <span class="process-math">\(\arctan(x)\)</span>.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-approx-pi-arctan-2-1">Use the Taylor series for <span class="process-math">\(\arctan(x)\)</span> to approximate the value of <span class="process-math">\(\pi\text{.}\)</span> Use Taylor’s Remainder Theorem to find an upper bound for the error in this approximation, and show that the error decreases as the order <span class="process-math">\(n\)</span> of the Taylor polynomial increases.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-approx-pi-arctan-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-approx-pi-arctan-3-1">
+<div class="para">The Taylor series for <span class="process-math">\(f(x) = \arctan(x)\)</span> centered at <span class="process-math">\(a = 0\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-polynomial.html" id="ex-approx-pi-arctan-3-1-3">
+\begin{align}
+\arctan(x) \amp = \sum_{k=0}^{\infty} \frac{(-1)^k}{2k+1}\, x^{2k+1}\tag{2.3.12}\\
+\amp = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots, \qquad |x| \le 1.\notag
+\end{align}
+</div>
+<div class="para">Since <span class="process-math">\(\arctan(1) = \dfrac{\pi}{4}\text{,}\)</span> evaluating the series at <span class="process-math">\(x = 1\)</span> gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-polynomial.html" id="ex-approx-pi-arctan-3-1-6">
+\begin{equation*}
+\pi = 4\arctan(1) = 4\left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots\right).
+\end{equation*}
+</div>
+<div class="para">Therefore, if <span class="process-math">\(T_n(x)\)</span> denotes the Taylor polynomial <a href="subsection-1.html#eq-taylor-polynomial" class="xref" data-knowl="./knowl/xref/eq-taylor-polynomial.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.2">(2.3.2)</a> of order <span class="process-math">\(n\)</span> for <span class="process-math">\(\arctan(x)\)</span> centered at <span class="process-math">\(0\text{,}\)</span> we obtain the approximation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-polynomial.html" id="ex-approx-pi-arctan-3-1-12">
+\begin{equation*}
+\pi \approx 4\,T_n(1).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-approx-pi-arctan-3-2">
+<div class="para">To bound the error, we apply <a href="subsection-1.html#eq-remainder-bound" class="xref" data-knowl="./knowl/xref/eq-remainder-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.4">(2.3.4)</a>: if <span class="process-math">\(\left|f^{(n+1)}(t)\right| \le M\)</span> for all <span class="process-math">\(t\)</span> between <span class="process-math">\(0\)</span> and <span class="process-math">\(x\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html" id="ex-approx-pi-arctan-3-2-6">
+\begin{equation*}
+|R_n(x)| = |f(x) - T_n(x)| \le \frac{M}{(n+1)!}\,|x|^{n+1}.
+\end{equation*}
+</div>
+<div class="para">For <span class="process-math">\(f(x) = \arctan(x)\text{,}\)</span> the derivatives satisfy the closed form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html" id="ex-approx-pi-arctan-3-2-8">
+\begin{equation*}
+f^{(n)}(t) = (n-1)!\,\cos^n(\theta)\,\sin\!\left(n\left(\theta + \tfrac{\pi}{2}\right)\right),
+\qquad \theta = \arctan(t),
+\end{equation*}
+</div>
+<div class="para">which can be verified by induction on <span class="process-math">\(n\text{.}\)</span> As in <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a>, the bound <span class="process-math">\(M\)</span> is found without locating the intermediate point: since <span class="process-math">\(|\cos^{n}(\theta)| \le 1\)</span> and <span class="process-math">\(|\sin\!\left(n\left(\theta + \tfrac{\pi}{2}\right)\right)| \le 1\text{,}\)</span> it follows that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html" id="eq-arctan-deriv-bound">
+\begin{equation}
+\left|f^{(n+1)}(t)\right| \le n! \quad \text{for all } t \in \mathbb{R},\tag{2.3.13}
+\end{equation}
+</div>
+<div class="para">so we may take <span class="process-math">\(M = n!\text{.}\)</span> With <span class="process-math">\(x = 1\text{,}\)</span> Taylor’s Remainder Theorem gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html" id="ex-approx-pi-arctan-3-2-17">
+\begin{equation*}
+|R_n(1)| = \left|\arctan(1) - T_n(1)\right| \le \frac{n!}{(n+1)!}\,(1)^{n+1} = \frac{1}{n+1}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-approx-pi-arctan-3-3">
+<div class="para">Multiplying by <span class="process-math">\(4\text{,}\)</span> the error in the approximation of <span class="process-math">\(\pi\)</span> satisfies</div>
+<div class="displaymath process-math" id="eq-pi-error-bound">
+\begin{equation}
+\left|\pi - 4\,T_n(1)\right| \le \frac{4}{n+1}.\tag{2.3.14}
+\end{equation}
+</div>
+<div class="para">Since <span class="process-math">\(\dfrac{4}{n+1} \to 0\)</span> as <span class="process-math">\(n \to \infty\text{,}\)</span> the error decreases to zero as the order <span class="process-math">\(n\)</span> of the Taylor polynomial increases. However, the convergence is very slow. For instance, with <span class="process-math">\(n = 9\)</span> we get <span class="process-math">\(4\,T_9(1) \approx 3.339683\)</span> with guaranteed error at most <span class="process-math">\(\tfrac{4}{10} = 0.4\text{,}\)</span> and to guarantee an error of at most <span class="process-math">\(0.01\)</span> one needs to take <span class="process-math">\(n \ge 399\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-approx-pi-taylor-video"><div class="video-box" style="width: 85%;padding-top: 47.8125%; margin-left: 7.5%; margin-right: 7.5%;"><video id="video-approx-pi-taylor-error" class="video" controls=""><source src="external/videos/approx-pi-taylor-error.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The approximation <span class="process-math">\(4\,T_n(1)\)</span> converging to <span class="process-math">\(\pi\text{,}\)</span> and the error <span class="process-math">\(\left|\pi - 4\,T_n(1)\right|\)</span> decreasing below the upper bound <span class="process-math">\(\frac{4}{n+1}\)</span> from Taylor’s Remainder Theorem as <span class="process-math">\(n\)</span> increases.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.20"><a tabindex="-1" href="#fig-approx-pi-taylor-video" title="Copy heading and permalink for Figure 2.3.20" aria-label="Copy heading and permalink for Figure 2.3.20">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.19.1"><a tabindex="-1" href="#ex-approx-pi-arctan-3" title="Copy heading and permalink for Solution 2.3.19.1" aria-label="Copy heading and permalink for Solution 2.3.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)"><a tabindex="-1" href="#ex-approx-pi-arctan" title="Copy heading and permalink for Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)" aria-label="Copy heading and permalink for Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsubsection 2.3.4.3: Approximating the value of \pi using Taylor series"><a tabindex="-1" href="#subsec-approximating-pi-taylor" title="Copy heading and permalink for Subsubsection 2.3.4.3: Approximating the value of \pi using Taylor series" aria-label="Copy heading and permalink for Subsubsection 2.3.4.3: Approximating the value of \pi using Taylor series">🔗</a></div>
+</section>
+<section class="conclusion" id="section-taylor-7-6">
+<div class="para" id="section-taylor-7-6-1">As we saw in the previous example, Taylor series approached <span class="process-math">\(\pi\)</span> very slowly. In the project below, we will see how to use the so-called Euler’s formula to approximate <span class="process-math">\(\pi\)</span> much faster. As you may know, there are many other methods to approximate <span class="process-math">\(\pi\text{,}\)</span> which we will not cover here.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-taylor-7-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="project project-like" id="proj-euler-pi"><h2 class="heading">
+<span class="type">Project</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing <span class="process-math">\(\pi\)</span> with Euler’s identity.</span>
+</h2>
+<div class="introduction" id="proj-euler-pi-2">
+<div class="para logical" id="proj-euler-pi-2-1">
+<div class="para">In <a href="section-taylor-7.html#ex-approx-pi-arctan" class="xref" data-knowl="./knowl/xref/ex-approx-pi-arctan.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)">Example 2.3.19</a> we approximated <span class="process-math">\(\pi\)</span> by evaluating the Taylor series <a href="section-taylor-7.html#ex-approx-pi-arctan-3-1-3" class="xref" data-knowl="./knowl/xref/eq-arctan-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.12">(2.3.12)</a> at <span class="process-math">\(x = 1\text{,}\)</span> and Taylor’s Remainder Theorem gave the error bound <a href="section-taylor-7.html#eq-pi-error-bound" class="xref" data-knowl="./knowl/xref/eq-pi-error-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.14">(2.3.14)</a>, which decreases very slowly. In this guided problem we compute <span class="process-math">\(\pi\)</span> far more efficiently using <dfn class="terminology">Euler’s identity</dfn>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-approx-pi-arctan.html ./knowl/xref/eq-arctan-series.html ./knowl/xref/eq-pi-error-bound.html" id="eq-euler-identity">
+\begin{equation}
+\arctan\left(\tfrac{1}{2}\right) + \arctan\left(\tfrac{1}{3}\right) = \frac{\pi}{4},\tag{2.3.15}
+\end{equation}
+</div>
+<div class="para">which lets us evaluate the Taylor series at the small arguments <span class="process-math">\(x = \tfrac12\)</span> and <span class="process-math">\(x = \tfrac13\text{,}\)</span> where it converges much faster.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="proj-euler-pi-3"><h3 class="heading">
+<span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Proving Euler’s identity.</span>
+</h3>
+<div class="para logical" id="proj-euler-pi-3-2-1">
+<div class="para">Let <span class="process-math">\(\alpha = \arctan\left(\tfrac12\right)\)</span> and <span class="process-math">\(\beta = \arctan\left(\tfrac13\right)\text{.}\)</span> Use the addition formula</div>
+<div class="displaymath process-math" id="proj-euler-pi-3-2-1-3">
+\begin{equation*}
+\tan(\alpha + \beta) = \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha\,\tan\beta}
+\end{equation*}
+</div>
+<div class="para">to prove that <span class="process-math">\(\alpha + \beta = \dfrac{\pi}{4}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="proj-euler-pi-3-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="proj-euler-pi-3-3-1">Compute <span class="process-math">\(\tan(\alpha+\beta)\)</span> first. Then explain why <span class="process-math">\(\alpha + \beta\)</span> must lie in the interval <span class="process-math">\(\left(0, \tfrac{\pi}{2}\right)\text{,}\)</span> and why this pins down its value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 2.3.4.1.a.1"><a tabindex="-1" href="#proj-euler-pi-3-3" title="Copy heading and permalink for Hint 2.3.4.1.a.1" aria-label="Copy heading and permalink for Hint 2.3.4.1.a.1">🔗</a></div>
+</div></details>
+<details id="proj-euler-pi-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="proj-euler-pi-3-4-1">
+<div class="para">Since <span class="process-math">\(\tan\alpha = \tfrac12\)</span> and <span class="process-math">\(\tan\beta = \tfrac13\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="proj-euler-pi-3-4-1-3">
+\begin{equation*}
+\tan(\alpha+\beta)
+= \frac{\tfrac12 + \tfrac13}{1 - \tfrac12\cdot\tfrac13}
+= \frac{\tfrac56}{\tfrac56} = 1.
+\end{equation*}
+</div>
+<div class="para">Moreover <span class="process-math">\(0 \lt \tfrac13 \lt \tfrac12 \lt 1\)</span> implies <span class="process-math">\(0 \lt \beta \le \alpha \lt \tfrac{\pi}{4}\text{,}\)</span> so <span class="process-math">\(\alpha + \beta \in \left(0, \tfrac{\pi}{2}\right)\text{.}\)</span> The only angle in this interval whose tangent equals <span class="process-math">\(1\)</span> is <span class="process-math">\(\tfrac{\pi}{4}\text{,}\)</span> so <span class="process-math">\(\alpha + \beta = \tfrac{\pi}{4}\text{.}\)</span> (Without the interval check we could only conclude <span class="process-math">\(\alpha + \beta = \tfrac{\pi}{4} + k\pi\)</span> for some integer <span class="process-math">\(k\text{.}\)</span>)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.4.1.a.1"><a tabindex="-1" href="#proj-euler-pi-3-4" title="Copy heading and permalink for Solution 2.3.4.1.a.1" aria-label="Copy heading and permalink for Solution 2.3.4.1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.4.1.a: Proving Euler’s identity"><a tabindex="-1" href="#proj-euler-pi-3" title="Copy heading and permalink for Task 2.3.4.1.a: Proving Euler’s identity" aria-label="Copy heading and permalink for Task 2.3.4.1.a: Proving Euler’s identity">🔗</a></div>
+</article>
+<article class="task exercise-like" id="proj-euler-pi-4"><h3 class="heading">
+<span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The approximation.</span>
+</h3>
+<div class="para logical" id="proj-euler-pi-4-2-1">
+<div class="para">Let <span class="process-math">\(T_n(x)\)</span> be the Taylor polynomial of order <span class="process-math">\(n\)</span> for <span class="process-math">\(\arctan(x)\)</span> centered at <span class="process-math">\(0\text{.}\)</span> Use Euler’s identity <a href="section-taylor-7.html#eq-euler-identity" class="xref" data-knowl="./knowl/xref/eq-euler-identity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.15">(2.3.15)</a> to explain why</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-euler-identity.html" id="proj-euler-pi-4-2-1-6">
+\begin{equation*}
+\pi \approx 4\left[\,T_n\!\left(\tfrac12\right) + T_n\!\left(\tfrac13\right)\right].
+\end{equation*}
+</div>
+<div class="para">Write out this approximation explicitly for <span class="process-math">\(n = 3\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="proj-euler-pi-4-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="proj-euler-pi-4-3-1">Multiply <a href="section-taylor-7.html#eq-euler-identity" class="xref" data-knowl="./knowl/xref/eq-euler-identity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.15">(2.3.15)</a> by <span class="process-math">\(4\)</span> and replace each arctangent by its Taylor polynomial.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 2.3.4.1.b.1"><a tabindex="-1" href="#proj-euler-pi-4-3" title="Copy heading and permalink for Hint 2.3.4.1.b.1" aria-label="Copy heading and permalink for Hint 2.3.4.1.b.1">🔗</a></div>
+</div></details>
+<details id="proj-euler-pi-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="proj-euler-pi-4-4-1">
+<div class="para">By <a href="section-taylor-7.html#eq-euler-identity" class="xref" data-knowl="./knowl/xref/eq-euler-identity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.15">(2.3.15)</a>, <span class="process-math">\(\pi = 4\arctan\left(\tfrac12\right) + 4\arctan\left(\tfrac13\right)\text{.}\)</span> Replacing <span class="process-math">\(\arctan(x)\)</span> by <span class="process-math">\(T_n(x)\)</span> at <span class="process-math">\(x=\tfrac12\)</span> and <span class="process-math">\(x=\tfrac13\)</span> gives the stated approximation. For <span class="process-math">\(n = 3\text{,}\)</span> <span class="process-math">\(T_3(x) = x - \tfrac{x^3}{3}\text{,}\)</span> so</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-euler-identity.html" id="proj-euler-pi-4-4-1-9">
+\begin{align*}
+\pi \amp\approx 4\left[\left(\tfrac12 - \tfrac{1}{24}\right)
++ \left(\tfrac13 - \tfrac{1}{81}\right)\right]\\
+\amp= 4\left[\tfrac{11}{24} + \tfrac{26}{81}\right]
+\approx 3.117284.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.4.1.b.1"><a tabindex="-1" href="#proj-euler-pi-4-4" title="Copy heading and permalink for Solution 2.3.4.1.b.1" aria-label="Copy heading and permalink for Solution 2.3.4.1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.4.1.b: The approximation"><a tabindex="-1" href="#proj-euler-pi-4" title="Copy heading and permalink for Task 2.3.4.1.b: The approximation" aria-label="Copy heading and permalink for Task 2.3.4.1.b: The approximation">🔗</a></div>
+</article>
+<article class="task exercise-like" id="proj-euler-pi-5"><h3 class="heading">
+<span class="codenumber">(c)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bounding the error with the Remainder Theorem.</span>
+</h3>
+<div class="para logical" id="proj-euler-pi-5-2-1">
+<div class="para">In <a href="section-taylor-7.html#ex-approx-pi-arctan" class="xref" data-knowl="./knowl/xref/ex-approx-pi-arctan.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)">Example 2.3.19</a> we showed that the derivatives of <span class="process-math">\(f(x) = \arctan(x)\)</span> satisfy <a href="section-taylor-7.html#eq-arctan-deriv-bound" class="xref" data-knowl="./knowl/xref/eq-arctan-deriv-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.13">(2.3.13)</a>. Use <a href="subsection-1.html#eq-remainder-bound" class="xref" data-knowl="./knowl/xref/eq-remainder-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.4">(2.3.4)</a> to show that for <span class="process-math">\(|x| \le 1\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-approx-pi-arctan.html ./knowl/xref/eq-arctan-deriv-bound.html ./knowl/xref/eq-remainder-bound.html" id="proj-euler-pi-5-2-1-6">
+\begin{equation*}
+\left|\arctan(x) - T_n(x)\right| \le \frac{|x|^{n+1}}{n+1},
+\end{equation*}
+</div>
+<div class="para">and conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-approx-pi-arctan.html ./knowl/xref/eq-arctan-deriv-bound.html ./knowl/xref/eq-remainder-bound.html" id="proj-euler-pi-5-2-1-7">
+\begin{equation*}
+\left|\pi - 4\left[\,T_n\!\left(\tfrac12\right) + T_n\!\left(\tfrac13\right)\right]\right|
+\le \frac{4}{n+1}\left[\left(\tfrac12\right)^{n+1} + \left(\tfrac13\right)^{n+1}\right].
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="proj-euler-pi-5-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="proj-euler-pi-5-3-1">Apply <a href="subsection-1.html#eq-remainder-bound" class="xref" data-knowl="./knowl/xref/eq-remainder-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.4">(2.3.4)</a> with <span class="process-math">\(M = n!\)</span> exactly as in <a href="section-taylor-7.html#ex-approx-pi-arctan" class="xref" data-knowl="./knowl/xref/ex-approx-pi-arctan.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)">Example 2.3.19</a>, but keep the factor <span class="process-math">\(|x|^{n+1}\text{.}\)</span> Then use the triangle inequality on the two remainders.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 2.3.4.1.c.1"><a tabindex="-1" href="#proj-euler-pi-5-3" title="Copy heading and permalink for Hint 2.3.4.1.c.1" aria-label="Copy heading and permalink for Hint 2.3.4.1.c.1">🔗</a></div>
+</div></details>
+<details id="proj-euler-pi-5-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="proj-euler-pi-5-4-1">
+<div class="para">
+<a href="subsection-1.html#eq-remainder-bound" class="xref" data-knowl="./knowl/xref/eq-remainder-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.4">(2.3.4)</a> with <span class="process-math">\(M = n!\)</span> gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/eq-euler-identity.html ./knowl/xref/eq-pi-error-bound.html" id="proj-euler-pi-5-4-1-3">
+\begin{equation*}
+|R_n(x)| \le \frac{n!}{(n+1)!}\,|x|^{n+1} = \frac{|x|^{n+1}}{n+1}.
+\end{equation*}
+</div>
+<div class="para">Writing <span class="process-math">\(\pi = 4\arctan\left(\tfrac12\right) + 4\arctan\left(\tfrac13\right)\)</span> by <a href="section-taylor-7.html#eq-euler-identity" class="xref" data-knowl="./knowl/xref/eq-euler-identity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.15">(2.3.15)</a> and using the triangle inequality,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/eq-euler-identity.html ./knowl/xref/eq-pi-error-bound.html" id="proj-euler-pi-5-4-1-6">
+\begin{align*}
+\left|\pi - 4\left[T_n\!\left(\tfrac12\right) + T_n\!\left(\tfrac13\right)\right]\right|
+\amp\le 4\left|R_n\!\left(\tfrac12\right)\right|
++ 4\left|R_n\!\left(\tfrac13\right)\right|\\
+\amp\le \frac{4}{n+1}\left[\left(\tfrac12\right)^{n+1}
++ \left(\tfrac13\right)^{n+1}\right].
+\end{align*}
+</div>
+<div class="para">Unlike the bound <a href="section-taylor-7.html#eq-pi-error-bound" class="xref" data-knowl="./knowl/xref/eq-pi-error-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.14">(2.3.14)</a> at <span class="process-math">\(x = 1\text{,}\)</span> this bound decays <em class="emphasis">geometrically</em>: each increase of <span class="process-math">\(n\)</span> by one cuts it by better than half.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.4.1.c.1"><a tabindex="-1" href="#proj-euler-pi-5-4" title="Copy heading and permalink for Solution 2.3.4.1.c.1" aria-label="Copy heading and permalink for Solution 2.3.4.1.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.4.1.c: Bounding the error with the Remainder Theorem"><a tabindex="-1" href="#proj-euler-pi-5" title="Copy heading and permalink for Task 2.3.4.1.c: Bounding the error with the Remainder Theorem" aria-label="Copy heading and permalink for Task 2.3.4.1.c: Bounding the error with the Remainder Theorem">🔗</a></div>
+</article>
+<article class="task exercise-like" id="proj-euler-pi-6"><h3 class="heading">
+<span class="codenumber">(d)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How much better is it?</span>
+</h3>
+<div class="para" id="proj-euler-pi-6-2-1">Evaluate the error bound for <span class="process-math">\(n = 9\)</span> and compare it with the bound <span class="process-math">\(\tfrac{4}{10} = 0.4\)</span> obtained in <a href="section-taylor-7.html#ex-approx-pi-arctan" class="xref" data-knowl="./knowl/xref/ex-approx-pi-arctan.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)">Example 2.3.19</a> for the same order. Then find the smallest <span class="process-math">\(n\)</span> for which the bound guarantees an error of at most <span class="process-math">\(10^{-6}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="proj-euler-pi-6-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="proj-euler-pi-6-3-1">For the second part, the term <span class="process-math">\(\left(\tfrac12\right)^{n+1}\)</span> dominates; try increasing odd values of <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 2.3.4.1.d.1"><a tabindex="-1" href="#proj-euler-pi-6-3" title="Copy heading and permalink for Hint 2.3.4.1.d.1" aria-label="Copy heading and permalink for Hint 2.3.4.1.d.1">🔗</a></div>
+</div></details>
+<details id="proj-euler-pi-6-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="proj-euler-pi-6-4-1">
+<div class="para">For <span class="process-math">\(n = 9\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="proj-euler-pi-6-4-1-2">
+\begin{equation*}
+\frac{4}{10}\left[\left(\tfrac12\right)^{10} + \left(\tfrac13\right)^{10}\right]
+= \frac{4}{10}\left[\frac{1}{1024} + \frac{1}{59049}\right]
+\approx 3.97 \times 10^{-4},
+\end{equation*}
+</div>
+<div class="para">roughly a thousand times smaller than the bound <span class="process-math">\(0.4\)</span> at <span class="process-math">\(x = 1\text{;}\)</span> the approximation itself is <span class="process-math">\(4\left[T_9\!\left(\tfrac12\right) +
+T_9\!\left(\tfrac13\right)\right] \approx 3.141741\text{.}\)</span> For an error of at most <span class="process-math">\(10^{-6}\text{,}\)</span> testing odd values gives, at <span class="process-math">\(n = 15\text{,}\)</span> a bound of about <span class="process-math">\(3.8\times10^{-6}\text{,}\)</span> while at <span class="process-math">\(n = 17\)</span>
+</div>
+<div class="displaymath process-math" id="proj-euler-pi-6-4-1-10">
+\begin{equation*}
+\frac{4}{18}\left[\left(\tfrac12\right)^{18} + \left(\tfrac13\right)^{18}\right]
+\approx 8.5 \times 10^{-7} \lt 10^{-6},
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(n = 17\)</span> suffices. By contrast, the bound <span class="process-math">\(\frac{4}{n+1}\)</span> from <span class="process-math">\(x = 1\)</span> would require <span class="process-math">\(n \ge 3{,}999{,}999\)</span> for the same guarantee.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.4.1.d.1"><a tabindex="-1" href="#proj-euler-pi-6-4" title="Copy heading and permalink for Solution 2.3.4.1.d.1" aria-label="Copy heading and permalink for Solution 2.3.4.1.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.3.4.1.d: How much better is it?"><a tabindex="-1" href="#proj-euler-pi-6" title="Copy heading and permalink for Task 2.3.4.1.d: How much better is it?" aria-label="Copy heading and permalink for Task 2.3.4.1.d: How much better is it?">🔗</a></div>
+</article>
+<div class="conclusion" id="proj-euler-pi-7">
+<div class="para" id="proj-euler-pi-7-1">The video below shows the approximation <span class="process-math">\(4\left[T_n\!\left(\tfrac12\right) + T_n\!\left(\tfrac13\right)\right]\)</span> converging to <span class="process-math">\(\pi\text{,}\)</span> and compares its error, together with the Remainder-Theorem bound, against the much slower method at <span class="process-math">\(x = 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#proj-euler-pi-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-euler-pi-video"><div class="video-box" style="width: 85%;padding-top: 47.8125%; margin-left: 7.5%; margin-right: 7.5%;"><video id="video-euler-pi-error" class="video" controls=""><source src="external/videos/euler-pi-error.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The error of Euler’s-identity approximation (with its bound <span class="process-math">\(\frac{4}{n+1}\left[\left(\frac12\right)^{n+1} + \left(\frac13\right)^{n+1}\right]\)</span>) decreasing geometrically as <span class="process-math">\(n\)</span> increases, compared with the series at <span class="process-math">\(x=1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.21"><a tabindex="-1" href="#fig-euler-pi-video" title="Copy heading and permalink for Figure 2.3.21" aria-label="Copy heading and permalink for Figure 2.3.21">🔗</a></div></figcaption>
+</figure>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Project 2.3.4.1: Computing \pi with Euler’s identity"><a tabindex="-1" href="#proj-euler-pi" title="Copy heading and permalink for Project 2.3.4.1: Computing \pi with Euler’s identity" aria-label="Copy heading and permalink for Project 2.3.4.1: Computing \pi with Euler’s identity">🔗</a></div>
+</article></section><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.3.4: Applications of Taylor Series and Remainder Theorem"><a tabindex="-1" href="#section-taylor-7" title="Copy heading and permalink for Subsection 2.3.4: Applications of Taylor Series and Remainder Theorem" aria-label="Copy heading and permalink for Subsection 2.3.4: Applications of Taylor Series and Remainder Theorem">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="subsection-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="subsection-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script><script src="external/custom.js"></script>
+</body>
+</html>
