@@ -415,6 +415,33 @@ the sign of the first coordinate.
 </hint>
 </exercise>
 
+<exercise xml:id="skel-checkpoint-hyp-left-branch-downward">
+<title>True or False</title>
+<statement>
+<p>
+The parametrization <m>x = -\cosh t</m>, <m>y = -\sinh t</m>,
+<m>t \in \R</m>, also traces the left branch of <m>x^2 - y^2 = 1</m>.
+</p>
+
+<p>
+<em>True or false? Your answer and reasoning.</em>
+</p>
+
+<sidebyside width="97%">
+<image>
+<latex-image>
+\begin{tikzpicture}
+\draw[rounded corners=8pt, draw=gray!55, thick] (0,0) rectangle (15,4);
+\node[anchor=north west, text=gray!60, font=\footnotesize\itshape]
+  at (0.25,3.75) {workspace};
+\end{tikzpicture}
+</latex-image>
+<shortdescription>Blank workspace for a handwritten answer.</shortdescription>
+</image>
+</sidebyside>
+</statement>
+</exercise>
+
 <p>
 As you might have guessed, the rest of the hyperbolic functions are
 defined as follows.

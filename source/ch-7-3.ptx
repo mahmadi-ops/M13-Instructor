@@ -391,11 +391,31 @@ parametrizes the left branch exactly once, and geometrically it is the
 mirror image across the <m>y</m>-axis of the parametrization of the right
 branch.
 </p>
-<p>
-Note that <m>(-\cosh t, -\sinh t)</m> is also correct: it sweeps out the
-same branch, only downward instead of upward as <m>t</m> increases.
-</p>
 </solution>
+</exercise>
+
+<exercise xml:id="checkpoint-hyp-left-branch-downward">
+<title>True or False</title>
+<statement correct="yes">
+<p>
+The parametrization <m>x = -\cosh t</m>, <m>y = -\sinh t</m>,
+<m>t \in \R</m>, also traces the left branch of <m>x^2 - y^2 = 1</m>.
+</p>
+<p>
+Justify your answer fully: give a proof if the statement is true, or a
+counterexample if it is false.
+</p>
+</statement>
+<feedback>
+<p>
+True. Every such point lies on the hyperbola, since
+<md>(-\cosh t)^2 - (-\sinh t)^2 = \cosh^2 t - \sinh^2 t = 1,</md>
+and on its left branch, since <m>-\cosh t \leq -1</m>. As <m>t</m> runs
+over <m>\R</m>, so does <m>y = -\sinh t</m>, so the whole branch is
+covered. It sweeps out the same branch as <m>(-\cosh t, \sinh t)</m>,
+only downward instead of upward as <m>t</m> increases.
+</p>
+</feedback>
 </exercise>
 
 <p>
