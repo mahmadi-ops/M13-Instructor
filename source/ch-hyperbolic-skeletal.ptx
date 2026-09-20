@@ -583,7 +583,12 @@ situations. We look at three of them.
 </introduction>
 
 <subsection xml:id="subsec-skel-hyp-catenary">
-<title>Hanging Cables and the Catenary</title>
+<title>*Hanging Cables and the Catenary</title>
+
+<p>
+<em>Starred section.</em> This one is for the interested reader. It will not
+be examined.
+</p>
 
 <p>
 If a heavy flexible cable (such as a telephone line, a power line, or a
