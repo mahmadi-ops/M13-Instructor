@@ -438,16 +438,48 @@ defined as follows.
 <p>
 Below are some identities that you may find useful in some problems,
 however, you are not expected to memorize them. We will prove some of
-them as an exercise later.
+them as an exercise later. Each hyperbolic identity is listed next to
+the trigonometric identity it resembles.
+</p>
 
-<md number="yes">
-<mrow xml:id="eq-hyp-id-pythagorean">\amp \cosh^2 x - \sinh^2 x = 1</mrow>
-<mrow xml:id="eq-hyp-id-sech">\amp 1 - \tanh^2 x = \operatorname{sech}^2 x</mrow>
-<mrow xml:id="eq-hyp-id-sinh-double">\amp \sinh 2x = 2 \sinh x \cosh x</mrow>
-<mrow xml:id="eq-hyp-id-cosh-double">\amp \cosh 2x = \cosh^2 x + \sinh^2 x</mrow>
-<mrow xml:id="eq-hyp-id-cosh-square">\amp \cosh^2 x = \frac{\cosh 2x + 1}{2}</mrow>
-<mrow xml:id="eq-hyp-id-sinh-square">\amp \sinh^2 x = \frac{\cosh 2x - 1}{2}</mrow>
-</md>
+<table xml:id="table-hyp-trig-identities">
+<title>Hyperbolic identities and their trigonometric counterparts.</title>
+<tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+<row header="yes" bottom="major">
+<cell>Hyperbolic</cell>
+<cell>Trigonometric</cell>
+</row>
+<row>
+<cell><m>\cosh^2 x - \sinh^2 x = 1</m></cell>
+<cell><m>\cos^2 x + \sin^2 x = 1</m></cell>
+</row>
+<row>
+<cell><m>1 - \tanh^2 x = \operatorname{sech}^2 x</m></cell>
+<cell><m>1 + \tan^2 x = \sec^2 x</m></cell>
+</row>
+<row>
+<cell><m>\sinh 2x = 2 \sinh x \cosh x</m></cell>
+<cell><m>\sin 2x = 2 \sin x \cos x</m></cell>
+</row>
+<row>
+<cell><m>\cosh 2x = \cosh^2 x + \sinh^2 x</m></cell>
+<cell><m>\cos 2x = \cos^2 x - \sin^2 x</m></cell>
+</row>
+<row>
+<cell><m>\cosh^2 x = \dfrac{\cosh 2x + 1}{2}</m></cell>
+<cell><m>\cos^2 x = \dfrac{1 + \cos 2x}{2}</m></cell>
+</row>
+<row>
+<cell><m>\sinh^2 x = \dfrac{\cosh 2x - 1}{2}</m></cell>
+<cell><m>\sin^2 x = \dfrac{1 - \cos 2x}{2}</m></cell>
+</row>
+</tabular>
+</table>
+
+<p>
+Notice the pattern: each hyperbolic identity is its trigonometric
+counterpart with the sign changed wherever two sines (or two tangents)
+are multiplied together.
 </p>
 
 <example xml:id="example-hyp-arccosh">
