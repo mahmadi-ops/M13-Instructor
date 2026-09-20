@@ -408,7 +408,7 @@ counterexample if it is false.
 </statement>
 <feedback>
 <p>
-True. Every such point lies on the hyperbola, since
+Every such point lies on the hyperbola, since
 <md>(-\cosh t)^2 - (-\sinh t)^2 = \cosh^2 t - \sinh^2 t = 1,</md>
 and on its left branch, since <m>-\cosh t \leq -1</m>. As <m>t</m> runs
 over <m>\R</m>, so does <m>y = -\sinh t</m>, so the whole branch is
