@@ -1,0 +1,51 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperbola-extra-hyperbola" speech2="The twist example: a vertical hyperbola that opens up and down, so its vertices and foci lie on the y axis">
+      <grouped>hyperbola-extra-hyperbola</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperbola-extra-hyperbola</active>
+        <active>hyperbola-extra-asymptotes</active>
+        <active>hyperbola-extra-vertices</active>
+        <active>hyperbola-extra-foci</active>
+      </children>
+      <components>
+        <active>hyperbola-extra-hyperbola</active>
+        <active>hyperbola-extra-asymptotes</active>
+        <active>hyperbola-extra-vertices</active>
+        <active>hyperbola-extra-foci</active>
+      </components>
+    </annotation>
+    <annotation id="hyperbola-extra-hyperbola" speech2="The hyperbola y squared over nine minus x squared over sixteen equals one, two blue branches opening up and down" sonify="yes">
+      <active>hyperbola-extra-hyperbola</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperbola-extra-hyperbola</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>hyperbola-extra-hyperbola</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="hyperbola-extra-asymptotes" speech2="The dashed asymptotes y equals plus and minus three quarters x, whose slope here is a over b">
+      <active>hyperbola-extra-asymptotes</active>
+      <position>2</position>
+      <parents>
+        <grouped>hyperbola-extra-hyperbola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-extra-vertices" speech2="The vertices at zero comma plus and minus three on the y axis, where a equals three">
+      <active>hyperbola-extra-vertices</active>
+      <position>3</position>
+      <parents>
+        <grouped>hyperbola-extra-hyperbola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-extra-foci" speech2="The foci at zero comma plus and minus five on the y axis, since c squared equals nine plus sixteen equals twenty five">
+      <active>hyperbola-extra-foci</active>
+      <position>4</position>
+      <parents>
+        <grouped>hyperbola-extra-hyperbola</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

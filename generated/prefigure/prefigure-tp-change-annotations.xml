@@ -1,0 +1,84 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-tp-change-figure" speech2="On the left, the x y plane shows a point P 0 with coordinates x 0 y 0. A black arrow u d s leaves P 0 in the direction of the unit vector u, ending at the point P with coordinates x 0 plus u 1 d s, y 0 plus u 2 d s. Its horizontal component u 1 d s i is drawn in orange and its vertical component u 2 d s j in green. On the right, a horizontal z axis carries the two output values: f of x 0 y 0 in blue and f of the moved point in red. Two dashed gray arrows labeled f map P 0 and P to their output values, and the difference of the outputs is the change delta f.">
+      <grouped>prefigure-tp-change-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-tp-change-cs-P0</active>
+        <active>prefigure-tp-change-cs-uds</active>
+        <active>prefigure-tp-change-cs-u1</active>
+        <active>prefigure-tp-change-cs-u2</active>
+        <active>prefigure-tp-change-cs-P</active>
+        <active>prefigure-tp-change-cs-fbot</active>
+        <active>prefigure-tp-change-cs-ftop</active>
+        <active>prefigure-tp-change-cs-deltaf-label</active>
+      </children>
+      <components>
+        <active>prefigure-tp-change-cs-P0</active>
+        <active>prefigure-tp-change-cs-uds</active>
+        <active>prefigure-tp-change-cs-u1</active>
+        <active>prefigure-tp-change-cs-u2</active>
+        <active>prefigure-tp-change-cs-P</active>
+        <active>prefigure-tp-change-cs-fbot</active>
+        <active>prefigure-tp-change-cs-ftop</active>
+        <active>prefigure-tp-change-cs-deltaf-label</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-P0" speech2="The starting point P 0 with coordinates x 0, y 0.">
+      <active>prefigure-tp-change-cs-P0</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-uds" speech2="The displacement u d s: moving away from P 0 a small distance d s in the direction of the unit vector u.">
+      <active>prefigure-tp-change-cs-uds</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-u1" speech2="The horizontal component of the displacement, u 1 d s times i, drawn in orange.">
+      <active>prefigure-tp-change-cs-u1</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-u2" speech2="The vertical component of the displacement, u 2 d s times j, drawn in green.">
+      <active>prefigure-tp-change-cs-u2</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-P" speech2="The point P reached after the displacement, with coordinates x 0 plus u 1 d s, y 0 plus u 2 d s.">
+      <active>prefigure-tp-change-cs-P</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-fbot" speech2="The function f maps the starting point P 0 to the output value f of x 0 y 0, marked in blue on the z axis.">
+      <active>prefigure-tp-change-cs-fbot</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-ftop" speech2="The function f maps the moved point P to the output value f of x 0 plus u 1 d s, y 0 plus u 2 d s, marked in red on the z axis.">
+      <active>prefigure-tp-change-cs-ftop</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-change-cs-deltaf-label" speech2="The change in f, delta f, is the difference between the two output values on the z axis.">
+      <active>prefigure-tp-change-cs-deltaf-label</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-tp-change-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

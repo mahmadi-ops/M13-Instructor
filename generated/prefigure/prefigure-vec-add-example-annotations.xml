@@ -1,0 +1,88 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-vec-add-example-figure" speech2="A coordinate grid. The blue vector u goes from the origin to the point 1 comma 1. The dark red vector v goes from the origin to negative 2 comma 1. Dashed lines parallel to each vector complete a parallelogram, and the black vector from the origin to negative 1 comma 2 is its diagonal, the sum u plus v.">
+      <grouped>prefigure-vec-add-example-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-add-example-grid-axes</active>
+        <active>prefigure-vec-add-example-ae-u</active>
+        <active>prefigure-vec-add-example-ae-v</active>
+        <active>prefigure-vec-add-example-ae-sum</active>
+        <active>prefigure-vec-add-example-ae-d1</active>
+        <active>prefigure-vec-add-example-ae-d2</active>
+      </children>
+      <components>
+        <active>prefigure-vec-add-example-grid-axes</active>
+        <active>prefigure-vec-add-example-ae-u</active>
+        <active>prefigure-vec-add-example-ae-v</active>
+        <active>prefigure-vec-add-example-ae-sum</active>
+        <active>prefigure-vec-add-example-ae-d1</active>
+        <active>prefigure-vec-add-example-ae-d2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-vec-add-example-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-add-example-grid</active>
+        <active>prefigure-vec-add-example-axes</active>
+      </children>
+      <components>
+        <active>prefigure-vec-add-example-grid</active>
+        <active>prefigure-vec-add-example-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-vec-add-example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-grid" speech2="The coordinate grid">
+      <active>prefigure-vec-add-example-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-axes" speech2="The coordinate axes">
+      <active>prefigure-vec-add-example-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-ae-u" speech2="The vector u equals 1 comma 1, drawn in blue from the origin.">
+      <active>prefigure-vec-add-example-ae-u</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-ae-v" speech2="The vector v equals negative 2 comma 1, drawn in dark red from the origin.">
+      <active>prefigure-vec-add-example-ae-v</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-ae-sum" speech2="The sum u plus v equals negative 1 comma 2, the diagonal of the parallelogram, drawn in black.">
+      <active>prefigure-vec-add-example-ae-sum</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-ae-d1" speech2="A dashed copy of v, drawn from the head of u, showing the head to tail construction.">
+      <active>prefigure-vec-add-example-ae-d1</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-example-ae-d2" speech2="A dashed copy of u, drawn from the head of v.">
+      <active>prefigure-vec-add-example-ae-d2</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-vec-add-example-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

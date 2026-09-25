@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fastest increase, fastest decrease and no change -- animated</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math.
+     Kept in step with conic-slicer-manim.html, the book's other animated figure. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;   /* manim's off-white text */
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --yellow:    #ffe14d;
+    --red:       #fc6255;
+    --gold:      #f0ac5f;
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  /* The figure is framed by the page at a fixed aspect ratio, so it lays out
+     as a column that exactly fills the iframe: the panel takes what it needs
+     and the stage takes the rest. Computing the stage height from
+     innerHeight minus the panel used to leave a pixel or two over, which
+     showed up as a scrollbar. */
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  #app { width: 100%; height: 100%; box-sizing: border-box;
+         display: flex; flex-direction: column; }
+
+  #stage { position: relative; width: 100%; background: var(--bg);
+           flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+
+  .overlay { position: absolute; pointer-events: none; }
+
+  #eqcard {
+    top: 12px; left: 14px;
+    padding: 9px 13px 10px 13px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    line-height: 1.45;
+  }
+  .math { font-family: var(--serif); font-size: 18px; }
+  .math i, .var { font-style: italic; }
+  .math b { font-weight: 700; font-style: normal; }
+  .math sub { font-size: 70%; }
+  #caseName {
+    font-size: 17px; font-weight: 600; letter-spacing: .2px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+    transition: color .3s ease;
+  }
+  #caseCond { font-size: 13px; color: var(--dim); }
+
+  #meter {
+    left: 14px; bottom: 12px;
+    padding: 8px 12px 9px 12px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-radius: 6px;
+    font-size: 13px; color: var(--dim);
+    font-variant-numeric: tabular-nums;
+  }
+  #meter b { color: var(--ink); font-weight: 600; }
+  #meter .m { font-family: var(--serif); }
+  #meter .m i { font-style: italic; }
+  #meter .m b { font-weight: 700; font-style: normal; }
+  #bar {
+    position: relative; margin-top: 6px;
+    width: 190px; height: 5px; border-radius: 3px;
+    background: linear-gradient(to right, var(--red) 0%, var(--yellow) 50%, var(--green) 100%);
+    opacity: .75;
+  }
+  #barKnob {
+    position: absolute; top: -3px; width: 3px; height: 11px;
+    background: var(--ink); border-radius: 2px;
+    transition: left .12s linear;
+  }
+
+  #caption {
+    left: 50%; transform: translateX(-50%);
+    bottom: 68px; max-width: 66%;
+    text-align: center; font-size: 15px; line-height: 1.4;
+    background: rgba(6,7,10,0.78);
+    padding: 7px 14px; border-radius: 6px;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  #caption.show { opacity: 1; }
+
+  #panel {
+    flex: 0 0 auto;
+    border-top: 1px solid var(--edge);
+    background: var(--panel);
+    padding: 9px 12px 11px 12px;
+    box-sizing: border-box;
+  }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 13px; color: var(--dim); }
+
+  button {
+    font: inherit; font-size: 13.5px;
+    padding: 5px 12px; border-radius: 999px;
+    color: var(--ink); background: #1a1d26;
+    border: 1px solid var(--edge);
+    cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+  }
+  button:hover { background: #232734; }
+  button:disabled { opacity: .45; cursor: default; }
+  button.active { color: #06070a; font-weight: 600; }
+  button .math { font-size: 15px; }
+  #btnMax.active { background: var(--green);  border-color: var(--green); }
+  #btnMin.active { background: var(--red);    border-color: var(--red); }
+  #btnZero.active { background: var(--yellow); border-color: var(--yellow); }
+  #btnTour.running { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+  #btnSpin.active  { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+
+  .sliderRow { display: flex; align-items: center; gap: 10px; }
+  .sliderRow .name {
+    font-size: 14px; min-width: 104px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+  }
+  input[type=range] {
+    flex: 1; min-width: 120px; height: 22px;
+    -webkit-appearance: none; appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-moz-range-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 14px; height: 14px; margin-top: -5.5px;
+    border-radius: 50%; background: var(--blue); border: none; cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 14px; height: 14px; border: none;
+    border-radius: 50%; background: var(--blue); cursor: pointer;
+  }
+
+  @media (max-width: 560px) {
+    #eqcard {
+      position: static;
+      padding: 7px 12px 8px 12px;
+      border: none; border-bottom: 1px solid var(--edge);
+      border-radius: 0; background: var(--panel);
+      line-height: 1.35;
+    }
+    .math { font-size: 16px; }
+    #caseName { font-size: 15px; }
+    #caseCond { display: none; }
+    #panel { padding: 7px 10px 8px 10px; }
+    .row + .row { margin-top: 7px; }
+    .lbl { display: none; }
+    button { font-size: 13px; padding: 4px 10px; }
+    .sliderRow .name { min-width: 92px; font-size: 13px; }
+    #meter { font-size: 12px; padding: 6px 10px 7px 10px; left: 10px; bottom: 10px; }
+    #bar { width: 130px; }
+    #caption { font-size: 13px; max-width: 88%; bottom: 58px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="eqcard" class="overlay">
+      <div class="math" style="color:#9cdceb"><i>z</i> = <i>x</i>&#178;/2 + <i>y</i>&#178;/2</div>
+      <div class="math"><i><b>u</b></i> = &#10216;cos&#8202;<i>&phi;</i>, sin&#8202;<i>&phi;</i>&#10217; at <i>P</i><sub>0</sub>(1,&#8202;1)</div>
+      <div id="caseName">D<sub>u</sub>f = 1.41</div>
+      <div id="caseCond">fastest increase</div>
+    </div>
+
+    <div id="meter" class="overlay">
+      <span class="m"><i>D</i><sub><b>u</b></sub>&#8202;<i>f</i></span> =
+      <b id="dVal">1.41</b>
+      &nbsp;of&nbsp; <span class="m">&#8214;&#8711;<i>f</i>&#8214;</span> = <b>1.41</b>
+      <div id="bar"><div id="barKnob" style="left:0px"></div></div>
+    </div>
+
+    <div id="caption" class="overlay"></div>
+  </div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Snap to:</span>
+      <button id="btnMax">A: fastest increase</button>
+      <button id="btnMin">B: fastest decrease</button>
+      <button id="btnZero">C: no change</button>
+      <span style="flex:1"></span>
+      <button id="btnTour">&#9654;&nbsp;Play</button>
+      <button id="btnSpin">Spin</button>
+    </div>
+    <div class="row sliderRow">
+      <span class="name">&phi; = <span id="phiVal">45</span>&deg;</span>
+      <input type="range" id="phiSlider" min="0" max="360" step="1" value="45"
+             aria-label="direction angle phi of the unit vector u">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Manim colour constants, so the palette below reads the way a Scene would.
+  var BLUE_D = 0x29abca, BLUE_E = 0x1c758a, BLUE_C = 0x58c4dd,
+      GREEN_C = 0x83c167, YELLOW = 0xffe14d, RED_C = 0xfc6255,
+      GOLD_C = 0xf0ac5f, PINK = 0xd58bc4, GREY = 0x8a8f9c, INK = 0xece6e2;
+
+  // ---------- the construction ----------
+  function f(x, y) { return (x * x + y * y) / 2; }
+  var X0 = 1, Y0 = 1, Z0 = f(X0, Y0);          // P0 and its height, 1
+  var GRAD = [1, 1];                            // grad f(1,1)
+  var MAG = Math.sqrt(GRAD[0] * GRAD[0] + GRAD[1] * GRAD[1]);   // sqrt(2)
+  var RMAX = 2.1;                               // the surface is drawn for r <= RMAX
+  var ZTOP = f(RMAX, 0);
+  var LEVEL_R = Math.sqrt(2);                   // the level curve f = 1
+
+  function dOf(phi) { return GRAD[0] * Math.cos(phi) + GRAD[1] * Math.sin(phi); }
+
+  // ---------- renderer / scene ----------
+  var stage = document.getElementById("stage");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  stage.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x06070a);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 200);
+  camera.up.set(0, 0, 1);
+
+  var CENTER = new THREE.Vector3(0, 0, 0.5 * ZTOP);
+  var CLOUD = [];
+  var radius = 16, theta = -0.92, phiCam = 1.08;
+  var aimShift = 0;
+  var band = 1, aspect = 1;
+
+  var _e = new THREE.Vector3(), _up = new THREE.Vector3(), _rt = new THREE.Vector3();
+  function computeRadius() {
+    _e.set(Math.sin(phiCam) * Math.cos(theta), Math.sin(phiCam) * Math.sin(theta),
+           Math.cos(phiCam));
+    _up.set(0, 0, 1).addScaledVector(_e, -_e.z);
+    if (_up.lengthSq() < 1e-9) _up.set(0, 1, 0); else _up.normalize();
+    _rt.crossVectors(_up, _e).normalize();
+    var tanHalf = Math.tan(camera.fov * Math.PI / 360);
+    var tanV = tanHalf * band, tanH = tanHalf * aspect;
+    var r = 1;
+    for (var i = 0; i < CLOUD.length; i++) {
+      var d = CLOUD[i], along = d.dot(_e);
+      r = Math.max(r, along + Math.abs(d.dot(_up)) / tanV,
+                      along + Math.abs(d.dot(_rt)) / tanH);
+    }
+    radius = 1.04 * r;
+    camera.far = 2.2 * radius;
+    camera.updateProjectionMatrix();
+  }
+
+  function placeCamera() {
+    computeRadius();
+    var eye = new THREE.Vector3(
+      radius * Math.sin(phiCam) * Math.cos(theta),
+      radius * Math.sin(phiCam) * Math.sin(theta),
+      radius * Math.cos(phiCam)
+    );
+    var fwd = eye.clone().negate().normalize();
+    var up = camera.up.clone().addScaledVector(fwd, -camera.up.dot(fwd));
+    if (up.lengthSq() < 1e-9) up.set(0, 1, 0);
+    up.normalize().multiplyScalar(aimShift);
+    camera.position.copy(eye).add(up).add(CENTER);
+    var look = up.clone().add(CENTER);
+    camera.lookAt(look.x, look.y, look.z);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.62));
+  var key = new THREE.DirectionalLight(0xffffff, 0.62); key.position.set(5, 3, 6);
+  var fill = new THREE.DirectionalLight(0x9fd8ff, 0.30); fill.position.set(-4, -5, 2);
+  scene.add(key); scene.add(fill);
+
+  // ---------- text sprites, in the book's serif ----------
+  var LABELS = [];
+  function paintLabel(rec) {
+    var s = 160, cv = document.createElement("canvas");
+    cv.width = cv.height = s;
+    var g = cv.getContext("2d");
+    g.font = 'italic 74px "PT Serif", "Times New Roman", Times, serif';
+    g.fillStyle = rec.color;
+    g.textAlign = "center";
+    g.textBaseline = "middle";
+    g.fillText(rec.text, s / 2, s / 2);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.minFilter = THREE.LinearFilter;
+    if (rec.sprite.material.map) rec.sprite.material.map.dispose();
+    rec.sprite.material.map = tex;
+    rec.sprite.material.needsUpdate = true;
+  }
+  function makeLabel(text, cssColor, size) {
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({
+      transparent: true, depthTest: false }));
+    var k = size || 0.55;
+    sp.scale.set(k, k, 1);
+    var rec = { sprite: sp, text: text, color: cssColor };
+    LABELS.push(rec);
+    paintLabel(rec);
+    return sp;
+  }
+
+  // ---------- axes ----------
+  (function buildAxes() {
+    var mat = new THREE.LineBasicMaterial({ color: GREY, transparent: true, opacity: 0.55 });
+    var tipMat = new THREE.MeshBasicMaterial({ color: GREY, transparent: true, opacity: 0.75 });
+    var A = RMAX + 0.5;
+    [{ v: new THREE.Vector3(1, 0, 0), rot: [0, 0, -Math.PI / 2], t: "x", lo: -A, hi: A },
+     { v: new THREE.Vector3(0, 1, 0), rot: [0, 0, 0],            t: "y", lo: -A, hi: A },
+     { v: new THREE.Vector3(0, 0, 1), rot: [Math.PI / 2, 0, 0],  t: "z", lo: -0.4, hi: ZTOP + 0.6 }
+    ].forEach(function (d) {
+      var a = d.v.clone().multiplyScalar(d.lo), b = d.v.clone().multiplyScalar(d.hi);
+      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([a, b]), mat));
+      var tip = new THREE.Mesh(new THREE.ConeGeometry(0.075, 0.24, 14), tipMat);
+      tip.position.copy(b);
+      tip.rotation.set(d.rot[0], d.rot[1], d.rot[2]);
+      scene.add(tip);
+      var lab = makeLabel(d.t, "#9aa0ad", 0.5);
+      lab.position.copy(d.v.clone().multiplyScalar(d.hi + 0.36));
+      scene.add(lab);
+    });
+  })();
+
+  // ---------- the surface, checkerboard-shaded the way manim shades one ----------
+  (function buildSurface() {
+    var nu = 16, nv = 56, pos = [], col = [];
+    var cA = new THREE.Color(BLUE_D), cB = new THREE.Color(BLUE_E);
+    function P(i, j) {
+      var r = (RMAX * i) / nu, t = (2 * Math.PI * j) / nv;
+      return new THREE.Vector3(r * Math.cos(t), r * Math.sin(t), f(r * Math.cos(t), r * Math.sin(t)));
+    }
+    for (var i = 0; i < nu; i++) {
+      for (var j = 0; j < nv; j++) {
+        var a = P(i, j), b = P(i + 1, j), c = P(i + 1, j + 1), d = P(i, j + 1);
+        [a, b, c, a, c, d].forEach(function (p) { pos.push(p.x, p.y, p.z); });
+        var cc = ((i + j) % 2 === 0) ? cA : cB;
+        for (var k = 0; k < 6; k++) col.push(cc.r, cc.g, cc.b);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setAttribute("color", new THREE.Float32BufferAttribute(col, 3));
+    geo.computeVertexNormals();
+    scene.add(new THREE.Mesh(geo, new THREE.MeshPhongMaterial({
+      vertexColors: true, transparent: true, opacity: 0.40,
+      side: THREE.DoubleSide, depthWrite: false, shininess: 42
+    })));
+  })();
+
+  // ---------- glowing tubes ----------
+  function tube(points, color, r, parent, closed) {
+    if (points.length < 2) return;
+    var curve = new THREE.CatmullRomCurve3(points, !!closed);
+    var n = Math.max(48, points.length * 2);
+    var host = parent || scene;
+    host.add(new THREE.Mesh(new THREE.TubeGeometry(curve, n, r, 10, !!closed),
+      new THREE.MeshBasicMaterial({ color: color })));
+    host.add(new THREE.Mesh(new THREE.TubeGeometry(curve, n, r * 2.7, 10, !!closed),
+      new THREE.MeshBasicMaterial({
+        color: color, transparent: true, opacity: 0.20,
+        blending: THREE.AdditiveBlending, depthWrite: false })));
+  }
+
+  // ---------- the level curve f = 3 through P0, and its shadow ----------
+  (function buildLevel() {
+    var pts = [], N = 96;
+    for (var i = 0; i <= N; i++) {
+      var t = (2 * Math.PI * i) / N;
+      pts.push(new THREE.Vector3(LEVEL_R * Math.cos(t), LEVEL_R * Math.sin(t), Z0));
+    }
+    tube(pts, PINK, 0.028, null, true);
+    var shadow = new THREE.LineLoop(
+      new THREE.BufferGeometry().setFromPoints(pts.map(function (p) {
+        return new THREE.Vector3(p.x, p.y, 0.005); })),
+      new THREE.LineDashedMaterial({ color: PINK, dashSize: 0.14, gapSize: 0.10,
+                                     transparent: true, opacity: 0.7 }));
+    shadow.computeLineDistances();
+    scene.add(shadow);
+  })();
+
+  // ---------- the gradient, on the ground at P0 ----------
+  (function buildGrad() {
+    var dir = new THREE.Vector3(GRAD[0], GRAD[1], 0).normalize();
+    var base = new THREE.Vector3(X0, Y0, 0.012);
+    var head = base.clone().addScaledVector(dir, 1.15);
+    scene.add(new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([base, head]),
+      new THREE.LineBasicMaterial({ color: BLUE_C })));
+    var tip = new THREE.Mesh(new THREE.ConeGeometry(0.085, 0.26, 14),
+      new THREE.MeshBasicMaterial({ color: BLUE_C }));
+    tip.position.copy(head);
+    tip.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
+    scene.add(tip);
+    var lab = makeLabel("∇f", "#58c4dd", 0.55);
+    lab.position.copy(base.clone().addScaledVector(dir, 1.45))
+       .add(new THREE.Vector3(0.34, -0.34, 0)).setZ(0.26);
+    scene.add(lab);
+  })();
+
+  // ---------- P0, on the ground and on the surface ----------
+  (function buildP0() {
+    var inkMat = new THREE.MeshBasicMaterial({ color: INK });
+    var top = new THREE.Mesh(new THREE.SphereGeometry(0.075, 18, 18), inkMat);
+    top.position.set(X0, Y0, Z0); scene.add(top);
+    var bot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), inkMat);
+    bot.position.set(X0, Y0, 0); scene.add(bot);
+    var drop = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints(
+        [new THREE.Vector3(X0, Y0, 0), new THREE.Vector3(X0, Y0, Z0)]),
+      new THREE.LineDashedMaterial({ color: 0x8a8f9c, dashSize: 0.14, gapSize: 0.10,
+                                     transparent: true, opacity: 0.7 }));
+    drop.computeLineDistances();
+    scene.add(drop);
+    var lab = makeLabel("P₀", "#ece6e2", 0.5);
+    lab.position.set(X0 - 0.46, Y0 - 0.46, Z0 + 0.30);
+    scene.add(lab);
+  })();
+
+  // ---------- everything that turns with phi ----------
+  var movGroup = new THREE.Group();
+  scene.add(movGroup);
+  var uLabel = makeLabel("u", "#ffe14d", 0.46);
+  scene.add(uLabel);
+
+  var phi = 45 * Math.PI / 180;
+
+  function clearMov() {
+    while (movGroup.children.length) {
+      var m = movGroup.children.pop();
+      if (m.geometry) m.geometry.dispose();
+    }
+  }
+
+  function arrowOnGround(dirx, diry, len, color, opacity) {
+    var dir = new THREE.Vector3(dirx, diry, 0).normalize();
+    var base = new THREE.Vector3(X0, Y0, 0.02);
+    var head = base.clone().addScaledVector(dir, len);
+    var line = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([base, head]),
+      new THREE.LineBasicMaterial({ color: color, transparent: true,
+                                    opacity: opacity === undefined ? 1 : opacity }));
+    movGroup.add(line);
+    var tip = new THREE.Mesh(new THREE.ConeGeometry(0.08, 0.25, 14),
+      new THREE.MeshBasicMaterial({ color: color, transparent: true,
+                                    opacity: opacity === undefined ? 1 : opacity }));
+    tip.position.copy(head);
+    tip.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
+    movGroup.add(tip);
+    return head;
+  }
+
+  function classify(D) {
+    if (Math.abs(D - MAG) < 2e-2)
+      return { key: "max", name: "A: fastest increase", color: GREEN_C,
+               cond: "A: u points along ∇f, Dᵤf = ‖∇f‖" };
+    if (Math.abs(D + MAG) < 2e-2)
+      return { key: "min", name: "B: fastest decrease", color: RED_C,
+               cond: "B: u points along −∇f, Dᵤf = −‖∇f‖" };
+    if (Math.abs(D) < 2e-2)
+      return { key: "zero", name: "C: no change", color: YELLOW,
+               cond: "C: u is tangent to the level curve, Dᵤf = 0" };
+    return { key: "mid", name: "", color: GOLD_C, cond: "" };
+  }
+
+  function updatePhi() {
+    clearMov();
+    var c = Math.cos(phi), s = Math.sin(phi);
+    var D = dOf(phi);
+    var info = classify(D);
+
+    // The plane and the trace are cut to the piece of the ray lying over the
+    // drawn disc: |P0 + t u| = RMAX gives t^2 + 2t(c+s) + 2 - RMAX^2 = 0.
+    var half = Math.sqrt((c + s) * (c + s) - 2 + RMAX * RMAX);
+    var t0 = -(c + s) - half, t1 = -(c + s) + half, top = ZTOP + 0.3;
+    var a = [X0 + t0 * c, Y0 + t0 * s], b = [X0 + t1 * c, Y0 + t1 * s];
+    var corners = [
+      new THREE.Vector3(a[0], a[1], -0.02), new THREE.Vector3(b[0], b[1], -0.02),
+      new THREE.Vector3(b[0], b[1], top),   new THREE.Vector3(a[0], a[1], top)];
+    var pos = [];
+    [0, 1, 2, 0, 2, 3].forEach(function (i) {
+      pos.push(corners[i].x, corners[i].y, corners[i].z); });
+    var pg = new THREE.BufferGeometry();
+    pg.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    pg.computeVertexNormals();
+    movGroup.add(new THREE.Mesh(pg, new THREE.MeshPhongMaterial({
+      color: GOLD_C, transparent: true, opacity: 0.10,
+      side: THREE.DoubleSide, depthWrite: false })));
+    var loop = corners.slice(); loop.push(corners[0]);
+    movGroup.add(new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints(loop),
+      new THREE.LineBasicMaterial({ color: GOLD_C, transparent: true, opacity: 0.30 })));
+
+    // the trace of the surface in that plane
+    var pts = [], M = 160;
+    for (var i = 0; i <= M; i++) {
+      var t = t0 + ((t1 - t0) * i) / M;
+      var x = X0 + t * c, y = Y0 + t * s;
+      pts.push(new THREE.Vector3(x, y, f(x, y)));
+    }
+    tube(pts, GOLD_C, 0.034, movGroup);
+
+    // the tangent at (1,1,3): its slope is the directional derivative, and it is
+    // coloured by which of the three cases we are in
+    var dirv = new THREE.Vector3(c, s, D).normalize();
+    var p0 = new THREE.Vector3(X0, Y0, Z0);
+    tube([p0.clone().addScaledVector(dirv, -1.35),
+          p0.clone().addScaledVector(dirv, 1.35)], info.color, 0.042, movGroup);
+
+    // u, and its opposite when the directional derivative vanishes
+    var head = arrowOnGround(c, s, 1.0, YELLOW);
+    uLabel.position.set(X0 + 1.02 * c - 0.30 * s, Y0 + 1.02 * s + 0.30 * c, 0.34);
+    if (info.key === "zero") arrowOnGround(-c, -s, 1.0, YELLOW, 0.55);
+
+    paintReadouts(D, info);
+    render();
+  }
+
+  // ---------- readouts ----------
+  var elName = document.getElementById("caseName"),
+      elCond = document.getElementById("caseCond"),
+      elD = document.getElementById("dVal"),
+      elKnob = document.getElementById("barKnob"),
+      elPhi = document.getElementById("phiVal");
+  var CSS = {};
+  CSS[GREEN_C] = "#83c167"; CSS[RED_C] = "#fc6255";
+  CSS[YELLOW] = "#ffe14d"; CSS[GOLD_C] = "#f0ac5f";
+
+  function paintReadouts(D, info) {
+    elName.innerHTML = '<i>D</i><sub><b>u</b></sub>&#8202;<i>f</i> = ' + D.toFixed(2);
+    elName.style.color = CSS[info.color] || "#ece6e2";
+    elCond.textContent = info.cond;
+    elD.textContent = D.toFixed(2);
+    var barW = elKnob.parentNode.clientWidth || 190;
+    elKnob.style.left = ((D / MAG + 1) / 2 * barW - 1.5) + "px";
+    elPhi.textContent = Math.round(((phi * 180 / Math.PI) % 360 + 360) % 360);
+    phiSlider.value = String(((phi * 180 / Math.PI) % 360 + 360) % 360);
+    document.getElementById("btnMax").classList.toggle("active", info.key === "max");
+    document.getElementById("btnMin").classList.toggle("active", info.key === "min");
+    document.getElementById("btnZero").classList.toggle("active", info.key === "zero");
+  }
+
+  // ---------- render loop ----------
+  var spinning = false, rafId = null, lastT = 0;
+  function render() { renderer.render(scene, camera); }
+  function frame(now) {
+    rafId = requestAnimationFrame(frame);
+    var dt = lastT ? Math.min(0.05, (now - lastT) / 1000) : 0;
+    lastT = now;
+    var dirty = false;
+    if (spinning || tour.running) {
+      theta += (tour.running ? 0.08 : 0.22) * dt;
+      placeCamera();
+      dirty = true;
+    }
+    if (tween) { stepTween(dt); dirty = true; }
+    else if (dirty) render();
+    if (!spinning && !tour.running && !tween) {
+      cancelAnimationFrame(rafId); rafId = null; lastT = 0;
+    }
+  }
+  function ensureLoop() { if (rafId === null) { lastT = 0; rafId = requestAnimationFrame(frame); } }
+
+  // ---------- tweening, with manim's smoothstep rate function ----------
+  function smooth(t) { return t * t * t * (t * (t * 6 - 15) + 10); }
+  var tween = null;
+  function animateTo(target, seconds, done) {
+    tween = { a0: phi, a1: target, t: 0, dur: Math.max(0.01, seconds), done: done };
+    ensureLoop();
+  }
+  function stepTween(dt) {
+    tween.t += dt;
+    var a = smooth(Math.min(1, tween.t / tween.dur));
+    phi = tween.a0 + (tween.a1 - tween.a0) * a;
+    updatePhi();
+    if (tween.t >= tween.dur) {
+      phi = tween.a1;
+      var cb = tween.done;
+      tween = null;
+      updatePhi();
+      if (cb) cb();
+    }
+  }
+
+  // ---------- the guided tour ----------
+  var elCaption = document.getElementById("caption");
+  function say(text) {
+    elCaption.classList.remove("show");
+    window.setTimeout(function () {
+      elCaption.textContent = text;
+      elCaption.classList.add("show");
+    }, text ? 160 : 0);
+  }
+  var D = Math.PI / 180;
+  var STORY = [
+    { say: "The vertical plane through P₀ in the direction u cuts the surface in the gold curve; the tangent to that curve has slope Dᵤf.",
+      a: 45 * D, run: 1.0, hold: 2.0 },
+    { say: "A: along ∇f the tangent is steepest upwards, Dᵤf = ‖∇f‖ = √2.",
+      a: 45 * D, run: 0.4, hold: 1.8 },
+    { say: "C: turn u a quarter turn and the tangent is level, Dᵤf = 0 — u is tangent to the pink level curve.",
+      a: 135 * D, run: 2.0, hold: 2.0 },
+    { say: "B: along −∇f the tangent is steepest downwards, Dᵤf = −‖∇f‖.",
+      a: 225 * D, run: 2.0, hold: 2.0 },
+    { say: "A quarter turn on, level again — the other direction of no change.",
+      a: 315 * D, run: 2.0, hold: 1.8 },
+    { say: "Your turn: drag φ, and drag the figure to look from anywhere.",
+      a: 405 * D, run: 2.0, hold: 0.9 }
+  ];
+  var tour = { running: false, i: 0, timer: null };
+  var btnTour = document.getElementById("btnTour");
+  function tourStep() {
+    if (!tour.running) return;
+    if (tour.i >= STORY.length) { stopTour(); return; }
+    var beat = STORY[tour.i++];
+    say(beat.say);
+    animateTo(beat.a, beat.run, function () {
+      if (!tour.running) return;
+      tour.timer = window.setTimeout(tourStep, beat.hold * 1000);
+    });
+  }
+  function startTour() {
+    phi = 45 * D; updatePhi();
+    tour.running = true; tour.i = 0;
+    btnTour.innerHTML = "&#10074;&#10074;&nbsp;Stop";
+    btnTour.classList.add("running");
+    phiSlider.disabled = true; phiSlider.style.opacity = "0.45";
+    ensureLoop();
+    tourStep();
+  }
+  function stopTour() {
+    tour.running = false;
+    if (tour.timer) { window.clearTimeout(tour.timer); tour.timer = null; }
+    tween = null;
+    btnTour.innerHTML = "&#9654;&nbsp;Play";
+    btnTour.classList.remove("running");
+    phiSlider.disabled = false; phiSlider.style.opacity = "1";
+    say("");
+    updatePhi();
+  }
+  btnTour.addEventListener("click", function () { tour.running ? stopTour() : startTour(); });
+
+  // ---------- drag to orbit ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  var el = renderer.domElement;
+  function startDrag(x, y) { dragging = true; lastX = x; lastY = y; }
+  function moveDrag(x, y) {
+    if (!dragging) return;
+    theta -= (x - lastX) * 0.008;
+    phiCam = Math.min(Math.PI - 0.05, Math.max(0.05, phiCam - (y - lastY) * 0.008));
+    lastX = x; lastY = y;
+    placeCamera();
+    render();
+  }
+  el.addEventListener("mousedown", function (e) { startDrag(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { moveDrag(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  el.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { startDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  el.addEventListener("touchmove", function (e) {
+    if (e.touches.length === 1) { moveDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- controls ----------
+  var phiSlider = document.getElementById("phiSlider");
+  phiSlider.addEventListener("input", function () {
+    if (tour.running) stopTour();
+    tween = null;
+    phi = parseFloat(phiSlider.value) * Math.PI / 180;
+    updatePhi();
+  });
+  function snapTo(deg) {
+    if (tour.running) stopTour();
+    var target = deg * Math.PI / 180;
+    // turn the short way round
+    while (target - phi > Math.PI) target -= 2 * Math.PI;
+    while (phi - target > Math.PI) target += 2 * Math.PI;
+    animateTo(target, 0.9);
+  }
+  document.getElementById("btnMax").addEventListener("click", function () { snapTo(45); });
+  document.getElementById("btnMin").addEventListener("click", function () { snapTo(225); });
+  document.getElementById("btnZero").addEventListener("click", function () { snapTo(135); });
+
+  var btnSpin = document.getElementById("btnSpin");
+  btnSpin.addEventListener("click", function () {
+    spinning = !spinning;
+    btnSpin.classList.toggle("active", spinning);
+    if (spinning) ensureLoop();
+  });
+
+  // ---------- what has to fit on screen ----------
+  function fitScene() {
+    var pts = [], box = new THREE.Box3();
+    scene.traverse(function (o) {
+      if (o.isSprite) {
+        var k = 0.5 * o.scale.x;
+        [[k, k], [-k, -k]].forEach(function (dd) {
+          pts.push(new THREE.Vector3(o.position.x + dd[0], o.position.y + dd[0],
+                                     o.position.z + dd[1]));
+        });
+        return;
+      }
+      var at = o.geometry && o.geometry.getAttribute && o.geometry.getAttribute("position");
+      if (!at) return;
+      var step = Math.max(1, Math.floor(at.count / 400));
+      for (var i = 0; i < at.count; i += step) {
+        pts.push(new THREE.Vector3(at.getX(i), at.getY(i), at.getZ(i)).applyMatrix4(o.matrixWorld));
+      }
+    });
+    if (!pts.length) return;
+    pts.forEach(function (p) { box.expandByPoint(p); });
+    box.getCenter(CENTER);
+    CLOUD = pts.map(function (p) { return p.clone().sub(CENTER); });
+  }
+
+  // ---------- sizing ----------
+  function resize() {
+    var w = document.getElementById("app").clientWidth;
+    // the stage is the flex column's leftover space, so it is measured,
+    // not computed: no rounding is left over to make a scrollbar
+    var h = stage.clientHeight;
+    var card = document.getElementById("eqcard"), meter = document.getElementById("meter");
+    var stacked = window.getComputedStyle(card).position === "static";
+    var cardH = stacked ? card.offsetHeight : 0;
+    var ch = Math.max(120, h - cardH);
+    renderer.setSize(w, ch);
+    camera.aspect = w / ch;
+    var reach = function (e) { return Math.min(1, e.offsetWidth / (0.45 * w)); };
+    var topPad = stacked ? 0 : (card.offsetHeight + 20) * reach(card);
+    var botPad = (meter.offsetHeight + 20) * reach(meter);
+    band = Math.max(0.34, (ch - topPad - botPad) / ch);
+    aspect = camera.aspect;
+    computeRadius();
+    var tanHalf = Math.tan(camera.fov * Math.PI / 360);
+    aimShift = 0.5 * (topPad - botPad) * (2 * radius * tanHalf) / ch;
+    placeCamera();
+    render();
+  }
+  window.addEventListener("resize", resize);
+
+  // ---------- go ----------
+  updatePhi();
+  scene.updateMatrixWorld(true);
+  fitScene();
+  placeCamera();
+  resize();
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      LABELS.forEach(paintLabel);
+      render();
+    });
+  }
+})();
+</script>
+</body>
+</html>

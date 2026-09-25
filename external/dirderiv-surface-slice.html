@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slicing z = 1 + x^2 + y^2 in the direction u</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  button {
+    font-size: 14px; padding: 5px 12px; border-radius: 6px;
+    border: 1px solid #888; background: #f4f4f4; cursor: pointer;
+  }
+  button:hover { background: #e6e6e6; }
+  button.active { background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+  #playBtn { min-width: 92px; }
+  #sliderRow {
+    display: flex; align-items: center; gap: 10px;
+    padding: 0 10px 6px 10px; box-sizing: border-box;
+  }
+  #phiSlider { flex: 1; }
+  #phiLabel { font-size: 15px; min-width: 78px; font-variant-numeric: tabular-nums; }
+  /* the readout is mathematics: the page's maths face */
+  #readout, #controls span { font-family: "PT Serif", "Times New Roman", Times, serif; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em;
+    font-variant-numeric: tabular-nums; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span style="font-size:14px;">u = &lang;cos&phi;, sin&phi;&rang; at (1,1):</span>
+    <button id="btnGrad">u &#8741; &nabla;f</button>
+    <button id="btnOpp">u &#8741; &minus;&nabla;f</button>
+    <button id="btnZero">D&#7524;f = 0</button>
+    <span style="flex:1"></span>
+    <button id="playBtn" title="Toggle automatic rotation">&#9654; Rotate</button>
+  </div>
+  <div id="sliderRow">
+    <span id="phiLabel">&phi; = 45&deg;</span>
+    <input type="range" id="phiSlider" min="0" max="360" step="1" value="45">
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // ---------- renderer / scene ----------
+  var wrap = document.getElementById("canvasWrap");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(window.devicePixelRatio || 1);
+  wrap.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xffffff);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+  camera.up.set(0, 0, 1); // z points up, math convention
+
+  var radius = 8.6, theta = 0.55, phiCam = 1.15;
+  function placeCamera() {
+    camera.position.set(
+      radius * Math.sin(phiCam) * Math.cos(theta),
+      radius * Math.sin(phiCam) * Math.sin(theta),
+      radius * Math.cos(phiCam) + 1.6
+    );
+    camera.lookAt(0, 0, 1.6);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+  var dir1 = new THREE.DirectionalLight(0xffffff, 0.7);
+  dir1.position.set(5, 3, 6);
+  scene.add(dir1);
+  var dir2 = new THREE.DirectionalLight(0xffffff, 0.35);
+  dir2.position.set(-4, -5, -3);
+  scene.add(dir2);
+
+  var RMAX = 1.8; // radius of the surface patch
+
+  // ---------- axes ----------
+  function axis(from, to, color) {
+    var g = new THREE.BufferGeometry().setFromPoints([from, to]);
+    scene.add(new THREE.Line(g, new THREE.LineBasicMaterial({ color: color })));
+  }
+  var A = 2.8;
+  axis(new THREE.Vector3(-A, 0, 0), new THREE.Vector3(A, 0, 0), 0x999999);
+  axis(new THREE.Vector3(0, -A, 0), new THREE.Vector3(0, A, 0), 0x999999);
+  axis(new THREE.Vector3(0, 0, -0.4), new THREE.Vector3(0, 0, 5.0), 0x999999);
+
+  function f(x, y) { return 1 + x * x + y * y; }
+
+  // ---------- surface z = 1 + x^2 + y^2 ----------
+  (function buildSurface() {
+    var nu = 96, nv = 36; // around, radial
+    var positions = [], indices = [];
+    for (var j = 0; j <= nv; j++) {
+      var r = (RMAX * j) / nv;
+      for (var i = 0; i <= nu; i++) {
+        var t = (2 * Math.PI * i) / nu;
+        positions.push(r * Math.cos(t), r * Math.sin(t), 1 + r * r);
+      }
+    }
+    for (var jj = 0; jj < nv; jj++) {
+      for (var ii = 0; ii < nu; ii++) {
+        var a = jj * (nu + 1) + ii, b = a + 1;
+        var c = a + (nu + 1), d = c + 1;
+        indices.push(a, b, d, a, d, c);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    geo.setIndex(indices);
+    geo.computeVertexNormals();
+    var mat = new THREE.MeshPhongMaterial({
+      color: 0x4f8fd6, transparent: true, opacity: 0.45,
+      side: THREE.DoubleSide, depthWrite: false, shininess: 60
+    });
+    scene.add(new THREE.Mesh(geo, mat));
+    var wire = new THREE.LineSegments(
+      new THREE.WireframeGeometry(geo),
+      new THREE.LineBasicMaterial({ color: 0x35659a, transparent: true, opacity: 0.12 })
+    );
+    scene.add(wire);
+  })();
+
+  // ---------- vertical slicing plane through (1,1) ----------
+  var planeMesh = new THREE.Mesh(
+    new THREE.PlaneGeometry(6.4, 4.6),
+    new THREE.MeshPhongMaterial({
+      color: 0xf2c14e, transparent: true, opacity: 0.30,
+      side: THREE.DoubleSide, depthWrite: false
+    })
+  );
+  planeMesh.rotation.order = "ZXY";
+  planeMesh.rotation.x = Math.PI / 2;
+  planeMesh.position.set(1, 1, 2.1);
+  scene.add(planeMesh);
+
+  // ---------- trace curve, tangent line, arrows ----------
+  var curveGroup = new THREE.Group();
+  scene.add(curveGroup);
+  var curveMat = new THREE.MeshPhongMaterial({ color: 0xd1362f });
+  var tangentMat = new THREE.MeshPhongMaterial({ color: 0x009e73 });
+
+  function clearGroup() {
+    while (curveGroup.children.length) {
+      var m = curveGroup.children.pop();
+      if (m.geometry) m.geometry.dispose();
+    }
+  }
+  function addTube(points, mat, rad) {
+    if (points.length < 2) return;
+    var curve = new THREE.CatmullRomCurve3(points);
+    var geo = new THREE.TubeGeometry(curve, Math.max(32, points.length * 2), rad, 8, false);
+    curveGroup.add(new THREE.Mesh(geo, mat));
+  }
+
+  // marked point (1,1,3)
+  var ptMesh = new THREE.Mesh(
+    new THREE.SphereGeometry(0.07, 16, 16),
+    new THREE.MeshPhongMaterial({ color: 0x222222 })
+  );
+  ptMesh.position.set(1, 1, 3);
+  scene.add(ptMesh);
+
+  // dashed drop line from (1,1,0) to (1,1,3)
+  (function () {
+    var g = new THREE.BufferGeometry().setFromPoints(
+      [new THREE.Vector3(1, 1, 0), new THREE.Vector3(1, 1, 3)]);
+    var l = new THREE.Line(g, new THREE.LineDashedMaterial({
+      color: 0x777777, dashSize: 0.12, gapSize: 0.08 }));
+    l.computeLineDistances();
+    scene.add(l);
+  })();
+
+  // level curve of f through (1,1): f = 3, the circle x^2 + y^2 = 2,
+  // drawn on the surface at z = 3 with its dashed projection at z = 0
+  (function () {
+    var pts = [], N = 128, R = Math.sqrt(2);
+    for (var i = 0; i <= N; i++) {
+      var t = (2 * Math.PI * i) / N;
+      pts.push(new THREE.Vector3(R * Math.cos(t), R * Math.sin(t), 3));
+    }
+    var curve = new THREE.CatmullRomCurve3(pts, true);
+    var geo = new THREE.TubeGeometry(curve, 160, 0.03, 8, true);
+    scene.add(new THREE.Mesh(geo,
+      new THREE.MeshPhongMaterial({ color: 0xcc79a7 })));
+    var g = new THREE.BufferGeometry().setFromPoints(pts.map(function (p) {
+      return new THREE.Vector3(p.x, p.y, 0.005); }));
+    var l = new THREE.Line(g, new THREE.LineDashedMaterial({
+      color: 0xcc79a7, dashSize: 0.12, gapSize: 0.08 }));
+    l.computeLineDistances();
+    scene.add(l);
+  })();
+
+  // gradient arrow at (1,1,0): grad f(1,1) = (2,2)
+  scene.add(new THREE.ArrowHelper(
+    new THREE.Vector3(1, 1, 0).normalize(),
+    new THREE.Vector3(1, 1, 0.005), 1.3, 0x333333, 0.24, 0.13));
+
+  // direction arrow u (updated with phi)
+  var uArrow = new THREE.ArrowHelper(
+    new THREE.Vector3(1, 0, 0),
+    new THREE.Vector3(1, 1, 0.01), 0.9, 0x2a6fdb, 0.24, 0.14);
+  scene.add(uArrow);
+
+  // second zero-change direction: u-tilde = -u, shown only when D_u f = 0
+  var uTildeArrow = new THREE.ArrowHelper(
+    new THREE.Vector3(-1, 0, 0),
+    new THREE.Vector3(1, 1, 0.01), 0.9, 0x2a6fdb, 0.24, 0.14);
+  uTildeArrow.line.material.transparent = true;
+  uTildeArrow.line.material.opacity = 0.65;
+  uTildeArrow.cone.material.transparent = true;
+  uTildeArrow.cone.material.opacity = 0.65;
+  uTildeArrow.visible = false;
+  scene.add(uTildeArrow);
+
+  var phi = 45 * Math.PI / 180;
+
+  function updateSlice() {
+    clearGroup();
+    var c = Math.cos(phi), s = Math.sin(phi);
+
+    // plane orientation: vertical plane containing direction (c, s, 0)
+    planeMesh.rotation.z = phi;
+
+    // u arrow
+    uArrow.setDirection(new THREE.Vector3(c, s, 0));
+
+    // when D_u f = 0, both zero-change directions u and -u are shown
+    uTildeArrow.setDirection(new THREE.Vector3(-c, -s, 0));
+    uTildeArrow.visible = Math.abs(2 * c + 2 * s) < 0.02;
+
+    // trace curve: (1 + t c, 1 + t s, f) for points inside the surface patch
+    var pts = [], M = 200;
+    for (var i = 0; i <= M; i++) {
+      var t = -3.7 + (7.4 * i) / M;
+      var x = 1 + t * c, y = 1 + t * s;
+      if (x * x + y * y <= RMAX * RMAX) {
+        pts.push(new THREE.Vector3(x, y, f(x, y)));
+      }
+    }
+    addTube(pts, curveMat, 0.035);
+
+    // tangent line at (1,1,3): direction (c, s, D) with D = 2c + 2s
+    var D = 2 * c + 2 * s;
+    var dirv = new THREE.Vector3(c, s, D).normalize();
+    var p0 = new THREE.Vector3(1, 1, 3);
+    addTube([p0.clone().addScaledVector(dirv, -1.25),
+             p0.clone().addScaledVector(dirv, 1.25)], tangentMat, 0.045);
+
+    // readout
+    var note = "";
+    var mag = 2 * Math.sqrt(2);
+    if (Math.abs(D - mag) < 0.02) note = "  =  ‖∇f‖  (fastest increase)";
+    else if (Math.abs(D + mag) < 0.02) note = "  =  −‖∇f‖  (fastest decrease)";
+    else if (Math.abs(D) < 0.02) note = "  (no change: u ⊥ ∇f — both directions u and ũ = −u shown)";
+    document.getElementById("readout").textContent =
+      "Dᵤf = ∇f · u = 2cosφ + 2sinφ = " + D.toFixed(2) + note;
+    render();
+  }
+
+  // ---------- rendering / animation (starts PAUSED) ----------
+  var playing = false;
+  var rafId = null;
+
+  function render() { renderer.render(scene, camera); }
+
+  function animate() {
+    if (!playing) return;
+    theta += 0.006;
+    placeCamera();
+    render();
+    rafId = requestAnimationFrame(animate);
+  }
+
+  var playBtn = document.getElementById("playBtn");
+  playBtn.addEventListener("click", function () {
+    playing = !playing;
+    playBtn.innerHTML = playing ? "&#10074;&#10074; Pause" : "&#9654; Rotate";
+    playBtn.classList.toggle("active", playing);
+    if (playing) animate();
+    else if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+  });
+
+  // ---------- drag to rotate ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  var el = renderer.domElement;
+  function startDrag(x, y) { dragging = true; lastX = x; lastY = y; }
+  function moveDrag(x, y) {
+    if (!dragging) return;
+    theta -= (x - lastX) * 0.008;
+    phiCam = Math.min(Math.PI - 0.05, Math.max(0.05, phiCam - (y - lastY) * 0.008));
+    lastX = x; lastY = y;
+    placeCamera();
+    if (!playing) render();
+  }
+  el.addEventListener("mousedown", function (e) { startDrag(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { moveDrag(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  el.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { startDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  el.addEventListener("touchmove", function (e) {
+    if (e.touches.length === 1) { moveDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- controls ----------
+  var slider = document.getElementById("phiSlider");
+  function setPhi(deg) {
+    phi = deg * Math.PI / 180;
+    slider.value = deg;
+    document.getElementById("phiLabel").innerHTML = "&phi; = " + Math.round(deg) + "&deg;";
+    updateSlice();
+  }
+  slider.addEventListener("input", function () { setPhi(parseFloat(slider.value)); });
+  document.getElementById("btnGrad").addEventListener("click", function () { setPhi(45); });
+  document.getElementById("btnOpp").addEventListener("click", function () { setPhi(225); });
+  document.getElementById("btnZero").addEventListener("click", function () { setPhi(135); });
+
+  // ---------- sizing (fills iframe) ----------
+  function resize() {
+    var w = document.getElementById("app").clientWidth;
+    var used = document.getElementById("controls").offsetHeight +
+               document.getElementById("sliderRow").offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(220, window.innerHeight - used - 4);
+    renderer.setSize(w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    render();
+  }
+  window.addEventListener("resize", resize);
+
+  // ---------- initial state: paused, phi = 45 ----------
+  placeCamera();
+  resize();
+  setPhi(45);
+})();
+</script>
+</body>
+</html>

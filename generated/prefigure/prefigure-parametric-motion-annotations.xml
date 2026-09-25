@@ -1,0 +1,88 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-parametric-motion-figure" speech2="A coordinate grid showing a spiral curve, the trajectory of a moving point whose coordinates are given by the parametric equations x equals f of t and y equals g of t. The curve starts near the origin and spirals outward.">
+      <grouped>prefigure-parametric-motion-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-parametric-motion-grid-axes</active>
+        <active>prefigure-parametric-motion-pm-grid</active>
+        <active>prefigure-parametric-motion-pm-curve</active>
+        <active>prefigure-parametric-motion-pm-start</active>
+        <active>prefigure-parametric-motion-pm-end</active>
+        <active>prefigure-parametric-motion-pm-eq-label</active>
+      </children>
+      <components>
+        <active>prefigure-parametric-motion-grid-axes</active>
+        <active>prefigure-parametric-motion-pm-grid</active>
+        <active>prefigure-parametric-motion-pm-curve</active>
+        <active>prefigure-parametric-motion-pm-start</active>
+        <active>prefigure-parametric-motion-pm-end</active>
+        <active>prefigure-parametric-motion-pm-eq-label</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-parametric-motion-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-parametric-motion-grid</active>
+        <active>prefigure-parametric-motion-axes</active>
+      </children>
+      <components>
+        <active>prefigure-parametric-motion-grid</active>
+        <active>prefigure-parametric-motion-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-parametric-motion-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-grid" speech2="The coordinate grid">
+      <active>prefigure-parametric-motion-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-axes" speech2="The coordinate axes">
+      <active>prefigure-parametric-motion-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-pm-grid" speech2="A coordinate grid with x and y axes.">
+      <active>prefigure-parametric-motion-pm-grid</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-pm-curve" speech2="The trajectory of the motion, a spiral drawn in blue that starts near the origin and winds outward.">
+      <active>prefigure-parametric-motion-pm-curve</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-pm-start" speech2="The starting position of the moving point, near the origin.">
+      <active>prefigure-parametric-motion-pm-start</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-pm-end" speech2="The final position of the moving point, at the outer end of the spiral.">
+      <active>prefigure-parametric-motion-pm-end</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parametric-motion-pm-eq-label" speech2="The label x comma y equals f of t comma g of t, indicating that each point of the curve is given by the parametric equations.">
+      <active>prefigure-parametric-motion-pm-eq-label</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-parametric-motion-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

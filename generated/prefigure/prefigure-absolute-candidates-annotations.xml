@@ -1,0 +1,75 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-absolute-candidates-figure" speech2="The rectangle R with the candidate points for the absolute extrema of f marked and labeled with their function values. The absolute maximum, 9, occurs at 3 comma 0 and is marked in red. The absolute minimum, 0, occurs at the origin and at 2 comma 2, both marked in green.">
+      <grouped>prefigure-absolute-candidates-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-absolute-candidates-ac-region</active>
+        <active>prefigure-absolute-candidates-ac-min1</active>
+        <active>prefigure-absolute-candidates-ac-min2</active>
+        <active>prefigure-absolute-candidates-ac-max</active>
+        <active>prefigure-absolute-candidates-ac-corner1</active>
+        <active>prefigure-absolute-candidates-ac-corner2</active>
+        <active>prefigure-absolute-candidates-ac-critical</active>
+      </children>
+      <components>
+        <active>prefigure-absolute-candidates-ac-region</active>
+        <active>prefigure-absolute-candidates-ac-min1</active>
+        <active>prefigure-absolute-candidates-ac-min2</active>
+        <active>prefigure-absolute-candidates-ac-max</active>
+        <active>prefigure-absolute-candidates-ac-corner1</active>
+        <active>prefigure-absolute-candidates-ac-corner2</active>
+        <active>prefigure-absolute-candidates-ac-critical</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-region" speech2="The rectangle R, the closed bounded region on which we search for absolute extrema.">
+      <active>prefigure-absolute-candidates-ac-region</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-min1" speech2="The corner 0 comma 0, where f equals 0, one of the two absolute minima, marked in green.">
+      <active>prefigure-absolute-candidates-ac-min1</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-min2" speech2="The boundary point 2 comma 2, where f equals 0, the other absolute minimum, marked in green.">
+      <active>prefigure-absolute-candidates-ac-min2</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-max" speech2="The corner 3 comma 0, where f equals 9, the absolute maximum, marked in red.">
+      <active>prefigure-absolute-candidates-ac-max</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-corner1" speech2="The corner 0 comma 2, where f equals 4.">
+      <active>prefigure-absolute-candidates-ac-corner1</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-corner2" speech2="The corner 3 comma 2, where f equals 1.">
+      <active>prefigure-absolute-candidates-ac-corner2</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-absolute-candidates-ac-critical" speech2="The interior critical point 1 comma 1, where f equals 1, marked in maroon.">
+      <active>prefigure-absolute-candidates-ac-critical</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-absolute-candidates-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,61 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-m2a-ellipse-figure" speech2="A tall narrow blue ellipse in the fourth quadrant region below the x axis, centred at one comma negative four. Five points are marked and labelled: the centre, the top vertex at one comma negative two, the bottom vertex at one comma negative six, and the left and right vertices at one half and three halves, each with y equal to negative four.">
+      <grouped>prefigure-m2a-ellipse-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-m2a-ellipse-grid-axes</active>
+        <active>prefigure-m2a-ellipse-m2ae-e</active>
+        <active>prefigure-m2a-ellipse-m2ae-c</active>
+      </children>
+      <components>
+        <active>prefigure-m2a-ellipse-grid-axes</active>
+        <active>prefigure-m2a-ellipse-m2ae-e</active>
+        <active>prefigure-m2a-ellipse-m2ae-c</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-m2a-ellipse-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-m2a-ellipse-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-m2a-ellipse-grid</active>
+        <active>prefigure-m2a-ellipse-axes</active>
+      </children>
+      <components>
+        <active>prefigure-m2a-ellipse-grid</active>
+        <active>prefigure-m2a-ellipse-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-m2a-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2a-ellipse-grid" speech2="The coordinate grid">
+      <active>prefigure-m2a-ellipse-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-m2a-ellipse-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2a-ellipse-axes" speech2="The coordinate axes">
+      <active>prefigure-m2a-ellipse-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-m2a-ellipse-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2a-ellipse-m2ae-e" speech2="The ellipse twenty five times the square of y plus four, plus four hundred times the square of x minus one, equals one hundred.">
+      <active>prefigure-m2a-ellipse-m2ae-e</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-m2a-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2a-ellipse-m2ae-c" speech2="The centre of the ellipse, at one comma negative four.">
+      <active>prefigure-m2a-ellipse-m2ae-c</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-m2a-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

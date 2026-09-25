@@ -1,0 +1,60 @@
+<diagram>
+  <annotations>
+    <annotation id="parabola-extra-parabola" speech2="A sideways parabola opening to the right, built from the definition using a focus and a vertical directrix, the twist example that reverses the usual direction">
+      <grouped>parabola-extra-parabola</grouped>
+      <position>1</position>
+      <children>
+        <active>parabola-extra-parabola</active>
+        <active>parabola-extra-focus</active>
+        <active>parabola-extra-directrix</active>
+        <active>parabola-extra-vertex</active>
+        <active>parabola-extra-equidistant</active>
+      </children>
+      <components>
+        <active>parabola-extra-parabola</active>
+        <active>parabola-extra-focus</active>
+        <active>parabola-extra-directrix</active>
+        <active>parabola-extra-vertex</active>
+        <active>parabola-extra-equidistant</active>
+      </components>
+    </annotation>
+    <annotation id="parabola-extra-parabola" speech2="The parabola y squared equals eight x, a blue curve opening to the right with vertex at the origin" sonify="yes">
+      <active>parabola-extra-parabola</active>
+      <position>1</position>
+      <parents>
+        <grouped>parabola-extra-parabola</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>parabola-extra-parabola</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="parabola-extra-focus" speech2="The focus at two comma zero, to the right of the vertex">
+      <active>parabola-extra-focus</active>
+      <position>2</position>
+      <parents>
+        <grouped>parabola-extra-parabola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-extra-directrix" speech2="The directrix, the vertical line x equals minus two, drawn dashed in red to the left of the vertex">
+      <active>parabola-extra-directrix</active>
+      <position>3</position>
+      <parents>
+        <grouped>parabola-extra-parabola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-extra-vertex" speech2="The vertex at the origin, halfway between the focus and the directrix">
+      <active>parabola-extra-vertex</active>
+      <position>4</position>
+      <parents>
+        <grouped>parabola-extra-parabola</grouped>
+      </parents>
+    </annotation>
+    <annotation id="parabola-extra-equidistant" speech2="A point P on the parabola with two equal green segments, one to the focus and one horizontal to the directrix, confirming the equal distances">
+      <active>parabola-extra-equidistant</active>
+      <position>5</position>
+      <parents>
+        <grouped>parabola-extra-parabola</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

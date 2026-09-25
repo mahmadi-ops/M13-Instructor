@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two runners, one heat map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  :root{
+    --edge:#1F2740; --ink:#EAEDF7; --muted:#8A96B2;
+    --cool:#4FC3F7; --ember:#FFC14D;
+    --sans:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif:"PT Serif", "Times New Roman", Times, serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:transparent;color:#22262E;
+    font-family:var(--sans);font-size:16px;-webkit-font-smoothing:antialiased}
+  /* Column layout: the controls always claim their space first, and the
+     canvas takes whatever height is left, so the buttons can never be
+     pushed below the fold of the iframe. */
+  body{display:flex;flex-direction:column}
+  .stage{position:relative;flex:1 1 auto;min-height:0;
+    border:1px solid #C9CFDC;border-radius:3px;overflow:hidden;background:#0B0F1C}
+  canvas{display:block;width:100%;height:100%;object-fit:contain}
+  .hud{position:absolute;top:0;left:0;padding:16px 20px;pointer-events:none;
+       color:var(--ink);font-size:clamp(15px,2.15vw,24px);line-height:1.75;
+       text-shadow:0 2px 10px rgba(0,0,0,.95)}
+  .hud .k{color:var(--muted);font-weight:600}
+  .hud .big{font-weight:700;font-size:clamp(30px,5.2vw,58px);line-height:1.08;
+            display:block;margin:4px 0 10px}
+  .falling{color:var(--cool)} .steady{color:var(--ember)}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center;
+    flex:0 0 auto}
+  button{font-family:var(--sans);font-size:clamp(15px,1.55vw,19px);font-weight:600;
+    color:#22262E;background:#fff;
+    border:1px solid #B9C1D2;border-radius:3px;padding:12px 20px;cursor:pointer;
+    transition:border-color .16s,background .16s,color .16s}
+  button:hover{border-color:#6C778F}
+  button:focus-visible{outline:2px solid #B8860B;outline-offset:2px}
+  button[aria-pressed="true"]{background:#1F2740;border-color:#1F2740;color:#fff}
+  .spacer{flex:1}
+  label.speed{display:flex;align-items:center;gap:9px;
+    font-size:clamp(15px,1.55vw,19px);font-weight:600;color:#4A5265}
+  input[type=range]{accent-color:#1F2740;width:clamp(120px,12vw,180px)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stage">
+  <canvas id="c" width="1760" height="1080"></canvas>
+  <div class="hud">
+    <span class="k">Thermometer</span>
+    <span class="big" id="temp">86.67 &#176;F</span>
+    <span class="k">Position</span> <span id="pos">(1.00, 1.00) mi</span><br>
+    <span class="k">D<sub>u</sub>T</span> <span id="dut">0.00 &#176;F/mi</span><br>
+    <span class="k">Distance</span> <span id="mi">0.00 mi</span><br>
+    <span class="k">Status</span> <span class="steady" id="status">Holding 86.7 &#176;F</span>
+  </div>
+</div>
+
+<div class="controls">
+  <button id="mIso" aria-pressed="true">Run the isotherm</button>
+  <button id="mGrad" aria-pressed="false">Dash for cool air</button>
+  <div class="spacer"></div>
+  <label class="speed">Pace <input id="speed" type="range" min="0.25" max="2.5" step="0.05" value="1"></label>
+  <button id="play">Pause</button>
+  <button id="reset">Reset</button>
+</div>
+
+<script>
+(function(){
+const cv=document.getElementById('c'), ctx=cv.getContext('2d');
+const W=cv.width, H=cv.height;
+// figure lettering in the book's maths face; italic for the variables
+const FONT=w=>w+' 44px '+"'PT Serif','Times New Roman',Times,serif";
+const MFONT=w=>'italic '+w+' 44px '+"'PT Serif','Times New Roman',Times,serif";
+
+/* ---------- world: miles ---------- */
+const XMIN=-3.6, XMAX=3.6, YMIN=-2.21, YMAX=2.21;
+const sx=x=>(x-XMIN)/(XMAX-XMIN)*W, sy=y=>H-(y-YMIN)/(YMAX-YMIN)*H;
+const unit=W/(XMAX-XMIN);                       // pixels per mile
+const T=(x,y)=>74+14*Math.exp(-(x*x+3*y*y)/40);           // degrees F
+const gradT=(x,y)=>{const e=14*Math.exp(-(x*x+3*y*y)/40)/40;return[-2*e*x,-6*e*y];};
+
+function color(t){
+  const p=Math.max(0,Math.min(1,(t-80)/8));
+  const st=[[0,[14,20,44]],[.28,[40,34,96]],[.52,[136,42,110]],[.74,[226,86,60]],[.9,[255,164,62]],[1,[255,236,190]]];
+  for(let i=0;i<st.length-1;i++){const[a,ca]=st[i],[b,cb]=st[i+1];
+    if(p<=b){const f=(p-a)/(b-a);return[0,1,2].map(j=>Math.round(ca[j]+(cb[j]-ca[j])*f));}}
+  return st[st.length-1][1];
+}
+
+/* ---------- static background ---------- */
+const bg=document.createElement('canvas'); bg.width=W; bg.height=H;
+function paintBg(){
+  const b=bg.getContext('2d'), RW=440, RH=Math.round(RW*H/W);
+  const off=document.createElement('canvas'); off.width=RW; off.height=RH;
+  const oc=off.getContext('2d'), img=oc.createImageData(RW,RH);
+  for(let j=0;j<RH;j++)for(let i=0;i<RW;i++){
+    const x=XMIN+(i+.5)/RW*(XMAX-XMIN), y=YMAX-(j+.5)/RH*(YMAX-YMIN);
+    const c=color(T(x,y)), k=4*(j*RW+i);
+    img.data[k]=c[0];img.data[k+1]=c[1];img.data[k+2]=c[2];img.data[k+3]=255;
+  }
+  oc.putImageData(img,0,0); b.drawImage(off,0,0,W,H);
+  b.lineWidth=2; b.strokeStyle='rgba(255,255,255,.17)';
+  [82,83,84,85,86,87].forEach(function(tv){
+    const k=-40*Math.log((tv-74)/14); if(k<=0) return;
+    b.beginPath(); b.ellipse(sx(0),sy(0),Math.sqrt(k)*unit,Math.sqrt(k/3)*unit,0,0,2*Math.PI); b.stroke();
+  });
+  b.strokeStyle='rgba(255,255,255,.22)'; b.lineWidth=1.5;
+  b.beginPath(); b.moveTo(0,sy(0)); b.lineTo(W,sy(0)); b.moveTo(sx(0),0); b.lineTo(sx(0),H); b.stroke();
+  b.font=FONT(600); b.fillStyle='rgba(255,255,255,.45)';
+  b.fillText('x  (miles east)',W-400,sy(0)-26); b.fillText('y',sx(0)+22,54);
+  b.strokeStyle='#FFC14D'; b.lineWidth=5; b.beginPath();
+  b.ellipse(sx(0),sy(0),2*unit,(2/Math.sqrt(3))*unit,0,0,2*Math.PI); b.stroke();
+  b.font=FONT(600); b.fillStyle='#FFC14D';
+  b.fillText('x\u00B2 + 3y\u00B2 = 4   \u00B7   86.7 \u00B0F',sx(-3.42),sy(-1.72));
+  b.fillStyle='rgba(255,236,190,.75)';
+  b.fillText('downtown  88 \u00B0F',sx(0)+26,sy(0)+62);
+}
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(paintBg);}
+paintBg();
+
+/* ---------- runner ---------- */
+const SKIN='#E8B08A', KIT='#F5F7FF', KIT_D='#AEB6CC', SHORT='#2C3552', HAIR='#2A1F1C';
+const RSCALE=0.175;                                   // body half-size, in miles
+function topRunner(g,px,py,ang,p,tint){
+  const S=unit*RSCALE, bob=1+.07*Math.abs(Math.sin(p));
+  g.save(); g.translate(px,py); g.rotate(ang); g.scale(bob,bob);
+  g.save(); g.translate(S*.30,S*.44);
+  g.fillStyle='rgba(0,0,0,.45)';
+  g.beginPath(); g.ellipse(0,0,S*1.05,S*.78,0,0,2*Math.PI); g.fill(); g.restore();
+  g.lineCap='round'; g.lineJoin='round';
+  const sw=Math.sin(p), sw2=-sw;
+  g.strokeStyle=SKIN; g.lineWidth=S*.26;
+  g.beginPath();
+  g.moveTo(-S*.55,-S*.26); g.lineTo(-S*.78,-S*.26+sw2*S*.80);
+  g.moveTo( S*.55,-S*.26); g.lineTo( S*.78,-S*.26+sw*S*.80); g.stroke();
+  g.strokeStyle=SHORT; g.lineWidth=S*.40;
+  g.beginPath();
+  g.moveTo(-S*.16,S*.16); g.lineTo(-S*.28, S*.16-sw*S*1.00);
+  g.moveTo( S*.16,S*.16); g.lineTo( S*.28, S*.16-sw2*S*1.00); g.stroke();
+  g.strokeStyle='#1B2138'; g.lineWidth=S*.16;
+  g.beginPath();
+  g.moveTo(-S*.28,S*.16-sw*S*1.00);  g.lineTo(-S*.30,S*.16-sw*S*1.26);
+  g.moveTo( S*.28,S*.16-sw2*S*1.00); g.lineTo( S*.30,S*.16-sw2*S*1.26); g.stroke();
+  g.fillStyle=KIT; g.beginPath(); g.ellipse(0,-S*.16,S*.60,S*.46,0,0,2*Math.PI); g.fill();
+  g.fillStyle=KIT_D; g.beginPath(); g.ellipse(0,S*.06,S*.46,S*.28,0,0,2*Math.PI); g.fill();
+  g.strokeStyle='rgba(0,0,0,.20)'; g.lineWidth=S*.05;
+  g.beginPath(); g.moveTo(0,-S*.52); g.lineTo(0,S*.20); g.stroke();
+  g.fillStyle=HAIR; g.beginPath(); g.arc(0,-S*.58,S*.36,0,2*Math.PI); g.fill();
+  g.fillStyle=SKIN; g.beginPath(); g.arc(0,-S*.66,S*.30,Math.PI*1.15,Math.PI*1.85); g.fill();
+  g.strokeStyle=HAIR; g.lineWidth=S*.17; g.beginPath();
+  g.moveTo(0,-S*.56);
+  g.quadraticCurveTo(S*.12*Math.sin(p*2),-S*.02,S*.24*Math.sin(p*2),S*.40); g.stroke();
+  g.strokeStyle=tint; g.globalAlpha=.55; g.lineWidth=S*.09;
+  g.beginPath(); g.ellipse(0,-S*.16,S*.66,S*.52,0,0,2*Math.PI); g.stroke();
+  g.globalAlpha=1; g.restore();
+}
+
+/* ---------- keep the whole figure inside the frame ---------- */
+const PAD=RSCALE*1.35;                                 // body radius plus shadow, in miles
+/* farthest the dash can go before the figure would touch the top edge */
+const UX=1/Math.sqrt(10), UY=3/Math.sqrt(10);
+const DASH_MAX=Math.min((YMAX-PAD-1)/UY,(XMAX-PAD-1)/UX);   // about 0.96 mi
+
+const A=2, B=2/Math.sqrt(3), TH0=Math.PI/3;
+const SPEED=0.26;                                      // miles per second
+let mode='iso',running=true,th=TH0,dist=0,miles=0,pace=1,
+    trail=[],prints=[],gait=0,last=0,lastPrint=0;
+function reset(){th=TH0;dist=0;miles=0;trail=[];prints=[];gait=0;}
+
+function arrow(x0,y0,x1,y1,col,w){
+  const p0=[sx(x0),sy(y0)],p1=[sx(x1),sy(y1)];
+  const a=Math.atan2(p1[1]-p0[1],p1[0]-p0[0]),h=unit*.14;
+  ctx.strokeStyle=col;ctx.fillStyle=col;ctx.lineWidth=w;ctx.lineCap='round';
+  ctx.beginPath();ctx.moveTo(p0[0],p0[1]);ctx.lineTo(p1[0],p1[1]);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(p1[0],p1[1]);
+  ctx.lineTo(p1[0]-h*Math.cos(a-.42),p1[1]-h*Math.sin(a-.42));
+  ctx.lineTo(p1[0]-h*Math.cos(a+.42),p1[1]-h*Math.sin(a+.42));
+  ctx.closePath();ctx.fill();
+}
+
+const $t=document.getElementById('temp'),$p=document.getElementById('pos'),
+      $d=document.getElementById('dut'),$m=document.getElementById('mi'),
+      $s=document.getElementById('status');
+
+function frame(now){
+  const dt=last?Math.min((now-last)/1000,.05):0; last=now;
+  const step=SPEED*pace*dt;
+  if(running){
+    if(mode==='iso'){
+      const ds=Math.hypot(A*Math.sin(th),B*Math.cos(th));
+      th+=step/ds; miles+=step;
+    }else{
+      const adv=Math.min(step,DASH_MAX-dist); dist+=adv; miles+=adv;
+    }
+    gait+=dt*7.4*pace;
+  }
+  ctx.drawImage(bg,0,0);
+
+  let px,py,ang,du,tint;
+  if(mode==='iso'){
+    px=A*Math.cos(th); py=B*Math.sin(th);
+    ang=Math.atan2(-B*Math.cos(th),-A*Math.sin(th))+Math.PI/2;
+    du=0; tint='#FFC14D';
+    trail.push([px,py]); if(trail.length>220) trail.shift();
+    const g1=gradT(px,py),gm=Math.hypot(g1[0],g1[1]);
+    arrow(px,py,px-g1[0]/gm*.85,py-g1[1]/gm*.85,'rgba(79,195,247,.85)',5);
+  }else{
+    px=1+UX*dist; py=1+UY*dist;
+    ang=Math.atan2(-UY,UX)+Math.PI/2;
+    const g1=gradT(px,py); du=g1[0]*UX+g1[1]*UY; tint='#4FC3F7';
+    trail.push([px,py]); if(trail.length>500) trail.shift();
+    arrow(1,1,1+UX*DASH_MAX,1+UY*DASH_MAX,'rgba(79,195,247,.35)',4);
+  }
+
+  /* safety clamp: the figure never crosses the frame */
+  px=Math.max(XMIN+PAD,Math.min(XMAX-PAD,px));
+  py=Math.max(YMIN+PAD,Math.min(YMAX-PAD,py));
+
+  if(running && gait-lastPrint>Math.PI){
+    lastPrint=gait;
+    prints.push({x:px,y:py,a:ang,s:(prints.length%2?1:-1)});
+    if(prints.length>26) prints.shift();
+  }
+  prints.forEach(function(f,i){
+    ctx.save(); ctx.translate(sx(f.x),sy(f.y)); ctx.rotate(f.a);
+    ctx.globalAlpha=.06+.20*(i/prints.length);
+    ctx.fillStyle='#0A0D18'; ctx.beginPath();
+    ctx.ellipse(f.s*unit*.055,0,unit*.024,unit*.050,0,0,2*Math.PI); ctx.fill();
+    ctx.restore();
+  });
+  ctx.globalAlpha=1;
+
+  if(trail.length>1){
+    ctx.strokeStyle=mode==='iso'?'rgba(255,193,77,.75)':'rgba(79,195,247,.8)';
+    ctx.lineWidth=7; ctx.lineCap='round'; ctx.beginPath();
+    ctx.moveTo(sx(trail[0][0]),sy(trail[0][1]));
+    for(let i=1;i<trail.length;i++) ctx.lineTo(sx(trail[i][0]),sy(trail[i][1]));
+    ctx.stroke();
+  }
+
+  ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(sx(1),sy(1),10,0,2*Math.PI); ctx.fill();
+  ctx.font=FONT(600); ctx.fillText('P\u2080(1, 1)',sx(1)+24,sy(1)-24);
+
+  topRunner(ctx,sx(px),sy(py),ang,gait,tint);
+
+  const temp=T(px,py);
+  $t.textContent=temp.toFixed(2)+' \u00B0F';
+  $p.textContent='('+px.toFixed(2)+', '+py.toFixed(2)+') mi';
+  $d.textContent=du.toFixed(2)+' \u00B0F/mi';
+  $m.textContent=miles.toFixed(2)+' mi';
+  if(mode==='iso'){$s.className='steady';$s.textContent='Holding 86.7 \u00B0F';}
+  else{$s.className='falling';
+       $s.textContent=(dist>=DASH_MAX?'Cooled ':'Cooling \u00B7 ')+(86.67-temp).toFixed(1)+' \u00B0F';}
+
+  requestAnimationFrame(frame);
+}
+
+const bIso=document.getElementById('mIso'),bGrad=document.getElementById('mGrad'),
+      bPlay=document.getElementById('play');
+function setMode(m){mode=m;reset();
+  bIso.setAttribute('aria-pressed',m==='iso');
+  bGrad.setAttribute('aria-pressed',m==='grad');}
+bIso.onclick=function(){setMode('iso');};
+bGrad.onclick=function(){setMode('grad');};
+bPlay.onclick=function(){running=!running;bPlay.textContent=running?'Pause':'Play';};
+document.getElementById('reset').onclick=reset;
+document.getElementById('speed').oninput=function(e){pace=+e.target.value;};
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){running=false;bPlay.textContent='Play';}
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

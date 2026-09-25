@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The secant rotating onto the tangent -- animated</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math.
+     Kept in step with conic-slicer-manim.html, the book's other animated figure. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;   /* manim's off-white text */
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --yellow:    #ffe14d;
+    --red:       #fc6255;
+    --gold:      #f0ac5f;
+    /* the book's own stacks */
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  /* The figure is framed by the page at a fixed aspect ratio, so it lays out
+     as a column that exactly fills the iframe: the panel takes what it needs
+     and the stage takes the rest. Computing the stage height from
+     innerHeight minus the panel used to leave a pixel or two over, which
+     showed up as a scrollbar. */
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  #app { width: 100%; height: 100%; box-sizing: border-box;
+         display: flex; flex-direction: column; }
+
+  /* ---- stage ---- */
+  #stage { position: relative; width: 100%; background: var(--bg);
+           flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+
+  .overlay { position: absolute; pointer-events: none; }
+
+  /* equation card, top-left, in the spirit of a manim MathTex on screen */
+  #eqcard {
+    top: 12px; left: 14px;
+    padding: 9px 13px 10px 13px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    line-height: 1.45;
+  }
+  .math { font-family: var(--serif); font-size: 18px; }
+  .math i, .var { font-style: italic; }
+  #slopeName {
+    font-size: 17px; font-weight: 600; letter-spacing: .2px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+    transition: color .3s ease;
+  }
+  #slopeCond { font-size: 13px; color: var(--dim); }
+
+  /* secant-versus-tangent readout, bottom-left */
+  #meter {
+    left: 14px; bottom: 12px;
+    padding: 8px 12px 9px 12px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-radius: 6px;
+    font-size: 13px; color: var(--dim);
+    font-variant-numeric: tabular-nums;
+  }
+  #meter b { color: var(--ink); font-weight: 600; }
+  #meter .sec { color: var(--red); }
+  #meter .tan { color: var(--green); }
+  #bar {
+    position: relative; margin-top: 6px;
+    width: 168px; height: 5px; border-radius: 3px;
+    background: linear-gradient(to right, var(--green) 0%, var(--gold) 45%, var(--red) 100%);
+    opacity: .75;
+  }
+  #barKnob {
+    position: absolute; top: -3px; width: 3px; height: 11px;
+    background: var(--ink); border-radius: 2px;
+    transition: left .12s linear;
+  }
+
+  /* caption for the guided tour, bottom-centre, fades like a manim Write() */
+  #caption {
+    left: 50%; transform: translateX(-50%);
+    bottom: 68px; max-width: 66%;
+    text-align: center; font-size: 15px; line-height: 1.4;
+    background: rgba(6,7,10,0.78);
+    padding: 7px 14px; border-radius: 6px;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  #caption.show { opacity: 1; }
+
+  /* ---- control panel ---- */
+  #panel {
+    flex: 0 0 auto;
+    border-top: 1px solid var(--edge);
+    background: var(--panel);
+    padding: 9px 12px 11px 12px;
+    box-sizing: border-box;
+  }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 13px; color: var(--dim); }
+
+  button {
+    font: inherit; font-size: 13.5px;
+    padding: 5px 12px; border-radius: 999px;
+    color: var(--ink); background: #1a1d26;
+    border: 1px solid var(--edge);
+    cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+  }
+  button:hover { background: #232734; }
+  button:disabled { opacity: .45; cursor: default; }
+  button.active { color: #06070a; font-weight: 600; }
+  #btnLimit.active { background: var(--green); border-color: var(--green); }
+  #btnTour.running { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+  #btnSpin.active  { background: var(--blue); border-color: var(--blue); color: #06070a; font-weight: 600; }
+
+  .sliderRow { display: flex; align-items: center; gap: 10px; }
+  .sliderRow .name {
+    font-size: 14px; min-width: 104px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+  }
+  input[type=range] {
+    flex: 1; min-width: 120px; height: 22px;
+    -webkit-appearance: none; appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-moz-range-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 14px; height: 14px; margin-top: -5.5px;
+    border-radius: 50%; background: var(--blue); border: none; cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 14px; height: 14px; border: none;
+    border-radius: 50%; background: var(--blue); cursor: pointer;
+  }
+
+  /* On a phone the equation card would cover most of the picture, so it stops
+     floating and becomes a strip above the canvas instead. See resize(), which
+     takes the strip's height out of the canvas rather than out of the surface. */
+  @media (max-width: 560px) {
+    #eqcard {
+      position: static;
+      padding: 7px 12px 8px 12px;
+      border: none; border-bottom: 1px solid var(--edge);
+      border-radius: 0; background: var(--panel);
+      line-height: 1.35;
+    }
+    .math { font-size: 16px; }
+    #slopeName { font-size: 15px; }
+    #slopeCond { display: none; }          /* the instructions below say the same */
+    #panel { padding: 7px 10px 8px 10px; }
+    .row + .row { margin-top: 7px; }
+    .lbl { display: none; }
+    button { font-size: 13px; padding: 4px 10px; }
+    .sliderRow .name { min-width: 92px; font-size: 13px; }
+    #meter { font-size: 12px; padding: 6px 10px 7px 10px; left: 10px; bottom: 10px; }
+    #bar { width: 120px; }
+    #caption { font-size: 13px; max-width: 88%; bottom: 58px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="eqcard" class="overlay">
+      <div class="math" style="color:#9cdceb"><i>z</i> = 1 + <i>x</i>&#178; + <i>y</i>&#178;</div>
+      <div class="math"><i><b>u</b></i> = &#10216;1/&radic;2,&#8202;1/&radic;2&#10217; at <i>P</i>&#8320;(1,&#8202;1)</div>
+      <div id="slopeName">secant slope = 3.528</div>
+      <div id="slopeCond">( <i>f</i>(P) &minus; <i>f</i>(P&#8320;) ) / <i>s</i> = 2&radic;2 + <i>s</i></div>
+    </div>
+
+    <div id="meter" class="overlay">
+      <span class="sec">secant</span> <b id="secVal">3.528</b>
+      &nbsp;&rarr;&nbsp; <span class="tan">tangent</span> <b>2.828</b>
+      <div id="bar"><div id="barKnob" style="left:0px"></div></div>
+    </div>
+
+    <div id="caption" class="overlay"></div>
+  </div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Watch:</span>
+      <button id="btnLimit">&#9654;&nbsp;<i>s</i>&nbsp;&rarr;&nbsp;0</button>
+      <span style="flex:1"></span>
+      <button id="btnTour">&#9654;&nbsp;Play</button>
+      <button id="btnSpin">Spin</button>
+    </div>
+    <div class="row sliderRow">
+      <span class="name">step <i>s</i> = <span id="sVal">0.70</span></span>
+      <input type="range" id="sSlider" min="0.05" max="0.75" step="0.01" value="0.7"
+             aria-label="step s from the point P sub 0 along u">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Manim colour constants, so the palette below reads the way a Scene would.
+  var BLUE_D = 0x29abca, BLUE_E = 0x1c758a, BLUE_C = 0x58c4dd,
+      GREEN_C = 0x83c167, YELLOW = 0xffe14d, RED_C = 0xfc6255,
+      GOLD_C = 0xf0ac5f, GREY = 0x8a8f9c, INK = 0xece6e2;
+
+  // ---------- the construction ----------
+  var C = 1 / Math.sqrt(2);          // u = (C, C), a unit vector
+  var R2 = 2 * Math.sqrt(2);         // the directional derivative itself
+  function f(x, y) { return 1 + x * x + y * y; }
+
+  // The surface is drawn over the disc of radius RMAX. Along the ray from
+  // P0(1,1) in the direction u the point (1 + tC, 1 + tC) has radius
+  // sqrt(2)|1 + tC|, so the ray stays over that disc for t in [T0, T1]:
+  var RMAX = 2.2;
+  var T1 = RMAX - Math.SQRT2;        // = 0.786, and the slider stops short of it
+  var T0 = -RMAX - Math.SQRT2;
+  var ZTOP = f(RMAX, 0);             // the rim of the drawn patch
+
+  // ---------- renderer / scene ----------
+  var stage = document.getElementById("stage");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  stage.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x06070a);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 200);
+  camera.up.set(0, 0, 1);                 // z is up, the usual maths convention
+
+  // CENTER and CLOUD are measured off the finished scene in fitScene() below.
+  // CLOUD is a sample of everything actually drawn, so the framing can be exact
+  // rather than a bounding-sphere guess -- the picture here is much taller than
+  // it is wide, and a sphere would leave it marooned in empty space.
+  var CENTER = new THREE.Vector3(0, 0, 0.5 * ZTOP);
+  var CLOUD = [];
+  var radius = 16, theta = -0.95, phi = 1.20;
+  var aimShift = 0;   // world units to slide the picture down the screen
+  var band = 1, aspect = 1;   // set by resize(): the clear strip between overlays
+
+  // The smallest camera distance that still shows every sampled point: for a
+  // point at depth (radius - d.e) the frustum is tanV wide, so each point sets a
+  // lower bound on the distance and the largest of those bounds wins. Recomputed
+  // as the camera moves, so the picture stays whole from every angle.
+  var _e = new THREE.Vector3(), _up = new THREE.Vector3(), _rt = new THREE.Vector3();
+  function computeRadius() {
+    _e.set(Math.sin(phi) * Math.cos(theta), Math.sin(phi) * Math.sin(theta), Math.cos(phi));
+    _up.set(0, 0, 1).addScaledVector(_e, -_e.z);
+    if (_up.lengthSq() < 1e-9) _up.set(0, 1, 0); else _up.normalize();
+    _rt.crossVectors(_up, _e).normalize();
+
+    var tanHalf = Math.tan(camera.fov * Math.PI / 360);
+    var tanV = tanHalf * band, tanH = tanHalf * aspect;
+    var r = 1;
+    for (var i = 0; i < CLOUD.length; i++) {
+      var d = CLOUD[i], along = d.dot(_e);
+      r = Math.max(r, along + Math.abs(d.dot(_up)) / tanV,
+                      along + Math.abs(d.dot(_rt)) / tanH);
+    }
+    radius = 1.04 * r;
+    camera.far = 2.2 * radius;
+    camera.updateProjectionMatrix();
+  }
+
+  function placeCamera() {
+    computeRadius();
+    var eye = new THREE.Vector3(
+      radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.sin(phi) * Math.sin(theta),
+      radius * Math.cos(phi)
+    );
+    // Screen-up in world terms: camera.up with the view direction projected out.
+    var fwd = eye.clone().negate().normalize();
+    var up = camera.up.clone().addScaledVector(fwd, -camera.up.dot(fwd));
+    if (up.lengthSq() < 1e-9) up.set(0, 1, 0);
+    up.normalize().multiplyScalar(aimShift);
+
+    camera.position.copy(eye).add(up).add(CENTER);
+    var look = up.clone().add(CENTER);
+    camera.lookAt(look.x, look.y, look.z);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.62));
+  var key = new THREE.DirectionalLight(0xffffff, 0.62); key.position.set(5, 3, 6);
+  var fill = new THREE.DirectionalLight(0x9fd8ff, 0.30); fill.position.set(-4, -5, 2);
+  scene.add(key); scene.add(fill);
+
+  // ---------- text sprites (axis and point labels) ----------
+  // Drawn in the book's serif. The webfont may still be loading when the sprites
+  // are first painted, so they are repainted once document.fonts settles.
+  var LABEL_FONT = 'italic 78px "PT Serif", "Times New Roman", Times, serif';
+  var LABELS = [];
+
+  function paintLabel(rec) {
+    var s = 128, cv = document.createElement("canvas");
+    cv.width = cv.height = s;
+    var g = cv.getContext("2d");
+    g.font = LABEL_FONT;
+    g.fillStyle = rec.color;
+    g.textAlign = "center";
+    g.textBaseline = "middle";
+    g.fillText(rec.text, s / 2, s / 2);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.minFilter = THREE.LinearFilter;
+    if (rec.sprite.material.map) rec.sprite.material.map.dispose();
+    rec.sprite.material.map = tex;
+    rec.sprite.material.needsUpdate = true;
+  }
+
+  function makeLabel(text, cssColor, size) {
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({
+      transparent: true, depthTest: false
+    }));
+    var k = size || 0.5;
+    sp.scale.set(k, k, 1);
+    var rec = { sprite: sp, text: text, color: cssColor };
+    LABELS.push(rec);
+    paintLabel(rec);
+    return sp;
+  }
+
+  // ---------- axes, with manim-ish arrow tips ----------
+  (function buildAxes() {
+    var mat = new THREE.LineBasicMaterial({ color: GREY, transparent: true, opacity: 0.55 });
+    var tipMat = new THREE.MeshBasicMaterial({ color: GREY, transparent: true, opacity: 0.75 });
+    var A = RMAX + 0.5;
+    var dirs = [
+      { v: new THREE.Vector3(1, 0, 0), rot: [0, 0, -Math.PI / 2], t: "x", lo: -A,   hi: A },
+      { v: new THREE.Vector3(0, 1, 0), rot: [0, 0, 0],            t: "y", lo: -A,   hi: A },
+      { v: new THREE.Vector3(0, 0, 1), rot: [Math.PI / 2, 0, 0],  t: "z", lo: -0.4, hi: ZTOP + 0.6 }
+    ];
+    dirs.forEach(function (d) {
+      var a = d.v.clone().multiplyScalar(d.lo), b = d.v.clone().multiplyScalar(d.hi);
+      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([a, b]), mat));
+      var tip = new THREE.Mesh(new THREE.ConeGeometry(0.075, 0.24, 14), tipMat);
+      tip.position.copy(b);
+      tip.rotation.set(d.rot[0], d.rot[1], d.rot[2]);
+      scene.add(tip);
+      var lab = makeLabel(d.t, "#9aa0ad");
+      lab.position.copy(d.v.clone().multiplyScalar(d.hi + 0.36));
+      scene.add(lab);
+    });
+  })();
+
+  // ---------- the surface z = 1 + x^2 + y^2 ----------
+  // Built with a checkerboard of BLUE_D / BLUE_E, the way manim shades a Surface.
+  (function buildSurface() {
+    var nu = 72, nv = 26;
+    var pos = [], col = [];
+    var cA = new THREE.Color(BLUE_D), cB = new THREE.Color(BLUE_E);
+
+    function P(i, j) {
+      var r = (RMAX * j) / nv;
+      var t = (2 * Math.PI * i) / nu;
+      return new THREE.Vector3(r * Math.cos(t), r * Math.sin(t), 1 + r * r);
+    }
+    for (var j = 0; j < nv; j++) {
+      for (var i = 0; i < nu; i++) {
+        var a = P(i, j), b = P(i + 1, j), c = P(i + 1, j + 1), d = P(i, j + 1);
+        [a, b, c, a, c, d].forEach(function (p) { pos.push(p.x, p.y, p.z); });
+        var cc = ((i + j) % 2 === 0) ? cA : cB;
+        for (var k = 0; k < 6; k++) col.push(cc.r, cc.g, cc.b);
+      }
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setAttribute("color", new THREE.Float32BufferAttribute(col, 3));
+    geo.computeVertexNormals();
+    scene.add(new THREE.Mesh(geo, new THREE.MeshPhongMaterial({
+      vertexColors: true, transparent: true, opacity: 0.40,
+      side: THREE.DoubleSide, depthWrite: false, shininess: 42
+    })));
+  })();
+
+  // ---------- the vertical plane through P0 in the direction u ----------
+  // A quad standing on the ray t -> (1 + tC, 1 + tC), from the ground to the rim.
+  function ray(t) { return new THREE.Vector3(1 + t * C, 1 + t * C, 0); }
+  (function buildPlane() {
+    var a = ray(T0), b = ray(T1), top = ZTOP + 0.35;
+    var corners = [
+      new THREE.Vector3(a.x, a.y, -0.02), new THREE.Vector3(b.x, b.y, -0.02),
+      new THREE.Vector3(b.x, b.y, top),   new THREE.Vector3(a.x, a.y, top)
+    ];
+    var pos = [];
+    [0, 1, 2, 0, 2, 3].forEach(function (i) {
+      pos.push(corners[i].x, corners[i].y, corners[i].z);
+    });
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.computeVertexNormals();
+    scene.add(new THREE.Mesh(geo, new THREE.MeshPhongMaterial({
+      color: GOLD_C, transparent: true, opacity: 0.12,
+      side: THREE.DoubleSide, depthWrite: false
+    })));
+    var loop = corners.slice();
+    loop.push(corners[0]);
+    scene.add(new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints(loop),
+      new THREE.LineBasicMaterial({ color: GOLD_C, transparent: true, opacity: 0.34 })
+    ));
+  })();
+
+  // ---------- glowing tubes, manim's bright stroke on a dark stage ----------
+  function tube(points, color, r, parent) {
+    if (points.length < 2) return;
+    var curve = new THREE.CatmullRomCurve3(points);
+    var n = Math.max(48, points.length * 2);
+    var host = parent || scene;
+    host.add(new THREE.Mesh(new THREE.TubeGeometry(curve, n, r, 10, false),
+      new THREE.MeshBasicMaterial({ color: color })));
+    host.add(new THREE.Mesh(new THREE.TubeGeometry(curve, n, r * 2.7, 10, false),
+      new THREE.MeshBasicMaterial({
+        color: color, transparent: true, opacity: 0.20,
+        blending: THREE.AdditiveBlending, depthWrite: false
+      })));
+  }
+
+  // ---------- the trace: the surface cut by that plane ----------
+  // Along the ray, f is the single-variable g(t) = 3 + 2*sqrt(2) t + t^2.
+  function g(t) { return 3 + R2 * t + t * t; }
+  (function buildTrace() {
+    var pts = [], M = 180;
+    for (var i = 0; i <= M; i++) {
+      var t = T0 + ((T1 - T0) * i) / M;
+      var p = ray(t);
+      pts.push(new THREE.Vector3(p.x, p.y, g(t)));
+    }
+    tube(pts, GOLD_C, 0.036);
+  })();
+
+  // ---------- the tangent at (1, 1, 3), the target of the limit ----------
+  (function buildTangent() {
+    var dirv = new THREE.Vector3(C, C, R2).normalize();
+    var p0 = new THREE.Vector3(1, 1, 3);
+    tube([p0.clone().addScaledVector(dirv, -1.6), p0.clone().addScaledVector(dirv, 1.6)],
+         GREEN_C, 0.042);
+  })();
+
+  // ---------- the unit vector u, drawn on the ground at P0 ----------
+  (function buildU() {
+    var base = new THREE.Vector3(1, 1, 0.012);
+    var head = new THREE.Vector3(1 + 0.78 * C, 1 + 0.78 * C, 0.012);
+    scene.add(new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([base, head]),
+      new THREE.LineBasicMaterial({ color: YELLOW, transparent: true, opacity: 0.95 })
+    ));
+    var tip = new THREE.Mesh(new THREE.ConeGeometry(0.075, 0.24, 14),
+      new THREE.MeshBasicMaterial({ color: YELLOW }));
+    tip.position.copy(head);
+    tip.rotation.set(Math.PI / 2, 0, -Math.PI / 4);
+    scene.add(tip);
+    var lab = makeLabel("u", "#ffe14d", 0.42);
+    lab.position.set(1 + 1.05 * C, 1 + 1.05 * C, 0.30);
+    scene.add(lab);
+  })();
+
+  // ---------- P0, on the ground and on the surface ----------
+  (function buildP0() {
+    var inkMat = new THREE.MeshBasicMaterial({ color: INK });
+    var top = new THREE.Mesh(new THREE.SphereGeometry(0.075, 18, 18), inkMat);
+    top.position.set(1, 1, 3); scene.add(top);
+    var bot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), inkMat);
+    bot.position.set(1, 1, 0); scene.add(bot);
+    var lab = makeLabel("P₀", "#ece6e2", 0.46);
+    lab.position.set(1 - 0.46, 1 - 0.46, 3.30);
+    scene.add(lab);
+  })();
+
+  // ---------- everything that moves with s ----------
+  var movGroup = new THREE.Group();
+  scene.add(movGroup);
+  var redMat = new THREE.MeshBasicMaterial({ color: RED_C });
+  var pLabel = makeLabel("P", "#fc6255", 0.42);
+  scene.add(pLabel);
+
+  function clearMov() {
+    while (movGroup.children.length) {
+      var m = movGroup.children.pop();
+      if (m.geometry) m.geometry.dispose();
+    }
+  }
+  function dashed(a, b, color) {
+    var l = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([a, b]),
+      new THREE.LineDashedMaterial({
+        color: color, dashSize: 0.14, gapSize: 0.10,
+        transparent: true, opacity: 0.7 })
+    );
+    l.computeLineDistances();
+    movGroup.add(l);
+  }
+
+  var sVal = 0.7;
+  var S_MIN = 0.05, S_MAX = 0.75;
+
+  function updateS() {
+    clearMov();
+    var p = ray(sVal);
+    var Q = new THREE.Vector3(p.x, p.y, g(sVal));
+    var P0 = new THREE.Vector3(1, 1, 3);
+
+    // the moving point, on the surface and on the ground
+    var qs = new THREE.Mesh(new THREE.SphereGeometry(0.075, 18, 18), redMat);
+    qs.position.copy(Q); movGroup.add(qs);
+    var qb = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), redMat);
+    qb.position.set(p.x, p.y, 0); movGroup.add(qb);
+    pLabel.position.set(Q.x + 0.42, Q.y + 0.42, Q.z + 0.30);
+
+    // the two heights, dropped to the ground
+    dashed(new THREE.Vector3(1, 1, 0), P0, 0x8a8f9c);
+    dashed(new THREE.Vector3(p.x, p.y, 0), Q, 0xfc6255);
+
+    // the secant through the two points on the surface, extended a little
+    var dirv = Q.clone().sub(P0).normalize();
+    tube([P0.clone().addScaledVector(dirv, -1.3), Q.clone().addScaledVector(dirv, 0.9)],
+         RED_C, 0.030, movGroup);
+
+    paintReadouts();
+    render();
+  }
+
+  // ---------- readouts ----------
+  var elName = document.getElementById("slopeName"),
+      elSec = document.getElementById("secVal"),
+      elKnob = document.getElementById("barKnob"),
+      elSVal = document.getElementById("sVal");
+
+  function mix(a, b, t) {                       // blend two hex colours
+    var ar = (a >> 16) & 255, ag = (a >> 8) & 255, ab = a & 255;
+    var br = (b >> 16) & 255, bg = (b >> 8) & 255, bb = b & 255;
+    return "rgb(" + Math.round(ar + (br - ar) * t) + "," +
+                    Math.round(ag + (bg - ag) * t) + "," +
+                    Math.round(ab + (bb - ab) * t) + ")";
+  }
+
+  function paintReadouts() {
+    var slope = R2 + sVal;                     // ( f(P) - f(P0) ) / s
+    elName.textContent = "secant slope = " + slope.toFixed(3);
+    // the closer s gets to 0, the more the secant reading takes the tangent's colour
+    elName.style.color = mix(GREEN_C, RED_C, Math.min(1, sVal / S_MAX));
+    elSec.textContent = slope.toFixed(3);
+    // the bar narrows on a phone, so measure it rather than assume its width
+    var barW = elKnob.parentNode.clientWidth || 168;
+    elKnob.style.left = (Math.min(1, sVal / S_MAX) * barW - 1.5) + "px";
+    elSVal.textContent = sVal.toFixed(2);
+    sSlider.value = String(sVal);
+  }
+
+  // ---------- render loop ----------
+  var spinning = false, rafId = null, lastT = 0;
+
+  function render() { renderer.render(scene, camera); }
+
+  function frame(now) {
+    rafId = requestAnimationFrame(frame);
+    var dt = lastT ? Math.min(0.05, (now - lastT) / 1000) : 0;
+    lastT = now;
+    var dirty = false;
+
+    if (spinning || tour.running) {
+      theta += (tour.running ? 0.10 : 0.22) * dt;
+      placeCamera();
+      dirty = true;
+    }
+    if (tween) { stepTween(dt); dirty = true; }   // stepTween redraws the scene itself
+    else if (dirty) render();
+
+    if (!spinning && !tour.running && !tween) { cancelAnimationFrame(rafId); rafId = null; lastT = 0; }
+  }
+  function ensureLoop() { if (rafId === null) { lastT = 0; rafId = requestAnimationFrame(frame); } }
+
+  // ---------- tweening, with manim's smoothstep rate function ----------
+  function smooth(t) { return t * t * t * (t * (t * 6 - 15) + 10); }
+
+  var tween = null;
+  function animateTo(targetS, seconds, done) {
+    tween = { s0: sVal, s1: targetS, t: 0, dur: Math.max(0.01, seconds), done: done };
+    ensureLoop();
+  }
+  function stepTween(dt) {
+    tween.t += dt;
+    var a = smooth(Math.min(1, tween.t / tween.dur));
+    sVal = tween.s0 + (tween.s1 - tween.s0) * a;
+    updateS();
+    if (tween.t >= tween.dur) {
+      sVal = tween.s1;
+      var cb = tween.done;
+      tween = null;
+      updateS();
+      if (cb) cb();
+    }
+  }
+
+  // ---------- the guided tour: a little Scene, played in the browser ----------
+  var elCaption = document.getElementById("caption");
+  function say(text) {
+    elCaption.classList.remove("show");
+    window.setTimeout(function () {
+      elCaption.textContent = text;
+      elCaption.classList.add("show");
+    }, text ? 160 : 0);
+  }
+
+  var STORY = [
+    { say: "The vertical plane through P₀ in the direction u cuts the surface in the gold curve.",
+      s: 0.75, run: 1.2, hold: 1.6 },
+    { say: "P is s units from P₀ along u. The red line joins the two points on that curve: a secant.",
+      s: 0.62, run: 1.4, hold: 1.8 },
+    { say: "Its slope is ( f(P) − f(P₀) ) / s = 2√2 + s — always a little more than 2√2.",
+      s: 0.42, run: 1.6, hold: 1.8 },
+    { say: "Now let s → 0: the secant rotates onto the green tangent line.",
+      s: 0.05, run: 2.4, hold: 1.8 },
+    { say: "Its slope, 2√2, is the directional derivative of f at P₀ in the direction u.",
+      s: 0.05, run: 0.3, hold: 2.0 },
+    { say: "Your turn: drag s, and drag the figure to look from anywhere.",
+      s: 0.7, run: 1.4, hold: 0.9 }
+  ];
+
+  var tour = { running: false, i: 0, timer: null };
+  var btnTour = document.getElementById("btnTour");
+
+  function tourStep() {
+    if (!tour.running) return;
+    if (tour.i >= STORY.length) { stopTour(); return; }
+    var beat = STORY[tour.i++];
+    say(beat.say);
+    animateTo(beat.s, beat.run, function () {
+      if (!tour.running) return;
+      tour.timer = window.setTimeout(tourStep, beat.hold * 1000);
+    });
+  }
+  function startTour() {
+    stopLimit();
+    tour.running = true; tour.i = 0;
+    btnTour.innerHTML = "&#10074;&#10074;&nbsp;Stop";
+    btnTour.classList.add("running");
+    setSlidersEnabled(false);
+    ensureLoop();
+    tourStep();
+  }
+  function stopTour() {
+    tour.running = false;
+    if (tour.timer) { window.clearTimeout(tour.timer); tour.timer = null; }
+    tween = null;
+    btnTour.innerHTML = "&#9654;&nbsp;Play";
+    btnTour.classList.remove("running");
+    setSlidersEnabled(true);
+    say("");
+    updateS();
+  }
+  btnTour.addEventListener("click", function () { tour.running ? stopTour() : startTour(); });
+
+  function setSlidersEnabled(on) {
+    sSlider.disabled = !on;
+    sSlider.style.opacity = on ? "1" : "0.45";
+  }
+
+  // ---------- the s -> 0 limit, on its own ----------
+  var btnLimit = document.getElementById("btnLimit");
+  function stopLimit() {
+    btnLimit.classList.remove("active");
+  }
+  btnLimit.addEventListener("click", function () {
+    if (tour.running) stopTour();
+    if (sVal <= S_MIN + 0.02) { sVal = S_MAX; updateS(); }   // rewind, then run
+    btnLimit.classList.add("active");
+    animateTo(S_MIN, 2.4, stopLimit);
+  });
+
+  // ---------- drag to orbit ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  var el = renderer.domElement;
+  function startDrag(x, y) { dragging = true; lastX = x; lastY = y; }
+  function moveDrag(x, y) {
+    if (!dragging) return;
+    theta -= (x - lastX) * 0.008;
+    phi = Math.min(Math.PI - 0.05, Math.max(0.05, phi - (y - lastY) * 0.008));
+    lastX = x; lastY = y;
+    placeCamera();
+    render();
+  }
+  el.addEventListener("mousedown", function (e) { startDrag(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { moveDrag(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  el.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { startDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  el.addEventListener("touchmove", function (e) {
+    if (e.touches.length === 1) { moveDrag(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // ---------- controls ----------
+  var sSlider = document.getElementById("sSlider");
+  sSlider.addEventListener("input", function () {
+    if (tour.running) stopTour();
+    stopLimit();
+    tween = null;
+    sVal = parseFloat(sSlider.value);
+    updateS();
+  });
+
+  var btnSpin = document.getElementById("btnSpin");
+  btnSpin.addEventListener("click", function () {
+    spinning = !spinning;
+    btnSpin.classList.toggle("active", spinning);
+    if (spinning) ensureLoop();
+  });
+
+  // ---------- what has to fit on screen ----------
+  // Measured from the finished scene rather than guessed, so that every piece of
+  // the picture -- the whole surface patch, the axis tips and their labels, the
+  // tangent, and the secant at its longest -- is inside the frame from any angle.
+  function fitScene() {
+    var pts = [], box = new THREE.Box3();
+    scene.traverse(function (o) {
+      if (o.isSprite) {                          // a sprite is a square billboard
+        var k = 0.5 * o.scale.x;
+        [[k, k], [-k, -k]].forEach(function (dd) {
+          pts.push(new THREE.Vector3(o.position.x + dd[0], o.position.y + dd[0],
+                                     o.position.z + dd[1]));
+        });
+        return;
+      }
+      var at = o.geometry && o.geometry.getAttribute && o.geometry.getAttribute("position");
+      if (!at) return;
+      // a stride keeps the sample small; the surface alone has ~11k vertices
+      var step = Math.max(1, Math.floor(at.count / 400));
+      for (var i = 0; i < at.count; i += step) {
+        pts.push(new THREE.Vector3(at.getX(i), at.getY(i), at.getZ(i)).applyMatrix4(o.matrixWorld));
+      }
+    });
+    if (!pts.length) return;
+    pts.forEach(function (p) { box.expandByPoint(p); });
+    box.getCenter(CENTER);
+    CLOUD = pts.map(function (p) { return p.clone().sub(CENTER); });
+  }
+
+  // ---------- sizing (fills the iframe) ----------
+  // The equation card and the slope readout are drawn over the canvas, so the
+  // picture is framed into the clear band between them rather than into the whole
+  // canvas. That keeps them from colliding on a narrow phone as well as on a wide
+  // screen.
+  function resize() {
+    var w = document.getElementById("app").clientWidth;
+    // the stage is the flex column's leftover space, so it is measured,
+    // not computed: no rounding is left over to make a scrollbar
+    var h = stage.clientHeight;
+
+    var card = document.getElementById("eqcard"), meter = document.getElementById("meter");
+    // Below 560px the card is a strip above the canvas (see the media query), so it
+    // costs canvas height instead of covering the picture.
+    var stacked = window.getComputedStyle(card).position === "static";
+    var cardH = stacked ? card.offsetHeight : 0;
+    var ch = Math.max(120, h - cardH);
+    // size the stage to what it actually holds, so the canvas can never spill over
+    // the control panel and swallow its clicks
+
+    renderer.setSize(w, ch);
+    camera.aspect = w / ch;
+
+    // How much vertical room a floating overlay really costs depends on how far it
+    // reaches across: spanning the width, the picture must clear it entirely;
+    // hugging the left edge of a wide screen, it barely intrudes.
+    var reach = function (e) { return Math.min(1, e.offsetWidth / (0.45 * w)); };
+    var topPad = stacked ? 0 : (card.offsetHeight + 20) * reach(card);
+    var botPad = (meter.offsetHeight + 20) * reach(meter);
+    // leave at least a third of the canvas for the picture, however tall the overlays are
+    band = Math.max(0.34, (ch - topPad - botPad) / ch);
+    aspect = camera.aspect;
+    computeRadius();
+
+    // slide the picture into the middle of that band
+    var tanHalf = Math.tan(camera.fov * Math.PI / 360);
+    aimShift = 0.5 * (topPad - botPad) * (2 * radius * tanHalf) / ch;
+
+    placeCamera();
+    render();
+  }
+  window.addEventListener("resize", resize);
+
+  // ---------- go ----------
+  // Measure the scene with the moving pieces at their furthest reach, so the
+  // frame that holds them there holds them everywhere.
+  var sStart = sVal;
+  sVal = S_MAX; updateS();
+  scene.updateMatrixWorld(true);
+  fitScene();
+  sVal = sStart; updateS();
+  placeCamera();
+  resize();
+
+  // repaint the labels once PT Serif has actually arrived
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      LABELS.forEach(paintLabel);
+      render();
+    });
+  }
+})();
+</script>
+</body>
+</html>

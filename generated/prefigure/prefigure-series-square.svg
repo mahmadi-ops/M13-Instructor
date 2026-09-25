@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-series-square-figure" width="324" height="324" viewBox="0 0 324 324">
+  <defs>
+    <clipPath id="prefigure-series-square-__clipPath-0">
+      <rect x="12.0" y="12.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-series-square-__clipPath-1">
+      <rect x="12.0" y="12.0" width="300.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <path id="prefigure-series-square-sq-half" d="M 28.1 295.9 L 162.0 295.9 L 162.0 28.1 L 28.1 28.1 Z" stroke="black" stroke-width="1.5" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-quarter" d="M 162.0 295.9 L 295.9 295.9 L 295.9 162.0 L 162.0 162.0 Z" stroke="black" stroke-width="1.5" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-eighth" d="M 162.0 162.0 L 229.0 162.0 L 229.0 28.1 L 162.0 28.1 Z" stroke="black" stroke-width="1.5" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-sixteenth" d="M 229.0 162.0 L 295.9 162.0 L 295.9 95.0 L 229.0 95.0 Z" stroke="black" stroke-width="1.5" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-32" d="M 229.0 95.0 L 262.4 95.0 L 262.4 28.1 L 229.0 28.1 Z" stroke="black" stroke-width="1" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-64" d="M 262.4 95.0 L 295.9 95.0 L 295.9 61.6 L 262.4 61.6 Z" stroke="black" stroke-width="1" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-128" d="M 262.4 61.6 L 279.2 61.6 L 279.2 28.1 L 262.4 28.1 Z" stroke="black" stroke-width="1" fill="#BDE3EC"/>
+  <path id="prefigure-series-square-sq-outline" d="M 28.1 295.9 L 295.9 295.9 L 295.9 28.1 L 28.1 28.1 Z" stroke="black" stroke-width="2" fill="none"/>
+  <g id="prefigure-series-square-sq-l2" transform="translate(95.0,162.0) translate(-13.6,-9.0)">
+    <g id="prefigure-series-square-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="27.152px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1500 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-series-square-MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-series-square-MJX-2-TEX-N-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"/>
+          <path id="prefigure-series-square-MJX-2-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="division" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="1 divided by 2">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#prefigure-series-square-MJX-2-TEX-N-31"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(500,0)">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="division" data-semantic-id="1" data-semantic-parent="3" data-semantic-attributes="texclass:ORD" data-semantic-operator="infixop,/" data-semantic-speech="slash">
+                <use data-c="2F" xlink:href="#prefigure-series-square-MJX-2-TEX-N-2F"/>
+              </g>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="2" transform="translate(1000,0)">
+              <use data-c="32" xlink:href="#prefigure-series-square-MJX-2-TEX-N-32"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-series-square-sq-l4" transform="translate(229.0,229.0) translate(-13.6,-9.0)">
+    <g id="prefigure-series-square-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="27.152px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1500 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-series-square-MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-series-square-MJX-3-TEX-N-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"/>
+          <path id="prefigure-series-square-MJX-3-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="division" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="1 divided by 4">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#prefigure-series-square-MJX-3-TEX-N-31"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(500,0)">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="division" data-semantic-id="1" data-semantic-parent="3" data-semantic-attributes="texclass:ORD" data-semantic-operator="infixop,/" data-semantic-speech="slash">
+                <use data-c="2F" xlink:href="#prefigure-series-square-MJX-3-TEX-N-2F"/>
+              </g>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="4" transform="translate(1000,0)">
+              <use data-c="34" xlink:href="#prefigure-series-square-MJX-3-TEX-N-34"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-series-square-sq-l8" transform="translate(195.5,95.0) translate(-13.6,-9.0)">
+    <g id="prefigure-series-square-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="27.152px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1500 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-series-square-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-series-square-MJX-4-TEX-N-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"/>
+          <path id="prefigure-series-square-MJX-4-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="division" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="1 divided by 8">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#prefigure-series-square-MJX-4-TEX-N-31"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(500,0)">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="division" data-semantic-id="1" data-semantic-parent="3" data-semantic-attributes="texclass:ORD" data-semantic-operator="infixop,/" data-semantic-speech="slash">
+                <use data-c="2F" xlink:href="#prefigure-series-square-MJX-4-TEX-N-2F"/>
+              </g>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="8" transform="translate(1000,0)">
+              <use data-c="38" xlink:href="#prefigure-series-square-MJX-4-TEX-N-38"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-series-square-sq-l16" transform="translate(262.4,128.5) translate(-18.1,-9.0)">
+    <g id="prefigure-series-square-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="36.200px" height="18.096px" role="img" focusable="false" viewBox="0 -750 2000 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-series-square-MJX-5-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-series-square-MJX-5-TEX-N-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"/>
+          <path id="prefigure-series-square-MJX-5-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="division" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="1 divided by 16">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#prefigure-series-square-MJX-5-TEX-N-31"/>
+            </g>
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(500,0)">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="division" data-semantic-id="1" data-semantic-parent="3" data-semantic-attributes="texclass:ORD" data-semantic-operator="infixop,/" data-semantic-speech="slash">
+                <use data-c="2F" xlink:href="#prefigure-series-square-MJX-5-TEX-N-2F"/>
+              </g>
+            </g>
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="16" transform="translate(1000,0)">
+              <use data-c="31" xlink:href="#prefigure-series-square-MJX-5-TEX-N-31"/>
+              <use data-c="36" xlink:href="#prefigure-series-square-MJX-5-TEX-N-36" transform="translate(500,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

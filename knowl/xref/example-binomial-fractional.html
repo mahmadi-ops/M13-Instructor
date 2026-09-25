@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The power is not an integer.</span>
+</h2>
+<div class="para">Use binomial series to write the function <span class="process-math">\(f(x) = (x+1)^{\frac12}\)</span> as a series. Compute the five non-zero terms.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-binomial-fractional-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We apply the binomial series <a href="sec-binomial-series.html#eq-binomial-series" class="xref" data-knowl="./knowl/xref/eq-binomial-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.6">(2.4.6)</a> with <span class="process-math">\(m = \frac12\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-binomial-series.html">
+\begin{equation*}
+(1+x)^{\frac12} = 1 + \sum_{k=1}^{\infty} \binom{\frac12}{k} x^k
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-binomial-fractional-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">The coefficients are</div>
+<div class="displaymath process-math">
+\begin{align*}
+\binom{\frac12}{1} \amp = \frac12,\\
+\binom{\frac12}{2} \amp
+= \frac{\frac12\left(\frac12 - 1\right)}{2}
+= \frac{\frac12\left(-\frac12\right)}{2},\\
+\binom{\frac12}{3} \amp
+= \frac{\frac12\left(\frac12 - 1\right)\left(\frac12 - 2\right)}{3!}
+= \frac{\frac12\left(-\frac12\right)\left(-\frac32\right)}{3!},\\
+\binom{\frac12}{4} \amp
+= \frac{\frac12\left(\frac12 - 1\right)\left(\frac12 - 2\right)
+\left(\frac12 - 3\right)}{4!}
+= \frac{\frac12\left(-\frac12\right)\left(-\frac32\right)
+\left(-\frac52\right)}{4!}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-binomial-fractional-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Hence the five non-zero terms are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1+x)^{\frac12}
+= 1 + \sum_{k=1}^{\infty} \binom{\frac12}{k} x^k
+= 1 + \frac12 x - \frac{x^2}{8} + \frac{x^3}{16}
+- \frac{5x^4}{128} + \cdots
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-binomial-fractional-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para">
+<a href="sec-binomial-series.html#fig-binomial-sqrt" class="xref" data-knowl="./knowl/xref/fig-binomial-sqrt.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.6">Figure 2.4.6</a> shows the function <span class="process-math">\(y = \sqrt{1+x}\)</span> together with the partial sums of this series on the interval of convergence <span class="process-math">\(-1 \lt x \lt 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-binomial-fractional-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="image-box" style="width: 78%; margin-left: 11%; margin-right: 11%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/prefigure-binomial-sqrt-diagcess.svg" data-cml="generated/prefigure/prefigure-binomial-sqrt-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The function <span class="process-math">\(y = \sqrt{1+x}\)</span> and the partial sums of its binomial series with two, three, and five terms. On the interval <span class="process-math">\(-1 \lt x \lt 1\)</span> the partial sums approach the function.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.4.6"><a tabindex="-1" href="#fig-binomial-sqrt" title="Copy heading and permalink for Figure 2.4.6" aria-label="Copy heading and permalink for Figure 2.4.6">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 2.4.5.1"><a tabindex="-1" href="#example-binomial-fractional-3" title="Copy heading and permalink for Solution 2.4.5.1" aria-label="Copy heading and permalink for Solution 2.4.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.4.5: The power is not an integer"><a tabindex="-1" href="#example-binomial-fractional" title="Copy heading and permalink for Example 2.4.5: The power is not an integer" aria-label="Copy heading and permalink for Example 2.4.5: The power is not an integer">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="sec-binomial-series.html#example-binomial-fractional">In Context</a></span>
+</body>
+</html>

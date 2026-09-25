@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example I.</span>
+</h2>
+<div class="para">Consider the function <span class="process-math">\(f(x,y) = 1 + x^2 + y^2\text{,}\)</span> the point <span class="process-math">\(P_0(1,1)\text{,}\)</span> and the unit vector <span class="process-math">\(\hat{u} = \dfrac{1}{\sqrt 2}\hat{\imath} + \dfrac{1}{\sqrt 2}\hat{\jmath}\text{.}\)</span> Use the definition of directional derivative to compute <span class="process-math">\(\left(D_{\hat{u}} f\right)_{P_0}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-dirderiv-definition-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We substitute <span class="process-math">\(x_0 = y_0 = 1\)</span> and <span class="process-math">\(u_1 = u_2 = \dfrac{1}{\sqrt 2}\)</span> in the definition:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\left(\frac{df}{ds}\right)_{\hat{u},P_0}
+\amp= \lim_{s\to 0}\frac{f(x_0 + su_1,\, y_0 + su_2) - f(x_0,y_0)}{s}\\
+\amp= \lim_{s\to 0}
+\frac{f\!\left(1 + \tfrac{s}{\sqrt 2},\, 1 + \tfrac{s}{\sqrt 2}\right) - f(1,1)}{s}\\
+\amp= \lim_{s\to 0}
+\frac{1 + \left(1 + \tfrac{s}{\sqrt 2}\right)^2
++ \left(1 + \tfrac{s}{\sqrt 2}\right)^2 - 3}{s}\\
+\amp= \lim_{s\to 0}\frac{\tfrac{4s}{\sqrt 2} + s^2}{s} = \lim_{s\to 0}\left(\tfrac{4}{\sqrt 2} + s\right)\\
+\amp= 2\sqrt 2.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-dirderiv-definition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">The computation has a useful geometric picture, illustrated in the interactive 3D figure below. Along the ray through <span class="process-math">\(P_0(1,1)\)</span> in the direction <span class="process-math">\(\hat{u}\text{,}\)</span> the values of <span class="process-math">\(f\)</span> are the single-variable function</div>
+<div class="displaymath process-math">
+\begin{align}
+g(s) \amp= f\!\left(1 + \tfrac{s}{\sqrt 2},\, 1 + \tfrac{s}{\sqrt 2}\right)\notag\\
+\amp= 3 + 2\sqrt 2\, s + s^2,\tag{4.5.2}
+\end{align}
+</div>
+<div class="para">and the difference quotient in the limit above is the slope of the secant line of <span class="process-math">\(g\)</span> through <span class="process-math">\(s = 0\)</span> and <span class="process-math">\(s\text{.}\)</span> As <span class="process-math">\(s \to 0\)</span> the secant lines approach the tangent line at <span class="process-math">\(s = 0\text{,}\)</span> whose slope is <span class="process-math">\(g'(0) = 2\sqrt 2 = \left(D_{\hat{u}} f\right)_{P_0}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-dirderiv-definition-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="interactive-iframe-container"><iframe src="external/dirderiv-secant-3d-manim.html" id="interactive-dirderiv-secant-3d-manim" style="width:600px; height:600px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-dirderiv-secant-3d-manim.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="instructions interactive__instructions">
+<details id="interactive-dirderiv-secant-3d-manim-1" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5></summary>
+<div class="solution-like knowl__content">
+<div class="para" id="interactive-dirderiv-secant-3d-manim-1-1">Press “Play” to watch the whole construction in one continuous motion: the vertical plane through <span class="process-math">\(P_0(1,1)\)</span> in the direction <span class="process-math">\(\hat{u}\)</span> cuts the surface <span class="process-math">\(z = 1 + x^2 + y^2\)</span> in the gold curve, the red secant joins <span class="process-math">\((P_0, f(P_0))\)</span> to <span class="process-math">\((P, f(P))\text{,}\)</span> and as <span class="process-math">\(s \to 0\)</span> that secant rotates onto the green tangent line. The reading at the lower left compares the secant slope <span class="process-math">\(2\sqrt 2 + s\)</span> with the tangent slope <span class="process-math">\(2\sqrt 2\text{,}\)</span> which is the directional derivative <span class="process-math">\(\left(D_{\hat{u}} f\right)_{P_0}\text{.}\)</span> Stop the animation at any time and drag the <span class="process-math">\(s\)</span> slider yourself, or press “s <span class="process-math">\(\to\)</span> 0” to replay just the limit. Drag the figure to change the viewpoint, or press “Spin” to let it turn.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#interactive-dirderiv-secant-3d-manim-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#interactive-dirderiv-secant-3d-manim-1" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The secant through <span class="process-math">\((P_0, f(P_0))\)</span> and <span class="process-math">\((P, f(P))\)</span> on the surface <span class="process-math">\(z = 1 + x^2 + y^2\text{,}\)</span> rotating onto the tangent line at <span class="process-math">\(P_0\)</span> as <span class="process-math">\(s \to 0\text{,}\)</span> with slope <span class="process-math">\(2\sqrt2 + s \to 2\sqrt2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 4.5.7"><a tabindex="-1" href="#fig-int-dirderiv-secant-3d-manim" title="Copy heading and permalink for Figure 4.5.7" aria-label="Copy heading and permalink for Figure 4.5.7">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 4.5.6.1"><a tabindex="-1" href="#example-dirderiv-definition-3" title="Copy heading and permalink for Solution 4.5.6.1" aria-label="Copy heading and permalink for Solution 4.5.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.5.6: Example I"><a tabindex="-1" href="#example-dirderiv-definition" title="Copy heading and permalink for Example 4.5.6: Example I" aria-label="Copy heading and permalink for Example 4.5.6: Example I">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="sec-dirderiv-definition.html#example-dirderiv-definition">In Context</a></span>
+</body>
+</html>

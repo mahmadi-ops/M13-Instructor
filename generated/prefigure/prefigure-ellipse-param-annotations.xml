@@ -1,0 +1,97 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-ellipse-param-figure" speech2="A coordinate grid showing an ellipse centered at the origin with horizontal semi axis 2 and vertical semi axis 3, traced by x equals 2 cosine t and y equals 3 sine t. Four points at t equals 0, pi over 2, pi, and 3 pi over 2 are marked in red.">
+      <grouped>prefigure-ellipse-param-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-ellipse-param-grid-axes</active>
+        <active>prefigure-ellipse-param-el-grid</active>
+        <active>prefigure-ellipse-param-el-curve</active>
+        <active>prefigure-ellipse-param-el-mark-0</active>
+        <active>prefigure-ellipse-param-el-mark-half-pi</active>
+        <active>prefigure-ellipse-param-el-mark-pi</active>
+        <active>prefigure-ellipse-param-el-mark-3half-pi</active>
+      </children>
+      <components>
+        <active>prefigure-ellipse-param-grid-axes</active>
+        <active>prefigure-ellipse-param-el-grid</active>
+        <active>prefigure-ellipse-param-el-curve</active>
+        <active>prefigure-ellipse-param-el-mark-0</active>
+        <active>prefigure-ellipse-param-el-mark-half-pi</active>
+        <active>prefigure-ellipse-param-el-mark-pi</active>
+        <active>prefigure-ellipse-param-el-mark-3half-pi</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-ellipse-param-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-ellipse-param-grid</active>
+        <active>prefigure-ellipse-param-axes</active>
+      </children>
+      <components>
+        <active>prefigure-ellipse-param-grid</active>
+        <active>prefigure-ellipse-param-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-grid" speech2="The coordinate grid">
+      <active>prefigure-ellipse-param-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-axes" speech2="The coordinate axes">
+      <active>prefigure-ellipse-param-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-el-grid" speech2="A coordinate grid with x and y axes.">
+      <active>prefigure-ellipse-param-el-grid</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-el-curve" speech2="The ellipse, drawn in blue, traced counterclockwise as t increases from 0 to 2 pi.">
+      <active>prefigure-ellipse-param-el-curve</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-el-mark-0" speech2="The point 2 comma 0, where t equals 0.">
+      <active>prefigure-ellipse-param-el-mark-0</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-el-mark-half-pi" speech2="The point 0 comma 3, at the top of the ellipse, where t equals pi over 2.">
+      <active>prefigure-ellipse-param-el-mark-half-pi</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-el-mark-pi" speech2="The point negative 2 comma 0, where t equals pi.">
+      <active>prefigure-ellipse-param-el-mark-pi</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-ellipse-param-el-mark-3half-pi" speech2="The point 0 comma negative 3, at the bottom of the ellipse, where t equals 3 pi over 2.">
+      <active>prefigure-ellipse-param-el-mark-3half-pi</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-ellipse-param-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

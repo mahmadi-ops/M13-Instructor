@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-law-of-cosines-figure" speech2="A triangle formed by the vectors u, v, and w, where w equals u minus v. The vectors u and v are drawn tail to tail from the origin, and w connects the tip of v to the tip of u. The angle theta lies between u and v at the origin.">
+      <grouped>prefigure-law-of-cosines-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-law-of-cosines-vec-u</active>
+        <active>prefigure-law-of-cosines-vec-v</active>
+        <active>prefigure-law-of-cosines-vec-w</active>
+        <active>prefigure-law-of-cosines-angle-theta</active>
+      </children>
+      <components>
+        <active>prefigure-law-of-cosines-vec-u</active>
+        <active>prefigure-law-of-cosines-vec-v</active>
+        <active>prefigure-law-of-cosines-vec-w</active>
+        <active>prefigure-law-of-cosines-angle-theta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-law-of-cosines-vec-u" speech2="Vector u, drawn from the origin.">
+      <active>prefigure-law-of-cosines-vec-u</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-law-of-cosines-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-law-of-cosines-vec-v" speech2="Vector v, drawn from the origin.">
+      <active>prefigure-law-of-cosines-vec-v</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-law-of-cosines-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-law-of-cosines-vec-w" speech2="Vector w, equal to u minus v, drawn from the tip of v to the tip of u.">
+      <active>prefigure-law-of-cosines-vec-w</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-law-of-cosines-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-law-of-cosines-angle-theta" speech2="The angle theta between u and v, located at the origin.">
+      <active>prefigure-law-of-cosines-angle-theta</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-law-of-cosines-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

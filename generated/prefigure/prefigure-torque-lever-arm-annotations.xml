@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-torque-lever-arm-figure" speech2="The axis of rotation passes through the point O, perpendicular to the page, and the force F is applied at the point P at the head of the position vector r. The line along which the force acts is extended backwards past P as a dashed line, and it passes below O. The perpendicular segment from O to that line is the lever arm r perpendicular, whose length is the length of r times the sine of theta. The torque is the length of the force times this lever arm.">
+      <grouped>prefigure-torque-lever-arm-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-torque-lever-arm-la-r</active>
+        <active>prefigure-torque-lever-arm-la-F</active>
+        <active>prefigure-torque-lever-arm-la-action</active>
+        <active>prefigure-torque-lever-arm-la-lever</active>
+        <active>prefigure-torque-lever-arm-la-right</active>
+        <active>prefigure-torque-lever-arm-la-theta</active>
+      </children>
+      <components>
+        <active>prefigure-torque-lever-arm-la-r</active>
+        <active>prefigure-torque-lever-arm-la-F</active>
+        <active>prefigure-torque-lever-arm-la-action</active>
+        <active>prefigure-torque-lever-arm-la-lever</active>
+        <active>prefigure-torque-lever-arm-la-right</active>
+        <active>prefigure-torque-lever-arm-la-theta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-torque-lever-arm-la-r" speech2="The position vector r, drawn from the axis at O to the point of application P.">
+      <active>prefigure-torque-lever-arm-la-r</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-torque-lever-arm-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-lever-arm-la-F" speech2="The force F, drawn from P, making an angle theta with the direction of r.">
+      <active>prefigure-torque-lever-arm-la-F</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-torque-lever-arm-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-lever-arm-la-action" speech2="The dashed line along which the force acts, extended in both directions past P.">
+      <active>prefigure-torque-lever-arm-la-action</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-torque-lever-arm-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-lever-arm-la-lever" speech2="The lever arm, the perpendicular segment from the axis at O to the line of action of the force.">
+      <active>prefigure-torque-lever-arm-la-lever</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-torque-lever-arm-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-lever-arm-la-right" speech2="A right angle, showing that the lever arm meets the line of action perpendicularly.">
+      <active>prefigure-torque-lever-arm-la-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-torque-lever-arm-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-torque-lever-arm-la-theta" speech2="The angle theta at P, between the direction of r and the force F.">
+      <active>prefigure-torque-lever-arm-la-theta</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-torque-lever-arm-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

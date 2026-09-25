@@ -1,0 +1,67 @@
+<diagram>
+  <annotations>
+    <annotation id="dipole-field-exact" speech2="The axial electric field of a dipole as a function of distance r. The exact field, E equals the constant times q over r squared minus q over quantity r plus d squared, is shown together with its leading Taylor term for d much less than r, which is 2 q d over 4 pi epsilon naught r cubed and is proportional to d over r cubed. The two curves separate at small r but converge as r grows, showing that the leading term captures the far-field behavior">
+      <grouped>dipole-field-exact</grouped>
+      <position>1</position>
+      <children>
+        <active>dipole-field-grid-axes</active>
+        <active>dipole-field-exact</active>
+        <active>dipole-field-lead</active>
+      </children>
+      <components>
+        <active>dipole-field-grid-axes</active>
+        <active>dipole-field-exact</active>
+        <active>dipole-field-lead</active>
+      </components>
+    </annotation>
+    <annotation id="dipole-field-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>dipole-field-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>dipole-field-grid</active>
+        <active>dipole-field-axes</active>
+      </children>
+      <components>
+        <active>dipole-field-grid</active>
+        <active>dipole-field-axes</active>
+      </components>
+      <parents>
+        <grouped>dipole-field-exact</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-field-grid" speech2="The coordinate grid">
+      <active>dipole-field-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>dipole-field-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-field-axes" speech2="The coordinate axes">
+      <active>dipole-field-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>dipole-field-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-field-exact" speech2="The exact dipole field, decreasing with distance" sonify="yes">
+      <active>dipole-field-exact</active>
+      <position>2</position>
+      <parents>
+        <grouped>dipole-field-exact</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>dipole-field-exact</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="dipole-field-lead" speech2="The leading Taylor term, proportional to d over r cubed, which overshoots slightly but approaches the exact field for large r" sonify="yes">
+      <active>dipole-field-lead</active>
+      <position>3</position>
+      <parents>
+        <grouped>dipole-field-exact</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>dipole-field-lead</ACTIVE>
+      </sonification>
+    </annotation>
+  </annotations>
+</diagram>

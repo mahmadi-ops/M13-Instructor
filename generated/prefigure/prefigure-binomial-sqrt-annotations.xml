@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-binomial-sqrt-figure" speech2="The curve y equals the square root of one plus x, drawn as a dashed black line on the interval from negative one to one, together with three partial sums of its binomial series: the linear approximation in orange, the quadratic in blue, and the five term partial sum in green. All curves pass through zero comma one, and the five term sum is nearly indistinguishable from the function across the interval.">
+      <grouped>prefigure-binomial-sqrt-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-binomial-sqrt-grid-axes</active>
+        <active>prefigure-binomial-sqrt-bs-f</active>
+        <active>prefigure-binomial-sqrt-bs-q1</active>
+        <active>prefigure-binomial-sqrt-bs-q2</active>
+        <active>prefigure-binomial-sqrt-bs-q4</active>
+      </children>
+      <components>
+        <active>prefigure-binomial-sqrt-grid-axes</active>
+        <active>prefigure-binomial-sqrt-bs-f</active>
+        <active>prefigure-binomial-sqrt-bs-q1</active>
+        <active>prefigure-binomial-sqrt-bs-q2</active>
+        <active>prefigure-binomial-sqrt-bs-q4</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-binomial-sqrt-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-binomial-sqrt-grid</active>
+        <active>prefigure-binomial-sqrt-axes</active>
+      </children>
+      <components>
+        <active>prefigure-binomial-sqrt-grid</active>
+        <active>prefigure-binomial-sqrt-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-grid" speech2="The coordinate grid">
+      <active>prefigure-binomial-sqrt-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-axes" speech2="The coordinate axes">
+      <active>prefigure-binomial-sqrt-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-bs-f" speech2="The function y equals the square root of one plus x, dashed black.">
+      <active>prefigure-binomial-sqrt-bs-f</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-bs-q1" speech2="The two term partial sum, one plus x over two.">
+      <active>prefigure-binomial-sqrt-bs-q1</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-bs-q2" speech2="The three term partial sum, which adds the quadratic correction.">
+      <active>prefigure-binomial-sqrt-bs-q2</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-sqrt-bs-q4" speech2="The five term partial sum, which is very close to the function on the whole interval.">
+      <active>prefigure-binomial-sqrt-bs-q4</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-binomial-sqrt-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

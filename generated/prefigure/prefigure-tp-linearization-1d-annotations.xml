@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-tp-linearization-1d-figure" speech2="The graph of a function y equals f of x and its tangent line at the point x0.">
+      <grouped>prefigure-tp-linearization-1d-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-tp-linearization-1d-lz-curve</active>
+        <active>prefigure-tp-linearization-1d-lz-tangent</active>
+        <active>prefigure-tp-linearization-1d-lz-P0</active>
+      </children>
+      <components>
+        <active>prefigure-tp-linearization-1d-lz-curve</active>
+        <active>prefigure-tp-linearization-1d-lz-tangent</active>
+        <active>prefigure-tp-linearization-1d-lz-P0</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-tp-linearization-1d-lz-curve" speech2="The graph of the function y equals f of x.">
+      <active>prefigure-tp-linearization-1d-lz-curve</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-tp-linearization-1d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-linearization-1d-lz-tangent" speech2="The tangent line to the graph at the point P0, given by L of x equals f of x0 plus f prime of x0 times x minus x0.">
+      <active>prefigure-tp-linearization-1d-lz-tangent</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-tp-linearization-1d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-linearization-1d-lz-P0" speech2="The point P0 with coordinates x0, f of x0, where the tangent line touches the curve.">
+      <active>prefigure-tp-linearization-1d-lz-P0</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-tp-linearization-1d-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

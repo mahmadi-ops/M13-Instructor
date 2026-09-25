@@ -1,0 +1,88 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-vec-add-sub-figure" speech2="A coordinate grid with several vectors from the origin. Blue u goes to 1 comma 1, dark red v goes to negative 1 comma 2, and green negative v goes to 1 comma negative 2. The amber vector u plus v goes straight up to 0 comma 3 and is the diagonal of the parallelogram formed by u and v. The black vector u minus v goes to 2 comma negative 1 and is the diagonal of the parallelogram formed by u and negative v.">
+      <grouped>prefigure-vec-add-sub-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-add-sub-grid-axes</active>
+        <active>prefigure-vec-add-sub-as-u</active>
+        <active>prefigure-vec-add-sub-as-v</active>
+        <active>prefigure-vec-add-sub-as-mv</active>
+        <active>prefigure-vec-add-sub-as-sum</active>
+        <active>prefigure-vec-add-sub-as-diff</active>
+      </children>
+      <components>
+        <active>prefigure-vec-add-sub-grid-axes</active>
+        <active>prefigure-vec-add-sub-as-u</active>
+        <active>prefigure-vec-add-sub-as-v</active>
+        <active>prefigure-vec-add-sub-as-mv</active>
+        <active>prefigure-vec-add-sub-as-sum</active>
+        <active>prefigure-vec-add-sub-as-diff</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-vec-add-sub-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-add-sub-grid</active>
+        <active>prefigure-vec-add-sub-axes</active>
+      </children>
+      <components>
+        <active>prefigure-vec-add-sub-grid</active>
+        <active>prefigure-vec-add-sub-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-vec-add-sub-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-grid" speech2="The coordinate grid">
+      <active>prefigure-vec-add-sub-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-axes" speech2="The coordinate axes">
+      <active>prefigure-vec-add-sub-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-as-u" speech2="The vector u equals 1 comma 1.">
+      <active>prefigure-vec-add-sub-as-u</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-as-v" speech2="The vector v equals negative 1 comma 2.">
+      <active>prefigure-vec-add-sub-as-v</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-as-mv" speech2="The vector negative v equals 1 comma negative 2, the same length as v but reversed.">
+      <active>prefigure-vec-add-sub-as-mv</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-as-sum" speech2="The sum u plus v equals 0 comma 3, drawn in amber.">
+      <active>prefigure-vec-add-sub-as-sum</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-add-sub-as-diff" speech2="The difference u minus v equals 2 comma negative 1, found by adding negative v to u.">
+      <active>prefigure-vec-add-sub-as-diff</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-vec-add-sub-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

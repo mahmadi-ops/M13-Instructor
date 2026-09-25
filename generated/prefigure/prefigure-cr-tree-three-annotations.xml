@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cr-tree-three-figure" speech2="A tree diagram with w equals f of x y z at the top, three intermediate nodes x, y and z in a row below it, and the single node t at the bottom. Dashed blue branches connect w to each of the three intermediate variables and each of those down to t, giving three complete paths.">
+      <grouped>prefigure-cr-tree-three-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cr-tree-three-t3-w</active>
+        <active>prefigure-cr-tree-three-t3-y</active>
+        <active>prefigure-cr-tree-three-t3-t</active>
+      </children>
+      <components>
+        <active>prefigure-cr-tree-three-t3-w</active>
+        <active>prefigure-cr-tree-three-t3-y</active>
+        <active>prefigure-cr-tree-three-t3-t</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cr-tree-three-t3-w" speech2="The dependent variable w at the top.">
+      <active>prefigure-cr-tree-three-t3-w</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cr-tree-three-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-three-t3-y" speech2="The middle intermediate variable y, on the vertical branch.">
+      <active>prefigure-cr-tree-three-t3-y</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cr-tree-three-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-three-t3-t" speech2="The independent variable t at the bottom. Because three separate paths lead from w to t, the chain rule has three terms.">
+      <active>prefigure-cr-tree-three-t3-t</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cr-tree-three-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

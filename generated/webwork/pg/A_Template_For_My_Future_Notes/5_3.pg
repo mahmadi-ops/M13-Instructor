@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-06-26T16:27:56Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+    Context("Numeric");
+$a = random(1,4);
+$b = random(5,10);
+$c = random(1,10);
+Context()->variables->are(x=>"Real",y=>"Real");
+$constraint = Formula("$a*x^2+$b*y^2")->reduce();
+$LM1 = Compute(2*$a);
+$LM2 = Compute(2*$b);
+$ans = Compute("(2*$c)/(($a*$b)^(1/2))")->reduce();
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the maximum area of a rectangle which is inscribed in [`[$constraint]=[$c]\text{.}`]
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The area of the rectangle is [`f(x,y)=4xy`] and the constraint is [`g(x,y)=[$constraint]-[$c]=0\text{.}`] Due to the Lagrange Multiplier method, we have [`\vec{\nabla f}=\lambda \vec{\nabla g}\text{,}`] which gives the following vector equation:
+
+[```\langle 4y, 4x\rangle=\lambda \langle [$LM1] x, [$LM2] y\rangle\text{.}```]
+
+This vector equation is equivalent to these two scalar equations:
+
+[```4y=[$LM1]\lambda x\text{,}```]
+
+[```4x=[$LM2]\lambda y\text{.}```]
+
+We divide the above equations:
+
+[```\newcommand{\R}{\mathbb{R}}\frac{4y}{4x}=\frac{[$LM1] \lambda x}{[$LM2] \lambda y} 
+\Rightarrow \frac{y}{x}=\frac{[$LM1] x}{[$LM2] y} \Rightarrow y^2=\frac{[$a]}{[$b]} x^2\text{.}```]
+
+Then, we replace this equation into [`g(x,y)=[$constraint]-[$c]=0`] to get [`[$a]x^2+[$a]x^2=[$c]\text{.}`] Hence, [`x=\sqrt{\frac{[$c]}{[$LM1]}}`] and [`y=\sqrt{\frac{[$c]}{[$LM2]}}`] and the maximum area is [`4\left(\sqrt{\frac{[$c]}{[$LM1]}}\right)\left(\sqrt{\frac{[$c]}{[$LM2]}}\right)=[$ans]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

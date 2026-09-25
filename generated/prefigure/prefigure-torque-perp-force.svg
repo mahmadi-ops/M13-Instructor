@@ -1,0 +1,377 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-torque-perp-force-figure" width="346" height="316" viewBox="0 0 346 316">
+  <defs>
+    <clipPath id="prefigure-torque-perp-force-__clipPath-0">
+      <rect x="8.0" y="8.0" width="330.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-torque-perp-force-__clipPath-1">
+      <rect x="8.0" y="8.0" width="330.0" height="300.0"/>
+    </clipPath>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-2_None_24_60-h0072B2" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#0072B2" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-2_None_24_60-h0072B2-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-2_None_24_60-h666666" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#666666" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-2_None_24_60-h666666-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-3_None_24_60-h009E73" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="#009E73" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-3_None_24_60-h009E73-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-2_None_24_60-hD55E00" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="#D55E00" stroke="none"/>
+    </marker>
+    <marker id="prefigure-torque-perp-force-arrow-head-end-2_None_24_60-hD55E00-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <line id="prefigure-torque-perp-force-fp-boxv" x1="294.2" y1="136.3" x2="294.2" y2="43.7" stroke="#999999" stroke-width="1.2" stroke-dasharray="3 4" fill="none"/>
+  <line id="prefigure-torque-perp-force-fp-boxh" x1="229.4" y1="43.7" x2="294.2" y2="43.7" stroke="#999999" stroke-width="1.2" stroke-dasharray="3 4" fill="none"/>
+  <path id="prefigure-torque-perp-force-fp-r" stroke="#0072B2" stroke-width="2" fill="none" marker-end="url(#prefigure-torque-perp-force-arrow-head-end-2_None_24_60-h0072B2)" d="M 55.8 136.3 L 227.0 136.3"/>
+  <path id="prefigure-torque-perp-force-fp-Fpar" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#prefigure-torque-perp-force-arrow-head-end-2_None_24_60-h666666)" d="M 229.4 136.3 L 291.7 136.3"/>
+  <path id="prefigure-torque-perp-force-fp-Fperp" stroke="#009E73" stroke-width="3" fill="none" marker-end="url(#prefigure-torque-perp-force-arrow-head-end-3_None_24_60-h009E73)" d="M 229.4 136.3 L 229.4 47.3"/>
+  <path id="prefigure-torque-perp-force-fp-F" stroke="#D55E00" stroke-width="2" fill="none" marker-end="url(#prefigure-torque-perp-force-arrow-head-end-2_None_24_60-hD55E00)" d="M 229.4 136.3 L 292.8 45.7"/>
+  <g id="prefigure-torque-perp-force-fp-theta">
+    <g transform="translate(260.1,118.4) translate(0.0,-12.9)">
+      <g id="prefigure-torque-perp-force-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="8.488px" height="12.944px" role="img" focusable="false" viewBox="0 -705 469 715" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-torque-perp-force-MJX-2-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="theta">
+                <use data-c="1D703" xlink:href="#prefigure-torque-perp-force-MJX-2-TEX-I-1D703"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="2" fill="none" d="M 246.6 111.7 L 246.9 111.8 L 247.1 112.0 L 247.3 112.2 L 247.6 112.4 L 247.8 112.5 L 248.0 112.7 L 248.2 112.9 L 248.5 113.1 L 248.7 113.2 L 248.9 113.4 L 249.1 113.6 L 249.4 113.8 L 249.6 114.0 L 249.8 114.2 L 250.0 114.4 L 250.2 114.6 L 250.4 114.8 L 250.6 115.0 L 250.8 115.2 L 251.0 115.4 L 251.2 115.6 L 251.4 115.8 L 251.6 116.0 L 251.8 116.3 L 252.0 116.5 L 252.2 116.7 L 252.4 116.9 L 252.6 117.1 L 252.7 117.3 L 252.9 117.6 L 253.1 117.8 L 253.3 118.0 L 253.4 118.3 L 253.6 118.5 L 253.8 118.7 L 254.0 119.0 L 254.1 119.2 L 254.3 119.4 L 254.4 119.7 L 254.6 119.9 L 254.8 120.2 L 254.9 120.4 L 255.1 120.6 L 255.2 120.9 L 255.4 121.1 L 255.5 121.4 L 255.6 121.6 L 255.8 121.9 L 255.9 122.1 L 256.1 122.4 L 256.2 122.7 L 256.3 122.9 L 256.4 123.2 L 256.6 123.4 L 256.7 123.7 L 256.8 124.0 L 256.9 124.2 L 257.0 124.5 L 257.2 124.7 L 257.3 125.0 L 257.4 125.3 L 257.5 125.6 L 257.6 125.8 L 257.7 126.1 L 257.8 126.4 L 257.9 126.6 L 258.0 126.9 L 258.0 127.2 L 258.1 127.5 L 258.2 127.7 L 258.3 128.0 L 258.4 128.3 L 258.4 128.6 L 258.5 128.8 L 258.6 129.1 L 258.7 129.4 L 258.7 129.7 L 258.8 130.0 L 258.8 130.2 L 258.9 130.5 L 258.9 130.8 L 259.0 131.1 L 259.0 131.4 L 259.1 131.7 L 259.1 132.0 L 259.2 132.2 L 259.2 132.5 L 259.2 132.8 L 259.3 133.1 L 259.3 133.4 L 259.3 133.7 L 259.4 134.0 L 259.4 134.2 L 259.4 134.5 L 259.4 134.8 L 259.4 135.1 L 259.4 135.4 L 259.4 135.7 L 259.4 136.0 L 259.4 136.3"/>
+  </g>
+  <path id="prefigure-torque-perp-force-fp-right" stroke="#009E73" stroke-width="2" fill="none" d="M 242.4 136.3 L 242.4 123.3 L 229.4 123.3"/>
+  <circle id="prefigure-torque-perp-force-fp-O" cx="55.8" cy="136.3" r="4" stroke="black" stroke-width="2" fill="black"/>
+  <circle id="prefigure-torque-perp-force-fp-P" cx="229.4" cy="136.3" r="4" stroke="black" stroke-width="2" fill="black"/>
+  <g id="prefigure-torque-perp-force-fp-Ol" transform="translate(46.6,144.6) translate(-13.8,-0.0)">
+    <g id="prefigure-torque-perp-force-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="13.808px" height="13.144px" role="img" focusable="false" viewBox="0 -704 763 726" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-3-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper O">
+              <use data-c="1D442" xlink:href="#prefigure-torque-perp-force-MJX-3-TEX-I-1D442"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-Pl" transform="translate(222.8,144.6) translate(-13.6,-0.0)">
+    <g id="prefigure-torque-perp-force-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.592px" height="12.360px" role="img" focusable="false" viewBox="0 -683 751 683" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-4-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper P">
+              <use data-c="1D443" xlink:href="#prefigure-torque-perp-force-MJX-4-TEX-I-1D443"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-rl" transform="translate(142.6,128.8) translate(-4.1,-21.4)">
+    <g id="prefigure-torque-perp-force-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px; color:#0072B2" width="8.160px" height="21.360px" role="img" focusable="false" viewBox="0 -1169 451 1180" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-5-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-torque-perp-force-MJX-5-TEX-N-2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="ModifyingAbove r With right arrow">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="r" data-semantic-prefix="Base">
+                <use data-c="1D45F" xlink:href="#prefigure-torque-perp-force-MJX-5-TEX-I-1D45F"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(281.1,558) translate(-500 0)">
+                <use data-c="2192" xlink:href="#prefigure-torque-perp-force-MJX-5-TEX-N-2192"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-Fl" transform="translate(300.8,36.6) translate(0.0,-25.5)">
+    <g id="prefigure-torque-perp-force-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#D55E00" width="13.560px" height="25.464px" role="img" focusable="false" viewBox="0 -1407 749 1407" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-6-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
+          <path id="prefigure-torque-perp-force-MJX-6-TEX-N-2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="ModifyingAbove upper F With right arrow">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-6-TEX-I-1D439"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(484.3,796) translate(-500 0)">
+                <use data-c="2192" xlink:href="#prefigure-torque-perp-force-MJX-6-TEX-N-2192"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-Fperpl" transform="translate(221.1,86.3) translate(-23.1,-7.5)">
+    <g id="prefigure-torque-perp-force-__g-5">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px; color:#009E73" width="23.096px" height="15.024px" role="img" focusable="false" viewBox="0 -680 1276.1 830" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-7-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
+          <path id="prefigure-torque-perp-force-MJX-7-TEX-N-22A5" d="M369 652Q369 653 370 655T372 658T375 662T379 665T384 667T391 668Q402 666 409 653V40H708Q723 32 723 20T708 0H71Q70 0 67 2T59 9T55 20T59 31T66 38T71 40H369V652Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="upper F Subscript up tack">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-7-TEX-I-1D439"/>
+              </g>
+              <g data-mml-node="mo" transform="translate(676,-150) scale(0.707)" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="up tack" data-semantic-prefix="Subscript">
+                <use data-c="22A5" xlink:href="#prefigure-torque-perp-force-MJX-7-TEX-N-22A5"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-Fparl" transform="translate(262.0,145.5) translate(-9.8,-0.0)">
+    <g id="prefigure-torque-perp-force-__g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.400px; color:#666666" width="19.536px" height="18.704px" role="img" focusable="false" viewBox="0 -680 1079.6 1033.5" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-8-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
+          <path id="prefigure-torque-perp-force-MJX-8-TEX-N-2225" d="M133 736Q138 750 153 750Q164 750 170 739Q172 735 172 250T170 -239Q164 -250 152 -250Q144 -250 138 -244L137 -243Q133 -241 133 -179T132 250Q132 731 133 736ZM329 739Q334 750 346 750Q353 750 361 744L362 743Q366 741 366 679T367 250T367 -178T362 -243L361 -244Q355 -250 347 -250Q335 -250 329 -239Q327 -235 327 250T329 739Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="upper F Subscript parallel to">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-8-TEX-I-1D439"/>
+              </g>
+              <g data-mml-node="mo" transform="translate(676,-176.7) scale(0.707)" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="parallel to" data-semantic-prefix="Subscript">
+                <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-8-TEX-N-2225"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-note" transform="translate(175.2,221.0) translate(-92.6,-9.5)">
+    <g id="prefigure-torque-perp-force-__g-7">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.400px; color:#666666" width="185.184px" height="18.960px" role="img" focusable="false" viewBox="0 -694 10231.6 1047.5" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-2225" d="M133 736Q138 750 153 750Q164 750 170 739Q172 735 172 250T170 -239Q164 -250 152 -250Q144 -250 138 -244L137 -243Q133 -241 133 -179T132 250Q132 731 133 736ZM329 739Q334 750 346 750Q353 750 361 744L362 743Q366 741 366 679T367 250T367 -178T362 -243L361 -244Q355 -250 347 -250Q335 -250 329 -239Q327 -235 327 250T329 739Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-A0" d=""/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-20" d=""/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+          <path id="prefigure-torque-perp-force-MJX-9-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="5" data-semantic-children="2,3" data-semantic-collapsed="(5 (c 4) 2 3)" data-semantic-speech="upper F Subscript parallel to Baseline produces no rotation">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="5" data-semantic-speech="upper F Subscript parallel to Baseline">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-I-1D439"/>
+              </g>
+              <g data-mml-node="mo" transform="translate(676,-176.7) scale(0.707)" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="parallel to" data-semantic-prefix="Subscript">
+                <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-2225"/>
+              </g>
+            </g>
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="3" data-semantic-parent="5" data-semantic-speech="produces no rotation" transform="translate(1079.6,0)">
+              <use data-c="A0" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-A0"/>
+              <use data-c="70" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-70" transform="translate(250,0)"/>
+              <use data-c="72" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-72" transform="translate(806,0)"/>
+              <use data-c="6F" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-6F" transform="translate(1198,0)"/>
+              <use data-c="64" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-64" transform="translate(1698,0)"/>
+              <use data-c="75" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-75" transform="translate(2254,0)"/>
+              <use data-c="63" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-63" transform="translate(2810,0)"/>
+              <use data-c="65" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-65" transform="translate(3254,0)"/>
+              <use data-c="73" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-73" transform="translate(3698,0)"/>
+              <use data-c="20" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-20" transform="translate(4092,0)"/>
+              <use data-c="6E" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-6E" transform="translate(4342,0)"/>
+              <use data-c="6F" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-6F" transform="translate(4898,0)"/>
+              <use data-c="20" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-20" transform="translate(5398,0)"/>
+              <use data-c="72" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-72" transform="translate(5648,0)"/>
+              <use data-c="6F" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-6F" transform="translate(6040,0)"/>
+              <use data-c="74" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-74" transform="translate(6540,0)"/>
+              <use data-c="61" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-61" transform="translate(6929,0)"/>
+              <use data-c="74" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-74" transform="translate(7429,0)"/>
+              <use data-c="69" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-69" transform="translate(7818,0)"/>
+              <use data-c="6F" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-6F" transform="translate(8096,0)"/>
+              <use data-c="6E" xlink:href="#prefigure-torque-perp-force-MJX-9-TEX-N-6E" transform="translate(8596,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-eq1" transform="translate(175.2,268.9) translate(-57.8,-15.0)">
+    <g id="prefigure-torque-perp-force-__g-8">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="115.640px" height="29.992px" role="img" focusable="false" viewBox="0 -1407 6389 1657" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-22A5" d="M369 652Q369 653 370 655T372 658T375 662T379 665T384 667T391 668Q402 666 409 653V40H708Q723 32 723 20T708 0H71Q70 0 67 2T59 9T55 20T59 31T66 38T71 40H369V652Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-2225" d="M133 736Q138 750 153 750Q164 750 170 739Q172 735 172 250T170 -239Q164 -250 152 -250Q144 -250 138 -244L137 -243Q133 -241 133 -179T132 250Q132 731 133 736ZM329 739Q334 750 346 750Q353 750 361 744L362 743Q366 741 366 679T367 250T367 -178T362 -243L361 -244Q355 -250 347 -250Q335 -250 329 -239Q327 -235 327 250T329 739Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-2062" d=""/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-N-2061" d=""/>
+          <path id="prefigure-torque-perp-force-MJX-10-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="17" data-semantic-children="2,16" data-semantic-content="3" data-semantic-speech="upper F Subscript up tack Baseline equals StartMetric ModifyingAbove upper F With right arrow EndMetric sine theta">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="17" data-semantic-speech="upper F Subscript up tack Baseline">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-I-1D439"/>
+              </g>
+              <g data-mml-node="mo" transform="translate(676,-150) scale(0.707)" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="up tack" data-semantic-prefix="Subscript">
+                <use data-c="22A5" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-22A5"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="3" data-semantic-parent="17" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(1553.9,0)">
+              <use data-c="3D" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="16" data-semantic-children="12,14" data-semantic-content="15" data-semantic-parent="17" data-semantic-speech="StartMetric ModifyingAbove upper F With right arrow EndMetric sine theta" transform="translate(2609.7,0)">
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="metric" data-semantic-id="12" data-semantic-children="7" data-semantic-content="4,8" data-semantic-parent="16" data-semantic-speech="StartMetric ModifyingAbove upper F With right arrow EndMetric">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="4" data-semantic-parent="12" data-semantic-attributes="texclass:ORD" data-semantic-operator="fenced" data-semantic-speech="parallel to">
+                  <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-2225"/>
+                </g>
+                <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="7" data-semantic-children="5,6" data-semantic-parent="12" data-semantic-speech="ModifyingAbove upper F With right arrow" transform="translate(500,0)">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                    <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-I-1D439"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="6" data-semantic-parent="7" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(484.3,796) translate(-500 0)">
+                    <use data-c="2192" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-2192"/>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="8" data-semantic-parent="12" data-semantic-attributes="texclass:ORD" data-semantic-operator="fenced" data-semantic-speech="parallel to" transform="translate(1249,0)">
+                  <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-2225"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="15" data-semantic-parent="16" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1749,0)">
+                <use data-c="2062" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-annotation="clearspeak:simple" data-semantic-id="14" data-semantic-children="9,11" data-semantic-content="13,9" data-semantic-parent="16" data-semantic-speech="sine theta" transform="translate(1915.7,0)">
+                <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="9" data-semantic-parent="14" data-semantic-operator="appl" data-semantic-speech="sine">
+                  <use data-c="73" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-73"/>
+                  <use data-c="69" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-69" transform="translate(394,0)"/>
+                  <use data-c="6E" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-6E" transform="translate(672,0)"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="13" data-semantic-parent="14" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(1228,0)">
+                  <use data-c="2061" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-N-2061"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="14" data-semantic-speech="theta" transform="translate(1394.7,0)">
+                  <use data-c="1D703" xlink:href="#prefigure-torque-perp-force-MJX-10-TEX-I-1D703"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-torque-perp-force-fp-eq2" transform="translate(175.2,299.3) translate(-50.5,-12.8)">
+    <g id="prefigure-torque-perp-force-__g-9">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="100.952px" height="25.680px" role="img" focusable="false" viewBox="0 -1169 5577.7 1419" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-N-2225" d="M133 736Q138 750 153 750Q164 750 170 739Q172 735 172 250T170 -239Q164 -250 152 -250Q144 -250 138 -244L137 -243Q133 -241 133 -179T132 250Q132 731 133 736ZM329 739Q334 750 346 750Q353 750 361 744L362 743Q366 741 366 679T367 250T367 -178T362 -243L361 -244Q355 -250 347 -250Q335 -250 329 -239Q327 -235 327 250T329 739Z"/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-I-1D70F" d="M39 284Q18 284 18 294Q18 301 45 338T99 398Q134 425 164 429Q170 431 332 431Q492 431 497 429Q517 424 517 402Q517 388 508 376T485 360Q479 358 389 358T299 356Q298 355 283 274T251 109T233 20Q228 5 215 -4T186 -13Q153 -13 153 20V30L203 192Q214 228 227 272T248 336L254 357Q254 358 208 358Q206 358 197 358T183 359Q105 359 61 295Q56 287 53 286T39 284Z"/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-N-2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-N-2062" d=""/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/>
+          <path id="prefigure-torque-perp-force-MJX-11-TEX-N-22A5" d="M369 652Q369 653 370 655T372 658T375 662T379 665T384 667T391 668Q402 666 409 653V40H708Q723 32 723 20T708 0H71Q70 0 67 2T59 9T55 20T59 31T66 38T71 40H369V652Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="18" data-semantic-children="14,17" data-semantic-content="5" data-semantic-speech="StartMetric ModifyingAbove tau With right arrow EndMetric equals StartMetric ModifyingAbove r With right arrow EndMetric upper F Subscript up tack">
+            <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="metric" data-semantic-id="14" data-semantic-children="3" data-semantic-content="0,4" data-semantic-parent="18" data-semantic-speech="StartMetric ModifyingAbove tau With right arrow EndMetric">
+              <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="0" data-semantic-parent="14" data-semantic-attributes="texclass:ORD" data-semantic-operator="fenced" data-semantic-speech="parallel to">
+                <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2225"/>
+              </g>
+              <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="greekletter" data-semantic-id="3" data-semantic-children="1,2" data-semantic-parent="14" data-semantic-speech="ModifyingAbove tau With right arrow" transform="translate(500,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="3" data-semantic-speech="tau" data-semantic-prefix="Base">
+                  <use data-c="1D70F" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-I-1D70F"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(306.3,558) translate(-500 0)">
+                  <use data-c="2192" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2192"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="4" data-semantic-parent="14" data-semantic-attributes="texclass:ORD" data-semantic-operator="fenced" data-semantic-speech="parallel to" transform="translate(1017,0)">
+                <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2225"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="5" data-semantic-parent="18" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(1794.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="17" data-semantic-children="15,13" data-semantic-content="16" data-semantic-parent="18" data-semantic-speech="StartMetric ModifyingAbove r With right arrow EndMetric upper F Subscript up tack" transform="translate(2850.6,0)">
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="metric" data-semantic-id="15" data-semantic-children="9" data-semantic-content="6,10" data-semantic-parent="17" data-semantic-speech="StartMetric ModifyingAbove r With right arrow EndMetric">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="6" data-semantic-parent="15" data-semantic-attributes="texclass:ORD" data-semantic-operator="fenced" data-semantic-speech="parallel to">
+                  <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2225"/>
+                </g>
+                <g data-mml-node="mover" data-semantic-type="overscore" data-semantic-role="latinletter" data-semantic-id="9" data-semantic-children="7,8" data-semantic-parent="15" data-semantic-speech="ModifyingAbove r With right arrow" transform="translate(500,0)">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="9" data-semantic-speech="r" data-semantic-prefix="Base">
+                    <use data-c="1D45F" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-I-1D45F"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="overaccent" data-semantic-annotation="accent:arrow" data-semantic-id="8" data-semantic-parent="9" data-semantic-speech="right arrow" data-semantic-prefix="Overscript" transform="translate(281.1,558) translate(-500 0)">
+                    <use data-c="2192" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2192"/>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="metric" data-semantic-id="10" data-semantic-parent="15" data-semantic-attributes="texclass:ORD" data-semantic-operator="fenced" data-semantic-speech="parallel to" transform="translate(951,0)">
+                  <use data-c="2225" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2225"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="16" data-semantic-parent="17" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1451,0)">
+                <use data-c="2062" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="13" data-semantic-children="11,12" data-semantic-parent="17" data-semantic-speech="upper F Subscript up tack" transform="translate(1451,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="13" data-semantic-speech="upper F" data-semantic-prefix="Base">
+                  <use data-c="1D439" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-I-1D439"/>
+                </g>
+                <g data-mml-node="mo" transform="translate(676,-150) scale(0.707)" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="12" data-semantic-parent="13" data-semantic-speech="up tack" data-semantic-prefix="Subscript">
+                  <use data-c="22A5" xlink:href="#prefigure-torque-perp-force-MJX-11-TEX-N-22A5"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

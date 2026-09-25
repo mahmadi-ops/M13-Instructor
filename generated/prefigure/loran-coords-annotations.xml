@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="loran-coords-p1" speech2="The chosen coordinate system, in units of twelve kilometers">
+      <grouped>loran-coords-p1</grouped>
+      <position>1</position>
+      <children>
+        <active>loran-coords-grid-axes</active>
+        <active>loran-coords-origin</active>
+        <active>loran-coords-p2</active>
+        <active>loran-coords-p1</active>
+        <active>loran-coords-p3</active>
+      </children>
+      <components>
+        <active>loran-coords-grid-axes</active>
+        <active>loran-coords-origin</active>
+        <active>loran-coords-p2</active>
+        <active>loran-coords-p1</active>
+        <active>loran-coords-p3</active>
+      </components>
+    </annotation>
+    <annotation id="loran-coords-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>loran-coords-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>loran-coords-grid</active>
+        <active>loran-coords-axes</active>
+      </children>
+      <components>
+        <active>loran-coords-grid</active>
+        <active>loran-coords-axes</active>
+      </components>
+      <parents>
+        <grouped>loran-coords-p1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-coords-grid" speech2="The coordinate grid">
+      <active>loran-coords-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>loran-coords-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-coords-axes" speech2="The coordinate axes">
+      <active>loran-coords-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>loran-coords-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-coords-origin" speech2="The origin O at the midpoint of segment P one P two">
+      <active>loran-coords-origin</active>
+      <position>2</position>
+      <parents>
+        <grouped>loran-coords-p1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-coords-p2" speech2="Receiver P two at minus two comma zero">
+      <active>loran-coords-p2</active>
+      <position>3</position>
+      <parents>
+        <grouped>loran-coords-p1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-coords-p1" speech2="Receiver P one at two comma zero">
+      <active>loran-coords-p1</active>
+      <position>4</position>
+      <parents>
+        <grouped>loran-coords-p1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="loran-coords-p3" speech2="Receiver P three at three comma three">
+      <active>loran-coords-p3</active>
+      <position>5</position>
+      <parents>
+        <grouped>loran-coords-p1</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

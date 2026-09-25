@@ -1,0 +1,21 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperboloid-two-sheets-trace-z-figure" speech2="The trace in the plane z = 5: an ellipse.  Planes with the absolute value of z less than 4 miss the surface entirely">
+      <grouped>hyperboloid-two-sheets-trace-z-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperboloid-two-sheets-trace-z-trace-z</active>
+      </children>
+      <components>
+        <active>hyperboloid-two-sheets-trace-z-trace-z</active>
+      </components>
+    </annotation>
+    <annotation id="hyperboloid-two-sheets-trace-z-trace-z" speech2="In the plane z equals 5, the trace x squared over 4 plus y squared over 9 equals 9 over 16 is an ellipse.  Horizontal planes with the absolute value of z less than 4 do not intersect the surface at all">
+      <active>hyperboloid-two-sheets-trace-z-trace-z</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperboloid-two-sheets-trace-z-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

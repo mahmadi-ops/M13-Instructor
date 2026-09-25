@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-SecondWebWork" assembly-id="SecondWebWork">
+  <static seed="3">
+    <statement><p>Find the maximum area of a rectangle which is inscribed in <m>{2x^{2}+5y^{2}}=1\text{.}</m></p>
+</statement>
+    <solution><p>The area of the rectangle is <m>f(x,y)=4xy</m> and the constraint is <m>g(x,y)={2x^{2}+5y^{2}}-1=0\text{.}</m> Due to the Lagrange Multiplier method, we have <m>\vec{\nabla f}=\lambda \vec{\nabla g}\text{,}</m> which gives the following vector equation:</p>
+<p><me>\langle 4y, 4x\rangle=\lambda \langle {4} x, {10} y\rangle\text{.}</me></p>
+<p>This vector equation is equivalent to these two scalar equations:</p>
+<p><me>4y={4}\lambda x\text{,}</me></p>
+<p><me>4x={10}\lambda y\text{.}</me></p>
+<p>We divide the above equations:</p>
+<p><me>\frac{4y}{4x}=\frac{{4} \lambda x}{{10} \lambda y} 
+\Rightarrow \frac{y}{x}=\frac{{4} x}{{10} y} \Rightarrow y^2=\frac{2}{5} x^2\text{.}</me></p>
+<p>Then, we replace this equation into <m>g(x,y)={2x^{2}+5y^{2}}-1=0</m> to get <m>2x^2+2x^2=1\text{.}</m> Hence, <m>x=\sqrt{\frac{1}{{4}}}</m> and <m>y=\sqrt{\frac{1}{{10}}}</m> and the maximum area is <m>4\left(\sqrt{\frac{1}{{4}}}\right)\left(\sqrt{\frac{1}{{10}}}\right)={0.632456}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Complementary_Modules_For_MATH_13/10_3.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(10.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+    Context("Numeric");
+$a = random(1,4);
+$b = random(5,10);
+$c = random(1,10);
+Context()->variables->are(x=>"Real",y=>"Real");
+$constraint = Formula("$a*x^2+$b*y^2")->reduce();
+$LM1 = Compute(2*$a);
+$LM2 = Compute(2*$b);
+$ans = Compute("(2*$c)/(($a*$b)^(1/2))")->reduce();
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the maximum area of a rectangle which is inscribed in [`[$constraint]=[$c]\text{.}`]
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The area of the rectangle is [`f(x,y)=4xy`] and the constraint is [`g(x,y)=[$constraint]-[$c]=0\text{.}`] Due to the Lagrange Multiplier method, we have [`\vec{\nabla f}=\lambda \vec{\nabla g}\text{,}`] which gives the following vector equation:
+
+[```\langle 4y, 4x\rangle=\lambda \langle [$LM1] x, [$LM2] y\rangle\text{.}```]
+
+This vector equation is equivalent to these two scalar equations:
+
+[```4y=[$LM1]\lambda x\text{,}```]
+
+[```4x=[$LM2]\lambda y\text{.}```]
+
+We divide the above equations:
+
+[```\newcommand{\R}{\mathbb{R}}\frac{4y}{4x}=\frac{[$LM1] \lambda x}{[$LM2] \lambda y} 
+\Rightarrow \frac{y}{x}=\frac{[$LM1] x}{[$LM2] y} \Rightarrow y^2=\frac{[$a]}{[$b]} x^2\text{.}```]
+
+Then, we replace this equation into [`g(x,y)=[$constraint]-[$c]=0`] to get [`[$a]x^2+[$a]x^2=[$c]\text{.}`] Hence, [`x=\sqrt{\frac{[$c]}{[$LM1]}}`] and [`y=\sqrt{\frac{[$c]}{[$LM2]}}`] and the maximum area is [`4\left(\sqrt{\frac{[$c]}{[$LM1]}}\right)\left(\sqrt{\frac{[$c]}{[$LM2]}}\right)=[$ans]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

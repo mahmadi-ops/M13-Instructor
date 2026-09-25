@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The gradient vector and level curves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box; font-size: 14px;
+  }
+  /* the readout is mathematics: the page's maths face */
+  #readout, #controls span { font-family: "PT Serif", "Times New Roman", Times, serif; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em;
+    font-variant-numeric: tabular-nums; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span>f(x, y) = 1 + x&sup2; + y&sup2; &mdash; drag the red point</span>
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"><canvas id="cv"></canvas></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // the book sets its mathematics in PT Serif
+  var SERIF = "'PT Serif', 'Times New Roman', Times, serif";
+  // palette (same as the sample-graphs interactive)
+  var SURF_BLUE = "#4f8fd6", GOLD = "#f2c14e", RED = "#d1362f",
+      GRAY = "#999999", BTN_BLUE = "#2a6fdb";
+
+  var canvas = document.getElementById("cv"), ctx = canvas.getContext("2d");
+  var P = { x: 1, y: 1 };
+
+  var BB = { xmin: -2.65, xmax: 2.65, ymin: -2.65, ymax: 2.65 };
+  function view() {
+    var w = canvas.width, h = canvas.height;
+    var k = Math.min(w / (BB.xmax - BB.xmin), h / (BB.ymax - BB.ymin));
+    return { k: k, ox: w / 2, oy: h / 2 };
+  }
+
+  function arrow(v, x0, y0, x1, y1, color, lw) {
+    var ax = v.ox + v.k * x0, ay = v.oy - v.k * y0;
+    var bx = v.ox + v.k * x1, by = v.oy - v.k * y1;
+    var ang = Math.atan2(by - ay, bx - ax), hl = 10 + lw * 1.5;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = lw;
+    ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(bx, by);
+    ctx.lineTo(bx - hl * Math.cos(ang - 0.42), by - hl * Math.sin(ang - 0.42));
+    ctx.lineTo(bx - hl * Math.cos(ang + 0.42), by - hl * Math.sin(ang + 0.42));
+    ctx.closePath(); ctx.fill();
+  }
+
+  function draw() {
+    var v = view(), w = canvas.width, h = canvas.height;
+    var dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, w, h);
+    ctx.font = "italic " + (15 * dpr) + 'px ' + SERIF;
+
+    // fixed level curves of f = 1 + x^2 + y^2 (radius sqrt(c - 1))
+    ctx.strokeStyle = SURF_BLUE; ctx.globalAlpha = 0.35; ctx.lineWidth = 1.4 * dpr;
+    [0.5, 1, 1.414, 1.732, 2, 2.236, 2.449].forEach(function (r) {
+      ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k * r, 0, 2 * Math.PI); ctx.stroke();
+    });
+    ctx.globalAlpha = 1;
+
+    // axes
+    arrow(v, BB.xmin, 0, BB.xmax - 0.05, 0, GRAY, 1.2 * dpr);
+    arrow(v, 0, BB.ymin, 0, BB.ymax - 0.05, GRAY, 1.2 * dpr);
+    ctx.fillStyle = "#666";
+    ctx.fillText("x", v.ox + v.k * (BB.xmax - 0.2), v.oy + 16 * dpr);
+    ctx.fillText("y", v.ox - 16 * dpr, v.oy - v.k * (BB.ymax - 0.2));
+
+    var r = Math.sqrt(P.x * P.x + P.y * P.y);
+
+    // level curve through P (gold, thick)
+    if (r > 1e-6) {
+      ctx.strokeStyle = GOLD; ctx.lineWidth = 3.2 * dpr;
+      ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k * r, 0, 2 * Math.PI); ctx.stroke();
+    }
+
+    // tangent line to the level curve at P (dashed blue)
+    if (r > 1e-6) {
+      var tx = -P.y / r, ty = P.x / r, L = 1.1;
+      ctx.strokeStyle = BTN_BLUE; ctx.lineWidth = 1.6 * dpr;
+      ctx.setLineDash([7 * dpr, 5 * dpr]);
+      ctx.beginPath();
+      ctx.moveTo(v.ox + v.k * (P.x - L * tx), v.oy - v.k * (P.y - L * ty));
+      ctx.lineTo(v.ox + v.k * (P.x + L * tx), v.oy - v.k * (P.y + L * ty));
+      ctx.stroke(); ctx.setLineDash([]);
+    }
+
+    // gradient arrow at P: grad f = (2x, 2y), drawn at scale 0.3
+    arrow(v, P.x, P.y, P.x + 0.6 * P.x, P.y + 0.6 * P.y, RED, 3 * dpr);
+    ctx.fillStyle = RED;
+    ctx.fillText("∇f", v.ox + v.k * (P.x + 0.7 * P.x) + 4 * dpr,
+                 v.oy - v.k * (P.y + 0.7 * P.y));
+
+    // the draggable point
+    ctx.fillStyle = RED;
+    ctx.beginPath();
+    ctx.arc(v.ox + v.k * P.x, v.oy - v.k * P.y, 6 * dpr, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.strokeStyle = "#ffffff"; ctx.lineWidth = 1.5 * dpr; ctx.stroke();
+  }
+
+  function update() {
+    var gx = 2 * P.x, gy = 2 * P.y;
+    document.getElementById("readout").textContent =
+      "P = (" + P.x.toFixed(2) + ", " + P.y.toFixed(2) + "):   " +
+      "∇f = ⟨2x, 2y⟩ = ⟨" + gx.toFixed(2) + ", " + gy.toFixed(2) + "⟩,   " +
+      "‖∇f‖ = " + Math.hypot(gx, gy).toFixed(2) +
+      "   (∇f ⊥ level curve)";
+    draw();
+  }
+
+  // dragging
+  var dragging = false;
+  function toWorld(clientX, clientY) {
+    var rect = canvas.getBoundingClientRect();
+    var dpr = window.devicePixelRatio || 1;
+    var v = view();
+    return { x: ((clientX - rect.left) * dpr - v.ox) / v.k,
+             y: (v.oy - (clientY - rect.top) * dpr) / v.k };
+  }
+  function setP(pt) {
+    var r = Math.hypot(pt.x, pt.y);
+    var rmax = 2.35, rmin = 0.2;
+    if (r > rmax) { pt.x *= rmax / r; pt.y *= rmax / r; }
+    if (r < rmin && r > 1e-9) { pt.x *= rmin / r; pt.y *= rmin / r; }
+    if (r <= 1e-9) { pt.x = rmin; pt.y = 0; }
+    P = pt; update();
+  }
+  canvas.addEventListener("mousedown", function (e) { dragging = true; setP(toWorld(e.clientX, e.clientY)); });
+  window.addEventListener("mousemove", function (e) { if (dragging) setP(toWorld(e.clientX, e.clientY)); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  canvas.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { dragging = true;
+      setP(toWorld(e.touches[0].clientX, e.touches[0].clientY)); e.preventDefault(); }
+  }, { passive: false });
+  canvas.addEventListener("touchmove", function (e) {
+    if (dragging && e.touches.length === 1) {
+      setP(toWorld(e.touches[0].clientX, e.touches[0].clientY)); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = document.getElementById("app").clientWidth;
+    var used = document.getElementById("controls").offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(240, window.innerHeight - used - 4);
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + "px"; canvas.style.height = h + "px";
+    update();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+})();
+</script>
+</body>
+</html>

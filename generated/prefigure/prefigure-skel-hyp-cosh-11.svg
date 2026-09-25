@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-skel-hyp-cosh-figure" width="384" height="324" viewBox="0 0 384 324">
+  <defs>
+    <clipPath id="prefigure-skel-hyp-cosh-__clipPath-0">
+      <rect x="12.0" y="12.0" width="360.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-skel-hyp-cosh-__clipPath-1">
+      <rect x="12.0" y="12.0" width="360.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-skel-hyp-cosh-grid-axes">
+    <g id="prefigure-skel-hyp-cosh-grid" stroke="#ccc" stroke-width="1">
+      <line x1="18.9" y1="312.0" x2="18.9" y2="12.0"/>
+      <line x1="53.5" y1="312.0" x2="53.5" y2="12.0"/>
+      <line x1="88.2" y1="312.0" x2="88.2" y2="12.0"/>
+      <line x1="122.8" y1="312.0" x2="122.8" y2="12.0"/>
+      <line x1="157.4" y1="312.0" x2="157.4" y2="12.0"/>
+      <line x1="192.0" y1="312.0" x2="192.0" y2="12.0"/>
+      <line x1="226.6" y1="312.0" x2="226.6" y2="12.0"/>
+      <line x1="261.2" y1="312.0" x2="261.2" y2="12.0"/>
+      <line x1="295.8" y1="312.0" x2="295.8" y2="12.0"/>
+      <line x1="330.5" y1="312.0" x2="330.5" y2="12.0"/>
+      <line x1="365.1" y1="312.0" x2="365.1" y2="12.0"/>
+      <line x1="12.0" y1="293.2" x2="372.0" y2="293.2"/>
+      <line x1="12.0" y1="262.0" x2="372.0" y2="262.0"/>
+      <line x1="12.0" y1="230.8" x2="372.0" y2="230.8"/>
+      <line x1="12.0" y1="199.5" x2="372.0" y2="199.5"/>
+      <line x1="12.0" y1="168.2" x2="372.0" y2="168.2"/>
+      <line x1="12.0" y1="137.0" x2="372.0" y2="137.0"/>
+      <line x1="12.0" y1="105.8" x2="372.0" y2="105.8"/>
+      <line x1="12.0" y1="74.5" x2="372.0" y2="74.5"/>
+      <line x1="12.0" y1="43.2" x2="372.0" y2="43.2"/>
+      <line x1="12.0" y1="12.0" x2="372.0" y2="12.0"/>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-skel-hyp-cosh-__line-21" x1="12.0" y1="262.0" x2="372.0" y2="262.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-skel-hyp-cosh-__line-22" x1="53.5" y1="265.0" x2="53.5" y2="259.0"/>
+        <line id="prefigure-skel-hyp-cosh-__line-23" x1="122.8" y1="265.0" x2="122.8" y2="259.0"/>
+        <line id="prefigure-skel-hyp-cosh-__line-24" x1="261.2" y1="265.0" x2="261.2" y2="259.0"/>
+        <line id="prefigure-skel-hyp-cosh-__line-25" x1="330.5" y1="265.0" x2="330.5" y2="259.0"/>
+      </g>
+      <line id="prefigure-skel-hyp-cosh-__line-26" x1="192.0" y1="312.0" x2="192.0" y2="12.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-skel-hyp-cosh-__line-27" x1="189.0" y1="199.5" x2="195.0" y2="199.5"/>
+        <line id="prefigure-skel-hyp-cosh-__line-28" x1="189.0" y1="137.0" x2="195.0" y2="137.0"/>
+        <line id="prefigure-skel-hyp-cosh-__line-29" x1="189.0" y1="74.5" x2="195.0" y2="74.5"/>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-0" transform="translate(368.0,258.0) translate(-10.4,-8.2)">
+      <g id="prefigure-skel-hyp-cosh-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-skel-hyp-cosh-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-1" transform="translate(196.0,16.0) translate(0.0,-0.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-skel-hyp-cosh-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-2" transform="translate(53.5,273.0) translate(-7.5,-0.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-cosh-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-cosh-MJX-4-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-cosh-MJX-4-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-3" transform="translate(122.8,273.0) translate(-7.5,-0.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-5-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-skel-hyp-cosh-MJX-5-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
+                <use data-c="2D" xlink:href="#prefigure-skel-hyp-cosh-MJX-5-TEX-N-2D"/>
+                <use data-c="31" xlink:href="#prefigure-skel-hyp-cosh-MJX-5-TEX-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-4" transform="translate(261.2,273.0) translate(-4.5,-0.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-6-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-skel-hyp-cosh-MJX-6-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-5" transform="translate(330.5,273.0) translate(-4.5,-0.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-cosh-MJX-7-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-6" transform="translate(181.0,199.5) translate(-9.0,-6.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-8-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-skel-hyp-cosh-MJX-8-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-7" transform="translate(181.0,137.0) translate(-9.0,-6.0)">
+      <g id="prefigure-skel-hyp-cosh-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-9-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-skel-hyp-cosh-MJX-9-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-skel-hyp-cosh-__label-8" transform="translate(181.0,74.5) translate(-9.0,-6.2)">
+      <g id="prefigure-skel-hyp-cosh-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.432px" role="img" focusable="false" viewBox="0 -665 500 687" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-skel-hyp-cosh-MJX-10-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="3">
+                <use data-c="33" xlink:href="#prefigure-skel-hyp-cosh-MJX-10-TEX-N-33"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-skel-hyp-cosh-ch-ep" d="M 18.9 259.4 L 22.1 259.3 L 25.2 259.2 L 28.4 259.1 L 31.5 258.9 L 34.7 258.8 L 37.8 258.6 L 41.0 258.5 L 44.1 258.3 L 47.3 258.1 L 50.4 258.0 L 53.6 257.8 L 56.7 257.6 L 59.9 257.4 L 63.0 257.1 L 66.2 256.9 L 69.3 256.7 L 72.5 256.4 L 75.6 256.2 L 78.8 255.9 L 81.9 255.6 L 85.1 255.3 L 88.2 255.0 L 91.4 254.7 L 94.5 254.4 L 97.7 254.0 L 100.8 253.6 L 104.0 253.2 L 107.1 252.8 L 110.3 252.4 L 113.4 252.0 L 116.6 251.5 L 119.7 251.0 L 122.9 250.5 L 126.0 250.0 L 129.2 249.4 L 132.3 248.8 L 135.5 248.2 L 138.6 247.5 L 141.8 246.9 L 144.9 246.2 L 148.1 245.4 L 151.2 244.7 L 154.4 243.9 L 157.5 243.0 L 160.7 242.1 L 163.8 241.2 L 167.0 240.2 L 170.1 239.2 L 173.3 238.2 L 176.4 237.0 L 179.6 235.9 L 182.7 234.7 L 185.9 233.4 L 189.0 232.1 L 192.2 230.7 L 195.3 229.2 L 198.5 227.7 L 201.6 226.1 L 204.8 224.4 L 207.9 222.7 L 211.1 220.8 L 214.2 218.9 L 217.4 216.9 L 220.5 214.8 L 223.7 212.6 L 226.8 210.3 L 230.0 207.9 L 233.1 205.4 L 236.3 202.8 L 239.4 200.0 L 242.6 197.1 L 245.7 194.1 L 248.9 190.9 L 252.0 187.6 L 255.2 184.2 L 258.3 180.5 L 261.5 176.8 L 263.0 174.8 L 264.6 172.8 L 266.2 170.7 L 267.8 168.6 L 269.3 166.5 L 270.9 164.3 L 272.5 162.0 L 274.1 159.7 L 275.6 157.4 L 277.2 155.0 L 278.8 152.5 L 280.4 150.0 L 281.9 147.4 L 283.5 144.8 L 285.1 142.1 L 286.7 139.3 L 288.2 136.5 L 289.8 133.6 L 291.4 130.7 L 293.0 127.6 L 294.5 124.5 L 296.1 121.4 L 297.7 118.2 L 299.3 114.8 L 300.8 111.5 L 302.4 108.0 L 304.0 104.4 L 305.6 100.8 L 307.1 97.1 L 308.7 93.3 L 310.3 89.4 L 311.9 85.5 L 313.4 81.4 L 315.0 77.2 L 316.6 73.0 L 318.2 68.6 L 319.7 64.2 L 321.3 59.6 L 322.9 55.0 L 323.7 52.6 L 324.5 50.2 L 325.3 47.8 L 326.0 45.4 L 326.8 42.9 L 327.6 40.4 L 328.4 37.8 L 329.2 35.3 L 330.0 32.7 L 330.8 30.1 L 331.6 27.4 L 332.3 24.7 L 333.1 22.0 L 333.9 19.3" stroke="#56B4E9" stroke-width="2" fill="none" clip-path="url(#prefigure-skel-hyp-cosh-__clipPath-1)"/>
+  <path id="prefigure-skel-hyp-cosh-ch-em" d="M 50.1 19.3 L 50.9 22.0 L 51.7 24.7 L 52.4 27.4 L 53.2 30.1 L 54.0 32.7 L 54.8 35.3 L 55.6 37.8 L 56.4 40.4 L 57.2 42.9 L 58.0 45.4 L 58.7 47.8 L 59.5 50.2 L 60.3 52.6 L 61.1 55.0 L 62.7 59.6 L 64.3 64.2 L 65.8 68.6 L 67.4 73.0 L 69.0 77.2 L 70.6 81.4 L 72.1 85.5 L 73.7 89.4 L 75.3 93.3 L 76.9 97.1 L 78.4 100.8 L 80.0 104.4 L 81.6 108.0 L 83.2 111.5 L 84.7 114.8 L 86.3 118.2 L 87.9 121.4 L 89.5 124.5 L 91.0 127.6 L 92.6 130.7 L 94.2 133.6 L 95.8 136.5 L 97.3 139.3 L 98.9 142.1 L 100.5 144.8 L 102.1 147.4 L 103.6 150.0 L 105.2 152.5 L 106.8 155.0 L 108.4 157.4 L 109.9 159.7 L 111.5 162.0 L 113.1 164.3 L 114.7 166.5 L 116.2 168.6 L 117.8 170.7 L 119.4 172.8 L 121.0 174.8 L 122.5 176.8 L 125.7 180.5 L 128.8 184.2 L 132.0 187.6 L 135.1 190.9 L 138.3 194.1 L 141.4 197.1 L 144.6 200.0 L 147.7 202.8 L 150.9 205.4 L 154.0 207.9 L 157.2 210.3 L 160.3 212.6 L 163.5 214.8 L 166.6 216.9 L 169.8 218.9 L 172.9 220.8 L 176.1 222.7 L 179.2 224.4 L 182.4 226.1 L 185.5 227.7 L 188.7 229.2 L 191.8 230.7 L 195.0 232.1 L 198.1 233.4 L 201.3 234.7 L 204.4 235.9 L 207.6 237.0 L 210.7 238.2 L 213.9 239.2 L 217.0 240.2 L 220.2 241.2 L 223.3 242.1 L 226.5 243.0 L 229.6 243.9 L 232.8 244.7 L 235.9 245.4 L 239.1 246.2 L 242.2 246.9 L 245.4 247.5 L 248.5 248.2 L 251.7 248.8 L 254.8 249.4 L 258.0 250.0 L 261.1 250.5 L 264.3 251.0 L 267.4 251.5 L 270.6 252.0 L 273.7 252.4 L 276.9 252.8 L 280.0 253.2 L 283.2 253.6 L 286.3 254.0 L 289.5 254.4 L 292.6 254.7 L 295.8 255.0 L 298.9 255.3 L 302.1 255.6 L 305.2 255.9 L 308.4 256.2 L 311.5 256.4 L 314.7 256.7 L 317.8 256.9 L 321.0 257.1 L 324.1 257.4 L 327.3 257.6 L 330.4 257.8 L 333.6 258.0 L 336.7 258.1 L 339.9 258.3 L 343.0 258.5 L 346.2 258.6 L 349.3 258.8 L 352.5 258.9 L 355.6 259.1 L 358.8 259.2 L 361.9 259.3 L 365.1 259.4" stroke="#E69F00" stroke-width="2" fill="none" clip-path="url(#prefigure-skel-hyp-cosh-__clipPath-1)"/>
+  <path id="prefigure-skel-hyp-cosh-ch-c" d="M 53.5 26.9 L 54.9 31.3 L 56.3 35.7 L 57.7 40.0 L 59.1 44.3 L 60.5 48.4 L 61.8 52.4 L 63.2 56.4 L 64.6 60.3 L 66.0 64.1 L 67.4 67.8 L 68.8 71.4 L 70.2 75.0 L 71.5 78.5 L 72.9 81.9 L 74.3 85.2 L 75.7 88.5 L 77.1 91.7 L 78.5 94.8 L 79.8 97.9 L 81.2 100.9 L 82.6 103.8 L 84.0 106.7 L 85.4 109.5 L 86.8 112.3 L 88.2 115.0 L 89.5 117.6 L 90.9 120.2 L 92.3 122.7 L 93.7 125.2 L 95.1 127.6 L 96.5 129.9 L 97.8 132.2 L 99.2 134.5 L 100.6 136.7 L 102.0 138.8 L 103.4 140.9 L 106.2 145.0 L 108.9 148.8 L 111.7 152.5 L 114.5 156.0 L 117.2 159.4 L 120.0 162.5 L 122.8 165.6 L 125.5 168.4 L 128.3 171.1 L 131.1 173.7 L 133.8 176.1 L 136.6 178.4 L 139.4 180.6 L 142.2 182.6 L 144.9 184.5 L 147.7 186.3 L 150.5 187.9 L 153.2 189.4 L 156.0 190.9 L 158.8 192.2 L 161.5 193.4 L 164.3 194.4 L 167.1 195.4 L 169.8 196.3 L 172.6 197.0 L 175.4 197.7 L 178.2 198.2 L 180.9 198.7 L 183.7 199.0 L 186.5 199.3 L 189.2 199.4 L 192.0 199.5 L 194.8 199.4 L 197.5 199.3 L 200.3 199.0 L 203.1 198.7 L 205.8 198.2 L 208.6 197.7 L 211.4 197.0 L 214.2 196.3 L 216.9 195.4 L 219.7 194.4 L 222.5 193.4 L 225.2 192.2 L 228.0 190.9 L 230.8 189.4 L 233.5 187.9 L 236.3 186.3 L 239.1 184.5 L 241.8 182.6 L 244.6 180.6 L 247.4 178.4 L 250.2 176.1 L 252.9 173.7 L 255.7 171.1 L 258.5 168.4 L 261.2 165.6 L 264.0 162.5 L 266.8 159.4 L 269.5 156.0 L 272.3 152.5 L 275.1 148.8 L 277.8 145.0 L 280.6 140.9 L 282.0 138.8 L 283.4 136.7 L 284.8 134.5 L 286.2 132.2 L 287.5 129.9 L 288.9 127.6 L 290.3 125.2 L 291.7 122.7 L 293.1 120.2 L 294.5 117.6 L 295.8 115.0 L 297.2 112.3 L 298.6 109.5 L 300.0 106.7 L 301.4 103.8 L 302.8 100.9 L 304.2 97.9 L 305.5 94.8 L 306.9 91.7 L 308.3 88.5 L 309.7 85.2 L 311.1 81.9 L 312.5 78.5 L 313.8 75.0 L 315.2 71.4 L 316.6 67.8 L 318.0 64.1 L 319.4 60.3 L 320.8 56.4 L 322.2 52.4 L 323.5 48.4 L 324.9 44.3 L 326.3 40.0 L 327.7 35.7 L 329.1 31.3 L 330.5 26.9" stroke="#8B1A4A" stroke-width="3" fill="none" clip-path="url(#prefigure-skel-hyp-cosh-__clipPath-1)"/>
+  <circle id="prefigure-skel-hyp-cosh-ch-min" cx="192.0" cy="199.5" r="4" stroke="black" stroke-width="2" fill="#8B1A4A"/>
+  <g id="prefigure-skel-hyp-cosh-ch-c-lab" transform="translate(260.7,52.6) translate(-80.7,-8.1)">
+    <g id="prefigure-skel-hyp-cosh-__g-9">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px; color:#8B1A4A" width="80.656px" height="16.272px" role="img" focusable="false" viewBox="0 -694 4456.2 899" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-N-68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-N-2061" d=""/>
+          <path id="prefigure-skel-hyp-cosh-MJX-11-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="7" data-semantic-children="0,6" data-semantic-content="1" data-semantic-speech="y equals hyperbolic cosine x">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="7" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="7" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-children="2,4" data-semantic-content="5,2" data-semantic-parent="7" data-semantic-speech="hyperbolic cosine x" transform="translate(1823.6,0)">
+              <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="2" data-semantic-parent="6" data-semantic-operator="appl" data-semantic-speech="hyperbolic cosine">
+                <use data-c="63" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-N-63"/>
+                <use data-c="6F" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-N-6F" transform="translate(444,0)"/>
+                <use data-c="73" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-N-73" transform="translate(944,0)"/>
+                <use data-c="68" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-N-68" transform="translate(1338,0)"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="5" data-semantic-parent="6" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(1894,0)">
+                <use data-c="2061" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="6" data-semantic-speech="x" transform="translate(2060.7,0)">
+                <use data-c="1D465" xlink:href="#prefigure-skel-hyp-cosh-MJX-11-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-skel-hyp-cosh-ch-ep-lab" transform="translate(286.0,212.9) translate(0.0,-0.0)">
+    <g id="prefigure-skel-hyp-cosh-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.248px; color:#56B4E9" width="64.624px" height="21.896px" role="img" focusable="false" viewBox="0 -864.9 3570.6 1209.9" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-N-2062" d=""/>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-12-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="10" data-semantic-children="0,9" data-semantic-content="1" data-semantic-speech="y equals one half e Superscript x">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="10" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="10" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="9" data-semantic-children="4,7" data-semantic-content="8" data-semantic-parent="10" data-semantic-speech="one half e Superscript x" transform="translate(1823.6,0)">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="vulgar" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-children="2,3" data-semantic-parent="9" data-semantic-speech="one half">
+                <g data-mml-node="mn" transform="translate(220,394) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="1" data-semantic-prefix="Numerator">
+                  <use data-c="31" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-N-31"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="4" data-semantic-speech="2" data-semantic-prefix="Denominator">
+                  <use data-c="32" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-N-32"/>
+                </g>
+                <rect width="553.6" height="60" x="120" y="220"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="8" data-semantic-parent="9" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(793.6,0)">
+                <use data-c="2062" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="7" data-semantic-children="5,6" data-semantic-parent="9" data-semantic-speech="e Superscript x" transform="translate(793.6,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="e" data-semantic-prefix="Base">
+                  <use data-c="1D452" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-I-1D452"/>
+                </g>
+                <g data-mml-node="TeXAtom" transform="translate(499,363) scale(0.707)" data-mjx-texclass="ORD">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="7" data-semantic-attributes="texclass:ORD" data-semantic-speech="x" data-semantic-prefix="Exponent">
+                    <use data-c="1D465" xlink:href="#prefigure-skel-hyp-cosh-MJX-12-TEX-I-1D465"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-skel-hyp-cosh-ch-em-lab" transform="translate(98.0,212.9) translate(-74.6,-0.0)">
+    <g id="prefigure-skel-hyp-cosh-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.248px; color:#E69F00" width="74.584px" height="21.896px" role="img" focusable="false" viewBox="0 -864.9 4120.7 1209.9" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-N-2062" d=""/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="prefigure-skel-hyp-cosh-MJX-13-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="12" data-semantic-children="0,11" data-semantic-content="1" data-semantic-speech="y equals one half e Superscript negative x">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="12" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-I-1D466"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="12" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(767.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="11" data-semantic-children="4,9" data-semantic-content="10" data-semantic-parent="12" data-semantic-speech="one half e Superscript negative x" transform="translate(1823.6,0)">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="vulgar" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-children="2,3" data-semantic-parent="11" data-semantic-speech="one half">
+                <g data-mml-node="mn" transform="translate(220,394) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="1" data-semantic-prefix="Numerator">
+                  <use data-c="31" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-N-31"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(220,-345) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="4" data-semantic-speech="2" data-semantic-prefix="Denominator">
+                  <use data-c="32" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-N-32"/>
+                </g>
+                <rect width="553.6" height="60" x="120" y="220"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="10" data-semantic-parent="11" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(793.6,0)">
+                <use data-c="2062" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="9" data-semantic-children="5,8" data-semantic-parent="11" data-semantic-speech="e Superscript negative x" transform="translate(793.6,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="9" data-semantic-speech="e" data-semantic-prefix="Base">
+                  <use data-c="1D452" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-I-1D452"/>
+                </g>
+                <g data-mml-node="TeXAtom" transform="translate(499,363) scale(0.707)" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-children="7" data-semantic-content="6" data-semantic-parent="9" data-semantic-attributes="texclass:ORD" data-semantic-speech="negative x" data-semantic-prefix="Exponent" data-mjx-texclass="ORD">
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="6" data-semantic-parent="8" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                    <use data-c="2212" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-N-2212"/>
+                  </g>
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="8" data-semantic-speech="x" transform="translate(778,0)">
+                    <use data-c="1D465" xlink:href="#prefigure-skel-hyp-cosh-MJX-13-TEX-I-1D465"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-skel-hyp-cosh-ch-min-lab" transform="translate(204.3,202.2) translate(0.0,-0.0)">
+    <g id="prefigure-skel-hyp-cosh-__g-12">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-skel-hyp-cosh-MJX-14-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#prefigure-skel-hyp-cosh-MJX-14-TEX-N-31"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

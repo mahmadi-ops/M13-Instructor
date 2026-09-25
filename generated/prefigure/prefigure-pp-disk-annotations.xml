@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-pp-disk-figure" speech2="A blue circle of radius three centered at the origin. A vermillion point inside the circle at two comma negative two marks the maximum, f equals eight. A green point on the circle in the second quadrant marks the minimum.">
+      <grouped>prefigure-pp-disk-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-disk-grid-axes</active>
+        <active>prefigure-pp-disk-dk2-circle</active>
+        <active>prefigure-pp-disk-dk2-max</active>
+        <active>prefigure-pp-disk-dk2-min</active>
+      </children>
+      <components>
+        <active>prefigure-pp-disk-grid-axes</active>
+        <active>prefigure-pp-disk-dk2-circle</active>
+        <active>prefigure-pp-disk-dk2-max</active>
+        <active>prefigure-pp-disk-dk2-min</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-pp-disk-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-pp-disk-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-disk-grid</active>
+        <active>prefigure-pp-disk-axes</active>
+      </children>
+      <components>
+        <active>prefigure-pp-disk-grid</active>
+        <active>prefigure-pp-disk-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-pp-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-disk-grid" speech2="The coordinate grid">
+      <active>prefigure-pp-disk-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-pp-disk-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-disk-axes" speech2="The coordinate axes">
+      <active>prefigure-pp-disk-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-disk-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-disk-dk2-circle" speech2="The boundary circle x squared plus y squared equals nine.">
+      <active>prefigure-pp-disk-dk2-circle</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-disk-dk2-max" speech2="The interior critical point two comma negative two, where the maximum eight occurs.">
+      <active>prefigure-pp-disk-dk2-max</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-pp-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-disk-dk2-min" speech2="The boundary point where the minimum occurs.">
+      <active>prefigure-pp-disk-dk2-min</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-pp-disk-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

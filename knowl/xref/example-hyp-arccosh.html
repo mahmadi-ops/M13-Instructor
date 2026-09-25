@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing <span class="process-math">\(\cosh^{-1}(x)\)</span>.</span>
+</h2>
+<div class="para logical">
+<div class="para">Show that the inverse hyperbolic cosine can be written in terms of the natural logarithm as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cosh^{-1}(x) = \ln\left(x + \sqrt{x^2-1}\right), \qquad x \geq 1.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-hyp-arccosh-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">Since <span class="process-math">\(\cosh\)</span> is even, it becomes one-to-one only after we restrict it to <span class="process-math">\(x \geq 0\text{,}\)</span> where it increases from <span class="process-math">\(1\)</span> to <span class="process-math">\(\infty\text{.}\)</span> Set <span class="process-math">\(y = \cosh(x)\)</span> and solve for <span class="process-math">\(x\text{.}\)</span> Multiplying the numerator and the denominator by <span class="process-math">\(e^{x}\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = \cosh(x) = \frac{e^{x} + e^{-x}}{2}\cdot\frac{e^{x}}{e^{x}}
+= \frac{e^{2x}+1}{2e^{x}}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-hyp-arccosh-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Clearing the denominator gives <span class="process-math">\(2y e^{x} = e^{2x} + 1\text{,}\)</span> and the substitution <span class="process-math">\(u = e^{x}\)</span> turns this into a quadratic equation in <span class="process-math">\(u\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+2yu \amp = u^2 + 1\\
+u^2 - 2yu + 1 \amp = 0.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-hyp-arccosh-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">By the quadratic formula,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u = \frac{2y \pm \sqrt{4y^2-4}}{2} = y \pm \sqrt{y^2-1},
+\end{equation*}
+</div>
+<div class="para">that is, <span class="process-math">\(e^{x} = y \pm \sqrt{y^2-1}\text{.}\)</span> Interchanging the names of the two variables, so that <span class="process-math">\(y = \cosh^{-1}(x)\)</span> is the inverse function, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{y} = x \pm \sqrt{x^2-1}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-hyp-arccosh-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">It remains to decide which sign to take, and the convention is to choose <span class="process-math">\(y \geq 0\text{,}\)</span> matching the restriction made above. Note that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x - \sqrt{x^2-1} = \frac{1}{x + \sqrt{x^2-1}} \leq 1, \qquad x \geq 1,
+\end{equation*}
+</div>
+<div class="para">so the minus sign would give <span class="process-math">\(y = \ln\left(x - \sqrt{x^2-1}\right) \leq
+0\text{.}\)</span> Since we are looking for <span class="process-math">\(y \geq 0\text{,}\)</span> we choose the plus sign:</div>
+<div class="displaymath process-math">
+\begin{equation}
+y = \cosh^{-1}(x) = \ln\left(x + \sqrt{x^2-1}\right).\tag{1.4.1}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-hyp-arccosh-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.4.2.1"><a tabindex="-1" href="#example-hyp-arccosh-3" title="Copy heading and permalink for Solution 1.4.2.1" aria-label="Copy heading and permalink for Solution 1.4.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.4.2: Computing \cosh^{-1}(x)"><a tabindex="-1" href="#example-hyp-arccosh" title="Copy heading and permalink for Example 1.4.2: Computing \cosh^{-1}(x)" aria-label="Copy heading and permalink for Example 1.4.2: Computing \cosh^{-1}(x)">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="sec-hyp-identity-list.html#example-hyp-arccosh">In Context</a></span>
+</body>
+</html>

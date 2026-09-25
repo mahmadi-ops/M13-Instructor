@@ -1,0 +1,103 @@
+<diagram>
+  <annotations>
+    <annotation id="elliptic-integral-K-K-graph" speech2="The complete elliptic integral of the first kind K of z with two Taylor approximations centered at z equals 0">
+      <grouped>elliptic-integral-K-K-graph</grouped>
+      <position>1</position>
+      <children>
+        <active>elliptic-integral-K-grid-axes</active>
+        <active>elliptic-integral-K-K-graph</active>
+        <active>elliptic-integral-K-p2-graph</active>
+        <active>elliptic-integral-K-p0-graph</active>
+        <active>elliptic-integral-K-intercept</active>
+        <active>elliptic-integral-K-legend</active>
+      </children>
+      <components>
+        <active>elliptic-integral-K-grid-axes</active>
+        <active>elliptic-integral-K-K-graph</active>
+        <active>elliptic-integral-K-p2-graph</active>
+        <active>elliptic-integral-K-p0-graph</active>
+        <active>elliptic-integral-K-intercept</active>
+        <active>elliptic-integral-K-legend</active>
+      </components>
+    </annotation>
+    <annotation id="elliptic-integral-K-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>elliptic-integral-K-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>elliptic-integral-K-grid</active>
+        <active>elliptic-integral-K-axes</active>
+      </children>
+      <components>
+        <active>elliptic-integral-K-grid</active>
+        <active>elliptic-integral-K-axes</active>
+      </components>
+      <parents>
+        <grouped>elliptic-integral-K-K-graph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="elliptic-integral-K-grid" speech2="The coordinate grid">
+      <active>elliptic-integral-K-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>elliptic-integral-K-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="elliptic-integral-K-axes" speech2="The coordinate axes">
+      <active>elliptic-integral-K-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>elliptic-integral-K-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="elliptic-integral-K-K-graph" speech2="The graph of K of z, an even function with minimum value pi over 2 at z equals 0, increasing without bound as z approaches plus or minus 1" sonify="yes">
+      <active>elliptic-integral-K-K-graph</active>
+      <position>2</position>
+      <parents>
+        <grouped>elliptic-integral-K-K-graph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>elliptic-integral-K-K-graph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="elliptic-integral-K-p2-graph" speech2="The second order Taylor approximation, p 2 of z equals pi over 2 plus pi over 8 z squared, which closely matches K near z equals 0" sonify="yes">
+      <active>elliptic-integral-K-p2-graph</active>
+      <position>3</position>
+      <parents>
+        <grouped>elliptic-integral-K-K-graph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>elliptic-integral-K-p2-graph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="elliptic-integral-K-p0-graph" speech2="The constant approximation, p 0 of z equals pi over 2, a horizontal line through the minimum of K" sonify="yes">
+      <active>elliptic-integral-K-p0-graph</active>
+      <position>4</position>
+      <parents>
+        <grouped>elliptic-integral-K-K-graph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>elliptic-integral-K-p0-graph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="elliptic-integral-K-intercept" speech2="The point 0 comma pi over 2, where the graph of K and both Taylor approximations agree" sonify="yes">
+      <active>elliptic-integral-K-intercept</active>
+      <position>5</position>
+      <parents>
+        <grouped>elliptic-integral-K-K-graph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>elliptic-integral-K-intercept</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="elliptic-integral-K-legend" speech2="A legend identifying the three graphs by color: K of z in blue, p 2 in green, and p 0 in gray" sonify="yes">
+      <active>elliptic-integral-K-legend</active>
+      <position>6</position>
+      <parents>
+        <grouped>elliptic-integral-K-K-graph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>elliptic-integral-K-legend</ACTIVE>
+      </sonification>
+    </annotation>
+  </annotations>
+</diagram>

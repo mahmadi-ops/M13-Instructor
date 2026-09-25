@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-binomial-choose-x3-figure" speech2="Four rows. Each row shows the product one plus x written four times, with arrows pointing up at the one term picked out of each factor: an x from three of the factors, drawn as orange arrows, and the one from the remaining factor, drawn as a gray arrow. Every row multiplies out to x cubed, and the four rows are the only ways to do it, so the coefficient of x cubed is four.">
+      <grouped>prefigure-binomial-choose-x3-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-binomial-choose-x3-row-1</active>
+        <active>prefigure-binomial-choose-x3-row-2</active>
+        <active>prefigure-binomial-choose-x3-row-3</active>
+        <active>prefigure-binomial-choose-x3-row-4</active>
+      </children>
+      <components>
+        <active>prefigure-binomial-choose-x3-row-1</active>
+        <active>prefigure-binomial-choose-x3-row-2</active>
+        <active>prefigure-binomial-choose-x3-row-3</active>
+        <active>prefigure-binomial-choose-x3-row-4</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-binomial-choose-x3-row-1" speech2="The first way: the x is taken from the first, second and third factors, and the one from the fourth factor. Multiplying the four picks gives x times x times x times one, which is x cubed.">
+      <active>prefigure-binomial-choose-x3-row-1</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-binomial-choose-x3-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-choose-x3-row-2" speech2="The second way: the x is taken from the first, second and fourth factors, and the one from the third factor. Multiplying the four picks gives x times x times one times x, which is x cubed.">
+      <active>prefigure-binomial-choose-x3-row-2</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-binomial-choose-x3-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-choose-x3-row-3" speech2="The third way: the x is taken from the first, third and fourth factors, and the one from the second factor. Multiplying the four picks gives x times one times x times x, which is x cubed.">
+      <active>prefigure-binomial-choose-x3-row-3</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-binomial-choose-x3-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-binomial-choose-x3-row-4" speech2="The fourth way: the x is taken from the second, third and fourth factors, and the one from the first factor. Multiplying the four picks gives one times x times x times x, which is x cubed.">
+      <active>prefigure-binomial-choose-x3-row-4</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-binomial-choose-x3-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

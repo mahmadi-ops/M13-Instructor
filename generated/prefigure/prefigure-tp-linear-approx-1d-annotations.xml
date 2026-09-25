@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-tp-linear-approx-1d-figure" speech2="The graph of a function y equals f of x, showing how the tangent line at x approximates the function near x plus d x.">
+      <grouped>prefigure-tp-linear-approx-1d-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-tp-linear-approx-1d-la-curve</active>
+        <active>prefigure-tp-linear-approx-1d-la-triangle</active>
+        <active>prefigure-tp-linear-approx-1d-la-dfx-actual</active>
+        <active>prefigure-tp-linear-approx-1d-la-dfx-approx</active>
+      </children>
+      <components>
+        <active>prefigure-tp-linear-approx-1d-la-curve</active>
+        <active>prefigure-tp-linear-approx-1d-la-triangle</active>
+        <active>prefigure-tp-linear-approx-1d-la-dfx-actual</active>
+        <active>prefigure-tp-linear-approx-1d-la-dfx-approx</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-tp-linear-approx-1d-la-curve" speech2="The graph of the function y equals f of x.">
+      <active>prefigure-tp-linear-approx-1d-la-curve</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-tp-linear-approx-1d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-linear-approx-1d-la-triangle" speech2="A right triangle formed by the tangent line at x, with horizontal leg d x and vertical leg d f, equal to f prime of x times d x.">
+      <active>prefigure-tp-linear-approx-1d-la-triangle</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-tp-linear-approx-1d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-linear-approx-1d-la-dfx-actual" speech2="The actual change in the function, delta f, equal to f of x plus d x minus f of x, measured on the curve.">
+      <active>prefigure-tp-linear-approx-1d-la-dfx-actual</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-tp-linear-approx-1d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-tp-linear-approx-1d-la-dfx-approx" speech2="The differential predicted by the tangent line, d f equals f prime of x times d x.">
+      <active>prefigure-tp-linear-approx-1d-la-dfx-approx</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-tp-linear-approx-1d-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

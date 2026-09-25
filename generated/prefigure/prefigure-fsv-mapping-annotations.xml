@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-fsv-mapping-figure" speech2="On the left, a shaded disk in the x y plane represents the domain, the set of points with x squared plus y squared at most one. Two points are marked in it: P nought at zero point five, zero point five, and a general point P. On the right is a horizontal z axis carrying the two output values. Dashed grey arrows labelled f run from each input point to its output value.">
+      <grouped>prefigure-fsv-mapping-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-fsv-mapping-fm-disk</active>
+        <active>prefigure-fsv-mapping-fm-P0</active>
+        <active>prefigure-fsv-mapping-fm-fP0</active>
+        <active>prefigure-fsv-mapping-fm-P</active>
+        <active>prefigure-fsv-mapping-fm-fP</active>
+      </children>
+      <components>
+        <active>prefigure-fsv-mapping-fm-disk</active>
+        <active>prefigure-fsv-mapping-fm-P0</active>
+        <active>prefigure-fsv-mapping-fm-fP0</active>
+        <active>prefigure-fsv-mapping-fm-P</active>
+        <active>prefigure-fsv-mapping-fm-fP</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-fsv-mapping-fm-disk" speech2="The domain of f: the disk of radius one, consisting of all points with x squared plus y squared at most one.">
+      <active>prefigure-fsv-mapping-fm-disk</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-fsv-mapping-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-fsv-mapping-fm-P0" speech2="The sample input point P nought with coordinates zero point five, zero point five.">
+      <active>prefigure-fsv-mapping-fm-P0</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-fsv-mapping-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-fsv-mapping-fm-fP0" speech2="Its output, f of zero point five and zero point five, which equals zero point five, marked on the z axis.">
+      <active>prefigure-fsv-mapping-fm-fP0</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-fsv-mapping-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-fsv-mapping-fm-P" speech2="A general input point P with coordinates x and y.">
+      <active>prefigure-fsv-mapping-fm-P</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-fsv-mapping-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-fsv-mapping-fm-fP" speech2="Its output z equals f of x y on the z axis.">
+      <active>prefigure-fsv-mapping-fm-fP</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-fsv-mapping-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

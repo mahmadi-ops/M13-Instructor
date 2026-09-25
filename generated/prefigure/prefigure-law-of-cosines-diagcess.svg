@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-law-of-cosines-figure" viewBox="0 0 320 320">
+  <defs>
+    <clipPath id="prefigure-law-of-cosines-__clipPath-0">
+      <rect x="10.0" y="10.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-law-of-cosines-__clipPath-1">
+      <rect x="10.0" y="10.0" width="300.0" height="300.0"/>
+    </clipPath>
+    <marker id="prefigure-law-of-cosines-arrow-head-end-3_None_24_60-blue" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-end-3_None_24_60-blue-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-end-3_None_24_60-magenta" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="magenta" stroke="none"/>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-end-3_None_24_60-magenta-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-start-3_None_24_60-blue" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.6999999999999993" refY="6.0">
+      <g transform="rotate(180, 6.75, 6.0)">
+        <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="blue" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-start-3_None_24_60-blue-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.699999999999999" refY="8.0">
+      <g transform="rotate(180, 8.75, 8.0)">
+        <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-start-3_None_24_60-magenta" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.6999999999999993" refY="6.0">
+      <g transform="rotate(180, 6.75, 6.0)">
+        <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="magenta" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-law-of-cosines-arrow-head-start-3_None_24_60-magenta-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.699999999999999" refY="8.0">
+      <g transform="rotate(180, 8.75, 8.0)">
+        <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <path id="prefigure-law-of-cosines-vec-u" stroke="blue" stroke-width="3" fill="none" marker-end="url(#prefigure-law-of-cosines-arrow-head-end-3_None_24_60-blue)" d="M 40.0 280.0 L 128.7 43.4"/>
+  <path id="prefigure-law-of-cosines-vec-v" stroke="blue" stroke-width="3" fill="none" marker-end="url(#prefigure-law-of-cosines-arrow-head-end-3_None_24_60-blue)" d="M 40.0 280.0 L 276.4 220.9"/>
+  <path id="prefigure-law-of-cosines-vec-w" stroke="magenta" stroke-width="3" fill="none" marker-end="url(#prefigure-law-of-cosines-arrow-head-end-3_None_24_60-magenta)" d="M 280.0 220.0 L 132.3 42.8"/>
+  <g id="prefigure-law-of-cosines-u-label" transform="translate(81.0,156.0) translate(-11.6,-8.3)">
+    <g id="prefigure-law-of-cosines-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.112px; color:blue" width="11.568px" height="8.256px" role="img" focusable="false" viewBox="0 -450 639 456" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-law-of-cosines-MJX-2-TEX-B-1D42E" d="M40 442L134 446Q228 450 229 450H235V273V165Q235 90 238 74T254 52Q268 46 304 46H319Q352 46 380 67T419 121L420 123Q424 135 425 199Q425 201 425 207Q425 233 425 249V316Q425 354 423 363T410 376Q396 380 369 380H356V442L554 450V267Q554 84 556 79Q561 62 610 62H623V31Q623 0 622 0Q603 0 527 -3T432 -6Q431 -6 431 25V56L420 45Q373 6 332 -1Q313 -6 281 -6Q208 -6 165 14T109 87L107 98L106 230Q106 358 104 366Q96 380 50 380H37V442H40Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="bold" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-attributes="texclass:ORD" data-semantic-speech="bold u">
+                <use data-c="1D42E" xlink:href="#prefigure-law-of-cosines-MJX-2-TEX-B-1D42E"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-law-of-cosines-v-label" transform="translate(164.0,254.0) translate(0.0,-0.0)">
+    <g id="prefigure-law-of-cosines-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:blue" width="10.984px" height="8.040px" role="img" focusable="false" viewBox="0 -444 607 444" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-law-of-cosines-MJX-3-TEX-B-1D42F" d="M401 444Q413 441 495 441Q568 441 574 444H580V382H510L409 156Q348 18 339 6Q331 -4 320 -4Q318 -4 313 -4T303 -3H288Q273 -3 264 12T221 102Q206 135 197 156L96 382H26V444H34Q49 441 145 441Q252 441 270 444H279V382H231L284 264Q335 149 338 149Q338 150 389 264T442 381Q442 382 418 382H394V444H401Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="bold" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-attributes="texclass:ORD" data-semantic-speech="bold v">
+                <use data-c="1D42F" xlink:href="#prefigure-law-of-cosines-MJX-3-TEX-B-1D42F"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-law-of-cosines-w-label" transform="translate(209.0,126.0) translate(0.0,-8.0)">
+    <g id="prefigure-law-of-cosines-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:magenta" width="15.040px" height="8.040px" role="img" focusable="false" viewBox="0 -444 831 444" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-law-of-cosines-MJX-4-TEX-B-1D430" d="M624 444Q636 441 722 441Q797 441 800 444H805V382H741L593 11Q592 10 590 8T586 4T584 2T581 0T579 -2T575 -3T571 -3T567 -4T561 -4T553 -4H542Q525 -4 518 6T490 70Q474 110 463 137L415 257L367 137Q357 111 341 72Q320 17 313 7T289 -4H277Q259 -4 253 -2T238 11L90 382H25V444H32Q47 441 140 441Q243 441 261 444H270V382H222L310 164L382 342L366 382H303V444H310Q322 441 407 441Q508 441 523 444H531V382H506Q481 382 481 380Q482 376 529 259T577 142L674 382H617V444H624Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="bold" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-attributes="texclass:ORD" data-semantic-speech="bold w">
+                <use data-c="1D430" xlink:href="#prefigure-law-of-cosines-MJX-4-TEX-B-1D430"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-law-of-cosines-angle-theta">
+    <g transform="translate(57.4,264.0) translate(0.0,-12.9)">
+      <g id="prefigure-law-of-cosines-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="8.488px" height="12.944px" role="img" focusable="false" viewBox="0 -705 469 715" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-law-of-cosines-MJX-5-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="theta">
+                <use data-c="1D703" xlink:href="#prefigure-law-of-cosines-MJX-5-TEX-I-1D703"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="2" fill="none" d="M 46.3 263.1 L 46.5 263.2 L 46.6 263.3 L 46.8 263.3 L 47.0 263.4 L 47.1 263.5 L 47.3 263.5 L 47.4 263.6 L 47.6 263.7 L 47.8 263.8 L 47.9 263.8 L 48.1 263.9 L 48.2 264.0 L 48.4 264.1 L 48.5 264.2 L 48.7 264.2 L 48.8 264.3 L 49.0 264.4 L 49.1 264.5 L 49.3 264.6 L 49.4 264.7 L 49.6 264.8 L 49.7 264.9 L 49.9 265.0 L 50.0 265.1 L 50.2 265.1 L 50.3 265.2 L 50.5 265.3 L 50.6 265.5 L 50.7 265.6 L 50.9 265.7 L 51.0 265.8 L 51.2 265.9 L 51.3 266.0 L 51.4 266.1 L 51.6 266.2 L 51.7 266.3 L 51.8 266.4 L 52.0 266.5 L 52.1 266.7 L 52.2 266.8 L 52.3 266.9 L 52.5 267.0 L 52.6 267.1 L 52.7 267.3 L 52.8 267.4 L 53.0 267.5 L 53.1 267.6 L 53.2 267.8 L 53.3 267.9 L 53.4 268.0 L 53.5 268.1 L 53.7 268.3 L 53.8 268.4 L 53.9 268.5 L 54.0 268.7 L 54.1 268.8 L 54.2 269.0 L 54.3 269.1 L 54.4 269.2 L 54.5 269.4 L 54.6 269.5 L 54.7 269.7 L 54.8 269.8 L 54.9 269.9 L 55.0 270.1 L 55.1 270.2 L 55.2 270.4 L 55.3 270.5 L 55.4 270.7 L 55.5 270.8 L 55.6 271.0 L 55.7 271.1 L 55.7 271.3 L 55.8 271.4 L 55.9 271.6 L 56.0 271.7 L 56.1 271.9 L 56.1 272.0 L 56.2 272.2 L 56.3 272.4 L 56.4 272.5 L 56.4 272.7 L 56.5 272.8 L 56.6 273.0 L 56.6 273.2 L 56.7 273.3 L 56.8 273.5 L 56.8 273.6 L 56.9 273.8 L 57.0 274.0 L 57.0 274.1 L 57.1 274.3 L 57.1 274.5 L 57.2 274.6 L 57.2 274.8 L 57.3 275.0 L 57.3 275.1 L 57.4 275.3 L 57.4 275.5 L 57.5 275.6"/>
+  </g>
+</svg>

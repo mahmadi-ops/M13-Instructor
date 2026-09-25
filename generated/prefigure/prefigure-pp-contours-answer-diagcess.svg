@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-pp-contours-answer-figure" viewBox="0 0 494 444">
+  <defs>
+    <clipPath id="prefigure-pp-contours-answer-__clipPath-0">
+      <rect x="12.0" y="12.0" width="470.0" height="420.0"/>
+    </clipPath>
+    <clipPath id="prefigure-pp-contours-answer-__clipPath-1">
+      <rect x="12.0" y="12.0" width="470.0" height="420.0"/>
+    </clipPath>
+    <marker id="prefigure-pp-contours-answer-arrow-head-end-3_None_24_60-h009E73" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="#009E73" stroke="none"/>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-end-3_None_24_60-h009E73-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-end-3_None_24_60-hD55E00" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="9.8" refY="6.0">
+      <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="#D55E00" stroke="none"/>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-end-3_None_24_60-hD55E00-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="11.8" refY="8.0">
+      <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-start-3_None_24_60-h009E73" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.6999999999999993" refY="6.0">
+      <g transform="rotate(180, 6.75, 6.0)">
+        <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="#009E73" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-start-3_None_24_60-h009E73-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.699999999999999" refY="8.0">
+      <g transform="rotate(180, 8.75, 8.0)">
+        <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-start-3_None_24_60-hD55E00" markerWidth="13.5" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.6999999999999993" refY="6.0">
+      <g transform="rotate(180, 6.75, 6.0)">
+        <path d="M 13.5 6.0L 0.0 12.0L 2.6 7.5L 2.6 4.5L 0.0 0.0Z" fill="#D55E00" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-pp-contours-answer-arrow-head-start-3_None_24_60-hD55E00-outline" markerWidth="17.5" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.699999999999999" refY="8.0">
+      <g transform="rotate(180, 8.75, 8.0)">
+        <path d="M 16.3 9.8 L 2.8 15.8 A 2 2 0 0 1 0.0 14.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 16.3 6.2 A 2 2 0 0 1 16.3 9.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="prefigure-pp-contours-answer-grid-axes">
+    <g id="prefigure-pp-contours-answer-grid" stroke="#ccc" stroke-width="1">
+      <line x1="38.7" y1="432.0" x2="38.7" y2="12.0"/>
+      <line x1="92.1" y1="432.0" x2="92.1" y2="12.0"/>
+      <line x1="145.5" y1="432.0" x2="145.5" y2="12.0"/>
+      <line x1="198.9" y1="432.0" x2="198.9" y2="12.0"/>
+      <line x1="252.3" y1="432.0" x2="252.3" y2="12.0"/>
+      <line x1="305.7" y1="432.0" x2="305.7" y2="12.0"/>
+      <line x1="359.2" y1="432.0" x2="359.2" y2="12.0"/>
+      <line x1="412.6" y1="432.0" x2="412.6" y2="12.0"/>
+      <line x1="466.0" y1="432.0" x2="466.0" y2="12.0"/>
+      <line x1="12.0" y1="413.5" x2="482.0" y2="413.5"/>
+      <line x1="12.0" y1="360.7" x2="482.0" y2="360.7"/>
+      <line x1="12.0" y1="307.8" x2="482.0" y2="307.8"/>
+      <line x1="12.0" y1="255.0" x2="482.0" y2="255.0"/>
+      <line x1="12.0" y1="202.2" x2="482.0" y2="202.2"/>
+      <line x1="12.0" y1="149.4" x2="482.0" y2="149.4"/>
+      <line x1="12.0" y1="96.5" x2="482.0" y2="96.5"/>
+      <line x1="12.0" y1="43.7" x2="482.0" y2="43.7"/>
+    </g>
+    <g id="prefigure-pp-contours-answer-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-pp-contours-answer-__line-17" x1="12.0" y1="360.7" x2="482.0" y2="360.7" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-pp-contours-answer-__line-18" x1="145.5" y1="363.7" x2="145.5" y2="357.7"/>
+        <line id="prefigure-pp-contours-answer-__line-19" x1="252.3" y1="363.7" x2="252.3" y2="357.7"/>
+        <line id="prefigure-pp-contours-answer-__line-20" x1="359.2" y1="363.7" x2="359.2" y2="357.7"/>
+        <line id="prefigure-pp-contours-answer-__line-21" x1="466.0" y1="363.7" x2="466.0" y2="357.7"/>
+      </g>
+      <line id="prefigure-pp-contours-answer-__line-22" x1="38.7" y1="432.0" x2="38.7" y2="12.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-pp-contours-answer-__line-23" x1="35.7" y1="255.0" x2="41.7" y2="255.0"/>
+        <line id="prefigure-pp-contours-answer-__line-24" x1="35.7" y1="149.4" x2="41.7" y2="149.4"/>
+        <line id="prefigure-pp-contours-answer-__line-25" x1="35.7" y1="43.7" x2="41.7" y2="43.7"/>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-0" transform="translate(478.0,356.7) translate(-10.4,-8.2)">
+      <g id="prefigure-pp-contours-answer-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-pp-contours-answer-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-1" transform="translate(42.7,16.0) translate(0.0,-0.0)">
+      <g id="prefigure-pp-contours-answer-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-pp-contours-answer-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-2" transform="translate(145.5,371.7) translate(-4.5,-0.0)">
+      <g id="prefigure-pp-contours-answer-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-pp-contours-answer-MJX-4-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-3" transform="translate(252.3,371.7) translate(-4.5,-0.0)">
+      <g id="prefigure-pp-contours-answer-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-5-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="4">
+                <use data-c="34" xlink:href="#prefigure-pp-contours-answer-MJX-5-TEX-N-34"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-4" transform="translate(359.2,371.7) translate(-4.5,-0.0)">
+      <g id="prefigure-pp-contours-answer-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-6-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="6">
+                <use data-c="36" xlink:href="#prefigure-pp-contours-answer-MJX-6-TEX-N-36"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-5" transform="translate(466.0,371.7) translate(-4.5,-0.0)">
+      <g id="prefigure-pp-contours-answer-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-7-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="8">
+                <use data-c="38" xlink:href="#prefigure-pp-contours-answer-MJX-7-TEX-N-38"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-6" transform="translate(27.7,255.0) translate(-9.0,-6.0)">
+      <g id="prefigure-pp-contours-answer-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-pp-contours-answer-MJX-8-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-7" transform="translate(27.7,149.4) translate(-9.0,-6.1)">
+      <g id="prefigure-pp-contours-answer-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-9-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="4">
+                <use data-c="34" xlink:href="#prefigure-pp-contours-answer-MJX-9-TEX-N-34"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-pp-contours-answer-__label-8" transform="translate(27.7,43.7) translate(-9.0,-6.2)">
+      <g id="prefigure-pp-contours-answer-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-pp-contours-answer-MJX-10-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="6">
+                <use data-c="36" xlink:href="#prefigure-pp-contours-answer-MJX-10-TEX-N-36"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-pp-contours-answer-ca-0" d="M 46.7 356.3 L 50.0 354.4 L 53.3 352.4 L 56.6 350.2 L 59.9 347.9 L 63.1 345.4 L 66.4 342.9 L 69.7 340.2 L 73.0 337.4 L 76.3 334.6 L 79.6 331.6 L 82.8 328.6 L 86.1 325.6 L 89.4 322.5 L 92.7 319.5 L 96.0 316.5 L 99.3 313.5 L 102.6 310.5 L 105.8 307.7 L 109.1 305.0 L 112.4 302.3 L 115.7 299.8 L 119.0 297.5 L 122.3 295.3 L 125.5 293.3 L 128.8 291.4 L 132.1 289.7 L 135.4 288.2 L 138.7 286.8 L 142.0 285.6 L 145.3 284.6 L 148.5 283.7 L 151.8 283.0 L 155.1 282.5 L 158.4 282.0 L 161.7 281.8 L 165.0 281.6 L 168.2 281.6 L 171.5 281.7 L 174.8 282.0 L 178.1 282.3 L 181.4 282.8 L 184.7 283.3 L 188.0 284.0 L 191.2 284.8 L 194.5 285.6 L 197.8 286.6 L 201.1 287.6 L 204.4 288.7 L 207.7 289.9 L 210.9 291.2 L 214.2 292.5 L 217.5 293.9 L 220.8 295.4 L 224.1 297.0 L 227.4 298.6 L 230.7 300.2 L 233.9 301.9 L 237.2 303.7 L 240.5 305.5 L 243.8 307.3 L 247.1 309.2 L 250.4 311.1 L 253.6 313.0 L 256.9 315.0 L 260.2 316.9 L 263.5 318.9 L 266.8 320.8 L 270.1 322.8 L 273.4 324.7 L 276.6 326.7 L 279.9 328.6 L 283.2 330.5 L 286.5 332.4 L 289.8 334.2 L 293.1 336.0 L 296.3 337.8 L 299.6 339.6 L 302.9 341.3 L 306.2 342.9 L 309.5 344.5 L 312.8 346.1 L 316.1 347.6 L 319.3 349.0 L 322.6 350.5 L 325.9 351.8 L 329.2 353.1 L 332.5 354.4 L 335.8 355.6 L 339.1 356.7 L 342.3 357.8 L 345.6 358.9 L 348.9 359.9 L 352.2 360.8 L 355.5 361.7 L 358.8 362.6 L 362.0 363.4 L 365.3 364.2 L 368.6 364.9 L 371.9 365.6 L 375.2 366.3" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-2" d="M 46.7 344.7 L 50.0 342.8 L 53.3 340.7 L 56.6 338.6 L 59.9 336.3 L 63.1 333.8 L 66.4 331.3 L 69.7 328.6 L 73.0 325.8 L 76.3 323.0 L 79.6 320.0 L 82.8 317.0 L 86.1 314.0 L 89.4 310.9 L 92.7 307.9 L 96.0 304.8 L 99.3 301.8 L 102.6 298.9 L 105.8 296.1 L 109.1 293.3 L 112.4 290.7 L 115.7 288.2 L 119.0 285.9 L 122.3 283.7 L 125.5 281.7 L 128.8 279.8 L 132.1 278.1 L 135.4 276.6 L 138.7 275.2 L 142.0 274.0 L 145.3 273.0 L 148.5 272.1 L 151.8 271.4 L 155.1 270.8 L 158.4 270.4 L 161.7 270.1 L 165.0 270.0 L 168.2 270.0 L 171.5 270.1 L 174.8 270.3 L 178.1 270.7 L 181.4 271.1 L 184.7 271.7 L 188.0 272.4 L 191.2 273.1 L 194.5 274.0 L 197.8 274.9 L 201.1 276.0 L 204.4 277.1 L 207.7 278.3 L 210.9 279.6 L 214.2 280.9 L 217.5 282.3 L 220.8 283.8 L 224.1 285.4 L 227.4 287.0 L 230.7 288.6 L 233.9 290.3 L 237.2 292.1 L 240.5 293.9 L 243.8 295.7 L 247.1 297.6 L 250.4 299.5 L 253.6 301.4 L 256.9 303.3 L 260.2 305.3 L 263.5 307.3 L 266.8 309.2 L 270.1 311.2 L 273.4 313.1 L 276.6 315.1 L 279.9 317.0 L 283.2 318.9 L 286.5 320.8 L 289.8 322.6 L 293.1 324.4 L 296.3 326.2 L 299.6 327.9 L 302.9 329.6 L 306.2 331.3 L 309.5 332.9 L 312.8 334.5 L 316.1 336.0 L 319.3 337.4 L 322.6 338.8 L 325.9 340.2 L 329.2 341.5 L 332.5 342.7 L 335.8 343.9 L 339.1 345.1 L 342.3 346.2 L 345.6 347.2 L 348.9 348.2 L 352.2 349.2 L 355.5 350.1 L 358.8 351.0 L 362.0 351.8 L 365.3 352.5 L 368.6 353.3 L 371.9 354.0 L 375.2 354.6" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-4" d="M 46.7 331.5 L 50.0 329.6 L 53.3 327.5 L 56.6 325.4 L 59.9 323.1 L 63.1 320.6 L 66.4 318.1 L 69.7 315.4 L 73.0 312.6 L 76.3 309.7 L 79.6 306.8 L 82.8 303.8 L 86.1 300.8 L 89.4 297.7 L 92.7 294.7 L 96.0 291.6 L 99.3 288.6 L 102.6 285.7 L 105.8 282.9 L 109.1 280.1 L 112.4 277.5 L 115.7 275.0 L 119.0 272.7 L 122.3 270.5 L 125.5 268.4 L 128.8 266.6 L 132.1 264.9 L 135.4 263.3 L 138.7 262.0 L 142.0 260.8 L 145.3 259.8 L 148.5 258.9 L 151.8 258.2 L 155.1 257.6 L 158.4 257.2 L 161.7 256.9 L 165.0 256.8 L 168.2 256.8 L 171.5 256.9 L 174.8 257.1 L 178.1 257.5 L 181.4 257.9 L 184.7 258.5 L 188.0 259.2 L 191.2 259.9 L 194.5 260.8 L 197.8 261.7 L 201.1 262.8 L 204.4 263.9 L 207.7 265.1 L 210.9 266.4 L 214.2 267.7 L 217.5 269.1 L 220.8 270.6 L 224.1 272.1 L 227.4 273.8 L 230.7 275.4 L 233.9 277.1 L 237.2 278.9 L 240.5 280.7 L 243.8 282.5 L 247.1 284.4 L 250.4 286.3 L 253.6 288.2 L 256.9 290.1 L 260.2 292.1 L 263.5 294.0 L 266.8 296.0 L 270.1 298.0 L 273.4 299.9 L 276.6 301.9 L 279.9 303.8 L 283.2 305.7 L 286.5 307.6 L 289.8 309.4 L 293.1 311.2 L 296.3 313.0 L 299.6 314.7 L 302.9 316.4 L 306.2 318.1 L 309.5 319.7 L 312.8 321.2 L 316.1 322.8 L 319.3 324.2 L 322.6 325.6 L 325.9 327.0 L 329.2 328.3 L 332.5 329.5 L 335.8 330.7 L 339.1 331.9 L 342.3 333.0 L 345.6 334.0 L 348.9 335.0 L 352.2 336.0 L 355.5 336.9 L 358.8 337.7 L 362.0 338.6 L 365.3 339.3 L 368.6 340.1 L 371.9 340.8 L 375.2 341.4" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-6" d="M 46.7 300.9 L 50.0 298.9 L 53.3 296.9 L 56.6 294.7 L 59.9 292.4 L 63.1 290.0 L 66.4 287.4 L 69.7 284.7 L 73.0 282.0 L 76.3 279.1 L 79.6 276.2 L 82.8 273.2 L 86.1 270.1 L 89.4 267.1 L 92.7 264.0 L 96.0 261.0 L 99.3 258.0 L 102.6 255.1 L 105.8 252.2 L 109.1 249.5 L 112.4 246.9 L 115.7 244.4 L 119.0 242.0 L 122.3 239.8 L 125.5 237.8 L 128.8 235.9 L 132.1 234.2 L 135.4 232.7 L 138.7 231.3 L 142.0 230.2 L 145.3 229.1 L 148.5 228.3 L 151.8 227.5 L 155.1 227.0 L 158.4 226.6 L 161.7 226.3 L 165.0 226.2 L 168.2 226.1 L 171.5 226.3 L 174.8 226.5 L 178.1 226.8 L 181.4 227.3 L 184.7 227.9 L 188.0 228.5 L 191.2 229.3 L 194.5 230.1 L 197.8 231.1 L 201.1 232.1 L 204.4 233.2 L 207.7 234.4 L 210.9 235.7 L 214.2 237.1 L 217.5 238.5 L 220.8 240.0 L 224.1 241.5 L 227.4 243.1 L 230.7 244.8 L 233.9 246.5 L 237.2 248.2 L 240.5 250.0 L 243.8 251.9 L 247.1 253.7 L 250.4 255.6 L 253.6 257.6 L 256.9 259.5 L 260.2 261.4 L 263.5 263.4 L 266.8 265.4 L 270.1 267.3 L 273.4 269.3 L 276.6 271.2 L 279.9 273.1 L 283.2 275.0 L 286.5 276.9 L 289.8 278.8 L 293.1 280.6 L 296.3 282.4 L 299.6 284.1 L 302.9 285.8 L 306.2 287.4 L 309.5 289.1 L 312.8 290.6 L 316.1 292.1 L 319.3 293.6 L 322.6 295.0 L 325.9 296.3 L 329.2 297.6 L 332.5 298.9 L 335.8 300.1 L 339.1 301.2 L 342.3 302.3 L 345.6 303.4 L 348.9 304.4 L 352.2 305.3 L 355.5 306.2 L 358.8 307.1 L 362.0 307.9 L 365.3 308.7 L 368.6 309.4 L 371.9 310.1 L 375.2 310.8" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-8" d="M 46.7 241.2 L 50.0 239.2 L 53.3 237.2 L 56.6 235.0 L 59.9 232.7 L 63.1 230.3 L 66.4 227.7 L 69.7 225.0 L 73.0 222.3 L 76.3 219.4 L 79.6 216.5 L 82.8 213.5 L 86.1 210.4 L 89.4 207.4 L 92.7 204.3 L 96.0 201.3 L 99.3 198.3 L 102.6 195.4 L 105.8 192.5 L 109.1 189.8 L 112.4 187.2 L 115.7 184.7 L 119.0 182.3 L 122.3 180.1 L 125.5 178.1 L 128.8 176.2 L 132.1 174.5 L 135.4 173.0 L 138.7 171.6 L 142.0 170.5 L 145.3 169.4 L 148.5 168.6 L 151.8 167.8 L 155.1 167.3 L 158.4 166.9 L 161.7 166.6 L 165.0 166.5 L 168.2 166.4 L 171.5 166.6 L 174.8 166.8 L 178.1 167.1 L 181.4 167.6 L 184.7 168.2 L 188.0 168.8 L 191.2 169.6 L 194.5 170.4 L 197.8 171.4 L 201.1 172.4 L 204.4 173.5 L 207.7 174.7 L 210.9 176.0 L 214.2 177.4 L 217.5 178.8 L 220.8 180.3 L 224.1 181.8 L 227.4 183.4 L 230.7 185.1 L 233.9 186.8 L 237.2 188.5 L 240.5 190.3 L 243.8 192.2 L 247.1 194.0 L 250.4 195.9 L 253.6 197.9 L 256.9 199.8 L 260.2 201.7 L 263.5 203.7 L 266.8 205.7 L 270.1 207.6 L 273.4 209.6 L 276.6 211.5 L 279.9 213.4 L 283.2 215.3 L 286.5 217.2 L 289.8 219.1 L 293.1 220.9 L 296.3 222.7 L 299.6 224.4 L 302.9 226.1 L 306.2 227.7 L 309.5 229.4 L 312.8 230.9 L 316.1 232.4 L 319.3 233.9 L 322.6 235.3 L 325.9 236.6 L 329.2 237.9 L 332.5 239.2 L 335.8 240.4 L 339.1 241.5 L 342.3 242.6 L 345.6 243.7 L 348.9 244.7 L 352.2 245.6 L 355.5 246.5 L 358.8 247.4 L 362.0 248.2 L 365.3 249.0 L 368.6 249.7 L 371.9 250.4 L 375.2 251.1" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-10" d="M 46.7 183.0 L 50.0 181.1 L 53.3 179.1 L 56.6 176.9 L 59.9 174.6 L 63.1 172.2 L 66.4 169.6 L 69.7 166.9 L 73.0 164.2 L 76.3 161.3 L 79.6 158.3 L 82.8 155.4 L 86.1 152.3 L 89.4 149.3 L 92.7 146.2 L 96.0 143.2 L 99.3 140.2 L 102.6 137.3 L 105.8 134.4 L 109.1 131.7 L 112.4 129.1 L 115.7 126.6 L 119.0 124.2 L 122.3 122.0 L 125.5 120.0 L 128.8 118.1 L 132.1 116.4 L 135.4 114.9 L 138.7 113.5 L 142.0 112.3 L 145.3 111.3 L 148.5 110.4 L 151.8 109.7 L 155.1 109.2 L 158.4 108.8 L 161.7 108.5 L 165.0 108.3 L 168.2 108.3 L 171.5 108.4 L 174.8 108.7 L 178.1 109.0 L 181.4 109.5 L 184.7 110.1 L 188.0 110.7 L 191.2 111.5 L 194.5 112.3 L 197.8 113.3 L 201.1 114.3 L 204.4 115.4 L 207.7 116.6 L 210.9 117.9 L 214.2 119.2 L 217.5 120.7 L 220.8 122.1 L 224.1 123.7 L 227.4 125.3 L 230.7 127.0 L 233.9 128.7 L 237.2 130.4 L 240.5 132.2 L 243.8 134.1 L 247.1 135.9 L 250.4 137.8 L 253.6 139.7 L 256.9 141.7 L 260.2 143.6 L 263.5 145.6 L 266.8 147.6 L 270.1 149.5 L 273.4 151.5 L 276.6 153.4 L 279.9 155.3 L 283.2 157.2 L 286.5 159.1 L 289.8 161.0 L 293.1 162.8 L 296.3 164.5 L 299.6 166.3 L 302.9 168.0 L 306.2 169.6 L 309.5 171.2 L 312.8 172.8 L 316.1 174.3 L 319.3 175.8 L 322.6 177.2 L 325.9 178.5 L 329.2 179.8 L 332.5 181.1 L 335.8 182.3 L 339.1 183.4 L 342.3 184.5 L 345.6 185.6 L 348.9 186.6 L 352.2 187.5 L 355.5 188.4 L 358.8 189.3 L 362.0 190.1 L 365.3 190.9 L 368.6 191.6 L 371.9 192.3 L 375.2 193.0" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-12" d="M 46.7 134.4 L 50.0 132.5 L 53.3 130.5 L 56.6 128.3 L 59.9 126.0 L 63.1 123.6 L 66.4 121.0 L 69.7 118.3 L 73.0 115.6 L 76.3 112.7 L 79.6 109.7 L 82.8 106.7 L 86.1 103.7 L 89.4 100.7 L 92.7 97.6 L 96.0 94.6 L 99.3 91.6 L 102.6 88.6 L 105.8 85.8 L 109.1 83.1 L 112.4 80.4 L 115.7 78.0 L 119.0 75.6 L 122.3 73.4 L 125.5 71.4 L 128.8 69.5 L 132.1 67.8 L 135.4 66.3 L 138.7 64.9 L 142.0 63.7 L 145.3 62.7 L 148.5 61.8 L 151.8 61.1 L 155.1 60.6 L 158.4 60.2 L 161.7 59.9 L 165.0 59.7 L 168.2 59.7 L 171.5 59.8 L 174.8 60.1 L 178.1 60.4 L 181.4 60.9 L 184.7 61.4 L 188.0 62.1 L 191.2 62.9 L 194.5 63.7 L 197.8 64.7 L 201.1 65.7 L 204.4 66.8 L 207.7 68.0 L 210.9 69.3 L 214.2 70.6 L 217.5 72.1 L 220.8 73.5 L 224.1 75.1 L 227.4 76.7 L 230.7 78.4 L 233.9 80.1 L 237.2 81.8 L 240.5 83.6 L 243.8 85.5 L 247.1 87.3 L 250.4 89.2 L 253.6 91.1 L 256.9 93.1 L 260.2 95.0 L 263.5 97.0 L 266.8 98.9 L 270.1 100.9 L 273.4 102.9 L 276.6 104.8 L 279.9 106.7 L 283.2 108.6 L 286.5 110.5 L 289.8 112.3 L 293.1 114.2 L 296.3 115.9 L 299.6 117.7 L 302.9 119.4 L 306.2 121.0 L 309.5 122.6 L 312.8 124.2 L 316.1 125.7 L 319.3 127.2 L 322.6 128.6 L 325.9 129.9 L 329.2 131.2 L 332.5 132.5 L 335.8 133.7 L 339.1 134.8 L 342.3 135.9 L 345.6 137.0 L 348.9 138.0 L 352.2 138.9 L 355.5 139.8 L 358.8 140.7 L 362.0 141.5 L 365.3 142.3 L 368.6 143.0 L 371.9 143.7 L 375.2 144.4" stroke="#7F7F7F" stroke-width="1.5" fill="none" clip-path="url(#prefigure-pp-contours-answer-__clipPath-1)"/>
+  <path id="prefigure-pp-contours-answer-ca-grad" stroke="#009E73" stroke-width="3" fill="none" marker-end="url(#prefigure-pp-contours-answer-arrow-head-end-3_None_24_60-h009E73)" d="M 92.1 255.0 L 56.8 220.1"/>
+  <path id="prefigure-pp-contours-answer-ca-u2" stroke="#D55E00" stroke-width="3" fill="none" marker-end="url(#prefigure-pp-contours-answer-arrow-head-end-3_None_24_60-hD55E00)" d="M 166.9 59.7 L 166.9 108.9"/>
+  <circle id="prefigure-pp-contours-answer-ca-pt12" cx="92.1" cy="255.0" r="4" stroke="black" stroke-width="2" fill="#009E73"/>
+  <circle id="prefigure-pp-contours-answer-ca-P" cx="166.9" cy="59.7" r="4" stroke="black" stroke-width="2" fill="#D55E00"/>
+  <g id="prefigure-pp-contours-answer-ca-grad-lab" transform="translate(60.9,206.6) translate(0.0,-18.1)">
+    <g id="prefigure-pp-contours-answer-__g-9">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px; color:#009E73" width="65.264px" height="18.096px" role="img" focusable="false" viewBox="0 -750 3605.7 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-2207" d="M46 676Q46 679 51 683H781Q786 679 786 676Q786 674 617 326T444 -26Q439 -33 416 -33T388 -26Q385 -22 216 326T46 676ZM697 596Q697 597 445 597T193 596Q195 591 319 336T445 80L697 596Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-I-1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-2061" d=""/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-11-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="prefixop" data-semantic-role="prefix operator" data-semantic-id="11" data-semantic-children="10" data-semantic-content="0" data-semantic-speech="nabla f left parenthesis 1 comma 2 right parenthesis">
+            <g data-mml-node="mi" data-semantic-type="operator" data-semantic-role="prefix operator" data-semantic-font="normal" data-semantic-id="0" data-semantic-parent="11" data-semantic-operator="prefixop,∇" data-semantic-speech="nabla">
+              <use data-c="2207" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-2207"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-id="10" data-semantic-children="1,8" data-semantic-content="9,1" data-semantic-parent="11" data-semantic-speech="f left parenthesis 1 comma 2 right parenthesis" transform="translate(833,0)">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="10" data-semantic-operator="appl" data-semantic-speech="f">
+                <use data-c="1D453" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-I-1D453"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="9" data-semantic-parent="10" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(550,0)">
+                <use data-c="2061" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="8" data-semantic-children="7" data-semantic-content="2,6" data-semantic-parent="10" data-semantic-speech="left parenthesis 1 comma 2 right parenthesis" transform="translate(550,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="2" data-semantic-parent="8" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="7" data-semantic-children="3,4,5" data-semantic-content="4" data-semantic-parent="8" data-semantic-speech="1 comma 2" transform="translate(389,0)">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="7" data-semantic-speech="1">
+                    <use data-c="31" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-31"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="comma" data-semantic-id="4" data-semantic-parent="7" data-semantic-operator="punctuated" data-semantic-speech="comma" transform="translate(500,0)">
+                    <use data-c="2C" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-2C"/>
+                  </g>
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="2" transform="translate(944.7,0)">
+                    <use data-c="32" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-32"/>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="6" data-semantic-parent="8" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(1833.7,0)">
+                  <use data-c="29" xlink:href="#prefigure-pp-contours-answer-MJX-11-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-pp-contours-answer-ca-u2-lab" transform="translate(182.6,106.0) translate(0.0,-5.4)">
+    <g id="prefigure-pp-contours-answer-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px; color:#D55E00" width="18.256px" height="10.712px" role="img" focusable="false" viewBox="0 -442 1008.6 592" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-contours-answer-MJX-12-TEX-I-1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="prefigure-pp-contours-answer-MJX-12-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="u 2">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="u" data-semantic-prefix="Base">
+                <use data-c="1D462" xlink:href="#prefigure-pp-contours-answer-MJX-12-TEX-I-1D462"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(605,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="2" data-semantic-prefix="Subscript">
+                <use data-c="32" xlink:href="#prefigure-pp-contours-answer-MJX-12-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-pp-contours-answer-ca-P-lab" transform="translate(166.9,49.2) translate(-6.8,-12.4)">
+    <g id="prefigure-pp-contours-answer-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px; color:#D55E00" width="13.592px" height="12.360px" role="img" focusable="false" viewBox="0 -683 751 683" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-pp-contours-answer-MJX-13-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper P">
+              <use data-c="1D443" xlink:href="#prefigure-pp-contours-answer-MJX-13-TEX-I-1D443"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taylor polynomials closing in on a function -- animated</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math.
+     Kept in step with conic-slicer-manim.html so the two animated figures in
+     the book read as one family. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;   /* manim's off-white text */
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --yellow:    #ffe14d;
+    --red:       #fc6255;
+    --gold:      #f0ac5f;
+    /* the book's own stacks */
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  /* The figure is framed by the page at a fixed aspect ratio, so it lays out
+     as a column that exactly fills the iframe: the panel takes what it needs
+     and the stage takes the rest. */
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  #app { width: 100%; height: 100%; box-sizing: border-box;
+         display: flex; flex-direction: column; }
+
+  /* ---- stage ---- */
+  #stage { position: relative; width: 100%; background: var(--bg);
+           flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  canvas { display: block; }
+
+  .overlay { position: absolute; pointer-events: none; }
+
+  /* equation card, top-left, in the spirit of a manim MathTex on screen */
+  #eqcard {
+    top: 12px; left: 14px;
+    padding: 9px 13px 10px 13px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    line-height: 1.5;
+    max-width: 60%;
+  }
+  .math { font-family: var(--serif); font-size: 18px; }
+  .math i, .var { font-style: italic; }
+  /* p_n(x) is mathematics, so it takes the page's serif; the line under it is
+     prose and stays in the page's sans, the same split the page itself makes. */
+  #polyName {
+    font-family: var(--serif);
+    font-size: 18px; font-weight: 600; letter-spacing: .2px;
+    color: var(--blue);
+  }
+  #polyKind { font-size: 13px; color: var(--dim); }
+  #polyKind i { font-family: var(--serif); }
+  #expansion {
+    font-family: var(--serif); font-size: 15px; color: var(--blue);
+    margin-top: 2px;
+  }
+
+  /* window-of-agreement readout, bottom-left */
+  #meter {
+    left: 14px; bottom: 12px;
+    padding: 8px 12px 9px 12px;
+    background: rgba(16,18,24,0.72);
+    border: 1px solid var(--edge);
+    border-radius: 6px;
+    font-size: 13px; color: var(--dim);
+    font-variant-numeric: tabular-nums;
+  }
+  #meter b, #meter i { font-family: var(--serif); }
+  #meter b { color: var(--green); font-weight: 600; }
+  #bar {
+    position: relative; margin-top: 6px;
+    width: 168px; height: 5px; border-radius: 3px;
+    background: var(--edge);
+    overflow: hidden;
+  }
+  #barFill {
+    position: absolute; left: 0; top: 0; height: 100%;
+    background: var(--green); opacity: .8;
+    transition: width .12s linear;
+  }
+
+  /* caption for the guided tour, bottom-centre, fades like a manim Write() */
+  #caption {
+    left: 50%; transform: translateX(-50%);
+    bottom: 14px; max-width: 62%;
+    text-align: center; font-size: 15px; line-height: 1.4;
+    background: rgba(6,7,10,0.78);
+    padding: 7px 14px; border-radius: 6px;
+    opacity: 0; transition: opacity .45s ease;
+  }
+  #caption.show { opacity: 1; }
+
+  /* ---- control panel ---- */
+  #panel {
+    flex: 0 0 auto;
+    border-top: 1px solid var(--edge);
+    background: var(--panel);
+    padding: 9px 12px 11px 12px;
+    box-sizing: border-box;
+  }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 13px; color: var(--dim); }
+
+  button {
+    font: inherit; font-size: 13.5px;
+    padding: 5px 12px; border-radius: 999px;
+    color: var(--ink); background: #1a1d26;
+    border: 1px solid var(--edge);
+    cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+  }
+  button:hover { background: #232734; }
+  #btnP1, #btnP2, #btnP3 { font-family: var(--serif); font-size: 15px; }
+  button:disabled { opacity: .45; cursor: default; }
+  button.active { color: #06070a; font-weight: 600;
+                  background: var(--blue); border-color: var(--blue); }
+  #btnPlay.running { background: var(--blue); border-color: var(--blue);
+                     color: #06070a; font-weight: 600; }
+  #btnGhosts.active { background: var(--gold); border-color: var(--gold); }
+
+  .sliderRow { display: flex; align-items: center; gap: 10px; }
+  .sliderRow .name {
+    font-size: 14px; min-width: 118px;
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+  }
+  input[type=range] {
+    flex: 1; min-width: 110px; height: 22px;
+    -webkit-appearance: none; appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-moz-range-track {
+    height: 3px; border-radius: 2px; background: var(--edge);
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 14px; height: 14px; margin-top: -5.5px;
+    border-radius: 50%; background: var(--blue); border: none; cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 14px; height: 14px; border: none;
+    border-radius: 50%; background: var(--blue); cursor: pointer;
+  }
+
+  /* On a phone the equation card would cover most of the picture, so it stops
+     floating and becomes a strip above the canvas instead. See resize(), which
+     measures the stage after the strip has been laid out. */
+  @media (max-width: 560px) {
+    #eqcard {
+      position: static;
+      padding: 7px 12px 8px 12px;
+      border: none; border-bottom: 1px solid var(--edge);
+      border-radius: 0; background: var(--panel);
+      line-height: 1.35; max-width: none;
+    }
+    .math { font-size: 16px; }
+    #polyName { font-size: 15px; }
+    #polyKind { display: none; }        /* the instructions below say the same */
+    #meter { font-size: 12px; padding: 6px 9px 7px 9px; }
+    #bar { width: 120px; }
+    #caption { max-width: 84%; font-size: 13.5px; bottom: 10px; }
+    #panel { padding: 7px 10px 8px 10px; }
+    .sliderRow .name { min-width: 100px; font-size: 13px; }
+  }
+</style>
+</head>
+
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="eqcard" class="overlay">
+      <div class="math" style="color:#ece6e2"><i>f</i>(<i>x</i>) = <i>e</i><sup><i>x</i></sup></div>
+      <div id="polyName"><i>p</i><sub>3</sub>(<i>x</i>)</div>
+      <div id="polyKind">Maclaurin polynomial, centre <i>a</i> = 0</div>
+      <div id="expansion" class="math"></div>
+    </div>
+
+    <div id="meter" class="overlay">
+      within 0.1 of <i>f</i> on <b id="windowTxt">[-1.6, 1.3]</b>
+      <div id="bar"><div id="barFill" style="width:0px"></div></div>
+    </div>
+
+    <div id="caption" class="overlay"></div>
+  </div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Jump to:</span>
+      <button id="btnP1" data-n="1">p&#8321;</button>
+      <button id="btnP2" data-n="2">p&#8322;</button>
+      <button id="btnP3" data-n="3">p&#8323;</button>
+      <span style="flex:1"></span>
+      <button id="btnGhosts" title="Show the earlier polynomials faintly">Trails</button>
+      <button id="btnPlay">&#9654;&nbsp;Play</button>
+    </div>
+    <div class="row sliderRow">
+      <span class="name">order <i>n</i> = <span id="nVal">3</span></span>
+      <input type="range" id="nSlider" min="0" max="12" step="1" value="3"
+             aria-label="order n of the Taylor polynomial">
+    </div>
+    <div class="row sliderRow">
+      <span class="name">centre <i>a</i> = <span id="aVal">0.0</span></span>
+      <input type="range" id="aSlider" min="-2" max="1.5" step="0.05" value="0"
+             aria-label="centre a at which the Taylor polynomial is built">
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Manim colour constants, so the palette below reads the way a Scene would.
+  var INK   = "#ece6e2", BLUE  = "#58c4dd", GREEN = "#83c167",
+      YELLOW = "#ffe14d", GOLD = "#f0ac5f", GREY  = "#8a8f9c",
+      EDGE  = "#262a36", DIM   = "#9aa0ad";
+
+  // The book's own stacks (--font-body and --font-headings in the page CSS).
+  // Spelled out here rather than read back off the document so the canvas uses
+  // the page's serif for mathematics and its sans for prose, the same split the
+  // page itself makes between its text and its MathJax.
+  var SANS  = '"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif';
+  var SERIF = '"PT Serif", "Times New Roman", Times, serif';
+
+  var TOL = 0.1;          // "agrees with f" means |f - p| <= TOL
+  var NMAX = 12;
+
+  // ---------- world window ----------
+  // Fixed, so that moving the centre slider moves the polynomial across a
+  // picture that stays put -- the point of the figure is the comparison.
+  var X0 = -3.2, X1 = 2.6, Y0 = -1.6, Y1 = 8.2;
+
+  var stage  = document.getElementById("stage");
+  var canvas = document.createElement("canvas");
+  stage.appendChild(canvas);
+  var ctx = canvas.getContext("2d");
+
+  var W = 0, H = 0, dpr = 1;
+
+  function resize() {
+    var r = stage.getBoundingClientRect();
+    W = Math.max(1, Math.round(r.width));
+    H = Math.max(1, Math.round(r.height));
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width  = Math.round(W * dpr);
+    canvas.height = Math.round(H * dpr);
+    canvas.style.width  = W + "px";
+    canvas.style.height = H + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    draw();
+  }
+
+  // world -> screen
+  function sx(x) { return (x - X0) / (X1 - X0) * W; }
+  function sy(y) { return H - (y - Y0) / (Y1 - Y0) * H; }
+
+  // ---------- the mathematics ----------
+  // p(x) = e^a * sum_{k=0}^{n} (x-a)^k / k!, with the (n+1)st term faded in by
+  // `frac`, so that pressing Play grows one new term at a time the way a manim
+  // Transform would rather than cutting between polynomials.
+  function taylor(x, a, n, frac) {
+    var t = x - a, term = 1, s = 1;
+    for (var k = 1; k <= n; k++) { term *= t / k; s += term; }
+    if (frac > 0 && n < NMAX) { term *= t / (n + 1); s += frac * term; }
+    return Math.exp(a) * s;
+  }
+
+  // The largest interval around the centre on which |f - p| stays within TOL.
+  // Walked outward from a in small steps, which is enough for a readout.
+  function agreementWindow(a, n, frac) {
+    var step = 0.01, lo = a, hi = a, x;
+    for (x = a; x >= X0; x -= step) {
+      if (Math.abs(Math.exp(x) - taylor(x, a, n, frac)) > TOL) break;
+      lo = x;
+    }
+    for (x = a; x <= X1; x += step) {
+      if (Math.abs(Math.exp(x) - taylor(x, a, n, frac)) > TOL) break;
+      hi = x;
+    }
+    return [lo, hi];
+  }
+
+  // ---------- state ----------
+  var state = { a: 0, n: 3, frac: 0, ghosts: true, playing: false };
+
+  // ---------- drawing ----------
+  function drawGrid() {
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = EDGE;
+    var i;
+    ctx.beginPath();
+    for (i = Math.ceil(X0); i <= X1; i++) {
+      ctx.moveTo(Math.round(sx(i)) + 0.5, 0);
+      ctx.lineTo(Math.round(sx(i)) + 0.5, H);
+    }
+    for (i = Math.ceil(Y0); i <= Y1; i++) {
+      ctx.moveTo(0, Math.round(sy(i)) + 0.5);
+      ctx.lineTo(W, Math.round(sy(i)) + 0.5);
+    }
+    ctx.stroke();
+
+    ctx.strokeStyle = "#4a5060";
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(0, Math.round(sy(0)) + 0.5); ctx.lineTo(W, Math.round(sy(0)) + 0.5);
+    ctx.moveTo(Math.round(sx(0)) + 0.5, 0); ctx.lineTo(Math.round(sx(0)) + 0.5, H);
+    ctx.stroke();
+
+    ctx.fillStyle = DIM;
+    ctx.font = "13px " + SERIF;
+    ctx.textAlign = "center"; ctx.textBaseline = "top";
+    for (i = Math.ceil(X0); i <= X1; i++) {
+      if (i === 0) continue;
+      ctx.fillText(String(i), sx(i), sy(0) + 4);
+    }
+    ctx.textAlign = "right"; ctx.textBaseline = "middle";
+    for (i = Math.ceil(Y0); i <= Y1; i += 2) {
+      if (i === 0) continue;
+      ctx.fillText(String(i), sx(0) - 5, sy(i));
+    }
+  }
+
+  // A curve, clipped to the window by breaking the path whenever it leaves.
+  function plot(fn, color, width, alpha, dash) {
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = width;
+    ctx.lineJoin = "round"; ctx.lineCap = "round";
+    if (dash) ctx.setLineDash(dash);
+    ctx.beginPath();
+    var N = Math.max(240, W), open = false, i, x, y;
+    for (i = 0; i <= N; i++) {
+      x = X0 + (X1 - X0) * i / N;
+      y = fn(x);
+      if (!isFinite(y) || y < Y0 - 40 || y > Y1 + 40) { open = false; continue; }
+      if (!open) { ctx.moveTo(sx(x), sy(y)); open = true; }
+      else ctx.lineTo(sx(x), sy(y));
+    }
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function drawAgreementBand(lo, hi) {
+    if (hi - lo < 1e-6) return;
+    ctx.save();
+    ctx.fillStyle = GREEN;
+    ctx.globalAlpha = 0.10;
+    ctx.fillRect(sx(lo), 0, sx(hi) - sx(lo), H);
+    ctx.globalAlpha = 0.45;
+    ctx.strokeStyle = GREEN;
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4, 4]);
+    ctx.beginPath();
+    ctx.moveTo(Math.round(sx(lo)) + 0.5, 0); ctx.lineTo(Math.round(sx(lo)) + 0.5, H);
+    ctx.moveTo(Math.round(sx(hi)) + 0.5, 0); ctx.lineTo(Math.round(sx(hi)) + 0.5, H);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function draw() {
+    var a = state.a, n = state.n, frac = state.frac;
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = "#06070a";
+    ctx.fillRect(0, 0, W, H);
+
+    var win = agreementWindow(a, n, frac);
+    drawAgreementBand(win[0], win[1]);
+    drawGrid();
+
+    // Faint trails of the earlier polynomials, so the reader sees the whole
+    // family closing in rather than one curve at a time.
+    if (state.ghosts) {
+      for (var k = 0; k < n; k++) {
+        (function (kk) {
+          plot(function (x) { return taylor(x, a, kk, 0); },
+               GOLD, 1.4, 0.13 + 0.16 * (kk / Math.max(1, n)), null);
+        })(k);
+      }
+    }
+
+    plot(function (x) { return Math.exp(x); }, INK, 3, 1, null);
+    plot(function (x) { return taylor(x, a, n, frac); }, BLUE, 2.6, 1, null);
+
+    // the centre, where every polynomial touches f
+    var cx = sx(a), cy = sy(Math.exp(a));
+    ctx.save();
+    ctx.fillStyle = YELLOW;
+    ctx.beginPath(); ctx.arc(cx, cy, 5, 0, 2 * Math.PI); ctx.fill();
+    ctx.globalAlpha = 0.35;
+    ctx.beginPath(); ctx.arc(cx, cy, 10, 0, 2 * Math.PI); ctx.fill();
+    ctx.restore();
+
+    ctx.save();
+    ctx.fillStyle = YELLOW;
+    ctx.font = "italic 15px " + SERIF;
+    ctx.textAlign = "center"; ctx.textBaseline = "bottom";
+    ctx.fillText("a", cx, sy(0) + 20);
+    ctx.restore();
+
+    drawLegend(n);
+    updateReadouts(win);
+  }
+
+  // A legend in the top-right corner. The curves themselves run off the top of
+  // the window, so labelling them in place would put the text outside the
+  // picture for most settings of the sliders.
+  function drawLegend(n) {
+    var MATHF = "italic 15px " + SERIF, PROSEF = "13px " + SANS;
+    var items = [["f(x) = e", INK, 3, MATHF, "x"]];
+    if (state.ghosts && n > 0) items.push(["lower orders", GOLD, 1.4, PROSEF, ""]);
+    items.push(["p" + sub(n) + "(x)", BLUE, 2.6, MATHF, ""]);
+
+    var pad = 10, lineH = 21, swatch = 22;
+    ctx.save();
+    var wide = 0;
+    items.forEach(function (it) {
+      ctx.font = it[3];
+      wide = Math.max(wide, ctx.measureText(it[0]).width + (it[4] ? 9 : 0));
+    });
+    var bw = swatch + 8 + wide + pad * 2, bh = items.length * lineH + pad * 2 - 6;
+    var bx = W - bw - 12, by = 12;
+
+    ctx.fillStyle = "rgba(16,18,24,0.72)";
+    ctx.strokeStyle = EDGE; ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.rect(bx + 0.5, by + 0.5, bw, bh);
+    ctx.fill(); ctx.stroke();
+
+    ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    items.forEach(function (it, i) {
+      var y = by + pad + i * lineH + 5;
+      ctx.strokeStyle = it[1]; ctx.lineWidth = it[2]; ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(bx + pad, y); ctx.lineTo(bx + pad + swatch, y);
+      ctx.stroke();
+      ctx.fillStyle = it[1];
+      ctx.font = it[3];
+      var tx = bx + pad + swatch + 8;
+      ctx.fillText(it[0], tx, y);
+      // the exponent, set smaller and raised, the way the page sets one
+      if (it[4]) {
+        var adv = ctx.measureText(it[0]).width;
+        ctx.font = "italic 10px " + SERIF;
+        ctx.fillText(it[4], tx + adv + 0.5, y - 6);
+      }
+    });
+    ctx.restore();
+  }
+
+  // ---------- readouts ----------
+  var polyName  = document.getElementById("polyName"),
+      polyKind  = document.getElementById("polyKind"),
+      expansion = document.getElementById("expansion"),
+      windowTxt = document.getElementById("windowTxt"),
+      barFill   = document.getElementById("barFill"),
+      nVal      = document.getElementById("nVal"),
+      aVal      = document.getElementById("aVal");
+
+  var SUBDIGITS = "₀₁₂₃₄₅₆₇₈₉";
+  function sub(k) {
+    return String(k).split("").map(function (d) {
+      return SUBDIGITS.charAt(Number(d));
+    }).join("");
+  }
+
+  // The first few terms written out, the way the section writes them.
+  function expansionHTML(a, n) {
+    var centred = Math.abs(a) < 1e-9;
+    var v = centred ? "x" : "(x&#8722;a)";
+    var parts = ["1"];
+    if (n >= 1) parts.push(v);
+    for (var k = 2; k <= Math.min(n, 3); k++) {
+      parts.push(v + "<sup>" + k + "</sup>/" + k + "!");
+    }
+    if (n > 3) parts.push("&#8943;", v + "<sup>" + n + "</sup>/" + n + "!");
+    var head = centred ? "" : "<i>e</i><sup><i>a</i></sup>&#8202;(";
+    var tail = centred ? "" : ")";
+    return head + parts.join(" + ") + tail;
+  }
+
+  function updateReadouts(win) {
+    var n = state.n, a = state.a;
+    polyName.innerHTML = "<i>p</i><sub>" + n + "</sub>(<i>x</i>)";
+    polyKind.innerHTML = Math.abs(a) < 1e-9
+      ? "Maclaurin polynomial, centre <i>a</i> = 0"
+      : "Taylor polynomial, centre <i>a</i> = " + a.toFixed(2);
+    expansion.innerHTML = expansionHTML(a, n);
+
+    var lo = win[0], hi = win[1], width = hi - lo;
+    windowTxt.textContent = "[" + lo.toFixed(2) + ", " + hi.toFixed(2) + "]";
+    barFill.style.width = Math.min(168, 168 * width / (X1 - X0)) + "px";
+
+    nVal.textContent = String(n);
+    aVal.textContent = a.toFixed(1);
+    [btnP1, btnP2, btnP3].forEach(function (b) {
+      b.classList.toggle("active", Number(b.dataset.n) === n && !state.playing);
+    });
+  }
+
+  // ---------- captions ----------
+  var capEl = document.getElementById("caption"), capTimer = null;
+  function say(text, ms) {
+    capEl.innerHTML = text;
+    capEl.classList.add("show");
+    if (capTimer) clearTimeout(capTimer);
+    capTimer = setTimeout(function () { capEl.classList.remove("show"); },
+                          ms || 2200);
+  }
+
+  var LINES = [
+    "Order 0: a flat line through the point &#8212; only the height matches.",
+    "Order 1: the tangent line. Height and slope now match.",
+    "Order 2: the parabola bends the right way &#8212; curvature matches too.",
+    "Order 3: the cubic follows the curve noticeably further.",
+    "Each new term matches one more derivative at the centre &#8230;",
+    "&#8230; and widens the green window where the two curves agree."
+  ];
+
+  // ---------- controls ----------
+  var nSlider = document.getElementById("nSlider"),
+      aSlider = document.getElementById("aSlider"),
+      btnPlay = document.getElementById("btnPlay"),
+      btnGhosts = document.getElementById("btnGhosts"),
+      btnP1 = document.getElementById("btnP1"),
+      btnP2 = document.getElementById("btnP2"),
+      btnP3 = document.getElementById("btnP3");
+
+  nSlider.addEventListener("input", function () {
+    stopPlay();
+    state.n = Number(nSlider.value); state.frac = 0;
+    draw();
+  });
+  aSlider.addEventListener("input", function () {
+    stopPlay();
+    state.a = Number(aSlider.value);
+    draw();
+  });
+  [btnP1, btnP2, btnP3].forEach(function (b) {
+    b.addEventListener("click", function () {
+      stopPlay();
+      state.n = Number(b.dataset.n); state.frac = 0;
+      nSlider.value = String(state.n);
+      draw();
+    });
+  });
+  btnGhosts.addEventListener("click", function () {
+    state.ghosts = !state.ghosts;
+    btnGhosts.classList.toggle("active", state.ghosts);
+    draw();
+  });
+  btnGhosts.classList.add("active");
+
+  // ---------- the guided tour ----------
+  // n climbs from 0, each term growing in over GROW ms and then holding for
+  // HOLD ms, which is what gives the animation its manim cadence.
+  var GROW = 900, HOLD = 700, TOP = 8;
+  var raf = null, t0 = 0, tourN = 0;
+
+  function stopPlay() {
+    if (!state.playing) return;
+    state.playing = false;
+    if (raf) { cancelAnimationFrame(raf); raf = null; }
+    btnPlay.classList.remove("running");
+    btnPlay.innerHTML = "&#9654;&nbsp;Play";
+    state.frac = 0;
+    capEl.classList.remove("show");
+    updateReadouts(agreementWindow(state.a, state.n, 0));
+  }
+
+  function startPlay() {
+    state.playing = true;
+    btnPlay.classList.add("running");
+    btnPlay.innerHTML = "&#9632;&nbsp;Stop";
+    tourN = 0; state.n = 0; state.frac = 0;
+    nSlider.value = "0";
+    say(LINES[0], GROW + HOLD);
+    t0 = performance.now();
+    raf = requestAnimationFrame(tick);
+  }
+
+  function tick(now) {
+    if (!state.playing) return;
+    var dt = now - t0;
+    if (dt < HOLD) {
+      state.frac = 0;
+    } else if (dt < HOLD + GROW) {
+      state.frac = (dt - HOLD) / GROW;
+    } else {
+      tourN++;
+      if (tourN > TOP) { draw(); stopPlay(); say(LINES[5], 3200); return; }
+      state.n = tourN; state.frac = 0;
+      nSlider.value = String(tourN);
+      if (tourN < 4) say(LINES[tourN], GROW + HOLD);
+      else if (tourN === 4) say(LINES[4], GROW + HOLD);
+      t0 = now;
+    }
+    draw();
+    raf = requestAnimationFrame(tick);
+  }
+
+  btnPlay.addEventListener("click", function () {
+    if (state.playing) stopPlay(); else startPlay();
+  });
+
+  // ---------- go ----------
+  window.addEventListener("resize", resize);
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(stage);
+  resize();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperboloid-two-sheets-trace-y-figure" speech2="The trace in the plane y = 0: a hyperbola opening up and down">
+      <grouped>hyperboloid-two-sheets-trace-y-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperboloid-two-sheets-trace-y-trace-y</active>
+      </children>
+      <components>
+        <active>hyperboloid-two-sheets-trace-y-trace-y</active>
+      </components>
+    </annotation>
+    <annotation id="hyperboloid-two-sheets-trace-y-trace-y" speech2="In the plane y equals 0, the trace z squared over 16 minus x squared over 4 equals 1 is a hyperbola opening up and down with vertices at z equals plus or minus 4">
+      <active>hyperboloid-two-sheets-trace-y-trace-y</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperboloid-two-sheets-trace-y-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

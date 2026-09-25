@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-saddle-traces-figure" speech2="Two parabolas through the origin showing the traces of the hyperbolic paraboloid z equals y squared over 3 minus x squared over 3. The blue parabola opens upward and is the trace along the y axis. The red parabola opens downward and is the trace along the x axis. The origin, where they meet, is the saddle point.">
+      <grouped>prefigure-saddle-traces-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-saddle-traces-sd-up</active>
+        <active>prefigure-saddle-traces-sd-down</active>
+        <active>prefigure-saddle-traces-sd-saddle</active>
+      </children>
+      <components>
+        <active>prefigure-saddle-traces-sd-up</active>
+        <active>prefigure-saddle-traces-sd-down</active>
+        <active>prefigure-saddle-traces-sd-saddle</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-saddle-traces-sd-up" speech2="The blue parabola z equals y squared over 3, the trace in the plane x equals 0, which opens upward, so the function is positive along the y axis.">
+      <active>prefigure-saddle-traces-sd-up</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-saddle-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-saddle-traces-sd-down" speech2="The red parabola z equals negative x squared over 3, the trace in the plane y equals 0, which opens downward, so the function is negative along the x axis.">
+      <active>prefigure-saddle-traces-sd-down</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-saddle-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-saddle-traces-sd-saddle" speech2="The origin, where the two traces meet. The function increases in one direction and decreases in the other, so this is a saddle point.">
+      <active>prefigure-saddle-traces-sd-saddle</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-saddle-traces-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

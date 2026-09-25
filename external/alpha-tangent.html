@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The directional derivative as a tangent slope</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  :root{
+    --ink:#F3F0E8; --muted:#A79E8C;
+    --tan:#FF6B4A; --curve:#FFD166; --plane:#7FB2FF;
+    --sans:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif:"PT Serif", "Times New Roman", Times, serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:transparent;color:#22262E;font-family:var(--sans);
+    font-size:16px;-webkit-font-smoothing:antialiased}
+  /* Column layout: the slider and controls always claim their space first,
+     and the canvas takes whatever height is left, so they can never be
+     pushed below the fold of the iframe. */
+  body{display:flex;flex-direction:column}
+  .stage{position:relative;flex:1 1 auto;min-height:0;
+    border:1px solid #C9CFDC;border-radius:3px;overflow:hidden;background:#0F1A0C}
+  canvas{display:block;width:100%;height:100%;object-fit:contain;cursor:grab;touch-action:none}
+  canvas.drag{cursor:grabbing}
+  .hud{position:absolute;top:0;left:0;padding:16px 20px;pointer-events:none;color:var(--ink);
+    font-size:clamp(14px,1.95vw,22px);line-height:1.7;text-shadow:0 2px 10px rgba(0,0,0,.95)}
+  .hud .k{color:var(--muted);font-weight:600}
+  .hud .big{font-weight:700;font-size:clamp(28px,4.6vw,52px);line-height:1.08;
+    display:block;margin:4px 0 8px;color:var(--tan)}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:14px;
+    font-size:clamp(14px,1.45vw,17px);color:#3A4152;line-height:1.5;flex:0 0 auto}
+  .lg{display:flex;align-items:center;gap:9px;flex:0 0 auto}
+  .lg.wide{flex:1 0 100%;color:#5A6274}
+  .lg.key{font-weight:600;color:#22262E}
+  .sw{display:inline-block;width:26px;height:14px;flex:0 0 26px}
+  .sw.line{height:5px;border-radius:3px}
+  .sw.dash{height:0;border-top:3px dashed #9AA3B4}
+  .sw.plane{height:14px;background:rgba(140,190,255,.30);border:1px solid rgba(90,150,220,.7)}
+  .sw.dot{height:12px;width:12px;flex:0 0 12px;margin:0 7px;border-radius:50%;
+    background:#fff;border:1.5px solid #6C778F}
+  .sw.none{width:26px;height:1px}
+  .slider{display:flex;align-items:center;gap:12px;width:100%;margin-top:16px;
+    font-size:clamp(14px,1.5vw,18px);font-weight:600;color:#4A5265;flex:0 0 auto}
+  .slider input{flex:1;accent-color:#C2532F}
+  .slider output{min-width:5.4em;text-align:right;font-variant-numeric:tabular-nums}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center;
+    flex:0 0 auto}
+  button{font-family:var(--sans);font-size:clamp(14px,1.5vw,18px);font-weight:600;color:#22262E;
+    background:#fff;border:1px solid #B9C1D2;border-radius:3px;padding:11px 17px;cursor:pointer;
+    transition:border-color .16s,background .16s,color .16s}
+  button:hover{border-color:#6C778F}
+  button:focus-visible{outline:2px solid #B8860B;outline-offset:2px}
+  .spacer{flex:1}
+</style>
+</head>
+<body>
+<div class="stage">
+  <canvas id="c" width="1760" height="1080"></canvas>
+  <div class="hud">
+    <span class="k">D<sub>u</sub><i>h</i> = tan &#945;</span>
+    <span class="big" id="slope">&#8722;0.360</span>
+    <span class="k">&#945;</span> <span id="ang">19.8&#176;</span><br>
+    <span class="k">direction <b>u</b></span> <span id="dir">(0.00, 1.00)</span>
+  </div>
+</div>
+
+<div class="slider">
+  <label for="phi">direction of <b>u</b></label>
+  <input id="phi" type="range" min="0" max="359" step="1" value="90">
+  <output id="phiOut">90&#176;</output>
+</div>
+
+<div class="controls">
+  <button id="steep">Steepest descent</button>
+  <button id="level">Along the contour</button>
+  <div class="spacer"></div>
+  <button id="play">Sweep <b>u</b></button>
+  <button id="view">Reset view</button>
+</div>
+
+<div class="legend">
+  <div class="lg"><span class="sw plane"></span>
+    <span>vertical plane through P<sub>0</sub> in the direction <b>u</b></span></div>
+  <div class="lg"><span class="sw line" style="background:#FFD166"></span>
+    <span>the curve where that plane meets the surface</span></div>
+  <div class="lg"><span class="sw line" style="background:#FF6B4A"></span>
+    <span>tangent line to that curve at P<sub>0</sub></span></div>
+  <div class="lg"><span class="sw line" style="background:#7FD1AE"></span>
+    <span>level curve of <i>h</i> through P<sub>0</sub>, where <i>h</i> = 2974 ft</span></div>
+  <div class="lg"><span class="sw dash"></span>
+    <span>horizontal ray, against which &#945; is measured</span></div>
+  <div class="lg"><span class="sw dot"></span>
+    <span>P<sub>0</sub>, the point of tangency</span></div>
+  <div class="lg wide"><span class="sw none"></span>
+    <span>surface <i>z</i> = <i>h</i>(<i>x</i>,<i>y</i>) = 3000 &#8722; 0.0004<i>x</i>&#178; &#8722; 0.001<i>y</i>&#178; &nbsp;&#183;&nbsp; drag the picture to rotate</span></div>
+  <div class="lg wide key"><span class="sw none"></span>
+    <span>&#945; is the angle the tangent line makes with the horizontal, and tan&#945; = D<sub>u</sub><i>h</i>(P<sub>0</sub>): the rate of change of <i>h</i> along <b>u</b> is the slope of that line.</span></div>
+</div>
+
+<script>
+(function(){
+"use strict";
+const cv=document.getElementById('c'), ctx=cv.getContext('2d');
+const W=cv.width, H=cv.height;
+// the angle label is mathematics, so it is set in the book's maths face
+const F=(w,s)=>'italic '+w+' '+(s||36)+'px '+"'PT Serif','Times New Roman',Times,serif";
+
+/* ---------------- surface ---------------- */
+const XMIN=-600,XMAX=600,YMIN=-368,YMAX=368, VMIN=2700,VMAX=3000;
+const f =(x,y)=>3000-0.0004*x*x-0.001*y*y;
+const gf=(x,y)=>[-0.0008*x,-0.002*y];
+
+/* one foot up drawn as one foot across, so alpha is not exaggerated */
+const R=(XMAX-XMIN)/2, VY=((YMAX-YMIN)/2)/R, ZH=(VMAX-VMIN)/R;
+const nx=x=>x/R, ny=y=>y/R, nz=v=>(v-VMIN)/(VMAX-VMIN)*ZH;
+
+const AZ0=-0.78, EL0=0.34;
+let az=AZ0, el=EL0;
+const S=W*0.365, PXc=W*0.545, PYc=H*0.56;
+
+function proj(u,v,w){
+  const ca=Math.cos(az), sa=Math.sin(az);
+  const X=u*ca-v*sa, Y=u*sa+v*ca;
+  return [PXc+X*S, PYc-(w*Math.cos(el)-Y*Math.sin(el))*S];
+}
+function P3(x,y,z){return proj(nx(x),ny(y),nz(z));}
+function depth(u,v,w){
+  const ca=Math.cos(az), sa=Math.sin(az);
+  return (u*sa+v*ca)*Math.cos(el)+w*Math.sin(el);
+}
+function color(e){
+  const p=Math.max(0,Math.min(1,(e-VMIN)/(VMAX-VMIN)));
+  const st=[[0,[24,48,32]],[.28,[54,88,50]],[.52,[112,130,66]],
+            [.74,[184,160,104]],[.90,[226,214,186]],[1,[255,255,255]]];
+  for(let i=0;i<st.length-1;i++){const a=st[i][0],ca=st[i][1],b=st[i+1][0],cb=st[i+1][1];
+    if(p<=b){const t=(p-a)/(b-a);return [0,1,2].map(j=>Math.round(ca[j]+(cb[j]-ca[j])*t));}}
+  return st[st.length-1][1];
+}
+
+/* ---------------- cached surface ---------------- */
+const sc=document.createElement('canvas'); sc.width=W; sc.height=H;
+let dirty=true;
+const N=40;
+const LIGHT=(function(){const l=[-0.42,-0.55,0.72],m=Math.hypot(l[0],l[1],l[2]);
+  return [l[0]/m,l[1]/m,l[2]/m];})();
+
+function buildSurface(){
+  const g=sc.getContext('2d'); g.clearRect(0,0,W,H);
+  const quads=[], du=2/N, dv=2*VY/N;
+  for(let i=0;i<N;i++)for(let j=0;j<N;j++){
+    const u0=-1+i*du, v0=-VY+j*dv, u1=u0+du, v1=v0+dv;
+    const Q=[[u0,v0],[u1,v0],[u1,v1],[u0,v1]].map(function(q){
+      const val=f(q[0]*R,q[1]*R); return [q[0],q[1],nz(val),val];});
+    const e1=[Q[1][0]-Q[0][0],Q[1][1]-Q[0][1],Q[1][2]-Q[0][2]];
+    const e2=[Q[3][0]-Q[0][0],Q[3][1]-Q[0][1],Q[3][2]-Q[0][2]];
+    let n=[e1[1]*e2[2]-e1[2]*e2[1],e1[2]*e2[0]-e1[0]*e2[2],e1[0]*e2[1]-e1[1]*e2[0]];
+    const nm=Math.hypot(n[0],n[1],n[2])||1; n=[n[0]/nm,n[1]/nm,n[2]/nm];
+    if(n[2]<0) n=[-n[0],-n[1],-n[2]];
+    const lam=Math.max(0,n[0]*LIGHT[0]+n[1]*LIGHT[1]+n[2]*LIGHT[2]);
+    const c=color((Q[0][3]+Q[1][3]+Q[2][3]+Q[3][3])/4), sh=0.52+0.48*lam;
+    quads.push({d:depth((Q[0][0]+Q[2][0])/2,(Q[0][1]+Q[2][1])/2,(Q[0][2]+Q[2][2])/2),
+      q:Q, col:'rgb('+Math.round(c[0]*sh)+','+Math.round(c[1]*sh)+','+Math.round(c[2]*sh)+')'});
+  }
+  quads.sort(function(a,b){return b.d-a.d;});
+  for(const t of quads){
+    g.beginPath();
+    for(let k=0;k<4;k++){const s=proj(t.q[k][0],t.q[k][1],t.q[k][2]);
+      k?g.lineTo(s[0],s[1]):g.moveTo(s[0],s[1]);}
+    g.closePath(); g.fillStyle=t.col; g.strokeStyle=t.col; g.lineWidth=1; g.fill(); g.stroke();
+  }
+  dirty=false;
+}
+
+/* ---------------- the point and the slice ---------------- */
+const X0=200, Y0=100, Z0=f(X0,Y0);
+const G=gf(X0,Y0), GM=Math.hypot(G[0],G[1]);
+const REACH=430;            // half-length of the slice, in feet
+const TANLEN=330;           // half-length of the tangent segment
+const ARC=132;              // radius of the alpha wedge
+
+let phi=Math.PI/2;          // direction of u, measured from the +x axis
+let sweeping=false, last=0;
+
+const $s=document.getElementById('slope'), $a=document.getElementById('ang'),
+      $d=document.getElementById('dir'), $sl=document.getElementById('phi'),
+      $o=document.getElementById('phiOut');
+
+function poly(pts,col,w,dash){
+  ctx.strokeStyle=col; ctx.lineWidth=w; ctx.lineCap='round'; ctx.lineJoin='round';
+  if(dash) ctx.setLineDash(dash);
+  ctx.beginPath();
+  for(let i=0;i<pts.length;i++) i?ctx.lineTo(pts[i][0],pts[i][1]):ctx.moveTo(pts[i][0],pts[i][1]);
+  ctx.stroke(); ctx.setLineDash([]);
+}
+
+function frame(now){
+  const dt=last?Math.min((now-last)/1000,.05):0; last=now;
+  if(sweeping){ phi+=dt*0.55; if(phi>2*Math.PI) phi-=2*Math.PI;
+    $sl.value=Math.round(phi*180/Math.PI)%360; }
+  if(dirty) buildSurface();
+  ctx.clearRect(0,0,W,H); ctx.drawImage(sc,0,0);
+
+  const U=[Math.cos(phi),Math.sin(phi)];
+  const g=G[0]*U[0]+G[1]*U[1];              // D_u f
+  const alpha=Math.atan(Math.abs(g));
+
+  /* the vertical cutting plane, as a quad standing on the u-line */
+  const zTop=Z0+150, zBot=Z0-200;
+  const A=[X0-U[0]*REACH, Y0-U[1]*REACH], B=[X0+U[0]*REACH, Y0+U[1]*REACH];
+  ctx.beginPath();
+  [[A[0],A[1],zTop],[B[0],B[1],zTop],[B[0],B[1],zBot],[A[0],A[1],zBot]]
+    .forEach(function(p,i){const s=P3(p[0],p[1],p[2]);
+      i?ctx.lineTo(s[0],s[1]):ctx.moveTo(s[0],s[1]);});
+  ctx.closePath();
+  ctx.fillStyle='rgba(127,178,255,.15)'; ctx.fill();
+  ctx.strokeStyle='rgba(127,178,255,.45)'; ctx.lineWidth=2; ctx.stroke();
+
+  /* the level curve through P0, lying on the surface.
+     Segments on the far side of the summit are faded, so the ring reads as
+     wrapping around the hill rather than floating in front of it.          */
+  (function(){
+    const A=Math.sqrt((3000-Z0)/0.0004), B=Math.sqrt((3000-Z0)/0.001);
+    const M=170, pt=[], dp=[];
+    for(let k=0;k<=M;k++){
+      const t=k/M*2*Math.PI, x=A*Math.cos(t), y=B*Math.sin(t);
+      pt.push(P3(x,y,Z0)); dp.push(depth(nx(x),ny(y),nz(Z0)));
+    }
+    const lo=Math.min.apply(null,dp), hi=Math.max.apply(null,dp);
+    ctx.lineCap='round'; ctx.lineWidth=6;
+    for(let k=0;k<M;k++){
+      const q=(dp[k]-lo)/((hi-lo)||1);
+      ctx.strokeStyle='rgba(127,209,174,'+(0.95-0.60*q).toFixed(3)+')';
+      ctx.beginPath(); ctx.moveTo(pt[k][0],pt[k][1]);
+      ctx.lineTo(pt[k+1][0],pt[k+1][1]); ctx.stroke();
+    }
+  })();
+
+  /* the curve where the plane meets the surface */
+  const curve=[];
+  for(let t=-REACH;t<=REACH;t+=REACH/60){
+    const x=X0+U[0]*t, y=Y0+U[1]*t;
+    curve.push(P3(x,y,f(x,y)));
+  }
+  poly(curve,'#FFD166',7);
+
+  /* the tangent line at P0: slope g along u */
+  const T1=P3(X0-U[0]*TANLEN, Y0-U[1]*TANLEN, Z0-g*TANLEN);
+  const T2=P3(X0+U[0]*TANLEN, Y0+U[1]*TANLEN, Z0+g*TANLEN);
+  poly([T1,T2],'#FF6B4A',7);
+
+  /* horizontal ray along u, the reference for alpha */
+  poly([P3(X0,Y0,Z0), P3(X0+U[0]*TANLEN, Y0+U[1]*TANLEN, Z0)],
+       'rgba(255,255,255,.75)',4,[16,12]);
+
+  /* the alpha wedge: opens from that ray up or down to the tangent line */
+  if(alpha>0.006){
+    const vz=(g<0?-1:1);
+    const w=[P3(X0,Y0,Z0)];
+    for(let t=0;t<=alpha+1e-4;t+=alpha/36){
+      w.push(P3(X0+U[0]*ARC*Math.cos(t), Y0+U[1]*ARC*Math.cos(t),
+                Z0+vz*ARC*Math.sin(t)));
+    }
+    ctx.beginPath();
+    for(let i=0;i<w.length;i++) i?ctx.lineTo(w[i][0],w[i][1]):ctx.moveTo(w[i][0],w[i][1]);
+    ctx.closePath();
+    ctx.fillStyle='rgba(255,107,74,.34)'; ctx.fill();
+    ctx.strokeStyle='#FF6B4A'; ctx.lineWidth=4; ctx.stroke();
+
+    const mt=alpha/2;
+    const lp=P3(X0+U[0]*ARC*1.55*Math.cos(mt), Y0+U[1]*ARC*1.55*Math.cos(mt),
+                Z0+vz*ARC*1.55*Math.sin(mt));
+    ctx.font=F(700,48); ctx.lineWidth=7; ctx.strokeStyle='rgba(0,0,0,.6)';
+    ctx.strokeText('\u03B1',lp[0]-15,lp[1]+17);
+    ctx.fillStyle='#FF6B4A'; ctx.fillText('\u03B1',lp[0]-15,lp[1]+17);
+  }
+
+  /* P0 */
+  const O=P3(X0,Y0,Z0);
+  ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(O[0],O[1],11,0,2*Math.PI); ctx.fill();
+
+  $s.textContent=(g<0?'\u2212':'')+Math.abs(g).toFixed(3);
+  $a.textContent=(alpha*180/Math.PI).toFixed(1)+'\u00B0';
+  $d.textContent='('+U[0].toFixed(2)+', '+U[1].toFixed(2)+')';
+  $o.textContent=Math.round(phi*180/Math.PI)+'\u00B0';
+
+  requestAnimationFrame(frame);
+}
+
+/* ---------------- interaction ---------------- */
+let drag=false,lx=0,ly=0;
+cv.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY;
+  cv.classList.add('drag'); if(cv.setPointerCapture) cv.setPointerCapture(e.pointerId);});
+cv.addEventListener('pointermove',function(e){ if(!drag) return;
+  az-=(e.clientX-lx)*0.006;
+  el=Math.max(0.08,Math.min(1.30,el+(e.clientY-ly)*0.004));
+  lx=e.clientX; ly=e.clientY; dirty=true;});
+cv.addEventListener('pointerup',function(){drag=false;cv.classList.remove('drag');});
+cv.addEventListener('pointercancel',function(){drag=false;cv.classList.remove('drag');});
+
+const bPlay=document.getElementById('play');
+function stopSweep(){sweeping=false;bPlay.innerHTML='Sweep <b>u</b>';}
+$sl.oninput=function(e){phi=(+e.target.value)*Math.PI/180; stopSweep();};
+document.getElementById('steep').onclick=function(){
+  phi=Math.atan2(-G[1],-G[0]); $sl.value=Math.round(((phi*180/Math.PI)+360)%360); stopSweep();};
+document.getElementById('level').onclick=function(){
+  phi=Math.atan2(-G[0],G[1]);  $sl.value=Math.round(((phi*180/Math.PI)+360)%360); stopSweep();};
+bPlay.onclick=function(){sweeping=!sweeping;
+  this.innerHTML=sweeping?'Pause':'Sweep <b>u</b>';};
+document.getElementById('view').onclick=function(){az=AZ0;el=EL0;dirty=true;};
+
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<diagram>
+  <annotations>
+    <annotation id="pendulum-forces-string" speech2="A simple pendulum: a bob of mass m on a string of length l making an angle theta with the vertical. The weight m g points straight down and is resolved into two components: m g cosine theta along the string, balanced by the tension F sub T, and m g sine theta tangent to the arc, which is the restoring force driving the motion">
+      <grouped>pendulum-forces-string</grouped>
+      <position>1</position>
+      <children>
+        <active>pendulum-forces-string</active>
+        <active>pendulum-forces-FT</active>
+        <active>pendulum-forces-mgvec</active>
+        <active>pendulum-forces-mgsin</active>
+        <active>pendulum-forces-mgcos</active>
+      </children>
+      <components>
+        <active>pendulum-forces-string</active>
+        <active>pendulum-forces-FT</active>
+        <active>pendulum-forces-mgvec</active>
+        <active>pendulum-forces-mgsin</active>
+        <active>pendulum-forces-mgcos</active>
+      </components>
+    </annotation>
+    <annotation id="pendulum-forces-string" speech2="The string of length l at angle theta from the vertical">
+      <active>pendulum-forces-string</active>
+      <position>1</position>
+      <parents>
+        <grouped>pendulum-forces-string</grouped>
+      </parents>
+    </annotation>
+    <annotation id="pendulum-forces-FT" speech2="The tension F sub T, directed along the string toward the pivot" sonify="yes">
+      <active>pendulum-forces-FT</active>
+      <position>2</position>
+      <parents>
+        <grouped>pendulum-forces-string</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>pendulum-forces-FT</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="pendulum-forces-mgvec" speech2="The weight m g, directed straight down" sonify="yes">
+      <active>pendulum-forces-mgvec</active>
+      <position>3</position>
+      <parents>
+        <grouped>pendulum-forces-string</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>pendulum-forces-mgvec</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="pendulum-forces-mgsin" speech2="The tangential component m g sine theta, the restoring force" sonify="yes">
+      <active>pendulum-forces-mgsin</active>
+      <position>4</position>
+      <parents>
+        <grouped>pendulum-forces-string</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>pendulum-forces-mgsin</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="pendulum-forces-mgcos" speech2="The radial component m g cosine theta, along the string" sonify="yes">
+      <active>pendulum-forces-mgcos</active>
+      <position>5</position>
+      <parents>
+        <grouped>pendulum-forces-string</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>pendulum-forces-mgcos</ACTIVE>
+      </sonification>
+    </annotation>
+  </annotations>
+</diagram>

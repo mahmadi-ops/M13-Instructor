@@ -1,0 +1,88 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-taste-vectors-2d-figure" speech2="A coordinate grid whose horizontal axis is the rating of the film Sinners and whose vertical axis is the rating of the film Hamnet, both running from negative 5 to 5. Three vectors are drawn from the origin: a blue vector to the point 4 comma 5, labeled Mehdi; an orange vector to the point 5 comma 3, labeled Norm; and a green vector to the point negative 4 comma negative 2, labeled Popcorn. The blue and orange vectors point in nearly the same direction and a small angle theta is marked between them, while the green vector points in almost the opposite direction.">
+      <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taste-vectors-2d-grid-axes</active>
+        <active>prefigure-taste-vectors-2d-grid-taste</active>
+        <active>prefigure-taste-vectors-2d-vec-m</active>
+        <active>prefigure-taste-vectors-2d-vec-n</active>
+        <active>prefigure-taste-vectors-2d-vec-d</active>
+        <active>prefigure-taste-vectors-2d-angle-mn</active>
+      </children>
+      <components>
+        <active>prefigure-taste-vectors-2d-grid-axes</active>
+        <active>prefigure-taste-vectors-2d-grid-taste</active>
+        <active>prefigure-taste-vectors-2d-vec-m</active>
+        <active>prefigure-taste-vectors-2d-vec-n</active>
+        <active>prefigure-taste-vectors-2d-vec-d</active>
+        <active>prefigure-taste-vectors-2d-angle-mn</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-taste-vectors-2d-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-taste-vectors-2d-grid</active>
+        <active>prefigure-taste-vectors-2d-axes</active>
+      </children>
+      <components>
+        <active>prefigure-taste-vectors-2d-grid</active>
+        <active>prefigure-taste-vectors-2d-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-grid" speech2="The coordinate grid">
+      <active>prefigure-taste-vectors-2d-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-axes" speech2="The coordinate axes">
+      <active>prefigure-taste-vectors-2d-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-grid-taste" speech2="A coordinate grid with the Sinners rating on the horizontal axis and the Hamnet rating on the vertical axis.">
+      <active>prefigure-taste-vectors-2d-grid-taste</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-vec-m" speech2="Mehdi's taste vector u equals 4 comma 5, drawn in blue from the origin.">
+      <active>prefigure-taste-vectors-2d-vec-m</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-vec-n" speech2="Norm's taste vector v equals 5 comma 3, drawn in orange from the origin.">
+      <active>prefigure-taste-vectors-2d-vec-n</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-vec-d" speech2="Popcorn's taste vector w equals negative 4 comma negative 2, drawn in green from the origin, pointing into the third quadrant.">
+      <active>prefigure-taste-vectors-2d-vec-d</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-taste-vectors-2d-angle-mn" speech2="The angle theta between u and v, measured at the origin, is about 20 degrees.">
+      <active>prefigure-taste-vectors-2d-angle-mn</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-taste-vectors-2d-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

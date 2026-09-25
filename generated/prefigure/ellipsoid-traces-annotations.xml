@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="ellipsoid-traces-figure" speech2="Traces of the ellipsoid x squared over 4 plus y squared over 9 plus z squared over 16 equals 1 in the three coordinate planes">
+      <grouped>ellipsoid-traces-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipsoid-traces-trace-x</active>
+        <active>ellipsoid-traces-trace-y</active>
+        <active>ellipsoid-traces-trace-z</active>
+      </children>
+      <components>
+        <active>ellipsoid-traces-trace-x</active>
+        <active>ellipsoid-traces-trace-y</active>
+        <active>ellipsoid-traces-trace-z</active>
+      </components>
+    </annotation>
+    <annotation id="ellipsoid-traces-trace-x" speech2="In the plane x equals 0, the trace y squared over 9 plus z squared over 16 equals 1 is an ellipse with semi-axes 3 and 4">
+      <active>ellipsoid-traces-trace-x</active>
+      <position>1</position>
+      <parents>
+        <grouped>ellipsoid-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipsoid-traces-trace-y" speech2="In the plane y equals 0, the trace x squared over 4 plus z squared over 16 equals 1 is an ellipse with semi-axes 2 and 4">
+      <active>ellipsoid-traces-trace-y</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipsoid-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipsoid-traces-trace-z" speech2="In the plane z equals 0, the trace x squared over 4 plus y squared over 9 equals 1 is an ellipse with semi-axes 2 and 3">
+      <active>ellipsoid-traces-trace-z</active>
+      <position>3</position>
+      <parents>
+        <grouped>ellipsoid-traces-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

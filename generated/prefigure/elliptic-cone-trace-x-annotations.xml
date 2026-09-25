@@ -1,0 +1,21 @@
+<diagram>
+  <annotations>
+    <annotation id="elliptic-cone-trace-x-figure" speech2="The trace in the plane x = 2: a hyperbola opening up and down">
+      <grouped>elliptic-cone-trace-x-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>elliptic-cone-trace-x-trace-x</active>
+      </children>
+      <components>
+        <active>elliptic-cone-trace-x-trace-x</active>
+      </components>
+    </annotation>
+    <annotation id="elliptic-cone-trace-x-trace-x" speech2="In the plane x equals 2, the trace z squared minus y squared over 9 equals 1 is a hyperbola opening up and down">
+      <active>elliptic-cone-trace-x-trace-x</active>
+      <position>1</position>
+      <parents>
+        <grouped>elliptic-cone-trace-x-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

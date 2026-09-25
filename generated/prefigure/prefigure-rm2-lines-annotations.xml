@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rm2-lines-figure" speech2="The region between the x axis and the parabola y equals two x squared is shaded orange; the function equals one there and zero everywhere else. A dashed dark red parabola y equals x squared runs through the middle of the shaded region. A straight blue line through the origin with small positive slope lies above the shaded region near the origin.">
+      <grouped>prefigure-rm2-lines-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rm2-lines-grid-axes</active>
+        <active>prefigure-rm2-lines-rm2-region</active>
+        <active>prefigure-rm2-lines-rm2-pmid</active>
+        <active>prefigure-rm2-lines-rm2-line</active>
+      </children>
+      <components>
+        <active>prefigure-rm2-lines-grid-axes</active>
+        <active>prefigure-rm2-lines-rm2-region</active>
+        <active>prefigure-rm2-lines-rm2-pmid</active>
+        <active>prefigure-rm2-lines-rm2-line</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rm2-lines-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rm2-lines-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rm2-lines-grid</active>
+        <active>prefigure-rm2-lines-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rm2-lines-grid</active>
+        <active>prefigure-rm2-lines-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rm2-lines-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lines-grid" speech2="The coordinate grid">
+      <active>prefigure-rm2-lines-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rm2-lines-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lines-axes" speech2="The coordinate axes">
+      <active>prefigure-rm2-lines-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rm2-lines-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lines-rm2-region" speech2="The region zero less than y less than two x squared, where the function equals one.">
+      <active>prefigure-rm2-lines-rm2-region</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rm2-lines-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lines-rm2-pmid" speech2="The parabola y equals x squared, which approaches the origin inside the region, so the limit along it is one.">
+      <active>prefigure-rm2-lines-rm2-pmid</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rm2-lines-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rm2-lines-rm2-line" speech2="A typical line through the origin. Near the origin it lies outside the region, so the function is zero along it.">
+      <active>prefigure-rm2-lines-rm2-line</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rm2-lines-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

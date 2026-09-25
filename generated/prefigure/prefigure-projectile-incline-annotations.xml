@@ -1,0 +1,102 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-projectile-incline-figure" speech2="A particle is launched from the point O at the foot of an inclined plane and follows a parabolic path, striking the plane again at the point P. The range O P measured along the plane is labelled R.">
+      <grouped>prefigure-projectile-incline-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-projectile-incline-pi-axes</active>
+        <active>prefigure-projectile-incline-pi-plane</active>
+        <active>prefigure-projectile-incline-pi-path</active>
+        <active>prefigure-projectile-incline-pi-v0</active>
+        <active>prefigure-projectile-incline-pi-range</active>
+        <active>prefigure-projectile-incline-pi-rise</active>
+        <active>prefigure-projectile-incline-pi-beta</active>
+        <active>prefigure-projectile-incline-pi-theta</active>
+        <active>prefigure-projectile-incline-pi-O</active>
+        <active>prefigure-projectile-incline-pi-P</active>
+      </children>
+      <components>
+        <active>prefigure-projectile-incline-pi-axes</active>
+        <active>prefigure-projectile-incline-pi-plane</active>
+        <active>prefigure-projectile-incline-pi-path</active>
+        <active>prefigure-projectile-incline-pi-v0</active>
+        <active>prefigure-projectile-incline-pi-range</active>
+        <active>prefigure-projectile-incline-pi-rise</active>
+        <active>prefigure-projectile-incline-pi-beta</active>
+        <active>prefigure-projectile-incline-pi-theta</active>
+        <active>prefigure-projectile-incline-pi-O</active>
+        <active>prefigure-projectile-incline-pi-P</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-axes" speech2="Horizontal and vertical axes with origin at the launch point O.">
+      <active>prefigure-projectile-incline-pi-axes</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-plane" speech2="The inclined plane, a straight line rising to the right from O at angle beta above the horizontal.">
+      <active>prefigure-projectile-incline-pi-plane</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-path" speech2="The parabolic trajectory of the particle, drawn in blue from O up and over to the landing point P.">
+      <active>prefigure-projectile-incline-pi-path</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-v0" speech2="The initial velocity v naught at O, directed at elevation angle theta above the horizontal.">
+      <active>prefigure-projectile-incline-pi-v0</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-range" speech2="The range R measured along the plane from O to P.">
+      <active>prefigure-projectile-incline-pi-range</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-rise" speech2="The vertical rise R sine beta from the foot M on the horizontal up to P.">
+      <active>prefigure-projectile-incline-pi-rise</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-beta" speech2="The angle beta between the horizontal and the inclined plane.">
+      <active>prefigure-projectile-incline-pi-beta</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-theta" speech2="The angle theta between the horizontal and the initial velocity.">
+      <active>prefigure-projectile-incline-pi-theta</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-O" speech2="The launch point O at the origin.">
+      <active>prefigure-projectile-incline-pi-O</active>
+      <position>9</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-projectile-incline-pi-P" speech2="The point P where the particle strikes the plane again.">
+      <active>prefigure-projectile-incline-pi-P</active>
+      <position>10</position>
+      <parents>
+        <grouped>prefigure-projectile-incline-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

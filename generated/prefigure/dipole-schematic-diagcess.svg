@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="dipole-schematic-figure" viewBox="0 0 476 216">
+  <defs>
+    <clipPath id="dipole-schematic-__clipPath-0">
+      <rect x="8.0" y="8.0" width="460.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="dipole-schematic-__clipPath-1">
+      <rect x="8.0" y="8.0" width="460.0" height="200.0"/>
+    </clipPath>
+    <marker id="dipole-schematic-arrow-head-end-1_None_24_60-black" markerWidth="4.5" markerHeight="4.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.3" refY="2.0">
+      <path d="M 4.5 2.0L 0.0 4.0L 0.9 2.5L 0.9 1.5L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="dipole-schematic-arrow-head-end-1_None_24_60-black-outline" markerWidth="8.5" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="5.3" refY="4.0">
+      <path d="M 7.3 5.8 L 2.8 7.8 A 2 2 0 0 1 0.0 6.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 7.3 2.2 A 2 2 0 0 1 7.3 5.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="dipole-schematic-arrow-head-start-1_None_24_60-black" markerWidth="4.5" markerHeight="4.0" markerUnits="userSpaceOnUse" orient="auto" refX="1.2000000000000002" refY="2.0">
+      <g transform="rotate(180, 2.25, 2.0)">
+        <path d="M 4.5 2.0L 0.0 4.0L 0.9 2.5L 0.9 1.5L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="dipole-schematic-arrow-head-start-1_None_24_60-black-outline" markerWidth="8.5" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="3.2" refY="4.0">
+      <g transform="rotate(180, 4.25, 4.0)">
+        <path d="M 7.3 5.8 L 2.8 7.8 A 2 2 0 0 1 0.0 6.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 7.3 2.2 A 2 2 0 0 1 7.3 5.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <line id="dipole-schematic-axis" x1="23.6" y1="130.0" x2="452.4" y2="130.0" stroke="#777" stroke-width="1" fill="none"/>
+  <g id="dipole-schematic-negcharge">
+    <circle id="dipole-schematic-__circle-0" cx="70.4" cy="130.0" r="13" stroke="black" stroke-width="2" fill="blue"/>
+    <g id="dipole-schematic-__label-0" transform="translate(70.4,130.0) translate(-11.2,-7.0)">
+      <g id="dipole-schematic-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px; color:white" width="22.408px" height="14.064px" role="img" focusable="false" viewBox="0 -583 1238 777" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-schematic-MJX-2-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+            <path id="dipole-schematic-MJX-2-TEX-I-1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="prefixop" data-semantic-role="negative" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-children="1" data-semantic-content="0" data-semantic-speech="negative q">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="0" data-semantic-parent="2" data-semantic-operator="prefixop,−" data-semantic-speech="minus">
+                <use data-c="2212" xlink:href="#dipole-schematic-MJX-2-TEX-N-2212"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="q" transform="translate(778,0)">
+                <use data-c="1D45E" xlink:href="#dipole-schematic-MJX-2-TEX-I-1D45E"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="dipole-schematic-poscharge">
+    <circle id="dipole-schematic-__circle-1" cx="156.1" cy="130.0" r="13" stroke="black" stroke-width="2" fill="red"/>
+    <g id="dipole-schematic-__label-1" transform="translate(156.1,130.0) translate(-11.2,-7.0)">
+      <g id="dipole-schematic-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px; color:white" width="22.408px" height="14.064px" role="img" focusable="false" viewBox="0 -583 1238 777" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-schematic-MJX-3-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+            <path id="dipole-schematic-MJX-3-TEX-I-1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math" data-semantic-type="prefixop" data-semantic-role="positive" data-semantic-id="2" data-semantic-children="1" data-semantic-content="0" data-semantic-speech="plus q">
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="0" data-semantic-parent="2" data-semantic-operator="prefixop,+" data-semantic-speech="plus">
+                <use data-c="2B" xlink:href="#dipole-schematic-MJX-3-TEX-N-2B"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="q" transform="translate(778,0)">
+                <use data-c="1D45E" xlink:href="#dipole-schematic-MJX-3-TEX-I-1D45E"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="dipole-schematic-pointP">
+    <circle id="dipole-schematic-__circle-2" cx="405.6" cy="130.0" r="3" stroke="black" stroke-width="2" fill="black"/>
+    <g id="dipole-schematic-__label-2" transform="translate(411.6,122.0) translate(0.0,-12.4)">
+      <g id="dipole-schematic-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.592px" height="12.360px" role="img" focusable="false" viewBox="0 -683 751 683" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-schematic-MJX-4-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper P">
+                <use data-c="1D443" xlink:href="#dipole-schematic-MJX-4-TEX-I-1D443"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="dipole-schematic-ddist">
+    <line id="dipole-schematic-__line-0" x1="71.6" y1="97.3" x2="154.9" y2="97.3" stroke="black" stroke-width="1" fill="none" marker-end="url(#dipole-schematic-arrow-head-end-1_None_24_60-black)" marker-start="url(#dipole-schematic-arrow-head-start-1_None_24_60-black)"/>
+    <line id="dipole-schematic-__line-1" x1="70.4" y1="130.0" x2="70.4" y2="91.1" stroke="#777" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+    <line id="dipole-schematic-__line-2" x1="156.1" y1="130.0" x2="156.1" y2="91.1" stroke="#777" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+    <g id="dipole-schematic-__label-3" transform="translate(113.3,90.3) translate(-4.7,-12.7)">
+      <g id="dipole-schematic-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="9.408px" height="12.744px" role="img" focusable="false" viewBox="0 -694 520 704" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-schematic-MJX-5-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="d">
+                <use data-c="1D451" xlink:href="#dipole-schematic-MJX-5-TEX-I-1D451"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="dipole-schematic-rdist">
+    <line id="dipole-schematic-__line-3" x1="157.3" y1="162.8" x2="404.4" y2="162.8" stroke="black" stroke-width="1" fill="none" marker-end="url(#dipole-schematic-arrow-head-end-1_None_24_60-black)" marker-start="url(#dipole-schematic-arrow-head-start-1_None_24_60-black)"/>
+    <line id="dipole-schematic-__line-4" x1="156.1" y1="130.0" x2="156.1" y2="169.0" stroke="#777" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+    <line id="dipole-schematic-__line-5" x1="405.6" y1="130.0" x2="405.6" y2="169.0" stroke="#777" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+    <g id="dipole-schematic-__label-4" transform="translate(280.9,169.8) translate(-4.1,-0.0)">
+      <g id="dipole-schematic-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.160px" height="8.200px" role="img" focusable="false" viewBox="0 -442 451 453" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-schematic-MJX-6-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="r">
+                <use data-c="1D45F" xlink:href="#dipole-schematic-MJX-6-TEX-I-1D45F"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+</svg>

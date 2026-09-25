@@ -1,0 +1,75 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-vec-parallelogram-figure" speech2="Two coordinate pictures side by side. On the left, the blue vector u is drawn from the origin and the blue vector v is drawn starting at the head of u; the orange sum vector u plus v runs from the origin to the head of v, and dashed lines show how the components add. On the right, u and v are both drawn from the origin and dashed lines complete a parallelogram whose diagonal is the orange vector u plus v.">
+      <grouped>prefigure-vec-parallelogram-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-vec-parallelogram-pl-u</active>
+        <active>prefigure-vec-parallelogram-pl-v</active>
+        <active>prefigure-vec-parallelogram-pl-sum</active>
+        <active>prefigure-vec-parallelogram-pr-u</active>
+        <active>prefigure-vec-parallelogram-pr-v</active>
+        <active>prefigure-vec-parallelogram-pr-sum</active>
+        <active>prefigure-vec-parallelogram-pr-p1</active>
+      </children>
+      <components>
+        <active>prefigure-vec-parallelogram-pl-u</active>
+        <active>prefigure-vec-parallelogram-pl-v</active>
+        <active>prefigure-vec-parallelogram-pl-sum</active>
+        <active>prefigure-vec-parallelogram-pr-u</active>
+        <active>prefigure-vec-parallelogram-pr-v</active>
+        <active>prefigure-vec-parallelogram-pr-sum</active>
+        <active>prefigure-vec-parallelogram-pr-p1</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pl-u" speech2="The vector u, drawn from the origin.">
+      <active>prefigure-vec-parallelogram-pl-u</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pl-v" speech2="The vector v, drawn with its tail at the head of u, head to tail.">
+      <active>prefigure-vec-parallelogram-pl-v</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pl-sum" speech2="The sum u plus v, reaching from the origin to the head of v. Its components are the sums of the components of u and v.">
+      <active>prefigure-vec-parallelogram-pl-sum</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pr-u" speech2="The vector u drawn from the origin.">
+      <active>prefigure-vec-parallelogram-pr-u</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pr-v" speech2="The vector v drawn from the same origin.">
+      <active>prefigure-vec-parallelogram-pr-v</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pr-sum" speech2="The sum u plus v is the diagonal of the parallelogram spanned by u and v.">
+      <active>prefigure-vec-parallelogram-pr-sum</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-vec-parallelogram-pr-p1" speech2="Dashed sides completing the parallelogram.">
+      <active>prefigure-vec-parallelogram-pr-p1</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-vec-parallelogram-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

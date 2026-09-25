@@ -1,0 +1,89 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-06-26T16:27:56Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+    Context("LimitedNumeric");
+   $a=random(2,8,1);
+$b=random(2,8,1);
+$c=random(2,8,1);
+$ysign=list_random(0,1);
+$zsign=list_random(0,1);
+$sum=$ysign+$zsign+1;
+if ($ysign==0) {$ysign='-'};
+if ($ysign==1) {$ysign='+'};
+if ($zsign==0) {$zsign='-'};
+if ($zsign==1) {$zsign='+'};
+if($sum==1) {$ans='a hyperboloid of two sheets'};
+if($sum==2) {$ans='a hyperboloid of one sheet'};
+if($sum==3) {$ans='an ellipsoid'};
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+State whether the equation [` \left( \frac{x}{[$a]} \right)^2 [$ysign] \left( \frac{y}{[$b]} \right)^2 [$zsign] \left( \frac{z}{[$c]} \right)^2=1 `] defines:
+
+1.  A hyperboloid of two sheets
+1.  A hyperboloid of one sheet
+1.  An ellipsoid
+1.  None of these   
+
+Enter number of statement that is correct: [_]{$sum}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This equation is the equation of [$ans].
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

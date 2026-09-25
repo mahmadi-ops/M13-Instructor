@@ -1,0 +1,54 @@
+<diagram>
+  <annotations>
+    <annotation id="taylor-formula-fgraph" speech2="A schematic illustration of Taylor's Formula, f of x equals p n of x plus R n of x. A function f and its Taylor polynomial p n agree at x equals a and separate as x moves away, the gap being the remainder">
+      <grouped>taylor-formula-fgraph</grouped>
+      <position>1</position>
+      <children>
+        <active>taylor-formula-fgraph</active>
+        <active>taylor-formula-pngraph</active>
+        <active>taylor-formula-tangency</active>
+        <active>taylor-formula-remainder</active>
+      </children>
+      <components>
+        <active>taylor-formula-fgraph</active>
+        <active>taylor-formula-pngraph</active>
+        <active>taylor-formula-tangency</active>
+        <active>taylor-formula-remainder</active>
+      </components>
+    </annotation>
+    <annotation id="taylor-formula-fgraph" speech2="The graph of the function f of x, shown in blue" sonify="yes">
+      <active>taylor-formula-fgraph</active>
+      <position>1</position>
+      <parents>
+        <grouped>taylor-formula-fgraph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>taylor-formula-fgraph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="taylor-formula-pngraph" speech2="The graph of the Taylor polynomial p n of x, shown in red, which is tangent to f at x equals a and closely matches f near a" sonify="yes">
+      <active>taylor-formula-pngraph</active>
+      <position>2</position>
+      <parents>
+        <grouped>taylor-formula-fgraph</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>taylor-formula-pngraph</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="taylor-formula-tangency" speech2="The point x equals a, where f and its Taylor polynomial p n agree; the approximation is exact here">
+      <active>taylor-formula-tangency</active>
+      <position>3</position>
+      <parents>
+        <grouped>taylor-formula-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="taylor-formula-remainder" speech2="At a point x away from a, the vertical gap between f and p n is the remainder R n of x, the error in the Taylor approximation">
+      <active>taylor-formula-remainder</active>
+      <position>4</position>
+      <parents>
+        <grouped>taylor-formula-fgraph</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

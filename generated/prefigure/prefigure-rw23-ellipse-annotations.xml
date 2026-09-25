@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rw23-ellipse-figure" speech2="A wide blue ellipse centered at the point square root of twenty one comma negative one, with horizontal semi axis five and vertical semi axis five halves. A short vermillion arrow on the right side of the ellipse points up and to the left, showing the counter clockwise direction of increasing parameter t.">
+      <grouped>prefigure-rw23-ellipse-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw23-ellipse-grid-axes</active>
+        <active>prefigure-rw23-ellipse-el-curve</active>
+        <active>prefigure-rw23-ellipse-el-center</active>
+        <active>prefigure-rw23-ellipse-el-dir</active>
+      </children>
+      <components>
+        <active>prefigure-rw23-ellipse-grid-axes</active>
+        <active>prefigure-rw23-ellipse-el-curve</active>
+        <active>prefigure-rw23-ellipse-el-center</active>
+        <active>prefigure-rw23-ellipse-el-dir</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rw23-ellipse-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rw23-ellipse-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw23-ellipse-grid</active>
+        <active>prefigure-rw23-ellipse-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rw23-ellipse-grid</active>
+        <active>prefigure-rw23-ellipse-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rw23-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-ellipse-grid" speech2="The coordinate grid">
+      <active>prefigure-rw23-ellipse-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rw23-ellipse-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-ellipse-axes" speech2="The coordinate axes">
+      <active>prefigure-rw23-ellipse-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw23-ellipse-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-ellipse-el-curve" speech2="The ellipse traced by the parametrization, counter clockwise.">
+      <active>prefigure-rw23-ellipse-el-curve</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw23-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-ellipse-el-center" speech2="The center of the ellipse at square root of twenty one comma negative one.">
+      <active>prefigure-rw23-ellipse-el-center</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rw23-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw23-ellipse-el-dir" speech2="The direction of increasing t, counter clockwise.">
+      <active>prefigure-rw23-ellipse-el-dir</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rw23-ellipse-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

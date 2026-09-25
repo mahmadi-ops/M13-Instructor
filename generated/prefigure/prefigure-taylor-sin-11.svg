@@ -1,0 +1,630 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-taylor-sin-figure" width="484" height="324" viewBox="0 0 484 324">
+  <defs>
+    <clipPath id="prefigure-taylor-sin-__clipPath-0">
+      <rect x="12.0" y="12.0" width="460.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-taylor-sin-__clipPath-1">
+      <rect x="12.0" y="12.0" width="460.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-taylor-sin-grid-axes">
+    <g id="prefigure-taylor-sin-grid" stroke="#ccc" stroke-width="1">
+      <line x1="23.0" y1="312.0" x2="23.0" y2="12.0"/>
+      <line x1="77.7" y1="312.0" x2="77.7" y2="12.0"/>
+      <line x1="132.5" y1="312.0" x2="132.5" y2="12.0"/>
+      <line x1="187.2" y1="312.0" x2="187.2" y2="12.0"/>
+      <line x1="242.0" y1="312.0" x2="242.0" y2="12.0"/>
+      <line x1="296.8" y1="312.0" x2="296.8" y2="12.0"/>
+      <line x1="351.5" y1="312.0" x2="351.5" y2="12.0"/>
+      <line x1="406.3" y1="312.0" x2="406.3" y2="12.0"/>
+      <line x1="461.0" y1="312.0" x2="461.0" y2="12.0"/>
+      <line x1="12.0" y1="306.5" x2="472.0" y2="306.5"/>
+      <line x1="12.0" y1="279.3" x2="472.0" y2="279.3"/>
+      <line x1="12.0" y1="252.0" x2="472.0" y2="252.0"/>
+      <line x1="12.0" y1="224.7" x2="472.0" y2="224.7"/>
+      <line x1="12.0" y1="197.5" x2="472.0" y2="197.5"/>
+      <line x1="12.0" y1="170.2" x2="472.0" y2="170.2"/>
+      <line x1="12.0" y1="142.9" x2="472.0" y2="142.9"/>
+      <line x1="12.0" y1="115.6" x2="472.0" y2="115.6"/>
+      <line x1="12.0" y1="88.4" x2="472.0" y2="88.4"/>
+      <line x1="12.0" y1="61.1" x2="472.0" y2="61.1"/>
+      <line x1="12.0" y1="33.8" x2="472.0" y2="33.8"/>
+    </g>
+    <g id="prefigure-taylor-sin-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-taylor-sin-__line-20" x1="12.0" y1="170.2" x2="472.0" y2="170.2" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-taylor-sin-__line-21" x1="23.0" y1="173.2" x2="23.0" y2="167.2"/>
+        <line id="prefigure-taylor-sin-__line-22" x1="132.5" y1="173.2" x2="132.5" y2="167.2"/>
+        <line id="prefigure-taylor-sin-__line-23" x1="351.5" y1="173.2" x2="351.5" y2="167.2"/>
+        <line id="prefigure-taylor-sin-__line-24" x1="461.0" y1="173.2" x2="461.0" y2="167.2"/>
+      </g>
+      <line id="prefigure-taylor-sin-__line-25" x1="242.0" y1="312.0" x2="242.0" y2="12.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-taylor-sin-__line-26" x1="239.0" y1="279.3" x2="245.0" y2="279.3"/>
+        <line id="prefigure-taylor-sin-__line-27" x1="239.0" y1="224.7" x2="245.0" y2="224.7"/>
+        <line id="prefigure-taylor-sin-__line-28" x1="239.0" y1="115.6" x2="245.0" y2="115.6"/>
+        <line id="prefigure-taylor-sin-__line-29" x1="239.0" y1="61.1" x2="245.0" y2="61.1"/>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-0" transform="translate(468.0,166.2) translate(-10.4,-8.2)">
+      <g id="prefigure-taylor-sin-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-1" transform="translate(246.0,16.0) translate(0.0,-0.0)">
+      <g id="prefigure-taylor-sin-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-taylor-sin-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-2" transform="translate(23.0,181.2) translate(-7.5,-0.0)">
+      <g id="prefigure-taylor-sin-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.256px" role="img" focusable="false" viewBox="0 -677 833 677" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-taylor-sin-MJX-4-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 4">
+                <use data-c="2D" xlink:href="#prefigure-taylor-sin-MJX-4-TEX-N-2D"/>
+                <use data-c="34" xlink:href="#prefigure-taylor-sin-MJX-4-TEX-N-34" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-3" transform="translate(132.5,181.2) translate(-7.5,-0.0)">
+      <g id="prefigure-taylor-sin-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-5-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-taylor-sin-MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-taylor-sin-MJX-5-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-taylor-sin-MJX-5-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-4" transform="translate(351.5,181.2) translate(-4.5,-0.0)">
+      <g id="prefigure-taylor-sin-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-6-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-taylor-sin-MJX-6-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-5" transform="translate(461.0,181.2) translate(-4.5,-0.0)">
+      <g id="prefigure-taylor-sin-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-7-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="4">
+                <use data-c="34" xlink:href="#prefigure-taylor-sin-MJX-7-TEX-N-34"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-6" transform="translate(231.0,279.3) translate(-15.1,-6.0)">
+      <g id="prefigure-taylor-sin-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-8-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-taylor-sin-MJX-8-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 2">
+                <use data-c="2D" xlink:href="#prefigure-taylor-sin-MJX-8-TEX-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-taylor-sin-MJX-8-TEX-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-7" transform="translate(231.0,224.7) translate(-15.1,-6.0)">
+      <g id="prefigure-taylor-sin-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-9-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-taylor-sin-MJX-9-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
+                <use data-c="2D" xlink:href="#prefigure-taylor-sin-MJX-9-TEX-N-2D"/>
+                <use data-c="31" xlink:href="#prefigure-taylor-sin-MJX-9-TEX-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-8" transform="translate(231.0,115.6) translate(-9.0,-6.0)">
+      <g id="prefigure-taylor-sin-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-10-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-taylor-sin-MJX-10-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-taylor-sin-__label-9" transform="translate(231.0,61.1) translate(-9.0,-6.0)">
+      <g id="prefigure-taylor-sin-__g-9">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-taylor-sin-MJX-11-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-taylor-sin-MJX-11-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-taylor-sin-ts-p1" d="M 110.6 301.1 L 113.2 298.5 L 115.8 295.9 L 118.5 293.2 L 121.1 290.6 L 123.7 288.0 L 126.3 285.4 L 129.0 282.8 L 131.6 280.1 L 134.2 277.5 L 136.9 274.9 L 139.5 272.3 L 142.1 269.7 L 144.7 267.1 L 147.4 264.4 L 150.0 261.8 L 152.6 259.2 L 155.3 256.6 L 157.9 254.0 L 160.5 251.3 L 163.1 248.7 L 165.8 246.1 L 168.4 243.5 L 171.0 240.9 L 173.7 238.3 L 176.3 235.6 L 178.9 233.0 L 181.5 230.4 L 184.2 227.8 L 186.8 225.2 L 189.4 222.5 L 192.1 219.9 L 194.7 217.3 L 197.3 214.7 L 199.9 212.1 L 202.6 209.5 L 205.2 206.8 L 207.8 204.2 L 210.5 201.6 L 213.1 199.0 L 215.7 196.4 L 218.3 193.7 L 221.0 191.1 L 223.6 188.5 L 226.2 185.9 L 228.9 183.3 L 231.5 180.7 L 234.1 178.0 L 236.7 175.4 L 239.4 172.8 L 242.0 170.2 L 244.6 167.6 L 247.3 164.9 L 249.9 162.3 L 252.5 159.7 L 255.1 157.1 L 257.8 154.5 L 260.4 151.9 L 263.0 149.2 L 265.7 146.6 L 268.3 144.0 L 270.9 141.4 L 273.5 138.8 L 276.2 136.1 L 278.8 133.5 L 281.4 130.9 L 284.1 128.3 L 286.7 125.7 L 289.3 123.1 L 291.9 120.4 L 294.6 117.8 L 297.2 115.2 L 299.8 112.6 L 302.5 110.0 L 305.1 107.3 L 307.7 104.7 L 310.3 102.1 L 313.0 99.5 L 315.6 96.9 L 318.2 94.3 L 320.9 91.6 L 323.5 89.0 L 326.1 86.4 L 328.7 83.8 L 331.4 81.2 L 334.0 78.5 L 336.6 75.9 L 339.3 73.3 L 341.9 70.7 L 344.5 68.1 L 347.1 65.5 L 349.8 62.8 L 352.4 60.2 L 355.0 57.6 L 357.7 55.0 L 360.3 52.4 L 362.9 49.7 L 365.5 47.1 L 368.2 44.5 L 370.8 41.9 L 373.4 39.3" stroke="#0072B2" stroke-width="2" fill="none" clip-path="url(#prefigure-taylor-sin-__clipPath-1)"/>
+  <path id="prefigure-taylor-sin-ts-p3" d="M 61.3 23.5 L 62.2 27.5 L 63.1 31.4 L 64.0 35.3 L 64.9 39.1 L 65.8 42.9 L 66.7 46.6 L 67.6 50.3 L 68.5 53.9 L 69.4 57.5 L 70.3 61.1 L 71.2 64.6 L 72.1 68.0 L 73.0 71.4 L 73.9 74.8 L 74.8 78.1 L 75.7 81.4 L 76.6 84.6 L 77.6 87.8 L 78.5 90.9 L 79.4 94.0 L 80.3 97.1 L 81.2 100.1 L 82.1 103.0 L 83.0 105.9 L 83.9 108.8 L 84.8 111.6 L 85.7 114.4 L 86.6 117.2 L 87.5 119.9 L 88.4 122.5 L 89.3 125.2 L 90.2 127.7 L 91.1 130.3 L 92.0 132.8 L 92.9 135.2 L 93.8 137.6 L 94.7 140.0 L 95.6 142.4 L 97.4 146.9 L 99.2 151.3 L 101.0 155.5 L 102.8 159.6 L 104.7 163.6 L 106.5 167.4 L 108.3 171.0 L 110.1 174.5 L 111.9 177.8 L 113.7 181.1 L 115.5 184.1 L 117.3 187.1 L 119.1 189.9 L 120.9 192.5 L 122.7 195.1 L 124.5 197.5 L 126.3 199.7 L 128.1 201.9 L 130.0 203.9 L 131.8 205.8 L 133.6 207.6 L 137.2 210.8 L 140.8 213.6 L 144.4 215.9 L 148.0 217.8 L 151.6 219.3 L 155.3 220.5 L 158.9 221.2 L 162.5 221.6 L 166.1 221.6 L 169.7 221.3 L 173.3 220.7 L 176.9 219.7 L 180.6 218.5 L 184.2 217.1 L 187.8 215.4 L 191.4 213.4 L 195.0 211.2 L 198.6 208.9 L 202.2 206.3 L 205.9 203.6 L 209.5 200.7 L 213.1 197.6 L 216.7 194.5 L 220.3 191.2 L 223.9 187.9 L 227.5 184.4 L 229.3 182.7 L 231.2 180.9 L 233.0 179.1 L 234.8 177.4 L 236.6 175.6 L 238.4 173.8 L 240.2 172.0 L 242.0 170.2 L 243.8 168.4 L 245.6 166.6 L 247.4 164.8 L 249.2 163.0 L 251.0 161.2 L 252.8 159.5 L 254.6 157.7 L 256.5 155.9 L 260.1 152.5 L 263.7 149.1 L 267.3 145.9 L 270.9 142.7 L 274.5 139.7 L 278.1 136.8 L 281.8 134.1 L 285.4 131.5 L 289.0 129.1 L 292.6 127.0 L 296.2 125.0 L 299.8 123.3 L 303.4 121.8 L 307.1 120.6 L 310.7 119.7 L 314.3 119.1 L 317.9 118.8 L 321.5 118.8 L 325.1 119.2 L 328.7 119.9 L 332.4 121.0 L 336.0 122.5 L 339.6 124.4 L 343.2 126.8 L 346.8 129.5 L 350.4 132.7 L 352.2 134.5 L 354.0 136.4 L 355.8 138.5 L 357.7 140.6 L 359.5 142.9 L 361.3 145.3 L 363.1 147.8 L 364.9 150.5 L 366.7 153.3 L 368.5 156.2 L 370.3 159.3 L 372.1 162.5 L 373.9 165.9 L 375.7 169.4 L 377.5 173.0 L 379.3 176.8 L 381.1 180.7 L 383.0 184.8 L 384.8 189.1 L 386.6 193.5 L 388.4 198.0 L 389.3 200.3 L 390.2 202.7 L 391.1 205.1 L 392.0 207.6 L 392.9 210.1 L 393.8 212.6 L 394.7 215.2 L 395.6 217.8 L 396.5 220.5 L 397.4 223.2 L 398.3 225.9 L 399.2 228.7 L 400.1 231.5 L 401.0 234.4 L 401.9 237.3 L 402.8 240.3 L 403.7 243.3 L 404.6 246.3 L 405.5 249.4 L 406.4 252.6 L 407.4 255.8 L 408.3 259.0 L 409.2 262.2 L 410.1 265.6 L 411.0 268.9 L 411.9 272.3 L 412.8 275.8 L 413.7 279.3 L 414.6 282.8 L 415.5 286.4 L 416.4 290.1 L 417.3 293.8 L 418.2 297.5 L 419.1 301.3 L 420.0 305.1 L 420.9 309.0 L 421.8 312.9 L 422.7 316.9" stroke="#E69F00" stroke-width="2" fill="none" clip-path="url(#prefigure-taylor-sin-__clipPath-1)"/>
+  <path id="prefigure-taylor-sin-ts-p5" d="M 36.6 232.4 L 38.7 228.1 L 40.8 224.1 L 42.8 220.5 L 44.9 217.2 L 46.9 214.3 L 49.0 211.7 L 51.0 209.3 L 53.1 207.2 L 55.1 205.4 L 57.2 203.8 L 61.3 201.4 L 65.4 199.7 L 69.5 198.8 L 73.6 198.6 L 77.7 198.8 L 81.8 199.5 L 85.9 200.7 L 90.0 202.1 L 94.1 203.7 L 98.3 205.6 L 102.4 207.5 L 106.5 209.6 L 110.6 211.6 L 114.7 213.6 L 118.8 215.6 L 122.9 217.4 L 127.0 219.1 L 131.1 220.6 L 135.2 222.0 L 139.3 223.1 L 143.4 223.9 L 147.5 224.6 L 151.6 224.9 L 155.8 225.0 L 159.9 224.8 L 164.0 224.3 L 168.1 223.5 L 172.2 222.4 L 176.3 221.1 L 180.4 219.4 L 184.5 217.5 L 188.6 215.3 L 192.7 212.9 L 196.8 210.3 L 198.9 208.8 L 200.9 207.4 L 203.0 205.8 L 205.0 204.3 L 207.1 202.6 L 209.1 201.0 L 211.2 199.3 L 213.3 197.5 L 215.3 195.7 L 217.4 193.9 L 219.4 192.0 L 221.5 190.2 L 223.5 188.2 L 225.6 186.3 L 227.6 184.3 L 229.7 182.4 L 231.7 180.3 L 233.8 178.3 L 235.8 176.3 L 237.9 174.3 L 239.9 172.2 L 242.0 170.2 L 244.1 168.1 L 246.1 166.1 L 248.2 164.1 L 250.2 162.0 L 252.3 160.0 L 254.3 158.0 L 256.4 156.0 L 258.4 154.1 L 260.5 152.1 L 262.5 150.2 L 264.6 148.3 L 266.6 146.5 L 268.7 144.6 L 270.8 142.8 L 272.8 141.1 L 274.9 139.4 L 276.9 137.7 L 279.0 136.1 L 281.0 134.5 L 283.1 133.0 L 285.1 131.5 L 287.2 130.1 L 291.3 127.4 L 295.4 125.0 L 299.5 122.9 L 303.6 120.9 L 307.7 119.3 L 311.8 117.9 L 315.9 116.9 L 320.0 116.1 L 324.1 115.6 L 328.3 115.4 L 332.4 115.5 L 336.5 115.8 L 340.6 116.4 L 344.7 117.3 L 348.8 118.4 L 352.9 119.7 L 357.0 121.3 L 361.1 123.0 L 365.2 124.8 L 369.3 126.7 L 373.4 128.8 L 377.5 130.8 L 381.6 132.8 L 385.8 134.8 L 389.9 136.6 L 394.0 138.3 L 398.1 139.7 L 402.2 140.8 L 406.3 141.5 L 410.4 141.8 L 414.5 141.5 L 418.6 140.6 L 422.7 139.0 L 426.8 136.5 L 428.9 135.0 L 430.9 133.1 L 433.0 131.1 L 435.0 128.7 L 437.1 126.1 L 439.1 123.1 L 441.2 119.8 L 443.3 116.2 L 445.3 112.3 L 447.4 108.0" stroke="#009E73" stroke-width="2" fill="none" clip-path="url(#prefigure-taylor-sin-__clipPath-1)"/>
+  <path id="prefigure-taylor-sin-ts-p7" d="M 25.7 100.1 L 27.9 104.2 L 30.0 108.1 L 32.2 112.0 L 34.3 115.7 L 36.5 119.3 L 38.7 122.8 L 40.8 126.3 L 43.0 129.6 L 45.2 132.9 L 47.3 136.1 L 49.5 139.2 L 51.6 142.3 L 53.8 145.3 L 56.0 148.2 L 58.1 151.1 L 60.3 154.0 L 62.5 156.8 L 64.6 159.5 L 66.8 162.2 L 69.0 164.9 L 71.1 167.5 L 73.3 170.0 L 75.4 172.5 L 77.6 175.0 L 79.8 177.5 L 81.9 179.8 L 84.1 182.2 L 86.3 184.5 L 88.4 186.7 L 90.6 188.9 L 92.7 191.1 L 94.9 193.2 L 97.1 195.2 L 99.2 197.2 L 101.4 199.1 L 103.6 201.0 L 105.7 202.8 L 107.9 204.6 L 110.1 206.3 L 112.2 207.9 L 114.4 209.4 L 116.5 210.9 L 118.7 212.4 L 120.9 213.7 L 125.2 216.2 L 129.5 218.4 L 133.8 220.3 L 138.2 221.8 L 142.5 223.1 L 146.8 223.9 L 151.2 224.5 L 155.5 224.7 L 159.8 224.6 L 164.1 224.1 L 168.5 223.3 L 172.8 222.2 L 177.1 220.7 L 181.4 218.9 L 185.8 216.9 L 190.1 214.5 L 192.2 213.2 L 194.4 211.8 L 196.6 210.4 L 198.7 208.9 L 200.9 207.4 L 203.1 205.8 L 205.2 204.1 L 207.4 202.4 L 209.6 200.6 L 211.7 198.8 L 213.9 197.0 L 216.0 195.1 L 218.2 193.1 L 220.4 191.2 L 222.5 189.2 L 224.7 187.1 L 226.9 185.1 L 229.0 183.0 L 231.2 180.9 L 233.3 178.8 L 235.5 176.6 L 237.7 174.5 L 239.8 172.3 L 242.0 170.2 L 244.2 168.0 L 246.3 165.9 L 248.5 163.7 L 250.7 161.6 L 252.8 159.5 L 255.0 157.4 L 257.1 155.3 L 259.3 153.2 L 261.5 151.2 L 263.6 149.2 L 265.8 147.2 L 268.0 145.3 L 270.1 143.4 L 272.3 141.5 L 274.4 139.7 L 276.6 138.0 L 278.8 136.2 L 280.9 134.6 L 283.1 133.0 L 285.3 131.4 L 287.4 129.9 L 289.6 128.5 L 291.8 127.2 L 293.9 125.9 L 298.2 123.5 L 302.6 121.4 L 306.9 119.6 L 311.2 118.2 L 315.5 117.0 L 319.9 116.2 L 324.2 115.8 L 328.5 115.6 L 332.9 115.9 L 337.2 116.4 L 341.5 117.3 L 345.8 118.5 L 350.2 120.1 L 354.5 122.0 L 358.8 124.2 L 363.1 126.7 L 365.3 128.0 L 367.5 129.4 L 369.6 130.9 L 371.8 132.5 L 373.9 134.1 L 376.1 135.8 L 378.3 137.6 L 380.4 139.4 L 382.6 141.2 L 384.8 143.2 L 386.9 145.2 L 389.1 147.2 L 391.3 149.3 L 393.4 151.4 L 395.6 153.6 L 397.7 155.9 L 399.9 158.2 L 402.1 160.5 L 404.2 162.9 L 406.4 165.3 L 408.6 167.8 L 410.7 170.3 L 412.9 172.9 L 415.0 175.5 L 417.2 178.2 L 419.4 180.9 L 421.5 183.6 L 423.7 186.4 L 425.9 189.2 L 428.0 192.1 L 430.2 195.1 L 432.4 198.1 L 434.5 201.2 L 436.7 204.3 L 438.8 207.5 L 441.0 210.7 L 443.2 214.1 L 445.3 217.5 L 447.5 221.0 L 449.7 224.7 L 451.8 228.4 L 454.0 232.2 L 456.1 236.2 L 458.3 240.3" stroke="#8B1A4A" stroke-width="2" fill="none" clip-path="url(#prefigure-taylor-sin-__clipPath-1)"/>
+  <path id="prefigure-taylor-sin-ts-f" d="M 17.5 125.5 L 19.7 126.9 L 22.0 128.3 L 24.2 129.7 L 26.5 131.3 L 28.7 132.9 L 30.9 134.5 L 33.2 136.2 L 35.4 138.0 L 37.7 139.9 L 39.9 141.7 L 42.2 143.7 L 44.4 145.7 L 46.7 147.7 L 48.9 149.7 L 51.2 151.8 L 53.4 153.9 L 55.6 156.1 L 57.9 158.3 L 60.1 160.4 L 62.4 162.7 L 64.6 164.9 L 66.9 167.1 L 69.1 169.3 L 71.4 171.6 L 73.6 173.8 L 75.9 176.0 L 78.1 178.3 L 80.3 180.5 L 82.6 182.6 L 84.8 184.8 L 87.1 187.0 L 89.3 189.1 L 91.6 191.2 L 93.8 193.2 L 96.1 195.2 L 98.3 197.2 L 100.5 199.1 L 102.8 201.0 L 105.0 202.8 L 107.3 204.5 L 109.5 206.3 L 111.8 207.9 L 114.0 209.5 L 116.3 211.0 L 118.5 212.5 L 120.8 213.8 L 123.0 215.1 L 125.2 216.4 L 127.5 217.5 L 129.7 218.6 L 134.2 220.5 L 138.7 222.0 L 143.2 223.3 L 147.7 224.1 L 152.2 224.6 L 156.7 224.7 L 161.2 224.5 L 165.7 223.9 L 170.2 222.9 L 174.6 221.6 L 179.1 219.9 L 183.6 217.9 L 185.9 216.8 L 188.1 215.6 L 190.4 214.3 L 192.6 213.0 L 194.8 211.6 L 197.1 210.1 L 199.3 208.5 L 201.6 206.9 L 203.8 205.2 L 206.1 203.5 L 208.3 201.7 L 210.6 199.8 L 212.8 197.9 L 215.1 195.9 L 217.3 194.0 L 219.5 191.9 L 221.8 189.9 L 224.0 187.8 L 226.3 185.6 L 228.5 183.5 L 230.8 181.3 L 233.0 179.1 L 235.3 176.9 L 237.5 174.6 L 239.8 172.4 L 242.0 170.2 L 244.2 167.9 L 246.5 165.7 L 248.7 163.5 L 251.0 161.3 L 253.2 159.1 L 255.5 156.9 L 257.7 154.7 L 260.0 152.6 L 262.2 150.5 L 264.5 148.4 L 266.7 146.4 L 268.9 144.4 L 271.2 142.5 L 273.4 140.6 L 275.7 138.7 L 277.9 136.9 L 280.2 135.2 L 282.4 133.5 L 284.7 131.9 L 286.9 130.3 L 289.1 128.8 L 291.4 127.4 L 293.6 126.0 L 295.9 124.8 L 298.1 123.6 L 300.4 122.4 L 304.9 120.4 L 309.4 118.8 L 313.8 117.5 L 318.3 116.5 L 322.8 115.9 L 327.3 115.6 L 331.8 115.8 L 336.3 116.3 L 340.8 117.1 L 345.3 118.3 L 349.8 119.9 L 354.3 121.8 L 356.5 122.9 L 358.8 124.0 L 361.0 125.2 L 363.2 126.5 L 365.5 127.9 L 367.7 129.4 L 370.0 130.9 L 372.2 132.5 L 374.5 134.1 L 376.7 135.8 L 379.0 137.6 L 381.2 139.4 L 383.4 141.3 L 385.7 143.2 L 387.9 145.2 L 390.2 147.2 L 392.4 149.2 L 394.7 151.3 L 396.9 153.4 L 399.2 155.5 L 401.4 157.7 L 403.7 159.9 L 405.9 162.1 L 408.1 164.3 L 410.4 166.6 L 412.6 168.8 L 414.9 171.0 L 417.1 173.3 L 419.4 175.5 L 421.6 177.7 L 423.9 179.9 L 426.1 182.1 L 428.4 184.3 L 430.6 186.4 L 432.8 188.5 L 435.1 190.6 L 437.3 192.7 L 439.6 194.7 L 441.8 196.7 L 444.1 198.6 L 446.3 200.5 L 448.6 202.3 L 450.8 204.1 L 453.1 205.8 L 455.3 207.5 L 457.5 209.1 L 459.8 210.6 L 462.0 212.1 L 464.3 213.5 L 466.5 214.8" stroke="black" stroke-width="3" stroke-dasharray="7 4" fill="none" clip-path="url(#prefigure-taylor-sin-__clipPath-1)"/>
+  <g id="prefigure-taylor-sin-ts-f-lab" transform="translate(24.2,25.6) translate(0.0,-9.0)">
+    <g id="prefigure-taylor-sin-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="94.120px" height="18.096px" role="img" focusable="false" viewBox="0 -750 5200.2 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-I-1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-2061" d=""/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="prefigure-taylor-sin-MJX-12-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="13" data-semantic-children="12,10" data-semantic-content="4" data-semantic-speech="f left parenthesis x right parenthesis equals sine x">
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-children="0,8" data-semantic-content="11,0" data-semantic-parent="13" data-semantic-speech="f left parenthesis x right parenthesis">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="12" data-semantic-operator="appl" data-semantic-speech="f">
+                <use data-c="1D453" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-I-1D453"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="11" data-semantic-parent="12" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(550,0)">
+                <use data-c="2061" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="8" data-semantic-children="2" data-semantic-content="1,3" data-semantic-parent="12" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(550,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="1" data-semantic-parent="8" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="8" data-semantic-speech="x" transform="translate(389,0)">
+                  <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="3" data-semantic-parent="8" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
+                  <use data-c="29" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="4" data-semantic-parent="13" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(2177.8,0)">
+              <use data-c="3D" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-children="5,7" data-semantic-content="9,5" data-semantic-parent="13" data-semantic-speech="sine x" transform="translate(3233.6,0)">
+              <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="5" data-semantic-parent="10" data-semantic-operator="appl" data-semantic-speech="sine">
+                <use data-c="73" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-73"/>
+                <use data-c="69" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-69" transform="translate(394,0)"/>
+                <use data-c="6E" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-6E" transform="translate(672,0)"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="9" data-semantic-parent="10" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(1228,0)">
+                <use data-c="2061" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="10" data-semantic-speech="x" transform="translate(1394.7,0)">
+                <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-12-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-taylor-sin-ts-p1-lab" transform="translate(24.2,52.9) translate(0.0,-9.0)">
+    <g id="prefigure-taylor-sin-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px; color:#0072B2" width="75.928px" height="18.096px" role="img" focusable="false" viewBox="0 -750 4195.1 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"/>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-N-2061" d=""/>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+          <path id="prefigure-taylor-sin-MJX-13-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="11" data-semantic-children="10,7" data-semantic-content="6" data-semantic-speech="p 1 left parenthesis x right parenthesis equals x">
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-children="2,8" data-semantic-content="9,0" data-semantic-parent="11" data-semantic-speech="p 1 left parenthesis x right parenthesis">
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="simple function" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="10" data-semantic-speech="p 1">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-operator="appl" data-semantic-speech="p" data-semantic-prefix="Base">
+                  <use data-c="1D45D" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-I-1D45D"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(536,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="1" data-semantic-prefix="Subscript">
+                  <use data-c="31" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-N-31"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="9" data-semantic-parent="10" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(939.6,0)">
+                <use data-c="2061" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="8" data-semantic-children="4" data-semantic-content="3,5" data-semantic-parent="10" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(939.6,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="3" data-semantic-parent="8" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="8" data-semantic-speech="x" transform="translate(389,0)">
+                  <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="5" data-semantic-parent="8" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
+                  <use data-c="29" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="6" data-semantic-parent="11" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(2567.3,0)">
+              <use data-c="3D" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="11" data-semantic-speech="x" transform="translate(3623.1,0)">
+              <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-13-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-taylor-sin-ts-p3-lab" transform="translate(24.2,80.2) translate(0.0,-12.2)">
+    <g id="prefigure-taylor-sin-__g-12">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.552px; color:#E69F00" width="118.928px" height="24.344px" role="img" focusable="false" viewBox="0 -983.2 6570.7 1345" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-2061" d=""/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-14-TEX-N-21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="20" data-semantic-children="18,19" data-semantic-content="6" data-semantic-speech="p 3 left parenthesis x right parenthesis equals x minus StartFraction x cubed Over 3 factorial EndFraction">
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="18" data-semantic-children="2,16" data-semantic-content="17,0" data-semantic-parent="20" data-semantic-speech="p 3 left parenthesis x right parenthesis">
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="simple function" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="18" data-semantic-speech="p 3">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-operator="appl" data-semantic-speech="p" data-semantic-prefix="Base">
+                  <use data-c="1D45D" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-I-1D45D"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(536,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="3" data-semantic-prefix="Subscript">
+                  <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-33"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="17" data-semantic-parent="18" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(939.6,0)">
+                <use data-c="2061" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="16" data-semantic-children="4" data-semantic-content="3,5" data-semantic-parent="18" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(939.6,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="3" data-semantic-parent="16" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="16" data-semantic-speech="x" transform="translate(389,0)">
+                  <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="5" data-semantic-parent="16" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
+                  <use data-c="29" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="6" data-semantic-parent="20" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(2567.3,0)">
+              <use data-c="3D" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="19" data-semantic-children="7,15" data-semantic-content="8" data-semantic-parent="20" data-semantic-speech="x minus StartFraction x cubed Over 3 factorial EndFraction" transform="translate(3623.1,0)">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="19" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-I-1D465"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="8" data-semantic-parent="19" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(794.2,0)">
+                <use data-c="2212" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-2212"/>
+              </g>
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="15" data-semantic-children="11,14" data-semantic-parent="19" data-semantic-speech="StartFraction x cubed Over 3 factorial EndFraction" transform="translate(1794.4,0)">
+                <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="11" data-semantic-children="9,10" data-semantic-parent="15" data-semantic-speech="x cubed" data-semantic-prefix="Numerator">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="11" data-semantic-speech="x" data-semantic-prefix="Base">
+                    <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-I-1D465"/>
+                  </g>
+                  <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-parent="11" data-semantic-speech="3" data-semantic-prefix="Exponent">
+                    <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-33"/>
+                  </g>
+                </g>
+                <g data-mml-node="mrow" transform="translate(301.5,-346.3) scale(0.707)" data-semantic-type="punctuated" data-semantic-role="endpunct" data-semantic-id="14" data-semantic-children="12,13" data-semantic-content="13" data-semantic-parent="15" data-semantic-speech="3 factorial" data-semantic-prefix="Denominator">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="14" data-semantic-speech="3">
+                    <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-33"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="unknown" data-semantic-id="13" data-semantic-parent="14" data-semantic-operator="punctuated" data-semantic-speech="factorial" transform="translate(500,0)">
+                    <use data-c="21" xlink:href="#prefigure-taylor-sin-MJX-14-TEX-N-21"/>
+                  </g>
+                </g>
+                <rect width="913.2" height="60" x="120" y="220"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-taylor-sin-ts-p5-lab" transform="translate(361.0,252.0) translate(0.0,-12.2)">
+    <g id="prefigure-taylor-sin-__g-13">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.552px; color:#009E73" width="161.928px" height="24.352px" role="img" focusable="false" viewBox="0 -983.7 8946.3 1345.5" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-2061" d=""/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"/>
+          <path id="prefigure-taylor-sin-MJX-15-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="29" data-semantic-children="26,28" data-semantic-content="6" data-semantic-speech="p 5 left parenthesis x right parenthesis equals x minus StartFraction x cubed Over 3 factorial EndFraction plus StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction">
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="26" data-semantic-children="2,24" data-semantic-content="25,0" data-semantic-parent="29" data-semantic-speech="p 5 left parenthesis x right parenthesis">
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="simple function" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="26" data-semantic-speech="p 5">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-operator="appl" data-semantic-speech="p" data-semantic-prefix="Base">
+                  <use data-c="1D45D" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-I-1D45D"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(536,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="5" data-semantic-prefix="Subscript">
+                  <use data-c="35" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-35"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="25" data-semantic-parent="26" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(939.6,0)">
+                <use data-c="2061" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="24" data-semantic-children="4" data-semantic-content="3,5" data-semantic-parent="26" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(939.6,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="3" data-semantic-parent="24" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="24" data-semantic-speech="x" transform="translate(389,0)">
+                  <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="5" data-semantic-parent="24" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
+                  <use data-c="29" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="6" data-semantic-parent="29" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(2567.3,0)">
+              <use data-c="3D" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="28" data-semantic-children="27,23" data-semantic-content="16" data-semantic-parent="29" data-semantic-speech="x minus StartFraction x cubed Over 3 factorial EndFraction plus StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction" transform="translate(3623.1,0)">
+              <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="27" data-semantic-children="7,15" data-semantic-content="8" data-semantic-parent="28" data-semantic-speech="x minus StartFraction x cubed Over 3 factorial EndFraction">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="27" data-semantic-speech="x">
+                  <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="8" data-semantic-parent="27" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(794.2,0)">
+                  <use data-c="2212" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-2212"/>
+                </g>
+                <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="15" data-semantic-children="11,14" data-semantic-parent="27" data-semantic-speech="StartFraction x cubed Over 3 factorial EndFraction" transform="translate(1794.4,0)">
+                  <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="11" data-semantic-children="9,10" data-semantic-parent="15" data-semantic-speech="x cubed" data-semantic-prefix="Numerator">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="11" data-semantic-speech="x" data-semantic-prefix="Base">
+                      <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-I-1D465"/>
+                    </g>
+                    <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-parent="11" data-semantic-speech="3" data-semantic-prefix="Exponent">
+                      <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-33"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mrow" transform="translate(301.5,-346.3) scale(0.707)" data-semantic-type="punctuated" data-semantic-role="endpunct" data-semantic-id="14" data-semantic-children="12,13" data-semantic-content="13" data-semantic-parent="15" data-semantic-speech="3 factorial" data-semantic-prefix="Denominator">
+                    <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="14" data-semantic-speech="3">
+                      <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-33"/>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="unknown" data-semantic-id="13" data-semantic-parent="14" data-semantic-operator="punctuated" data-semantic-speech="factorial" transform="translate(500,0)">
+                      <use data-c="21" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-21"/>
+                    </g>
+                  </g>
+                  <rect width="913.2" height="60" x="120" y="220"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="16" data-semantic-parent="28" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(3169.8,0)">
+                <use data-c="2B" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-2B"/>
+              </g>
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="23" data-semantic-children="19,22" data-semantic-parent="28" data-semantic-speech="StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction" transform="translate(4170,0)">
+                <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="19" data-semantic-children="17,18" data-semantic-parent="23" data-semantic-speech="x Superscript 5 Baseline" data-semantic-prefix="Numerator">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="17" data-semantic-parent="19" data-semantic-speech="x" data-semantic-prefix="Base">
+                    <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-I-1D465"/>
+                  </g>
+                  <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="18" data-semantic-parent="19" data-semantic-speech="5" data-semantic-prefix="Exponent">
+                    <use data-c="35" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-35"/>
+                  </g>
+                </g>
+                <g data-mml-node="mrow" transform="translate(301.5,-346.3) scale(0.707)" data-semantic-type="punctuated" data-semantic-role="endpunct" data-semantic-id="22" data-semantic-children="20,21" data-semantic-content="21" data-semantic-parent="23" data-semantic-speech="5 factorial" data-semantic-prefix="Denominator">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="20" data-semantic-parent="22" data-semantic-speech="5">
+                    <use data-c="35" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-35"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="unknown" data-semantic-id="21" data-semantic-parent="22" data-semantic-operator="punctuated" data-semantic-speech="factorial" transform="translate(500,0)">
+                    <use data-c="21" xlink:href="#prefigure-taylor-sin-MJX-15-TEX-N-21"/>
+                  </g>
+                </g>
+                <rect width="913.2" height="60" x="120" y="220"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-taylor-sin-ts-p7-lab" transform="translate(361.0,284.7) translate(0.0,-12.2)">
+    <g id="prefigure-taylor-sin-__g-14">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -6.552px; color:#8B1A4A" width="204.920px" height="24.440px" role="img" focusable="false" viewBox="0 -988.7 11321.9 1350.5" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-2061" d=""/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+          <path id="prefigure-taylor-sin-MJX-16-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="38" data-semantic-children="34,37" data-semantic-content="6" data-semantic-speech="p 7 left parenthesis x right parenthesis equals x minus StartFraction x cubed Over 3 factorial EndFraction plus StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction minus StartFraction x Superscript 7 Baseline Over 7 factorial EndFraction">
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="34" data-semantic-children="2,32" data-semantic-content="33,0" data-semantic-parent="38" data-semantic-speech="p 7 left parenthesis x right parenthesis">
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="simple function" data-semantic-id="2" data-semantic-children="0,1" data-semantic-parent="34" data-semantic-speech="p 7">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-operator="appl" data-semantic-speech="p" data-semantic-prefix="Base">
+                  <use data-c="1D45D" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-I-1D45D"/>
+                </g>
+                <g data-mml-node="mn" transform="translate(536,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="7" data-semantic-prefix="Subscript">
+                  <use data-c="37" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-37"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="33" data-semantic-parent="34" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(939.6,0)">
+                <use data-c="2061" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="32" data-semantic-children="4" data-semantic-content="3,5" data-semantic-parent="34" data-semantic-speech="left parenthesis x right parenthesis" transform="translate(939.6,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="3" data-semantic-parent="32" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                  <use data-c="28" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-28"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="32" data-semantic-speech="x" transform="translate(389,0)">
+                  <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-I-1D465"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="5" data-semantic-parent="32" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(961,0)">
+                  <use data-c="29" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-29"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="6" data-semantic-parent="38" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(2567.3,0)">
+              <use data-c="3D" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="37" data-semantic-children="36,31" data-semantic-content="24" data-semantic-parent="38" data-semantic-speech="x minus StartFraction x cubed Over 3 factorial EndFraction plus StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction minus StartFraction x Superscript 7 Baseline Over 7 factorial EndFraction" transform="translate(3623.1,0)">
+              <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="36" data-semantic-children="35,23" data-semantic-content="16" data-semantic-parent="37" data-semantic-speech="x minus StartFraction x cubed Over 3 factorial EndFraction plus StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction">
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="35" data-semantic-children="7,15" data-semantic-content="8" data-semantic-parent="36" data-semantic-speech="x minus StartFraction x cubed Over 3 factorial EndFraction">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="35" data-semantic-speech="x">
+                    <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-I-1D465"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="8" data-semantic-parent="35" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(794.2,0)">
+                    <use data-c="2212" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-2212"/>
+                  </g>
+                  <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="15" data-semantic-children="11,14" data-semantic-parent="35" data-semantic-speech="StartFraction x cubed Over 3 factorial EndFraction" transform="translate(1794.4,0)">
+                    <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="11" data-semantic-children="9,10" data-semantic-parent="15" data-semantic-speech="x cubed" data-semantic-prefix="Numerator">
+                      <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="11" data-semantic-speech="x" data-semantic-prefix="Base">
+                        <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-I-1D465"/>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-parent="11" data-semantic-speech="3" data-semantic-prefix="Exponent">
+                        <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-33"/>
+                      </g>
+                    </g>
+                    <g data-mml-node="mrow" transform="translate(301.5,-346.3) scale(0.707)" data-semantic-type="punctuated" data-semantic-role="endpunct" data-semantic-id="14" data-semantic-children="12,13" data-semantic-content="13" data-semantic-parent="15" data-semantic-speech="3 factorial" data-semantic-prefix="Denominator">
+                      <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="14" data-semantic-speech="3">
+                        <use data-c="33" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-33"/>
+                      </g>
+                      <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="unknown" data-semantic-id="13" data-semantic-parent="14" data-semantic-operator="punctuated" data-semantic-speech="factorial" transform="translate(500,0)">
+                        <use data-c="21" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-21"/>
+                      </g>
+                    </g>
+                    <rect width="913.2" height="60" x="120" y="220"/>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="16" data-semantic-parent="36" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(3169.8,0)">
+                  <use data-c="2B" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-2B"/>
+                </g>
+                <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="23" data-semantic-children="19,22" data-semantic-parent="36" data-semantic-speech="StartFraction x Superscript 5 Baseline Over 5 factorial EndFraction" transform="translate(4170,0)">
+                  <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="19" data-semantic-children="17,18" data-semantic-parent="23" data-semantic-speech="x Superscript 5 Baseline" data-semantic-prefix="Numerator">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="17" data-semantic-parent="19" data-semantic-speech="x" data-semantic-prefix="Base">
+                      <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-I-1D465"/>
+                    </g>
+                    <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="18" data-semantic-parent="19" data-semantic-speech="5" data-semantic-prefix="Exponent">
+                      <use data-c="35" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-35"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mrow" transform="translate(301.5,-346.3) scale(0.707)" data-semantic-type="punctuated" data-semantic-role="endpunct" data-semantic-id="22" data-semantic-children="20,21" data-semantic-content="21" data-semantic-parent="23" data-semantic-speech="5 factorial" data-semantic-prefix="Denominator">
+                    <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="20" data-semantic-parent="22" data-semantic-speech="5">
+                      <use data-c="35" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-35"/>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="unknown" data-semantic-id="21" data-semantic-parent="22" data-semantic-operator="punctuated" data-semantic-speech="factorial" transform="translate(500,0)">
+                      <use data-c="21" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-21"/>
+                    </g>
+                  </g>
+                  <rect width="913.2" height="60" x="120" y="220"/>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="24" data-semantic-parent="37" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(5545.4,0)">
+                <use data-c="2212" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-2212"/>
+              </g>
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="31" data-semantic-children="27,30" data-semantic-parent="37" data-semantic-speech="StartFraction x Superscript 7 Baseline Over 7 factorial EndFraction" transform="translate(6545.6,0)">
+                <g data-mml-node="msup" transform="translate(220,394) scale(0.707)" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="27" data-semantic-children="25,26" data-semantic-parent="31" data-semantic-speech="x Superscript 7 Baseline" data-semantic-prefix="Numerator">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="25" data-semantic-parent="27" data-semantic-speech="x" data-semantic-prefix="Base">
+                    <use data-c="1D465" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-I-1D465"/>
+                  </g>
+                  <g data-mml-node="mn" transform="translate(605,363) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="26" data-semantic-parent="27" data-semantic-speech="7" data-semantic-prefix="Exponent">
+                    <use data-c="37" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-37"/>
+                  </g>
+                </g>
+                <g data-mml-node="mrow" transform="translate(301.5,-346.3) scale(0.707)" data-semantic-type="punctuated" data-semantic-role="endpunct" data-semantic-id="30" data-semantic-children="28,29" data-semantic-content="29" data-semantic-parent="31" data-semantic-speech="7 factorial" data-semantic-prefix="Denominator">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="28" data-semantic-parent="30" data-semantic-speech="7">
+                    <use data-c="37" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-37"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="unknown" data-semantic-id="29" data-semantic-parent="30" data-semantic-operator="punctuated" data-semantic-speech="factorial" transform="translate(500,0)">
+                    <use data-c="21" xlink:href="#prefigure-taylor-sin-MJX-16-TEX-N-21"/>
+                  </g>
+                </g>
+                <rect width="913.2" height="60" x="120" y="220"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

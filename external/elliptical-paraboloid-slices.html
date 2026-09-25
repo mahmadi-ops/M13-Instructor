@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elliptical Paraboloid Slices</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #404040;
+    background: #ffffff;
+  }
+  .wrap { display: flex; flex-direction: column; height: 100%; padding: 6px 10px 4px; }
+  .eqbar { text-align: center; line-height: 1.35; }
+  .surface-eq { font-size: 1.05em; }
+  .readout { min-height: 2.1em; font-size: 1.05em; margin-top: 2px; }
+  .readout .kind { color: #757575; font-style: italic; margin-left: 0.4em; }
+  .controls {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px; flex-wrap: wrap; margin: 6px 0 2px;
+  }
+  .btn-group { display: inline-flex; }
+  button {
+    font-family: inherit; font-size: 0.95em;
+    background: #ffffff; color: #2a2a2a;
+    border: 1px solid #b0b0b0; padding: 4px 12px; cursor: pointer;
+  }
+  .btn-group button + button { border-left-width: 0; }
+  .btn-group button:first-child { border-radius: 4px 0 0 4px; }
+  .btn-group button:last-child { border-radius: 0 4px 4px 0; }
+  .axis-btn.active { color: #ffffff; border-color: rgba(0,0,0,0.25); }
+  .axis-btn.active mjx-container { color: #ffffff; }
+  button:hover { background: #f2f2f2; }
+  .axis-btn.active:hover { filter: brightness(0.95); }
+  #rotateBtn { border-radius: 4px; min-width: 5.4em; }
+  .slider-box { display: inline-flex; align-items: center; gap: 8px; }
+  input[type=range] { width: 190px; accent-color: #0072B2; }
+  .cval { min-width: 4.4em; text-align: left; font-variant-numeric: tabular-nums; }
+  .cname { font-style: italic; font-family: "PT Serif", "Times New Roman", Times, serif; }
+  #plot { flex: 1 1 auto; min-height: 0; }
+</style>
+<script>
+MathJax = { tex: { inlineMath: [['\\(', '\\)']] }, options: { enableMenu: false } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="eqbar">
+    <span class="surface-eq">\(z = \frac{x^2}{4} + \frac{y^2}{9}\)</span>
+    <div class="readout" id="readout"></div>
+  </div>
+  <div class="controls">
+    <span class="btn-group">
+      <button class="axis-btn" data-axis="x">\(x = c\)</button>
+      <button class="axis-btn" data-axis="y">\(y = c\)</button>
+      <button class="axis-btn" data-axis="z">\(z = c\)</button>
+    </span>
+    <span class="slider-box">
+      <input type="range" id="cslider">
+      <span class="cval"><span class="cname">c</span> = <span id="cval"></span></span>
+    </span>
+    <button id="rotateBtn">Rotate</button>
+  </div>
+  <div id="plot"></div>
+</div>
+<script>
+'use strict';
+function linspace(a, b, n) {
+  var out = [];
+  for (var i = 0; i < n; i++) out.push(a + (b - a) * i / (n - 1));
+  return out;
+}
+function curve(f, a, b, n) {
+  var x = [], y = [], z = [];
+  linspace(a, b, n).forEach(function (t) {
+    var p = f(t); x.push(p[0]); y.push(p[1]); z.push(p[2]);
+  });
+  return { x: x, y: y, z: z };
+}
+function fmt(v) {
+  v = Math.round(v * 100) / 100;
+  if (Math.abs(v) < 1e-9) v = 0;
+  return String(v);
+}
+
+var CONFIG = {
+  ranges: { x: [-4.6, 4.6], y: [-6.9, 6.9], z: [-0.5, 4.6] },
+  sliders: { x: [-4, 4], y: [-6, 6], z: [0, 4] },
+  defaults: { axis: 'x', c: 2 },
+  surface: function () {
+    var nu = 61, nr = 25, X = [], Y = [], Z = [];
+    for (var i = 0; i < nr; i++) {
+      var r = 2 * i / (nr - 1), xr = [], yr = [], zr = [];
+      for (var j = 0; j < nu; j++) {
+        var t = 2 * Math.PI * j / (nu - 1);
+        xr.push(2 * r * Math.cos(t));
+        yr.push(3 * r * Math.sin(t));
+        zr.push(r * r);
+      }
+      X.push(xr); Y.push(yr); Z.push(zr);
+    }
+    return { x: X, y: Y, z: Z };
+  },
+  wires: function () {
+    var w = [];
+    [0.5, 1, 1.5, 2].forEach(function (r) {
+      w.push(curve(function (t) {
+        return [2 * r * Math.cos(t), 3 * r * Math.sin(t), r * r];
+      }, 0, 2 * Math.PI, 97));
+    });
+    for (var k = 0; k < 12; k++) {
+      var t0 = k * Math.PI / 6;
+      w.push(curve(function (r) {
+        return [2 * r * Math.cos(t0), 3 * r * Math.sin(t0), r * r];
+      }, 0, 2, 25));
+    }
+    return w;
+  },
+  slice: function (axis, c) {
+    if (axis === 'x') {
+      var v = c * c / 4;
+      var ymax = 3 * Math.sqrt(Math.max(0, 4 - v));
+      var latex = 'z = ' + (v ? fmt(v) + ' + ' : '') + '\\frac{y^2}{9}';
+      if (ymax < 1e-9) return { points: [[c, 0, v]], latex: latex, kind: 'parabola' };
+      return {
+        curves: [curve(function (y) { return [c, y, v + y * y / 9]; }, -ymax, ymax, 121)],
+        latex: latex, kind: 'parabola'
+      };
+    }
+    if (axis === 'y') {
+      var v2 = c * c / 9;
+      var xmax = 2 * Math.sqrt(Math.max(0, 4 - v2));
+      var latex2 = 'z = \\frac{x^2}{4}' + (v2 ? ' + ' + fmt(v2) : '');
+      if (xmax < 1e-9) return { points: [[0, c, v2]], latex: latex2, kind: 'parabola' };
+      return {
+        curves: [curve(function (x) { return [x, c, x * x / 4 + v2]; }, -xmax, xmax, 121)],
+        latex: latex2, kind: 'parabola'
+      };
+    }
+    var latex3 = '\\frac{x^2}{4} + \\frac{y^2}{9} = ' + fmt(c);
+    if (c < 1e-9) return { points: [[0, 0, 0]], latex: latex3, kind: 'point' };
+    var s = Math.sqrt(c);
+    return {
+      curves: [curve(function (t) {
+        return [2 * s * Math.cos(t), 3 * s * Math.sin(t), c];
+      }, 0, 2 * Math.PI, 121)],
+      latex: latex3, kind: 'ellipse'
+    };
+  }
+};
+
+var AXIS_COLORS = { x: '#0072B2', y: '#009E73', z: '#D55E00' };
+var SURFACE_SCALE = [[0, '#ddecf7'], [1, '#8ec2e2']];
+
+var axis = CONFIG.defaults.axis;
+var c = CONFIG.defaults.c;
+
+var gd = document.getElementById('plot');
+var slider = document.getElementById('cslider');
+var cval = document.getElementById('cval');
+var readout = document.getElementById('readout');
+var rotateBtn = document.getElementById('rotateBtn');
+
+function sceneAxis(name) {
+  return {
+    title: { text: '<i>' + name + '</i>', font: { size: 15 } },
+    range: CONFIG.ranges[name],
+    color: '#606060',
+    gridcolor: '#e5e5e5',
+    zerolinecolor: '#bdbdbd',
+    showspikes: false
+  };
+}
+var layout = {
+  margin: { l: 0, r: 0, t: 0, b: 0 },
+  paper_bgcolor: '#ffffff',
+  showlegend: false,
+  uirevision: 'keep',
+  font: { family: '"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif' },
+  scene: {
+    uirevision: 'keep',
+    aspectmode: 'data',
+    camera: { eye: { x: 1.5, y: 1.15, z: 0.6 } },
+    xaxis: sceneAxis('x'),
+    yaxis: sceneAxis('y'),
+    zaxis: sceneAxis('z')
+  }
+};
+
+function baseTraces() {
+  var s = CONFIG.surface();
+  var traces = [{
+    type: 'surface', x: s.x, y: s.y, z: s.z,
+    colorscale: SURFACE_SCALE, showscale: false,
+    opacity: 0.8, hoverinfo: 'skip',
+    lighting: { ambient: 0.92, diffuse: 0.25, specular: 0.03, fresnel: 0.05 },
+    contours: { x: { show: false }, y: { show: false }, z: { show: false } }
+  }];
+  CONFIG.wires().forEach(function (w) {
+    traces.push({
+      type: 'scatter3d', mode: 'lines',
+      x: w.x, y: w.y, z: w.z,
+      line: { color: 'rgba(50,50,50,0.35)', width: 1.5 },
+      hoverinfo: 'skip'
+    });
+  });
+  return traces;
+}
+var BASE = baseTraces();
+
+function planeTrace() {
+  var r = CONFIG.ranges, X, Y, Z;
+  if (axis === 'x') {
+    X = [[c, c], [c, c]];
+    Y = [[r.y[0], r.y[1]], [r.y[0], r.y[1]]];
+    Z = [[r.z[0], r.z[0]], [r.z[1], r.z[1]]];
+  } else if (axis === 'y') {
+    Y = [[c, c], [c, c]];
+    X = [[r.x[0], r.x[1]], [r.x[0], r.x[1]]];
+    Z = [[r.z[0], r.z[0]], [r.z[1], r.z[1]]];
+  } else {
+    Z = [[c, c], [c, c]];
+    X = [[r.x[0], r.x[1]], [r.x[0], r.x[1]]];
+    Y = [[r.y[0], r.y[0]], [r.y[1], r.y[1]]];
+  }
+  return {
+    type: 'surface', x: X, y: Y, z: Z,
+    colorscale: [[0, '#9a9a9a'], [1, '#9a9a9a']], showscale: false,
+    opacity: 0.16, hoverinfo: 'skip'
+  };
+}
+
+var lastTypeset = '';
+function update() {
+  var s = CONFIG.slice(axis, c);
+  var data = BASE.concat([planeTrace()]);
+  var col = AXIS_COLORS[axis];
+  (s.curves || []).forEach(function (cv) {
+    data.push({
+      type: 'scatter3d', mode: 'lines', x: cv.x, y: cv.y, z: cv.z,
+      line: { color: col, width: 7 }, hoverinfo: 'skip'
+    });
+  });
+  (s.points || []).forEach(function (p) {
+    data.push({
+      type: 'scatter3d', mode: 'markers', x: [p[0]], y: [p[1]], z: [p[2]],
+      marker: { color: col, size: 5 }, hoverinfo: 'skip'
+    });
+  });
+  Plotly.react(gd, data, layout, { displayModeBar: false, responsive: true });
+  cval.textContent = fmt(c);
+  var html = '\\(' + axis + ' = ' + fmt(c) + ':\\;\\;\\; ' + s.latex + '\\)' +
+    ' <span class="kind">(' + s.kind + ')</span>';
+  if (html !== lastTypeset) {
+    lastTypeset = html;
+    readout.innerHTML = html;
+    if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([readout]);
+  }
+}
+
+function setAxis(a) {
+  axis = a;
+  var r = CONFIG.sliders[a];
+  slider.min = r[0]; slider.max = r[1]; slider.step = 0.1;
+  c = Math.min(r[1], Math.max(r[0], c));
+  slider.value = c;
+  document.querySelectorAll('.axis-btn').forEach(function (b) {
+    var on = (b.dataset.axis === a);
+    b.classList.toggle('active', on);
+    b.style.background = on ? AXIS_COLORS[a] : '';
+  });
+  update();
+}
+document.querySelectorAll('.axis-btn').forEach(function (b) {
+  b.addEventListener('click', function () { setAxis(b.dataset.axis); });
+});
+slider.addEventListener('input', function () {
+  c = parseFloat(slider.value);
+  update();
+});
+
+var rotTimer = null;
+rotateBtn.addEventListener('click', function () {
+  if (rotTimer) {
+    clearInterval(rotTimer); rotTimer = null;
+    rotateBtn.textContent = 'Rotate';
+    return;
+  }
+  rotateBtn.textContent = 'Pause';
+  rotTimer = setInterval(function () {
+    var cam = (gd._fullLayout && gd._fullLayout.scene) ?
+      gd._fullLayout.scene.camera : layout.scene.camera;
+    var e = cam.eye, a = 0.03;
+    var nx = e.x * Math.cos(a) - e.y * Math.sin(a);
+    var ny = e.x * Math.sin(a) + e.y * Math.cos(a);
+    Plotly.relayout(gd, { 'scene.camera.eye': { x: nx, y: ny, z: e.z } });
+  }, 50);
+});
+
+setAxis(axis);
+</script>
+</body>
+</html>

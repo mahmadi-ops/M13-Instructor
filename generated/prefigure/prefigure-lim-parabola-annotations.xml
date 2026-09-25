@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lim-parabola-figure" speech2="A coordinate plane with six grey straight lines of different slopes all passing through the origin, and one thick orange parabola opening to the right, also passing through the origin. The grey lines are labelled f tends to zero and the parabola is labelled f equals one half.">
+      <grouped>prefigure-lim-parabola-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lim-parabola-pp-l2</active>
+        <active>prefigure-lim-parabola-pp-par</active>
+        <active>prefigure-lim-parabola-pp-O</active>
+      </children>
+      <components>
+        <active>prefigure-lim-parabola-pp-l2</active>
+        <active>prefigure-lim-parabola-pp-par</active>
+        <active>prefigure-lim-parabola-pp-O</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lim-parabola-pp-l2" speech2="One of the straight paths y equals m x through the origin. Along every such line the function tends to zero.">
+      <active>prefigure-lim-parabola-pp-l2</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lim-parabola-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lim-parabola-pp-par" speech2="The parabola x equals y squared. Along this curved path the function is constantly one half, which is why the limit fails to exist even though every straight line gives zero.">
+      <active>prefigure-lim-parabola-pp-par</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lim-parabola-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lim-parabola-pp-O" speech2="The origin, where the function is defined to be zero.">
+      <active>prefigure-lim-parabola-pp-O</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lim-parabola-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

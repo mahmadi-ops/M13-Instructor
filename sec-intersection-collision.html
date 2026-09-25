@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Intersection Points versus Collision Points</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="og:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="book:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta name="twitter:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta property="og:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.8b982cdcb4aa84b9.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.0499040fbb8ea56b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/pretext/js/dist/diagcess/diagcess.js"></script><script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="math13" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="shorttitlelowercase.html"><span class="title">MATH 13-Calculus and Analytic Geometry III</span></a></div>
+<p class="byline">Mehdi Ahmadi</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-projectile-motion.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="section-parametrization.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chapter-lines-planes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\deriv}[2]{\displaystyle \frac{d#1}{d#2}}
+\newcommand{\real}{\Bbb R}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth4 focused" data-preexpanded-levels="0" data-max-levels="4"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list"><li class="toc-item toc-preface"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-hyperbolic-functions.html" class="internal"><span class="codenumber">1</span> <span class="title">Hyperbolic Functions</span></a></div>
+<ul id="ptx-toc-group-chapter-hyperbolic-functions" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-definitions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Definitions and Derivatives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-graphs.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Graph, Domain, and Range of <span class="process-math">\(\cosh x\)</span> and <span class="process-math">\(\sinh x\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identities.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Identities and Other Hyperbolic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identity-list.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Hyperbolic Identities</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-real-life.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Hyperbolic Functions in Real Life</span></a></div>
+<ul id="ptx-toc-group-sec-hyp-real-life" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-catenary.html" class="internal"><span class="codenumber">1.5.1</span> <span class="title">*Hanging Cables and the Catenary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-celestial.html" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Celestial Mechanics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-gateway-arch.html" class="internal"><span class="codenumber">1.5.3</span> <span class="title">The Gateway Arch</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-more-examples.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Further Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-series-sequences.html" class="internal"><span class="codenumber">2</span> <span class="title">Series and Sequences</span></a></div>
+<ul id="ptx-toc-group-chapter-series-sequences" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-infinite-series.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Infinite Series</span></a></div>
+<ul id="ptx-toc-group-chapter-infinite-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-definitions.html" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-partial-sums.html" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-geometric.html" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-nth-term.html" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The <span class="process-math">\(n\)</span>th Term Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-combining.html" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Combining Series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-taylor-maclaurin.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Taylor and Maclaurin Series</span></a></div>
+<ul id="ptx-toc-group-chapter-taylor-maclaurin" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-definitions.html" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Definitions of Taylor Series, Maclaurin Series, and Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-example.html" class="internal"><span class="codenumber">2.2.2</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-taylor.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Taylor Series and its convergence</span></a></div>
+<ul id="ptx-toc-group-section-taylor" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-1.html" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Taylor’s Formula and The Remainder Estimation Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-2.html" class="internal"><span class="codenumber">2.3.2</span> <span class="title">An example of a Taylor series that converges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-3.html" class="internal"><span class="codenumber">2.3.3</span> <span class="title">The error in using a Taylor polynomial</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-taylor-7.html" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Applications of Taylor Series and Remainder Theorem</span></a></div>
+<ul id="ptx-toc-group-section-taylor-7" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#section-taylor-7-3" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Approximating Relativistic Kinetic Energy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsubsec-pendulum-small-angle" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Small-Angle Approximation for a Pendulum</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsec-approximating-pi-taylor" class="internal"><span class="codenumber">2.3.4.3</span> <span class="title">Approximating the value of <span class="process-math">\(\pi\)</span> using Taylor series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-5.html" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Proof of the remainder theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-binomial-series.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Binomial Series and Applications of Taylor Series</span></a></div>
+<ul id="ptx-toc-group-chapter-binomial-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-series.html" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Binomial Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-applications.html" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-geometry.html" class="internal"><span class="codenumber">3</span> <span class="title">3D Space and Vector Algebra</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chapter-geometry">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-three-dimensional-coordinates.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Three-Dimensional Coordinate Systems</span></a></div>
+<ul id="ptx-toc-group-chapter-three-dimensional-coordinates" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-coordinate-system.html" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Rectangular Coordinate System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-planes-octants.html" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Coordinate Planes and Octants</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-distance.html" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Distance Between Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-spheres.html" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Spheres</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-describing-regions.html" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Describing Regions in Space</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-vectors.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Vectors</span></a></div>
+<ul id="ptx-toc-group-chapter-vectors" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-definitions.html" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Definitions, Terminology, and Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-algebra.html" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Vector Algebra Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-unit.html" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Unit Vectors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-dot-product.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Dot Product</span></a></div>
+<ul id="ptx-toc-group-section-dot-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dot-product.html" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The Dot Product and the Angle between Two Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projection.html" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Projection of <span class="process-math">\(\mathbf u\)</span> in the Direction of <span class="process-math">\(\mathbf v\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-work.html" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Application in Physics: Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-science.html" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Application in Data Science: Measuring Similarity in Tastes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-cross-product.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Cross Product</span></a></div>
+<ul id="ptx-toc-group-section-cross-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-definition.html" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Definition and Properties of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-components.html" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Second Definition of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-true-false.html" class="internal"><span class="codenumber">3.4.3</span> <span class="title">True or False?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-torque.html" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Application: Torque</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circular-motion.html" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Application: Circular Motion: Velocity and Angular Velocity</span></a></div>
+<ul id="ptx-toc-group-sec-circular-motion" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-polar-frame" class="internal"><span class="codenumber">3.4.5.1</span> <span class="title">A Frame that Turns with the Particle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-velocity" class="internal"><span class="codenumber">3.4.5.2</span> <span class="title">The Velocity in Circular Motion</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-angular-velocity-vector" class="internal"><span class="codenumber">3.4.5.3</span> <span class="title">Angular Velocity as a Vector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-v-omega-cross-r" class="internal"><span class="codenumber">3.4.5.4</span> <span class="title">Velocity as a Cross Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-motion-examples" class="internal"><span class="codenumber">3.4.5.5</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-parametrization.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Parametrization of Plane Curves</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-section-parametrization">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametric-equations.html" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Parametric Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametrizing-examples.html" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Some Examples of Parametrizing Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projectile-motion.html" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Projectile Motion</span></a></div></li>
+<li class="toc-item toc-subsection active"><div class="toc-title-box"><a href="sec-intersection-collision.html" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Intersection Points versus Collision Points</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-lines-planes.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Lines and Planes in Space</span></a></div>
+<ul id="ptx-toc-group-chapter-lines-planes" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-vector-eq.html" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Vector Equation for a Line in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-parametric.html" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Parametric Equations for a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-distance.html" class="internal"><span class="codenumber">3.6.3</span> <span class="title">The Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-equation.html" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Equation of a Plane in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-intersection.html" class="internal"><span class="codenumber">3.6.5</span> <span class="title">Lines of Intersection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-distance.html" class="internal"><span class="codenumber">3.6.6</span> <span class="title">Distance of a Point from a Plane</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-conics.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Conic Sections</span></a></div>
+<ul id="ptx-toc-group-section-conics" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-parabola.html" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipse.html" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbola.html" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-reflector.html" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Application: Parabolic Reflectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-whisper.html" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Application: Whispering Galleries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-loran.html" class="internal"><span class="codenumber">3.7.6</span> <span class="title">Application: Hyperbolic Navigation (LORAN)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-quadric-surfaces.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Quadric Surfaces</span></a></div>
+<ul id="ptx-toc-group-section-quadric-surfaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptical-paraboloid.html" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Elliptical Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbolic-paraboloid.html" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Hyperbolic Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipsoid.html" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Ellipsoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptic-cone.html" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Elliptic Cone</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperboloids.html" class="internal"><span class="codenumber">3.8.5</span> <span class="title">Hyperboloids</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-summary.html" class="internal"><span class="codenumber">3.8.6</span> <span class="title">Summary of the Quadric Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-applications.html" class="internal"><span class="codenumber">3.8.7</span> <span class="title">Quadric Surfaces in the World</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-functions-multiple-variables.html" class="internal"><span class="codenumber">4</span> <span class="title">Functions of Multiple Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-multiple-variables" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-functions-several-variables.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Functions of Several Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-several-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-functions-two-variables.html" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Functions of Two Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-curves.html" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Level Curves and Contour Maps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-surfaces.html" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Than Two Variables: Level Surfaces</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-limits-continuity.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Limits and Continuity in Higher Dimensions</span></a></div>
+<ul id="ptx-toc-group-chapter-limits-continuity" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-two-variable.html" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Limits of Two-Variable Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-continuity.html" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Continuity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-partial-derivatives.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Partial Derivatives</span></a></div>
+<ul id="ptx-toc-group-chapter-partial-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-definition.html" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-examples.html" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-second-derivatives.html" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Second Derivatives and the Mixed Derivative Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-chain-rule.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Chain Rule</span></a></div>
+<ul id="ptx-toc-group-chapter-chain-rule" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-one-independent.html" class="internal"><span class="codenumber">4.4.1</span> <span class="title">One Independent Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-two-independent.html" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Two Independent Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-applications.html" class="internal"><span class="codenumber">4.4.3</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-directional-derivatives.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Directional Derivatives and Gradient Vectors</span></a></div>
+<ul id="ptx-toc-group-section-directional-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-definition.html" class="internal"><span class="codenumber">4.5.1</span> <span class="title">The Definition of the Directional Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-vector.html" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The Gradient Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-properties.html" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Directions of Fastest Increase, Fastest Decrease, and No Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-summary.html" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-scalar-fields-potentials.html" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Scalar Fields, Potentials, and the Direction Nature Chooses</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-tangent-planes-differentials.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Tangent Planes and Differentials</span></a></div>
+<ul id="ptx-toc-group-section-tangent-planes-differentials" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-equation.html" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Equation of the Tangent Plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-example-paraboloid.html" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Tangent Plane and Normal Line to a Surface</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-change.html" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Estimating the Change in a Particular Direction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-linearization.html" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Linearizing <span class="process-math">\(z = f(x,y)\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-extreme-values.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Extreme Values and Saddle Points</span></a></div>
+<ul id="ptx-toc-group-section-extreme-values" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-local-extrema.html" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Local Maximum and Local Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-saddle-example.html" class="internal"><span class="codenumber">4.7.2</span> <span class="title">A Saddle Point Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-second-derivative-test.html" class="internal"><span class="codenumber">4.7.3</span> <span class="title">The Second Derivative Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-extrema.html" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Absolute Maximum and Absolute Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equilibrium-stability.html" class="internal"><span class="codenumber">4.7.5</span> <span class="title">A Physical Application: Equilibrium and Stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-why-second-derivative-test.html" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Why the Second Derivative Test Works</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-lagrange-multipliers.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-section-lagrange-multipliers" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-method.html" class="internal"><span class="codenumber">4.8.1</span> <span class="title">The Method of Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-method" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#sec-lagrange-collinear" class="internal"><span class="codenumber">4.8.1.1</span> <span class="title">Why the Gradients Must Be Collinear</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#subsec-lagrange-statement" class="internal"><span class="codenumber">4.8.1.2</span> <span class="title">Stating the Method</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-examples.html" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Examples: Functions of Two Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-examples" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-ellipse" class="internal"><span class="codenumber">4.8.2.1</span> <span class="title">Extrema on an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-circle" class="internal"><span class="codenumber">4.8.2.2</span> <span class="title">Absolute Extrema on a Circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-three-variables.html" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Examples: Functions of Three Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-three-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-distance" class="internal"><span class="codenumber">4.8.3.1</span> <span class="title">Shortest Distance to a Plane</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-box" class="internal"><span class="codenumber">4.8.3.2</span> <span class="title">Minimizing the Cost of a Box</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Functions of <span class="process-math">\(n\)</span> Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-functions-n-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-n-variables" class="internal"><span class="codenumber">4.8.4.1</span> <span class="title">The Method in <span class="process-math">\(n\)</span> Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-hm-gm" class="internal"><span class="codenumber">4.8.4.2</span> <span class="title">An Inequality Between Two Means</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="section-exercises.html" class="internal"><span class="codenumber">5</span> <span class="title">Assignments and Review Problems</span></a></div>
+<ul id="ptx-toc-group-section-exercises" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Assignment 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Assignment 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assignment 3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-1.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Review Problems #1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-4.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Assignment 4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Assignment 5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-6.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Assignment 6</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-2.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Review Problems #2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-7.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Assignment 7</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-8.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Assignment 8</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-9.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Assignment 9</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-3.html" class="internal"><span class="codenumber">5.12</span> <span class="title">Review Problems #3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-10.html" class="internal"><span class="codenumber">5.13</span> <span class="title">Assignment 10</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-4.html" class="internal"><span class="codenumber">5.14</span> <span class="title">Review Problems #4</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="subsection" id="sec-intersection-collision">
+<h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intersection Points versus Collision Points</span>
+</h1>
+<div class="para logical" id="sec-intersection-collision-2">
+<div class="para">A parametrization carries more information than the curve it traces: it also records <em class="emphasis">when</em> the moving point visits each place on the curve. Because of this, there are two different questions we can ask about two parametric curves</div>
+<div class="displaymath process-math" id="sec-intersection-collision-2-2">
+\begin{equation*}
+\mathbf r_1(t) = \bigl\langle f_1(t),\, g_1(t)\bigr\rangle, \qquad
+\mathbf r_2(t) = \bigl\langle f_2(t),\, g_2(t)\bigr\rangle,
+\end{equation*}
+</div>
+<div class="para">thought of as the trajectories of two particles.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-intersection-collision-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-intersection-collision"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intersection Points and Collision Points.</span>
+</h2>
+<div class="para logical" id="def-intersection-collision-2-1">
+<div class="para">A point <span class="process-math">\(P\)</span> is an <dfn class="terminology">intersection point</dfn> of the two curves if <span class="process-math">\(P\)</span> lies on both curves; that is, if there are parameter values <span class="process-math">\(t\)</span> and <span class="process-math">\(s\text{,}\)</span> <em class="emphasis">not necessarily equal</em>, with</div>
+<div class="displaymath process-math" id="eq-intersection-condition">
+\begin{equation}
+\mathbf r_1(t) = \mathbf{OP} = \mathbf r_2(s).\tag{3.5.13}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-intersection-collision-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="def-intersection-collision-2-2">
+<div class="para">A point <span class="process-math">\(P\)</span> is a <dfn class="terminology">collision point</dfn> of the two particles if both particles are at <span class="process-math">\(P\)</span> at the <em class="emphasis">same</em> time; that is, if there is a single value of <span class="process-math">\(t\)</span> with</div>
+<div class="displaymath process-math" id="eq-collision-condition">
+\begin{equation}
+\mathbf r_1(t) = \mathbf r_2(t) = \mathbf{OP}.\tag{3.5.14}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-intersection-collision-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.5.20: Intersection Points and Collision Points"><a tabindex="-1" href="#def-intersection-collision" title="Copy heading and permalink for Definition 3.5.20: Intersection Points and Collision Points" aria-label="Copy heading and permalink for Definition 3.5.20: Intersection Points and Collision Points">🔗</a></div>
+</article>
+<div class="para" id="sec-intersection-collision-4">An intersection point is a statement about the two <em class="emphasis">paths</em>: they cross, like two roads on a map. A collision point is a statement about the two <em class="emphasis">motions</em>: the cars are at the crossroads at the same instant. Every collision point is automatically an intersection point, but, as the next two examples show, an intersection point need not be a collision point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-intersection-collision-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-intersection-collision-5">
+<div class="para">In practice this dictates how we set up the equations.</div>
+<ul class="disc" id="sec-intersection-collision-5-1">
+<li id="sec-intersection-collision-5-1-1">
+<div class="para" id="sec-intersection-collision-5-1-1-1">To find <em class="emphasis">intersection</em> points, give the two curves <em class="emphasis">different</em> parameter names, as in <a href="sec-intersection-collision.html#eq-intersection-condition" class="xref" data-knowl="./knowl/xref/eq-intersection-condition.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.5.13">(3.5.13)</a>, and solve <span class="process-math">\(f_1(t) = f_2(s)\text{,}\)</span> <span class="process-math">\(g_1(t) = g_2(s)\)</span> for the pair <span class="process-math">\((t,s)\text{.}\)</span> Equivalently, eliminate the parameters and intersect the two Cartesian curves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-intersection-collision-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-intersection-collision-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-intersection-collision-5-1-2">
+<div class="para" id="sec-intersection-collision-5-1-2-1">To find <em class="emphasis">collision</em> points, use the <em class="emphasis">same</em> parameter <span class="process-math">\(t\)</span> in both curves and solve <span class="process-math">\(f_1(t) = f_2(t)\text{,}\)</span> <span class="process-math">\(g_1(t) = g_2(t)\)</span> for <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-intersection-collision-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-intersection-collision-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-intersection-collision-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-intersection-collision-6">
+<div class="para">In the next two examples the two <em class="emphasis">paths</em> are always the same: the parabola <span class="process-math">\(y = x^2\)</span> and the line <span class="process-math">\(y = x+2\text{.}\)</span> Setting <span class="process-math">\(x^2 = x+2\)</span> gives <span class="process-math">\(x^2 - x - 2 = (x-2)(x+1) = 0\text{,}\)</span> so the paths meet at the two points</div>
+<div class="displaymath process-math" id="sec-intersection-collision-6-6">
+\begin{equation*}
+(-1,1) \qquad \text{and} \qquad (2,4).
+\end{equation*}
+</div>
+<div class="para">Only the <em class="emphasis">schedule</em> of the second particle will change.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-intersection-collision-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-no-collision" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The paths cross, but the particles never meet.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="ex-no-collision-2-1">
+<div class="para">Two particles move in the plane with position vectors</div>
+<div class="displaymath process-math" id="ex-no-collision-2-1-1">
+\begin{equation*}
+\mathbf r_1(t) = \bigl\langle t,\; t^2\bigr\rangle, \qquad
+\mathbf r_2(t) = \bigl\langle -t,\; 2-t\bigr\rangle, \qquad t \in \mathbb R .
+\end{equation*}
+</div>
+<div class="para">Find all intersection points of their paths, and all collision points of the particles.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-no-collision-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-no-collision-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-no-collision-3-1">
+<em class="alert">Paths.</em> Eliminating the parameter, the first particle traces the parabola <span class="process-math">\(y = x^2\text{.}\)</span> For the second, <span class="process-math">\(x = -t\)</span> and <span class="process-math">\(y = 2-t = 2+x\text{,}\)</span> so it traces the line <span class="process-math">\(y = x+2\text{.}\)</span> As computed above, the two paths intersect at <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\((2,4)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-no-collision-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-no-collision-3-2">
+<div class="para">
+<em class="alert">Collisions.</em> By <a href="sec-intersection-collision.html#eq-collision-condition" class="xref" data-knowl="./knowl/xref/eq-collision-condition.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.5.14">(3.5.14)</a>, a collision requires a single <span class="process-math">\(t\)</span> with</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-collision-condition.html" id="ex-no-collision-3-2-4">
+\begin{equation*}
+t = -t \qquad \text{and} \qquad t^2 = 2 - t .
+\end{equation*}
+</div>
+<div class="para">The first equation forces <span class="process-math">\(t = 0\text{,}\)</span> but then <span class="process-math">\(t^2 = 0\)</span> while <span class="process-math">\(2 - t = 2\text{.}\)</span> There is no solution, so <em class="emphasis">the particles never collide</em>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-no-collision-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-no-collision-3-3">We can see exactly how they miss each other. The first particle is at <span class="process-math">\((-1,1)\)</span> when <span class="process-math">\(t=-1\text{,}\)</span> while the second particle arrives there only at <span class="process-math">\(t=1\text{.}\)</span> Similarly, the first particle reaches <span class="process-math">\((2,4)\)</span> at <span class="process-math">\(t=2\text{,}\)</span> long after the second particle passed through it at <span class="process-math">\(t=-2\text{.}\)</span> Each intersection point is visited twice, but never simultaneously. See <a href="sec-intersection-collision.html#fig-no-collision-video" class="xref" data-knowl="./knowl/xref/fig-no-collision-video.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.5.22">Figure 3.5.22</a> and <a href="sec-intersection-collision.html#fig-no-collision" class="xref" data-knowl="./knowl/xref/fig-no-collision.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.5.23">Figure 3.5.23</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-no-collision-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.5.21.1"><a tabindex="-1" href="#ex-no-collision-3" title="Copy heading and permalink for Solution 3.5.21.1" aria-label="Copy heading and permalink for Solution 3.5.21.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 3.5.21: The paths cross, but the particles never meet"><a tabindex="-1" href="#ex-no-collision" title="Copy heading and permalink for Example 3.5.21: The paths cross, but the particles never meet" aria-label="Copy heading and permalink for Example 3.5.21: The paths cross, but the particles never meet">🔗</a></div>
+</article></details>
+<figure class="figure figure-like" id="fig-no-collision-video"><div class="video-box" style="width: 80%;padding-top: 45%; margin-left: 10%; margin-right: 10%;"><video id="fig-no-collision-video-2" class="video" controls=""><source src="external/videos/no_collision_1080p.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The particles <span class="process-math">\(\mathbf r_1(t) = \langle t,t^2\rangle\)</span> and <span class="process-math">\(\mathbf r_2(t) = \langle -t,2-t\rangle\)</span> move simultaneously. Their paths cross at <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\((2,4)\text{,}\)</span> but the clock shows that the two particles are never at either crossing at the same time.<div class="autopermalink" aria-hidden="true" data-description="Figure 3.5.22"><a tabindex="-1" href="#fig-no-collision-video" title="Copy heading and permalink for Figure 3.5.22" aria-label="Copy heading and permalink for Figure 3.5.22">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="fig-no-collision"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/no-collision-diagcess.svg" data-cml="generated/prefigure/no-collision-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-no-collision-2-description">
+<div class="para" id="fig-no-collision-2-1-1">The parabola <span class="process-math">\(y=x^2\)</span> and the line <span class="process-math">\(y=x+2\)</span> drawn on the same axes, crossing at the points <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\((2,4)\text{.}\)</span> Each crossing is labeled with the two different parameter values at which the two particles pass through it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-no-collision-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The parabola <span class="process-math">\(C_1\)</span> and the line <span class="process-math">\(C_2\)</span> intersect at <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\((2,4)\text{.}\)</span> At each of these points the two particles arrive at different times, so neither point is a collision point.<div class="autopermalink" aria-hidden="true" data-description="Figure 3.5.23"><a tabindex="-1" href="#fig-no-collision" title="Copy heading and permalink for Figure 3.5.23" aria-label="Copy heading and permalink for Figure 3.5.23">🔗</a></div></figcaption>
+</figure>
+<details id="ex-collision" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The same paths, a different schedule—now they collide.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="ex-collision-2-1">
+<div class="para">Keep the first particle, but re-schedule the second one:</div>
+<div class="displaymath process-math" id="ex-collision-2-1-1">
+\begin{equation*}
+\mathbf r_1(t) = \bigl\langle t,\; t^2\bigr\rangle, \qquad
+\mathbf r_2(t) = \bigl\langle 2t-2,\; 2t\bigr\rangle, \qquad t \in \mathbb R .
+\end{equation*}
+</div>
+<div class="para">Find the intersection points of the paths and the collision points of the particles.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-collision-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-collision-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-collision-3-1">
+<em class="alert">Paths.</em> For the second particle, <span class="process-math">\(x = 2t-2\)</span> and <span class="process-math">\(y = 2t = x+2\text{,}\)</span> so it travels along the very same line <span class="process-math">\(y = x+2\)</span> as before, only faster and in the opposite direction. The paths are therefore unchanged, and they still intersect at <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\((2,4)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-collision-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-collision-3-2">
+<div class="para">
+<em class="alert">Collisions.</em> Now <a href="sec-intersection-collision.html#eq-collision-condition" class="xref" data-knowl="./knowl/xref/eq-collision-condition.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.5.14">(3.5.14)</a> requires a single <span class="process-math">\(t\)</span> with</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-collision-condition.html" id="ex-collision-3-2-4">
+\begin{equation*}
+t = 2t - 2 \qquad \text{and} \qquad t^2 = 2t .
+\end{equation*}
+</div>
+<div class="para">The first equation gives <span class="process-math">\(t = 2\text{,}\)</span> and this value does satisfy the second equation, since <span class="process-math">\(2^2 = 4 = 2\cdot 2\text{.}\)</span> Hence the particles <em class="emphasis">do</em> collide, at</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-collision-condition.html" id="ex-collision-3-2-8">
+\begin{equation*}
+\mathbf r_1(2) = \mathbf r_2(2) = \langle 2,4\rangle, \qquad \text{at time } t = 2 .
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-collision-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-collision-3-3">The other intersection point is <em class="emphasis">not</em> a collision point: the first particle passes through <span class="process-math">\((-1,1)\)</span> at <span class="process-math">\(t=-1\text{,}\)</span> while the second particle passes through it at <span class="process-math">\(t = \tfrac12\text{.}\)</span> Two intersection points, but only one collision. See <a href="sec-intersection-collision.html#fig-collision-video" class="xref" data-knowl="./knowl/xref/fig-collision-video.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.5.25">Figure 3.5.25</a> and <a href="sec-intersection-collision.html#fig-collision" class="xref" data-knowl="./knowl/xref/fig-collision.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.5.26">Figure 3.5.26</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-collision-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.5.24.1"><a tabindex="-1" href="#ex-collision-3" title="Copy heading and permalink for Solution 3.5.24.1" aria-label="Copy heading and permalink for Solution 3.5.24.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 3.5.24: The same paths, a different schedule—now they collide"><a tabindex="-1" href="#ex-collision" title="Copy heading and permalink for Example 3.5.24: The same paths, a different schedule—now they collide" aria-label="Copy heading and permalink for Example 3.5.24: The same paths, a different schedule—now they collide">🔗</a></div>
+</article></details>
+<figure class="figure figure-like" id="fig-collision-video"><div class="video-box" style="width: 80%;padding-top: 45%; margin-left: 10%; margin-right: 10%;"><video id="fig-collision-video-2" class="video" controls=""><source src="external/videos/collision_1080p.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>With <span class="process-math">\(\mathbf r_2(t) = \langle 2t-2,2t\rangle\)</span> the second particle follows the same line as before, but on a different schedule. It misses the first particle at <span class="process-math">\((-1,1)\)</span> and collides with it at <span class="process-math">\((2,4)\)</span> when <span class="process-math">\(t = 2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 3.5.25"><a tabindex="-1" href="#fig-collision-video" title="Copy heading and permalink for Figure 3.5.25" aria-label="Copy heading and permalink for Figure 3.5.25">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="fig-collision"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/collision-diagcess.svg" data-cml="generated/prefigure/collision-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-collision-2-description">
+<div class="para" id="fig-collision-2-1-1">The parabola <span class="process-math">\(y=x^2\)</span> and the line <span class="process-math">\(y=x+2\)</span> crossing at <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\((2,4)\text{.}\)</span> The point <span class="process-math">\((2,4)\)</span> is highlighted as a collision point, reached by both particles at time <span class="process-math">\(t=2\text{,}\)</span> while the particles pass through <span class="process-math">\((-1,1)\)</span> at the different times <span class="process-math">\(t=-1\)</span> and <span class="process-math">\(t=\tfrac12\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-collision-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The same two paths as in <a href="sec-intersection-collision.html#fig-no-collision" class="xref" data-knowl="./knowl/xref/fig-no-collision.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.5.23">Figure 3.5.23</a>. The point <span class="process-math">\((2,4)\)</span> is now a collision point, reached by both particles at <span class="process-math">\(t=2\text{,}\)</span> while <span class="process-math">\((-1,1)\)</span> remains an intersection point that is not a collision point.<div class="autopermalink" aria-hidden="true" data-description="Figure 3.5.26"><a tabindex="-1" href="#fig-collision" title="Copy heading and permalink for Figure 3.5.26" aria-label="Copy heading and permalink for Figure 3.5.26">🔗</a></div></figcaption>
+</figure>
+<article class="insight remark-like" id="insight-collision-vs-intersection"><h2 class="heading">
+<span class="type">Insight</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Every Collision Is an Intersection, but Not Conversely.</span>
+</h2>
+<div class="para" id="insight-collision-vs-intersection-2">If two particles collide at <span class="process-math">\(P\text{,}\)</span> then certainly <span class="process-math">\(P\)</span> lies on both paths, so every collision point is an intersection point. The converse fails: the paths may cross at a point that the two particles visit at different times. Changing the parametrization of a curve does not move the curve, but it can create or destroy collisions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#insight-collision-vs-intersection-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Insight 3.5.27: Every Collision Is an Intersection, but Not Conversely"><a tabindex="-1" href="#insight-collision-vs-intersection" title="Copy heading and permalink for Insight 3.5.27: Every Collision Is an Intersection, but Not Conversely" aria-label="Copy heading and permalink for Insight 3.5.27: Every Collision Is an Intersection, but Not Conversely">🔗</a></div>
+</article>
+<details id="checkpoint-collision" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="checkpoint-collision-1-1">Keep <span class="process-math">\(\mathbf r_1(t) = \langle t,t^2\rangle\text{.}\)</span> Find a parametrization <span class="process-math">\(\mathbf r_2\)</span> of the line <span class="process-math">\(y = x+2\)</span> for which the two particles collide at <em class="emphasis">both</em> intersection points.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#checkpoint-collision-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="checkpoint-collision-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="checkpoint-collision-2-1">Try to arrange that the second particle has the same <span class="process-math">\(x\)</span>-coordinate as the first one at every time <span class="process-math">\(t\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#checkpoint-collision-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 3.5.28.1"><a tabindex="-1" href="#checkpoint-collision-2" title="Copy heading and permalink for Hint 3.5.28.1" aria-label="Copy heading and permalink for Hint 3.5.28.1">🔗</a></div>
+</div></details>
+<details id="checkpoint-collision-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="checkpoint-collision-3-1">
+<span class="process-math">\(\mathbf r_2(t) = \langle t,\; t+2\rangle\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#checkpoint-collision-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 3.5.28.1"><a tabindex="-1" href="#checkpoint-collision-3" title="Copy heading and permalink for Answer 3.5.28.1" aria-label="Copy heading and permalink for Answer 3.5.28.1">🔗</a></div>
+</div></details>
+<details id="checkpoint-collision-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="checkpoint-collision-4-1">With <span class="process-math">\(\mathbf r_2(t) = \langle t, t+2\rangle\)</span> the collision equations become <span class="process-math">\(t = t\)</span> and <span class="process-math">\(t^2 = t+2\text{,}\)</span> i.e. <span class="process-math">\((t-2)(t+1) = 0\text{.}\)</span> Thus <span class="process-math">\(t = -1\)</span> gives the collision at <span class="process-math">\((-1,1)\)</span> and <span class="process-math">\(t = 2\)</span> gives the collision at <span class="process-math">\((2,4)\text{:}\)</span> both intersection points are now collision points.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#checkpoint-collision-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.5.28.1"><a tabindex="-1" href="#checkpoint-collision-4" title="Copy heading and permalink for Solution 3.5.28.1" aria-label="Copy heading and permalink for Solution 3.5.28.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 3.5.28"><a tabindex="-1" href="#checkpoint-collision" title="Copy heading and permalink for Checkpoint 3.5.28" aria-label="Copy heading and permalink for Checkpoint 3.5.28">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection 3.5.4: Intersection Points versus Collision Points"><a tabindex="-1" href="#sec-intersection-collision" title="Copy heading and permalink for Subsection 3.5.4: Intersection Points versus Collision Points" aria-label="Copy heading and permalink for Subsection 3.5.4: Intersection Points versus Collision Points">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-projectile-motion.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chapter-lines-planes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script><script src="external/custom.js"></script>
+</body>
+</html>

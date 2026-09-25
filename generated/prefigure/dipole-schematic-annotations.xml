@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="dipole-schematic-axis" speech2="A schematic of an electric dipole on a horizontal axis. A negative charge minus q and a positive charge plus q are separated by a distance d. A point P lies on the axis a distance r to the right of the positive charge">
+      <grouped>dipole-schematic-axis</grouped>
+      <position>1</position>
+      <children>
+        <active>dipole-schematic-negcharge</active>
+        <active>dipole-schematic-poscharge</active>
+        <active>dipole-schematic-ddist</active>
+        <active>dipole-schematic-pointP</active>
+        <active>dipole-schematic-rdist</active>
+      </children>
+      <components>
+        <active>dipole-schematic-negcharge</active>
+        <active>dipole-schematic-poscharge</active>
+        <active>dipole-schematic-ddist</active>
+        <active>dipole-schematic-pointP</active>
+        <active>dipole-schematic-rdist</active>
+      </components>
+    </annotation>
+    <annotation id="dipole-schematic-negcharge" speech2="The negative charge, minus q, on the left">
+      <active>dipole-schematic-negcharge</active>
+      <position>1</position>
+      <parents>
+        <grouped>dipole-schematic-axis</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-schematic-poscharge" speech2="The positive charge, plus q, a distance d to the right of the negative charge">
+      <active>dipole-schematic-poscharge</active>
+      <position>2</position>
+      <parents>
+        <grouped>dipole-schematic-axis</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-schematic-ddist" speech2="The separation d between the two charges">
+      <active>dipole-schematic-ddist</active>
+      <position>3</position>
+      <parents>
+        <grouped>dipole-schematic-axis</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-schematic-pointP" speech2="The point P on the axis, to the right of the positive charge">
+      <active>dipole-schematic-pointP</active>
+      <position>4</position>
+      <parents>
+        <grouped>dipole-schematic-axis</grouped>
+      </parents>
+    </annotation>
+    <annotation id="dipole-schematic-rdist" speech2="The distance r from the positive charge to the point P">
+      <active>dipole-schematic-rdist</active>
+      <position>5</position>
+      <parents>
+        <grouped>dipole-schematic-axis</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lines-dist-figure" speech2="A solid black line L runs up and to the right. A point S floats above the line. A dashed green segment joins a point P on the line to S, making an angle theta with the line. A dashed dark red segment drops from S perpendicularly to the line; its length is the magnitude of P S times the absolute value of sine theta. A magenta vector v below the line shows the line's direction.">
+      <grouped>prefigure-lines-dist-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lines-dist-dl-line</active>
+        <active>prefigure-lines-dist-dl-S</active>
+        <active>prefigure-lines-dist-dl-ps</active>
+        <active>prefigure-lines-dist-dl-drop</active>
+        <active>prefigure-lines-dist-dl-v</active>
+      </children>
+      <components>
+        <active>prefigure-lines-dist-dl-line</active>
+        <active>prefigure-lines-dist-dl-S</active>
+        <active>prefigure-lines-dist-dl-ps</active>
+        <active>prefigure-lines-dist-dl-drop</active>
+        <active>prefigure-lines-dist-dl-v</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lines-dist-dl-line" speech2="The line L.">
+      <active>prefigure-lines-dist-dl-line</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lines-dist-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lines-dist-dl-S" speech2="The point S whose distance from the line we want.">
+      <active>prefigure-lines-dist-dl-S</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lines-dist-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lines-dist-dl-ps" speech2="The segment from P to S, which makes an angle theta with the line.">
+      <active>prefigure-lines-dist-dl-ps</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lines-dist-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lines-dist-dl-drop" speech2="The perpendicular distance d, equal to the magnitude of P S times the absolute value of sine theta.">
+      <active>prefigure-lines-dist-dl-drop</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-lines-dist-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lines-dist-dl-v" speech2="The direction vector v of the line.">
+      <active>prefigure-lines-dist-dl-v</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-lines-dist-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

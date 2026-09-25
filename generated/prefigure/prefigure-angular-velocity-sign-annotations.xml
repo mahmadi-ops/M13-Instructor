@@ -1,0 +1,84 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-angular-velocity-sign-figure" speech2="Two panels showing a particle on a circular orbit in the horizontal plane, drawn in an oblique view with the z axis vertical. In the left panel the particle circulates counterclockwise as seen from above, the rate of change of theta is positive, and the angular velocity vector points up along the positive z direction. In the right panel the particle circulates clockwise, the rate of change of theta is negative, and the angular velocity vector points down along the negative z direction. In both panels the velocity is tangent to the orbit and the position vector runs from the centre out to the particle.">
+      <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-angular-velocity-sign-av-orbA</active>
+        <active>prefigure-angular-velocity-sign-av-dirA</active>
+        <active>prefigure-angular-velocity-sign-av-wA</active>
+        <active>prefigure-angular-velocity-sign-av-vA</active>
+        <active>prefigure-angular-velocity-sign-av-orbB</active>
+        <active>prefigure-angular-velocity-sign-av-dirB</active>
+        <active>prefigure-angular-velocity-sign-av-wB</active>
+        <active>prefigure-angular-velocity-sign-av-vB</active>
+      </children>
+      <components>
+        <active>prefigure-angular-velocity-sign-av-orbA</active>
+        <active>prefigure-angular-velocity-sign-av-dirA</active>
+        <active>prefigure-angular-velocity-sign-av-wA</active>
+        <active>prefigure-angular-velocity-sign-av-vA</active>
+        <active>prefigure-angular-velocity-sign-av-orbB</active>
+        <active>prefigure-angular-velocity-sign-av-dirB</active>
+        <active>prefigure-angular-velocity-sign-av-wB</active>
+        <active>prefigure-angular-velocity-sign-av-vB</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-orbA" speech2="The circular orbit in the left panel.">
+      <active>prefigure-angular-velocity-sign-av-orbA</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-dirA" speech2="An arrowhead on the orbit showing counterclockwise circulation.">
+      <active>prefigure-angular-velocity-sign-av-dirA</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-wA" speech2="The angular velocity vector pointing up along the positive z axis.">
+      <active>prefigure-angular-velocity-sign-av-wA</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-vA" speech2="The velocity of the particle, tangent to the orbit.">
+      <active>prefigure-angular-velocity-sign-av-vA</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-orbB" speech2="The circular orbit in the right panel.">
+      <active>prefigure-angular-velocity-sign-av-orbB</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-dirB" speech2="An arrowhead on the orbit showing clockwise circulation.">
+      <active>prefigure-angular-velocity-sign-av-dirB</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-wB" speech2="The angular velocity vector pointing down along the negative z axis.">
+      <active>prefigure-angular-velocity-sign-av-wB</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-angular-velocity-sign-av-vB" speech2="The velocity of the particle, tangent to the orbit.">
+      <active>prefigure-angular-velocity-sign-av-vB</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-angular-velocity-sign-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

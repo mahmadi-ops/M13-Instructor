@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Level surfaces of x&#178; + y&#178; &#8722; z&#178; -- animated</title>
+<!-- The same two families the book itself loads (see pretext-html.xsl), so the
+     figure's lettering matches the surrounding page rather than the reader's
+     system UI font: Open Sans for text, PT Serif for the mathematics. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Manim-style palette: dark stage, saturated accents, light serif math.
+     Kept identical to conic-slicer-manim.html so the two figures read as a
+     pair. */
+  :root {
+    --bg:        #06070a;
+    --panel:     #101218;
+    --edge:      #262a36;
+    --ink:       #ece6e2;
+    --dim:       #9aa0ad;
+    --blue:      #58c4dd;
+    --green:     #83c167;
+    --yellow:    #ffe14d;
+    --red:       #fc6255;
+    --gold:      #f0ac5f;
+    --sans:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "PT Serif", "Times New Roman", Times, serif;
+  }
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+               background: var(--bg); }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  #app { display: flex; flex-direction: column; height: 100%; }
+  #stage { position: relative; flex: 1 1 auto; min-height: 0; }
+  #stage canvas { display: block; width: 100%; height: 100%; touch-action: none;
+                  cursor: grab; }
+  #stage canvas:active { cursor: grabbing; }
+
+  .overlay { position: absolute; pointer-events: none; }
+  #eqcard {
+    left: 14px; top: 12px;
+    background: rgba(16,18,24,0.78);
+    border: 1px solid var(--edge); border-radius: 6px;
+    padding: 8px 11px 9px;
+  }
+  #eqcard .math { font-family: var(--serif); font-size: 15px; line-height: 1.5; }
+  #surfName { margin-top: 5px; font-size: 13px; font-weight: 600; }
+
+  #caption { left: 14px; bottom: 12px; right: 14px; font-size: 12.5px;
+             color: var(--dim); }
+
+  #panel {
+    flex: 0 0 auto; background: var(--panel);
+    border-top: 1px solid var(--edge); padding: 9px 12px 11px;
+  }
+  .row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .row + .row { margin-top: 9px; }
+  .lbl { font-size: 12px; color: var(--dim); }
+  button {
+    font-family: var(--sans); font-size: 12.5px; color: var(--ink);
+    background: #171a22; border: 1px solid var(--edge); border-radius: 5px;
+    padding: 5px 10px; cursor: pointer;
+  }
+  button:hover { background: #1e222c; }
+  button.on { border-color: var(--blue); color: var(--blue); }
+  .sliderRow .name { font-family: var(--serif); font-size: 14px;
+                     min-width: 116px; }
+  input[type=range] { flex: 1 1 auto; accent-color: var(--blue); min-width: 120px; }
+</style>
+</head>
+
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="eqcard" class="overlay">
+      <div class="math" style="color:#9cdceb"><i>g</i>(<i>x</i>,<i>y</i>,<i>z</i>) = <i>x</i>&#178; + <i>y</i>&#178; &#8722; <i>z</i>&#178;</div>
+      <div class="math">level surface &nbsp;<i>g</i> = <span id="eqC">1.00</span></div>
+      <div id="surfName">Hyperboloid of one sheet</div>
+    </div>
+
+    <div id="caption" class="overlay"></div>
+  </div>
+
+  <div id="panel">
+    <div class="row">
+      <span class="lbl">Jump to:</span>
+      <button id="btnTwo">Two sheets</button>
+      <button id="btnCone">Cone</button>
+      <button id="btnOne">One sheet</button>
+      <span style="flex:1"></span>
+      <button id="btnPlay">&#9654;&nbsp;Play</button>
+      <button id="btnSpin">Spin</button>
+      <button id="btnGhost" class="on">Cone ghost</button>
+    </div>
+    <div class="row sliderRow">
+      <span class="name"><i>c</i> = <span id="cVal">1.00</span></span>
+      <input type="range" id="cSlider" min="-4" max="4" step="0.01" value="1"
+             aria-label="value of c for the level surface">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Manim colour constants, so the palette below reads the way a Scene would.
+  var BLUE_C = 0x58c4dd, GREEN_C = 0x83c167, GOLD_C = 0xf0ac5f,
+      GREY = 0x8a8f9c, INK = 0xece6e2;
+
+  var ZMAX = 2.3;        // surfaces are drawn for |z| <= ZMAX
+  var CMIN = -4, CMAX = 4;
+  var NU = 72, NV = 48;  // angular and axial resolution of the mesh
+
+  // ---------- renderer / scene ----------
+  var stage = document.getElementById("stage");
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  stage.appendChild(renderer.domElement);
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x06070a);
+
+  var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+  camera.up.set(0, 0, 1);                 // z is up, the usual maths convention
+
+  // The camera is dollied to whatever distance makes the whole picture — the
+  // surface plus the labelled axes — fit the stage, so the figure never needs
+  // to be scrolled or cropped, however short or narrow the frame is.
+  var CONTENT = 3.6;                 // half-extent to keep in view (axis tips)
+  var radius = 10.8, theta = 0.62, phi = 0.92;
+
+  function fitRadius(aspect) {
+    var halfFov = camera.fov * Math.PI / 360;
+    var byHeight = CONTENT / Math.tan(halfFov);
+    var byWidth = byHeight / Math.max(aspect, 0.001);
+    return Math.max(byHeight, byWidth);
+  }
+
+  function placeCamera() {
+    camera.position.set(
+      radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.sin(phi) * Math.sin(theta),
+      radius * Math.cos(phi)
+    );
+    camera.lookAt(0, 0, 0);
+  }
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.62));
+  var key = new THREE.DirectionalLight(0xffffff, 0.62); key.position.set(5, 3, 6);
+  var fill = new THREE.DirectionalLight(0x9fd8ff, 0.30); fill.position.set(-4, -5, 2);
+  scene.add(key); scene.add(fill);
+
+  // ---------- axis labels as sprites ----------
+  function makeLabel(text, colour) {
+    var cv = document.createElement("canvas");
+    cv.width = 128; cv.height = 128;
+    var g = cv.getContext("2d");
+    g.font = "italic 84px 'PT Serif', Times, serif";
+    g.fillStyle = colour;
+    g.textAlign = "center"; g.textBaseline = "middle";
+    g.fillText(text, 64, 68);
+    var tex = new THREE.CanvasTexture(cv);
+    tex.minFilter = THREE.LinearFilter;
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex,
+                              transparent: true, depthTest: false }));
+    sp.scale.set(0.55, 0.55, 1);
+    return sp;
+  }
+
+  function axis(dir, label) {
+    var L = 3.1;
+    var pts = [new THREE.Vector3(0, 0, 0),
+               new THREE.Vector3(dir[0] * L, dir[1] * L, dir[2] * L)];
+    var line = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints(pts),
+      new THREE.LineBasicMaterial({ color: GREY, transparent: true, opacity: 0.75 }));
+    scene.add(line);
+    var sp = makeLabel(label, "#9aa0ad");
+    sp.position.set(dir[0] * (L + 0.28), dir[1] * (L + 0.28), dir[2] * (L + 0.28));
+    scene.add(sp);
+  }
+  axis([1, 0, 0], "x"); axis([0, 1, 0], "y"); axis([0, 0, 1], "z");
+
+  // ---------- the level surface ----------
+  // x^2 + y^2 - z^2 = c is a surface of revolution: r(z) = sqrt(z^2 + c).
+  // For c >= 0 that is defined for every z, giving one connected sheet (a cone
+  // when c = 0).  For c < 0 it needs z^2 >= -c, so the surface breaks into two
+  // sheets, one above z = sqrt(-c) and one below z = -sqrt(-c).
+  var surfaceGroup = new THREE.Group();
+  scene.add(surfaceGroup);
+
+  function surfaceColour(c) {
+    if (c > 0.02) return BLUE_C;
+    if (c < -0.02) return GREEN_C;
+    return GOLD_C;
+  }
+
+  // One patch of the surface of revolution, for z running over [z0, z1].
+  function patch(c, z0, z1, colour) {
+    var geo = new THREE.BufferGeometry();
+    var pos = [], idx = [];
+    var iu, iv, u, z, r;
+    for (iv = 0; iv <= NV; iv++) {
+      z = z0 + (z1 - z0) * iv / NV;
+      r = Math.sqrt(Math.max(z * z + c, 0));
+      for (iu = 0; iu <= NU; iu++) {
+        u = 2 * Math.PI * iu / NU;
+        pos.push(r * Math.cos(u), r * Math.sin(u), z);
+      }
+    }
+    for (iv = 0; iv < NV; iv++) {
+      for (iu = 0; iu < NU; iu++) {
+        var a = iv * (NU + 1) + iu, b = a + 1,
+            d = a + (NU + 1), e = d + 1;
+        idx.push(a, d, b, b, d, e);
+      }
+    }
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setIndex(idx);
+    geo.computeVertexNormals();
+
+    var mesh = new THREE.Mesh(geo, new THREE.MeshPhongMaterial({
+      color: colour, transparent: true, opacity: 0.55,
+      side: THREE.DoubleSide, shininess: 22, depthWrite: false
+    }));
+    surfaceGroup.add(mesh);
+
+    // A coarse wireframe on top, so the ruling is visible the way it is in the
+    // printed figure.
+    var wf = new THREE.LineSegments(
+      new THREE.WireframeGeometry(new THREE.BufferGeometry().copy(coarse(c, z0, z1))),
+      new THREE.LineBasicMaterial({ color: colour, transparent: true,
+                                    opacity: 0.42 }));
+    surfaceGroup.add(wf);
+  }
+
+  // A low-resolution copy of the same patch, used only for the wireframe.
+  function coarse(c, z0, z1) {
+    var mu = 24, mv = 14;
+    var geo = new THREE.BufferGeometry();
+    var pos = [], idx = [], iu, iv, u, z, r;
+    for (iv = 0; iv <= mv; iv++) {
+      z = z0 + (z1 - z0) * iv / mv;
+      r = Math.sqrt(Math.max(z * z + c, 0));
+      for (iu = 0; iu <= mu; iu++) {
+        u = 2 * Math.PI * iu / mu;
+        pos.push(r * Math.cos(u), r * Math.sin(u), z);
+      }
+    }
+    for (iv = 0; iv < mv; iv++) {
+      for (iu = 0; iu < mu; iu++) {
+        var a = iv * (mu + 1) + iu, b = a + 1,
+            d = a + (mu + 1), e = d + 1;
+        idx.push(a, d, b, b, d, e);
+      }
+    }
+    geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    geo.setIndex(idx);
+    return geo;
+  }
+
+  // The c = 0 cone, kept on screen faintly so the reader can see both
+  // hyperboloids hugging it.
+  var ghost = new THREE.Group();
+  (function buildGhost() {
+    var mat = new THREE.LineBasicMaterial({ color: GOLD_C, transparent: true,
+                                            opacity: 0.30 });
+    var k, u, pts;
+    for (k = 0; k < 16; k++) {           // rulings through the apex
+      u = 2 * Math.PI * k / 16;
+      pts = [new THREE.Vector3(-ZMAX * Math.cos(u), -ZMAX * Math.sin(u), -ZMAX),
+             new THREE.Vector3(0, 0, 0),
+             new THREE.Vector3(ZMAX * Math.cos(u), ZMAX * Math.sin(u), ZMAX)];
+      ghost.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), mat));
+    }
+    [-ZMAX, -ZMAX / 2, ZMAX / 2, ZMAX].forEach(function (z) {   // level circles
+      var ring = [], j;
+      for (j = 0; j <= 72; j++) {
+        var a = 2 * Math.PI * j / 72;
+        ring.push(new THREE.Vector3(Math.abs(z) * Math.cos(a),
+                                    Math.abs(z) * Math.sin(a), z));
+      }
+      ghost.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(ring), mat));
+    });
+  })();
+  scene.add(ghost);
+
+  function clearGroup(g) {
+    while (g.children.length) {
+      var ch = g.children.pop();
+      if (ch.geometry) ch.geometry.dispose();
+      if (ch.material) ch.material.dispose();
+    }
+  }
+
+  function buildSurface(c) {
+    clearGroup(surfaceGroup);
+    var colour = surfaceColour(c);
+    if (c >= 0) {
+      patch(c, -ZMAX, ZMAX, colour);
+    } else {
+      var z0 = Math.sqrt(-c);
+      if (z0 < ZMAX - 0.02) {
+        patch(c, z0, ZMAX, colour);
+        patch(c, -ZMAX, -z0, colour);
+      }
+    }
+  }
+
+  // ---------- readouts ----------
+  var eqC = document.getElementById("eqC"),
+      cValOut = document.getElementById("cVal"),
+      nameOut = document.getElementById("surfName"),
+      caption = document.getElementById("caption");
+
+  function describe(c) {
+    if (c > 0.02) {
+      return ["Hyperboloid of one sheet",
+              "Every horizontal slice is a circle of radius √(c + z²); the smallest sits at z = 0."];
+    }
+    if (c < -0.02) {
+      return ["Hyperboloid of two sheets",
+              "There is no point with |z| < √(−c): the plane z = 0 misses the surface entirely."];
+    }
+    return ["Cone",
+            "The two nappes meet at the origin — the only level surface with a corner."];
+  }
+
+  function refresh(c) {
+    buildSurface(c);
+    var d = describe(c);
+    eqC.textContent = c.toFixed(2);
+    cValOut.textContent = c.toFixed(2);
+    nameOut.textContent = d[0];
+    nameOut.style.color = "#" + surfaceColour(c).toString(16).padStart(6, "0");
+    caption.textContent = d[1];
+  }
+
+  // ---------- controls ----------
+  var slider = document.getElementById("cSlider");
+  slider.addEventListener("input", function () {
+    stopPlay();
+    refresh(parseFloat(slider.value));
+  });
+
+  function jump(c) {
+    stopPlay();
+    slider.value = String(c);
+    refresh(c);
+  }
+  document.getElementById("btnTwo").addEventListener("click", function () { jump(-1); });
+  document.getElementById("btnCone").addEventListener("click", function () { jump(0); });
+  document.getElementById("btnOne").addEventListener("click", function () { jump(1); });
+
+  var playing = false, playDir = 1, btnPlay = document.getElementById("btnPlay");
+  function stopPlay() {
+    playing = false;
+    btnPlay.classList.remove("on");
+    btnPlay.innerHTML = "▶&nbsp;Play";
+  }
+  btnPlay.addEventListener("click", function () {
+    if (playing) { stopPlay(); return; }
+    playing = true;
+    btnPlay.classList.add("on");
+    btnPlay.innerHTML = "■&nbsp;Stop";
+  });
+
+  var spinning = false, btnSpin = document.getElementById("btnSpin");
+  btnSpin.addEventListener("click", function () {
+    spinning = !spinning;
+    btnSpin.classList.toggle("on", spinning);
+  });
+
+  var btnGhost = document.getElementById("btnGhost");
+  btnGhost.addEventListener("click", function () {
+    ghost.visible = !ghost.visible;
+    btnGhost.classList.toggle("on", ghost.visible);
+  });
+
+  // drag to orbit
+  var dragging = false, lastX = 0, lastY = 0;
+  var cv = renderer.domElement;
+  cv.addEventListener("pointerdown", function (e) {
+    dragging = true; lastX = e.clientX; lastY = e.clientY;
+    cv.setPointerCapture(e.pointerId);
+  });
+  cv.addEventListener("pointermove", function (e) {
+    if (!dragging) return;
+    theta -= (e.clientX - lastX) * 0.008;
+    phi = Math.max(0.18, Math.min(Math.PI - 0.18, phi - (e.clientY - lastY) * 0.008));
+    lastX = e.clientX; lastY = e.clientY;
+  });
+  ["pointerup", "pointercancel", "pointerleave"].forEach(function (ev) {
+    cv.addEventListener(ev, function () { dragging = false; });
+  });
+
+  // ---------- resize / loop ----------
+  function resize() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    radius = fitRadius(camera.aspect);
+  }
+  window.addEventListener("resize", resize);
+
+  var clock = new THREE.Clock();
+  function tick() {
+    var dt = Math.min(clock.getDelta(), 0.05);
+    if (playing) {
+      var c = parseFloat(slider.value) + playDir * 1.15 * dt;
+      if (c >= CMAX) { c = CMAX; playDir = -1; }
+      if (c <= CMIN) { c = CMIN; playDir = 1; }
+      slider.value = String(c);
+      refresh(c);
+    }
+    if (spinning && !dragging) theta += 0.32 * dt;
+    placeCamera();
+    renderer.render(scene, camera);
+    requestAnimationFrame(tick);
+  }
+
+  resize();
+  refresh(1);
+  placeCamera();
+  tick();
+})();
+</script>
+</body>
+</html>

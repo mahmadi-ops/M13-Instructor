@@ -1,0 +1,90 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperbola-loran-fix-locus1" speech2="A position fix from two time-difference measurements: the unknown position A lies at the crossing of two hyperbola branches">
+      <grouped>hyperbola-loran-fix-locus1</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperbola-loran-fix-locus1</active>
+        <active>hyperbola-loran-fix-locus2</active>
+        <active>hyperbola-loran-fix-dists</active>
+        <active>hyperbola-loran-fix-legend</active>
+        <active>hyperbola-loran-fix-ship</active>
+        <active>hyperbola-loran-fix-sA</active>
+        <active>hyperbola-loran-fix-sB</active>
+        <active>hyperbola-loran-fix-sC</active>
+      </children>
+      <components>
+        <active>hyperbola-loran-fix-locus1</active>
+        <active>hyperbola-loran-fix-locus2</active>
+        <active>hyperbola-loran-fix-dists</active>
+        <active>hyperbola-loran-fix-legend</active>
+        <active>hyperbola-loran-fix-ship</active>
+        <active>hyperbola-loran-fix-sA</active>
+        <active>hyperbola-loran-fix-sB</active>
+        <active>hyperbola-loran-fix-sC</active>
+      </components>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-locus1" speech2="The blue branch of points whose distance difference to receivers P two and P one equals the first measured constant" sonify="yes">
+      <active>hyperbola-loran-fix-locus1</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>hyperbola-loran-fix-locus1</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-locus2" speech2="The purple branch of points whose distance difference to receivers P three and P one equals the second measured constant" sonify="yes">
+      <active>hyperbola-loran-fix-locus2</active>
+      <position>2</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>hyperbola-loran-fix-locus2</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-dists" speech2="Three dashed segments from the position A to the receivers, of lengths r one, r two, and r three">
+      <active>hyperbola-loran-fix-dists</active>
+      <position>3</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-legend" speech2="A legend box in the upper left: on the blue curve, r two minus r one equals two a; on the purple curve, r three minus r one equals two a prime">
+      <active>hyperbola-loran-fix-legend</active>
+      <position>4</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-ship" speech2="The position A, at the single crossing of the two branches">
+      <active>hyperbola-loran-fix-ship</active>
+      <position>5</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-sA" speech2="Receiver P one, the master receiver shared by both measurements">
+      <active>hyperbola-loran-fix-sA</active>
+      <position>6</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-sB" speech2="Receiver P two, paired with P one for the first measurement">
+      <active>hyperbola-loran-fix-sB</active>
+      <position>7</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbola-loran-fix-sC" speech2="Receiver P three, paired with P one for the second measurement">
+      <active>hyperbola-loran-fix-sC</active>
+      <position>8</position>
+      <parents>
+        <grouped>hyperbola-loran-fix-locus1</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

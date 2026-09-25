@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-m2b-vectors-figure" speech2="Three panels labelled a, b and c. Each shows a blue vector A pointing up and to the right and a green vector B pointing up and to the left from a common tail. Panel a adds an orange vector from the tip of A to the tip of B, labelled B minus A. Panel b adds a short dark red vector pointing backwards along the line of A, labelled the projection of B onto A, together with dashed construction lines. Panel c adds a small circle with a dot at its centre, labelled A cross B out of the page.">
+      <grouped>prefigure-m2b-vectors-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-m2b-vectors-pa-D</active>
+        <active>prefigure-m2b-vectors-pb-P</active>
+        <active>prefigure-m2b-vectors-pc-out</active>
+      </children>
+      <components>
+        <active>prefigure-m2b-vectors-pa-D</active>
+        <active>prefigure-m2b-vectors-pb-P</active>
+        <active>prefigure-m2b-vectors-pc-out</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-m2b-vectors-pa-D" speech2="The vector B minus A, drawn from the tip of A to the tip of B.">
+      <active>prefigure-m2b-vectors-pa-D</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-m2b-vectors-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2b-vectors-pb-P" speech2="The projection of B onto A, which points opposite to A because the angle between A and B is obtuse.">
+      <active>prefigure-m2b-vectors-pb-P</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-m2b-vectors-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2b-vectors-pc-out" speech2="A circle with a dot at its centre, the standard symbol for a vector pointing out of the page, representing A cross B.">
+      <active>prefigure-m2b-vectors-pc-out</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-m2b-vectors-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

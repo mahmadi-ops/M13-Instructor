@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The directional derivative as ||grad f|| cos(theta)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  html, body { margin: 0; padding: 0; }
+  /* the two families the book itself loads: Open Sans for text, PT Serif for
+     the mathematics, so this figure letters the same way the page does */
+  body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .m { font-family: "PT Serif", "Times New Roman", Times, serif; }
+  .m i { font-style: italic; }
+  .m b { font-weight: 700; font-style: normal; }
+  .m sub { font-size: 70%; }
+  #app { width: 100%; box-sizing: border-box; }
+  #controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    padding: 8px 10px; box-sizing: border-box;
+  }
+  button {
+    font-size: 14px; padding: 5px 12px; border-radius: 6px;
+    border: 1px solid #888; background: #f4f4f4; cursor: pointer;
+  }
+  button:hover { background: #e6e6e6; }
+  button.active { background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+  #readout { font-size: 14px; color: #333; padding: 0 10px 6px 10px; min-height: 1.2em;
+    font-variant-numeric: tabular-nums; }
+  #canvasWrap { width: 100%; position: relative; }
+  canvas { display: block; cursor: grab; }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="controls">
+    <span style="font-size:14px;">Drag <span class="m"><b>u</b></span>:</span>
+    <button id="btnMax"><span class="m"><i>&theta;</i></span> = 0 (fastest increase)</button>
+    <button id="btnMin"><span class="m"><i>&theta;</i></span> = 180&deg; (fastest decrease)</button>
+    <button id="btnZero"><span class="m"><i>&theta;</i></span> = 90&deg; (no change)</button>
+  </div>
+  <div id="readout"></div>
+  <div id="canvasWrap"><canvas id="cv"></canvas></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // palette (same as the sample-graphs interactive)
+  var GOLD = "#f2c14e", RED = "#d1362f", GRAY = "#999999",
+      BTN_BLUE = "#2a6fdb", GREEN = "#009e73";
+
+  var canvas = document.getElementById("cv"), ctx = canvas.getContext("2d");
+  var GRAD_ANG = 25 * Math.PI / 180; // fixed direction of grad f
+  var GRAD_MAG = 2;                  // |grad f|
+  var thetaU = GRAD_ANG + 60 * Math.PI / 180; // absolute angle of u
+
+  var BB = { xmin: -2.1, xmax: 2.1, ymin: -2.75, ymax: 1.95 };
+  function view() {
+    var w = canvas.width, h = canvas.height;
+    var k = Math.min(w / (BB.xmax - BB.xmin), h / (BB.ymax - BB.ymin));
+    return { k: k,
+      ox: w / 2 - k * (BB.xmin + BB.xmax) / 2,
+      oy: h / 2 + k * (BB.ymin + BB.ymax) / 2 };
+  }
+
+  function arrow(v, x0, y0, x1, y1, color, lw, dashed) {
+    var ax = v.ox + v.k * x0, ay = v.oy - v.k * y0;
+    var bx = v.ox + v.k * x1, by = v.oy - v.k * y1;
+    var ang = Math.atan2(by - ay, bx - ax), hl = 10 + lw * 1.5;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = lw;
+    if (dashed) ctx.setLineDash([5, 5]);
+    ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.beginPath();
+    ctx.moveTo(bx, by);
+    ctx.lineTo(bx - hl * Math.cos(ang - 0.42), by - hl * Math.sin(ang - 0.42));
+    ctx.lineTo(bx - hl * Math.cos(ang + 0.42), by - hl * Math.sin(ang + 0.42));
+    ctx.closePath(); ctx.fill();
+  }
+
+  function normAngle(a) {
+    while (a > Math.PI) a -= 2 * Math.PI;
+    while (a < -Math.PI) a += 2 * Math.PI;
+    return a;
+  }
+
+  // ---- setting mathematics on the canvas ----
+  // Everything lettered in this figure is mathematics, so it is set in the same
+  // serif the page uses for mathematics (PT Serif, the book's --font-headings),
+  // with the same conventions MathJax follows: variables italic, \mathbf upright
+  // bold, operators and digits upright.
+  var SERIF = "'PT Serif', 'Times New Roman', Times, serif";
+
+  // runs: [{t: text, up: upright?, bold: \mathbf?, sub: subscript?}]; italic is
+  // the default, being what a bare variable gets.
+  function mathRuns(runs, x, y, color, align, sizePx) {
+    var dpr = window.devicePixelRatio || 1;
+    var base = (sizePx || 17) * dpr, small = base * 0.68;
+    function fontOf(r) {
+      return (r.bold ? "bold " : (r.up ? "" : "italic ")) +
+             (r.sub ? small : base) + "px " + SERIF;
+    }
+    // a hair of space after a subscript, so D_u f does not read as "D_uf"
+    function kern(rs, i, sz) {
+      return (rs[i].sub && i + 1 < rs.length && !rs[i + 1].sub) ? 0.09 * sz : 0;
+    }
+    var total = 0, i;
+    for (i = 0; i < runs.length; i++) {
+      ctx.font = fontOf(runs[i]);
+      total += ctx.measureText(runs[i].t).width + kern(runs, i, base);
+    }
+    var cx = align === "center" ? x - total / 2
+           : align === "right"  ? x - total : x;
+    ctx.fillStyle = color;
+    for (i = 0; i < runs.length; i++) {
+      ctx.font = fontOf(runs[i]);
+      ctx.fillText(runs[i].t, cx, y + (runs[i].sub ? 0.22 * base : 0));
+      cx += ctx.measureText(runs[i].t).width + kern(runs, i, base);
+    }
+    return total;
+  }
+
+  var GRAD_RUNS = [{ t: "∇", up: true }, { t: "f" }];                  // grad f
+  var NORM_RUNS = [{ t: "‖", up: true }, { t: "∇", up: true },
+                   { t: "f" }, { t: "‖", up: true }];                  // ||grad f||
+  var DUF_RUNS  = [{ t: "D" }, { t: "u", sub: true, bold: true },
+                   { t: "f" }];                                        // D_u f
+
+  function draw() {
+    var v = view(), w = canvas.width, h = canvas.height;
+    var dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, w, h);
+
+    var theta = normAngle(thetaU - GRAD_ANG); // angle between u and grad f
+    var D = GRAD_MAG * Math.cos(theta);
+
+    // unit circle of directions
+    ctx.strokeStyle = GRAY; ctx.lineWidth = 1.2 * dpr;
+    ctx.setLineDash([6 * dpr, 5 * dpr]);
+    ctx.beginPath(); ctx.arc(v.ox, v.oy, v.k, 0, 2 * Math.PI); ctx.stroke();
+    ctx.setLineDash([]);
+
+    // The two directions of no change: one arrow each way along the line
+    // orthogonal to grad f, drawn solid and at the weight the PreFigure diagrams
+    // on this page use for these directions.
+    var z1 = GRAD_ANG + Math.PI / 2, z2 = GRAD_ANG - Math.PI / 2;
+    arrow(v, 0, 0, Math.cos(z1), Math.sin(z1), "#7f7f7f", 2.2 * dpr);
+    arrow(v, 0, 0, Math.cos(z2), Math.sin(z2), "#7f7f7f", 2.2 * dpr);
+
+    // gradient arrow (length 1.55 on screen scale)
+    arrow(v, 0, 0, 1.55 * Math.cos(GRAD_ANG), 1.55 * Math.sin(GRAD_ANG), RED, 3.4 * dpr);
+    mathRuns(GRAD_RUNS, v.ox + v.k * 1.70 * Math.cos(GRAD_ANG),
+             v.oy - v.k * 1.70 * Math.sin(GRAD_ANG) + 5 * dpr, RED, "center");
+
+    // angle arc between grad f and u
+    ctx.strokeStyle = "#555"; ctx.lineWidth = 1.4 * dpr;
+    ctx.beginPath();
+    ctx.arc(v.ox, v.oy, v.k * 0.38, -GRAD_ANG, -thetaU, theta > 0);
+    ctx.stroke();
+    var mid = GRAD_ANG + theta / 2;
+    mathRuns([{ t: "θ" }], v.ox + v.k * 0.54 * Math.cos(mid),
+             v.oy - v.k * 0.54 * Math.sin(mid) + 6 * dpr, "#555", "center");
+
+    // u arrow (blue, draggable)
+    arrow(v, 0, 0, Math.cos(thetaU), Math.sin(thetaU), BTN_BLUE, 3.4 * dpr);
+    mathRuns([{ t: "u", bold: true }], v.ox + v.k * 1.16 * Math.cos(thetaU),
+             v.oy - v.k * 1.16 * Math.sin(thetaU) + 5 * dpr, BTN_BLUE, "center");
+
+    // Base point, drawn to match the points in the neighbouring PreFigure
+    // diagrams on this page: a black disc of the same weight (there a circle of
+    // radius 4 with a 2px black stroke), labelled in the book's serif maths.
+    ctx.fillStyle = "#000000";
+    ctx.beginPath(); ctx.arc(v.ox, v.oy, 5 * dpr, 0, 2 * Math.PI); ctx.fill();
+    mathRuns([{ t: "P" }, { t: "0", sub: true, up: true }],
+             v.ox - 10 * dpr, v.oy + 22 * dpr, "#000000", "right");
+
+    // ---- meter bar for D_u f = |grad f| cos(theta) ----
+    var bx0 = v.ox - v.k * 1.6, bx1 = v.ox + v.k * 1.6;
+    var by = v.oy + v.k * 2.15, bh = v.k * 0.28;
+    ctx.strokeStyle = "#888"; ctx.lineWidth = 1.2 * dpr;
+    ctx.strokeRect(bx0, by - bh / 2, bx1 - bx0, bh);
+    // center tick
+    ctx.beginPath();
+    ctx.moveTo((bx0 + bx1) / 2, by - bh / 2 - 4 * dpr);
+    ctx.lineTo((bx0 + bx1) / 2, by + bh / 2 + 4 * dpr);
+    ctx.stroke();
+    // fill from center
+    var frac = D / GRAD_MAG; // in [-1, 1]
+    var cx = (bx0 + bx1) / 2;
+    ctx.fillStyle = frac >= 0 ? GREEN : RED;
+    if (Math.abs(frac) < 0.005) ctx.fillStyle = GOLD;
+    ctx.globalAlpha = 0.75;
+    ctx.fillRect(Math.min(cx, cx + frac * (bx1 - bx0) / 2), by - bh / 2,
+                 Math.abs(frac) * (bx1 - bx0) / 2, bh);
+    ctx.globalAlpha = 1;
+    var ty = by + bh / 2 + 20 * dpr, TICK = 14;
+    mathRuns([{ t: "−", up: true }].concat(NORM_RUNS), bx0, ty, "#555", "center", TICK);
+    mathRuns([{ t: "0", up: true }], cx, ty, "#555", "center", TICK);
+    mathRuns(NORM_RUNS, bx1, ty, "#555", "center", TICK);
+    mathRuns(DUF_RUNS, bx0, by - bh / 2 - 10 * dpr, "#555", "left");
+  }
+
+  function update() {
+    var theta = Math.abs(normAngle(thetaU - GRAD_ANG));
+    var D = GRAD_MAG * Math.cos(theta);
+    var U = '<span class="m"><b>u</b></span>',
+        GRAD = '<span class="m">∇<i>f</i></span>',
+        NORM = '<span class="m">‖∇<i>f</i>‖</span>',
+        TH = '<span class="m"><i>θ</i></span>',
+        DUF = '<span class="m"><i>D</i><sub><b>u</b></sub>&#8202;<i>f</i></span>';
+    var note = "";
+    if (Math.abs(D - GRAD_MAG) < 0.01) note = "  (maximum: " + U + " ∥ " + GRAD + ")";
+    else if (Math.abs(D + GRAD_MAG) < 0.01) note = "  (minimum: " + U + " ∥ −" + GRAD + ")";
+    else if (Math.abs(D) < 0.01) note = "  (no change: " + U + " ⊥ " + GRAD + ")";
+    document.getElementById("readout").innerHTML =
+      TH + " = " + (theta * 180 / Math.PI).toFixed(0) + "°:   " +
+      DUF + " = " + NORM + " cos " + TH + " = " + GRAD_MAG + " × " +
+      Math.cos(theta).toFixed(3) + " = " + D.toFixed(2) + note;
+    draw();
+  }
+
+  // dragging: pointer sets the angle of u
+  var dragging = false;
+  function setFromPointer(clientX, clientY) {
+    var rect = canvas.getBoundingClientRect();
+    var dpr = window.devicePixelRatio || 1;
+    var v = view();
+    var x = (clientX - rect.left) * dpr - v.ox;
+    var y = v.oy - (clientY - rect.top) * dpr;
+    if (x * x + y * y > 1e-6) { thetaU = Math.atan2(y, x); update(); }
+  }
+  canvas.addEventListener("mousedown", function (e) { dragging = true; setFromPointer(e.clientX, e.clientY); });
+  window.addEventListener("mousemove", function (e) { if (dragging) setFromPointer(e.clientX, e.clientY); });
+  window.addEventListener("mouseup", function () { dragging = false; });
+  canvas.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 1) { dragging = true;
+      setFromPointer(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  canvas.addEventListener("touchmove", function (e) {
+    if (dragging && e.touches.length === 1) {
+      setFromPointer(e.touches[0].clientX, e.touches[0].clientY); e.preventDefault(); }
+  }, { passive: false });
+  window.addEventListener("touchend", function () { dragging = false; });
+
+  // buttons
+  document.getElementById("btnMax").addEventListener("click", function () {
+    thetaU = GRAD_ANG; update();
+  });
+  document.getElementById("btnMin").addEventListener("click", function () {
+    thetaU = GRAD_ANG + Math.PI; update();
+  });
+  document.getElementById("btnZero").addEventListener("click", function () {
+    thetaU = GRAD_ANG + Math.PI / 2; update();
+  });
+
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    var w = document.getElementById("app").clientWidth;
+    var used = document.getElementById("controls").offsetHeight +
+               document.getElementById("readout").offsetHeight;
+    var h = Math.max(260, window.innerHeight - used - 4);
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + "px"; canvas.style.height = h + "px";
+    update();
+  }
+  window.addEventListener("resize", resize);
+  resize();
+  // the point's label is only right once PT Serif has arrived
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(draw); }
+})();
+</script>
+</body>
+</html>

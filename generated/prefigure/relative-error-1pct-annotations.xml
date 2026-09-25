@@ -1,0 +1,73 @@
+<diagram>
+  <annotations>
+    <annotation id="relative-error-1pct-gcurve" speech2="The relative error in approximating sin theta by theta, given by the absolute value of theta minus sin theta all over sin theta, plotted against theta in radians. The curve rises from zero and crosses the one percent threshold line y equals 0.01 at approximately theta equals 0.244 radians, about 14 degrees">
+      <grouped>relative-error-1pct-gcurve</grouped>
+      <position>1</position>
+      <children>
+        <active>relative-error-1pct-grid-axes</active>
+        <active>relative-error-1pct-gcurve</active>
+        <active>relative-error-1pct-onepct</active>
+        <active>relative-error-1pct-xpoint</active>
+      </children>
+      <components>
+        <active>relative-error-1pct-grid-axes</active>
+        <active>relative-error-1pct-gcurve</active>
+        <active>relative-error-1pct-onepct</active>
+        <active>relative-error-1pct-xpoint</active>
+      </components>
+    </annotation>
+    <annotation id="relative-error-1pct-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>relative-error-1pct-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>relative-error-1pct-grid</active>
+        <active>relative-error-1pct-axes</active>
+      </children>
+      <components>
+        <active>relative-error-1pct-grid</active>
+        <active>relative-error-1pct-axes</active>
+      </components>
+      <parents>
+        <grouped>relative-error-1pct-gcurve</grouped>
+      </parents>
+    </annotation>
+    <annotation id="relative-error-1pct-grid" speech2="The coordinate grid">
+      <active>relative-error-1pct-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>relative-error-1pct-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="relative-error-1pct-axes" speech2="The coordinate axes">
+      <active>relative-error-1pct-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>relative-error-1pct-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="relative-error-1pct-gcurve" speech2="The relative error curve, rising as theta increases" sonify="yes">
+      <active>relative-error-1pct-gcurve</active>
+      <position>2</position>
+      <parents>
+        <grouped>relative-error-1pct-gcurve</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>relative-error-1pct-gcurve</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="relative-error-1pct-onepct" speech2="The horizontal threshold line at y equals 0.01, representing one percent error">
+      <active>relative-error-1pct-onepct</active>
+      <position>3</position>
+      <parents>
+        <grouped>relative-error-1pct-gcurve</grouped>
+      </parents>
+    </annotation>
+    <annotation id="relative-error-1pct-xpoint" speech2="The intersection point at theta equals approximately 0.244 radians, where the relative error first reaches one percent">
+      <active>relative-error-1pct-xpoint</active>
+      <position>4</position>
+      <parents>
+        <grouped>relative-error-1pct-gcurve</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,48 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-gradient-perp-figure" speech2="Three nested oval level curves of f. The middle green oval is the level curve C where f equals c. At a point P on C, a blue arrow is the velocity vector v of t, tangent to C, and a red arrow is the gradient of f, perpendicular to the velocity and pointing outward toward the larger level curve. A small square at P marks the right angle between them.">
+      <grouped>prefigure-gradient-perp-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-gradient-perp-gp-C</active>
+        <active>prefigure-gradient-perp-gp-P</active>
+        <active>prefigure-gradient-perp-gp-vel</active>
+        <active>prefigure-gradient-perp-gp-grad</active>
+      </children>
+      <components>
+        <active>prefigure-gradient-perp-gp-C</active>
+        <active>prefigure-gradient-perp-gp-P</active>
+        <active>prefigure-gradient-perp-gp-vel</active>
+        <active>prefigure-gradient-perp-gp-grad</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-gradient-perp-gp-C" speech2="The level curve C, where f equals c, drawn in green.">
+      <active>prefigure-gradient-perp-gp-C</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-gradient-perp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-perp-gp-P" speech2="A point P on the level curve C.">
+      <active>prefigure-gradient-perp-gp-P</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-gradient-perp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-perp-gp-vel" speech2="The velocity vector v of t, drawn in blue, tangent to the level curve and pointing in the direction of motion along it.">
+      <active>prefigure-gradient-perp-gp-vel</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-gradient-perp-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-gradient-perp-gp-grad" speech2="The gradient vector of f, drawn in red, perpendicular to the velocity vector and pointing outward toward the level curve of larger value.">
+      <active>prefigure-gradient-perp-gp-grad</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-gradient-perp-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

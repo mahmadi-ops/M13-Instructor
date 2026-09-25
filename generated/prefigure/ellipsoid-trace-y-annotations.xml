@@ -1,0 +1,21 @@
+<diagram>
+  <annotations>
+    <annotation id="ellipsoid-trace-y-figure" speech2="The trace in the plane y = 0: an ellipse with semi-axes 2 and 4">
+      <grouped>ellipsoid-trace-y-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipsoid-trace-y-trace-y</active>
+      </children>
+      <components>
+        <active>ellipsoid-trace-y-trace-y</active>
+      </components>
+    </annotation>
+    <annotation id="ellipsoid-trace-y-trace-y" speech2="In the plane y equals 0, the trace x squared over 4 plus z squared over 16 equals 1 is an ellipse with semi-axes 2 and 4">
+      <active>ellipsoid-trace-y-trace-y</active>
+      <position>1</position>
+      <parents>
+        <grouped>ellipsoid-trace-y-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

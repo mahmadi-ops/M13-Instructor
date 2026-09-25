@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Approximating <span class="process-math">\(\pi\)</span> using the Taylor series for <span class="process-math">\(\arctan(x)\)</span>.</span>
+</h2>
+<div class="para">Use the Taylor series for <span class="process-math">\(\arctan(x)\)</span> to approximate the value of <span class="process-math">\(\pi\text{.}\)</span> Use Taylor’s Remainder Theorem to find an upper bound for the error in this approximation, and show that the error decreases as the order <span class="process-math">\(n\)</span> of the Taylor polynomial increases.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">The Taylor series for <span class="process-math">\(f(x) = \arctan(x)\)</span> centered at <span class="process-math">\(a = 0\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-polynomial.html">
+\begin{align}
+\arctan(x) \amp = \sum_{k=0}^{\infty} \frac{(-1)^k}{2k+1}\, x^{2k+1}\tag{2.3.12}\\
+\amp = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots, \qquad |x| \le 1.\notag
+\end{align}
+</div>
+<div class="para">Since <span class="process-math">\(\arctan(1) = \dfrac{\pi}{4}\text{,}\)</span> evaluating the series at <span class="process-math">\(x = 1\)</span> gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-polynomial.html">
+\begin{equation*}
+\pi = 4\arctan(1) = 4\left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots\right).
+\end{equation*}
+</div>
+<div class="para">Therefore, if <span class="process-math">\(T_n(x)\)</span> denotes the Taylor polynomial <a href="subsection-1.html#eq-taylor-polynomial" class="xref" data-knowl="./knowl/xref/eq-taylor-polynomial.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.2">(2.3.2)</a> of order <span class="process-math">\(n\)</span> for <span class="process-math">\(\arctan(x)\)</span> centered at <span class="process-math">\(0\text{,}\)</span> we obtain the approximation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-taylor-polynomial.html">
+\begin{equation*}
+\pi \approx 4\,T_n(1).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">To bound the error, we apply <a href="subsection-1.html#eq-remainder-bound" class="xref" data-knowl="./knowl/xref/eq-remainder-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.4">(2.3.4)</a>: if <span class="process-math">\(\left|f^{(n+1)}(t)\right| \le M\)</span> for all <span class="process-math">\(t\)</span> between <span class="process-math">\(0\)</span> and <span class="process-math">\(x\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+|R_n(x)| = |f(x) - T_n(x)| \le \frac{M}{(n+1)!}\,|x|^{n+1}.
+\end{equation*}
+</div>
+<div class="para">For <span class="process-math">\(f(x) = \arctan(x)\text{,}\)</span> the derivatives satisfy the closed form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+f^{(n)}(t) = (n-1)!\,\cos^n(\theta)\,\sin\!\left(n\left(\theta + \tfrac{\pi}{2}\right)\right),
+\qquad \theta = \arctan(t),
+\end{equation*}
+</div>
+<div class="para">which can be verified by induction on <span class="process-math">\(n\text{.}\)</span> As in <a href="subsection-1.html#rmk-error-upper-bound" class="xref" data-knowl="./knowl/xref/rmk-error-upper-bound.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 2.3.4: Finding an upper bound for the error term without knowing the value of c">Remark 2.3.4</a>, the bound <span class="process-math">\(M\)</span> is found without locating the intermediate point: since <span class="process-math">\(|\cos^{n}(\theta)| \le 1\)</span> and <span class="process-math">\(|\sin\!\left(n\left(\theta + \tfrac{\pi}{2}\right)\right)| \le 1\text{,}\)</span> it follows that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation}
+\left|f^{(n+1)}(t)\right| \le n! \quad \text{for all } t \in \mathbb{R},\tag{2.3.13}
+\end{equation}
+</div>
+<div class="para">so we may take <span class="process-math">\(M = n!\text{.}\)</span> With <span class="process-math">\(x = 1\text{,}\)</span> Taylor’s Remainder Theorem gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-remainder-bound.html ./knowl/xref/rmk-error-upper-bound.html">
+\begin{equation*}
+|R_n(1)| = \left|\arctan(1) - T_n(1)\right| \le \frac{n!}{(n+1)!}\,(1)^{n+1} = \frac{1}{n+1}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Multiplying by <span class="process-math">\(4\text{,}\)</span> the error in the approximation of <span class="process-math">\(\pi\)</span> satisfies</div>
+<div class="displaymath process-math">
+\begin{equation}
+\left|\pi - 4\,T_n(1)\right| \le \frac{4}{n+1}.\tag{2.3.14}
+\end{equation}
+</div>
+<div class="para">Since <span class="process-math">\(\dfrac{4}{n+1} \to 0\)</span> as <span class="process-math">\(n \to \infty\text{,}\)</span> the error decreases to zero as the order <span class="process-math">\(n\)</span> of the Taylor polynomial increases. However, the convergence is very slow. For instance, with <span class="process-math">\(n = 9\)</span> we get <span class="process-math">\(4\,T_9(1) \approx 3.339683\)</span> with guaranteed error at most <span class="process-math">\(\tfrac{4}{10} = 0.4\text{,}\)</span> and to guarantee an error of at most <span class="process-math">\(0.01\)</span> one needs to take <span class="process-math">\(n \ge 399\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-approx-pi-arctan-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="video-box" style="width: 85%;padding-top: 47.8125%; margin-left: 7.5%; margin-right: 7.5%;"><video id="video-approx-pi-taylor-error" class="video" controls=""><source src="external/videos/approx-pi-taylor-error.mp4" type="video/mp4"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The approximation <span class="process-math">\(4\,T_n(1)\)</span> converging to <span class="process-math">\(\pi\text{,}\)</span> and the error <span class="process-math">\(\left|\pi - 4\,T_n(1)\right|\)</span> decreasing below the upper bound <span class="process-math">\(\frac{4}{n+1}\)</span> from Taylor’s Remainder Theorem as <span class="process-math">\(n\)</span> increases.<div class="autopermalink" aria-hidden="true" data-description="Figure 2.3.20"><a tabindex="-1" href="#fig-approx-pi-taylor-video" title="Copy heading and permalink for Figure 2.3.20" aria-label="Copy heading and permalink for Figure 2.3.20">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 2.3.19.1"><a tabindex="-1" href="#ex-approx-pi-arctan-3" title="Copy heading and permalink for Solution 2.3.19.1" aria-label="Copy heading and permalink for Solution 2.3.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)"><a tabindex="-1" href="#ex-approx-pi-arctan" title="Copy heading and permalink for Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)" aria-label="Copy heading and permalink for Example 2.3.19: Approximating \pi using the Taylor series for \arctan(x)">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="section-taylor-7.html#ex-approx-pi-arctan">In Context</a></span>
+</body>
+</html>

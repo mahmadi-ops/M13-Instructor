@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cr-tree-rs-figure" speech2="Two copies of the same tree diagram side by side. Each has w equals f of x y at the top, the intermediate variables x and y below it, and the two independent variables r and s at the bottom. In the left copy the branches leading down to r are highlighted in orange and the branches to s are faint grey; in the right copy the branches leading to s are highlighted in blue instead. Under each tree is the corresponding chain rule formula.">
+      <grouped>prefigure-cr-tree-rs-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cr-tree-rs-rs-l-xr</active>
+        <active>prefigure-cr-tree-rs-rs-r-xs</active>
+        <active>prefigure-cr-tree-rs-rs-l-s</active>
+      </children>
+      <components>
+        <active>prefigure-cr-tree-rs-rs-l-xr</active>
+        <active>prefigure-cr-tree-rs-rs-r-xs</active>
+        <active>prefigure-cr-tree-rs-rs-l-s</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cr-tree-rs-rs-l-xr" speech2="In the left tree, the highlighted branches are those running from w through x and through y down to r, giving the formula for the partial derivative of w with respect to r.">
+      <active>prefigure-cr-tree-rs-rs-l-xr</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cr-tree-rs-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-rs-rs-r-xs" speech2="In the right tree, the highlighted branches run down to s instead, giving the formula for the partial derivative of w with respect to s.">
+      <active>prefigure-cr-tree-rs-rs-r-xs</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cr-tree-rs-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cr-tree-rs-rs-l-s" speech2="The faint grey branches are the ones not used for this particular derivative.">
+      <active>prefigure-cr-tree-rs-rs-l-s</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cr-tree-rs-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

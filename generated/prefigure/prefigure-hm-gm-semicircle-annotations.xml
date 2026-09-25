@@ -1,0 +1,111 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-hm-gm-semicircle-figure" speech2="A semicircle drawn on a horizontal diameter of length a plus b, with a equal to 4 on the left and b equal to 1 on the right, meeting at the point D. The center of the semicircle is O. Three segments in the picture have lengths equal to the three means of a and b. A red vertical segment from O up to the top of the arc is the radius, whose length is the arithmetic mean 2.5. A blue vertical segment from D up to the point C on the arc is the altitude of the inscribed right triangle, whose length is the geometric mean 2. A purple segment along the radius O C, running from C back to the foot M of the perpendicular dropped from D, has length equal to the harmonic mean 1.6. Because a leg of a right triangle is never longer than its hypotenuse, the harmonic mean is at most the geometric mean, which is at most the arithmetic mean.">
+      <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hm-gm-semicircle-sc-arc</active>
+        <active>prefigure-hm-gm-semicircle-sc-diameter</active>
+        <active>prefigure-hm-gm-semicircle-sc-mean-a</active>
+        <active>prefigure-hm-gm-semicircle-sc-mean-g</active>
+        <active>prefigure-hm-gm-semicircle-sc-mean-h</active>
+        <active>prefigure-hm-gm-semicircle-sc-chord-left</active>
+        <active>prefigure-hm-gm-semicircle-sc-chord-right</active>
+        <active>prefigure-hm-gm-semicircle-sc-right-c</active>
+        <active>prefigure-hm-gm-semicircle-sc-radius</active>
+        <active>prefigure-hm-gm-semicircle-sc-perp</active>
+        <active>prefigure-hm-gm-semicircle-sc-right-m</active>
+      </children>
+      <components>
+        <active>prefigure-hm-gm-semicircle-sc-arc</active>
+        <active>prefigure-hm-gm-semicircle-sc-diameter</active>
+        <active>prefigure-hm-gm-semicircle-sc-mean-a</active>
+        <active>prefigure-hm-gm-semicircle-sc-mean-g</active>
+        <active>prefigure-hm-gm-semicircle-sc-mean-h</active>
+        <active>prefigure-hm-gm-semicircle-sc-chord-left</active>
+        <active>prefigure-hm-gm-semicircle-sc-chord-right</active>
+        <active>prefigure-hm-gm-semicircle-sc-right-c</active>
+        <active>prefigure-hm-gm-semicircle-sc-radius</active>
+        <active>prefigure-hm-gm-semicircle-sc-perp</active>
+        <active>prefigure-hm-gm-semicircle-sc-right-m</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-arc" speech2="The semicircle whose diameter is the segment of length a plus b, that is, of length 5.">
+      <active>prefigure-hm-gm-semicircle-sc-arc</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-diameter" speech2="The diameter, split at the point D into a left piece of length a equal to 4 and a right piece of length b equal to 1.">
+      <active>prefigure-hm-gm-semicircle-sc-diameter</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-mean-a" speech2="The arithmetic mean, drawn in red: the vertical radius from the center O to the top of the arc, of length a plus b over 2, which is 2.5.">
+      <active>prefigure-hm-gm-semicircle-sc-mean-a</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-mean-g" speech2="The geometric mean, drawn in blue: the vertical segment from D up to the point C on the arc, of length the square root of a b, which is 2.">
+      <active>prefigure-hm-gm-semicircle-sc-mean-g</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-mean-h" speech2="The harmonic mean, drawn in purple: the piece of the radius O C running from C back to M, of length 2 a b over a plus b, which is 1.6.">
+      <active>prefigure-hm-gm-semicircle-sc-mean-h</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-chord-left" speech2="The chord from the left end of the diameter to the point C on the arc, one leg of the inscribed right triangle, drawn in gray.">
+      <active>prefigure-hm-gm-semicircle-sc-chord-left</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-chord-right" speech2="The chord from C to the right end of the diameter, the other leg of the inscribed right triangle, drawn in gray.">
+      <active>prefigure-hm-gm-semicircle-sc-chord-right</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-right-c" speech2="The right angle marker at C: any triangle inscribed in a semicircle has a right angle at the point on the arc, which is why the blue segment is an altitude from a right angle and therefore the geometric mean.">
+      <active>prefigure-hm-gm-semicircle-sc-right-c</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-radius" speech2="The radius from the center O out to the point C on the arc. Its length is also the arithmetic mean 2.5, and the purple harmonic mean is the part of it nearest C.">
+      <active>prefigure-hm-gm-semicircle-sc-radius</active>
+      <position>9</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-perp" speech2="The perpendicular dropped from D to the radius O C, meeting it at the point M.">
+      <active>prefigure-hm-gm-semicircle-sc-perp</active>
+      <position>10</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hm-gm-semicircle-sc-right-m" speech2="The right angle marker at M, showing that D M is perpendicular to the radius O C.">
+      <active>prefigure-hm-gm-semicircle-sc-right-m</active>
+      <position>11</position>
+      <parents>
+        <grouped>prefigure-hm-gm-semicircle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

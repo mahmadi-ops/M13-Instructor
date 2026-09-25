@@ -1,0 +1,82 @@
+<diagram>
+  <annotations>
+    <annotation id="ellipse-extra-ellipse" speech2="The twist example: a vertical ellipse whose major axis runs along the y axis, so its foci lie on the y axis rather than the x axis">
+      <grouped>ellipse-extra-ellipse</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipse-extra-grid-axes</active>
+        <active>ellipse-extra-ellipse</active>
+        <active>ellipse-extra-foci</active>
+        <active>ellipse-extra-vertex-top</active>
+        <active>ellipse-extra-focal-radii</active>
+      </children>
+      <components>
+        <active>ellipse-extra-grid-axes</active>
+        <active>ellipse-extra-ellipse</active>
+        <active>ellipse-extra-foci</active>
+        <active>ellipse-extra-vertex-top</active>
+        <active>ellipse-extra-focal-radii</active>
+      </components>
+    </annotation>
+    <annotation id="ellipse-extra-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>ellipse-extra-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipse-extra-grid</active>
+        <active>ellipse-extra-axes</active>
+      </children>
+      <components>
+        <active>ellipse-extra-grid</active>
+        <active>ellipse-extra-axes</active>
+      </components>
+      <parents>
+        <grouped>ellipse-extra-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-extra-grid" speech2="The coordinate grid">
+      <active>ellipse-extra-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>ellipse-extra-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-extra-axes" speech2="The coordinate axes">
+      <active>ellipse-extra-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipse-extra-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-extra-ellipse" speech2="The ellipse x squared over sixteen plus y squared over twenty five equals one, a blue oval taller than it is wide" sonify="yes">
+      <active>ellipse-extra-ellipse</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipse-extra-ellipse</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>ellipse-extra-ellipse</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="ellipse-extra-foci" speech2="The foci at zero comma three and zero comma minus three, on the vertical major axis, since c squared equals twenty five minus sixteen equals nine">
+      <active>ellipse-extra-foci</active>
+      <position>3</position>
+      <parents>
+        <grouped>ellipse-extra-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-extra-vertex-top" speech2="The top vertex at zero comma five, the end of the semi-major axis of length five">
+      <active>ellipse-extra-vertex-top</active>
+      <position>4</position>
+      <parents>
+        <grouped>ellipse-extra-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-extra-focal-radii" speech2="Two segments from the co-vertex four comma zero to each focus, each of length a equals five">
+      <active>ellipse-extra-focal-radii</active>
+      <position>5</position>
+      <parents>
+        <grouped>ellipse-extra-ellipse</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

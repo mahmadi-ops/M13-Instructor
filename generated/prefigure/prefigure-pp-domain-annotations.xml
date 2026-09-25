@@ -1,0 +1,61 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-pp-domain-figure" speech2="A steep blue line of slope three through the origin, y equals three x. Everything on and above and to the left of the line is shaded light blue; this shaded closed half plane is the domain.">
+      <grouped>prefigure-pp-domain-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-domain-grid-axes</active>
+        <active>prefigure-pp-domain-dm-line</active>
+        <active>prefigure-pp-domain-dm-region</active>
+      </children>
+      <components>
+        <active>prefigure-pp-domain-grid-axes</active>
+        <active>prefigure-pp-domain-dm-line</active>
+        <active>prefigure-pp-domain-dm-region</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-pp-domain-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-pp-domain-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-domain-grid</active>
+        <active>prefigure-pp-domain-axes</active>
+      </children>
+      <components>
+        <active>prefigure-pp-domain-grid</active>
+        <active>prefigure-pp-domain-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-pp-domain-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-domain-grid" speech2="The coordinate grid">
+      <active>prefigure-pp-domain-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-pp-domain-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-domain-axes" speech2="The coordinate axes">
+      <active>prefigure-pp-domain-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-domain-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-domain-dm-line" speech2="The boundary line y equals three x, which belongs to the domain.">
+      <active>prefigure-pp-domain-dm-line</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-domain-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-domain-dm-region" speech2="The shaded closed half plane y greater than or equal to three x, the domain of the function.">
+      <active>prefigure-pp-domain-dm-region</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-pp-domain-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

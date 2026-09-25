@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="simple-pendulum-ceiling" speech2="A simple pendulum: a mass m suspended from a fixed support by a string of length l, displaced by an angle theta 0 from the vertical">
+      <grouped>simple-pendulum-ceiling</grouped>
+      <position>1</position>
+      <children>
+        <active>simple-pendulum-ceiling</active>
+        <active>simple-pendulum-string</active>
+        <active>simple-pendulum-mass</active>
+        <active>simple-pendulum-angle</active>
+        <active>simple-pendulum-vertical</active>
+        <active>simple-pendulum-swing-arc</active>
+      </children>
+      <components>
+        <active>simple-pendulum-ceiling</active>
+        <active>simple-pendulum-string</active>
+        <active>simple-pendulum-mass</active>
+        <active>simple-pendulum-angle</active>
+        <active>simple-pendulum-vertical</active>
+        <active>simple-pendulum-swing-arc</active>
+      </components>
+    </annotation>
+    <annotation id="simple-pendulum-ceiling" speech2="The fixed support at the top, drawn with hatch marks">
+      <active>simple-pendulum-ceiling</active>
+      <position>1</position>
+      <parents>
+        <grouped>simple-pendulum-ceiling</grouped>
+      </parents>
+    </annotation>
+    <annotation id="simple-pendulum-string" speech2="The string of length l, connecting the support to the mass">
+      <active>simple-pendulum-string</active>
+      <position>2</position>
+      <parents>
+        <grouped>simple-pendulum-ceiling</grouped>
+      </parents>
+    </annotation>
+    <annotation id="simple-pendulum-mass" speech2="The mass m at the end of the string">
+      <active>simple-pendulum-mass</active>
+      <position>3</position>
+      <parents>
+        <grouped>simple-pendulum-ceiling</grouped>
+      </parents>
+    </annotation>
+    <annotation id="simple-pendulum-angle" speech2="The angle theta 0 between the string and the vertical reference line">
+      <active>simple-pendulum-angle</active>
+      <position>4</position>
+      <parents>
+        <grouped>simple-pendulum-ceiling</grouped>
+      </parents>
+    </annotation>
+    <annotation id="simple-pendulum-vertical" speech2="A dashed vertical line through the pivot, marking the equilibrium position">
+      <active>simple-pendulum-vertical</active>
+      <position>5</position>
+      <parents>
+        <grouped>simple-pendulum-ceiling</grouped>
+      </parents>
+    </annotation>
+    <annotation id="simple-pendulum-swing-arc" speech2="A dashed arc showing the path along which the mass swings">
+      <active>simple-pendulum-swing-arc</active>
+      <position>6</position>
+      <parents>
+        <grouped>simple-pendulum-ceiling</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

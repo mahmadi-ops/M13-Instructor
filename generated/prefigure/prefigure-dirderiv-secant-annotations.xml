@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-dirderiv-secant-figure" speech2="The graph of g of s equals 3 plus 2 root 2 s plus s squared, the values of f along the ray from P 0 in the direction u, drawn in blue. A red secant line passes through the points 0 comma f of P 0 and s comma f of P. A dashed green tangent line touches the parabola at s equals 0. As s goes to 0, the secant slope 2 root 2 plus s approaches the tangent slope 2 root 2, the directional derivative.">
+      <grouped>prefigure-dirderiv-secant-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-dirderiv-secant-sc-curve</active>
+        <active>prefigure-dirderiv-secant-sc-secant</active>
+        <active>prefigure-dirderiv-secant-sc-tangent</active>
+        <active>prefigure-dirderiv-secant-sc-P0</active>
+        <active>prefigure-dirderiv-secant-sc-P</active>
+      </children>
+      <components>
+        <active>prefigure-dirderiv-secant-sc-curve</active>
+        <active>prefigure-dirderiv-secant-sc-secant</active>
+        <active>prefigure-dirderiv-secant-sc-tangent</active>
+        <active>prefigure-dirderiv-secant-sc-P0</active>
+        <active>prefigure-dirderiv-secant-sc-P</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-dirderiv-secant-sc-curve" speech2="The blue parabola g of s, the values of f along the ray through P 0 in the direction u.">
+      <active>prefigure-dirderiv-secant-sc-curve</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-dirderiv-secant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-secant-sc-secant" speech2="The red secant line through the two points, with slope equal to the difference quotient 2 root 2 plus s.">
+      <active>prefigure-dirderiv-secant-sc-secant</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-dirderiv-secant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-secant-sc-tangent" speech2="The dashed green tangent line at s equals 0, with slope 2 root 2, the directional derivative of f at P 0 in the direction u.">
+      <active>prefigure-dirderiv-secant-sc-tangent</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-dirderiv-secant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-secant-sc-P0" speech2="The point 0 comma f of P 0, corresponding to the base point P 0 where s equals 0.">
+      <active>prefigure-dirderiv-secant-sc-P0</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-dirderiv-secant-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-dirderiv-secant-sc-P" speech2="The point s comma f of P, corresponding to the moved point P, which slides toward the base point as s goes to 0.">
+      <active>prefigure-dirderiv-secant-sc-P</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-dirderiv-secant-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

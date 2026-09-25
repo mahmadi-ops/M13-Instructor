@@ -1,0 +1,97 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-parabola-focus-directrix-figure" speech2="An upward opening parabola with vertex at the origin, passing through the point four comma two. A dashed horizontal line at y equals negative two is the directrix, and the focus is marked at zero comma two. Two green segments of equal length four join the point four comma two to the focus and straight down to the directrix.">
+      <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-parabola-focus-directrix-grid-axes</active>
+        <active>prefigure-parabola-focus-directrix-pf-curve</active>
+        <active>prefigure-parabola-focus-directrix-pf-dir</active>
+        <active>prefigure-parabola-focus-directrix-pf-focus</active>
+        <active>prefigure-parabola-focus-directrix-pf-P</active>
+        <active>prefigure-parabola-focus-directrix-pf-r1</active>
+        <active>prefigure-parabola-focus-directrix-pf-r2</active>
+      </children>
+      <components>
+        <active>prefigure-parabola-focus-directrix-grid-axes</active>
+        <active>prefigure-parabola-focus-directrix-pf-curve</active>
+        <active>prefigure-parabola-focus-directrix-pf-dir</active>
+        <active>prefigure-parabola-focus-directrix-pf-focus</active>
+        <active>prefigure-parabola-focus-directrix-pf-P</active>
+        <active>prefigure-parabola-focus-directrix-pf-r1</active>
+        <active>prefigure-parabola-focus-directrix-pf-r2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-parabola-focus-directrix-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-parabola-focus-directrix-grid</active>
+        <active>prefigure-parabola-focus-directrix-axes</active>
+      </children>
+      <components>
+        <active>prefigure-parabola-focus-directrix-grid</active>
+        <active>prefigure-parabola-focus-directrix-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-grid" speech2="The coordinate grid">
+      <active>prefigure-parabola-focus-directrix-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-axes" speech2="The coordinate axes">
+      <active>prefigure-parabola-focus-directrix-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-pf-curve" speech2="The parabola x squared equals eight y, opening upward from its vertex at the origin.">
+      <active>prefigure-parabola-focus-directrix-pf-curve</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-pf-dir" speech2="The directrix, the dashed horizontal line y equals negative two.">
+      <active>prefigure-parabola-focus-directrix-pf-dir</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-pf-focus" speech2="The focus at zero comma two.">
+      <active>prefigure-parabola-focus-directrix-pf-focus</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-pf-P" speech2="The point four comma two on the parabola.">
+      <active>prefigure-parabola-focus-directrix-pf-P</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-pf-r1" speech2="The horizontal segment of length four from the focus to the point on the parabola.">
+      <active>prefigure-parabola-focus-directrix-pf-r1</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parabola-focus-directrix-pf-r2" speech2="The vertical segment of length four from that point down to the directrix.">
+      <active>prefigure-parabola-focus-directrix-pf-r2</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-parabola-focus-directrix-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rw21-disk-figure" speech2="A blue circle of radius eleven centered at the origin. A green point just right of the center at one comma zero marks the minimum, f equals negative seven. Two vermillion points on the circle at negative two comma plus and minus the square root of one hundred seventeen mark the maxima, f equals three hundred sixty two.">
+      <grouped>prefigure-rw21-disk-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw21-disk-grid-axes</active>
+        <active>prefigure-rw21-disk-dk-circle</active>
+        <active>prefigure-rw21-disk-dk-min</active>
+        <active>prefigure-rw21-disk-dk-max1</active>
+        <active>prefigure-rw21-disk-dk-max2</active>
+      </children>
+      <components>
+        <active>prefigure-rw21-disk-grid-axes</active>
+        <active>prefigure-rw21-disk-dk-circle</active>
+        <active>prefigure-rw21-disk-dk-min</active>
+        <active>prefigure-rw21-disk-dk-max1</active>
+        <active>prefigure-rw21-disk-dk-max2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rw21-disk-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rw21-disk-grid</active>
+        <active>prefigure-rw21-disk-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rw21-disk-grid</active>
+        <active>prefigure-rw21-disk-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rw21-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-grid" speech2="The coordinate grid">
+      <active>prefigure-rw21-disk-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rw21-disk-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-axes" speech2="The coordinate axes">
+      <active>prefigure-rw21-disk-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw21-disk-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-dk-circle" speech2="The boundary circle x squared plus y squared equals one hundred twenty one.">
+      <active>prefigure-rw21-disk-dk-circle</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rw21-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-dk-min" speech2="The interior critical point one comma zero, where the minimum negative seven occurs.">
+      <active>prefigure-rw21-disk-dk-min</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rw21-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-dk-max1" speech2="A boundary maximum at negative two comma square root of one hundred seventeen.">
+      <active>prefigure-rw21-disk-dk-max1</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rw21-disk-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rw21-disk-dk-max2" speech2="A boundary maximum at negative two comma negative square root of one hundred seventeen.">
+      <active>prefigure-rw21-disk-dk-max2</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-rw21-disk-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

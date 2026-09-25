@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rev-gr-line-figure" speech2="Three concentric blue circles centered at the point one comma two are level curves of f. A dark red line with slope one, y equals x plus one, passes through the center. At three points on this line outside the smallest circle, orange arrows of equal length point up and to the right in the direction one comma one, perpendicular to the circles.">
+      <grouped>prefigure-rev-gr-line-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-gr-line-grid-axes</active>
+        <active>prefigure-rev-gr-line-gr-c1</active>
+        <active>prefigure-rev-gr-line-gr-line</active>
+        <active>prefigure-rev-gr-line-gr-v1</active>
+      </children>
+      <components>
+        <active>prefigure-rev-gr-line-grid-axes</active>
+        <active>prefigure-rev-gr-line-gr-c1</active>
+        <active>prefigure-rev-gr-line-gr-line</active>
+        <active>prefigure-rev-gr-line-gr-v1</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rev-gr-line-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rev-gr-line-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rev-gr-line-grid</active>
+        <active>prefigure-rev-gr-line-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rev-gr-line-grid</active>
+        <active>prefigure-rev-gr-line-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rev-gr-line-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-gr-line-grid" speech2="The coordinate grid">
+      <active>prefigure-rev-gr-line-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rev-gr-line-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-gr-line-axes" speech2="The coordinate axes">
+      <active>prefigure-rev-gr-line-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-gr-line-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-gr-line-gr-c1" speech2="A level curve of f: a circle centered at one comma two.">
+      <active>prefigure-rev-gr-line-gr-c1</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rev-gr-line-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-gr-line-gr-line" speech2="The line y equals x plus one, through the center of the circles, where the gradient points in the direction one comma one.">
+      <active>prefigure-rev-gr-line-gr-line</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rev-gr-line-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rev-gr-line-gr-v1" speech2="The gradient direction one comma one at a point on the line, perpendicular to the level curves.">
+      <active>prefigure-rev-gr-line-gr-v1</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rev-gr-line-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

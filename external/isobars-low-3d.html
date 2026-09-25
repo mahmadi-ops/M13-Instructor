@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sailing the isobars of a low</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+<style>
+  :root{
+    --ink:#EDF3F6; --muted:#8FA6B4;
+    --sans:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif:"PT Serif", "Times New Roman", Times, serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:transparent;color:#22262E;font-family:var(--sans);
+    font-size:16px;-webkit-font-smoothing:antialiased}
+  /* Column layout: the controls always claim their space first, and the
+     canvas takes whatever height is left, so the buttons can never be
+     pushed below the fold of the iframe. */
+  body{display:flex;flex-direction:column}
+  .stage{position:relative;flex:1 1 auto;min-height:0;
+    border:1px solid #C9CFDC;border-radius:3px;overflow:hidden;
+    background:#080612}
+  canvas{display:block;width:100%;height:100%;object-fit:contain;cursor:grab;touch-action:none}
+  canvas.drag{cursor:grabbing}
+  .hud{position:absolute;top:0;left:0;padding:16px 20px;pointer-events:none;color:var(--ink);
+    font-size:clamp(15px,2.15vw,24px);line-height:1.75;text-shadow:0 2px 10px rgba(0,0,0,.95)}
+  .hud .k{color:var(--muted);font-weight:600}
+  .hud .big{font-weight:700;font-size:clamp(30px,5.2vw,58px);line-height:1.08;
+    display:block;margin:4px 0 10px}
+  .tip{position:absolute;right:16px;bottom:14px;color:var(--muted);pointer-events:none;
+    font-size:clamp(12px,1.35vw,17px);text-shadow:0 2px 10px rgba(0,0,0,.95)}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center;
+    flex:0 0 auto}
+  button{font-family:var(--sans);font-size:clamp(15px,1.55vw,19px);font-weight:600;color:#22262E;
+    background:#fff;border:1px solid #B9C1D2;border-radius:3px;padding:12px 20px;cursor:pointer;
+    transition:border-color .16s,background .16s,color .16s}
+  button:hover{border-color:#6C778F}
+  button:focus-visible{outline:2px solid #B8860B;outline-offset:2px}
+  button[aria-pressed="true"]{background:#1F2740;border-color:#1F2740;color:#fff}
+  .spacer{flex:1}
+  label.speed{display:flex;align-items:center;gap:9px;font-size:clamp(15px,1.55vw,19px);
+    font-weight:600;color:#4A5265}
+  input[type=range]{accent-color:#1F2740;width:clamp(120px,12vw,180px)}
+</style>
+</head>
+<body>
+<div class="stage">
+  <canvas id="c" width="1760" height="1080"></canvas>
+  <div class="hud">
+    <span class="k">Barometer</span>
+    <span class="big" id="v1">&#8212;</span>
+    <span class="k">Position</span> <span id="v2">&#8212;</span><br>
+    <span class="k">D<sub>u</sub>P</span> <span id="v3">&#8212;</span><br>
+    <span class="k">Status</span> <span id="v4">&#8212;</span>
+  </div>
+  <div class="tip">drag to rotate</div>
+</div>
+<div class="controls">
+  <button id="btn-iso" aria-pressed="true">Circle the low</button>
+  <button id="btn-out" aria-pressed="false">Run for open water</button>
+  <div class="spacer"></div>
+  <label class="speed">Speed <input id="speed" type="range" min="0.25" max="2.5" step="0.05" value="1"></label>
+  <button id="play">Play</button>
+  <button id="reset">Reset</button>
+</div>
+
+<script>
+(function(){
+"use strict";
+const CFG = {
+  xmin:-72, xmax:72, ymin:-44.2, ymax:44.2,
+  vmin:988, vmax:1017,
+  f:function(x,y){return 988+0.004*(x*x+y*y);},
+  grad:function(x,y){return [0.008*x,0.008*y];},
+  palette:[[0,[46,8,40]],[.22,[122,26,74]],[.44,[196,66,58]],
+           [.64,[214,142,54]],[.82,[70,140,110]],[1,[26,62,104]]],
+  contours:[992,996,1000,1004,1008],
+  level:990, levelColor:'#FFD166',
+  levelLabel:'isobar   990 mb   \u00B7   r = 22.4 mi',
+  axisLabel:'P(x,y) = 988 + 0.004(x\u00B2 + y\u00B2)',
+  curve:function(v,t){var r=Math.sqrt((v-988)/0.004);
+    return [r*Math.cos(t), r*Math.sin(t)];},
+  start:[20,10], startLabel:'P\u2080(20, 10)',
+  unitsXY:'mi', dp:1, glyphSize:24, arrowLen:16, gradColor:'rgba(255,140,120,.95)',
+  fmtV:function(v){return v.toFixed(1)+' mb';},
+  fmtD:function(d){return d.toFixed(2)+' mb/mi';},
+  modes:[
+    {id:'iso', label:'Circle the low', tint:'#FFD166', loop:true,
+     rate:0.30, smax:Math.PI*2,
+     pos:function(s){var r=Math.sqrt(500), t=Math.atan2(10,20)+s;
+       return [r*Math.cos(t), r*Math.sin(t)];},
+     du:function(){return 0;},
+     status:function(){return 'Holding 990 mb';}},
+    {id:'out', label:'Run for open water', tint:'#7FE3C0', loop:false,
+     rate:11, smax:54,
+     pos:function(s){return [20+2/Math.sqrt(5)*s, 10+1/Math.sqrt(5)*s];},
+     du:function(x,y){return 0.008*x*(2/Math.sqrt(5))+0.008*y*(1/Math.sqrt(5));},
+     status:function(v){return 'Barometer up '+(v-990).toFixed(1)+' mb';}}
+  ]
+};
+
+const cv=document.getElementById('c'), ctx=cv.getContext('2d');
+const W=cv.width, H=cv.height;
+// figure lettering in the book's maths face; italic for the variables
+const FONT=w=>w+' 40px '+"'PT Serif','Times New Roman',Times,serif";
+const MFONT=w=>'italic '+w+' 40px '+"'PT Serif','Times New Roman',Times,serif";
+
+/* ---------------- normalized box ----------------
+   x,y are mapped into a box of half-width 1 (aspect preserved),
+   the field value into a height 0..ZH.                          */
+const CX0=(CFG.xmax+CFG.xmin)/2, CY0=(CFG.ymax+CFG.ymin)/2;
+const R=(CFG.xmax-CFG.xmin)/2, RY=(CFG.ymax-CFG.ymin)/2;
+const VY=RY/R, ZH=0.58;
+const nx=x=>(x-CX0)/R, ny=y=>(y-CY0)/R;
+const nz=v=>(v-CFG.vmin)/(CFG.vmax-CFG.vmin)*ZH;
+
+let az=-0.62, el=0.50;
+const S=W*0.355, PX=W*0.545, PY=H*0.665;
+
+function proj(u,v,w){
+  const ca=Math.cos(az), sa=Math.sin(az);
+  const X=u*ca-v*sa, Y=u*sa+v*ca;
+  return [PX+X*S, PY-(w*Math.cos(el)-Y*Math.sin(el))*S];
+}
+function depth(u,v,w){
+  const ca=Math.cos(az), sa=Math.sin(az);
+  const Y=u*sa+v*ca;
+  return Y*Math.cos(el)+w*Math.sin(el);
+}
+
+/* ---------------- palette ---------------- */
+function color(val){
+  const p=Math.max(0,Math.min(1,(val-CFG.vmin)/(CFG.vmax-CFG.vmin)));
+  const st=CFG.palette;
+  for(let i=0;i<st.length-1;i++){
+    const a=st[i][0], ca=st[i][1], b=st[i+1][0], cb=st[i+1][1];
+    if(p<=b){const f=(p-a)/(b-a);
+      return [0,1,2].map(j=>Math.round(ca[j]+(cb[j]-ca[j])*f));}
+  }
+  return st[st.length-1][1];
+}
+
+/* ---------------- cached surface layer ---------------- */
+const sc=document.createElement('canvas'); sc.width=W; sc.height=H;
+let dirty=true;
+const N=42;
+const LIGHT=(function(){const l=[-0.42,-0.55,0.72];
+  const m=Math.hypot(l[0],l[1],l[2]);return [l[0]/m,l[1]/m,l[2]/m];})();
+
+function buildSurface(){
+  const g=sc.getContext('2d');
+  g.clearRect(0,0,W,H);
+
+  const quads=[];
+  const du=2/N, dv=2*VY/N;
+  for(let i=0;i<N;i++)for(let j=0;j<N;j++){
+    const u0=-1+i*du, v0=-VY+j*dv, u1=u0+du, v1=v0+dv;
+    const P=[[u0,v0],[u1,v0],[u1,v1],[u0,v1]].map(function(q){
+      const x=CX0+q[0]*R, y=CY0+q[1]*R;
+      const val=CFG.f(x,y);
+      return [q[0],q[1],nz(val),val];
+    });
+    const cu=(P[0][0]+P[2][0])/2, cvv=(P[0][1]+P[2][1])/2, cw=(P[0][2]+P[2][2])/2;
+    const e1=[P[1][0]-P[0][0],P[1][1]-P[0][1],P[1][2]-P[0][2]];
+    const e2=[P[3][0]-P[0][0],P[3][1]-P[0][1],P[3][2]-P[0][2]];
+    let n=[e1[1]*e2[2]-e1[2]*e2[1], e1[2]*e2[0]-e1[0]*e2[2], e1[0]*e2[1]-e1[1]*e2[0]];
+    const nm=Math.hypot(n[0],n[1],n[2])||1; n=[n[0]/nm,n[1]/nm,n[2]/nm];
+    if(n[2]<0) n=[-n[0],-n[1],-n[2]];
+    const lam=Math.max(0,n[0]*LIGHT[0]+n[1]*LIGHT[1]+n[2]*LIGHT[2]);
+    const c=color((P[0][3]+P[1][3]+P[2][3]+P[3][3])/4);
+    const sh=0.52+0.48*lam;
+    quads.push({d:depth(cu,cvv,cw), pts:P,
+      col:'rgb('+Math.round(c[0]*sh)+','+Math.round(c[1]*sh)+','+Math.round(c[2]*sh)+')'});
+  }
+  quads.sort(function(a,b){return b.d-a.d;});
+  for(const q of quads){
+    g.beginPath();
+    for(let k=0;k<4;k++){const s=proj(q.pts[k][0],q.pts[k][1],q.pts[k][2]);
+      k?g.lineTo(s[0],s[1]):g.moveTo(s[0],s[1]);}
+    g.closePath(); g.fillStyle=q.col; g.strokeStyle=q.col; g.lineWidth=1; g.fill(); g.stroke();
+  }
+
+  /* level curves lying on the surface */
+  function ring(val,style,width){
+    g.strokeStyle=style; g.lineWidth=width; g.beginPath();
+    for(let t=0;t<=Math.PI*2+0.02;t+=0.02){
+      const p=CFG.curve(val,t);
+      if(p===null) return;
+      const s=proj(nx(p[0]),ny(p[1]),nz(val));
+      t?g.lineTo(s[0],s[1]):g.moveTo(s[0],s[1]);
+    }
+    g.stroke();
+  }
+  CFG.contours.forEach(function(v){ring(v,'rgba(255,255,255,.30)',2.5);});
+  ring(CFG.level,CFG.levelColor,6);
+
+  /* the same curve dropped onto the base plane, plus a light floor grid */
+  g.strokeStyle='rgba(255,255,255,.13)'; g.lineWidth=2;
+  for(let k=-1;k<=1;k+=0.25){
+    g.beginPath();
+    let s=proj(k,-VY,0); g.moveTo(s[0],s[1]);
+    s=proj(k,VY,0); g.lineTo(s[0],s[1]); g.stroke();
+    g.beginPath();
+    s=proj(-1,k*VY,0); g.moveTo(s[0],s[1]);
+    s=proj(1,k*VY,0); g.lineTo(s[0],s[1]); g.stroke();
+  }
+  g.strokeStyle=CFG.levelColor; g.globalAlpha=.5; g.lineWidth=4; g.beginPath();
+  for(let t=0;t<=Math.PI*2+0.02;t+=0.02){
+    const p=CFG.curve(CFG.level,t);
+    const s=proj(nx(p[0]),ny(p[1]),0);
+    t?g.lineTo(s[0],s[1]):g.moveTo(s[0],s[1]);
+  }
+  g.stroke(); g.globalAlpha=1;
+
+  /* axis label + the featured level caption */
+  g.font=FONT(600); g.fillStyle=CFG.levelColor;
+  g.fillText(CFG.levelLabel, 34, H-34);
+  g.fillStyle='rgba(255,255,255,.55)';
+  g.font=MFONT(600);                       /* names a function: italic */
+  g.fillText(CFG.axisLabel, 34, 56);
+  dirty=false;
+}
+
+/* ---------------- glyph, drawn facing the viewer ---------------- */
+
+function glyph(g,px,py,S,tint){
+  g.save(); g.translate(px,py-S*.4);
+  g.fillStyle='#E7ECF2'; g.strokeStyle='#2C3552'; g.lineWidth=S*.11;
+  g.beginPath();
+  g.moveTo(-S*1.05,0); g.lineTo(S*1.05,0);
+  g.lineTo(S*.72,S*.60); g.lineTo(-S*.72,S*.60);
+  g.closePath(); g.fill(); g.stroke();
+  g.fillStyle=tint; g.beginPath(); g.rect(-S*.40,-S*.62,S*.80,S*.62); g.fill();
+  g.fillStyle='#2C3552'; g.beginPath(); g.rect(-S*.08,-S*1.15,S*.16,S*.55); g.fill();
+  g.restore();
+}
+
+
+function arrow3(x0,y0,z0,x1,y1,z1,col,w){
+  const a=proj(nx(x0),ny(y0),z0), b=proj(nx(x1),ny(y1),z1);
+  const ang=Math.atan2(b[1]-a[1],b[0]-a[0]), h=26;
+  ctx.strokeStyle=col; ctx.fillStyle=col; ctx.lineWidth=w; ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(b[0],b[1]); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(b[0],b[1]);
+  ctx.lineTo(b[0]-h*Math.cos(ang-.42),b[1]-h*Math.sin(ang-.42));
+  ctx.lineTo(b[0]-h*Math.cos(ang+.42),b[1]-h*Math.sin(ang+.42));
+  ctx.closePath(); ctx.fill();
+}
+
+/* ---------------- state ---------------- */
+let mode=CFG.modes[0].id, running=false, s=0, pace=1, trail=[], last=0;
+function cur(){return CFG.modes.find(function(m){return m.id===mode;});}
+function reset(){s=0;trail=[];}
+
+const $1=document.getElementById('v1'),$2=document.getElementById('v2'),
+      $3=document.getElementById('v3'),$4=document.getElementById('v4');
+
+function frame(now){
+  const dt=last?Math.min((now-last)/1000,.05):0; last=now;
+  const M=cur();
+  if(running) s=M.loop ? s+dt*M.rate*pace : Math.min(s+dt*M.rate*pace, M.smax);
+  if(dirty) buildSurface();
+  ctx.clearRect(0,0,W,H);
+  ctx.drawImage(sc,0,0);
+
+  const p=M.pos(s), x=p[0], y=p[1], val=CFG.f(x,y), w=nz(val);
+
+  /* full route, faint, on the surface */
+  ctx.strokeStyle=M.tint; ctx.globalAlpha=.30; ctx.lineWidth=5; ctx.beginPath();
+  for(let k=0;k<=120;k++){
+    const q=M.pos(M.smax*k/120);
+    const sp=proj(nx(q[0]),ny(q[1]),nz(CFG.f(q[0],q[1])));
+    k?ctx.lineTo(sp[0],sp[1]):ctx.moveTo(sp[0],sp[1]);
+  }
+  ctx.stroke(); ctx.globalAlpha=1;
+
+  trail.push([x,y,w]); if(trail.length>420) trail.shift();
+  if(trail.length>1){
+    ctx.strokeStyle=M.tint; ctx.lineWidth=8; ctx.lineCap='round'; ctx.beginPath();
+    for(let k=0;k<trail.length;k++){
+      const sp=proj(nx(trail[k][0]),ny(trail[k][1]),trail[k][2]);
+      k?ctx.lineTo(sp[0],sp[1]):ctx.moveTo(sp[0],sp[1]);
+    }
+    ctx.stroke();
+  }
+
+  /* gradient of the field, drawn in the base plane under the object */
+  const gr=CFG.grad(x,y), gm=Math.hypot(gr[0],gr[1])||1;
+  const L=CFG.arrowLen;
+  arrow3(x,y,0, x-gr[0]/gm*L, y-gr[1]/gm*L, 0, CFG.gradColor, 5);
+
+  /* drop line from the surface to the base plane */
+  const top=proj(nx(x),ny(y),w), foot=proj(nx(x),ny(y),0);
+  ctx.strokeStyle='rgba(255,255,255,.45)'; ctx.lineWidth=2.5;
+  ctx.setLineDash([10,8]); ctx.beginPath();
+  ctx.moveTo(top[0],top[1]); ctx.lineTo(foot[0],foot[1]); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle='rgba(255,255,255,.65)'; ctx.beginPath();
+  ctx.ellipse(foot[0],foot[1],9,5,0,0,2*Math.PI); ctx.fill();
+
+  /* start marker */
+  const st=proj(nx(CFG.start[0]),ny(CFG.start[1]),nz(CFG.f(CFG.start[0],CFG.start[1])));
+  ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(st[0],st[1],9,0,2*Math.PI); ctx.fill();
+  ctx.font=MFONT(600); ctx.fillText(CFG.startLabel, st[0]+22, st[1]-22);
+
+  glyph(ctx, top[0], top[1], CFG.glyphSize, M.tint);
+
+  const du=M.du(x,y,s);
+  $1.textContent=CFG.fmtV(val);
+  $2.textContent='('+x.toFixed(CFG.dp)+', '+y.toFixed(CFG.dp)+') '+CFG.unitsXY;
+  $3.textContent=CFG.fmtD(du,x,y);
+  $4.textContent=M.status(val,s);
+  $4.style.color=M.tint;
+
+  requestAnimationFrame(frame);
+}
+
+/* ---------------- interaction ---------------- */
+let drag=false,lx=0,ly=0;
+cv.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY;
+  cv.classList.add('drag');cv.setPointerCapture(e.pointerId);});
+cv.addEventListener('pointermove',function(e){
+  if(!drag) return;
+  az-=(e.clientX-lx)*0.006;
+  el=Math.max(0.10,Math.min(1.35,el+(e.clientY-ly)*0.004));
+  lx=e.clientX; ly=e.clientY; dirty=true;});
+cv.addEventListener('pointerup',function(){drag=false;cv.classList.remove('drag');});
+cv.addEventListener('pointercancel',function(){drag=false;cv.classList.remove('drag');});
+
+const bPlay=document.getElementById('play');
+CFG.modes.forEach(function(m){
+  const b=document.getElementById('btn-'+m.id);
+  b.onclick=function(){
+    mode=m.id; reset();
+    CFG.modes.forEach(function(o){
+      document.getElementById('btn-'+o.id).setAttribute('aria-pressed', o.id===m.id);});
+  };
+});
+bPlay.onclick=function(){running=!running;bPlay.textContent=running?'Pause':'Play';};
+document.getElementById('reset').onclick=function(){
+  reset();running=false;bPlay.textContent='Play';};
+document.getElementById('speed').oninput=function(e){pace=+e.target.value;};
+
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

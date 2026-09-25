@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-segment-param-figure" speech2="A coordinate grid showing the line segment from the point 0 comma 1 to the point 1 comma 0, traced by the parametric equations x equals t and y equals 1 minus t for t between 0 and 1.">
+      <grouped>prefigure-segment-param-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-segment-param-grid-axes</active>
+        <active>prefigure-segment-param-seg-grid</active>
+        <active>prefigure-segment-param-seg-segment</active>
+        <active>prefigure-segment-param-seg-start</active>
+        <active>prefigure-segment-param-seg-end</active>
+      </children>
+      <components>
+        <active>prefigure-segment-param-grid-axes</active>
+        <active>prefigure-segment-param-seg-grid</active>
+        <active>prefigure-segment-param-seg-segment</active>
+        <active>prefigure-segment-param-seg-start</active>
+        <active>prefigure-segment-param-seg-end</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-segment-param-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-segment-param-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-segment-param-grid</active>
+        <active>prefigure-segment-param-axes</active>
+      </children>
+      <components>
+        <active>prefigure-segment-param-grid</active>
+        <active>prefigure-segment-param-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-segment-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-segment-param-grid" speech2="The coordinate grid">
+      <active>prefigure-segment-param-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-segment-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-segment-param-axes" speech2="The coordinate axes">
+      <active>prefigure-segment-param-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-segment-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-segment-param-seg-grid" speech2="A coordinate grid with x and y axes.">
+      <active>prefigure-segment-param-seg-grid</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-segment-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-segment-param-seg-segment" speech2="The line segment, drawn in blue, from 0 comma 1 down to 1 comma 0.">
+      <active>prefigure-segment-param-seg-segment</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-segment-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-segment-param-seg-start" speech2="The starting point 0 comma 1, where t equals 0.">
+      <active>prefigure-segment-param-seg-start</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-segment-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-segment-param-seg-end" speech2="The ending point 1 comma 0, where t equals 1.">
+      <active>prefigure-segment-param-seg-end</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-segment-param-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

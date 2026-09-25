@@ -1,0 +1,75 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lagrange-plane-figure" speech2="A schematic edge-on view. A green slanted line represents the plane x plus 2 y plus z equals 4. Below it is the point P 0 with coordinates 1, 0, negative 2. A red arrow runs from P 0 perpendicularly to the plane, meeting it at the closest point P with coordinates 11 sixths, 5 thirds, negative 7 sixths; a small square marks the right angle. Two dashed gray segments from P 0 reach the plane at other points and are visibly longer. A blue arrow on the plane shows the normal vector n equals i plus 2 j plus k.">
+      <grouped>prefigure-lagrange-plane-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lagrange-plane-pd-plane</active>
+        <active>prefigure-lagrange-plane-pd-P0</active>
+        <active>prefigure-lagrange-plane-pd-seg</active>
+        <active>prefigure-lagrange-plane-pd-P</active>
+        <active>prefigure-lagrange-plane-pd-n</active>
+        <active>prefigure-lagrange-plane-pd-far1</active>
+        <active>prefigure-lagrange-plane-pd-far2</active>
+      </children>
+      <components>
+        <active>prefigure-lagrange-plane-pd-plane</active>
+        <active>prefigure-lagrange-plane-pd-P0</active>
+        <active>prefigure-lagrange-plane-pd-seg</active>
+        <active>prefigure-lagrange-plane-pd-P</active>
+        <active>prefigure-lagrange-plane-pd-n</active>
+        <active>prefigure-lagrange-plane-pd-far1</active>
+        <active>prefigure-lagrange-plane-pd-far2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-plane" speech2="The plane x plus 2 y plus z equals 4, drawn edge-on as a green line.">
+      <active>prefigure-lagrange-plane-pd-plane</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-P0" speech2="The point P 0 with coordinates 1, 0, negative 2, lying off the plane.">
+      <active>prefigure-lagrange-plane-pd-P0</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-seg" speech2="The shortest segment, drawn in red, from P 0 to the plane. It has length d equals five sixths times the square root of 6 and meets the plane at a right angle.">
+      <active>prefigure-lagrange-plane-pd-seg</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-P" speech2="The closest point P on the plane, with coordinates 11 sixths, 5 thirds, negative 7 sixths.">
+      <active>prefigure-lagrange-plane-pd-P</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-n" speech2="The normal vector n equals i plus 2 j plus k of the plane, drawn in blue. The shortest segment from P 0 is parallel to it.">
+      <active>prefigure-lagrange-plane-pd-n</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-far1" speech2="A dashed segment from P 0 to another point of the plane, longer than the perpendicular segment.">
+      <active>prefigure-lagrange-plane-pd-far1</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-plane-pd-far2" speech2="A second dashed segment from P 0 to another point of the plane, also longer than the perpendicular segment.">
+      <active>prefigure-lagrange-plane-pd-far2</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-lagrange-plane-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

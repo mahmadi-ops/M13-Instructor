@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-rs19-lagrange-figure" speech2="A blue circle of radius two centered at the origin. A dashed vermillion line of slope one touches the circle at the point square root of two comma negative square root of two, where f equals four, and a dashed green line of slope one touches it at negative square root of two comma square root of two, where f equals negative four.">
+      <grouped>prefigure-rs19-lagrange-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rs19-lagrange-grid-axes</active>
+        <active>prefigure-rs19-lagrange-lg-circle</active>
+        <active>prefigure-rs19-lagrange-lg-pmax</active>
+        <active>prefigure-rs19-lagrange-lg-pmin</active>
+      </children>
+      <components>
+        <active>prefigure-rs19-lagrange-grid-axes</active>
+        <active>prefigure-rs19-lagrange-lg-circle</active>
+        <active>prefigure-rs19-lagrange-lg-pmax</active>
+        <active>prefigure-rs19-lagrange-lg-pmin</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-rs19-lagrange-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-rs19-lagrange-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-rs19-lagrange-grid</active>
+        <active>prefigure-rs19-lagrange-axes</active>
+      </children>
+      <components>
+        <active>prefigure-rs19-lagrange-grid</active>
+        <active>prefigure-rs19-lagrange-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-rs19-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-lagrange-grid" speech2="The coordinate grid">
+      <active>prefigure-rs19-lagrange-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-rs19-lagrange-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-lagrange-axes" speech2="The coordinate axes">
+      <active>prefigure-rs19-lagrange-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rs19-lagrange-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-lagrange-lg-circle" speech2="The constraint circle x squared plus y squared equals four.">
+      <active>prefigure-rs19-lagrange-lg-circle</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-rs19-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-lagrange-lg-pmax" speech2="The absolute maximum at square root of two comma negative square root of two, where f equals four.">
+      <active>prefigure-rs19-lagrange-lg-pmax</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-rs19-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-rs19-lagrange-lg-pmin" speech2="The absolute minimum at negative square root of two comma square root of two, where f equals negative four.">
+      <active>prefigure-rs19-lagrange-lg-pmin</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-rs19-lagrange-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,479 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="dipole-field-figure" width="436" height="336" viewBox="0 0 436 336">
+  <defs>
+    <clipPath id="dipole-field-__clipPath-0">
+      <rect x="8.0" y="8.0" width="420.0" height="320.0"/>
+    </clipPath>
+    <clipPath id="dipole-field-__clipPath-1">
+      <rect x="8.0" y="8.0" width="420.0" height="320.0"/>
+    </clipPath>
+  </defs>
+  <g id="dipole-field-grid-axes">
+    <g id="dipole-field-grid" stroke="#ccc" stroke-width="1">
+      <line x1="36.0" y1="328.0" x2="36.0" y2="8.0"/>
+      <line x1="76.0" y1="328.0" x2="76.0" y2="8.0"/>
+      <line x1="116.0" y1="328.0" x2="116.0" y2="8.0"/>
+      <line x1="156.0" y1="328.0" x2="156.0" y2="8.0"/>
+      <line x1="196.0" y1="328.0" x2="196.0" y2="8.0"/>
+      <line x1="236.0" y1="328.0" x2="236.0" y2="8.0"/>
+      <line x1="276.0" y1="328.0" x2="276.0" y2="8.0"/>
+      <line x1="316.0" y1="328.0" x2="316.0" y2="8.0"/>
+      <line x1="356.0" y1="328.0" x2="356.0" y2="8.0"/>
+      <line x1="396.0" y1="328.0" x2="396.0" y2="8.0"/>
+      <line x1="8.0" y1="309.7" x2="428.0" y2="309.7"/>
+      <line x1="8.0" y1="264.0" x2="428.0" y2="264.0"/>
+      <line x1="8.0" y1="218.3" x2="428.0" y2="218.3"/>
+      <line x1="8.0" y1="172.6" x2="428.0" y2="172.6"/>
+      <line x1="8.0" y1="126.9" x2="428.0" y2="126.9"/>
+      <line x1="8.0" y1="81.1" x2="428.0" y2="81.1"/>
+      <line x1="8.0" y1="35.4" x2="428.0" y2="35.4"/>
+    </g>
+    <g id="dipole-field-axes" stroke="black" stroke-width="2">
+      <line id="dipole-field-__line-17" x1="18.0" y1="309.7" x2="428.0" y2="309.7" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="dipole-field-__line-18" x1="76.0" y1="312.7" x2="76.0" y2="306.7"/>
+        <line id="dipole-field-__line-19" x1="156.0" y1="312.7" x2="156.0" y2="306.7"/>
+        <line id="dipole-field-__line-20" x1="236.0" y1="312.7" x2="236.0" y2="306.7"/>
+        <line id="dipole-field-__line-21" x1="316.0" y1="312.7" x2="316.0" y2="306.7"/>
+        <line id="dipole-field-__line-22" x1="396.0" y1="312.7" x2="396.0" y2="306.7"/>
+      </g>
+      <line id="dipole-field-__line-23" x1="8.0" y1="328.0" x2="8.0" y2="8.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="dipole-field-__line-24" x1="5.0" y1="218.3" x2="11.0" y2="218.3"/>
+        <line id="dipole-field-__line-25" x1="5.0" y1="126.9" x2="11.0" y2="126.9"/>
+        <line id="dipole-field-__line-26" x1="5.0" y1="35.4" x2="11.0" y2="35.4"/>
+      </g>
+    </g>
+    <g id="dipole-field-__label-0" transform="translate(424.0,305.7) translate(-8.2,-8.2)">
+      <g id="dipole-field-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.160px" height="8.200px" role="img" focusable="false" viewBox="0 -442 451 453" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-2-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="r">
+                <use data-c="1D45F" xlink:href="#dipole-field-MJX-2-TEX-I-1D45F"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-1" transform="translate(12.0,12.0) translate(0.0,-0.0)">
+      <g id="dipole-field-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.832px" height="12.304px" role="img" focusable="false" viewBox="0 -680 764 680" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-3-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper E">
+                <use data-c="1D438" xlink:href="#dipole-field-MJX-3-TEX-I-1D438"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-2" transform="translate(76.0,320.7) translate(-4.5,-0.0)">
+      <g id="dipole-field-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-4-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#dipole-field-MJX-4-TEX-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-3" transform="translate(156.0,320.7) translate(-4.5,-0.0)">
+      <g id="dipole-field-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.432px" role="img" focusable="false" viewBox="0 -665 500 687" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-5-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="3">
+                <use data-c="33" xlink:href="#dipole-field-MJX-5-TEX-N-33"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-4" transform="translate(236.0,320.7) translate(-4.5,-0.0)">
+      <g id="dipole-field-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-6-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="4">
+                <use data-c="34" xlink:href="#dipole-field-MJX-6-TEX-N-34"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-5" transform="translate(316.0,320.7) translate(-4.5,-0.0)">
+      <g id="dipole-field-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-7-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="5">
+                <use data-c="35" xlink:href="#dipole-field-MJX-7-TEX-N-35"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-6" transform="translate(396.0,320.7) translate(-4.5,-0.0)">
+      <g id="dipole-field-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-8-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="6">
+                <use data-c="36" xlink:href="#dipole-field-MJX-8-TEX-N-36"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-7" transform="translate(-3.0,218.3) translate(-23.1,-6.2)">
+      <g id="dipole-field-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="23.128px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1278 688" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-9-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="dipole-field-MJX-9-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="dipole-field-MJX-9-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="0.2">
+                <use data-c="30" xlink:href="#dipole-field-MJX-9-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#dipole-field-MJX-9-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="32" xlink:href="#dipole-field-MJX-9-TEX-N-32" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-8" transform="translate(-3.0,126.9) translate(-23.1,-6.3)">
+      <g id="dipole-field-__g-8">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="23.128px" height="12.648px" role="img" focusable="false" viewBox="0 -677 1278 699" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-10-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="dipole-field-MJX-10-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="dipole-field-MJX-10-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="0.4">
+                <use data-c="30" xlink:href="#dipole-field-MJX-10-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#dipole-field-MJX-10-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="34" xlink:href="#dipole-field-MJX-10-TEX-N-34" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="dipole-field-__label-9" transform="translate(-3.0,35.4) translate(-23.1,-6.2)">
+      <g id="dipole-field-__g-9">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="23.128px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1278 688" x="0.0" y="0.0">
+          <defs>
+            <path id="dipole-field-MJX-11-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+            <path id="dipole-field-MJX-11-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+            <path id="dipole-field-MJX-11-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="0.6">
+                <use data-c="30" xlink:href="#dipole-field-MJX-11-TEX-N-30"/>
+                <use data-c="2E" xlink:href="#dipole-field-MJX-11-TEX-N-2E" transform="translate(500,0)"/>
+                <use data-c="36" xlink:href="#dipole-field-MJX-11-TEX-N-36" transform="translate(778,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="dipole-field-lead" stroke="red" stroke-width="2" stroke-dasharray="6 4" fill="none" d="M 36.0 38.8 L 39.6 61.8 L 43.2 82.3 L 46.8 100.5 L 50.4 116.9 L 54.0 131.6 L 57.6 144.8 L 61.2 156.8 L 64.8 167.6 L 68.4 177.5 L 72.0 186.4 L 75.6 194.6 L 79.2 202.0 L 82.8 208.8 L 86.4 215.1 L 90.0 220.9 L 93.6 226.1 L 97.2 231.0 L 100.8 235.5 L 104.4 239.7 L 108.0 243.6 L 111.6 247.2 L 115.2 250.5 L 118.8 253.6 L 122.4 256.5 L 126.0 259.2 L 129.6 261.7 L 133.2 264.0 L 136.8 266.2 L 140.4 268.3 L 144.0 270.2 L 147.6 272.0 L 151.2 273.7 L 154.8 275.3 L 158.4 276.8 L 162.0 278.3 L 165.6 279.6 L 169.2 280.9 L 172.8 282.1 L 176.4 283.2 L 180.0 284.3 L 183.6 285.3 L 187.2 286.2 L 190.8 287.2 L 194.4 288.0 L 198.0 288.8 L 201.6 289.6 L 205.2 290.4 L 208.8 291.1 L 212.4 291.7 L 216.0 292.4 L 219.6 293.0 L 223.2 293.6 L 226.8 294.1 L 230.4 294.7 L 234.0 295.2 L 237.6 295.6 L 241.2 296.1 L 244.8 296.5 L 248.4 297.0 L 252.0 297.4 L 255.6 297.8 L 259.2 298.1 L 262.8 298.5 L 266.4 298.8 L 270.0 299.2 L 273.6 299.5 L 277.2 299.8 L 280.8 300.1 L 284.4 300.4 L 288.0 300.6 L 291.6 300.9 L 295.2 301.1 L 298.8 301.4 L 302.4 301.6 L 306.0 301.8 L 309.6 302.0 L 313.2 302.2 L 316.8 302.4 L 320.4 302.6 L 324.0 302.8 L 327.6 303.0 L 331.2 303.2 L 334.8 303.3 L 338.4 303.5 L 342.0 303.7 L 345.6 303.8 L 349.2 304.0 L 352.8 304.1 L 356.4 304.2 L 360.0 304.4 L 363.6 304.5 L 367.2 304.6 L 370.8 304.7 L 374.4 304.9 L 378.0 305.0 L 381.6 305.1 L 385.2 305.2 L 388.8 305.3 L 392.4 305.4 L 396.0 305.5" clip-path="url(#dipole-field-__clipPath-1)"/>
+  <path id="dipole-field-exact" stroke="blue" stroke-width="2.5" fill="none" d="M 36.0 179.7 L 39.6 188.8 L 43.2 197.0 L 46.8 204.5 L 50.4 211.4 L 54.0 217.6 L 57.6 223.4 L 61.2 228.6 L 64.8 233.5 L 68.4 237.9 L 72.0 242.0 L 75.6 245.8 L 79.2 249.3 L 82.8 252.6 L 86.4 255.6 L 90.0 258.4 L 93.6 261.0 L 97.2 263.5 L 100.8 265.8 L 104.4 267.9 L 108.0 269.9 L 111.6 271.8 L 115.2 273.5 L 118.8 275.2 L 122.4 276.7 L 126.0 278.2 L 129.6 279.5 L 133.2 280.8 L 136.8 282.0 L 140.4 283.2 L 144.0 284.3 L 147.6 285.3 L 151.2 286.3 L 154.8 287.2 L 158.4 288.1 L 162.0 288.9 L 165.6 289.7 L 169.2 290.4 L 172.8 291.1 L 176.4 291.8 L 180.0 292.5 L 183.6 293.1 L 187.2 293.7 L 190.8 294.2 L 194.4 294.7 L 198.0 295.3 L 201.6 295.7 L 205.2 296.2 L 208.8 296.6 L 212.4 297.1 L 216.0 297.5 L 219.6 297.9 L 223.2 298.2 L 226.8 298.6 L 230.4 298.9 L 234.0 299.3 L 237.6 299.6 L 241.2 299.9 L 244.8 300.2 L 248.4 300.4 L 252.0 300.7 L 255.6 301.0 L 259.2 301.2 L 262.8 301.4 L 266.4 301.7 L 270.0 301.9 L 273.6 302.1 L 277.2 302.3 L 280.8 302.5 L 284.4 302.7 L 288.0 302.9 L 291.6 303.1 L 295.2 303.2 L 298.8 303.4 L 302.4 303.6 L 306.0 303.7 L 309.6 303.9 L 313.2 304.0 L 316.8 304.2 L 320.4 304.3 L 324.0 304.4 L 327.6 304.6 L 331.2 304.7 L 334.8 304.8 L 338.4 304.9 L 342.0 305.0 L 345.6 305.1 L 349.2 305.2 L 352.8 305.3 L 356.4 305.4 L 360.0 305.5 L 363.6 305.6 L 367.2 305.7 L 370.8 305.8 L 374.4 305.9 L 378.0 306.0 L 381.6 306.0 L 385.2 306.1 L 388.8 306.2 L 392.4 306.3 L 396.0 306.3" clip-path="url(#dipole-field-__clipPath-1)"/>
+  <g id="dipole-field-leadlabel" transform="translate(112.0,229.3) translate(0.0,-40.8)">
+    <g id="dipole-field-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -16.016px; color:red" width="106.808px" height="40.808px" role="img" focusable="false" viewBox="0 -1370 5901.2 2254.8" x="0.0" y="0.0">
+        <defs>
+          <path id="dipole-field-MJX-12-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="dipole-field-MJX-12-TEX-N-2062" d=""/>
+          <path id="dipole-field-MJX-12-TEX-I-1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          <path id="dipole-field-MJX-12-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          <path id="dipole-field-MJX-12-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          <path id="dipole-field-MJX-12-TEX-I-1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/>
+          <path id="dipole-field-MJX-12-TEX-I-1D716" d="M227 -11Q149 -11 95 41T40 174Q40 262 87 322Q121 367 173 396T287 430Q289 431 329 431H367Q382 426 382 411Q382 385 341 385H325H312Q191 385 154 277L150 265H327Q340 256 340 246Q340 228 320 219H138V217Q128 187 128 143Q128 77 160 52T231 26Q258 26 284 36T326 57T343 68Q350 68 354 58T358 39Q358 36 357 35Q354 31 337 21T289 0T227 -11Z"/>
+          <path id="dipole-field-MJX-12-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          <path id="dipole-field-MJX-12-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="dipole-field-MJX-12-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"/>
+          <path id="dipole-field-MJX-12-TEX-N-221D" d="M56 124T56 216T107 375T238 442Q260 442 280 438T319 425T352 407T382 385T406 361T427 336T442 315T455 297T462 285L469 297Q555 442 679 442Q687 442 722 437V398H718Q710 400 694 400Q657 400 623 383T567 343T527 294T503 253T495 235Q495 231 520 192T554 143Q625 44 696 44Q717 44 719 46H722V-5Q695 -11 678 -11Q552 -11 457 141Q455 145 454 146L447 134Q362 -11 235 -11Q157 -11 107 56ZM93 213Q93 143 126 87T220 31Q258 31 292 48T349 88T389 137T413 178T421 196Q421 200 396 239T362 288Q322 345 288 366T213 387Q163 387 128 337T93 213Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="unknown" data-semantic-id="25" data-semantic-children="18,24" data-semantic-content="19" data-semantic-speech="StartFraction 2 q d Over 4 pi epsilon 0 r cubed EndFraction proportional to StartFraction d Over r cubed EndFraction">
+            <g data-mml-node="mstyle">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="18" data-semantic-children="5,17" data-semantic-parent="25" data-semantic-speech="StartFraction 2 q d Over 4 pi epsilon 0 r cubed EndFraction">
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:simple;clearspeak:unit" data-semantic-id="5" data-semantic-children="0,1,2" data-semantic-content="3,4" data-semantic-parent="18" data-semantic-speech="2 q d" data-semantic-prefix="Numerator" transform="translate(880.1,676)">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="5" data-semantic-speech="2">
+                    <use data-c="32" xlink:href="#dipole-field-MJX-12-TEX-N-32"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="3" data-semantic-parent="5" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(500,0)">
+                    <use data-c="2062" xlink:href="#dipole-field-MJX-12-TEX-N-2062"/>
+                  </g>
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="5" data-semantic-speech="q" transform="translate(500,0)">
+                    <use data-c="1D45E" xlink:href="#dipole-field-MJX-12-TEX-I-1D45E"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="4" data-semantic-parent="5" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(960,0)">
+                    <use data-c="2062" xlink:href="#dipole-field-MJX-12-TEX-N-2062"/>
+                  </g>
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="5" data-semantic-speech="d" transform="translate(960,0)">
+                    <use data-c="1D451" xlink:href="#dipole-field-MJX-12-TEX-I-1D451"/>
+                  </g>
+                </g>
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="17" data-semantic-children="6,7,10,13" data-semantic-content="14,15,16" data-semantic-parent="18" data-semantic-speech="4 pi epsilon 0 r cubed" data-semantic-prefix="Denominator" transform="translate(220,-719.2)">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="17" data-semantic-speech="4">
+                    <use data-c="34" xlink:href="#dipole-field-MJX-12-TEX-N-34"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="14" data-semantic-parent="17" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(500,0)">
+                    <use data-c="2062" xlink:href="#dipole-field-MJX-12-TEX-N-2062"/>
+                  </g>
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="7" data-semantic-parent="17" data-semantic-speech="pi" transform="translate(500,0)">
+                    <use data-c="1D70B" xlink:href="#dipole-field-MJX-12-TEX-I-1D70B"/>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="15" data-semantic-parent="17" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1070,0)">
+                    <use data-c="2062" xlink:href="#dipole-field-MJX-12-TEX-N-2062"/>
+                  </g>
+                  <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="greekletter" data-semantic-id="10" data-semantic-children="8,9" data-semantic-parent="17" data-semantic-speech="epsilon 0" transform="translate(1070,0)">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="8" data-semantic-parent="10" data-semantic-speech="epsilon" data-semantic-prefix="Base">
+                      <use data-c="1D716" xlink:href="#dipole-field-MJX-12-TEX-I-1D716"/>
+                    </g>
+                    <g data-mml-node="mn" transform="translate(439,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="9" data-semantic-parent="10" data-semantic-speech="0" data-semantic-prefix="Subscript">
+                      <use data-c="30" xlink:href="#dipole-field-MJX-12-TEX-N-30"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="16" data-semantic-parent="17" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1912.6,0)">
+                    <use data-c="2062" xlink:href="#dipole-field-MJX-12-TEX-N-2062"/>
+                  </g>
+                  <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="13" data-semantic-children="11,12" data-semantic-parent="17" data-semantic-speech="r cubed" transform="translate(1912.6,0)">
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="11" data-semantic-parent="13" data-semantic-speech="r" data-semantic-prefix="Base">
+                      <use data-c="1D45F" xlink:href="#dipole-field-MJX-12-TEX-I-1D45F"/>
+                    </g>
+                    <g data-mml-node="mn" transform="translate(484,289) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="12" data-semantic-parent="13" data-semantic-speech="3" data-semantic-prefix="Exponent">
+                      <use data-c="33" xlink:href="#dipole-field-MJX-12-TEX-N-33"/>
+                    </g>
+                  </g>
+                </g>
+                <rect width="3000.1" height="60" x="120" y="220"/>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="unknown" data-semantic-id="19" data-semantic-parent="25" data-semantic-operator="infixop,∝" data-semantic-speech="proportional to" transform="translate(3517.9,0)">
+              <use data-c="221D" xlink:href="#dipole-field-MJX-12-TEX-N-221D"/>
+            </g>
+            <g data-mml-node="mstyle" transform="translate(4573.7,0)">
+              <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="24" data-semantic-children="20,23" data-semantic-parent="25" data-semantic-speech="StartFraction d Over r cubed EndFraction">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="20" data-semantic-parent="24" data-semantic-speech="d" data-semantic-prefix="Numerator" transform="translate(403.8,676)">
+                  <use data-c="1D451" xlink:href="#dipole-field-MJX-12-TEX-I-1D451"/>
+                </g>
+                <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="23" data-semantic-children="21,22" data-semantic-parent="24" data-semantic-speech="r cubed" data-semantic-prefix="Denominator" transform="translate(220,-719.2)">
+                  <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="21" data-semantic-parent="23" data-semantic-speech="r" data-semantic-prefix="Base">
+                    <use data-c="1D45F" xlink:href="#dipole-field-MJX-12-TEX-I-1D45F"/>
+                  </g>
+                  <g data-mml-node="mn" transform="translate(484,289) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="22" data-semantic-parent="23" data-semantic-speech="3" data-semantic-prefix="Exponent">
+                    <use data-c="33" xlink:href="#dipole-field-MJX-12-TEX-N-33"/>
+                  </g>
+                </g>
+                <rect width="1087.6" height="60" x="120" y="220"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="dipole-field-exactlabel" transform="translate(196.0,303.8) translate(0.0,-0.0)">
+    <g id="dipole-field-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -17.552px; color:blue" width="222.984px" height="43.792px" role="img" focusable="false" viewBox="0 -1449.5 12319.8 2419.4" x="0.0" y="0.0">
+        <defs>
+          <path id="dipole-field-MJX-13-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-2062" d=""/>
+          <path id="dipole-field-MJX-13-TEX-I-1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/>
+          <path id="dipole-field-MJX-13-TEX-I-1D716" d="M227 -11Q149 -11 95 41T40 174Q40 262 87 322Q121 367 173 396T287 430Q289 431 329 431H367Q382 426 382 411Q382 385 341 385H325H312Q191 385 154 277L150 265H327Q340 256 340 246Q340 228 320 219H138V217Q128 187 128 143Q128 77 160 52T231 26Q258 26 284 36T326 57T343 68Q350 68 354 58T358 39Q358 36 357 35Q354 31 337 21T289 0T227 -11Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+          <path id="dipole-field-MJX-13-TEX-S3-28" d="M701 -940Q701 -943 695 -949H664Q662 -947 636 -922T591 -879T537 -818T475 -737T412 -636T350 -511T295 -362T250 -186T221 17T209 251Q209 962 573 1361Q596 1386 616 1405T649 1437T664 1450H695Q701 1444 701 1441Q701 1436 681 1415T629 1356T557 1261T476 1118T400 927T340 675T308 359Q306 321 306 250Q306 -139 400 -430T690 -924Q701 -936 701 -940Z"/>
+          <path id="dipole-field-MJX-13-TEX-I-1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          <path id="dipole-field-MJX-13-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+          <path id="dipole-field-MJX-13-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          <path id="dipole-field-MJX-13-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+          <path id="dipole-field-MJX-13-TEX-S3-29" d="M34 1438Q34 1446 37 1448T50 1450H56H71Q73 1448 99 1423T144 1380T198 1319T260 1238T323 1137T385 1013T440 864T485 688T514 485T526 251Q526 134 519 53Q472 -519 162 -860Q139 -885 119 -904T86 -936T71 -949H56Q43 -949 39 -947T34 -937Q88 -883 140 -813Q428 -430 428 251Q428 453 402 628T338 922T245 1146T145 1309T46 1425Q44 1427 42 1429T39 1433T36 1436L34 1438Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="36" data-semantic-children="0,35" data-semantic-content="1" data-semantic-speech="upper E equals StartFraction 1 Over 4 pi epsilon 0 EndFraction left parenthesis StartFraction q Over r squared EndFraction minus StartFraction q Over left parenthesis r plus d right parenthesis squared EndFraction right parenthesis">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="36" data-semantic-speech="upper E">
+              <use data-c="1D438" xlink:href="#dipole-field-MJX-13-TEX-I-1D438"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="1" data-semantic-parent="36" data-semantic-operator="relseq,=" data-semantic-speech="equals" transform="translate(1041.8,0)">
+              <use data-c="3D" xlink:href="#dipole-field-MJX-13-TEX-N-3D"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="35" data-semantic-children="11,33" data-semantic-content="34" data-semantic-parent="36" data-semantic-speech="StartFraction 1 Over 4 pi epsilon 0 EndFraction left parenthesis StartFraction q Over r squared EndFraction minus StartFraction q Over left parenthesis r plus d right parenthesis squared EndFraction right parenthesis" transform="translate(2097.6,0)">
+              <g data-mml-node="mstyle">
+                <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="11" data-semantic-children="2,10" data-semantic-parent="35" data-semantic-speech="StartFraction 1 Over 4 pi epsilon 0 EndFraction">
+                  <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="11" data-semantic-speech="1" data-semantic-prefix="Numerator" transform="translate(926.3,676)">
+                    <use data-c="31" xlink:href="#dipole-field-MJX-13-TEX-N-31"/>
+                  </g>
+                  <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="10" data-semantic-children="3,4,7" data-semantic-content="8,9" data-semantic-parent="11" data-semantic-speech="4 pi epsilon 0" data-semantic-prefix="Denominator" transform="translate(220,-686)">
+                    <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="10" data-semantic-speech="4">
+                      <use data-c="34" xlink:href="#dipole-field-MJX-13-TEX-N-34"/>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="8" data-semantic-parent="10" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(500,0)">
+                      <use data-c="2062" xlink:href="#dipole-field-MJX-13-TEX-N-2062"/>
+                    </g>
+                    <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="10" data-semantic-speech="pi" transform="translate(500,0)">
+                      <use data-c="1D70B" xlink:href="#dipole-field-MJX-13-TEX-I-1D70B"/>
+                    </g>
+                    <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="9" data-semantic-parent="10" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(1070,0)">
+                      <use data-c="2062" xlink:href="#dipole-field-MJX-13-TEX-N-2062"/>
+                    </g>
+                    <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="greekletter" data-semantic-id="7" data-semantic-children="5,6" data-semantic-parent="10" data-semantic-speech="epsilon 0" transform="translate(1070,0)">
+                      <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-parent="7" data-semantic-speech="epsilon" data-semantic-prefix="Base">
+                        <use data-c="1D716" xlink:href="#dipole-field-MJX-13-TEX-I-1D716"/>
+                      </g>
+                      <g data-mml-node="mn" transform="translate(439,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="7" data-semantic-speech="0" data-semantic-prefix="Subscript">
+                        <use data-c="30" xlink:href="#dipole-field-MJX-13-TEX-N-30"/>
+                      </g>
+                    </g>
+                  </g>
+                  <rect width="2112.6" height="60" x="120" y="220"/>
+                </g>
+              </g>
+              <g data-mml-node="mstyle" transform="translate(2352.6,0)">
+                <g data-mml-node="mspace"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="34" data-semantic-parent="35" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(2185.6,0)">
+                <use data-c="2062" xlink:href="#dipole-field-MJX-13-TEX-N-2062"/>
+              </g>
+              <g data-mml-node="TeXAtom" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="33" data-semantic-children="32" data-semantic-content="13,31" data-semantic-parent="35" data-semantic-attributes="texclass:INNER" data-semantic-speech="left parenthesis StartFraction q Over r squared EndFraction minus StartFraction q Over left parenthesis r plus d right parenthesis squared EndFraction right parenthesis" data-mjx-texclass="INNER" transform="translate(2352.2,0)">
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="13" data-semantic-parent="33" data-semantic-attributes="texclass:OPEN" data-semantic-operator="fenced" data-semantic-speech="left parenthesis" transform="translate(0 -0.5)">
+                  <use data-c="28" xlink:href="#dipole-field-MJX-13-TEX-S3-28"/>
+                </g>
+                <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="subtraction" data-semantic-id="32" data-semantic-children="18,30" data-semantic-content="19" data-semantic-parent="33" data-semantic-speech="StartFraction q Over r squared EndFraction minus StartFraction q Over left parenthesis r plus d right parenthesis squared EndFraction" transform="translate(736,0)">
+                  <g data-mml-node="mstyle">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="18" data-semantic-children="14,17" data-semantic-parent="32" data-semantic-speech="StartFraction q Over r squared EndFraction">
+                      <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="14" data-semantic-parent="18" data-semantic-speech="q" data-semantic-prefix="Numerator" transform="translate(433.8,676)">
+                        <use data-c="1D45E" xlink:href="#dipole-field-MJX-13-TEX-I-1D45E"/>
+                      </g>
+                      <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="latinletter" data-semantic-id="17" data-semantic-children="15,16" data-semantic-parent="18" data-semantic-speech="r squared" data-semantic-prefix="Denominator" transform="translate(220,-719.9)">
+                        <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="15" data-semantic-parent="17" data-semantic-speech="r" data-semantic-prefix="Base">
+                          <use data-c="1D45F" xlink:href="#dipole-field-MJX-13-TEX-I-1D45F"/>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(484,289) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="16" data-semantic-parent="17" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                          <use data-c="32" xlink:href="#dipole-field-MJX-13-TEX-N-32"/>
+                        </g>
+                      </g>
+                      <rect width="1087.6" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="subtraction" data-semantic-id="19" data-semantic-parent="32" data-semantic-operator="infixop,−" data-semantic-speech="minus" transform="translate(1549.8,0)">
+                    <use data-c="2212" xlink:href="#dipole-field-MJX-13-TEX-N-2212"/>
+                  </g>
+                  <g data-mml-node="mstyle" transform="translate(2550,0)">
+                    <g data-mml-node="mfrac" data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="30" data-semantic-children="20,27" data-semantic-parent="32" data-semantic-speech="StartFraction q Over left parenthesis r plus d right parenthesis squared EndFraction">
+                      <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="20" data-semantic-parent="30" data-semantic-speech="q" data-semantic-prefix="Numerator" transform="translate(1694,676)">
+                        <use data-c="1D45E" xlink:href="#dipole-field-MJX-13-TEX-I-1D45E"/>
+                      </g>
+                      <g data-mml-node="mrow" transform="translate(220,-719.9)">
+                        <g data-mml-node="msup" data-semantic-type="superscript" data-semantic-role="leftright" data-semantic-fencepointer="25" data-semantic-id="27" data-semantic-children="29,26" data-semantic-parent="30" data-semantic-speech="left parenthesis r plus d right parenthesis squared" data-semantic-prefix="Denominator">
+                          <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="29" data-semantic-children="28" data-semantic-content="21,25" data-semantic-parent="27" data-semantic-speech="left parenthesis r plus d right parenthesis" data-semantic-prefix="Base">
+                            <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="21" data-semantic-parent="29" data-semantic-speech="left parenthesis">
+                              <use data-c="28" xlink:href="#dipole-field-MJX-13-TEX-N-28"/>
+                            </g>
+                            <g data-mml-node="mrow" data-semantic-type="infixop" data-semantic-role="addition" data-semantic-id="28" data-semantic-children="22,24" data-semantic-content="23" data-semantic-parent="29" data-semantic-speech="r plus d" transform="translate(389,0)">
+                              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="22" data-semantic-parent="28" data-semantic-speech="r">
+                                <use data-c="1D45F" xlink:href="#dipole-field-MJX-13-TEX-I-1D45F"/>
+                              </g>
+                              <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="addition" data-semantic-id="23" data-semantic-parent="28" data-semantic-operator="infixop,+" data-semantic-speech="plus" transform="translate(673.2,0)">
+                                <use data-c="2B" xlink:href="#dipole-field-MJX-13-TEX-N-2B"/>
+                              </g>
+                              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="24" data-semantic-parent="28" data-semantic-speech="d" transform="translate(1673.4,0)">
+                                <use data-c="1D451" xlink:href="#dipole-field-MJX-13-TEX-I-1D451"/>
+                              </g>
+                            </g>
+                            <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="25" data-semantic-parent="29" data-semantic-speech="right parenthesis" transform="translate(2582.4,0)">
+                              <use data-c="29" xlink:href="#dipole-field-MJX-13-TEX-N-29"/>
+                            </g>
+                          </g>
+                          <g data-mml-node="mn" transform="translate(3004.4,289) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="26" data-semantic-parent="27" data-semantic-speech="2" data-semantic-prefix="Exponent">
+                            <use data-c="32" xlink:href="#dipole-field-MJX-13-TEX-N-32"/>
+                          </g>
+                        </g>
+                      </g>
+                      <rect width="3608" height="60" x="120" y="220"/>
+                    </g>
+                  </g>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="31" data-semantic-parent="33" data-semantic-attributes="texclass:CLOSE" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(7134,0) translate(0 -0.5)">
+                  <use data-c="29" xlink:href="#dipole-field-MJX-13-TEX-S3-29"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="dipole-field-regime" transform="translate(332.0,163.4) translate(-22.9,-6.9)">
+    <g id="dipole-field-__g-12">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -1.216px" width="45.728px" height="13.776px" role="img" focusable="false" viewBox="0 -694 2526.6 761" x="0.0" y="0.0">
+        <defs>
+          <path id="dipole-field-MJX-14-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/>
+          <path id="dipole-field-MJX-14-TEX-N-226A" d="M639 -48Q639 -54 634 -60T619 -67H618Q612 -67 536 -26Q430 33 329 88Q61 235 59 239Q56 243 56 250T59 261Q62 266 336 415T615 567L619 568Q622 567 625 567Q639 562 639 548Q639 540 633 534Q632 532 374 391L117 250L374 109Q632 -32 633 -34Q639 -40 639 -48ZM944 -48Q944 -54 939 -60T924 -67H923Q917 -67 841 -26Q735 33 634 88Q366 235 364 239Q361 243 361 250T364 261Q367 266 641 415T920 567L924 568Q927 567 930 567Q944 562 944 548Q944 540 938 534Q937 532 679 391L422 250L679 109Q937 -32 938 -34Q944 -40 944 -48Z"/>
+          <path id="dipole-field-MJX-14-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="relseq" data-semantic-role="inequality" data-semantic-id="3" data-semantic-children="0,2" data-semantic-content="1" data-semantic-speech="d much less than r">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="3" data-semantic-speech="d">
+              <use data-c="1D451" xlink:href="#dipole-field-MJX-14-TEX-I-1D451"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="inequality" data-semantic-id="1" data-semantic-parent="3" data-semantic-operator="relseq,≪" data-semantic-speech="much less than" transform="translate(797.8,0)">
+              <use data-c="226A" xlink:href="#dipole-field-MJX-14-TEX-N-226A"/>
+            </g>
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="3" data-semantic-speech="r" transform="translate(2075.6,0)">
+              <use data-c="1D45F" xlink:href="#dipole-field-MJX-14-TEX-I-1D45F"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

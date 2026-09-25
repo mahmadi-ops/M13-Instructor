@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ke-cartoon-figure" viewBox="0 0 456 346">
+  <defs>
+    <clipPath id="ke-cartoon-__clipPath-0">
+      <rect x="8.0" y="8.0" width="440.0" height="330.0"/>
+    </clipPath>
+    <clipPath id="ke-cartoon-__clipPath-1">
+      <rect x="8.0" y="8.0" width="440.0" height="330.0"/>
+    </clipPath>
+    <marker id="ke-cartoon-arrow-head-end-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="ke-cartoon-arrow-head-end-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="ke-cartoon-arrow-head-start-2_None_24_60-black" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="black" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="ke-cartoon-arrow-head-start-2_None_24_60-black-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="ke-cartoon-axes" stroke="black" stroke-width="2">
+    <line id="ke-cartoon-__line-0" x1="8.0" y1="309.8" x2="448.0" y2="309.8" stroke="black" stroke-width="2" marker-end="url(#ke-cartoon-arrow-head-end-2_None_24_60-black)"/>
+    <line id="ke-cartoon-__line-1" x1="35.5" y1="338.0" x2="35.5" y2="8.0" stroke="black" stroke-width="2" marker-end="url(#ke-cartoon-arrow-head-end-2_None_24_60-black)"/>
+  </g>
+  <g id="ke-cartoon-__label-0" transform="translate(442.0,303.8) translate(-8.8,-8.2)">
+    <g id="ke-cartoon-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="8.776px" height="8.216px" role="img" focusable="false" viewBox="0 -443 485 454" x="0.0" y="0.0">
+        <defs>
+          <path id="ke-cartoon-MJX-2-TEX-I-1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="v">
+              <use data-c="1D463" xlink:href="#ke-cartoon-MJX-2-TEX-I-1D463"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="ke-cartoon-wall">
+    <line id="ke-cartoon-__line-2" x1="379.2" y1="309.8" x2="379.2" y2="14.4" stroke="#777" stroke-width="2.5" fill="none"/>
+    <g id="ke-cartoon-__group-0">
+      <line id="ke-cartoon-__line-3-k_0" x1="379.2" y1="307.2" x2="403.3" y2="293.1" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-4-k_1" x1="379.2" y1="280.2" x2="403.3" y2="266.1" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-5-k_2" x1="379.2" y1="253.3" x2="403.3" y2="239.1" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-6-k_3" x1="379.2" y1="226.3" x2="403.3" y2="212.2" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-7-k_4" x1="379.2" y1="199.3" x2="403.3" y2="185.2" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-8-k_5" x1="379.2" y1="172.4" x2="403.3" y2="158.2" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-9-k_6" x1="379.2" y1="145.4" x2="403.3" y2="131.3" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-10-k_7" x1="379.2" y1="118.4" x2="403.3" y2="104.3" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-11-k_8" x1="379.2" y1="91.5" x2="403.3" y2="77.3" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-12-k_9" x1="379.2" y1="64.5" x2="403.3" y2="50.4" stroke="#777" stroke-width="1.5" fill="none"/>
+      <line id="ke-cartoon-__line-13-k_10" x1="379.2" y1="37.5" x2="403.3" y2="23.4" stroke="#777" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <path id="ke-cartoon-newtonian" stroke="green" stroke-width="4.5" fill="none" d="M 35.5 309.8 L 39.5 309.7 L 43.5 309.7 L 47.5 309.7 L 51.5 309.6 L 55.4 309.5 L 59.4 309.4 L 63.4 309.3 L 67.4 309.2 L 71.4 309.1 L 75.4 308.9 L 79.4 308.7 L 83.3 308.5 L 87.3 308.3 L 91.3 308.1 L 95.3 307.8 L 99.3 307.5 L 103.3 307.3 L 107.3 307.0 L 111.3 306.6 L 115.2 306.3 L 119.2 305.9 L 123.2 305.6 L 127.2 305.2 L 131.2 304.8 L 135.2 304.4 L 139.2 303.9 L 143.2 303.5 L 147.1 303.0 L 151.1 302.5 L 155.1 302.0 L 159.1 301.4 L 163.1 300.9 L 167.1 300.3 L 171.1 299.8 L 175.1 299.2 L 179.0 298.6 L 183.0 297.9 L 187.0 297.3 L 191.0 296.6 L 195.0 295.9 L 199.0 295.2 L 203.0 294.5 L 207.0 293.8 L 210.9 293.0 L 214.9 292.3 L 218.9 291.5 L 222.9 290.7 L 226.9 289.8 L 230.9 289.0 L 234.9 288.2 L 238.9 287.3 L 242.8 286.4 L 246.8 285.5 L 250.8 284.6 L 254.8 283.6 L 258.8 282.7 L 262.8 281.7 L 266.8 280.7 L 270.8 279.7 L 274.8 278.7 L 278.7 277.6 L 282.7 276.5 L 286.7 275.5 L 290.7 274.4 L 294.7 273.3 L 298.7 272.1 L 302.7 271.0 L 306.6 269.8 L 310.6 268.6 L 314.6 267.4 L 318.6 266.2 L 322.6 265.0 L 326.6 263.7 L 330.6 262.4 L 334.6 261.2 L 338.5 259.9 L 342.5 258.5 L 346.5 257.2 L 350.5 255.8 L 354.5 254.5 L 358.5 253.1 L 362.5 251.7 L 366.5 250.2 L 370.4 248.8 L 374.4 247.3 L 378.4 245.9 L 382.4 244.4 L 386.4 242.9 L 390.4 241.3 L 394.4 239.8 L 398.4 238.2 L 402.3 236.6 L 406.3 235.0 L 410.3 233.4 L 414.3 231.8 L 418.3 230.1 L 422.3 228.5 L 426.3 226.8 L 430.3 225.1 L 434.2 223.4" clip-path="url(#ke-cartoon-__clipPath-1)"/>
+  <path id="ke-cartoon-relativistic" stroke="blue" stroke-width="4.5" fill="none" d="M 35.5 309.8 L 38.8 309.7 L 42.0 309.7 L 45.3 309.7 L 48.6 309.7 L 51.8 309.6 L 55.1 309.5 L 58.4 309.5 L 61.6 309.4 L 64.9 309.3 L 68.2 309.2 L 71.4 309.0 L 74.7 308.9 L 78.0 308.8 L 81.2 308.6 L 84.5 308.4 L 87.8 308.2 L 91.0 308.0 L 94.3 307.8 L 97.5 307.6 L 100.8 307.4 L 104.1 307.1 L 107.3 306.9 L 110.6 306.6 L 113.9 306.3 L 117.1 306.0 L 120.4 305.6 L 123.7 305.3 L 126.9 305.0 L 130.2 304.6 L 133.5 304.2 L 136.7 303.8 L 140.0 303.4 L 143.3 302.9 L 146.5 302.5 L 149.8 302.0 L 153.1 301.5 L 156.3 301.0 L 159.6 300.5 L 162.9 299.9 L 166.1 299.3 L 169.4 298.7 L 172.7 298.1 L 175.9 297.5 L 179.2 296.8 L 182.5 296.1 L 185.7 295.4 L 189.0 294.7 L 192.2 293.9 L 195.5 293.1 L 198.8 292.2 L 202.0 291.4 L 205.3 290.5 L 208.6 289.5 L 211.8 288.6 L 215.1 287.6 L 218.4 286.5 L 221.6 285.4 L 224.9 284.3 L 228.2 283.1 L 231.4 281.9 L 234.7 280.6 L 238.0 279.3 L 241.2 277.9 L 244.5 276.4 L 247.8 274.9 L 251.0 273.3 L 254.3 271.7 L 257.6 269.9 L 260.8 268.1 L 264.1 266.2 L 267.4 264.2 L 270.6 262.1 L 273.9 259.9 L 277.2 257.6 L 280.4 255.2 L 283.7 252.6 L 287.0 249.8 L 290.2 246.9 L 293.5 243.9 L 296.8 240.6 L 300.0 237.1 L 303.3 233.4 L 306.5 229.4 L 309.8 225.1 L 313.1 220.5 L 316.3 215.5 L 319.6 210.1 L 322.9 204.2 L 326.1 197.7 L 329.4 190.6 L 332.7 182.7 L 335.9 173.9 L 339.2 164.0 L 342.5 152.8 L 345.7 140.0 L 349.0 125.1 L 352.3 107.5 L 355.5 86.4 L 358.8 60.3 L 362.1 26.9" clip-path="url(#ke-cartoon-__clipPath-1)"/>
+  <g id="ke-cartoon-c-label" transform="translate(379.2,314.8) translate(-3.9,-0.0)">
+    <g id="ke-cartoon-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="7.840px" height="8.200px" role="img" focusable="false" viewBox="0 -442 433 453" x="0.0" y="0.0">
+        <defs>
+          <path id="ke-cartoon-MJX-3-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="c">
+              <use data-c="1D450" xlink:href="#ke-cartoon-MJX-3-TEX-I-1D450"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="ke-cartoon-origin-label" transform="translate(31.5,313.8) translate(-9.0,-0.0)">
+    <g id="ke-cartoon-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+        <defs>
+          <path id="ke-cartoon-MJX-4-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mn" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="0">
+              <use data-c="30" xlink:href="#ke-cartoon-MJX-4-TEX-N-30"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="ke-cartoon-rel-label" transform="translate(321.1,174.5) translate(-108.5,-13.0)">
+    <g id="ke-cartoon-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="108.456px" height="12.960px" role="img" focusable="false" viewBox="0 -694 5992 716" x="0.0" y="0.0">
+        <defs>
+          <path id="ke-cartoon-MJX-5-TEX-N-52" d="M130 622Q123 629 119 631T103 634T60 637H27V683H202H236H300Q376 683 417 677T500 648Q595 600 609 517Q610 512 610 501Q610 468 594 439T556 392T511 361T472 343L456 338Q459 335 467 332Q497 316 516 298T545 254T559 211T568 155T578 94Q588 46 602 31T640 16H645Q660 16 674 32T692 87Q692 98 696 101T712 105T728 103T732 90Q732 59 716 27T672 -16Q656 -22 630 -22Q481 -16 458 90Q456 101 456 163T449 246Q430 304 373 320L363 322L297 323H231V192L232 61Q238 51 249 49T301 46H334V0H323Q302 3 181 3Q59 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM491 499V509Q491 527 490 539T481 570T462 601T424 623T362 636Q360 636 340 636T304 637H283Q238 637 234 628Q231 624 231 492V360H289Q390 360 434 378T489 456Q491 467 491 499Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-76" d="M338 431Q344 429 422 429Q479 429 503 431H508V385H497Q439 381 423 345Q421 341 356 172T288 -2Q283 -11 263 -11Q244 -11 239 -2Q99 359 98 364Q93 378 82 381T43 385H19V431H25L33 430Q41 430 53 430T79 430T104 429T122 428Q217 428 232 431H240V385H226Q187 384 184 370Q184 366 235 234L286 102L377 341V349Q377 363 367 372T349 383T335 385H331V431H338Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="ke-cartoon-MJX-5-TEX-I-1D43E" d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="4" data-semantic-children="0,2" data-semantic-collapsed="(4 (c 3) 0 2)" data-semantic-speech="Relativistic upper K">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-parent="4" data-semantic-speech="Relativistic">
+              <use data-c="52" xlink:href="#ke-cartoon-MJX-5-TEX-N-52"/>
+              <use data-c="65" xlink:href="#ke-cartoon-MJX-5-TEX-N-65" transform="translate(736,0)"/>
+              <use data-c="6C" xlink:href="#ke-cartoon-MJX-5-TEX-N-6C" transform="translate(1180,0)"/>
+              <use data-c="61" xlink:href="#ke-cartoon-MJX-5-TEX-N-61" transform="translate(1458,0)"/>
+              <use data-c="74" xlink:href="#ke-cartoon-MJX-5-TEX-N-74" transform="translate(1958,0)"/>
+              <use data-c="69" xlink:href="#ke-cartoon-MJX-5-TEX-N-69" transform="translate(2347,0)"/>
+              <use data-c="76" xlink:href="#ke-cartoon-MJX-5-TEX-N-76" transform="translate(2625,0)"/>
+              <use data-c="69" xlink:href="#ke-cartoon-MJX-5-TEX-N-69" transform="translate(3153,0)"/>
+              <use data-c="73" xlink:href="#ke-cartoon-MJX-5-TEX-N-73" transform="translate(3431,0)"/>
+              <use data-c="74" xlink:href="#ke-cartoon-MJX-5-TEX-N-74" transform="translate(3825,0)"/>
+              <use data-c="69" xlink:href="#ke-cartoon-MJX-5-TEX-N-69" transform="translate(4214,0)"/>
+              <use data-c="63" xlink:href="#ke-cartoon-MJX-5-TEX-N-63" transform="translate(4492,0)"/>
+            </g>
+            <g data-mml-node="mstyle" transform="translate(4936,0)">
+              <g data-mml-node="mspace"/>
+            </g>
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="upper K" transform="translate(5103,0)">
+              <use data-c="1D43E" xlink:href="#ke-cartoon-MJX-5-TEX-I-1D43E"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="ke-cartoon-newt-label" transform="translate(324.2,285.4) translate(-52.0,-0.0)">
+    <g id="ke-cartoon-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="104.088px" height="12.560px" role="img" focusable="false" viewBox="0 -683 5751 694" x="0.0" y="0.0">
+        <defs>
+          <path id="ke-cartoon-MJX-6-TEX-N-4E" d="M42 46Q74 48 94 56T118 69T128 86V634H124Q114 637 52 637H25V683H232L235 680Q237 679 322 554T493 303L578 178V598Q572 608 568 613T544 627T492 637H475V683H483Q498 680 600 680Q706 680 715 683H724V637H707Q634 633 622 598L621 302V6L614 0H600Q585 0 582 3T481 150T282 443T171 605V345L172 86Q183 50 257 46H274V0H265Q250 3 150 3Q48 3 33 0H25V46H42Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+          <path id="ke-cartoon-MJX-6-TEX-I-1D43E" d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="4" data-semantic-children="0,2" data-semantic-collapsed="(4 (c 3) 0 2)" data-semantic-speech="Newtonian upper K">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-parent="4" data-semantic-speech="Newtonian">
+              <use data-c="4E" xlink:href="#ke-cartoon-MJX-6-TEX-N-4E"/>
+              <use data-c="65" xlink:href="#ke-cartoon-MJX-6-TEX-N-65" transform="translate(750,0)"/>
+              <use data-c="77" xlink:href="#ke-cartoon-MJX-6-TEX-N-77" transform="translate(1194,0)"/>
+              <use data-c="74" xlink:href="#ke-cartoon-MJX-6-TEX-N-74" transform="translate(1916,0)"/>
+              <use data-c="6F" xlink:href="#ke-cartoon-MJX-6-TEX-N-6F" transform="translate(2305,0)"/>
+              <use data-c="6E" xlink:href="#ke-cartoon-MJX-6-TEX-N-6E" transform="translate(2805,0)"/>
+              <use data-c="69" xlink:href="#ke-cartoon-MJX-6-TEX-N-69" transform="translate(3361,0)"/>
+              <use data-c="61" xlink:href="#ke-cartoon-MJX-6-TEX-N-61" transform="translate(3639,0)"/>
+              <use data-c="6E" xlink:href="#ke-cartoon-MJX-6-TEX-N-6E" transform="translate(4139,0)"/>
+            </g>
+            <g data-mml-node="mstyle" transform="translate(4695,0)">
+              <g data-mml-node="mspace"/>
+            </g>
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="upper K" transform="translate(4862,0)">
+              <use data-c="1D43E" xlink:href="#ke-cartoon-MJX-6-TEX-I-1D43E"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="ke-cartoon-agree-label" transform="translate(131.8,226.1) translate(-92.5,-15.2)">
+    <g id="ke-cartoon-__g-5">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.856px" width="185.016px" height="15.216px" role="img" focusable="false" viewBox="0 -683 10222 840.8" x="0.0" y="0.0">
+        <defs>
+          <path id="ke-cartoon-MJX-7-TEX-N-46" d="M128 619Q121 626 117 628T101 631T58 634H25V680H582V676Q584 670 596 560T610 444V440H570V444Q563 493 561 501Q555 538 543 563T516 601T477 622T431 631T374 633H334H286Q252 633 244 631T233 621Q232 619 232 490V363H284Q287 363 303 363T327 364T349 367T372 373T389 385Q407 403 410 459V480H450V200H410V221Q407 276 389 296Q381 303 371 307T348 313T327 316T303 317T284 317H232V189L233 61Q240 54 245 52T270 48T333 46H360V0H348Q324 3 182 3Q51 3 36 0H25V46H58Q100 47 109 49T128 61V619Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-I-1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-226A" d="M639 -48Q639 -54 634 -60T619 -67H618Q612 -67 536 -26Q430 33 329 88Q61 235 59 239Q56 243 56 250T59 261Q62 266 336 415T615 567L619 568Q622 567 625 567Q639 562 639 548Q639 540 633 534Q632 532 374 391L117 250L374 109Q632 -32 633 -34Q639 -40 639 -48ZM944 -48Q944 -54 939 -60T924 -67H923Q917 -67 841 -26Q735 33 634 88Q366 235 364 239Q361 243 361 250T364 261Q367 266 641 415T920 567L924 568Q927 567 930 567Q944 562 944 548Q944 540 938 534Q937 532 679 391L422 250L679 109Q937 -32 938 -34Q944 -40 944 -48Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-I-1D43E" d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-2248" d="M55 319Q55 360 72 393T114 444T163 472T205 482Q207 482 213 482T223 483Q262 483 296 468T393 413L443 381Q502 346 553 346Q609 346 649 375T694 454Q694 465 698 474T708 483Q722 483 722 452Q722 386 675 338T555 289Q514 289 468 310T388 357T308 404T224 426Q164 426 125 393T83 318Q81 289 69 289Q55 289 55 319ZM55 85Q55 126 72 159T114 210T163 238T205 248Q207 248 213 248T223 249Q262 249 296 234T393 179L443 147Q502 112 553 112Q609 112 649 141T694 220Q694 249 708 249T722 217Q722 153 675 104T555 55Q514 55 468 76T388 123T308 170T224 192Q164 192 125 159T83 84Q80 55 69 55Q55 55 55 85Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="ke-cartoon-MJX-7-TEX-N-77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="punctuated" data-semantic-role="sequence" data-semantic-id="17" data-semantic-children="15,5,16" data-semantic-content="5" data-semantic-speech="For v much less than c colon upper K Subscript rel Baseline almost equals upper K Subscript new Baseline">
+            <g data-mml-node="mrow" data-semantic-type="punctuated" data-semantic-role="text" data-semantic-id="15" data-semantic-children="0,13" data-semantic-parent="17" data-semantic-collapsed="(15 (c 14) 0 13)" data-semantic-speech="For v much less than c">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-parent="15" data-semantic-speech="For">
+                <use data-c="46" xlink:href="#ke-cartoon-MJX-7-TEX-N-46"/>
+                <use data-c="6F" xlink:href="#ke-cartoon-MJX-7-TEX-N-6F" transform="translate(653,0)"/>
+                <use data-c="72" xlink:href="#ke-cartoon-MJX-7-TEX-N-72" transform="translate(1153,0)"/>
+              </g>
+              <g data-mml-node="mstyle" transform="translate(1545,0)">
+                <g data-mml-node="mspace"/>
+              </g>
+              <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="inequality" data-semantic-id="13" data-semantic-children="2,4" data-semantic-content="3" data-semantic-parent="15" data-semantic-speech="v much less than c" transform="translate(1712,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="13" data-semantic-speech="v">
+                  <use data-c="1D463" xlink:href="#ke-cartoon-MJX-7-TEX-I-1D463"/>
+                </g>
+                <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="inequality" data-semantic-id="3" data-semantic-parent="13" data-semantic-operator="relseq,≪" data-semantic-speech="much less than" transform="translate(762.8,0)">
+                  <use data-c="226A" xlink:href="#ke-cartoon-MJX-7-TEX-N-226A"/>
+                </g>
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="4" data-semantic-parent="13" data-semantic-speech="c" transform="translate(2040.6,0)">
+                  <use data-c="1D450" xlink:href="#ke-cartoon-MJX-7-TEX-I-1D450"/>
+                </g>
+              </g>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="colon" data-semantic-id="5" data-semantic-parent="17" data-semantic-operator="punctuated" data-semantic-speech="colon" transform="translate(4463.3,0)">
+              <use data-c="3A" xlink:href="#ke-cartoon-MJX-7-TEX-N-3A"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="relseq" data-semantic-role="equality" data-semantic-id="16" data-semantic-children="8,12" data-semantic-content="9" data-semantic-parent="17" data-semantic-speech="upper K Subscript rel Baseline almost equals upper K Subscript new Baseline" transform="translate(5019.1,0)">
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="8" data-semantic-children="6,7" data-semantic-parent="16" data-semantic-speech="upper K Subscript rel Baseline">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-parent="8" data-semantic-speech="upper K" data-semantic-prefix="Base">
+                  <use data-c="1D43E" xlink:href="#ke-cartoon-MJX-7-TEX-I-1D43E"/>
+                </g>
+                <g data-mml-node="TeXAtom" transform="translate(882,-150) scale(0.707)" data-mjx-texclass="ORD">
+                  <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="7" data-semantic-parent="8" data-semantic-attributes="texclass:ORD" data-semantic-speech="rel" data-semantic-prefix="Subscript">
+                    <use data-c="72" xlink:href="#ke-cartoon-MJX-7-TEX-N-72"/>
+                    <use data-c="65" xlink:href="#ke-cartoon-MJX-7-TEX-N-65" transform="translate(392,0)"/>
+                    <use data-c="6C" xlink:href="#ke-cartoon-MJX-7-TEX-N-6C" transform="translate(836,0)"/>
+                  </g>
+                </g>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="relation" data-semantic-role="equality" data-semantic-id="9" data-semantic-parent="16" data-semantic-operator="relseq,≈" data-semantic-speech="almost equals" transform="translate(1997.5,0)">
+                <use data-c="2248" xlink:href="#ke-cartoon-MJX-7-TEX-N-2248"/>
+              </g>
+              <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="12" data-semantic-children="10,11" data-semantic-parent="16" data-semantic-speech="upper K Subscript new Baseline" transform="translate(3053.3,0)">
+                <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="10" data-semantic-parent="12" data-semantic-speech="upper K" data-semantic-prefix="Base">
+                  <use data-c="1D43E" xlink:href="#ke-cartoon-MJX-7-TEX-I-1D43E"/>
+                </g>
+                <g data-mml-node="TeXAtom" transform="translate(882,-150) scale(0.707)" data-mjx-texclass="ORD">
+                  <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="11" data-semantic-parent="12" data-semantic-attributes="texclass:ORD" data-semantic-speech="new" data-semantic-prefix="Subscript">
+                    <use data-c="6E" xlink:href="#ke-cartoon-MJX-7-TEX-N-6E"/>
+                    <use data-c="65" xlink:href="#ke-cartoon-MJX-7-TEX-N-65" transform="translate(556,0)"/>
+                    <use data-c="77" xlink:href="#ke-cartoon-MJX-7-TEX-N-77" transform="translate(1000,0)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <line id="ke-cartoon-agree-arrow" x1="138.6" y1="239.1" x2="178.4" y2="289.9" stroke="black" stroke-width="2" fill="none" marker-end="url(#ke-cartoon-arrow-head-end-2_None_24_60-black)"/>
+</svg>

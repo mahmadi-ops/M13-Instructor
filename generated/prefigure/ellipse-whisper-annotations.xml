@@ -1,0 +1,51 @@
+<diagram>
+  <annotations>
+    <annotation id="ellipse-whisper-gallery" speech2="A whispering gallery: sound leaving one focus reflects off the elliptical wall and reconverges at the other focus">
+      <grouped>ellipse-whisper-gallery</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipse-whisper-gallery</active>
+        <active>ellipse-whisper-paths</active>
+        <active>ellipse-whisper-f2</active>
+        <active>ellipse-whisper-f1</active>
+      </children>
+      <components>
+        <active>ellipse-whisper-gallery</active>
+        <active>ellipse-whisper-paths</active>
+        <active>ellipse-whisper-f2</active>
+        <active>ellipse-whisper-f1</active>
+      </components>
+    </annotation>
+    <annotation id="ellipse-whisper-gallery" speech2="The elliptical wall of the gallery, seen from above" sonify="yes">
+      <active>ellipse-whisper-gallery</active>
+      <position>1</position>
+      <parents>
+        <grouped>ellipse-whisper-gallery</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>ellipse-whisper-gallery</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="ellipse-whisper-paths" speech2="Five sound paths leaving the speaker at one focus, striking the wall at different points, and all arriving at the listener at the other focus">
+      <active>ellipse-whisper-paths</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipse-whisper-gallery</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-whisper-f2" speech2="One focus, where the speaker whispers">
+      <active>ellipse-whisper-f2</active>
+      <position>3</position>
+      <parents>
+        <grouped>ellipse-whisper-gallery</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-whisper-f1" speech2="The other focus, where the whisper is heard">
+      <active>ellipse-whisper-f1</active>
+      <position>4</position>
+      <parents>
+        <grouped>ellipse-whisper-gallery</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

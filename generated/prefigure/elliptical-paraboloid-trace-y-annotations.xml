@@ -1,0 +1,21 @@
+<diagram>
+  <annotations>
+    <annotation id="elliptical-paraboloid-trace-y-figure" speech2="The trace in the plane y = -3: a parabola opening upward">
+      <grouped>elliptical-paraboloid-trace-y-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>elliptical-paraboloid-trace-y-trace-y</active>
+      </children>
+      <components>
+        <active>elliptical-paraboloid-trace-y-trace-y</active>
+      </components>
+    </annotation>
+    <annotation id="elliptical-paraboloid-trace-y-trace-y" speech2="In the plane y equals negative 3, the trace z equals x squared over 4 plus 1 is a parabola opening upward with vertex at height 1">
+      <active>elliptical-paraboloid-trace-y-trace-y</active>
+      <position>1</position>
+      <parents>
+        <grouped>elliptical-paraboloid-trace-y-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

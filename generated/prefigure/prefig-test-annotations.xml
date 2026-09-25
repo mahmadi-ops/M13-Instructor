@@ -1,0 +1,89 @@
+<diagram>
+  <annotations>
+    <annotation id="prefig-test-figure" speech2="The graph of a function and its tangent line at the point a equals 1">
+      <grouped>prefig-test-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig-test-grid-axes</active>
+        <active>prefig-test-graph-tangent</active>
+      </children>
+      <components>
+        <active>prefig-test-grid-axes</active>
+        <active>prefig-test-graph-tangent</active>
+      </components>
+    </annotation>
+    <annotation id="prefig-test-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefig-test-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefig-test-grid</active>
+        <active>prefig-test-axes</active>
+      </children>
+      <components>
+        <active>prefig-test-grid</active>
+        <active>prefig-test-axes</active>
+      </components>
+      <parents>
+        <grouped>prefig-test-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-test-grid" speech2="The coordinate grid">
+      <active>prefig-test-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig-test-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-test-axes" speech2="The coordinate axes">
+      <active>prefig-test-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig-test-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-test-graph-tangent" speech2="The graph and its tangent line">
+      <grouped>prefig-test-graph-tangent</grouped>
+      <position>2</position>
+      <children>
+        <active>prefig-test-function</active>
+        <active>prefig-test-point</active>
+        <active>prefig-test-tangent</active>
+      </children>
+      <components>
+        <active>prefig-test-function</active>
+        <active>prefig-test-point</active>
+        <active>prefig-test-tangent</active>
+      </components>
+      <parents>
+        <grouped>prefig-test-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-test-function" speech2="The graph of the function f" sonify="yes">
+      <active>prefig-test-function</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefig-test-graph-tangent</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefig-test-function</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="prefig-test-point" speech2="The point a comma f of a">
+      <active>prefig-test-point</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefig-test-graph-tangent</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefig-test-tangent" speech2="The tangent line to the graph of f at the point" sonify="yes" speech="This line is y equals f of a plus the derivative at a times the quantity x minus a">
+      <active>prefig-test-tangent</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefig-test-graph-tangent</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>prefig-test-tangent</ACTIVE>
+      </sonification>
+    </annotation>
+  </annotations>
+</diagram>

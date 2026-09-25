@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-collision-directrix-figure" speech2="A parabolic trajectory launched from the origin O. A dashed horizontal line high above it is the directrix, at height v naught squared over two g. The apex of the parabola is at height H, and a dashed horizontal line at height H over two meets the descending branch at the collision point C. Directly above C, on the directrix, is the release point B, and a downward arrow of length h joins B to C.">
+      <grouped>prefigure-collision-directrix-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-collision-directrix-cd-path</active>
+        <active>prefigure-collision-directrix-cd-directrix</active>
+        <active>prefigure-collision-directrix-cd-B</active>
+        <active>prefigure-collision-directrix-cd-C</active>
+        <active>prefigure-collision-directrix-cd-fall</active>
+      </children>
+      <components>
+        <active>prefigure-collision-directrix-cd-path</active>
+        <active>prefigure-collision-directrix-cd-directrix</active>
+        <active>prefigure-collision-directrix-cd-B</active>
+        <active>prefigure-collision-directrix-cd-C</active>
+        <active>prefigure-collision-directrix-cd-fall</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-collision-directrix-cd-path" speech2="The parabolic path of the projectile.">
+      <active>prefigure-collision-directrix-cd-path</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-collision-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-collision-directrix-cd-directrix" speech2="The directrix, a horizontal line at height v naught squared over two g.">
+      <active>prefigure-collision-directrix-cd-directrix</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-collision-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-collision-directrix-cd-B" speech2="The release point B on the directrix.">
+      <active>prefigure-collision-directrix-cd-B</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-collision-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-collision-directrix-cd-C" speech2="The collision point C on the descending branch, at half the maximum height.">
+      <active>prefigure-collision-directrix-cd-C</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-collision-directrix-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-collision-directrix-cd-fall" speech2="The depth h through which the ball falls from B to C.">
+      <active>prefigure-collision-directrix-cd-fall</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-collision-directrix-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

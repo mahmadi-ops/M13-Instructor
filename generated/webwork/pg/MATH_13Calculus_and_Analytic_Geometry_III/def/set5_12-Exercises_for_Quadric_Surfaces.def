@@ -1,0 +1,11 @@
+openDate          = 01/01/2027 at 12:00am
+dueDate           = 12/31/2027 at 10:00pm
+answerDate        = 12/31/2027 at 10:00pm
+paperHeaderFile   = MATH_13Calculus_and_Analytic_Geometry_III/header/5_12-Exercises_for_Quadric_Surfaces.pg
+screenHeaderFile  = MATH_13Calculus_and_Analytic_Geometry_III/header/5_12-Exercises_for_Quadric_Surfaces.pg
+description       = Exercises for Quadric Surfaces
+problemListV2
+problem_start
+source_file = MATH_13Calculus_and_Analytic_Geometry_III/5-Exercises/5_12-Exercises_for_Quadric_Surfaces/5_12_1-Matching_Quadric_Surfaces.pg
+problem_id = 1
+problem_end

@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="xy-on-circle-figure" speech2="The circle x squared plus y squared equals 8 with an inscribed rectangle whose corners are the four constrained extrema">
+      <grouped>xy-on-circle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>xy-on-circle-constraint</active>
+        <active>xy-on-circle-rectangle</active>
+        <active>xy-on-circle-corners</active>
+      </children>
+      <components>
+        <active>xy-on-circle-constraint</active>
+        <active>xy-on-circle-rectangle</active>
+        <active>xy-on-circle-corners</active>
+      </components>
+    </annotation>
+    <annotation id="xy-on-circle-constraint" speech2="The constraint curve, the circle x squared plus y squared equals 8">
+      <active>xy-on-circle-constraint</active>
+      <position>1</position>
+      <parents>
+        <grouped>xy-on-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="xy-on-circle-rectangle" speech2="The inscribed rectangle with corners plus or minus 2 comma plus or minus 2, whose area is 4 x y">
+      <active>xy-on-circle-rectangle</active>
+      <position>2</position>
+      <parents>
+        <grouped>xy-on-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="xy-on-circle-corners" speech2="The four constrained extrema of f">
+      <grouped>xy-on-circle-corners</grouped>
+      <position>3</position>
+      <children>
+        <active>xy-on-circle-corner-pp</active>
+        <active>xy-on-circle-corner-mm</active>
+        <active>xy-on-circle-corner-pm</active>
+        <active>xy-on-circle-corner-mp</active>
+      </children>
+      <components>
+        <active>xy-on-circle-corner-pp</active>
+        <active>xy-on-circle-corner-mm</active>
+        <active>xy-on-circle-corner-pm</active>
+        <active>xy-on-circle-corner-mp</active>
+      </components>
+      <parents>
+        <grouped>xy-on-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="xy-on-circle-corner-pp" speech2="The point 2 comma 2, where f attains its maximum value 16">
+      <active>xy-on-circle-corner-pp</active>
+      <position>1</position>
+      <parents>
+        <grouped>xy-on-circle-corners</grouped>
+      </parents>
+    </annotation>
+    <annotation id="xy-on-circle-corner-mm" speech2="The point minus 2 comma minus 2, where f also attains its maximum value 16">
+      <active>xy-on-circle-corner-mm</active>
+      <position>2</position>
+      <parents>
+        <grouped>xy-on-circle-corners</grouped>
+      </parents>
+    </annotation>
+    <annotation id="xy-on-circle-corner-pm" speech2="The point 2 comma minus 2, where f attains its minimum value minus 16">
+      <active>xy-on-circle-corner-pm</active>
+      <position>3</position>
+      <parents>
+        <grouped>xy-on-circle-corners</grouped>
+      </parents>
+    </annotation>
+    <annotation id="xy-on-circle-corner-mp" speech2="The point minus 2 comma 2, where f also attains its minimum value minus 16">
+      <active>xy-on-circle-corner-mp</active>
+      <position>4</position>
+      <parents>
+        <grouped>xy-on-circle-corners</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

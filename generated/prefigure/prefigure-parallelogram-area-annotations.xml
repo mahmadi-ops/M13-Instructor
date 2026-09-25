@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-parallelogram-area-figure" speech2="A parallelogram built on the vectors u and v, drawn tail to tail from the origin, with v along the horizontal direction. A dashed vertical segment from the tip of u down to v marks the height of the parallelogram, equal to the length of u times the sine of theta.">
+      <grouped>prefigure-parallelogram-area-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-parallelogram-area-par-vec-u</active>
+        <active>prefigure-parallelogram-area-par-vec-v</active>
+        <active>prefigure-parallelogram-area-par-side-top</active>
+        <active>prefigure-parallelogram-area-par-side-right</active>
+        <active>prefigure-parallelogram-area-par-height</active>
+        <active>prefigure-parallelogram-area-par-angle-theta</active>
+      </children>
+      <components>
+        <active>prefigure-parallelogram-area-par-vec-u</active>
+        <active>prefigure-parallelogram-area-par-vec-v</active>
+        <active>prefigure-parallelogram-area-par-side-top</active>
+        <active>prefigure-parallelogram-area-par-side-right</active>
+        <active>prefigure-parallelogram-area-par-height</active>
+        <active>prefigure-parallelogram-area-par-angle-theta</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-parallelogram-area-par-vec-u" speech2="Vector u, drawn from the origin at angle theta above v.">
+      <active>prefigure-parallelogram-area-par-vec-u</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-parallelogram-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parallelogram-area-par-vec-v" speech2="Vector v, along the horizontal direction.">
+      <active>prefigure-parallelogram-area-par-vec-v</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-parallelogram-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parallelogram-area-par-side-top" speech2="The side of the parallelogram parallel to v, starting at the tip of u.">
+      <active>prefigure-parallelogram-area-par-side-top</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-parallelogram-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parallelogram-area-par-side-right" speech2="The side of the parallelogram parallel to u, starting at the tip of v.">
+      <active>prefigure-parallelogram-area-par-side-right</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-parallelogram-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parallelogram-area-par-height" speech2="The dashed height of the parallelogram, with length equal to the length of u times the sine of theta.">
+      <active>prefigure-parallelogram-area-par-height</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-parallelogram-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-parallelogram-area-par-angle-theta" speech2="The angle theta between u and v, located at the origin.">
+      <active>prefigure-parallelogram-area-par-angle-theta</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-parallelogram-area-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-m1-taylor-figure" speech2="Two increasing curves on the interval from x equals zero point five to one point five. The solid blue curve is the natural logarithm and the dashed orange curve is its second degree Taylor polynomial about one. The curves agree closely, touching at x equals one, and the largest visible separation is at the left endpoint where a short dark red segment marks the gap.">
+      <grouped>prefigure-m1-taylor-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-m1-taylor-grid-axes</active>
+        <active>prefigure-m1-taylor-m1t-ln</active>
+        <active>prefigure-m1-taylor-m1t-p</active>
+        <active>prefigure-m1-taylor-m1t-gap</active>
+      </children>
+      <components>
+        <active>prefigure-m1-taylor-grid-axes</active>
+        <active>prefigure-m1-taylor-m1t-ln</active>
+        <active>prefigure-m1-taylor-m1t-p</active>
+        <active>prefigure-m1-taylor-m1t-gap</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-m1-taylor-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-m1-taylor-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-m1-taylor-grid</active>
+        <active>prefigure-m1-taylor-axes</active>
+      </children>
+      <components>
+        <active>prefigure-m1-taylor-grid</active>
+        <active>prefigure-m1-taylor-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-m1-taylor-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m1-taylor-grid" speech2="The coordinate grid">
+      <active>prefigure-m1-taylor-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-m1-taylor-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m1-taylor-axes" speech2="The coordinate axes">
+      <active>prefigure-m1-taylor-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-m1-taylor-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m1-taylor-m1t-ln" speech2="The graph of y equals the natural log of x.">
+      <active>prefigure-m1-taylor-m1t-ln</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-m1-taylor-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m1-taylor-m1t-p" speech2="The graph of the Taylor polynomial P of x equals x minus one, minus one half of the square of x minus one.">
+      <active>prefigure-m1-taylor-m1t-p</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-m1-taylor-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m1-taylor-m1t-gap" speech2="The vertical gap between the two graphs at the left endpoint x equals zero point five, of size about zero point zero six eight.">
+      <active>prefigure-m1-taylor-m1t-gap</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-m1-taylor-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

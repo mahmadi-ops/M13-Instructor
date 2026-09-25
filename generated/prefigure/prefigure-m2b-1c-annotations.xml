@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-m2b-1c-figure" speech2="Vectors u and v drawn from a common tail. A circle with a dot at its centre, above and to the left, represents u cross v pointing out of the page.">
+      <grouped>prefigure-m2b-1c-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-m2b-1c-pc-A</active>
+        <active>prefigure-m2b-1c-pc-B</active>
+        <active>prefigure-m2b-1c-pc-out</active>
+      </children>
+      <components>
+        <active>prefigure-m2b-1c-pc-A</active>
+        <active>prefigure-m2b-1c-pc-B</active>
+        <active>prefigure-m2b-1c-pc-out</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-m2b-1c-pc-A" speech2="The vector u.">
+      <active>prefigure-m2b-1c-pc-A</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-m2b-1c-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2b-1c-pc-B" speech2="The vector v.">
+      <active>prefigure-m2b-1c-pc-B</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-m2b-1c-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-m2b-1c-pc-out" speech2="A circle with a dot at its centre, the standard symbol for a vector pointing out of the page, representing u cross v.">
+      <active>prefigure-m2b-1c-pc-out</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-m2b-1c-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

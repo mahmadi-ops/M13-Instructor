@@ -1,0 +1,51 @@
+<diagram>
+  <annotations>
+    <annotation id="ellipse-def-ellipse" speech2="A horizontal ellipse illustrating the definition of an ellipse as the set of points whose distances to two foci have a constant sum">
+      <grouped>ellipse-def-ellipse</grouped>
+      <position>1</position>
+      <children>
+        <active>ellipse-def-ellipse</active>
+        <active>ellipse-def-foci</active>
+        <active>ellipse-def-focal-radii</active>
+        <active>ellipse-def-cov-top</active>
+      </children>
+      <components>
+        <active>ellipse-def-ellipse</active>
+        <active>ellipse-def-foci</active>
+        <active>ellipse-def-focal-radii</active>
+        <active>ellipse-def-cov-top</active>
+      </components>
+    </annotation>
+    <annotation id="ellipse-def-ellipse" speech2="The ellipse x squared over a squared plus y squared over b squared equals one, a blue oval wider than it is tall" sonify="yes">
+      <active>ellipse-def-ellipse</active>
+      <position>1</position>
+      <parents>
+        <grouped>ellipse-def-ellipse</grouped>
+      </parents>
+      <sonification>
+        <ACTIVE>ellipse-def-ellipse</ACTIVE>
+      </sonification>
+    </annotation>
+    <annotation id="ellipse-def-foci" speech2="The two foci F one at c comma zero and F two at minus c comma zero, both on the x axis inside the ellipse">
+      <active>ellipse-def-foci</active>
+      <position>2</position>
+      <parents>
+        <grouped>ellipse-def-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-def-focal-radii" speech2="Two segments drawn from the top co-vertex zero comma b to each focus; each has length a, showing that their sum equals two a">
+      <active>ellipse-def-focal-radii</active>
+      <position>3</position>
+      <parents>
+        <grouped>ellipse-def-ellipse</grouped>
+      </parents>
+    </annotation>
+    <annotation id="ellipse-def-cov-top" speech2="The top co-vertex at zero comma b, the end of the semi-minor axis">
+      <active>ellipse-def-cov-top</active>
+      <position>4</position>
+      <parents>
+        <grouped>ellipse-def-ellipse</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

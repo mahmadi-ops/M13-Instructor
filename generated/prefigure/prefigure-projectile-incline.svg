@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-projectile-incline-figure" width="430" height="290" viewBox="0 0 430 290">
+  <defs>
+    <clipPath id="prefigure-projectile-incline-__clipPath-0">
+      <rect x="5.0" y="5.0" width="420.0" height="280.0"/>
+    </clipPath>
+    <clipPath id="prefigure-projectile-incline-__clipPath-1">
+      <rect x="5.0" y="5.0" width="420.0" height="280.0"/>
+    </clipPath>
+    <marker id="prefigure-projectile-incline-arrow-head-end-2_None_24_60-red" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="red" stroke="none"/>
+    </marker>
+    <marker id="prefigure-projectile-incline-arrow-head-end-2_None_24_60-red-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="prefigure-projectile-incline-pi-axes" stroke="black" stroke-width="2">
+    <line id="prefigure-projectile-incline-__line-0" x1="5.0" y1="238.3" x2="425.0" y2="238.3" stroke="black" stroke-width="2"/>
+    <line id="prefigure-projectile-incline-__line-1" x1="48.1" y1="285.0" x2="48.1" y2="5.0" stroke="black" stroke-width="2"/>
+  </g>
+  <g id="prefigure-projectile-incline-__label-0" transform="translate(421.0,234.3) translate(-10.4,-8.2)">
+    <g id="prefigure-projectile-incline-__g-0">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#prefigure-projectile-incline-MJX-2-TEX-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-1" transform="translate(52.1,9.0) translate(0.0,-0.0)">
+    <g id="prefigure-projectile-incline-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+              <use data-c="1D466" xlink:href="#prefigure-projectile-incline-MJX-3-TEX-I-1D466"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <line id="prefigure-projectile-incline-pi-plane" x1="48.1" y1="238.3" x2="392.7" y2="59.1" stroke="black" stroke-width="2" fill="none"/>
+  <path id="prefigure-projectile-incline-pi-path" stroke="blue" stroke-width="2" fill="none" d="M 48.1 238.3 L 50.9 233.9 L 53.8 229.5 L 56.7 225.2 L 59.6 220.9 L 62.4 216.7 L 65.3 212.5 L 68.2 208.4 L 71.1 204.4 L 73.9 200.4 L 76.8 196.5 L 79.7 192.7 L 82.5 188.9 L 85.4 185.1 L 88.3 181.5 L 91.2 177.9 L 94.0 174.3 L 96.9 170.8 L 99.8 167.4 L 102.6 164.0 L 105.5 160.7 L 108.4 157.4 L 111.3 154.2 L 114.1 151.1 L 117.0 148.0 L 119.9 145.0 L 122.7 142.0 L 125.6 139.1 L 128.5 136.3 L 131.4 133.5 L 134.2 130.8 L 137.1 128.2 L 140.0 125.6 L 142.8 123.0 L 145.7 120.5 L 148.6 118.1 L 151.5 115.8 L 154.3 113.5 L 157.2 111.2 L 160.1 109.0 L 162.9 106.9 L 165.8 104.9 L 168.7 102.9 L 171.6 100.9 L 174.4 99.0 L 177.3 97.2 L 180.2 95.5 L 183.1 93.7 L 185.9 92.1 L 188.8 90.5 L 191.7 89.0 L 194.5 87.5 L 197.4 86.1 L 200.3 84.8 L 203.2 83.5 L 206.0 82.3 L 208.9 81.1 L 211.8 80.0 L 214.6 79.0 L 217.5 78.0 L 220.4 77.1 L 223.3 76.2 L 226.1 75.4 L 229.0 74.6 L 231.9 73.9 L 234.7 73.3 L 237.6 72.8 L 240.5 72.2 L 243.4 71.8 L 246.2 71.4 L 249.1 71.1 L 252.0 70.8 L 254.8 70.6 L 257.7 70.5 L 260.6 70.4 L 263.5 70.3 L 266.3 70.4 L 269.2 70.5 L 272.1 70.6 L 274.9 70.8 L 277.8 71.1 L 280.7 71.4 L 283.6 71.8 L 286.4 72.2 L 289.3 72.8 L 292.2 73.3 L 295.1 73.9 L 297.9 74.6 L 300.8 75.4 L 303.7 76.2 L 306.5 77.1 L 309.4 78.0 L 312.3 79.0 L 315.2 80.0 L 318.0 81.1 L 320.9 82.3 L 323.8 83.5 L 326.6 84.8 L 329.5 86.1 L 332.4 87.5 L 335.3 89.0" clip-path="url(#prefigure-projectile-incline-__clipPath-1)"/>
+  <line id="prefigure-projectile-incline-pi-range" x1="48.1" y1="238.3" x2="335.3" y2="89.0" stroke="black" stroke-width="1" fill="none"/>
+  <line id="prefigure-projectile-incline-pi-rise" x1="335.3" y1="238.3" x2="335.3" y2="89.0" stroke="#777" stroke-width="2" stroke-dasharray="4" fill="none"/>
+  <line id="prefigure-projectile-incline-pi-v0" x1="48.1" y1="238.3" x2="104.2" y2="150.8" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-projectile-incline-arrow-head-end-2_None_24_60-red)"/>
+  <g id="prefigure-projectile-incline-pi-beta">
+    <g transform="translate(77.3,232.2) translate(0.0,-8.1)">
+      <g id="prefigure-projectile-incline-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px" width="10.248px" height="16.272px" role="img" focusable="false" viewBox="0 -705 566 899" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-projectile-incline-MJX-4-TEX-I-1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="beta">
+                <use data-c="1D6FD" xlink:href="#prefigure-projectile-incline-MJX-4-TEX-I-1D6FD"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="2" fill="none" d="M 71.1 226.3 L 71.2 226.4 L 71.3 226.6 L 71.3 226.7 L 71.4 226.8 L 71.4 226.9 L 71.5 227.0 L 71.5 227.1 L 71.6 227.2 L 71.6 227.3 L 71.7 227.5 L 71.7 227.6 L 71.8 227.7 L 71.8 227.8 L 71.9 227.9 L 71.9 228.0 L 72.0 228.1 L 72.0 228.3 L 72.1 228.4 L 72.1 228.5 L 72.2 228.6 L 72.2 228.7 L 72.3 228.8 L 72.3 229.0 L 72.4 229.1 L 72.4 229.2 L 72.5 229.3 L 72.5 229.4 L 72.5 229.5 L 72.6 229.7 L 72.6 229.8 L 72.7 229.9 L 72.7 230.0 L 72.7 230.1 L 72.8 230.2 L 72.8 230.4 L 72.9 230.5 L 72.9 230.6 L 72.9 230.7 L 73.0 230.8 L 73.0 231.0 L 73.0 231.1 L 73.1 231.2 L 73.1 231.3 L 73.1 231.4 L 73.2 231.6 L 73.2 231.7 L 73.2 231.8 L 73.3 231.9 L 73.3 232.0 L 73.3 232.2 L 73.4 232.3 L 73.4 232.4 L 73.4 232.5 L 73.4 232.6 L 73.5 232.8 L 73.5 232.9 L 73.5 233.0 L 73.6 233.1 L 73.6 233.3 L 73.6 233.4 L 73.6 233.5 L 73.6 233.6 L 73.7 233.7 L 73.7 233.9 L 73.7 234.0 L 73.7 234.1 L 73.8 234.2 L 73.8 234.4 L 73.8 234.5 L 73.8 234.6 L 73.8 234.7 L 73.8 234.9 L 73.9 235.0 L 73.9 235.1 L 73.9 235.2 L 73.9 235.3 L 73.9 235.5 L 73.9 235.6 L 73.9 235.7 L 74.0 235.8 L 74.0 236.0 L 74.0 236.1 L 74.0 236.2 L 74.0 236.3 L 74.0 236.5 L 74.0 236.6 L 74.0 236.7 L 74.0 236.8 L 74.0 237.0 L 74.0 237.1 L 74.1 237.2 L 74.1 237.3 L 74.1 237.5 L 74.1 237.6 L 74.1 237.7 L 74.1 237.8 L 74.1 238.0 L 74.1 238.1 L 74.1 238.2 L 74.1 238.3"/>
+  </g>
+  <g id="prefigure-projectile-incline-pi-theta">
+    <g transform="translate(92.4,202.3) translate(0.0,-12.9)">
+      <g id="prefigure-projectile-incline-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.184px" width="8.488px" height="12.944px" role="img" focusable="false" viewBox="0 -705 469 715" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-projectile-incline-MJX-5-TEX-I-1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="theta">
+                <use data-c="1D703" xlink:href="#prefigure-projectile-incline-MJX-5-TEX-I-1D703"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <path stroke="black" stroke-width="2" fill="none" d="M 72.9 199.6 L 73.3 199.9 L 73.7 200.1 L 74.1 200.4 L 74.4 200.6 L 74.8 200.9 L 75.2 201.2 L 75.6 201.4 L 75.9 201.7 L 76.3 202.0 L 76.6 202.3 L 77.0 202.6 L 77.4 202.9 L 77.7 203.2 L 78.1 203.5 L 78.4 203.8 L 78.8 204.1 L 79.1 204.4 L 79.4 204.7 L 79.8 205.0 L 80.1 205.3 L 80.4 205.6 L 80.8 206.0 L 81.1 206.3 L 81.4 206.6 L 81.7 207.0 L 82.0 207.3 L 82.3 207.6 L 82.6 208.0 L 82.9 208.3 L 83.2 208.7 L 83.5 209.0 L 83.8 209.4 L 84.1 209.7 L 84.4 210.1 L 84.7 210.5 L 85.0 210.8 L 85.2 211.2 L 85.5 211.6 L 85.8 212.0 L 86.0 212.3 L 86.3 212.7 L 86.5 213.1 L 86.8 213.5 L 87.0 213.9 L 87.3 214.3 L 87.5 214.7 L 87.8 215.1 L 88.0 215.5 L 88.2 215.9 L 88.4 216.3 L 88.7 216.7 L 88.9 217.1 L 89.1 217.5 L 89.3 217.9 L 89.5 218.3 L 89.7 218.7 L 89.9 219.1 L 90.1 219.6 L 90.3 220.0 L 90.4 220.4 L 90.6 220.8 L 90.8 221.3 L 91.0 221.7 L 91.1 222.1 L 91.3 222.5 L 91.4 223.0 L 91.6 223.4 L 91.7 223.9 L 91.9 224.3 L 92.0 224.7 L 92.2 225.2 L 92.3 225.6 L 92.4 226.1 L 92.5 226.5 L 92.6 226.9 L 92.8 227.4 L 92.9 227.8 L 93.0 228.3 L 93.1 228.7 L 93.2 229.2 L 93.2 229.6 L 93.3 230.1 L 93.4 230.5 L 93.5 231.0 L 93.6 231.5 L 93.6 231.9 L 93.7 232.4 L 93.7 232.8 L 93.8 233.3 L 93.8 233.7 L 93.9 234.2 L 93.9 234.7 L 94.0 235.1 L 94.0 235.6 L 94.0 236.0 L 94.0 236.5 L 94.1 237.0 L 94.1 237.4 L 94.1 237.9 L 94.1 238.3"/>
+  </g>
+  <circle id="prefigure-projectile-incline-pi-O" cx="48.1" cy="238.3" r="3" stroke="black" stroke-width="2" fill="red"/>
+  <circle id="prefigure-projectile-incline-pi-P" cx="335.3" cy="89.0" r="3" stroke="black" stroke-width="2" fill="red"/>
+  <g id="prefigure-projectile-incline-__label-2" transform="translate(44.1,242.3) translate(-13.8,-0.0)">
+    <g id="prefigure-projectile-incline-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="13.808px" height="13.144px" role="img" focusable="false" viewBox="0 -704 763 726" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-6-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper O">
+              <use data-c="1D442" xlink:href="#prefigure-projectile-incline-MJX-6-TEX-I-1D442"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-3" transform="translate(341.3,75.0) translate(0.0,-12.4)">
+    <g id="prefigure-projectile-incline-__g-5">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="13.592px" height="12.360px" role="img" focusable="false" viewBox="0 -683 751 683" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-7-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper P">
+              <use data-c="1D443" xlink:href="#prefigure-projectile-incline-MJX-7-TEX-I-1D443"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-4" transform="translate(335.3,242.3) translate(-9.5,-0.0)">
+    <g id="prefigure-projectile-incline-__g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="19.024px" height="12.360px" role="img" focusable="false" viewBox="0 -683 1051 683" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-8-TEX-I-1D440" d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper M">
+              <use data-c="1D440" xlink:href="#prefigure-projectile-incline-MJX-8-TEX-I-1D440"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-5" transform="translate(101.5,144.7) translate(-16.7,-11.0)">
+    <g id="prefigure-projectile-incline-__g-7">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.000px" width="16.680px" height="11.016px" role="img" focusable="false" viewBox="0 -443 921.6 608.6" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-9-TEX-I-1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"/>
+          <path id="prefigure-projectile-incline-MJX-9-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="latinletter" data-semantic-id="2" data-semantic-children="0,1" data-semantic-speech="v 0">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="2" data-semantic-speech="v" data-semantic-prefix="Base">
+                <use data-c="1D463" xlink:href="#prefigure-projectile-incline-MJX-9-TEX-I-1D463"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(518,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple" data-semantic-id="1" data-semantic-parent="2" data-semantic-speech="0" data-semantic-prefix="Subscript">
+                <use data-c="30" xlink:href="#prefigure-projectile-incline-MJX-9-TEX-N-30"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-6" transform="translate(183.7,153.7) translate(-13.7,-12.7)">
+    <g id="prefigure-projectile-incline-__g-8">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.384px" width="13.736px" height="12.744px" role="img" focusable="false" viewBox="0 -683 759 704" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-10-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper R">
+              <use data-c="1D445" xlink:href="#prefigure-projectile-incline-MJX-10-TEX-I-1D445"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-7" transform="translate(339.3,163.7) translate(0.0,-8.1)">
+    <g id="prefigure-projectile-incline-__g-9">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px" width="52.240px" height="16.272px" role="img" focusable="false" viewBox="0 -705 2886.3 899" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"/>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-N-2062" d=""/>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-N-2061" d=""/>
+          <path id="prefigure-projectile-incline-MJX-11-TEX-I-1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="7" data-semantic-children="0,5" data-semantic-content="6" data-semantic-speech="upper R sine beta">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="7" data-semantic-speech="upper R">
+              <use data-c="1D445" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-I-1D445"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="6" data-semantic-parent="7" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(759,0)">
+              <use data-c="2062" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-N-2062"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-children="1,3" data-semantic-content="4,1" data-semantic-parent="7" data-semantic-speech="sine beta" transform="translate(925.7,0)">
+              <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="1" data-semantic-parent="5" data-semantic-operator="appl" data-semantic-speech="sine">
+                <use data-c="73" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-N-73"/>
+                <use data-c="69" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-N-69" transform="translate(394,0)"/>
+                <use data-c="6E" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-N-6E" transform="translate(672,0)"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="4" data-semantic-parent="5" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(1228,0)">
+                <use data-c="2061" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="5" data-semantic-speech="beta" transform="translate(1394.7,0)">
+                <use data-c="1D6FD" xlink:href="#prefigure-projectile-incline-MJX-11-TEX-I-1D6FD"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-8" transform="translate(191.7,242.3) translate(-27.1,-0.0)">
+    <g id="prefigure-projectile-incline-__g-10">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px" width="54.232px" height="16.272px" role="img" focusable="false" viewBox="0 -705 2996.3 899" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"/>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-N-2062" d=""/>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"/>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"/>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-N-2061" d=""/>
+          <path id="prefigure-projectile-incline-MJX-12-TEX-I-1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="infixop" data-semantic-role="implicit" data-semantic-annotation="clearspeak:unit" data-semantic-id="7" data-semantic-children="0,5" data-semantic-content="6" data-semantic-speech="upper R cosine beta">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="7" data-semantic-speech="upper R">
+              <use data-c="1D445" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-I-1D445"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="operator" data-semantic-role="multiplication" data-semantic-id="6" data-semantic-parent="7" data-semantic-added="true" data-semantic-operator="infixop,⁢" data-semantic-speech="times" transform="translate(759,0)">
+              <use data-c="2062" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-N-2062"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="appl" data-semantic-role="prefix function" data-semantic-annotation="clearspeak:simple" data-semantic-id="5" data-semantic-children="1,3" data-semantic-content="4,1" data-semantic-parent="7" data-semantic-speech="cosine beta" transform="translate(925.7,0)">
+              <g data-mml-node="mi" data-semantic-type="function" data-semantic-role="prefix function" data-semantic-font="normal" data-semantic-id="1" data-semantic-parent="5" data-semantic-operator="appl" data-semantic-speech="cosine">
+                <use data-c="63" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-N-63"/>
+                <use data-c="6F" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-N-6F" transform="translate(444,0)"/>
+                <use data-c="73" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-N-73" transform="translate(944,0)"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="4" data-semantic-parent="5" data-semantic-attributes="texclass:NONE" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(1338,0)">
+                <use data-c="2061" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-N-2061"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="3" data-semantic-parent="5" data-semantic-speech="beta" transform="translate(1504.7,0)">
+                <use data-c="1D6FD" xlink:href="#prefigure-projectile-incline-MJX-12-TEX-I-1D6FD"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-projectile-incline-__label-9" transform="translate(263.5,137.3) translate(-54.1,-0.0)">
+    <g id="prefigure-projectile-incline-__g-11">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.512px" width="108.128px" height="16.072px" role="img" focusable="false" viewBox="0 -694 5974 888" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-20" d=""/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z"/>
+          <path id="prefigure-projectile-incline-MJX-13-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="inclined plane">
+              <use data-c="69" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-69"/>
+              <use data-c="6E" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-6E" transform="translate(278,0)"/>
+              <use data-c="63" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-63" transform="translate(834,0)"/>
+              <use data-c="6C" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-6C" transform="translate(1278,0)"/>
+              <use data-c="69" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-69" transform="translate(1556,0)"/>
+              <use data-c="6E" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-6E" transform="translate(1834,0)"/>
+              <use data-c="65" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-65" transform="translate(2390,0)"/>
+              <use data-c="64" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-64" transform="translate(2834,0)"/>
+              <use data-c="20" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-20" transform="translate(3390,0)"/>
+              <use data-c="70" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-70" transform="translate(3640,0)"/>
+              <use data-c="6C" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-6C" transform="translate(4196,0)"/>
+              <use data-c="61" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-61" transform="translate(4474,0)"/>
+              <use data-c="6E" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-6E" transform="translate(4974,0)"/>
+              <use data-c="65" xlink:href="#prefigure-projectile-incline-MJX-13-TEX-N-65" transform="translate(5530,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

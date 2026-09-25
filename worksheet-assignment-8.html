@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Assignment 8</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="og:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta property="book:title" content="MATH 13-Calculus and Analytic Geometry III">
+<meta name="twitter:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta property="og:description" content="Interactive, accessible web-based modules for multivariable calculus (Santa Clara University's MATH 13). The materials strengthen conceptual understanding of foundational ideas (parametrization, Taylor approximation, dot and cross products, conic sections, quadric surfaces, directional derivatives and the gradient, and extreme values) through explicit connections to physical phenomena, with support for diverse learners including screen-reader and tactile-graphics users.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.8b982cdcb4aa84b9.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.0499040fbb8ea56b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/pretext/js/dist/diagcess/diagcess.js"></script><script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="math13" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="shorttitlelowercase.html"><span class="title">MATH 13-Calculus and Analytic Geometry III</span></a></div>
+<p class="byline">Mehdi Ahmadi</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="worksheet-assignment-7.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="section-exercises.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="worksheet-assignment-9.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\deriv}[2]{\displaystyle \frac{d#1}{d#2}}
+\newcommand{\real}{\Bbb R}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth4 focused" data-preexpanded-levels="0" data-max-levels="4"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list"><li class="toc-item toc-preface"><div class="toc-title-box"><a href="intro.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-hyperbolic-functions.html" class="internal"><span class="codenumber">1</span> <span class="title">Hyperbolic Functions</span></a></div>
+<ul id="ptx-toc-group-chapter-hyperbolic-functions" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-definitions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Definitions and Derivatives</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-graphs.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Graph, Domain, and Range of <span class="process-math">\(\cosh x\)</span> and <span class="process-math">\(\sinh x\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identities.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Identities and Other Hyperbolic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-identity-list.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Hyperbolic Identities</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-real-life.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Hyperbolic Functions in Real Life</span></a></div>
+<ul id="ptx-toc-group-sec-hyp-real-life" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-catenary.html" class="internal"><span class="codenumber">1.5.1</span> <span class="title">*Hanging Cables and the Catenary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-celestial.html" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Celestial Mechanics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyp-gateway-arch.html" class="internal"><span class="codenumber">1.5.3</span> <span class="title">The Gateway Arch</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-more-examples.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Further Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-series-sequences.html" class="internal"><span class="codenumber">2</span> <span class="title">Series and Sequences</span></a></div>
+<ul id="ptx-toc-group-chapter-series-sequences" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-infinite-series.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Infinite Series</span></a></div>
+<ul id="ptx-toc-group-chapter-infinite-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-definitions.html" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Definitions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-partial-sums.html" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-geometric.html" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-nth-term.html" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The <span class="process-math">\(n\)</span>th Term Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-series-combining.html" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Combining Series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-taylor-maclaurin.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Taylor and Maclaurin Series</span></a></div>
+<ul id="ptx-toc-group-chapter-taylor-maclaurin" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-definitions.html" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Definitions of Taylor Series, Maclaurin Series, and Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-taylor-example.html" class="internal"><span class="codenumber">2.2.2</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-taylor.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Taylor Series and its convergence</span></a></div>
+<ul id="ptx-toc-group-section-taylor" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-1.html" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Taylor’s Formula and The Remainder Estimation Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-2.html" class="internal"><span class="codenumber">2.3.2</span> <span class="title">An example of a Taylor series that converges</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-3.html" class="internal"><span class="codenumber">2.3.3</span> <span class="title">The error in using a Taylor polynomial</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-taylor-7.html" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Applications of Taylor Series and Remainder Theorem</span></a></div>
+<ul id="ptx-toc-group-section-taylor-7" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#section-taylor-7-3" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Approximating Relativistic Kinetic Energy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsubsec-pendulum-small-angle" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Small-Angle Approximation for a Pendulum</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-taylor-7.html#subsec-approximating-pi-taylor" class="internal"><span class="codenumber">2.3.4.3</span> <span class="title">Approximating the value of <span class="process-math">\(\pi\)</span> using Taylor series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-5.html" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Proof of the remainder theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-binomial-series.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The Binomial Series and Applications of Taylor Series</span></a></div>
+<ul id="ptx-toc-group-chapter-binomial-series" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-series.html" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Binomial Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-binomial-applications.html" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Applications</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-geometry.html" class="internal"><span class="codenumber">3</span> <span class="title">3D Space and Vector Algebra</span></a></div>
+<ul id="ptx-toc-group-chapter-geometry" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-three-dimensional-coordinates.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Three-Dimensional Coordinate Systems</span></a></div>
+<ul id="ptx-toc-group-chapter-three-dimensional-coordinates" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-coordinate-system.html" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Rectangular Coordinate System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-planes-octants.html" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Coordinate Planes and Octants</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-distance.html" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Distance Between Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-spheres.html" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Spheres</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3d-describing-regions.html" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Describing Regions in Space</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-vectors.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Vectors</span></a></div>
+<ul id="ptx-toc-group-chapter-vectors" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-definitions.html" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Definitions, Terminology, and Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-algebra.html" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Vector Algebra Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vec-unit.html" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Unit Vectors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-dot-product.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Dot Product</span></a></div>
+<ul id="ptx-toc-group-section-dot-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dot-product.html" class="internal"><span class="codenumber">3.3.1</span> <span class="title">The Dot Product and the Angle between Two Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projection.html" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Projection of <span class="process-math">\(\mathbf u\)</span> in the Direction of <span class="process-math">\(\mathbf v\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-work.html" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Application in Physics: Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-data-science.html" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Application in Data Science: Measuring Similarity in Tastes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-cross-product.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Cross Product</span></a></div>
+<ul id="ptx-toc-group-section-cross-product" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-definition.html" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Definition and Properties of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cross-components.html" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Second Definition of the Cross Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-true-false.html" class="internal"><span class="codenumber">3.4.3</span> <span class="title">True or False?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-torque.html" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Application: Torque</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circular-motion.html" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Application: Circular Motion: Velocity and Angular Velocity</span></a></div>
+<ul id="ptx-toc-group-sec-circular-motion" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-polar-frame" class="internal"><span class="codenumber">3.4.5.1</span> <span class="title">A Frame that Turns with the Particle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-velocity" class="internal"><span class="codenumber">3.4.5.2</span> <span class="title">The Velocity in Circular Motion</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-angular-velocity-vector" class="internal"><span class="codenumber">3.4.5.3</span> <span class="title">Angular Velocity as a Vector</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-v-omega-cross-r" class="internal"><span class="codenumber">3.4.5.4</span> <span class="title">Velocity as a Cross Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-circular-motion.html#subsec-circular-motion-examples" class="internal"><span class="codenumber">3.4.5.5</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-parametrization.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Parametrization of Plane Curves</span></a></div>
+<ul id="ptx-toc-group-section-parametrization" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametric-equations.html" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Parametric Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parametrizing-examples.html" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Some Examples of Parametrizing Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-projectile-motion.html" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Projectile Motion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intersection-collision.html" class="internal"><span class="codenumber">3.5.4</span> <span class="title">Intersection Points versus Collision Points</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-lines-planes.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Lines and Planes in Space</span></a></div>
+<ul id="ptx-toc-group-chapter-lines-planes" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-vector-eq.html" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Vector Equation for a Line in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-parametric.html" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Parametric Equations for a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines-distance.html" class="internal"><span class="codenumber">3.6.3</span> <span class="title">The Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-equation.html" class="internal"><span class="codenumber">3.6.4</span> <span class="title">Equation of a Plane in Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-intersection.html" class="internal"><span class="codenumber">3.6.5</span> <span class="title">Lines of Intersection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-planes-distance.html" class="internal"><span class="codenumber">3.6.6</span> <span class="title">Distance of a Point from a Plane</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-conics.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Conic Sections</span></a></div>
+<ul id="ptx-toc-group-section-conics" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-parabola.html" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipse.html" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbola.html" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-reflector.html" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Application: Parabolic Reflectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-whisper.html" class="internal"><span class="codenumber">3.7.5</span> <span class="title">Application: Whispering Galleries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-app-loran.html" class="internal"><span class="codenumber">3.7.6</span> <span class="title">Application: Hyperbolic Navigation (LORAN)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-quadric-surfaces.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Quadric Surfaces</span></a></div>
+<ul id="ptx-toc-group-section-quadric-surfaces" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptical-paraboloid.html" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Elliptical Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperbolic-paraboloid.html" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Hyperbolic Paraboloid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-ellipsoid.html" class="internal"><span class="codenumber">3.8.3</span> <span class="title">Ellipsoid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-elliptic-cone.html" class="internal"><span class="codenumber">3.8.4</span> <span class="title">Elliptic Cone</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-hyperboloids.html" class="internal"><span class="codenumber">3.8.5</span> <span class="title">Hyperboloids</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-summary.html" class="internal"><span class="codenumber">3.8.6</span> <span class="title">Summary of the Quadric Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-quadric-applications.html" class="internal"><span class="codenumber">3.8.7</span> <span class="title">Quadric Surfaces in the World</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-functions-multiple-variables.html" class="internal"><span class="codenumber">4</span> <span class="title">Functions of Multiple Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-multiple-variables" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-functions-several-variables.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Functions of Several Variables</span></a></div>
+<ul id="ptx-toc-group-chapter-functions-several-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-functions-two-variables.html" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Functions of Two Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-curves.html" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Level Curves and Contour Maps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fsv-level-surfaces.html" class="internal"><span class="codenumber">4.1.3</span> <span class="title">More Than Two Variables: Level Surfaces</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-limits-continuity.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Limits and Continuity in Higher Dimensions</span></a></div>
+<ul id="ptx-toc-group-chapter-limits-continuity" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-two-variable.html" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Limits of Two-Variable Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lim-continuity.html" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Continuity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-partial-derivatives.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Partial Derivatives</span></a></div>
+<ul id="ptx-toc-group-chapter-partial-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-definition.html" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-examples.html" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-pd-second-derivatives.html" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Second Derivatives and the Mixed Derivative Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chapter-chain-rule.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Chain Rule</span></a></div>
+<ul id="ptx-toc-group-chapter-chain-rule" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-one-independent.html" class="internal"><span class="codenumber">4.4.1</span> <span class="title">One Independent Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-two-independent.html" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Two Independent Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cr-applications.html" class="internal"><span class="codenumber">4.4.3</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-directional-derivatives.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Directional Derivatives and Gradient Vectors</span></a></div>
+<ul id="ptx-toc-group-section-directional-derivatives" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-definition.html" class="internal"><span class="codenumber">4.5.1</span> <span class="title">The Definition of the Directional Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-vector.html" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The Gradient Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-dirderiv-properties.html" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Directions of Fastest Increase, Fastest Decrease, and No Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-gradient-summary.html" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-scalar-fields-potentials.html" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Scalar Fields, Potentials, and the Direction Nature Chooses</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-tangent-planes-differentials.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Tangent Planes and Differentials</span></a></div>
+<ul id="ptx-toc-group-section-tangent-planes-differentials" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-equation.html" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Equation of the Tangent Plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-example-paraboloid.html" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Tangent Plane and Normal Line to a Surface</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-change.html" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Estimating the Change in a Particular Direction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-tp-linearization.html" class="internal"><span class="codenumber">4.6.4</span> <span class="title">Linearizing <span class="process-math">\(z = f(x,y)\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-extreme-values.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Extreme Values and Saddle Points</span></a></div>
+<ul id="ptx-toc-group-section-extreme-values" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-local-extrema.html" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Local Maximum and Local Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-saddle-example.html" class="internal"><span class="codenumber">4.7.2</span> <span class="title">A Saddle Point Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-second-derivative-test.html" class="internal"><span class="codenumber">4.7.3</span> <span class="title">The Second Derivative Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-extrema.html" class="internal"><span class="codenumber">4.7.4</span> <span class="title">Absolute Maximum and Absolute Minimum</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equilibrium-stability.html" class="internal"><span class="codenumber">4.7.5</span> <span class="title">A Physical Application: Equilibrium and Stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-why-second-derivative-test.html" class="internal"><span class="codenumber">4.7.6</span> <span class="title">Why the Second Derivative Test Works</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-lagrange-multipliers.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-section-lagrange-multipliers" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-method.html" class="internal"><span class="codenumber">4.8.1</span> <span class="title">The Method of Lagrange Multipliers</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-method" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#sec-lagrange-collinear" class="internal"><span class="codenumber">4.8.1.1</span> <span class="title">Why the Gradients Must Be Collinear</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-method.html#subsec-lagrange-statement" class="internal"><span class="codenumber">4.8.1.2</span> <span class="title">Stating the Method</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-examples.html" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Examples: Functions of Two Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-examples" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-ellipse" class="internal"><span class="codenumber">4.8.2.1</span> <span class="title">Extrema on an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-examples.html#sec-lagrange-example-circle" class="internal"><span class="codenumber">4.8.2.2</span> <span class="title">Absolute Extrema on a Circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-three-variables.html" class="internal"><span class="codenumber">4.8.3</span> <span class="title">Examples: Functions of Three Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-three-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-distance" class="internal"><span class="codenumber">4.8.3.1</span> <span class="title">Shortest Distance to a Plane</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-three-variables.html#sec-lagrange-example-box" class="internal"><span class="codenumber">4.8.3.2</span> <span class="title">Minimizing the Cost of a Box</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html" class="internal"><span class="codenumber">4.8.4</span> <span class="title">Functions of <span class="process-math">\(n\)</span> Variables</span></a></div>
+<ul id="ptx-toc-group-sec-lagrange-functions-n-variables" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-n-variables" class="internal"><span class="codenumber">4.8.4.1</span> <span class="title">The Method in <span class="process-math">\(n\)</span> Variables</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-lagrange-functions-n-variables.html#sec-lagrange-hm-gm" class="internal"><span class="codenumber">4.8.4.2</span> <span class="title">An Inequality Between Two Means</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="section-exercises.html" class="internal"><span class="codenumber">5</span> <span class="title">Assignments and Review Problems</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-section-exercises">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Assignment 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Assignment 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Assignment 3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-1.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Review Problems #1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-4.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Assignment 4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-5.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Assignment 5</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-6.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Assignment 6</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-2.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Review Problems #2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-7.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Assignment 7</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="worksheet-assignment-8.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Assignment 8</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-9.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Assignment 9</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-3.html" class="internal"><span class="codenumber">5.12</span> <span class="title">Review Problems #3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-assignment-10.html" class="internal"><span class="codenumber">5.13</span> <span class="title">Assignment 10</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-review-problems-4.html" class="internal"><span class="codenumber">5.14</span> <span class="title">Review Problems #4</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options">
+<div class="hide-option">
+<label for="hide-answer-checkbox">Hide answers</label><input type="checkbox" id="hide-answer-checkbox">
+</div>
+<div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div>
+</div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="worksheet-assignment-8" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.10</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assignment 8</span><div class="print-links"><a href="?printpreview=worksheet-assignment-8" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="introduction" id="worksheet-assignment-8-2">
+<div class="para" id="worksheet-assignment-8-2-1">These problems apply the chain rule to functions of several variables: differentiating a composition both by the chain rule and by substitution, deciding a True/False statement about a rate along a curve, proving Euler’s relation for homogeneous functions, and working through a dependency tree with two intermediate levels. They then use the gradient to compute directional derivatives, find directions of fastest change, and read a contour map. If you would like to review the material first, see <a href="chapter-chain-rule.html" class="internal" title="Section 4.4: The Chain Rule">The Chain Rule</a> and <a href="section-directional-derivatives.html" class="internal" title="Section 4.5: Directional Derivatives and Gradient Vectors">Directional Derivatives and Gradient Vectors</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-assignment-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="exercise exercise-like" id="rev-tp-4"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rev-tp-4-1-1">
+<div class="para">Compute the partial derivatives of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x, y\)</span> for</div>
+<div class="displaymath process-math" id="rev-tp-4-1-1-3">
+\begin{equation*}
+f(s,t) = s^2 - t^2, \qquad
+s = \frac{x+y}{2}, \qquad
+t = \frac{x-y}{2},
+\end{equation*}
+</div>
+<div class="para">using both the chain rule and by plugging in <span class="process-math">\(s\)</span> and <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-tp-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-tp-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-tp-4-2-1">
+<div class="para">Using the chain rule:</div>
+<div class="displaymath process-math" id="rev-tp-4-2-1-1">
+\begin{align*}
+\frac{\partial f}{\partial x}
+\amp = \frac{\partial f}{\partial s}\frac{\partial s}{\partial x}
++ \frac{\partial f}{\partial t}\frac{\partial t}{\partial x}\\
+\amp = 2s\cdot\frac12 - 2t\cdot\frac12 = s - t = y\\
+\frac{\partial f}{\partial y}
+\amp = \frac{\partial f}{\partial s}\frac{\partial s}{\partial y}
++ \frac{\partial f}{\partial t}\frac{\partial t}{\partial y}\\
+\amp = 2s\cdot\frac12 + 2t\cdot\frac12 = s + t = x
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-tp-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rev-tp-4-2-2">
+<div class="para">Plugging in, we see</div>
+<div class="displaymath process-math" id="rev-tp-4-2-2-1">
+\begin{equation*}
+f(s(x,y), t(x,y))
+= \frac14\left((x+y)^2 - (x-y)^2\right) = xy,
+\end{equation*}
+</div>
+<div class="para">and easily obtain the same partial derivatives.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-tp-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.1.1"><a tabindex="-1" href="#rev-tp-4-2" title="Copy heading and permalink for Solution 5.10.1.1" aria-label="Copy heading and permalink for Solution 5.10.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.1"><a tabindex="-1" href="#rev-tp-4" title="Copy heading and permalink for Worksheet Exercise 5.10.1" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-tp-5"><h2 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True or False.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-rev-tp-5">
+<div class="para" id="rev-tp-5-2-1">Consider <span class="process-math">\(f(x,y) = \left(\cos x + (1+x)\tan y\right)e^{x^2-1+y}\text{.}\)</span> Then <span class="process-math">\(\dfrac{d}{dt}f(t^2, t^3) = 0\)</span> at <span class="process-math">\(t = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-tp-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="rev-tp-5-2-2">Justify your answer fully: give a proof if the statement is true, or a counterexample if it is false.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-tp-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<li data-component="answer" id="rs-rev-tp-5_opt_t" data-correct=""><p>True.</p></li>
+<li data-component="feedback" id="rs-rev-tp-5_opt_t">
+<div class="para logical" id="rev-tp-5-3-1">
+<div class="para">Writing <span class="process-math">\(x(t) = t^2\)</span> and <span class="process-math">\(y(t) = t^3\text{,}\)</span> we see that</div>
+<div class="displaymath process-math" id="rev-tp-5-3-1-3">
+\begin{equation*}
+\frac{dx}{dt} = 2t = 0
+\quad\text{and}\quad
+\frac{dy}{dt} = 3t^2 = 0
+\quad\text{at } t = 0.
+\end{equation*}
+</div>
+<div class="para">Now we see from the chain rule that</div>
+<div class="displaymath process-math" id="rev-tp-5-3-1-4">
+\begin{equation*}
+\frac{d}{dt}f(x(t), y(t))
+= \frac{\partial f}{\partial x}\frac{dx}{dt}
++ \frac{\partial f}{\partial y}\frac{dy}{dt}
+= 0 \quad\text{at } t = 0.
+\end{equation*}
+</div>
+</div>
+</li>
+<li data-component="answer" id="rs-rev-tp-5_opt_f"><p>False.</p></li>
+<li data-component="feedback" id="rs-rev-tp-5_opt_f">
+<div class="para logical" id="rev-tp-5-3-1">
+<div class="para">Writing <span class="process-math">\(x(t) = t^2\)</span> and <span class="process-math">\(y(t) = t^3\text{,}\)</span> we see that</div>
+<div class="displaymath process-math" id="rev-tp-5-3-1-3">
+\begin{equation*}
+\frac{dx}{dt} = 2t = 0
+\quad\text{and}\quad
+\frac{dy}{dt} = 3t^2 = 0
+\quad\text{at } t = 0.
+\end{equation*}
+</div>
+<div class="para">Now we see from the chain rule that</div>
+<div class="displaymath process-math" id="rev-tp-5-3-1-4">
+\begin{equation*}
+\frac{d}{dt}f(x(t), y(t))
+= \frac{\partial f}{\partial x}\frac{dx}{dt}
++ \frac{\partial f}{\partial y}\frac{dy}{dt}
+= 0 \quad\text{at } t = 0.
+\end{equation*}
+</div>
+</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.2: True or False"><a tabindex="-1" href="#rev-tp-5" title="Copy heading and permalink for Worksheet Exercise 5.10.2: True or False" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.2: True or False">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rm2-cr-1"><h2 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homogeneous functions.</span>
+</h2>
+<div class="para logical" id="rm2-cr-1-2-1">
+<div class="para">A function <span class="process-math">\(f\)</span> is called <dfn class="terminology">homogeneous of degree <span class="process-math">\(n\)</span></dfn> if it satisfies the equation</div>
+<div class="displaymath process-math" id="eq-rm2-homogeneous">
+\begin{equation}
+f(tx, ty) = t^n f(x,y)\tag{5.10.3}
+\end{equation}
+</div>
+<div class="para">for all <span class="process-math">\(t\text{,}\)</span> where <span class="process-math">\(n\)</span> is a positive integer and <span class="process-math">\(f\)</span> has continuous second order derivatives.</div>
+<ol class="upper-alpha ol-marker-1" id="rm2-cr-1-2-1-7">
+<li id="rm2-cr-1-2-1-7-1">
+<div class="para" id="rm2-cr-1-2-1-7-1-1">Verify that <span class="process-math">\(f(x,y) = x^2y + 2xy^2 + 5y^3\)</span> is homogeneous of degree 3.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-2-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.3.A"><a tabindex="-1" href="#rm2-cr-1-2-1-7-1" title="Copy heading and permalink for Item 5.10.3.A" aria-label="Copy heading and permalink for Item 5.10.3.A">🔗</a></div>
+</li>
+<li id="rm2-cr-1-2-1-7-2">
+<div class="para logical" id="rm2-cr-1-2-1-7-2-1">
+<div class="para">Show that if <span class="process-math">\(f\)</span> is homogeneous of degree <span class="process-math">\(n\)</span> then</div>
+<div class="displaymath process-math" id="rm2-cr-1-2-1-7-2-1-3">
+\begin{equation*}
+x\,\frac{\partial f}{\partial x} + y\,\frac{\partial f}{\partial y}
+= n f(x,y).
+\end{equation*}
+</div>
+<div class="para">(Hint: use the Chain Rule to differentiate <span class="process-math">\(f(tx,ty)\)</span> with respect to <span class="process-math">\(t\text{.}\)</span>)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-2-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.3.B"><a tabindex="-1" href="#rm2-cr-1-2-1-7-2" title="Copy heading and permalink for Item 5.10.3.B" aria-label="Copy heading and permalink for Item 5.10.3.B">🔗</a></div>
+</li>
+<li id="rm2-cr-1-2-1-7-3">
+<div class="para" id="rm2-cr-1-2-1-7-3-1">If <span class="process-math">\(f\)</span> is homogeneous of degree <span class="process-math">\(n\text{,}\)</span> show that <span class="process-math">\(f_x(tx, ty) = t^{n-1} f_x(x,y)\)</span> for <span class="process-math">\(t \gt 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-2-1-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.3.C"><a tabindex="-1" href="#rm2-cr-1-2-1-7-3" title="Copy heading and permalink for Item 5.10.3.C" aria-label="Copy heading and permalink for Item 5.10.3.C">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rm2-cr-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rm2-cr-1-3-1">
+<ol class="upper-alpha ol-marker-1" id="rm2-cr-1-3-1-1">
+<li id="rm2-cr-1-3-1-1-1">
+<div class="para logical" id="rm2-cr-1-3-1-1-1-1">
+<div class="displaymath process-math" id="rm2-cr-1-3-1-1-1-1-1">
+\begin{align*}
+f(tx, ty) \amp = t^2x^2\,ty + 2tx\,t^2y^2 + 5t^3y^3\\
+\amp = t^3\left(x^2y + 2xy^2 + 5y^3\right) = t^3 f(x,y).
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.3.A"><a tabindex="-1" href="#rm2-cr-1-3-1-1-1" title="Copy heading and permalink for Item 5.10.3.A" aria-label="Copy heading and permalink for Item 5.10.3.A">🔗</a></div>
+</li>
+<li id="rm2-cr-1-3-1-1-2">
+<div class="para logical" id="rm2-cr-1-3-1-1-2-1">
+<div class="para">Using the chain rule we obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rm2-homogeneous.html ./knowl/xref/eq-rm2-hom-chain.html ./knowl/xref/eq-rm2-hom-power.html" id="rm2-cr-1-3-1-1-2-1-1">
+\begin{align}
+\frac{d}{dt}f(tx,ty)
+\amp = \frac{\partial f}{\partial x}(tx,ty)\,\frac{d}{dt}tx
++ \frac{\partial f}{\partial y}(tx,ty)\,\frac{d}{dt}ty\notag\\
+\amp = x\,\frac{\partial f}{\partial x}(tx,ty)
++ y\,\frac{\partial f}{\partial y}(tx,ty).\tag{5.10.4}
+\end{align}
+</div>
+<div class="para">On the other hand, the homogeneity condition <a href="worksheet-assignment-8.html#eq-rm2-homogeneous" class="xref" data-knowl="./knowl/xref/eq-rm2-homogeneous.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.10.3">(5.10.3)</a> shows that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rm2-homogeneous.html ./knowl/xref/eq-rm2-hom-chain.html ./knowl/xref/eq-rm2-hom-power.html" id="eq-rm2-hom-power">
+\begin{equation}
+\frac{d}{dt}f(tx,ty) = \frac{d}{dt}\,t^n f(x,y)
+= n t^{n-1} f(x,y).\tag{5.10.5}
+\end{equation}
+</div>
+<div class="para">Now we can equate the right hand sides of equations <a href="worksheet-assignment-8.html#rm2-cr-1-3-1-1-2-1-1" class="xref" data-knowl="./knowl/xref/eq-rm2-hom-chain.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.10.4">(5.10.4)</a> and <a href="worksheet-assignment-8.html#eq-rm2-hom-power" class="xref" data-knowl="./knowl/xref/eq-rm2-hom-power.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.10.5">(5.10.5)</a> and set <span class="process-math">\(t = 1\)</span> to obtain the desired equation.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.3.B"><a tabindex="-1" href="#rm2-cr-1-3-1-1-2" title="Copy heading and permalink for Item 5.10.3.B" aria-label="Copy heading and permalink for Item 5.10.3.B">🔗</a></div>
+</li>
+<li id="rm2-cr-1-3-1-1-3">
+<div class="para logical" id="rm2-cr-1-3-1-1-3-1">
+<div class="para">We take the partial <span class="process-math">\(u\)</span>-derivative of both sides of the equation <span class="process-math">\(f(tu, tv) = t^n f(u,v)\)</span> (this is just <a href="worksheet-assignment-8.html#eq-rm2-homogeneous" class="xref" data-knowl="./knowl/xref/eq-rm2-homogeneous.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.10.3">(5.10.3)</a> plugging in <span class="process-math">\(u\)</span> and <span class="process-math">\(v\)</span> instead of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span>):</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-rm2-homogeneous.html" id="rm2-cr-1-3-1-1-3-1-8">
+\begin{align*}
+\frac{\partial}{\partial u}\,t^n f(u,v)
+\amp = t^n f_x(u,v)\\
+\frac{\partial}{\partial u}\,f(tu, tv)
+\amp = t\,f_x(tu, tv)
+\end{align*}
+</div>
+<div class="para">Hence <span class="process-math">\(t^{n-1} f_x(u,v) = f_x(tu, tv)\)</span> after canceling one <span class="process-math">\(t\text{,}\)</span> and plugging in <span class="process-math">\(u = x\text{,}\)</span> <span class="process-math">\(v = y\)</span> shows the desired equation.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.3.C"><a tabindex="-1" href="#rm2-cr-1-3-1-1-3" title="Copy heading and permalink for Item 5.10.3.C" aria-label="Copy heading and permalink for Item 5.10.3.C">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-cr-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.3.1"><a tabindex="-1" href="#rm2-cr-1-3" title="Copy heading and permalink for Solution 5.10.3.1" aria-label="Copy heading and permalink for Solution 5.10.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.3: Homogeneous functions"><a tabindex="-1" href="#rm2-cr-1" title="Copy heading and permalink for Worksheet Exercise 5.10.3: Homogeneous functions" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.3: Homogeneous functions">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw21-1"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw21-1-1-1">
+<div class="para">Let</div>
+<div class="displaymath process-math" id="rw21-1-1-1-1">
+\begin{equation*}
+w = 5xy + 2yz - 3xz, \qquad
+x = st, \qquad y = e^{st}, \qquad z = t^2.
+\end{equation*}
+</div>
+<div class="para">Compute <span class="process-math">\(\dfrac{\partial w}{\partial s}(-4,-4)\)</span> and <span class="process-math">\(\dfrac{\partial w}{\partial t}(-4,-4)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw21-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw21-1-2-1">
+<div class="para">The dependency tree is shown in <a href="worksheet-assignment-8.html#fig-rw21-tree" class="xref" data-knowl="./knowl/xref/fig-rw21-tree.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.10.55">Figure 5.10.55</a>. We first compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-rw21-tree.html" id="rw21-1-2-1-2">
+\begin{equation*}
+\frac{\partial w}{\partial x} = 5y - 3z, \qquad
+\frac{\partial w}{\partial y} = 5x + 2z, \qquad
+\frac{\partial w}{\partial z} = 2y - 3x,
+\end{equation*}
+</div>
+<div class="para">and at <span class="process-math">\((s,t) = (-4,-4)\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-rw21-tree.html" id="rw21-1-2-1-4">
+\begin{equation*}
+x(-4,-4) = 16, \qquad
+y(-4,-4) = e^{16}, \qquad
+z(-4,-4) = 16.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-rw21-tree"><div class="image-box" style="width: 42%; margin-left: 29%; margin-right: 29%;">
+<img src="generated/latex-image/fig-rw21-tree-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig-rw21-tree-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-rw21-tree-2-description">
+<div class="para" id="fig-rw21-tree-2-1-1">A tree diagram with w at the top. Three branches lead down from w to x, y, and z. From x, two branches lead to s and t; from y, two branches lead to s and t; from z, a single branch leads to t.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig-rw21-tree-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.10.55<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The tree diagram for <span class="process-math">\(w = w(x,y,z)\)</span> with <span class="process-math">\(x = x(s,t)\text{,}\)</span> <span class="process-math">\(y = y(s,t)\text{,}\)</span> and <span class="process-math">\(z = z(t)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 5.10.55"><a tabindex="-1" href="#fig-rw21-tree" title="Copy heading and permalink for Figure 5.10.55" aria-label="Copy heading and permalink for Figure 5.10.55">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="rw21-1-2-3">
+<div class="para">By the chain rule, since <span class="process-math">\(\dfrac{\partial z}{\partial s} = 0\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="rw21-1-2-3-2">
+\begin{align*}
+\frac{\partial w}{\partial s}
+\amp = \frac{\partial w}{\partial x}\frac{\partial x}{\partial s}
++ \frac{\partial w}{\partial y}\frac{\partial y}{\partial s}
++ \frac{\partial w}{\partial z}\frac{\partial z}{\partial s}\\
+\amp = (5y - 3z)(t) + (5x + 2z)\left(t e^{st}\right)
++ (2y - 3x)(0)\\
+\amp = \left(5e^{16} - 48\right)(-4)
++ (80 + 32)\left(-4e^{16}\right)\\
+\amp = -20e^{16} + 192 - 448e^{16}
+= -468e^{16} + 192.
+\end{align*}
+</div>
+<div class="para">Similarly,</div>
+<div class="displaymath process-math" id="rw21-1-2-3-3">
+\begin{align*}
+\frac{\partial w}{\partial t}
+\amp = \frac{\partial w}{\partial x}\frac{\partial x}{\partial t}
++ \frac{\partial w}{\partial y}\frac{\partial y}{\partial t}
++ \frac{\partial w}{\partial z}\frac{\partial z}{\partial t}\\
+\amp = (5y - 3z)(s) + (5x + 2z)\left(s e^{st}\right)
++ (2y - 3x)(2t)\\
+\amp = \left(5e^{16} - 48\right)(-4)
++ (112)\left(-4e^{16}\right)
++ \left(2e^{16} - 48\right)(-8)\\
+\amp = -20e^{16} + 192 - 448e^{16} - 16e^{16} + 384
+= -484e^{16} + 576.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.4.1"><a tabindex="-1" href="#rw21-1-2" title="Copy heading and permalink for Solution 5.10.4.1" aria-label="Copy heading and permalink for Solution 5.10.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.4"><a tabindex="-1" href="#rw21-1" title="Copy heading and permalink for Worksheet Exercise 5.10.4" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-gr-1"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="rev-gr-1-1-1">Consider <span class="process-math">\(f(x,y) = e^{-r^4}\)</span> where <span class="process-math">\(r = \sqrt{x^2+y^2}\text{.}\)</span> Compute its directional derivative at <span class="process-math">\((0,0)\)</span> with respect to the unit vectors in (polar) directions <span class="process-math">\(\theta = 0, \dfrac{\pi}{4}, \dfrac{\pi}{2}\text{.}\)</span> What about any other angle?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-gr-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rev-gr-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rev-gr-1-2-1">
+<div class="para">The function is symmetric with respect to rotations around the origin, so all the directional derivatives will be equal. Therefore it is sufficient to compute the derivative for <span class="process-math">\(\theta = 0\text{,}\)</span> i.e. <span class="process-math">\(\dfrac{\partial f}{\partial x}\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="rev-gr-1-2-1-3">
+\begin{equation*}
+\frac{\partial f}{\partial x}
+= \frac{\partial}{\partial x} e^{-(x^2+y^2)^2}
+= -2(x^2+y^2)\cdot 2x\, e^{-(x^2+y^2)^2}.
+\end{equation*}
+</div>
+<div class="para">Plugging in <span class="process-math">\(x = y = 0\)</span> we see that this is zero. Hence the directional derivative at <span class="process-math">\((0,0)\)</span> is <span class="process-math">\(0\)</span> in the directions <span class="process-math">\(\theta = 0, \dfrac{\pi}{4}, \dfrac{\pi}{2}\text{,}\)</span> and by the same symmetry it is <span class="process-math">\(0\)</span> for every other angle as well.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-gr-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.5.1"><a tabindex="-1" href="#rev-gr-1-2" title="Copy heading and permalink for Solution 5.10.5.1" aria-label="Copy heading and permalink for Solution 5.10.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.5"><a tabindex="-1" href="#rev-gr-1" title="Copy heading and permalink for Worksheet Exercise 5.10.5" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rev-gr-3"><h2 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">True or False.</span>
+</h2>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="rs-rev-gr-3">
+<div class="para logical" id="rev-gr-3-2-1">
+<div class="para">If <span class="process-math">\(\hat{u} = \langle a, b\rangle\)</span> is a unit vector and <span class="process-math">\(f\)</span> has continuous second partials, then</div>
+<div class="displaymath process-math" id="rev-gr-3-2-1-3">
+\begin{equation*}
+D^2_{\hat{u}} f(x,y) = f_{xx}a^2 + 2f_{xy}ab + f_{yy}b^2,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(D^2_{\hat{u}} f = D_{\hat{u}}\left[D_{\hat{u}} f(x,y)\right]\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-gr-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="rev-gr-3-2-2">Justify your answer fully: give a proof if the statement is true, or a counterexample if it is false.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rev-gr-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<li data-component="answer" id="rs-rev-gr-3_opt_t" data-correct=""><p>True.</p></li>
+<li data-component="feedback" id="rs-rev-gr-3_opt_t">
+<div class="para logical" id="rev-gr-3-3-1">
+<div class="para">We have that</div>
+<div class="displaymath process-math" id="rev-gr-3-3-1-1">
+\begin{equation*}
+D^2_{\hat{u}} f
+= D_{\hat{u}}\left[D_{\hat{u}} f(x,y)\right]
+= D_{\hat{u}}\left[a f_x + b f_y\right].
+\end{equation*}
+</div>
+<div class="para">This simplifies to</div>
+<div class="displaymath process-math" id="rev-gr-3-3-1-2">
+\begin{equation*}
+\langle a f_{xx} + b f_{xy},\; a f_{xy} + b f_{yy}\rangle
+\cdot \langle a, b\rangle
+= f_{xx}a^2 + 2f_{xy}ab + f_{yy}b^2.
+\end{equation*}
+</div>
+<div class="para">Note we needed <span class="process-math">\(f\)</span> to have continuous second partials to invoke Clairaut’s Theorem.</div>
+</div>
+</li>
+<li data-component="answer" id="rs-rev-gr-3_opt_f"><p>False.</p></li>
+<li data-component="feedback" id="rs-rev-gr-3_opt_f">
+<div class="para logical" id="rev-gr-3-3-1">
+<div class="para">We have that</div>
+<div class="displaymath process-math" id="rev-gr-3-3-1-1">
+\begin{equation*}
+D^2_{\hat{u}} f
+= D_{\hat{u}}\left[D_{\hat{u}} f(x,y)\right]
+= D_{\hat{u}}\left[a f_x + b f_y\right].
+\end{equation*}
+</div>
+<div class="para">This simplifies to</div>
+<div class="displaymath process-math" id="rev-gr-3-3-1-2">
+\begin{equation*}
+\langle a f_{xx} + b f_{xy},\; a f_{xy} + b f_{yy}\rangle
+\cdot \langle a, b\rangle
+= f_{xx}a^2 + 2f_{xy}ab + f_{yy}b^2.
+\end{equation*}
+</div>
+<div class="para">Note we needed <span class="process-math">\(f\)</span> to have continuous second partials to invoke Clairaut’s Theorem.</div>
+</div>
+</li>
+</ul></div></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.6: True or False"><a tabindex="-1" href="#rev-gr-3" title="Copy heading and permalink for Worksheet Exercise 5.10.6: True or False" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.6: True or False">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rm2-gr-2"><h2 class="heading">
+<span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A mountain lion on a mountain.</span>
+</h2>
+<div class="para logical" id="rm2-gr-2-2-1">
+<div class="para">A mountain lion runs on a mountain whose height above the point <span class="process-math">\((x,y)\)</span> is <span class="process-math">\(z = x^2 + \sin^2(xy)\text{.}\)</span>
+</div>
+<ol class="upper-alpha ol-marker-1" id="rm2-gr-2-2-1-3">
+<li id="rm2-gr-2-2-1-3-1">
+<div class="para" id="rm2-gr-2-2-1-3-1-1">In which direction(s) should the mountain lion run from point <span class="process-math">\((1, 0, 1)\)</span> so that the height is increasing at the fastest possible rate? What is this fastest rate?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-gr-2-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.7.A"><a tabindex="-1" href="#rm2-gr-2-2-1-3-1" title="Copy heading and permalink for Item 5.10.7.A" aria-label="Copy heading and permalink for Item 5.10.7.A">🔗</a></div>
+</li>
+<li id="rm2-gr-2-2-1-3-2">
+<div class="para" id="rm2-gr-2-2-1-3-2-1">In which direction(s) should the mountain lion run from point <span class="process-math">\((1, 0, 1)\)</span> so that the height is increasing at <em class="emphasis">half</em> of the fastest possible rate?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-gr-2-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.7.B"><a tabindex="-1" href="#rm2-gr-2-2-1-3-2" title="Copy heading and permalink for Item 5.10.7.B" aria-label="Copy heading and permalink for Item 5.10.7.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-gr-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rm2-gr-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rm2-gr-2-3-1">
+<ol class="upper-alpha ol-marker-1" id="rm2-gr-2-3-1-1">
+<li id="rm2-gr-2-3-1-1-1">
+<div class="para logical" id="rm2-gr-2-3-1-1-1-1">
+<div class="para">The fastest possible rate of increase is attained in the direction of the gradient:</div>
+<div class="displaymath process-math" id="rm2-gr-2-3-1-1-1-1-1">
+\begin{equation*}
+\nabla z = \left\langle \frac{\partial z}{\partial x},
+\frac{\partial z}{\partial y}\right\rangle
+= \left\langle 2x + 2\sin(xy)\cos(xy)\,y,\;
+2\sin(xy)\cos(xy)\,x\right\rangle.
+\end{equation*}
+</div>
+<div class="para">At <span class="process-math">\((1, 0, 1)\text{,}\)</span> this gradient is simply <span class="process-math">\(\nabla z(1,0) = \langle 2, 0\rangle\text{,}\)</span> and the fastest possible rate of change is the length of the gradient, i.e. <span class="process-math">\(\|\nabla z(1,0)\| = \|\langle 2,0\rangle\| = 2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-gr-2-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.7.A"><a tabindex="-1" href="#rm2-gr-2-3-1-1-1" title="Copy heading and permalink for Item 5.10.7.A" aria-label="Copy heading and permalink for Item 5.10.7.A">🔗</a></div>
+</li>
+<li id="rm2-gr-2-3-1-1-2">
+<div class="para logical" id="rm2-gr-2-3-1-1-2-1">
+<div class="para">Half of the fastest possible rate of height increase at point <span class="process-math">\((1,0,1)\)</span> is <span class="process-math">\(\frac12 \cdot 2 = 1\text{.}\)</span> Let <span class="process-math">\(\hat{u} = \langle a, b\rangle\)</span> be a unit vector in the desired direction. Then the directional derivative <span class="process-math">\(D_{\hat{u}}(1,0) = 1\)</span> is the desired rate of change of height at <span class="process-math">\((1,0,1)\)</span> in the direction of <span class="process-math">\(\hat{u}\text{;}\)</span> it can be calculated using the dot product with the gradient:</div>
+<div class="displaymath process-math" id="rm2-gr-2-3-1-1-2-1-7">
+\begin{equation*}
+1 = D_{\hat{u}}(1,0)
+= \hat{u} \cdot \nabla z(1,0)
+= \langle a, b\rangle \cdot \langle 2, 0\rangle
+= 2a + 0b = 2a.
+\end{equation*}
+</div>
+<div class="para">Thus, <span class="process-math">\(a = \frac12\)</span> and <span class="process-math">\(b\)</span> must be such that <span class="process-math">\(\hat{u} = \left\langle \frac12, b\right\rangle\)</span> is unit, i.e. <span class="process-math">\(\left(\frac12\right)^2 + b^2 = 1\text{,}\)</span> from which <span class="process-math">\(b^2 = \frac34\)</span> and <span class="process-math">\(b = \pm\frac{\sqrt3}{2}\text{.}\)</span> Therefore, the desired directions in which the height is increasing at a rate equal to half of the fastest possible rate are <span class="process-math">\(\hat{u}_1 = \left\langle \frac12, \frac{\sqrt3}{2}\right\rangle\)</span> and <span class="process-math">\(\hat{u}_2 = \left\langle \frac12, -\frac{\sqrt3}{2}\right\rangle\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-gr-2-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.7.B"><a tabindex="-1" href="#rm2-gr-2-3-1-1-2" title="Copy heading and permalink for Item 5.10.7.B" aria-label="Copy heading and permalink for Item 5.10.7.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rm2-gr-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.7.1"><a tabindex="-1" href="#rm2-gr-2-3" title="Copy heading and permalink for Solution 5.10.7.1" aria-label="Copy heading and permalink for Solution 5.10.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.7: A mountain lion on a mountain"><a tabindex="-1" href="#rm2-gr-2" title="Copy heading and permalink for Worksheet Exercise 5.10.7: A mountain lion on a mountain" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.7: A mountain lion on a mountain">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw23-3"><h2 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw23-3-1-1">
+<div class="para">Suppose that <span class="process-math">\(f(x,y)\)</span> is a function of two variables and let</div>
+<div class="displaymath process-math" id="rw23-3-1-1-2">
+\begin{equation*}
+\hat u = \frac{1}{\sqrt2}\langle 1, -1\rangle, \qquad
+\hat v = \langle 0, 1\rangle.
+\end{equation*}
+</div>
+<div class="para">Suppose that at a point <span class="process-math">\(P_0(a,b)\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="rw23-3-1-1-4">
+\begin{align*}
+\left(D_{\hat u} f\right)_{P_0} \amp = 0,\\
+\left(D_{\hat v} f\right)_{P_0} \amp = 1.
+\end{align*}
+</div>
+<ol class="upper-alpha ol-marker-1" id="rw23-3-1-1-5">
+<li id="rw23-3-1-1-5-1">
+<div class="para" id="rw23-3-1-1-5-1-1">Find <em class="emphasis">the direction</em> of the maximum rate of change at <span class="process-math">\(P_0(a,b)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-3-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.8.A"><a tabindex="-1" href="#rw23-3-1-1-5-1" title="Copy heading and permalink for Item 5.10.8.A" aria-label="Copy heading and permalink for Item 5.10.8.A">🔗</a></div>
+</li>
+<li id="rw23-3-1-1-5-2">
+<div class="para" id="rw23-3-1-1-5-2-1">Find the maximum rate of change at <span class="process-math">\(P_0(a,b)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-3-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.8.B"><a tabindex="-1" href="#rw23-3-1-1-5-2" title="Copy heading and permalink for Item 5.10.8.B" aria-label="Copy heading and permalink for Item 5.10.8.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw23-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw23-3-2-1">
+<ol class="upper-alpha ol-marker-1" id="rw23-3-2-1-1">
+<li id="rw23-3-2-1-1-1">
+<div class="para logical" id="rw23-3-2-1-1-1-1">
+<div class="para">Using <span class="process-math">\(\left(D_{\hat u} f\right)_{P_0}
+= \nabla f\big|_{P_0}\cdot\hat u\text{,}\)</span> the two conditions become</div>
+<div class="displaymath process-math" id="rw23-3-2-1-1-1-1-2">
+\begin{gather*}
+\left(D_{\hat u} f\right)_{P_0} = 0
+\;\Rightarrow\;
+\langle f_x, f_y\rangle \cdot
+\frac{1}{\sqrt2}\langle 1, -1\rangle
+= \frac{1}{\sqrt2}\left(f_x - f_y\right) = 0\\
+\qquad \Rightarrow\; f_x = f_y,\\
+\left(D_{\hat v} f\right)_{P_0} = 1
+\;\Rightarrow\;
+\langle f_x, f_y\rangle \cdot \langle 0, 1\rangle
+= f_y = 1.
+\end{gather*}
+</div>
+<div class="para">Hence <span class="process-math">\(\nabla f\big|_{P_0} = \langle 1, 1\rangle\text{,}\)</span> and the direction of the maximum rate of change at <span class="process-math">\(P_0\)</span> is given by</div>
+<div class="displaymath process-math" id="rw23-3-2-1-1-1-1-5">
+\begin{equation*}
+\hat u = \frac{\nabla f\big|_{P_0}}{\left\|\nabla f\big|_{P_0}\right\|}
+= \frac{1}{\sqrt2}\langle 1, 1\rangle.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.8.A"><a tabindex="-1" href="#rw23-3-2-1-1-1" title="Copy heading and permalink for Item 5.10.8.A" aria-label="Copy heading and permalink for Item 5.10.8.A">🔗</a></div>
+</li>
+<li id="rw23-3-2-1-1-2">
+<div class="para" id="rw23-3-2-1-1-2-1">
+<span class="process-math">\(\left\|\nabla f\big|_{P_0}\right\| = \sqrt{1 + 1} = \sqrt2\)</span> is the maximum rate of change.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.8.B"><a tabindex="-1" href="#rw23-3-2-1-1-2" title="Copy heading and permalink for Item 5.10.8.B" aria-label="Copy heading and permalink for Item 5.10.8.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw23-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.8.1"><a tabindex="-1" href="#rw23-3-2" title="Copy heading and permalink for Solution 5.10.8.1" aria-label="Copy heading and permalink for Solution 5.10.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.8"><a tabindex="-1" href="#rw23-3" title="Copy heading and permalink for Worksheet Exercise 5.10.8" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw21-8"><h2 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw21-8-1-1">
+<div class="para">Consider the function <span class="process-math">\(f(x,y) = x^2 e^{3y}\)</span> and the point <span class="process-math">\(P_0 = (-1, 0)\text{.}\)</span>
+</div>
+<ol class="upper-alpha ol-marker-1" id="rw21-8-1-1-3">
+<li id="rw21-8-1-1-3-1">
+<div class="para" id="rw21-8-1-1-3-1-1">Find the direction in which <span class="process-math">\(f(x,y)\)</span> decreases the most rapidly at <span class="process-math">\(P_0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-8-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.9.A"><a tabindex="-1" href="#rw21-8-1-1-3-1" title="Copy heading and permalink for Item 5.10.9.A" aria-label="Copy heading and permalink for Item 5.10.9.A">🔗</a></div>
+</li>
+<li id="rw21-8-1-1-3-2">
+<div class="para" id="rw21-8-1-1-3-2-1">Find the directional derivative of <span class="process-math">\(f(x,y)\)</span> at <span class="process-math">\(P_0\)</span> in the direction given by <span class="process-math">\(\overrightarrow{v} = \langle -1, 1\rangle\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-8-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.9.B"><a tabindex="-1" href="#rw21-8-1-1-3-2" title="Copy heading and permalink for Item 5.10.9.B" aria-label="Copy heading and permalink for Item 5.10.9.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw21-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw21-8-2-1">
+<div class="para">The gradient is</div>
+<div class="displaymath process-math" id="rw21-8-2-1-1">
+\begin{align*}
+\nabla f \amp = \left(2x e^{3y}\right)\hat{\imath}
++ \left(3x^2 e^{3y}\right)\hat{\jmath},\\
+\nabla f\big|_{(-1,0)} \amp = -2\,\hat{\imath} + 3\,\hat{\jmath},
+\qquad
+\left\|\nabla f\big|_{(-1,0)}\right\| = \sqrt{13}.
+\end{align*}
+</div>
+<ol class="upper-alpha ol-marker-1" id="rw21-8-2-1-2">
+<li id="rw21-8-2-1-2-1">
+<div class="para logical" id="rw21-8-2-1-2-1-1">
+<div class="para">The direction of most rapid decrease is opposite to the gradient:</div>
+<div class="displaymath process-math" id="rw21-8-2-1-2-1-1-1">
+\begin{equation*}
+-\frac{\nabla f}{\|\nabla f\|}
+= \left(\frac{2}{\sqrt{13}}\right)\hat{\imath}
+- \left(\frac{3}{\sqrt{13}}\right)\hat{\jmath}
+= \left\langle \frac{2}{\sqrt{13}}, -\frac{3}{\sqrt{13}}
+\right\rangle.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-8-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.9.A"><a tabindex="-1" href="#rw21-8-2-1-2-1" title="Copy heading and permalink for Item 5.10.9.A" aria-label="Copy heading and permalink for Item 5.10.9.A">🔗</a></div>
+</li>
+<li id="rw21-8-2-1-2-2">
+<div class="para logical" id="rw21-8-2-1-2-2-1">
+<div class="para">The unit vector in the direction of <span class="process-math">\(\overrightarrow{v}\)</span> is <span class="process-math">\(\hat u = \dfrac{\overrightarrow{v}}{\|\overrightarrow{v}\|}
+= \left\langle -\dfrac{1}{\sqrt2}, \dfrac{1}{\sqrt2}\right\rangle\text{,}\)</span> so</div>
+<div class="displaymath process-math" id="rw21-8-2-1-2-2-1-3">
+\begin{equation*}
+D_{\hat u} f
+= \nabla f \cdot \hat u
+= \langle -2, 3\rangle \cdot
+\left\langle -\frac{1}{\sqrt2}, \frac{1}{\sqrt2}\right\rangle
+= \frac{5}{\sqrt2}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-8-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.9.B"><a tabindex="-1" href="#rw21-8-2-1-2-2" title="Copy heading and permalink for Item 5.10.9.B" aria-label="Copy heading and permalink for Item 5.10.9.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw21-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.9.1"><a tabindex="-1" href="#rw21-8-2" title="Copy heading and permalink for Solution 5.10.9.1" aria-label="Copy heading and permalink for Solution 5.10.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.9"><a tabindex="-1" href="#rw21-8" title="Copy heading and permalink for Worksheet Exercise 5.10.9" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="rw17-8"><h2 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="rw17-8-1-1">
+<div class="para">Suppose the temperature (in degrees Celsius) at a point <span class="process-math">\((x,y)\)</span> is given by <span class="process-math">\(T(x,y)\text{,}\)</span> where <span class="process-math">\(T\)</span> is a continuous function that has continuous partial derivatives, and distances in the <span class="process-math">\(xy\)</span>-plane are measured in meters. We are given the following information about <span class="process-math">\(T\)</span> at the point <span class="process-math">\((x,y) = (1,1)\text{:}\)</span>
+</div>
+<ul class="disc" id="rw17-8-1-1-7">
+<li id="rw17-8-1-1-7-1">
+<div class="para" id="rw17-8-1-1-7-1-1">
+<span class="process-math">\(T(1,1) = 20\)</span> °C,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-1-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#rw17-8-1-1-7-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rw17-8-1-1-7-2">
+<div class="para" id="rw17-8-1-1-7-2-1">the derivative of <span class="process-math">\(T\)</span> at <span class="process-math">\((1,1)\)</span> obtains its smallest (i.e. most negative) value in the direction toward the <em class="emphasis">point</em> <span class="process-math">\((-1, 2)\text{,}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-1-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#rw17-8-1-1-7-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rw17-8-1-1-7-3">
+<div class="para" id="rw17-8-1-1-7-3-1">the derivative of <span class="process-math">\(T\)</span> at <span class="process-math">\((1,1)\)</span> in the direction of the <em class="emphasis">vector</em> <span class="process-math">\(4\,\hat{\imath} + 3\,\hat{\jmath}\)</span> is <span class="process-math">\(3\)</span> °C/m.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-1-1-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#rw17-8-1-1-7-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<ol class="upper-alpha ol-marker-1" id="rw17-8-1-1-8">
+<li id="rw17-8-1-1-8-1">
+<div class="para" id="rw17-8-1-1-8-1-1">Find the derivative of <span class="process-math">\(T\)</span> at <span class="process-math">\((1,1)\)</span> in the direction toward the <em class="emphasis">point</em> <span class="process-math">\((4,-3)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-1-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.10.A"><a tabindex="-1" href="#rw17-8-1-1-8-1" title="Copy heading and permalink for Item 5.10.10.A" aria-label="Copy heading and permalink for Item 5.10.10.A">🔗</a></div>
+</li>
+<li id="rw17-8-1-1-8-2">
+<div class="para" id="rw17-8-1-1-8-2-1">If you start at <span class="process-math">\((1,1)\)</span> and move along a straight path toward the point <span class="process-math">\((4,-3)\text{,}\)</span> <em class="emphasis">approximately</em> how far will you have to go in this direction until the temperature reaches <span class="process-math">\(24\)</span> °C?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-1-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.10.B"><a tabindex="-1" href="#rw17-8-1-1-8-2" title="Copy heading and permalink for Item 5.10.10.B" aria-label="Copy heading and permalink for Item 5.10.10.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="rw17-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="rw17-8-2-1">
+<div class="para">First we determine <span class="process-math">\(\nabla T\)</span> at <span class="process-math">\((1,1)\text{.}\)</span> The derivative is most negative in the direction of <span class="process-math">\(-\nabla T\text{,}\)</span> and the direction from <span class="process-math">\((1,1)\)</span> toward <span class="process-math">\((-1,2)\)</span> is</div>
+<div class="displaymath process-math" id="rw17-8-2-1-6">
+\begin{equation*}
+\langle -1-1,\; 2-1\rangle = \langle -2, 1\rangle.
+\end{equation*}
+</div>
+<div class="para">Hence <span class="process-math">\(-\nabla T\)</span> is a positive multiple of <span class="process-math">\(\langle -2, 1\rangle\text{,}\)</span> i.e. <span class="process-math">\(\nabla T = c\,\langle 2, -1\rangle\)</span> for some <span class="process-math">\(c \gt 0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rw17-8-2-2">
+<div class="para">The third piece of information fixes <span class="process-math">\(c\text{.}\)</span> The unit vector in the direction of <span class="process-math">\(4\,\hat{\imath} + 3\,\hat{\jmath}\)</span> is <span class="process-math">\(\frac15\langle 4, 3\rangle\text{,}\)</span> since <span class="process-math">\(\|\langle 4,3\rangle\| = 5\text{,}\)</span> so</div>
+<div class="displaymath process-math" id="rw17-8-2-2-5">
+\begin{equation*}
+3 = \nabla T \cdot \frac15\langle 4, 3\rangle
+= \frac{c}{5}\Big(8 - 3\Big)
+= c
+\;\Rightarrow\; c = 3.
+\end{equation*}
+</div>
+<div class="para">Therefore</div>
+<div class="displaymath process-math" id="rw17-8-2-2-6">
+\begin{equation*}
+\nabla T\big|_{(1,1)}
+= 3\langle 2, -1\rangle
+= \langle 6, -3\rangle.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="rw17-8-2-3">
+<ol class="upper-alpha ol-marker-1" id="rw17-8-2-3-1">
+<li id="rw17-8-2-3-1-1">
+<div class="para logical" id="rw17-8-2-3-1-1-1">
+<div class="para">The direction from <span class="process-math">\((1,1)\)</span> toward <span class="process-math">\((4,-3)\)</span> is <span class="process-math">\(\langle 3, -4\rangle\text{,}\)</span> whose length is <span class="process-math">\(5\text{,}\)</span> so the unit vector is <span class="process-math">\(\hat u = \left\langle \frac35, -\frac45\right\rangle\)</span> and</div>
+<div class="displaymath process-math" id="rw17-8-2-3-1-1-1-6">
+\begin{equation*}
+\left(D_{\hat u} T\right)_{(1,1)}
+= \langle 6, -3\rangle \cdot
+\left\langle \frac35, -\frac45\right\rangle
+= \frac{18}{5} + \frac{12}{5}
+= 6 \; {}^{\circ}\text{C}/\text{m}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.10.A"><a tabindex="-1" href="#rw17-8-2-3-1-1" title="Copy heading and permalink for Item 5.10.10.A" aria-label="Copy heading and permalink for Item 5.10.10.A">🔗</a></div>
+</li>
+<li id="rw17-8-2-3-1-2">
+<div class="para logical" id="rw17-8-2-3-1-2-1">
+<div class="para">The temperature must rise from <span class="process-math">\(20\)</span> °C to <span class="process-math">\(24\)</span> °C, i.e. <span class="process-math">\(\Delta T = 4\)</span> °C, and along this direction it rises at approximately <span class="process-math">\(6\)</span> °C per meter. Using the linear approximation <span class="process-math">\(\Delta T \approx \left(D_{\hat u}T\right) \cdot s\text{,}\)</span> where <span class="process-math">\(s\)</span> is the distance travelled,</div>
+<div class="displaymath process-math" id="rw17-8-2-3-1-2-1-11">
+\begin{equation*}
+s \approx \frac{\Delta T}{D_{\hat u}T} = \frac46 = \frac23
+\approx 0.67 \text{ meters}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.10.B"><a tabindex="-1" href="#rw17-8-2-3-1-2" title="Copy heading and permalink for Item 5.10.10.B" aria-label="Copy heading and permalink for Item 5.10.10.B">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#rw17-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.10.1"><a tabindex="-1" href="#rw17-8-2" title="Copy heading and permalink for Solution 5.10.10.1" aria-label="Copy heading and permalink for Solution 5.10.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.10"><a tabindex="-1" href="#rw17-8" title="Copy heading and permalink for Worksheet Exercise 5.10.10" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="pp-31"><h2 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="pp-31-1-1">
+<div class="para">
+<span class="process-math">\(f\)</span> is a “nice” function of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> (i.e. <span class="process-math">\(f\)</span> is continuous and its partials exist). In <a href="worksheet-assignment-8.html#fig-pp-contours" class="xref" data-knowl="./knowl/xref/fig-pp-contours.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.10.56">Figure 5.10.56</a> are shown the level curves <span class="process-math">\(f(x,y) = 0, 2, 4, 6, 8, 10, 12\text{.}\)</span>
+</div>
+<ol class="upper-alpha ol-marker-1" id="pp-31-1-1-8">
+<li id="pp-31-1-1-8-1">
+<div class="para" id="pp-31-1-1-8-1-1">Let <span class="process-math">\(u_1 = \frac{1}{\sqrt2}\hat{\imath} + \frac{1}{\sqrt2}\hat{\jmath}\text{.}\)</span> Estimate <span class="process-math">\(D_{u_1}f(4,3)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.A"><a tabindex="-1" href="#pp-31-1-1-8-1" title="Copy heading and permalink for Item 5.10.11.A" aria-label="Copy heading and permalink for Item 5.10.11.A">🔗</a></div>
+</li>
+<li id="pp-31-1-1-8-2">
+<div class="para" id="pp-31-1-1-8-2-1">Estimate <span class="process-math">\(D_{u_1}f(1,2)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.B"><a tabindex="-1" href="#pp-31-1-1-8-2" title="Copy heading and permalink for Item 5.10.11.B" aria-label="Copy heading and permalink for Item 5.10.11.B">🔗</a></div>
+</li>
+<li id="pp-31-1-1-8-3">
+<div class="para" id="pp-31-1-1-8-3-1">Draw on the diagram a unit vector pointing in the same direction as <span class="process-math">\(\nabla f(1,2)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.C"><a tabindex="-1" href="#pp-31-1-1-8-3" title="Copy heading and permalink for Item 5.10.11.C" aria-label="Copy heading and permalink for Item 5.10.11.C">🔗</a></div>
+</li>
+<li id="pp-31-1-1-8-4">
+<div class="para" id="pp-31-1-1-8-4-1">At <span class="process-math">\(P\text{,}\)</span> draw a unit vector and label it <span class="process-math">\(u_2\text{,}\)</span> such that <span class="process-math">\(D_{u_2}f(P) \lt 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.D"><a tabindex="-1" href="#pp-31-1-1-8-4" title="Copy heading and permalink for Item 5.10.11.D" aria-label="Copy heading and permalink for Item 5.10.11.D">🔗</a></div>
+</li>
+<li id="pp-31-1-1-8-5">
+<div class="para" id="pp-31-1-1-8-5-1">Estimate <span class="process-math">\(\dfrac{\partial f}{\partial x}(P)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.E"><a tabindex="-1" href="#pp-31-1-1-8-5" title="Copy heading and permalink for Item 5.10.11.E" aria-label="Copy heading and permalink for Item 5.10.11.E">🔗</a></div>
+</li>
+<li id="pp-31-1-1-8-6">
+<div class="para" id="pp-31-1-1-8-6-1">Which appears bigger, <span class="process-math">\(\dfrac{\partial f}{\partial y}(Q)\)</span> or <span class="process-math">\(\dfrac{\partial f}{\partial y}(R)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1-8-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.F"><a tabindex="-1" href="#pp-31-1-1-8-6" title="Copy heading and permalink for Item 5.10.11.F" aria-label="Copy heading and permalink for Item 5.10.11.F">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="fig-pp-contours"><div class="image-box" style="width: 88%; margin-left: 6%; margin-right: 6%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/prefigure-pp-contours-diagcess.svg" data-cml="generated/prefigure/prefigure-pp-contours-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.10.56<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Level curves of <span class="process-math">\(f\)</span> at the values <span class="process-math">\(0, 2, 4, 6, 8, 10, 12\text{.}\)</span> The marked point <span class="process-math">\(P\)</span> is the highest point of the <span class="process-math">\(f = 12\)</span> curve; <span class="process-math">\(Q\)</span> lies midway between the <span class="process-math">\(f = 2\)</span> and <span class="process-math">\(f = 4\)</span> curves; <span class="process-math">\(R\)</span> lies midway between the <span class="process-math">\(f = 10\)</span> and <span class="process-math">\(f = 12\)</span> curves.<div class="autopermalink" aria-hidden="true" data-description="Figure 5.10.56"><a tabindex="-1" href="#fig-pp-contours" title="Copy heading and permalink for Figure 5.10.56" aria-label="Copy heading and permalink for Figure 5.10.56">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="pp-31-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="pp-31-2-1">
+<ol class="upper-alpha ol-marker-1" id="pp-31-2-1-1">
+<li id="pp-31-2-1-1-1">
+<div class="para logical" id="pp-31-2-1-1-1-1">
+<div class="para">The directional derivative <span class="process-math">\(D_{u_1}f(4,3)\)</span> tells us roughly how much <span class="process-math">\(f\)</span> increases if we move <em class="emphasis">one unit</em> from <span class="process-math">\((4,3)\)</span> in the direction <span class="process-math">\(u_1\text{,}\)</span> i.e. diagonally up and to the right at <span class="process-math">\(45^{\circ}\text{.}\)</span> Starting at <span class="process-math">\((4,3)\)</span> and moving one unit that way lands us near <span class="process-math">\((4.7, 3.7)\text{,}\)</span> which is about two contours further along, and each contour step is <span class="process-math">\(\Delta f = 2\)</span> spread over roughly one unit of travel. Reading the map,</div>
+<div class="displaymath process-math" id="pp-31-2-1-1-1-1-10">
+\begin{equation*}
+D_{u_1}f(4,3) \approx 2.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.A"><a tabindex="-1" href="#pp-31-2-1-1-1" title="Copy heading and permalink for Item 5.10.11.A" aria-label="Copy heading and permalink for Item 5.10.11.A">🔗</a></div>
+</li>
+<li id="pp-31-2-1-1-2">
+<div class="para logical" id="pp-31-2-1-1-2-1">
+<div class="para">At <span class="process-math">\((1,2)\)</span> the level curve through that point is climbing at roughly <span class="process-math">\(45^{\circ}\text{,}\)</span> i.e. the level curve is <em class="emphasis">parallel</em> to <span class="process-math">\(u_1\text{.}\)</span> Moving along a level curve does not change the value of <span class="process-math">\(f\text{,}\)</span> so</div>
+<div class="displaymath process-math" id="pp-31-2-1-1-2-1-6">
+\begin{equation*}
+D_{u_1}f(1,2) \approx 0.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.B"><a tabindex="-1" href="#pp-31-2-1-1-2" title="Copy heading and permalink for Item 5.10.11.B" aria-label="Copy heading and permalink for Item 5.10.11.B">🔗</a></div>
+</li>
+<li id="pp-31-2-1-1-3">
+<div class="para" id="pp-31-2-1-1-3-1">The gradient is perpendicular to the level curve and points in the direction of <em class="emphasis">increase</em>. At <span class="process-math">\((1,2)\)</span> the level curve runs up and to the right at about <span class="process-math">\(45^{\circ}\text{,}\)</span> and <span class="process-math">\(f\)</span> increases as we move upward, so <span class="process-math">\(\nabla f(1,2)\)</span> points up and to the <em class="emphasis">left</em>, i.e. in the direction <span class="process-math">\(\frac{1}{\sqrt2}\langle -1, 1\rangle\text{.}\)</span> See <a href="worksheet-assignment-8.html#fig-pp-contours-answer" class="xref" data-knowl="./knowl/xref/fig-pp-contours-answer.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.10.57">Figure 5.10.57</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.C"><a tabindex="-1" href="#pp-31-2-1-1-3" title="Copy heading and permalink for Item 5.10.11.C" aria-label="Copy heading and permalink for Item 5.10.11.C">🔗</a></div>
+</li>
+<li id="pp-31-2-1-1-4">
+<div class="para" id="pp-31-2-1-1-4-1">We need any direction of <em class="emphasis">decrease</em> at <span class="process-math">\(P\text{,}\)</span> i.e. any direction pointing toward the lower-valued level curves (toward <span class="process-math">\(f = 10\text{,}\)</span> not away from it). Since the level curves below <span class="process-math">\(P\)</span> have smaller values, <span class="process-math">\(u_2 = \langle 0, -1\rangle\)</span> (straight down) works. See <a href="worksheet-assignment-8.html#fig-pp-contours-answer" class="xref" data-knowl="./knowl/xref/fig-pp-contours-answer.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.10.57">Figure 5.10.57</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.D"><a tabindex="-1" href="#pp-31-2-1-1-4" title="Copy heading and permalink for Item 5.10.11.D" aria-label="Copy heading and permalink for Item 5.10.11.D">🔗</a></div>
+</li>
+<li id="pp-31-2-1-1-5">
+<div class="para logical" id="pp-31-2-1-1-5-1">
+<div class="para">
+<span class="process-math">\(P\)</span> sits at the very top of its level curve, where the curve is <em class="emphasis">horizontal</em>. Walking in the <span class="process-math">\(+x\)</span> direction from <span class="process-math">\(P\)</span> therefore keeps us on the same level curve for a while, so <span class="process-math">\(f\)</span> does not change to first order:</div>
+<div class="displaymath process-math" id="pp-31-2-1-1-5-1-6">
+\begin{equation*}
+\frac{\partial f}{\partial x}(P) \approx 0.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.E"><a tabindex="-1" href="#pp-31-2-1-1-5" title="Copy heading and permalink for Item 5.10.11.E" aria-label="Copy heading and permalink for Item 5.10.11.E">🔗</a></div>
+</li>
+<li id="pp-31-2-1-1-6">
+<div class="para" id="pp-31-2-1-1-6-1">
+<span class="process-math">\(\dfrac{\partial f}{\partial y}\)</span> measures how fast <span class="process-math">\(f\)</span> changes as we move straight up, which is large where the contours are close together and small where they are far apart. At <span class="process-math">\(Q\)</span> we only have to go up about <span class="process-math">\(0.25\)</span> units to move from one contour to the next, so <span class="process-math">\(\dfrac{\partial f}{\partial y}(Q) \approx \dfrac{2}{0.25} = 8\text{.}\)</span> At <span class="process-math">\(R\)</span> we must go up about <span class="process-math">\(1\)</span> unit for the same change, so <span class="process-math">\(\dfrac{\partial f}{\partial y}(R) \approx \dfrac{2}{1} = 2\text{.}\)</span> Hence <span class="process-math">\(\dfrac{\partial f}{\partial y}(Q)\)</span> is bigger.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.11.F"><a tabindex="-1" href="#pp-31-2-1-1-6" title="Copy heading and permalink for Item 5.10.11.F" aria-label="Copy heading and permalink for Item 5.10.11.F">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#pp-31-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-pp-contours-answer"><div class="image-box" style="width: 88%; margin-left: 6%; margin-right: 6%;">
+<div class="ChemAccess-element" data-src="generated/prefigure/prefigure-pp-contours-answer-diagcess.svg" data-cml="generated/prefigure/prefigure-pp-contours-answer-annotations.xml"></div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.10.57<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The vectors asked for in parts C and D: <span class="process-math">\(\nabla f(1,2)\)</span> points perpendicular to the level curve toward increasing <span class="process-math">\(f\text{,}\)</span> while <span class="process-math">\(u_2\)</span> at <span class="process-math">\(P\)</span> points toward decreasing <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 5.10.57"><a tabindex="-1" href="#fig-pp-contours-answer" title="Copy heading and permalink for Figure 5.10.57" aria-label="Copy heading and permalink for Figure 5.10.57">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Solution 5.10.11.1"><a tabindex="-1" href="#pp-31-2" title="Copy heading and permalink for Solution 5.10.11.1" aria-label="Copy heading and permalink for Solution 5.10.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.11"><a tabindex="-1" href="#pp-31" title="Copy heading and permalink for Worksheet Exercise 5.10.11" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.11">🔗</a></div>
+</article>
+<div class="para" id="worksheet-assignment-8-14">The two problems that close this assignment repeat the three questions of <a href="subsec-scalar-fields-potentials.html#ex-two-runners" class="xref" data-knowl="./knowl/xref/ex-two-runners.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.5.24: Two Runners in a City Heat Island">Example 4.5.24</a> in two more physical settings: find the direction of most rapid decrease, the rate along a prescribed direction, and the directions of no change.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#worksheet-assignment-8-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ex-electrostatic-plate"><h2 class="heading">
+<span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Electric Potential on a Coated Plate.</span>
+</h2>
+<div class="para logical" id="ex-electrostatic-plate-2-1">
+<div class="para">The electric potential on a thin coated plate, in volts, is</div>
+<div class="displaymath process-math" id="ex-electrostatic-plate-2-1-1">
+\begin{equation*}
+V(x,y) = 100 - 2x^2 - 6y^2,
+\end{equation*}
+</div>
+<div class="para">with <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in centimeters. Consider the point <span class="process-math">\(P_0(2,1)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="ex-electrostatic-plate-2-2">
+<ol class="lower-alpha lower-alpha-level-1" id="ex-electrostatic-plate-2-2-1">
+<li id="ex-electrostatic-plate-2-2-1-1">
+<div class="para" id="ex-electrostatic-plate-2-2-1-1-1">Find <span class="process-math">\(\nabla V\)</span> at <span class="process-math">\(P_0\)</span> and the electric field <span class="process-math">\(\mathbf E = -\nabla V\)</span> there. Along which unit vector does the potential drop most rapidly, and at what rate?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.12.a"><a tabindex="-1" href="#ex-electrostatic-plate-2-2-1-1" title="Copy heading and permalink for Item 5.10.12.a" aria-label="Copy heading and permalink for Item 5.10.12.a">🔗</a></div>
+</li>
+<li id="ex-electrostatic-plate-2-2-1-2">
+<div class="para" id="ex-electrostatic-plate-2-2-1-2-1">A test charge is nudged along <span class="process-math">\(\hat{u} = \tfrac{4}{5}\hat{\imath} - \tfrac{3}{5}\hat{\jmath}\text{.}\)</span> Compute <span class="process-math">\(D_{\hat{u}}V\)</span> at <span class="process-math">\(P_0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.12.b"><a tabindex="-1" href="#ex-electrostatic-plate-2-2-1-2" title="Copy heading and permalink for Item 5.10.12.b" aria-label="Copy heading and permalink for Item 5.10.12.b">🔗</a></div>
+</li>
+<li id="ex-electrostatic-plate-2-2-1-3">
+<div class="para" id="ex-electrostatic-plate-2-2-1-3-1">Find the two unit vectors along which the potential does not change, and name the curve they are tangent to.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.12.c"><a tabindex="-1" href="#ex-electrostatic-plate-2-2-1-3" title="Copy heading and permalink for Item 5.10.12.c" aria-label="Copy heading and permalink for Item 5.10.12.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-electrostatic-plate-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="ex-electrostatic-plate-3-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex-electrostatic-plate-3-1-1">
+<li id="ex-electrostatic-plate-3-1-1-1">
+<div class="para" id="ex-electrostatic-plate-3-1-1-1-1">
+<span class="process-math">\(\nabla V = -4x\,\hat{\imath} - 12y\,\hat{\jmath}\text{,}\)</span> so <span class="process-math">\((\nabla V)_{(2,1)} = -8\,\hat{\imath} - 12\,\hat{\jmath}\)</span> and <span class="process-math">\(\mathbf E = 8\,\hat{\imath} + 12\,\hat{\jmath}\)</span> V/cm. The potential drops fastest along <span class="process-math">\(\hat{u} = \tfrac{1}{\sqrt{13}}(2\,\hat{\imath} + 3\,\hat{\jmath})\text{,}\)</span> at the rate <span class="process-math">\(-\|\nabla V\| = -4\sqrt{13} \approx -14.4\)</span> V/cm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.12.a"><a tabindex="-1" href="#ex-electrostatic-plate-3-1-1-1" title="Copy heading and permalink for Item 5.10.12.a" aria-label="Copy heading and permalink for Item 5.10.12.a">🔗</a></div>
+</li>
+<li id="ex-electrostatic-plate-3-1-1-2">
+<div class="para logical" id="ex-electrostatic-plate-3-1-1-2-1">
+<div class="displaymath process-math" id="ex-electrostatic-plate-3-1-1-2-1-1">
+\begin{equation*}
+D_{\hat{u}}V = (-8)\left(\tfrac{4}{5}\right)
++ (-12)\left(-\tfrac{3}{5}\right) = \tfrac{4}{5} = 0.8
+\end{equation*}
+</div>
+<div class="para">in V/cm. The potential rises slightly along this heading.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.12.b"><a tabindex="-1" href="#ex-electrostatic-plate-3-1-1-2" title="Copy heading and permalink for Item 5.10.12.b" aria-label="Copy heading and permalink for Item 5.10.12.b">🔗</a></div>
+</li>
+<li id="ex-electrostatic-plate-3-1-1-3">
+<div class="para" id="ex-electrostatic-plate-3-1-1-3-1">
+<span class="process-math">\(\hat{u} = \pm\tfrac{1}{\sqrt{13}}(3\,\hat{\imath} - 2\,\hat{\jmath})\text{.}\)</span> These are tangent to the equipotential ellipse <span class="process-math">\(2x^2 + 6y^2 = 14\)</span> through <span class="process-math">\(P_0\text{,}\)</span> and they are orthogonal to <span class="process-math">\(\mathbf E\text{,}\)</span> as they must be.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.12.c"><a tabindex="-1" href="#ex-electrostatic-plate-3-1-1-3" title="Copy heading and permalink for Item 5.10.12.c" aria-label="Copy heading and permalink for Item 5.10.12.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-electrostatic-plate-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<figure class="figure figure-like" id="figure-potential-plate"><div class="interactive-iframe-container"><iframe src="external/potential-plate-3d.html" id="interactive-potential-plate" style="width:600px; height:375px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-potential-plate.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.10.58<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The potential <span class="process-math">\(V(x,y) = 100 - 2x^2 - 6y^2\)</span> on the plate. One route holds <span class="process-math">\(V = 86\)</span> V along the equipotential <span class="process-math">\(2x^2 + 6y^2 = 14\text{;}\)</span> the other follows a field line, on which <span class="process-math">\(D_{\hat{u}}V = -\|\nabla V\|\)</span> at every point.<div class="autopermalink" aria-hidden="true" data-description="Figure 5.10.58"><a tabindex="-1" href="#figure-potential-plate" title="Copy heading and permalink for Figure 5.10.58" aria-label="Copy heading and permalink for Figure 5.10.58">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 5.10.12.1"><a tabindex="-1" href="#ex-electrostatic-plate-3" title="Copy heading and permalink for Answer 5.10.12.1" aria-label="Copy heading and permalink for Answer 5.10.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.12: Electric Potential on a Coated Plate"><a tabindex="-1" href="#ex-electrostatic-plate" title="Copy heading and permalink for Worksheet Exercise 5.10.12: Electric Potential on a Coated Plate" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.12: Electric Potential on a Coated Plate">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex-isobars-low"><h2 class="heading">
+<span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sailing the Isobars of a Low.</span>
+</h2>
+<div class="para logical" id="ex-isobars-low-2-1">
+<div class="para">Near the center of a low-pressure system the sea-level pressure, in millibars, is modeled by</div>
+<div class="displaymath process-math" id="ex-isobars-low-2-1-1">
+\begin{equation*}
+P(x,y) = 988 + 0.004\left(x^2 + y^2\right),
+\end{equation*}
+</div>
+<div class="para">with <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in miles from the center of the low. A ship sits at <span class="process-math">\(P_0(20,10)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="ex-isobars-low-2-2">
+<ol class="lower-alpha lower-alpha-level-1" id="ex-isobars-low-2-2-1">
+<li id="ex-isobars-low-2-2-1-1">
+<div class="para" id="ex-isobars-low-2-2-1-1-1">Find the pressure at the ship and <span class="process-math">\(\nabla P\)</span> there. The pressure-gradient force per unit volume of air is a positive multiple of <span class="process-math">\(-\nabla P\text{;}\)</span> in which unit direction does it push, and what is <span class="process-math">\(\|\nabla P\|\)</span> in millibars per mile?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.13.a"><a tabindex="-1" href="#ex-isobars-low-2-2-1-1" title="Copy heading and permalink for Item 5.10.13.a" aria-label="Copy heading and permalink for Item 5.10.13.a">🔗</a></div>
+</li>
+<li id="ex-isobars-low-2-2-1-2">
+<div class="para" id="ex-isobars-low-2-2-1-2-1">A second ship 40 miles from the center reports a stronger wind. Using this model, explain why <span class="process-math">\(\|\nabla P\|\)</span> supports that report.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.13.b"><a tabindex="-1" href="#ex-isobars-low-2-2-1-2" title="Copy heading and permalink for Item 5.10.13.b" aria-label="Copy heading and permalink for Item 5.10.13.b">🔗</a></div>
+</li>
+<li id="ex-isobars-low-2-2-1-3">
+<div class="para" id="ex-isobars-low-2-2-1-3-1">The captain decides to hold a constant barometer reading. Give the two possible unit headings at <span class="process-math">\(P_0\text{,}\)</span> and describe the shape of the full route.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.13.c"><a tabindex="-1" href="#ex-isobars-low-2-2-1-3" title="Copy heading and permalink for Item 5.10.13.c" aria-label="Copy heading and permalink for Item 5.10.13.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-isobars-low-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="ex-isobars-low-3-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex-isobars-low-3-1-1">
+<li id="ex-isobars-low-3-1-1-1">
+<div class="para" id="ex-isobars-low-3-1-1-1-1">
+<span class="process-math">\(P(20,10) = 988 + 0.004(500) = 990\)</span> mb, and <span class="process-math">\(\nabla P = 0.008x\,\hat{\imath} + 0.008y\,\hat{\jmath}\)</span> gives <span class="process-math">\((\nabla P)_{(20,10)} = 0.16\,\hat{\imath} + 0.08\,\hat{\jmath}\text{.}\)</span> The force points along <span class="process-math">\(-\mathbf u = -\tfrac{1}{\sqrt{5}}(2\,\hat{\imath} + \hat{\jmath})\text{,}\)</span> that is, inward toward the low, and <span class="process-math">\(\|\nabla P\| = 0.08\sqrt{5} \approx 0.18\)</span> mb/mi.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.13.a"><a tabindex="-1" href="#ex-isobars-low-3-1-1-1" title="Copy heading and permalink for Item 5.10.13.a" aria-label="Copy heading and permalink for Item 5.10.13.a">🔗</a></div>
+</li>
+<li id="ex-isobars-low-3-1-1-2">
+<div class="para" id="ex-isobars-low-3-1-1-2-1">Here <span class="process-math">\(\|\nabla P\| = 0.008\sqrt{x^2+y^2}\)</span> grows linearly with distance from the center, so at 40 miles it is <span class="process-math">\(0.32\)</span> mb/mi, nearly double the value at the first ship. (Real storms reverse this trend close to the eye; the model is only reasonable over a limited annulus.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.13.b"><a tabindex="-1" href="#ex-isobars-low-3-1-1-2" title="Copy heading and permalink for Item 5.10.13.b" aria-label="Copy heading and permalink for Item 5.10.13.b">🔗</a></div>
+</li>
+<li id="ex-isobars-low-3-1-1-3">
+<div class="para" id="ex-isobars-low-3-1-1-3-1">
+<span class="process-math">\(\mathbf u = \pm\tfrac{1}{\sqrt{5}}(\hat{\imath} - 2\,\hat{\jmath})\text{.}\)</span> Since the level curves of <span class="process-math">\(P\)</span> are the circles <span class="process-math">\(x^2+y^2 = \text{constant}\text{,}\)</span> holding the barometer steady means circling the storm at a fixed radius of <span class="process-math">\(\sqrt{500} \approx 22.4\)</span> miles.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5.10.13.c"><a tabindex="-1" href="#ex-isobars-low-3-1-1-3" title="Copy heading and permalink for Item 5.10.13.c" aria-label="Copy heading and permalink for Item 5.10.13.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-isobars-low-3-2">Use the interactive figure to explore the problem further geometrically, switching between the two headings and watching how the barometer responds as the ship moves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-isobars-low-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:100%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<figure class="figure figure-like" id="figure-isobars-low"><div class="interactive-iframe-container"><iframe src="external/isobars-low-3d.html" id="interactive-isobars-low" style="width:600px; height:375px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-isobars-low.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.10.59<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The pressure field <span class="process-math">\(P(x,y) = 988 + 0.004(x^2+y^2)\)</span> around a low. One heading circles the eye at constant <span class="process-math">\(990\)</span> mb; the other runs outward along <span class="process-math">\(\nabla P\text{.}\)</span> The distance readout shows why <span class="process-math">\(\|\nabla P\| = 0.008r\)</span> grows with radius.<div class="autopermalink" aria-hidden="true" data-description="Figure 5.10.59"><a tabindex="-1" href="#figure-isobars-low" title="Copy heading and permalink for Figure 5.10.59" aria-label="Copy heading and permalink for Figure 5.10.59">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 5.10.13.1"><a tabindex="-1" href="#ex-isobars-low-3" title="Copy heading and permalink for Answer 5.10.13.1" aria-label="Copy heading and permalink for Answer 5.10.13.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5.10.13: Sailing the Isobars of a Low"><a tabindex="-1" href="#ex-isobars-low" title="Copy heading and permalink for Worksheet Exercise 5.10.13: Sailing the Isobars of a Low" aria-label="Copy heading and permalink for Worksheet Exercise 5.10.13: Sailing the Isobars of a Low">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet 5.10: Assignment 8"><a tabindex="-1" href="#worksheet-assignment-8" title="Copy heading and permalink for Worksheet 5.10: Assignment 8" aria-label="Copy heading and permalink for Worksheet 5.10: Assignment 8">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="worksheet-assignment-7.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="worksheet-assignment-9.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script><script src="external/custom.js"></script>
+</body>
+</html>

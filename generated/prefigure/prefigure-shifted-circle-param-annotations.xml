@@ -1,0 +1,106 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-shifted-circle-param-figure" speech2="A coordinate grid showing a circle of radius 2 centered at the point 2 comma 0, traced by x equals 2 cosine t plus 2 and y equals 2 sine t. The center is marked in green, and the four points where t equals 0, pi over 2, pi, and 3 pi over 2 are marked in red.">
+      <grouped>prefigure-shifted-circle-param-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-shifted-circle-param-grid-axes</active>
+        <active>prefigure-shifted-circle-param-sc-grid</active>
+        <active>prefigure-shifted-circle-param-sc-curve</active>
+        <active>prefigure-shifted-circle-param-sc-center</active>
+        <active>prefigure-shifted-circle-param-sc-mark-0</active>
+        <active>prefigure-shifted-circle-param-sc-mark-half-pi</active>
+        <active>prefigure-shifted-circle-param-sc-mark-pi</active>
+        <active>prefigure-shifted-circle-param-sc-mark-3half-pi</active>
+      </children>
+      <components>
+        <active>prefigure-shifted-circle-param-grid-axes</active>
+        <active>prefigure-shifted-circle-param-sc-grid</active>
+        <active>prefigure-shifted-circle-param-sc-curve</active>
+        <active>prefigure-shifted-circle-param-sc-center</active>
+        <active>prefigure-shifted-circle-param-sc-mark-0</active>
+        <active>prefigure-shifted-circle-param-sc-mark-half-pi</active>
+        <active>prefigure-shifted-circle-param-sc-mark-pi</active>
+        <active>prefigure-shifted-circle-param-sc-mark-3half-pi</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-shifted-circle-param-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-shifted-circle-param-grid</active>
+        <active>prefigure-shifted-circle-param-axes</active>
+      </children>
+      <components>
+        <active>prefigure-shifted-circle-param-grid</active>
+        <active>prefigure-shifted-circle-param-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-grid" speech2="The coordinate grid">
+      <active>prefigure-shifted-circle-param-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-axes" speech2="The coordinate axes">
+      <active>prefigure-shifted-circle-param-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-grid" speech2="A coordinate grid with x and y axes.">
+      <active>prefigure-shifted-circle-param-sc-grid</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-curve" speech2="The circle of radius 2 centered at 2 comma 0, drawn in blue, traced counterclockwise.">
+      <active>prefigure-shifted-circle-param-sc-curve</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-center" speech2="The center of the circle, at the point 2 comma 0, marked in green.">
+      <active>prefigure-shifted-circle-param-sc-center</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-mark-0" speech2="The point 4 comma 0, where t equals 0.">
+      <active>prefigure-shifted-circle-param-sc-mark-0</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-mark-half-pi" speech2="The point 2 comma 2, at the top of the circle, where t equals pi over 2.">
+      <active>prefigure-shifted-circle-param-sc-mark-half-pi</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-mark-pi" speech2="The origin, where t equals pi.">
+      <active>prefigure-shifted-circle-param-sc-mark-pi</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-shifted-circle-param-sc-mark-3half-pi" speech2="The point 2 comma negative 2, at the bottom of the circle, where t equals 3 pi over 2.">
+      <active>prefigure-shifted-circle-param-sc-mark-3half-pi</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-shifted-circle-param-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

@@ -1,0 +1,39 @@
+<diagram>
+  <annotations>
+    <annotation id="hyperbolic-paraboloid-traces-figure" speech2="Traces of the hyperbolic paraboloid z equals x squared over 4 minus y squared over 9 in the planes x equals 2, y equals negative 3, and z equals 1">
+      <grouped>hyperbolic-paraboloid-traces-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>hyperbolic-paraboloid-traces-trace-x</active>
+        <active>hyperbolic-paraboloid-traces-trace-y</active>
+        <active>hyperbolic-paraboloid-traces-trace-z</active>
+      </children>
+      <components>
+        <active>hyperbolic-paraboloid-traces-trace-x</active>
+        <active>hyperbolic-paraboloid-traces-trace-y</active>
+        <active>hyperbolic-paraboloid-traces-trace-z</active>
+      </components>
+    </annotation>
+    <annotation id="hyperbolic-paraboloid-traces-trace-x" speech2="In the plane x equals 2, the trace z equals 1 minus y squared over 9 is a parabola opening downward with vertex at height 1">
+      <active>hyperbolic-paraboloid-traces-trace-x</active>
+      <position>1</position>
+      <parents>
+        <grouped>hyperbolic-paraboloid-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbolic-paraboloid-traces-trace-y" speech2="In the plane y equals negative 3, the trace z equals x squared over 4 minus 1 is a parabola opening upward with vertex at height negative 1">
+      <active>hyperbolic-paraboloid-traces-trace-y</active>
+      <position>2</position>
+      <parents>
+        <grouped>hyperbolic-paraboloid-traces-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="hyperbolic-paraboloid-traces-trace-z" speech2="In the plane z equals 1, the trace x squared over 4 minus y squared over 9 equals 1 is a hyperbola opening left and right">
+      <active>hyperbolic-paraboloid-traces-trace-z</active>
+      <position>3</position>
+      <parents>
+        <grouped>hyperbolic-paraboloid-traces-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

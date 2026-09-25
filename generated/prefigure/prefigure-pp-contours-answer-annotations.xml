@@ -1,0 +1,61 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-pp-contours-answer-figure" speech2="The same seven level curves, drawn in gray. A green arrow at the point one comma two points up and to the left, perpendicular to the level curve there; it is labelled gradient of f at one comma two. A vermillion arrow at P points straight down and is labelled u two.">
+      <grouped>prefigure-pp-contours-answer-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-contours-answer-grid-axes</active>
+        <active>prefigure-pp-contours-answer-ca-grad</active>
+        <active>prefigure-pp-contours-answer-ca-u2</active>
+      </children>
+      <components>
+        <active>prefigure-pp-contours-answer-grid-axes</active>
+        <active>prefigure-pp-contours-answer-ca-grad</active>
+        <active>prefigure-pp-contours-answer-ca-u2</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-pp-contours-answer-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-pp-contours-answer-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pp-contours-answer-grid</active>
+        <active>prefigure-pp-contours-answer-axes</active>
+      </children>
+      <components>
+        <active>prefigure-pp-contours-answer-grid</active>
+        <active>prefigure-pp-contours-answer-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-pp-contours-answer-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-answer-grid" speech2="The coordinate grid">
+      <active>prefigure-pp-contours-answer-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-pp-contours-answer-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-answer-axes" speech2="The coordinate axes">
+      <active>prefigure-pp-contours-answer-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-contours-answer-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-answer-ca-grad" speech2="The gradient at one comma two, perpendicular to the level curve and pointing toward larger values of f.">
+      <active>prefigure-pp-contours-answer-ca-grad</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pp-contours-answer-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pp-contours-answer-ca-u2" speech2="The vector u two at P, pointing straight down toward smaller values of f, so the directional derivative there is negative.">
+      <active>prefigure-pp-contours-answer-ca-u2</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-pp-contours-answer-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

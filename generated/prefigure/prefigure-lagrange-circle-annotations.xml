@@ -1,0 +1,111 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-lagrange-circle-figure" speech2="The x y plane with a green circle of radius 2 centered at the origin, the constraint, and three circles centered at the point 1 comma negative 1, which are level curves of f. A small red circle, f equals 9 minus 4 root 2, is tangent to the constraint circle from inside at the point root 2 comma negative root 2. A large red circle, f equals 9 plus 4 root 2, is tangent to the constraint circle from outside at the point negative root 2 comma root 2. A dashed gray circle, f equals 7, crosses the constraint circle at two points. At each tangency point, red and green arrows show the gradients of f and g pointing in the same direction.">
+      <grouped>prefigure-lagrange-circle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-lagrange-circle-cl-constraint</active>
+        <active>prefigure-lagrange-circle-cl-lmax</active>
+        <active>prefigure-lagrange-circle-cl-lmin</active>
+        <active>prefigure-lagrange-circle-cl-lmid</active>
+        <active>prefigure-lagrange-circle-cl-center</active>
+        <active>prefigure-lagrange-circle-cl-max</active>
+        <active>prefigure-lagrange-circle-cl-min</active>
+        <active>prefigure-lagrange-circle-cl-gradf-max</active>
+        <active>prefigure-lagrange-circle-cl-gradg-max</active>
+        <active>prefigure-lagrange-circle-cl-gradf-min</active>
+        <active>prefigure-lagrange-circle-cl-gradg-min</active>
+      </children>
+      <components>
+        <active>prefigure-lagrange-circle-cl-constraint</active>
+        <active>prefigure-lagrange-circle-cl-lmax</active>
+        <active>prefigure-lagrange-circle-cl-lmin</active>
+        <active>prefigure-lagrange-circle-cl-lmid</active>
+        <active>prefigure-lagrange-circle-cl-center</active>
+        <active>prefigure-lagrange-circle-cl-max</active>
+        <active>prefigure-lagrange-circle-cl-min</active>
+        <active>prefigure-lagrange-circle-cl-gradf-max</active>
+        <active>prefigure-lagrange-circle-cl-gradg-max</active>
+        <active>prefigure-lagrange-circle-cl-gradf-min</active>
+        <active>prefigure-lagrange-circle-cl-gradg-min</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-constraint" speech2="The constraint circle, x squared plus y squared equals 4, drawn in green, centered at the origin with radius 2.">
+      <active>prefigure-lagrange-circle-cl-constraint</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-lmax" speech2="The level curve f equals 9 plus 4 root 2, drawn in red: the largest circle centered at 1 comma negative 1 that still meets the constraint circle. It is tangent to it at negative root 2 comma root 2, where the absolute maximum is attained.">
+      <active>prefigure-lagrange-circle-cl-lmax</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-lmin" speech2="The level curve f equals 9 minus 4 root 2, drawn in red: the smallest circle centered at 1 comma negative 1 that meets the constraint circle. It is tangent to it at root 2 comma negative root 2, where the absolute minimum is attained.">
+      <active>prefigure-lagrange-circle-cl-lmin</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-lmid" speech2="The intermediate level curve f equals 7, drawn dashed in gray. It crosses the constraint circle at two points instead of being tangent, so the value 7 is attained but is not an extreme value.">
+      <active>prefigure-lagrange-circle-cl-lmid</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-center" speech2="The point 1 comma negative 1, the common center of the level curves of f and the location of the minimum of the unconstrained paraboloid.">
+      <active>prefigure-lagrange-circle-cl-center</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-max" speech2="The point negative root 2 comma root 2, where f attains its absolute maximum 9 plus 4 root 2 on the circle.">
+      <active>prefigure-lagrange-circle-cl-max</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-min" speech2="The point root 2 comma negative root 2, where f attains its absolute minimum 9 minus 4 root 2 on the circle.">
+      <active>prefigure-lagrange-circle-cl-min</active>
+      <position>7</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-gradf-max" speech2="The gradient of f at the maximum point, drawn in red, pointing away from the constraint circle in the same direction as the gradient of g. Here lambda equals 1 plus 1 over root 2.">
+      <active>prefigure-lagrange-circle-cl-gradf-max</active>
+      <position>8</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-gradg-max" speech2="The gradient of g at the maximum point, drawn in green, drawn slightly apart from the gradient of f so both are visible.">
+      <active>prefigure-lagrange-circle-cl-gradg-max</active>
+      <position>9</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-gradf-min" speech2="The gradient of f at the minimum point, drawn in red. It is shorter than the gradient of g, since lambda equals 1 minus 1 over root 2 is less than 1.">
+      <active>prefigure-lagrange-circle-cl-gradf-min</active>
+      <position>10</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-lagrange-circle-cl-gradg-min" speech2="The gradient of g at the minimum point, drawn in green, collinear with the gradient of f.">
+      <active>prefigure-lagrange-circle-cl-gradg-min</active>
+      <position>11</position>
+      <parents>
+        <grouped>prefigure-lagrange-circle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

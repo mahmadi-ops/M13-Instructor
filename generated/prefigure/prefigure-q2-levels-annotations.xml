@@ -1,0 +1,79 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-q2-levels-figure" speech2="Three parabolas sharing the origin as vertex and the x axis as axis of symmetry. An orange one opens to the left, labelled h equals negative four. A blue narrow one and a green wide one open to the right, labelled h equals one and h equals four. A dark red dot marks the point negative one comma two on the orange curve.">
+      <grouped>prefigure-q2-levels-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-q2-levels-grid-axes</active>
+        <active>prefigure-q2-levels-q2l-m4</active>
+        <active>prefigure-q2-levels-q2l-1</active>
+        <active>prefigure-q2-levels-q2l-4</active>
+        <active>prefigure-q2-levels-q2l-P</active>
+      </children>
+      <components>
+        <active>prefigure-q2-levels-grid-axes</active>
+        <active>prefigure-q2-levels-q2l-m4</active>
+        <active>prefigure-q2-levels-q2l-1</active>
+        <active>prefigure-q2-levels-q2l-4</active>
+        <active>prefigure-q2-levels-q2l-P</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-q2-levels-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-q2-levels-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-q2-levels-grid</active>
+        <active>prefigure-q2-levels-axes</active>
+      </children>
+      <components>
+        <active>prefigure-q2-levels-grid</active>
+        <active>prefigure-q2-levels-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-q2-levels-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q2-levels-grid" speech2="The coordinate grid">
+      <active>prefigure-q2-levels-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-q2-levels-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q2-levels-axes" speech2="The coordinate axes">
+      <active>prefigure-q2-levels-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-q2-levels-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q2-levels-q2l-m4" speech2="The level curve h equals negative four, the parabola x equals minus y squared over four, opening to the left.">
+      <active>prefigure-q2-levels-q2l-m4</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-q2-levels-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q2-levels-q2l-1" speech2="The level curve h equals one, the parabola x equals y squared, opening to the right.">
+      <active>prefigure-q2-levels-q2l-1</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-q2-levels-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q2-levels-q2l-4" speech2="The level curve h equals four, the parabola x equals y squared over four, opening to the right and wider than the previous one.">
+      <active>prefigure-q2-levels-q2l-4</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-q2-levels-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-q2-levels-q2l-P" speech2="The point negative one comma two, which lies on the level curve h equals negative four.">
+      <active>prefigure-q2-levels-q2l-P</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-q2-levels-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

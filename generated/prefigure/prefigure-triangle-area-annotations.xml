@@ -1,0 +1,57 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-triangle-area-figure" speech2="A triangle formed by the vectors AB and AC drawn tail to tail from the vertex A, together with a dashed segment from the tip of AC to the tip of AB. Two more dashed segments complete the parallelogram built on AB and AC, showing that the triangle is half of the parallelogram.">
+      <grouped>prefigure-triangle-area-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-triangle-area-tri-vec-ab</active>
+        <active>prefigure-triangle-area-tri-vec-ac</active>
+        <active>prefigure-triangle-area-tri-side-bc</active>
+        <active>prefigure-triangle-area-tri-side-top</active>
+        <active>prefigure-triangle-area-tri-side-right</active>
+      </children>
+      <components>
+        <active>prefigure-triangle-area-tri-vec-ab</active>
+        <active>prefigure-triangle-area-tri-vec-ac</active>
+        <active>prefigure-triangle-area-tri-side-bc</active>
+        <active>prefigure-triangle-area-tri-side-top</active>
+        <active>prefigure-triangle-area-tri-side-right</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-triangle-area-tri-vec-ab" speech2="Vector AB, along the horizontal direction.">
+      <active>prefigure-triangle-area-tri-vec-ab</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-triangle-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-triangle-area-tri-vec-ac" speech2="Vector AC, drawn from the same tail as AB.">
+      <active>prefigure-triangle-area-tri-vec-ac</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-triangle-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-triangle-area-tri-side-bc" speech2="The dashed third side of the triangle, from the tip of AC to the tip of AB.">
+      <active>prefigure-triangle-area-tri-side-bc</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-triangle-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-triangle-area-tri-side-top" speech2="A dashed side completing the parallelogram, parallel to AB.">
+      <active>prefigure-triangle-area-tri-side-top</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-triangle-area-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-triangle-area-tri-side-right" speech2="A dashed side completing the parallelogram, parallel to AC.">
+      <active>prefigure-triangle-area-tri-side-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-triangle-area-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

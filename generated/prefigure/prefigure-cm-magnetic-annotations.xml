@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-cm-magnetic-figure" speech2="A uniform magnetic field pointing into the page is shown as a grid of small crosses. A positive charge travels counter-clockwise around a circle of radius r centred at O. At the rightmost point of the circle the velocity arrow points straight up, tangent to the circle, and the magnetic force arrow q v cross B points straight in toward the centre, at a right angle to the velocity. Because the cross product is automatically perpendicular to the velocity, the force can only turn the particle and never change its speed; balancing the magnetic force against m v squared over r gives r equals m v over the absolute value of q times B.">
+      <grouped>prefigure-cm-magnetic-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-cm-magnetic-mb-orbit</active>
+        <active>prefigure-cm-magnetic-mb-dir</active>
+        <active>prefigure-cm-magnetic-mb-v</active>
+        <active>prefigure-cm-magnetic-mb-F</active>
+        <active>prefigure-cm-magnetic-mb-right</active>
+        <active>prefigure-cm-magnetic-mb-r</active>
+      </children>
+      <components>
+        <active>prefigure-cm-magnetic-mb-orbit</active>
+        <active>prefigure-cm-magnetic-mb-dir</active>
+        <active>prefigure-cm-magnetic-mb-v</active>
+        <active>prefigure-cm-magnetic-mb-F</active>
+        <active>prefigure-cm-magnetic-mb-right</active>
+        <active>prefigure-cm-magnetic-mb-r</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-cm-magnetic-mb-orbit" speech2="The circular orbit of the charged particle.">
+      <active>prefigure-cm-magnetic-mb-orbit</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-cm-magnetic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-magnetic-mb-dir" speech2="An arrowhead on the orbit showing the particle circulates counter-clockwise.">
+      <active>prefigure-cm-magnetic-mb-dir</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-cm-magnetic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-magnetic-mb-v" speech2="The velocity of the particle, tangent to the circle.">
+      <active>prefigure-cm-magnetic-mb-v</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-cm-magnetic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-magnetic-mb-F" speech2="The magnetic force q times v cross B, pointing from the particle in toward the centre.">
+      <active>prefigure-cm-magnetic-mb-F</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-cm-magnetic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-magnetic-mb-right" speech2="A right angle marker showing the magnetic force is perpendicular to the velocity.">
+      <active>prefigure-cm-magnetic-mb-right</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-cm-magnetic-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-cm-magnetic-mb-r" speech2="The radius r from the centre O out to the particle.">
+      <active>prefigure-cm-magnetic-mb-r</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-cm-magnetic-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

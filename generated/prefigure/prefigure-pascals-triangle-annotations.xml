@@ -1,0 +1,66 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-pascals-triangle-figure" speech2="Pascal's triangle, five rows, arranged so that each row is centered below the one before it. Row n holds the coefficients of one plus x to the n. Every row begins and ends with one, and each remaining entry is the sum of the two entries just above it.">
+      <grouped>prefigure-pascals-triangle-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-pascals-triangle-pt-row-0</active>
+        <active>prefigure-pascals-triangle-pt-row-1</active>
+        <active>prefigure-pascals-triangle-pt-row-2</active>
+        <active>prefigure-pascals-triangle-pt-row-3</active>
+        <active>prefigure-pascals-triangle-pt-row-4</active>
+        <active>prefigure-pascals-triangle-pt-addition</active>
+      </children>
+      <components>
+        <active>prefigure-pascals-triangle-pt-row-0</active>
+        <active>prefigure-pascals-triangle-pt-row-1</active>
+        <active>prefigure-pascals-triangle-pt-row-2</active>
+        <active>prefigure-pascals-triangle-pt-row-3</active>
+        <active>prefigure-pascals-triangle-pt-row-4</active>
+        <active>prefigure-pascals-triangle-pt-addition</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-pascals-triangle-pt-row-0" speech2="Row 0: one. These are the coefficients of one plus x to the zero, which is one.">
+      <active>prefigure-pascals-triangle-pt-row-0</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-pascals-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pascals-triangle-pt-row-1" speech2="Row 1: one, one. These are the coefficients of one plus x.">
+      <active>prefigure-pascals-triangle-pt-row-1</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-pascals-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pascals-triangle-pt-row-2" speech2="Row 2: one, two, one. These are the coefficients of one plus x squared.">
+      <active>prefigure-pascals-triangle-pt-row-2</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-pascals-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pascals-triangle-pt-row-3" speech2="Row 3: one, three, three, one. These are the coefficients of one plus x cubed.">
+      <active>prefigure-pascals-triangle-pt-row-3</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-pascals-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pascals-triangle-pt-row-4" speech2="Row 4: one, four, six, four, one. These are the coefficients of one plus x to the fourth.">
+      <active>prefigure-pascals-triangle-pt-row-4</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-pascals-triangle-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-pascals-triangle-pt-addition" speech2="Two arrows showing the addition rule: the three and the three in row three point down to the six directly below them in row four, because three plus three is six.">
+      <active>prefigure-pascals-triangle-pt-addition</active>
+      <position>6</position>
+      <parents>
+        <grouped>prefigure-pascals-triangle-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

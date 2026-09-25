@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torque: tau = r x F</title>
+<style>
+  body.dark {
+    --bg: #0c0f13; --pane: #101419; --line: #232b38; --grid: #22344a;
+    --axis: #c7d0df; --ink: #e8eaf0; --muted: #8b93a7; --tick: #5b6579;
+    --cube: #202a38; --r: #ffe45c; --f: #fc6255; --tau: #58c4dd;
+    --lever: #b48ee0; --btnbord: #2a3341; --btnhov: #161c25; --brk: #aeb8c9;
+  }
+  body.light {
+    --bg: #ffffff; --pane: #ffffff; --line: #d7dde6; --grid: #e4e9f0;
+    --axis: #1a1a1a; --ink: #111111; --muted: #5a6270; --tick: #8a94a6;
+    --cube: #d9dfe8; --r: #b8860b; --f: #d55e00; --tau: #1f8fb4;
+    --lever: #7d5bb5; --btnbord: #c9d1dc; --btnhov: #f0f3f7; --brk: #444c5a;
+  }
+  html, body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #wrap { max-width: 1060px; margin: 0 auto; padding: 8px 8px 12px; }
+
+  #titlebar { display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 4px 16px; padding: 2px 4px 6px; }
+  #title { font-size: 18px; }
+  #title .fr { color: var(--r); } #title .ff { color: var(--f); }
+  #title .ft { color: var(--tau); }
+  #controls { display: flex; gap: 8px; }
+  #controls button {
+    background: transparent; color: var(--ink); border: 1px solid var(--btnbord);
+    border-radius: 6px; padding: 3px 12px; font: 13px Georgia, serif;
+    cursor: pointer; transition: border-color .15s, background .15s;
+  }
+  #controls button:hover { background: var(--btnhov); }
+  #controls button.active { border-color: var(--r); color: var(--r); }
+
+  #eqbar { display: flex; justify-content: center; align-items: center;
+    gap: 10px; padding: 4px 0 10px; font-size: 15px; flex-wrap: wrap;
+    font-variant-numeric: tabular-nums; }
+  #eqbar .eq { color: var(--muted); }
+  .cr { color: var(--r); } .cf { color: var(--f); } .ct { color: var(--tau); }
+  .cl { color: var(--lever); }
+  #sense { font-size: 13.5px; font-style: italic; color: var(--muted); }
+
+  #panes { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pane { flex: 1 1 46%; min-width: 250px; }
+  .pane-head { font-size: 12px; color: var(--muted); letter-spacing: .5px;
+    padding: 0 2px 4px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .pane-head b { color: var(--ink); font-weight: normal; }
+  .chip { white-space: nowrap; }
+  .pane svg { display: block; width: 100%; height: auto;
+    background: var(--pane); border: 1px solid var(--line); border-radius: 8px; }
+  svg.spin { cursor: grab; } svg.spin.dragging { cursor: grabbing; }
+
+  #hint { text-align: center; color: var(--muted); font-size: 12px; padding-top: 8px; }
+  #hint kbd { font: 10.5px Georgia, serif; border: 1px solid var(--btnbord);
+    border-radius: 4px; padding: 0 5px; margin: 0 1px; color: var(--ink); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip-path: inset(50%); }
+  .handle { cursor: grab; outline: none; }
+  .handle:focus-visible .fring, .handle:hover .fring { opacity: 1; }
+  .fring { opacity: 0; transition: opacity .15s; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="titlebar">
+    <div id="title"><b class="ft"><i>&tau;</i></b> =
+      <b class="fr"><i>r</i></b> &times; <b class="ff"><i>F</i></b></div>
+    <div id="controls">
+      <button id="btn-demo" type="button">&#9654;&#xFE0E; animate</button>
+      <button id="btn-view" type="button">&#10226; view</button>
+    </div>
+  </div>
+
+  <div id="eqbar">
+    <span>&#8214;<b class="ct"><i>&tau;</i></b>&#8214;</span>
+    <span class="eq">=</span>
+    <span>&#8214;<b class="cr"><i>r</i></b>&#8214;&#8201;&#8214;<b class="cf"><i>F</i></b>&#8214;&#8201;|sin&#8202;<i>&theta;</i>|</span>
+    <span class="eq">=</span>
+    <span id="numbers"></span>
+    <span class="eq">=</span>
+    <span class="ct" id="tauval"></span>
+    <span id="sense"></span>
+  </div>
+
+  <div id="panes">
+    <div class="pane">
+      <div class="pane-head">
+        <span>PLANE OF <b><i>r</i></b> AND <b><i>F</i></b></span>
+        <span class="chip"><span class="cl">&#9644;</span>
+          lever arm <i>r</i><sub>&perp;</sub> = <span id="rperp"></span></span>
+        <span class="chip"><i>&theta;</i> = <span id="theta"></span></span>
+      </div>
+      <svg id="svgIn" viewBox="0 0 520 520" role="img"
+        aria-label="The plane containing the position vector r and the force F, with the lever arm and the angle theta"></svg>
+    </div>
+    <div class="pane">
+      <div class="pane-head">
+        <span>SPACE</span>
+        <span class="chip"><span class="ct">&#9632;</span>
+          area of the parallelogram = &#8214;<i>&tau;</i>&#8214;</span>
+      </div>
+      <svg id="svgOut" viewBox="0 0 520 520" role="img"
+        aria-label="Three dimensional view with the torque vector along the axis of rotation"></svg>
+    </div>
+  </div>
+
+  <div id="hint">drag the head of <b class="cr"><i>r</i></b> or of
+    <b class="cf"><i>F</i></b>
+    &nbsp;&middot;&nbsp; <kbd>&#8592;</kbd><kbd>&#8593;</kbd><kbd>&#8594;</kbd><kbd>&#8595;</kbd>
+    move the selected vector
+    &nbsp;&middot;&nbsp; drag the right pane to rotate it</div>
+  <div class="sr" aria-live="polite" id="announce"></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var NS = "http://www.w3.org/2000/svg";
+  var W = 520, C = W / 2;
+
+  // ---------------- URL parameters ----------------
+  var Q = {};
+  location.search.slice(1).split("&").forEach(function (kv) {
+    if (!kv) return; var p = kv.split("=");
+    Q[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || "");
+  });
+  var prefersDark = window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.body.className = Q.theme
+    ? (Q.theme === "light" ? "light" : "dark")
+    : (prefersDark ? "dark" : "light");
+  var RANGE = parseFloat(Q.range || "5");
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---------------- state (all vectors live in the xy-plane) ----------------
+  function num(s, d) { var v = parseFloat(s); return isNaN(v) ? d : v; }
+  var r = [num((Q.r || "").split(",")[0], 3), num((Q.r || "").split(",")[1], 0), 0];
+  var F = [num((Q.f || "").split(",")[0], 0), num((Q.f || "").split(",")[1], 2.4), 0];
+
+  // ---------------- small vector helpers ----------------
+  function len(v) { return Math.hypot(v[0], v[1], v[2]); }
+  function dot(a, b) { return a[0]*b[0] + a[1]*b[1] + a[2]*b[2]; }
+  function tauZ() { return r[0]*F[1] - r[1]*F[0]; }        // (r x F) . k
+  function theta() {                                        // radians, in [0, pi]
+    var d = len(r) * len(F);
+    if (d < 1e-9) return 0;
+    return Math.acos(Math.max(-1, Math.min(1, dot(r, F) / d)));
+  }
+  function fmt(t) { return (t < -0.005 ? "−" : "") + Math.abs(t).toFixed(2); }
+  function ease(u) { u = Math.max(0, Math.min(1, u));
+    return u < 0.5 ? 4*u*u*u : 1 - Math.pow(-2*u + 2, 3) / 2; }
+
+  // ---------------- svg helpers ----------------
+  function el(parent, tag, attrs) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    parent.appendChild(e); return e;
+  }
+  function paint(e, prop, colorVar) { e.style[prop] = "var(" + colorVar + ")"; }
+
+  function makeArrow(parent, colorVar, italic) {
+    var g = el(parent, "g", {});
+    var glow = el(g, "line", { "stroke-width": 7, "stroke-linecap": "round",
+      opacity: 0.28 });
+    paint(glow, "stroke", colorVar); glow.style.filter = "blur(4px)";
+    var core = el(g, "line", { "stroke-width": 2.6, "stroke-linecap": "round" });
+    paint(core, "stroke", colorVar);
+    var tip = el(g, "path", {}); paint(tip, "fill", colorVar);
+    var label = el(g, "text", { "font-size": 21,
+      "font-style": italic === false ? "normal" : "italic",
+      "font-family": "Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif" });
+    paint(label, "fill", colorVar);
+    return { g: g, glow: glow, core: core, tip: tip, label: label };
+  }
+  function setArrow(a, x0, y0, x1, y1, txt, vis) {
+    var dx = x1 - x0, dy = y1 - y0, L = Math.hypot(dx, dy) || 1;
+    var hx = dx / L, hy = dy / L;
+    var hs = Math.min(15, 6 + L * 0.06);
+    var bx = x1 - hx * hs, by = y1 - hy * hs;
+    [a.glow, a.core].forEach(function (l) {
+      l.setAttribute("x1", x0); l.setAttribute("y1", y0);
+      l.setAttribute("x2", bx + hx); l.setAttribute("y2", by + hy);
+    });
+    a.tip.setAttribute("d", "M" + x1 + "," + y1 +
+      "L" + (bx - hy * hs * 0.38) + "," + (by + hx * hs * 0.38) +
+      "L" + (bx + hy * hs * 0.38) + "," + (by - hx * hs * 0.38) + "Z");
+    a.label.textContent = txt;
+    a.label.setAttribute("x", x1 + hx * 15 + (hx >= 0 ? 3 : -16));
+    a.label.setAttribute("y", y1 + hy * 15 + 7);
+    a.g.setAttribute("opacity", L < 2 ? 0 : vis);
+  }
+  // polyline arc, centre (cx,cy) in screen units, from screen angle a0 by da
+  function arcD(cx, cy, rad, a0, da) {
+    var n = 26, d = "", i, a;
+    for (i = 0; i <= n; i++) {
+      a = a0 + da * i / n;
+      d += (i ? "L" : "M") + (cx + rad * Math.cos(a)) + "," + (cy + rad * Math.sin(a));
+    }
+    return d;
+  }
+
+  // ---------------- panes ----------------
+  function Pane(svgId, dim, labels) {
+    var P = { svg: document.getElementById(svgId), dim: dim,
+      yaw: -0.62, pitch: 0.40 };
+    var S = dim === 2 ? W / (2 * RANGE) : W / (2 * RANGE) * 0.72;
+    P.scale = S;
+    P.map = function (p) {
+      if (dim === 2) return [C + p[0] * S, C - p[1] * S];
+      var ca = Math.cos(P.yaw), sa = Math.sin(P.yaw);
+      var cb = Math.cos(P.pitch), sb = Math.sin(P.pitch);
+      var X = p[0] * ca - p[1] * sa;
+      var Y = p[0] * sa + p[1] * ca;
+      return [C + X * S, C - (-Y * sb + p[2] * cb) * S];
+    };
+
+    var gGrid = el(P.svg, "g", {}), gSub = el(P.svg, "g", {}),
+        gAxes = el(P.svg, "g", {});
+    P.layers = { grid: gGrid, sub: gSub, axes: gAxes };
+    var i;
+
+    if (dim === 2) {
+      for (i = -RANGE; i <= RANGE; i++) {
+        if (i === 0) continue;
+        [[[i,-RANGE,0],[i,RANGE,0]], [[-RANGE,i,0],[RANGE,i,0]]].forEach(function (seg) {
+          var a = P.map(seg[0]), c = P.map(seg[1]);
+          paint(el(gGrid, "line", { x1: a[0], y1: a[1], x2: c[0], y2: c[1],
+            "stroke-width": 1 }), "stroke", "--grid");
+        });
+      }
+      [-4, -2, 2, 4].forEach(function (v) {
+        if (Math.abs(v) > RANGE) return;
+        var t1 = el(gAxes, "text", { x: P.map([v,0,0])[0] - 4, y: C + 15,
+          "font-size": 11 });
+        t1.textContent = v; paint(t1, "fill", "--tick");
+        var t2 = el(gAxes, "text", { x: C + 6, y: P.map([0,v,0])[1] + 4,
+          "font-size": 11 });
+        t2.textContent = v; paint(t2, "fill", "--tick");
+      });
+    } else {
+      P.cubeC = []; P.cubeL = [];
+      for (i = 0; i < 8; i++) P.cubeC.push(
+        [(i&1?RANGE:-RANGE), (i&2?RANGE:-RANGE), (i&4?RANGE:-RANGE)]);
+      P.cubeE = [[0,1],[2,3],[4,5],[6,7],[0,2],[1,3],[4,6],[5,7],[0,4],[1,5],[2,6],[3,7]];
+      P.cubeE.forEach(function () {
+        paint(P.cubeL[P.cubeL.push(el(gGrid, "line", { "stroke-width": 1 })) - 1],
+          "stroke", "--cube");
+      });
+      P.svg.classList.add("spin");
+    }
+
+    P.axes = [];
+    var axdef = dim === 2
+      ? [[[-RANGE,0,0],[RANGE,0,0]], [[0,-RANGE,0],[0,RANGE,0]]]
+      : [[[-RANGE,0,0],[RANGE,0,0]], [[0,-RANGE,0],[0,RANGE,0]],
+         [[0,0,-RANGE],[0,0,RANGE]]];
+    axdef.forEach(function (d, k) {
+      var line = el(gAxes, "line", { "stroke-width": dim === 2 ? 1.8 : 1.5 });
+      paint(line, "stroke", "--axis");
+      var tip = el(gAxes, "path", {}); paint(tip, "fill", "--axis");
+      var txt = el(gAxes, "text", { "font-size": 15, "font-style": "italic",
+        "text-anchor": "middle" });
+      paint(txt, "fill", "--axis"); txt.textContent = labels[k];
+      P.axes.push({ p0: d[0], p1: d[1], line: line, tip: tip, txt: txt });
+    });
+
+    P.renderFrame = function (op) {
+      if (dim === 3) P.cubeL.forEach(function (l, k) {
+        var a = P.map(P.cubeC[P.cubeE[k][0]]), c = P.map(P.cubeC[P.cubeE[k][1]]);
+        l.setAttribute("x1", a[0]); l.setAttribute("y1", a[1]);
+        l.setAttribute("x2", c[0]); l.setAttribute("y2", c[1]);
+        l.setAttribute("opacity", op.axes);
+      });
+      gGrid.setAttribute("opacity", Math.max(op.grid, dim === 3 ? op.axes : 0));
+      P.axes.forEach(function (a) {
+        var p0 = P.map(a.p0), p1 = P.map(a.p1);
+        var dx = p1[0]-p0[0], dy = p1[1]-p0[1], L = Math.hypot(dx,dy) || 1;
+        var hx = dx/L, hy = dy/L, hs = 9;
+        a.line.setAttribute("x1", p0[0]); a.line.setAttribute("y1", p0[1]);
+        a.line.setAttribute("x2", p1[0]-hx*hs); a.line.setAttribute("y2", p1[1]-hy*hs);
+        a.tip.setAttribute("d", "M" + p1[0] + "," + p1[1] +
+          "L" + (p1[0]-hx*hs-hy*hs*0.35) + "," + (p1[1]-hy*hs+hx*hs*0.35) +
+          "L" + (p1[0]-hx*hs+hy*hs*0.35) + "," + (p1[1]-hy*hs-hx*hs*0.35) + "Z");
+        var tp = P.map([a.p1[0]*1.1, a.p1[1]*1.1, a.p1[2]*1.1]);
+        a.txt.setAttribute("x", tp[0]); a.txt.setAttribute("y", tp[1] + 5);
+        [a.line, a.tip, a.txt].forEach(function (e) { e.setAttribute("opacity", op.axes); });
+      });
+    };
+    return P;
+  }
+
+  var pIn  = Pane("svgIn", 2, ["x", "y"]);
+  var pOut = Pane("svgOut", 3, ["x", "y", "z"]);
+
+  // ---------- flat pane: parallelogram, line of action, lever arm, angle ----------
+  var para = el(pIn.layers.sub, "path", { "fill-opacity": 0.16,
+    "stroke-opacity": 0.55, "stroke-width": 1.2 });
+  paint(para, "fill", "--tau"); paint(para, "stroke", "--tau");
+  var action = el(pIn.layers.sub, "line", { "stroke-width": 1.3,
+    "stroke-dasharray": "6 5", "stroke-opacity": 0.65 });
+  paint(action, "stroke", "--f");
+  var rext = el(pIn.layers.sub, "line", { "stroke-width": 1.1,
+    "stroke-dasharray": "3 4", "stroke-opacity": 0.5 });
+  paint(rext, "stroke", "--r");
+  var leverGlow = el(pIn.layers.sub, "line", { "stroke-width": 6,
+    "stroke-linecap": "round", opacity: 0.25 });
+  paint(leverGlow, "stroke", "--lever"); leverGlow.style.filter = "blur(3px)";
+  var lever = el(pIn.layers.sub, "line", { "stroke-width": 2.4,
+    "stroke-linecap": "round" });
+  paint(lever, "stroke", "--lever");
+  var leverTxt = el(pIn.layers.sub, "text", { "font-size": 16,
+    "font-style": "italic", "text-anchor": "middle" });
+  paint(leverTxt, "fill", "--lever"); leverTxt.textContent = "r⊥";
+  var angArc = el(pIn.layers.sub, "path", { fill: "none", "stroke-width": 1.6 });
+  paint(angArc, "stroke", "--ink");
+  var angTxt = el(pIn.layers.sub, "text", { "font-size": 15,
+    "font-style": "italic", "text-anchor": "middle" });
+  paint(angTxt, "fill", "--ink"); angTxt.textContent = "θ";
+  var senseArc = el(pIn.layers.sub, "path", { fill: "none", "stroke-width": 2.4,
+    "stroke-linecap": "round", "stroke-opacity": 0.9 });
+  paint(senseArc, "stroke", "--tau");
+  var senseTip = el(pIn.layers.sub, "path", {}); paint(senseTip, "fill", "--tau");
+
+  var pivot = el(pIn.layers.axes, "circle", { cx: C, cy: C, r: 5,
+    "fill-opacity": 0.9 });
+  paint(pivot, "fill", "--ink");
+  var pivotTxt = el(pIn.layers.axes, "text", { x: C - 10, y: C + 20,
+    "font-size": 12, "text-anchor": "end" });
+  paint(pivotTxt, "fill", "--muted"); pivotTxt.textContent = "axis";
+
+  var rArrow = makeArrow(pIn.svg, "--r");
+  var fArrow = makeArrow(pIn.svg, "--f");
+
+  function handle(svg, colorVar, label) {
+    var h = el(svg, "g", { "class": "handle", tabindex: 0, role: "application",
+      "aria-label": label });
+    paint(el(h, "circle", { "class": "fring", r: 12, fill: "none",
+      "stroke-width": 1.3 }), "stroke", "--ink");
+    paint(el(h, "circle", { r: 5.5 }), "fill", colorVar);
+    el(h, "circle", { r: 24, fill: "transparent" });
+    return h;
+  }
+  var rHandle = handle(pIn.svg, "--r",
+    "head of the position vector r. Use the arrow keys to move it.");
+  var fHandle = handle(pIn.svg, "--f",
+    "head of the force F. Use the arrow keys to move it.");
+
+  // ---------- 3D pane ----------
+  var para3 = el(pOut.layers.sub, "path", { "fill-opacity": 0.16,
+    "stroke-opacity": 0.5, "stroke-width": 1.2 });
+  paint(para3, "fill", "--tau"); paint(para3, "stroke", "--tau");
+  var rArrow3 = makeArrow(pOut.svg, "--r");
+  var fArrow3 = makeArrow(pOut.svg, "--f");
+  var tArrow3 = makeArrow(pOut.svg, "--tau");
+  var scaleTxt = el(pOut.svg, "text", { x: 12, y: W - 12, "font-size": 12 });
+  paint(scaleTxt, "fill", "--muted");
+
+  // ---------------- render ----------------
+  var grow = { grid: reduced?1:0, axes: reduced?1:0, plane: reduced?1:0,
+    r: reduced?1:0, f: reduced?1:0, tau: reduced?1:0 };
+  var TAUDRAW = RANGE * 0.8;             // longest arrow used to show the torque
+  var TAUSCALE = TAUDRAW / 12;           // shrunk so a typical torque is legible
+
+  function render() {
+    var tz = tauZ(), th = theta(), lr = len(r), lf = len(F);
+    var tip = [r[0] + F[0], r[1] + F[1], 0];
+
+    pIn.renderFrame(grow); pOut.renderFrame(grow);
+
+    // parallelogram spanned by r and F (its area is the magnitude of the torque)
+    function paraD(P) {
+      var q = [P.map([0,0,0]), P.map(r), P.map(tip), P.map(F)];
+      return "M" + q.map(function (p) { return p[0] + "," + p[1]; }).join("L") + "Z";
+    }
+    para.setAttribute("d", paraD(pIn));
+    para.setAttribute("opacity", grow.plane);
+    para3.setAttribute("d", paraD(pOut));
+    para3.setAttribute("opacity", grow.plane * 0.9);
+
+    var o = pIn.map([0,0,0]), hr = pIn.map(r), hf = pIn.map(tip);
+
+    // line of action of F, through the point of application
+    if (lf > 1e-6) {
+      var u = [F[0]/lf, F[1]/lf], t = RANGE * 3;
+      var a1 = pIn.map([r[0]-u[0]*t, r[1]-u[1]*t, 0]);
+      var a2 = pIn.map([r[0]+u[0]*t, r[1]+u[1]*t, 0]);
+      action.setAttribute("x1", a1[0]); action.setAttribute("y1", a1[1]);
+      action.setAttribute("x2", a2[0]); action.setAttribute("y2", a2[1]);
+      action.setAttribute("opacity", grow.plane * 0.9);
+      // foot of the perpendicular from the axis to that line: the lever arm
+      var s = -(r[0]*u[0] + r[1]*u[1]);
+      var foot = pIn.map([r[0]+u[0]*s, r[1]+u[1]*s, 0]);
+      [leverGlow, lever].forEach(function (l) {
+        l.setAttribute("x1", o[0]); l.setAttribute("y1", o[1]);
+        l.setAttribute("x2", foot[0]); l.setAttribute("y2", foot[1]);
+      });
+      var rp = lr * Math.sin(th);
+      lever.setAttribute("opacity", rp > 0.06 ? grow.plane : 0);
+      leverGlow.setAttribute("opacity", rp > 0.06 ? grow.plane * 0.25 : 0);
+      leverTxt.setAttribute("x", (o[0] + foot[0]) / 2 - 12);
+      leverTxt.setAttribute("y", (o[1] + foot[1]) / 2 - 8);
+      leverTxt.setAttribute("opacity", rp > 0.35 ? grow.plane : 0);
+    } else {
+      [action, lever, leverGlow, leverTxt].forEach(function (e) {
+        e.setAttribute("opacity", 0); });
+    }
+
+    // the angle theta, marked at the point of application between r and F
+    if (lr > 0.2 && lf > 0.2) {
+      var ar = Math.atan2(-r[1], r[0]), af = Math.atan2(-F[1], F[0]);
+      var da = Math.atan2(Math.sin(af - ar), Math.cos(af - ar));
+      var ext = pIn.map([r[0] * 1.34, r[1] * 1.34, 0]);
+      rext.setAttribute("x1", hr[0]); rext.setAttribute("y1", hr[1]);
+      rext.setAttribute("x2", ext[0]); rext.setAttribute("y2", ext[1]);
+      rext.setAttribute("opacity", grow.plane * 0.8);
+      angArc.setAttribute("d", arcD(hr[0], hr[1], 30, ar, da));
+      angArc.setAttribute("opacity", grow.plane * 0.85);
+      angTxt.setAttribute("x", hr[0] + 44 * Math.cos(ar + da / 2));
+      angTxt.setAttribute("y", hr[1] + 44 * Math.sin(ar + da / 2) + 5);
+      angTxt.setAttribute("opacity", Math.abs(da) > 0.28 ? grow.plane : 0);
+    } else {
+      [rext, angArc, angTxt].forEach(function (e) { e.setAttribute("opacity", 0); });
+    }
+
+    // curved arrow for the sense of the rotation the torque produces
+    if (Math.abs(tz) > 0.12 && lr > 0.2) {
+      var rad = 62, sgn = tz > 0 ? -1 : 1;          // screen y points downward
+      var start = Math.atan2(-r[1], r[0]) - sgn * 1.15, sweep = sgn * 2.0;
+      senseArc.setAttribute("d", arcD(C, C, rad, start, sweep));
+      var aEnd = start + sweep;
+      var ex = C + rad * Math.cos(aEnd), ey = C + rad * Math.sin(aEnd);
+      var tx = -Math.sin(aEnd) * sgn, ty = Math.cos(aEnd) * sgn, hs = 9;
+      senseTip.setAttribute("d", "M" + (ex + tx*hs) + "," + (ey + ty*hs) +
+        "L" + (ex - tx*hs*0.4 - ty*hs*0.55) + "," + (ey - ty*hs*0.4 + tx*hs*0.55) +
+        "L" + (ex - tx*hs*0.4 + ty*hs*0.55) + "," + (ey - ty*hs*0.4 - tx*hs*0.55) + "Z");
+      var op = grow.plane * 0.75;
+      senseArc.setAttribute("opacity", op); senseTip.setAttribute("opacity", op);
+    } else {
+      senseArc.setAttribute("opacity", 0); senseTip.setAttribute("opacity", 0);
+    }
+
+    setArrow(rArrow, o[0], o[1], hr[0], hr[1], "r", grow.r);
+    setArrow(fArrow, hr[0], hr[1], hf[0], hf[1], "F", grow.f);
+    rHandle.setAttribute("transform", "translate(" + hr[0] + "," + hr[1] + ")");
+    rHandle.setAttribute("opacity", grow.r);
+    fHandle.setAttribute("transform", "translate(" + hf[0] + "," + hf[1] + ")");
+    fHandle.setAttribute("opacity", grow.f);
+    pivot.setAttribute("opacity", grow.axes);
+    pivotTxt.setAttribute("opacity", grow.axes);
+
+    // 3D pane: the same two vectors, plus the torque along the axis
+    var o3 = pOut.map([0,0,0]), hr3 = pOut.map(r), hf3 = pOut.map(tip);
+    setArrow(rArrow3, o3[0], o3[1], hr3[0], hr3[1], "r", grow.r);
+    setArrow(fArrow3, hr3[0], hr3[1], hf3[0], hf3[1], "F", grow.f);
+    var tz3 = Math.max(-TAUDRAW, Math.min(TAUDRAW, tz * TAUSCALE));
+    var ht3 = pOut.map([0, 0, tz3]);
+    setArrow(tArrow3, o3[0], o3[1], ht3[0], ht3[1], "τ", grow.tau);
+    scaleTxt.textContent = "τ drawn to a reduced scale";
+    scaleTxt.setAttribute("opacity", grow.tau * 0.9);
+
+    // readouts
+    document.getElementById("numbers").innerHTML =
+      "(" + lr.toFixed(2) + ")(" + lf.toFixed(2) + ")(" +
+      Math.abs(Math.sin(th)).toFixed(2) + ")";
+    document.getElementById("tauval").textContent = Math.abs(tz).toFixed(2);
+    document.getElementById("theta").textContent =
+      (lr < 1e-6 || len(F) < 1e-6) ? "—"
+        : (th * 180 / Math.PI).toFixed(1) + "°";
+    document.getElementById("rperp").textContent = (lr * Math.sin(th)).toFixed(2);
+    document.getElementById("sense").innerHTML = Math.abs(tz) < 0.005
+      ? "&mdash; no rotation: <i>F</i> points straight at the axis"
+      : (tz > 0 ? "&mdash; counterclockwise, <i>&tau;</i> along +<i>k</i>"
+                : "&mdash; clockwise, <i>&tau;</i> along &minus;<i>k</i>");
+  }
+
+  // ---------------- animation loop ----------------
+  var t0 = performance.now(), lastT = t0;
+  var demo = false, demoT = 0, demoF = null;
+  var lastSpin = reduced ? Infinity : -1, spinning = false, lastP = null;
+
+  function stage(t, a, c) { return ease((t - a) / (c - a)); }
+  function frame(now) {
+    var t = now - t0, dt = Math.min(50, now - lastT); lastT = now;
+    if (!reduced) {
+      grow.grid = stage(t, 0, 700);   grow.axes = stage(t, 250, 1000);
+      grow.plane = stage(t, 650, 1500); grow.r = stage(t, 1050, 1650);
+      grow.f = stage(t, 1300, 1900);  grow.tau = stage(t, 1600, 2200);
+      if (now - lastSpin > 4000 && !spinning) pOut.yaw += dt * 0.00006;
+    }
+    if (demo) {                          // swing F once around the point of application
+      demoT += dt;
+      var u = Math.min(1, demoT / 9000), a = demoF.a + u * 2 * Math.PI;
+      F = [demoF.L * Math.cos(a), demoF.L * Math.sin(a), 0];
+      if (u >= 1) setDemo(false);
+    }
+    render();
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  // ---------------- interaction ----------------
+  function ptrXY(ev) { var t = ev.touches ? ev.touches[0] : ev;
+    return [t.clientX, t.clientY]; }
+  function toWorld(P, ev) {
+    var b = P.svg.getBoundingClientRect(), p = ptrXY(ev);
+    var q = [(p[0] - b.left) / b.width * W, (p[1] - b.top) / b.height * W];
+    return [(q[0] - C) / P.scale, (C - q[1]) / P.scale, 0];
+  }
+  function clamp(v) {
+    return [Math.max(-RANGE, Math.min(RANGE, v[0])),
+            Math.max(-RANGE, Math.min(RANGE, v[1])), 0];
+  }
+  function announce() {
+    document.getElementById("announce").textContent =
+      "r = (" + fmt(r[0]) + ", " + fmt(r[1]) + "), F = (" + fmt(F[0]) + ", " +
+      fmt(F[1]) + "), torque " + fmt(tauZ()) + " about the z-axis";
+  }
+
+  var mode = null;
+  function down(ev, which) {
+    setDemo(false); mode = which;
+    ev.preventDefault(); ev.stopPropagation();
+  }
+  rHandle.addEventListener("mousedown", function (e) { down(e, "r"); });
+  rHandle.addEventListener("touchstart", function (e) { down(e, "r"); },
+    { passive: false });
+  fHandle.addEventListener("mousedown", function (e) { down(e, "f"); });
+  fHandle.addEventListener("touchstart", function (e) { down(e, "f"); },
+    { passive: false });
+
+  pOut.svg.addEventListener("mousedown", function (e) { spinDown(e); });
+  pOut.svg.addEventListener("touchstart", function (e) { spinDown(e); },
+    { passive: false });
+  function spinDown(ev) {
+    if (mode) return;
+    spinning = true; lastP = ptrXY(ev);
+    pOut.svg.classList.add("dragging"); ev.preventDefault();
+  }
+
+  function move(ev) {
+    if (mode === "r") {
+      r = clamp(toWorld(pIn, ev));
+      ev.preventDefault();
+    } else if (mode === "f") {
+      var p = clamp(toWorld(pIn, ev));
+      F = [p[0] - r[0], p[1] - r[1], 0];
+      ev.preventDefault();
+    } else if (spinning) {
+      var p2 = ptrXY(ev);
+      pOut.yaw += (p2[0] - lastP[0]) * 0.008;
+      pOut.pitch = Math.max(-1.45, Math.min(1.45,
+        pOut.pitch + (p2[1] - lastP[1]) * 0.008));
+      lastP = p2; lastSpin = performance.now(); ev.preventDefault();
+    }
+  }
+  window.addEventListener("mousemove", move);
+  window.addEventListener("touchmove", move, { passive: false });
+  function up() {
+    if (mode) announce();
+    mode = null;
+    if (spinning) { pOut.svg.classList.remove("dragging"); spinning = false; }
+  }
+  window.addEventListener("mouseup", up);
+  window.addEventListener("touchend", up);
+
+  function keys(h, get, set) {
+    h.addEventListener("keydown", function (ev) {
+      var step = ev.shiftKey ? 1 : 0.25, d = null;
+      if (ev.key === "ArrowLeft") d = [-step, 0, 0];
+      else if (ev.key === "ArrowRight") d = [step, 0, 0];
+      else if (ev.key === "ArrowUp") d = [0, step, 0];
+      else if (ev.key === "ArrowDown") d = [0, -step, 0];
+      if (!d) return;
+      setDemo(false);
+      var v = get();
+      set(clamp([v[0] + d[0], v[1] + d[1], 0]));
+      announce(); ev.preventDefault();
+    });
+  }
+  keys(rHandle, function () { return r; }, function (v) { r = v; });
+  keys(fHandle, function () { return [r[0] + F[0], r[1] + F[1], 0]; },
+    function (v) { F = [v[0] - r[0], v[1] - r[1], 0]; });
+
+  function setDemo(on) {
+    demo = on;
+    if (on) {
+      var L = len(F);
+      demoF = { L: L < 0.6 ? 2.4 : L, a: Math.atan2(F[1], F[0]) };
+      demoT = 0;
+    }
+    document.getElementById("btn-demo").classList.toggle("active", on);
+  }
+  document.getElementById("btn-demo").addEventListener("click", function () {
+    setDemo(!demo); });
+  document.getElementById("btn-view").addEventListener("click", function () {
+    pOut.yaw = -0.62; pOut.pitch = 0.40; lastSpin = reduced ? Infinity : -1; });
+})();
+</script>
+</body>
+</html>

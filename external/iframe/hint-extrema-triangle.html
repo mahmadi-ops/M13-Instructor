@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hints</title>
+
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(', '\\)']] }, svg: { fontCache: 'global' } };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+  :root {
+    --ht-ink: #1c1c1c;
+    --ht-quiet: #6b6b6b;
+    --ht-rule: #d8d4cc;
+    --ht-accent: #2f5d50;
+  }
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body {
+    font-family: "Open Sans", "DejaVu Sans", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--ht-ink);
+    padding: 0.2em 0.2em 1em;
+  }
+  .ht-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1em; }
+  .ht-title { font-variant-caps: all-small-caps; letter-spacing: .08em; color: var(--ht-accent); }
+  .ht-count { font-size: .85em; color: var(--ht-quiet); font-variant-numeric: tabular-nums; }
+  .ht-log { list-style: none; margin: .6em 0 0; padding: 0; }
+  .ht-turn { margin: 0 0 .9em; padding-left: .8em; border-left: 2px solid var(--ht-accent); }
+  .ht-turn p { margin: 0; }
+  .ht-who {
+    display: block; font-size: .75em; font-variant-caps: all-small-caps;
+    letter-spacing: .08em; color: var(--ht-quiet);
+  }
+  .ht-row { display: flex; align-items: center; gap: .8em; margin-top: .5em; flex-wrap: wrap; }
+  .ht-btn {
+    font: inherit; padding: .4em 1em; color: #fff; background: var(--ht-accent);
+    border: none; border-radius: 2px; cursor: pointer; font-variant-numeric: tabular-nums;
+  }
+  .ht-btn:disabled { background: #e7e5e0; color: var(--ht-quiet); cursor: default; }
+  .ht-btn:focus-visible { outline: 2px solid var(--ht-accent); outline-offset: 2px; }
+  .ht-note { flex: 1 1 16em; font-size: .88em; color: var(--ht-quiet); }
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     THE TWO HINTS. This is the only part you need to edit.
+     LaTeX goes between \( and \).
+     ============================================================ -->
+<div id="ht"
+     data-problem-id="ex-extrema-triangle"
+     data-hint-1="Sketch the region before doing anything else: it is a closed triangle with corners at \((0,0)\), \((4,0)\), and \((0,4)\). Setting \(\nabla f = \mathbf{0}\) only finds candidates in the interior. On a closed, bounded region, where else is an extreme value allowed to live?"
+     data-hint-2="Take the edges one at a time. On each one, a variable is pinned down &mdash; on the slanted edge, \(x = 4 - y\). Substituting turns \(f\) into a function of a single variable on a closed interval, which is a problem you already know how to finish. What does that method tell you never to forget?">
+</div>
+
+<script>
+(function () {
+  var THINK_MS = 5 * 60 * 1000;   // five minutes of think time between hints
+
+  var root = document.getElementById('ht');
+  var id = root.dataset.problemId;
+  var hints = [root.getAttribute('data-hint-1'), root.getAttribute('data-hint-2')].filter(Boolean);
+  var ticker = null;
+
+  var state = { shown: 0, last: 0 };
+  try {
+    state = JSON.parse(localStorage.getItem('hint-tutor:' + id)) || state;
+  } catch (e) {}
+
+  function save() {
+    try { localStorage.setItem('hint-tutor:' + id, JSON.stringify(state)); } catch (e) {}
+  }
+
+  function mmss(ms) {
+    var t = Math.max(0, Math.ceil(ms / 1000));
+    return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0');
+  }
+
+  root.innerHTML =
+    '<div class="ht-head">' +
+      '<span class="ht-title">Stuck?</span>' +
+      '<span class="ht-count"></span>' +
+    '</div>' +
+    '<ol class="ht-log"></ol>' +
+    '<div class="ht-row">' +
+      '<button class="ht-btn" type="button"></button>' +
+      '<span class="ht-note"></span>' +
+    '</div>';
+
+  var log = root.querySelector('.ht-log');
+  var btn = root.querySelector('.ht-btn');
+  var note = root.querySelector('.ht-note');
+  var count = root.querySelector('.ht-count');
+
+  function renderLog() {
+    var out = '';
+    for (var i = 0; i < state.shown; i++) {
+      out += '<li class="ht-turn"><p><span class="ht-who">Hint ' + (i + 1) + '</span>' +
+             hints[i] + '</p></li>';
+    }
+    log.innerHTML = out;
+    if (window.MathJax && MathJax.typesetPromise) { MathJax.typesetPromise([log]); }
+  }
+
+  function refresh() {
+    clearInterval(ticker);
+    var left = hints.length - state.shown;
+    count.textContent = left
+      ? left + (left === 1 ? ' hint left' : ' hints available')
+      : 'no hints left';
+
+    if (left === 0) {
+      btn.disabled = true;
+      btn.textContent = 'No hints left';
+      note.textContent = 'That is both hints. The rest is yours \u2014 try it, and bring it to office hours if it still will not budge.';
+      return;
+    }
+
+    if (state.last) {
+      var rem = THINK_MS - (Date.now() - state.last);
+      if (rem > 0) {
+        btn.disabled = true;
+        var tick = function () {
+          var r = THINK_MS - (Date.now() - state.last);
+          if (r <= 0) { refresh(); return; }
+          btn.textContent = 'Think time \u2014 ' + mmss(r);
+          note.textContent = 'Sit with the hint. Try the next step before you come back.';
+        };
+        tick();
+        ticker = setInterval(tick, 1000);
+        return;
+      }
+    }
+
+    btn.disabled = false;
+    btn.textContent = state.shown ? 'Show the next hint' : 'Show a hint';
+    note.textContent = state.shown
+      ? ''
+      : 'Try the problem first \u2014 a hint lands better once you have something to attach it to.';
+  }
+
+  btn.addEventListener('click', function () {
+    if (state.shown >= hints.length) { return; }
+    state.shown += 1;
+    state.last = Date.now();
+    save();
+    renderLog();
+    refresh();
+  });
+
+  renderLog();
+  refresh();
+})();
+</script>
+
+</body>
+</html>

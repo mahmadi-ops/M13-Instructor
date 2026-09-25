@@ -1,0 +1,102 @@
+<diagram>
+  <annotations>
+    <annotation id="exp-taylor-fgraph" speech2="Schematic graph of f of x equals e to the x with its Taylor polynomials               p1 through p 4 about 0. Dashed markers show a representative positive x with                an intermediate value c between 0 and x, and a representative negative x with                an intermediate c between x and 0. The sample points show the size of e to the                c used to bound the remainder">
+      <grouped>exp-taylor-fgraph</grouped>
+      <position>1</position>
+      <children>
+        <active>exp-taylor-fgraph</active>
+        <active>exp-taylor-p1</active>
+        <active>exp-taylor-p2</active>
+        <active>exp-taylor-p3</active>
+        <active>exp-taylor-p4</active>
+        <active>exp-taylor-center</active>
+        <active>exp-taylor-pos-x</active>
+        <active>exp-taylor-pos-sample</active>
+        <active>exp-taylor-neg-x</active>
+        <active>exp-taylor-neg-sample</active>
+      </children>
+      <components>
+        <active>exp-taylor-fgraph</active>
+        <active>exp-taylor-p1</active>
+        <active>exp-taylor-p2</active>
+        <active>exp-taylor-p3</active>
+        <active>exp-taylor-p4</active>
+        <active>exp-taylor-center</active>
+        <active>exp-taylor-pos-x</active>
+        <active>exp-taylor-pos-sample</active>
+        <active>exp-taylor-neg-x</active>
+        <active>exp-taylor-neg-sample</active>
+      </components>
+    </annotation>
+    <annotation id="exp-taylor-fgraph" speech2="The function f of x equals e to the x, a thick              blue curve">
+      <active>exp-taylor-fgraph</active>
+      <position>1</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-p1" speech2="The first degree Taylor polynomial p 1">
+      <active>exp-taylor-p1</active>
+      <position>2</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-p2" speech2="The second degree Taylor polynomial p 2">
+      <active>exp-taylor-p2</active>
+      <position>3</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-p3" speech2="The third degree Taylor polynomial p 3">
+      <active>exp-taylor-p3</active>
+      <position>4</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-p4" speech2="The fourth degree Taylor polynomial p 4">
+      <active>exp-taylor-p4</active>
+      <position>5</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-center" speech2="The center of expansion where the curves meet on the vertical axis">
+      <active>exp-taylor-center</active>
+      <position>6</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-pos-x" speech2="A dashed marker at a representative positive x">
+      <active>exp-taylor-pos-x</active>
+      <position>7</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-pos-sample" speech2="A point at c between 0 and the positive x, where e to the c is less than e to the x">
+      <active>exp-taylor-pos-sample</active>
+      <position>8</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-neg-x" speech2="A dashed marker at a representative negative x">
+      <active>exp-taylor-neg-x</active>
+      <position>9</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+    <annotation id="exp-taylor-neg-sample" speech2="A point at c between the negative x and 0, where e to the c is less than 1">
+      <active>exp-taylor-neg-sample</active>
+      <position>10</position>
+      <parents>
+        <grouped>exp-taylor-fgraph</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>

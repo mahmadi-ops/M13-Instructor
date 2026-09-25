@@ -1,0 +1,70 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-hyp-catenary-figure" speech2="A shallow dark red curve hangs between two vertical poles at x equals negative seven and x equals seven, dipping to a height of five meters at the center. A short tangent segment at the right end makes an angle theta with the right pole.">
+      <grouped>prefigure-hyp-catenary-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hyp-catenary-grid-axes</active>
+        <active>prefigure-hyp-catenary-cat-curve</active>
+        <active>prefigure-hyp-catenary-cat-pole-r</active>
+        <active>prefigure-hyp-catenary-cat-tangent</active>
+      </children>
+      <components>
+        <active>prefigure-hyp-catenary-grid-axes</active>
+        <active>prefigure-hyp-catenary-cat-curve</active>
+        <active>prefigure-hyp-catenary-cat-pole-r</active>
+        <active>prefigure-hyp-catenary-cat-tangent</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-hyp-catenary-grid-axes" speech2="The coordinate grid and axes">
+      <grouped>prefigure-hyp-catenary-grid-axes</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-hyp-catenary-grid</active>
+        <active>prefigure-hyp-catenary-axes</active>
+      </children>
+      <components>
+        <active>prefigure-hyp-catenary-grid</active>
+        <active>prefigure-hyp-catenary-axes</active>
+      </components>
+      <parents>
+        <grouped>prefigure-hyp-catenary-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-catenary-grid" speech2="The coordinate grid">
+      <active>prefigure-hyp-catenary-grid</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-hyp-catenary-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-catenary-axes" speech2="The coordinate axes">
+      <active>prefigure-hyp-catenary-axes</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hyp-catenary-grid-axes</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-catenary-cat-curve" speech2="The catenary y equals twenty hyperbolic cosine of x over twenty, minus fifteen. Its lowest point is at height five above the origin.">
+      <active>prefigure-hyp-catenary-cat-curve</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-hyp-catenary-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-catenary-cat-pole-r" speech2="The right pole at x equals seven. The angle theta is measured between the hanging line and this pole.">
+      <active>prefigure-hyp-catenary-cat-pole-r</active>
+      <position>3</position>
+      <parents>
+        <grouped>prefigure-hyp-catenary-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-hyp-catenary-cat-tangent" speech2="The tangent line to the catenary at the right pole, whose slope is hyperbolic sine of seven twentieths, about zero point three five seven.">
+      <active>prefigure-hyp-catenary-cat-tangent</active>
+      <position>4</position>
+      <parents>
+        <grouped>prefigure-hyp-catenary-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
