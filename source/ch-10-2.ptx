@@ -440,7 +440,7 @@ If <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> converges, then
 <term>Important note:</term> If <m>\lim\limits_{n\to\infty} a_n = 0</m>,
 we <em>cannot</em> conclude that
 <m>\displaystyle\sum_{n=1}^{\infty} a_n</m> converges. See parts D and E
-in the example below.
+in the example below. Also see <xref ref="example-series-telescoping-ln"/>.
 </p>
 
 <p>
